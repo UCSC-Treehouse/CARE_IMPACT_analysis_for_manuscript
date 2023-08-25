@@ -1,10 +1,10 @@
 # CKCC2_July_2023
 Work supporting the manuscript submission effort underway July 2023
 
-# CKCC2 data gathering instructions
-## start RStudio on mustard:
+## CKCC2 data gathering instructions
+###  start RStudio on mustard:
 
-### Prep
+#### Prep
 
 * change 18889 to another number in both the docker command and the login URL. this is the port ID, and it has to be unique. Just try one.
 
@@ -26,12 +26,12 @@ docker run \
 rocker/verse 
 ```
 
-## Use web browser to access Rstudio on mustard
+### Use web browser to access Rstudio on mustard
 URL: http://mustard.prism:18889/
 username: mustard
 password: whatever you put in your ~/.rstudio_env_file
 
-# Use RStudio as necessary. 
+### Use RStudio 
 If you want to run gather_outlier_results_2023.07.05_17.06.23.Rmd with minor edits, load it and edit. You can knit it to have a final record of the process. 
 
 If you knit, you may get a message saying "Rendering R Markdown documents requires and updated version of the markdown package". If so, click yes to install. 
