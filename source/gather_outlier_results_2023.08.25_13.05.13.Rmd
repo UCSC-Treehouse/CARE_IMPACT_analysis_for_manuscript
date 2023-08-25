@@ -1,0 +1,248 @@
+
+
+```{r}
+library(tidyverse)
+
+```
+
+
+```{r}
+data_dir <- "/private/groups/treehouse/working-projects/hbeale/ckcc2_2023_07"
+paths_file <- "PathsToOriginalTertiary.2022_01_18.tsv"
+samples_file <- "ckcc2_metadata_from_redcap_2021-07-29_11.38.45.tsv"
+
+paths_raw <- read_tsv(file.path(data_dir, paths_file),
+                      col_types = cols(.default = "c"))
+nrow(paths_raw)
+
+project_samples <- read_tsv(file.path(data_dir, samples_file),
+                      col_types = cols(.default = "c"))
+nrow(project_samples)
+# reminder; there are more lines in the paths_raw tibble than
+# in the project_samples tibble because some samples have
+# multiple tert outputs
+```
+
+
+```{r}
+# check whether all samples are present in both data sources
+# if both groups are identical,  result will be "character(0)"
+setdiff(paths_raw$Sample, project_samples$THid)
+setdiff(project_samples$THid, paths_raw$Sample)
+# "TH34_2693_S02" "TH34_2699_S01" are in project_samples but not paths_raw
+```
+
+> nrow(project_samples)                                                                                                                                                                       
+[1] 41
+> setdiff(paths_raw$Sample, project_samples$THid)
+character(0)
+> setdiff(project_samples$THid, paths_raw$Sample)
+[1] "TH34_2693_S02" "TH34_2699_S01"
+
+
+```{r}
+
+tertiary_output_locations <- paths_raw %>%
+  select(sample_id = Sample, tertiary_path = path)
+
+```
+
+# Compendium and protocol version survey
+```{r}
+c_p_survey <- tertiary_output_locations %>%
+  mutate(compendium = str_remove(tertiary_path, "^.*/"),
+         protocol = str_replace(tertiary_path, "^.*treehouse-[a-z]*-([^/]*)/.*$", "\\1")) %>%
+  select(-tertiary_path)
+
+c_p_survey
+install.packages("janitor")
+library(janitor)
+tabyl(c_p_survey , compendium)
+tabyl(c_p_survey , protocol)
+```
+
+# Identify samples with multiple tertiaries:
+```{r}
+
+tertiary_output_locations %>%
+group_by(sample_id) %>%
+  mutate(n_terts=n()) %>%
+  filter(n_terts > 1) %>%
+  pull(tertiary_path)
+
+```
+
+# Load druggable genes
+```{r}
+
+druggable_genes <- read_tsv(file.path(data_dir, "treehouseDruggableGenes_2020-03_25.txt"))
+
+```
+
+# Load pan cancer outlier results (irrespective of whether they are druggable)
+details on file structure: https://github.com/UCSC-Treehouse/reference-file-info/blob/master/Explainer%20for%20outlier_results_files.txt
+```{r}
+
+tertiary_output_data <- tertiary_output_locations %>%
+ group_by(sample_id) %>% 
+  top_n(1, tertiary_path) %>% # select only one of two for the samples with multiple outputs
+mutate(leads_raw = map(paste0(tertiary_path, "/outlier_results_", sample_id), read_tsv, col_types = cols(.default = "c"))) %>%
+unnest(leads_raw)
+
+top_5 <- tertiary_output_data %>%
+  filter(is_top_5 == "top5") %>%
+  select(sample_id, Gene)
+  
+pc_outliers <- tertiary_output_data %>%
+  filter(pc_outlier=="pc_up") %>%
+  mutate(is_druggable = Gene %in% druggable_genes$gene)
+table(pc_outliers$is_druggable)
+
+
+```
+
+
+# Load druggable pan cancer and pan-disease outlier results
+Note: at this step, we select only one of the two tertiary outputs for the samples with multiple outputs. At a later step, we analyze the outputs across the custom cohorts (ACC) to account for these samples with multiple tertiary outputs
+
+```{r}
+
+
+druggable_outliers <- tertiary_output_locations %>%
+ group_by(sample_id) %>% 
+  top_n(1, tertiary_path) %>% # select only one of two for the samples with multiple outputs
+mutate(leads_raw = map(paste0(tertiary_path, "/automatedLeadsIdentified.tsv"), read_tsv, col_types = cols(.default = "c"))) %>%
+unnest(leads_raw)
+
+```
+
+```{r}
+# code for samples with two cohorts, currently TH34_1349_S01, TH34_1349_S02
+library(jsonlite)
+
+get_pan_disease_outliers <- function(this_tert_path){
+  j4 <- fromJSON(file.path(this_tert_path, "4.0.json"))
+  tibble(gene = names(j4$personalized_consensus_counts$up_outliers))
+}
+
+# confirmed with code: everything in the personalized_consensus_counts up_outliers in top 5
+
+acc_outliers <- tertiary_output_locations %>%
+  filter(sample_id %in% c("TH34_1349_S01", "TH34_1349_S02")) %>%
+  mutate(pan_disease_outliers_raw = map(tertiary_path, get_pan_disease_outliers)) %>%
+  unnest(pan_disease_outliers_raw)
+# acc_druggable_outliers has no rows; =0
+
+# teh
+acc_druggable_outliers <- acc_outliers %>%
+            mutate(is_druggable = gene %in% druggable_genes$gene)
+```
+
+# Combine if necessary
+```{r}
+
+# if there are no pan-disease outliers, the function returns nothing and that sample has no line in the outliers tibble, so e.g. TH34_1149_S02 isn't in the pan-disease outlier list
+
+#output_data_with_acc <- bind_rows(druggable_outliers) #, # acc_druggable_outliers)
+                                           #there are no acc druggable outliers
+```
+
+
+# save output
+```{r}
+
+data_output_name <- paste0("druggable_outliers_from_", paths_file, ".",  format(Sys.time(), "%Y_%m_%d-%H_%M_%S_%Y"), ".tsv")
+
+write_tsv(druggable_outliers, file.path(data_dir, data_output_name))
+
+```
+
+this output was saved as `r data_output_name`
+
+# Scratch
+
+# Identify outliers present in two custom pan-disease groups from different tertiary rounds
+In this step, we analyze the outputs across the custom cohorts (ACC) to account for these samples with multiple tertiary outputs
+
+```{r}
+# code for samples with two cohorts, currently TH34_1349_S01, TH34_1349_S02
+library(jsonlite)
+
+#
+
+get_nof1_disease_up_outliers <- function(this_tert_path){
+    # this_tert_path = "/private/groups/treehouse/archive/downstream/TH34_1349_S01/tertiary/treehouse-protocol-12.0.0-9a30111.2/compendium-v8"
+  j4 <- fromJSON(file.path(this_tert_path, "4.0.json"))
+  j4_po <- j4["personalized_outliers"]
+  j4_po$personalized_outliers$nof1_disease_outliers$up[[1]] %>% enframe()
+}
+
+# acc is for "across custom cohorts", for outliers found across multiple custom cohorts
+
+acc_outliers <- lapply(c("TH34_1349_S01", "TH34_1349_S02"), function(this_sample){
+  # this_sample="TH34_1349_S01"
+  paths <- subset(tertiary_output_locations, sample_id ==this_sample)$tertiary_path
+  out1 <- get_nof1_disease_up_outliers(paths[1])
+  out2 <- get_nof1_disease_up_outliers(paths[2])
+  return(tibble(THid=this_sample, results = intersect(out1, out2), details = "acc", file_path = paste(paths, collapse = ",")))
+}) %>% bind_rows
+
+# filter for druggable genes
+
+druggable_genes <- read_tsv(file.path(data_dir, "treehouseDruggableGenes_2020-03_25.txt"))
+
+acc_druggable_outliers <- acc_outliers %>%
+  filter(results %in% druggable_genes$gene) %>%
+  mutate(assay="druggableUpOutlier",
+         sample_id = THid)
+
+tertiary_output_data_with_acc <- bind_rows(tertiary_output_data, acc_druggable_outliers)
+
+```
+
+# Are any of the acc_druggable_outliers also in original tertiary_output_data?
+```{r}
+left_join(acc_druggable_outliers %>% select(THid, results, acc_details = details),
+          tertiary_output_data %>% select(THid, results, tod_details = details))
+```
+
+
+# Identify outliers present in two custom pan-disease groups from different tertiary rounds
+In this step, we analyze the outputs across the custom cohorts (ACC) to account for these samples with multiple tertiary outputs
+
+```{r}
+# code for samples with two cohorts, currently TH34_1349_S01, TH34_1349_S02
+library(jsonlite)
+
+get_pan_disease_outliers <- function(this_tert_path){
+  j4 <- fromJSON(file.path(this_tert_path, "4.0.json"))
+  tibble(gene = names(j4$personalized_consensus_counts$up_outliers))
+}
+
+# confirmed with code: everything in the personalized_consensus_counts up_outliers in top 5
+
+acc_druggable_outliers <- tertiary_output_locations %>%
+  mutate(pan_disease_outliers_raw = map(tertiary_path, get_pan_disease_outliers)) %>%
+  unnest(pan_disease_outliers_raw)
+
+# if there are no pan-disease outliers, the function returns nothing and that sample has no line in the outliers tibble, so e.g. TH34_1149_S02 isn't in the pan-disease outlier list
+
+
+acc_druggable_outliers_anno <- pan_disease_outliers %>%
+            mutate(is_druggable = gene %in% druggable_genes$gene)
+
+```
+
+```{r}
+
+write_tsv(pan_disease_outliers_anno, paste0("pan_disease_outliers_from_", paths_file, ".tsv"))
+
+write_tsv(pc_outliers %>%
+  select(sample_id,
+         tertiary_path,
+         Gene,
+    is_druggable
+  ), paste0("pan_cancer_outliers_from_", paths_file, ".tsv"))
+
+```
+
