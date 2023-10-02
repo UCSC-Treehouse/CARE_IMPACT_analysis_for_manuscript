@@ -35,3 +35,17 @@ password: whatever you put in your ~/.rstudio_env_file
 If you want to run gather_outlier_results_2023.07.05_17.06.23.Rmd with minor edits, load it and edit. You can knit it to have a final record of the process. 
 
 If you knit, you may get a message saying "Rendering R Markdown documents requires and updated version of the markdown package". If so, click yes to install. 
+
+
+### Create wide outliers file for MSIGDB pathway analysis
+Use the `convert_outlier_lists_for_msigdb.py` script to convert the `outliers_from_PathsToOriginalTertiary` files to a "wide" format (genes on the same row,
+per sample and background cohort) usable with the [standalone_msigdb_pathways.R](https://github.com/UCSC-Treehouse/analysis-methods/blob/master/script/DGIdb_and_MSigDB_pathways_aka_GSEA/standalone_msigdb_pathways.R)
+script.
+
+```
+cd source
+./convert_outlier_lists_for_msigdb.py ../pan_cancer_outliers_from_PathsToOriginalTertiary.2022_01_18.tsv.tsv pancancer > ../pancancer_rows.tsv
+./convert_outlier_lists_for_msigdb.py ../pan_disease_outliers_from_PathsToOriginalTertiary.2022_01_18.tsv.tsv pandisease > ../pandisease_rows.tsv
+cd ..
+cat pancancer_rows.tsv pandisease_rows.tsv > samples_outliers_wide_geneList_for_msigdb_2023-10-02.tsv
+```
