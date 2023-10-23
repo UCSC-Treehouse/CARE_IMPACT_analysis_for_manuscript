@@ -1,0 +1,94 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	4
+# genesets in collections:	1379
+# genes in comparison (n):	75
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_ECM_AFFILIATED	171	Genes encoding proteins affiliated structurally or functionally to extracellular matrix proteins	7	0.04094	1.4e-8	1.931e-5
+REACTOME_TERMINATION_OF_O_GLYCAN_BIOSYNTHESIS	24	Genes involved in Termination of O-glycan biosynthesis	3	0.125	8.243e-6	0.005684
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	8	0.01062	3.212e-5	0.01477
+REACTOME_O_LINKED_GLYCOSYLATION_OF_MUCINS	59	Genes involved in O-linked glycosylation of mucins	3	0.05085	1.271e-4	0.04381
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_ECM_AFFILIATED	REACTOME_TERMINATION_OF_O_GLYCAN_BIOSYNTHESIS	NABA_MATRISOME_ASSOCIATED	REACTOME_O_LINKED_GLYCOSYLATION_OF_MUCINS
+4588	MUC6	mucin 6, oligomeric mucus/gel-forming	NABA_ECM_AFFILIATED	REACTOME_TERMINATION_OF_O_GLYCAN_BIOSYNTHESIS	NABA_MATRISOME_ASSOCIATED	REACTOME_O_LINKED_GLYCOSYLATION_OF_MUCINS
+4586	MUC5AC	mucin 5AC, oligomeric mucus/gel-forming	NABA_ECM_AFFILIATED	REACTOME_TERMINATION_OF_O_GLYCAN_BIOSYNTHESIS	NABA_MATRISOME_ASSOCIATED	REACTOME_O_LINKED_GLYCOSYLATION_OF_MUCINS
+4583	MUC2	mucin 2, oligomeric mucus/gel-forming	NABA_ECM_AFFILIATED	REACTOME_TERMINATION_OF_O_GLYCAN_BIOSYNTHESIS	NABA_MATRISOME_ASSOCIATED	REACTOME_O_LINKED_GLYCOSYLATION_OF_MUCINS
+6440	SFTPC	surfactant protein C	NABA_ECM_AFFILIATED		NABA_MATRISOME_ASSOCIATED	
+6439	SFTPB	surfactant protein B	NABA_ECM_AFFILIATED		NABA_MATRISOME_ASSOCIATED	
+729238	SFTPA2	surfactant protein A2	NABA_ECM_AFFILIATED		NABA_MATRISOME_ASSOCIATED	
+653509	SFTPA1	surfactant protein A1	NABA_ECM_AFFILIATED		NABA_MATRISOME_ASSOCIATED	
+147381	CBLN2	cerebellin 2 precursor			NABA_MATRISOME_ASSOCIATED	
+85446	ZFHX2	zinc finger homeobox 2				
+51352	WT1-AS	WT1 antisense RNA				
+65266	WNK4	WNK lysine deficient protein kinase 4				
+65268	WNK2	WNK lysine deficient protein kinase 2				
+7425	VGF	VGF nerve growth factor inducible				
+NA	T	NA				
+221711	SYCP2L	synaptonemal complex protein 2 like				
+100130958	SYCE1L	synaptonemal complex central element protein 1 like				
+6783	SULT1E1	sulfotransferase family 1E member 1				
+57731	SPTBN4	spectrin beta, non-erythrocytic 4				
+6700	SPRR2A	small proline rich protein 2A				
+399473	SPRED3	sprouty related EVH1 domain containing 3				
+692084	SNORD13	small nucleolar RNA, C/D box 13				
+677843	SNORA77	small nucleolar RNA, H/ACA box 77				
+6511	SLC1A6	solute carrier family 1 member 6				
+26266	SLC13A4	solute carrier family 13 member 4				
+57468	SLC12A5	solute carrier family 12 member 5				
+53358	SHC3	SHC adaptor protein 3				
+6338	SCNN1B	sodium channel epithelial 1 beta subunit				
+326278	RPL13AP2	ribosomal protein L13a pseudogene 2				
+114822	RHPN1	rhophilin Rho GTPase binding protein 1				
+8601	RGS20	regulator of G protein signaling 20				
+3516	RBPJ	recombination signal binding protein for immunoglobulin kappa J region				
+138046	RALYL	RALY RNA binding protein like				
+5426	POLE	DNA polymerase epsilon, catalytic subunit				
+54872	PIGG	phosphatidylinositol glycan anchor biosynthesis class G				
+5047	PAEP	progestagen associated endometrial protein				
+29991	OBP2A	odorant binding protein 2A				
+57224	NHSL1	NHS like 1				
+4193	MDM2	MDM2 proto-oncogene				
+79888	LPCAT1	lysophosphatidylcholine acyltransferase 1				
+90632	LINC00473	long intergenic non-protein coding RNA 473				
+401944	LDLRAD2	low density lipoprotein receptor class A domain containing 2				
+402665	IGLON5	IgLON family member 5				
+352887	GYG2P1	glycogenin 2 pseudogene 1				
+8908	GYG2	glycogenin 2				
+121355	GTSF1	gametocyte specific factor 1				
+2796	GNRH1	gonadotropin releasing hormone 1				
+84850	GLIS3-AS1	GLIS3 antisense RNA 1				
+2710	GK	glycerol kinase				
+199720	GGN	gametogenetin				
+27023	FOXB1	forkhead box B1				
+56776	FMN2	formin 2				
+2324	FLT4	fms related tyrosine kinase 4				
+2173	FABP7	fatty acid binding protein 7				
+90625	ERVH48-1	endogenous retrovirus group 48 member 1				
+57634	EP400	E1A binding protein p400				
+123872	DNAAF1	dynein axonemal assembly factor 1				
+389903	CSAG3	CSAG family member 3				
+158511	CSAG1	chondrosarcoma associated gene 1				
+1392	CRH	corticotropin releasing hormone				
+1258	CNGB1	cyclic nucleotide gated channel beta 1				
+9076	CLDN1	claudin 1				
+26038	CHD5	chromodomain helicase DNA binding protein 5				
+752014	CEMP1	cementum protein 1				
+401577	CD99P1	CD99 molecule pseudogene 1				
+57172	CAMK1G	calcium/calmodulin dependent protein kinase IG				
+618	BCYRN1	brain cytoplasmic RNA 1				
+83875	BCO2	beta-carotene oxygenase 2				
+421	ARVCF	ARVCF, delta catenin family member				
+23779	ARHGAP8	Rho GTPase activating protein 8				
+10053	AP1M2	adaptor related protein complex 1 subunit mu 2				
+144193	AMDHD1	amidohydrolase domain containing 1				
+8092	ALX1	ALX homeobox 1				
+57491	AHRR	aryl-hydrocarbon receptor repressor				
+80221	ACSF2	acyl-CoA synthetase family member 2				
+6833	ABCC8	ATP binding cassette subfamily C member 8				

@@ -1,0 +1,123 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	4
+# genesets in collections:	1379
+# genes in comparison (n):	104
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+HALLMARK_DNA_REPAIR	150	Genes involved in DNA repair.	6	0.04	1.275e-6	0.001758
+HALLMARK_OXIDATIVE_PHOSPHORYLATION	200	Genes encoding proteins involved in oxidative phosphorylation.	6	0.03	6.709e-6	0.004626
+REACTOME_PURINE_METABOLISM	33	Genes involved in Purine metabolism	3	0.09091	5.846e-5	0.02617
+REACTOME_RESPIRATORY_ELECTRON_TRANSPORT_ATP_SYNTHESIS_BY_CHEMIOSMOTIC_COUPLING_AND_HEAT_PRODUCTION_BY_UNCOUPLING_PROTEINS_	98	Genes involved in Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.	4	0.04082	7.591e-5	0.02617
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	HALLMARK_DNA_REPAIR	HALLMARK_OXIDATIVE_PHOSPHORYLATION	REACTOME_PURINE_METABOLISM	REACTOME_RESPIRATORY_ELECTRON_TRANSPORT_ATP_SYNTHESIS_BY_CHEMIOSMOTIC_COUPLING_AND_HEAT_PRODUCTION_BY_UNCOUPLING_PROTEINS_
+30833	NT5C	5', 3'-nucleotidase, cytosolic	HALLMARK_DNA_REPAIR		REACTOME_PURINE_METABOLISM	
+1716	DGUOK	deoxyguanosine kinase	HALLMARK_DNA_REPAIR		REACTOME_PURINE_METABOLISM	
+353	APRT	adenine phosphoribosyltransferase	HALLMARK_DNA_REPAIR		REACTOME_PURINE_METABOLISM	
+3704	ITPA	inosine triphosphatase	HALLMARK_DNA_REPAIR			
+8721	EDF1	endothelial differentiation related factor 1	HALLMARK_DNA_REPAIR			
+NA	DFNA5	NA	HALLMARK_DNA_REPAIR			
+4726	NDUFS6	NADH:ubiquinone oxidoreductase subunit S6		HALLMARK_OXIDATIVE_PHOSPHORYLATION		REACTOME_RESPIRATORY_ELECTRON_TRANSPORT_ATP_SYNTHESIS_BY_CHEMIOSMOTIC_COUPLING_AND_HEAT_PRODUCTION_BY_UNCOUPLING_PROTEINS_
+4696	NDUFA3	NADH:ubiquinone oxidoreductase subunit A3		HALLMARK_OXIDATIVE_PHOSPHORYLATION		REACTOME_RESPIRATORY_ELECTRON_TRANSPORT_ATP_SYNTHESIS_BY_CHEMIOSMOTIC_COUPLING_AND_HEAT_PRODUCTION_BY_UNCOUPLING_PROTEINS_
+NA	ATP5I	NA		HALLMARK_OXIDATIVE_PHOSPHORYLATION		REACTOME_RESPIRATORY_ELECTRON_TRANSPORT_ATP_SYNTHESIS_BY_CHEMIOSMOTIC_COUPLING_AND_HEAT_PRODUCTION_BY_UNCOUPLING_PROTEINS_
+6183	MRPS12	mitochondrial ribosomal protein S12		HALLMARK_OXIDATIVE_PHOSPHORYLATION		
+64981	MRPL34	mitochondrial ribosomal protein L34		HALLMARK_OXIDATIVE_PHOSPHORYLATION		
+3028	HSD17B10	hydroxysteroid 17-beta dehydrogenase 10		HALLMARK_OXIDATIVE_PHOSPHORYLATION		
+51079	NDUFA13	NADH:ubiquinone oxidoreductase subunit A13				REACTOME_RESPIRATORY_ELECTRON_TRANSPORT_ATP_SYNTHESIS_BY_CHEMIOSMOTIC_COUPLING_AND_HEAT_PRODUCTION_BY_UNCOUPLING_PROTEINS_
+25925	ZNF521	zinc finger protein 521				
+126299	ZNF428	zinc finger protein 428				
+349136	WDR86	WD repeat domain 86				
+23559	WBP1	WW domain binding protein 1				
+55621	TRMT1	tRNA methyltransferase 1				
+79090	TRAPPC6A	trafficking protein particle complex 6A				
+23495	TNFRSF13B	TNF receptor superfamily member 13B				
+54958	TMEM160	transmembrane protein 160				
+7108	TM7SF2	transmembrane 7 superfamily member 2				
+200132	TCTEX1D1	Tctex1 domain containing 1				
+9623	TCL1B	T cell leukemia/lymphoma 1B				
+1155	TBCB	tubulin folding cofactor B				
+NA	TBC1D27	NA				
+57620	STIM2	stromal interaction molecule 2				
+10534	SSSCA1	Sjogren syndrome/scleroderma autoantigen 1				
+8636	SSNA1	SS nuclear autoantigen 1				
+79856	SNX22	sorting nexin 22				
+6634	SNRPD3	small nuclear ribonucleoprotein D3 polypeptide				
+9304	SNORD22	small nucleolar RNA, C/D box 22				
+735301	SNHG9	small nucleolar RNA host gene 9				
+91582	RPS19BP1	ribosomal protein S19 binding protein 1				
+6132	RPL8	ribosomal protein L8				
+285785	RPL39P3	ribosomal protein L39 pseudogene 3				
+8625	RFXANK	regulatory factor X associated ankyrin containing protein				
+285613	RELL2	RELT like 2				
+9985	REC8	REC8 meiotic recombination protein				
+53916	RAB4B	RAB4B, member RAS oncogene family				
+53917	RAB24	RAB24, member RAS oncogene family				
+5790	PTPRCAP	protein tyrosine phosphatase, receptor type C associated protein				
+389362	PSMG4	proteasome assembly chaperone 4				
+5721	PSME2	proteasome activator subunit 2				
+28227	PPP2R3B	protein phosphatase 2 regulatory subunit B''beta				
+10471	PFDN6	prefoldin subunit 6				
+5179	PENK	proenkephalin				
+51025	PAM16	presequence translocase associated motor 16				
+5032	P2RY11	purinergic receptor P2Y11				
+4521	NUDT1	nudix hydrolase 1				
+197370	NSMCE1	NSE1 homolog, SMC5-SMC6 complex component				
+51070	NOSIP	nitric oxide synthase interacting protein				
+51491	NOP16	NOP16 nucleolar protein				
+NA	NHP2L1	NA				
+79661	NEIL1	nei like DNA glycosylase 1				
+26151	NAT9	N-acetyltransferase 9 (putative)				
+8260	NAA10	N(alpha)-acetyltransferase 10, NatA catalytic subunit				
+4636	MYL5	myosin light chain 5				
+65993	MRPS34	mitochondrial ribosomal protein S34				
+54460	MRPS21	mitochondrial ribosomal protein S21				
+122704	MRPL52	mitochondrial ribosomal protein L52				
+51073	MRPL4	mitochondrial ribosomal protein L4				
+64978	MRPL38	mitochondrial ribosomal protein L38				
+51069	MRPL2	mitochondrial ribosomal protein L2				
+64928	MRPL14	mitochondrial ribosomal protein L14				
+6182	MRPL12	mitochondrial ribosomal protein L12				
+219972	MPEG1	macrophage expressed 1				
+4211	MEIS1	Meis homeobox 1				
+255231	MCOLN2	mucolipin 2				
+6300	MAPK12	mitogen-activated protein kinase 12				
+80774	LIMD2	LIM domain containing 2				
+401944	LDLRAD2	low density lipoprotein receptor class A domain containing 2				
+100431172	KLRF2	killer cell lectin like receptor F2				
+100528032	KLRC4-KLRK1	KLRC4-KLRK1 readthrough				
+51305	KCNK9	potassium two pore domain channel subfamily K member 9				
+28793	IGLV3-25	immunoglobulin lambda variable 3-25				
+28831	IGLJ3	immunoglobulin lambda joining 3				
+28445	IGHV3-20	immunoglobulin heavy variable 3-20				
+3336	HSPE1	heat shock protein family E (Hsp10) member 1				
+3299	HSF4	heat shock transcription factor 4				
+3205	HOXA9	homeobox A9				
+3202	HOXA5	homeobox A5				
+3200	HOXA3	homeobox A3				
+23015	GOLGA8A	golgin A8 family member A				
+2696	GIPR	gastric inhibitory polypeptide receptor				
+79760	GEMIN7	gem nuclear organelle associated protein 7				
+84824	FCRLA	Fc receptor like A				
+NA	FAM150B	NA				
+197342	EME2	essential meiotic structure-specific endonuclease subunit 2				
+84337	ELOF1	elongation factor 1 homolog				
+3692	EIF6	eukaryotic translation initiation factor 6				
+8666	EIF3G	eukaryotic translation initiation factor 3 subunit G				
+1760	DMPK	DM1 protein kinase				
+222256	CDHR3	cadherin related family member 3				
+11140	CDC37	cell division cycle 37				
+997	CDC34	cell division cycle 34				
+11007	CCDC85B	coiled-coil domain containing 85B				
+124093	CCDC78	coiled-coil domain containing 78				
+115098	CCDC124	coiled-coil domain containing 124				
+27113	BBC3	BCL2 binding component 3				
+54998	AURKAIP1	aurora kinase A interacting protein 1				
+550	AUP1	AUP1, lipid droplet regulating VLDL assembly factor				
+51329	ARL6IP4	ADP ribosylation factor like GTPase 6 interacting protein 4				
+8745	ADAM23	ADAM metallopeptidase domain 23				

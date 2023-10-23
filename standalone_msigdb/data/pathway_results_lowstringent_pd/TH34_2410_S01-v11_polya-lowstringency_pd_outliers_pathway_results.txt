@@ -1,0 +1,167 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	10
+# genesets in collections:	1379
+# genes in comparison (n):	142
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	16	0.01556	1.372e-7	1.892e-4
+HALLMARK_UV_RESPONSE_UP	158	Genes up-regulated in response to ultraviolet (UV) radiation.	6	0.03797	1.045e-5	0.004802
+NABA_ECM_REGULATORS	238	Genes encoding enzymes and their regulators involved in the remodeling of the extracellular matrix	7	0.02941	1.005e-5	0.004802
+KEGG_GLYCOSAMINOGLYCAN_DEGRADATION	21	Glycosaminoglycan degradation	3	0.1429	3.688e-5	0.01271
+REACTOME_SIGNALING_BY_ERBB4	90	Genes involved in Signaling by ERBB4	4	0.04444	1.817e-4	0.03453
+REACTOME_NUCLEAR_SIGNALING_BY_ERBB4	38	Genes involved in Nuclear signaling by ERBB4	3	0.07895	2.251e-4	0.03453
+REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION	87	Genes involved in Extracellular matrix organization	4	0.04598	1.594e-4	0.03453
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	6	0.02182	2.254e-4	0.03453
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	10	0.01328	1.255e-4	0.03453
+NABA_COLLAGENS	44	Genes encoding collagen proteins	3	0.06818	3.486e-4	0.04807
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_MATRISOME	HALLMARK_UV_RESPONSE_UP	NABA_ECM_REGULATORS	KEGG_GLYCOSAMINOGLYCAN_DEGRADATION	REACTOME_SIGNALING_BY_ERBB4	REACTOME_NUCLEAR_SIGNALING_BY_ERBB4	REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION	NABA_CORE_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_COLLAGENS
+8692	HYAL2	hyaluronidase 2	NABA_MATRISOME	HALLMARK_UV_RESPONSE_UP	NABA_ECM_REGULATORS	KEGG_GLYCOSAMINOGLYCAN_DEGRADATION					NABA_MATRISOME_ASSOCIATED	
+1280	COL2A1	collagen type II alpha 1 chain	NABA_MATRISOME	HALLMARK_UV_RESPONSE_UP					REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION	NABA_CORE_MATRISOME		NABA_COLLAGENS
+4324	MMP15	matrix metallopeptidase 15	NABA_MATRISOME		NABA_ECM_REGULATORS				REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION		NABA_MATRISOME_ASSOCIATED	
+4320	MMP11	matrix metallopeptidase 11	NABA_MATRISOME		NABA_ECM_REGULATORS				REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION		NABA_MATRISOME_ASSOCIATED	
+1515	CTSV	cathepsin V	NABA_MATRISOME		NABA_ECM_REGULATORS						NABA_MATRISOME_ASSOCIATED	
+284018	C17orf58	chromosome 17 open reading frame 58	NABA_MATRISOME		NABA_ECM_REGULATORS						NABA_MATRISOME_ASSOCIATED	
+171019	ADAMTS19	ADAM metallopeptidase with thrombospondin type 1 motif 19	NABA_MATRISOME		NABA_ECM_REGULATORS						NABA_MATRISOME_ASSOCIATED	
+80332	ADAM33	ADAM metallopeptidase domain 33	NABA_MATRISOME		NABA_ECM_REGULATORS						NABA_MATRISOME_ASSOCIATED	
+85301	COL27A1	collagen type XXVII alpha 1 chain	NABA_MATRISOME						REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION	NABA_CORE_MATRISOME		NABA_COLLAGENS
+136227	COL26A1	collagen type XXVI alpha 1 chain	NABA_MATRISOME							NABA_CORE_MATRISOME		NABA_COLLAGENS
+3909	LAMA3	laminin subunit alpha 3	NABA_MATRISOME							NABA_CORE_MATRISOME		
+2621	GAS6	growth arrest specific 6	NABA_MATRISOME							NABA_CORE_MATRISOME		
+78987	CRELD1	cysteine rich with EGF like domains 1	NABA_MATRISOME							NABA_CORE_MATRISOME		
+7481	WNT11	Wnt family member 11	NABA_MATRISOME								NABA_MATRISOME_ASSOCIATED	
+4192	MDK	midkine	NABA_MATRISOME								NABA_MATRISOME_ASSOCIATED	
+6320	CLEC11A	C-type lectin domain containing 11A	NABA_MATRISOME								NABA_MATRISOME_ASSOCIATED	
+3164	NR4A1	nuclear receptor subfamily 4 group A member 1		HALLMARK_UV_RESPONSE_UP			REACTOME_SIGNALING_BY_ERBB4					
+10482	NXF1	nuclear RNA export factor 1		HALLMARK_UV_RESPONSE_UP								
+1028	CDKN1C	cyclin dependent kinase inhibitor 1C		HALLMARK_UV_RESPONSE_UP								
+5243	ABCB1	ATP binding cassette subfamily B member 1		HALLMARK_UV_RESPONSE_UP								
+6448	SGSH	N-sulfoglucosamine sulfohydrolase				KEGG_GLYCOSAMINOGLYCAN_DEGRADATION						
+3425	IDUA	iduronidase, alpha-L-				KEGG_GLYCOSAMINOGLYCAN_DEGRADATION						
+25970	SH2B1	SH2B adaptor protein 1					REACTOME_SIGNALING_BY_ERBB4	REACTOME_NUCLEAR_SIGNALING_BY_ERBB4				
+5241	PGR	progesterone receptor					REACTOME_SIGNALING_BY_ERBB4	REACTOME_NUCLEAR_SIGNALING_BY_ERBB4				
+2099	ESR1	estrogen receptor 1					REACTOME_SIGNALING_BY_ERBB4	REACTOME_NUCLEAR_SIGNALING_BY_ERBB4				
+9658	ZNF516	zinc finger protein 516										
+170261	ZCCHC12	zinc finger CCHC-type containing 12										
+3104	ZBTB48	zinc finger and BTB domain containing 48										
+7490	WT1	Wilms tumor 1										
+84313	VPS25	vacuolar protein sorting 25 homolog										
+7425	VGF	VGF nerve growth factor inducible										
+80146	UXS1	UDP-glucuronate decarboxylase 1										
+117581	TWIST2	twist family bHLH transcription factor 2										
+85378	TUBGCP6	tubulin gamma complex associated protein 6										
+7265	TTC1	tetratricopeptide repeat domain 1										
+83707	TRPT1	tRNA phosphotransferase 1										
+27037	TRMT2A	tRNA methyltransferase 2 homolog A										
+81786	TRIM7	tripartite motif containing 7										
+10758	TRAF3IP2	TRAF3 interacting protein 2										
+124842	TMEM132E	transmembrane protein 132E										
+144404	TMEM120B	transmembrane protein 120B										
+9894	TELO2	telomere maintenance 2										
+6746	SSR2	signal sequence receptor subunit 2										
+90864	SPSB3	splA/ryanodine receptor domain and SOCS box containing 3										
+6642	SNX1	sorting nexin 1										
+55244	SLC47A1	solute carrier family 47 member 1										
+6580	SLC22A1	solute carrier family 22 member 1										
+27352	SGSM3	small G protein signaling modulator 3										
+56475	RPRM	reprimo, TP53 dependent G2 arrest mediator homolog										
+388344	RPL13P12	ribosomal protein L13 pseudogene 12										
+64221	ROBO3	roundabout guidance receptor 3										
+10180	RBM6	RNA binding motif protein 6										
+65997	RASL11B	RAS like family 11 member B										
+10267	RAMP1	receptor activity modifying protein 1										
+5745	PTH1R	parathyroid hormone 1 receptor										
+5662	PSD	pleckstrin and Sec7 domain containing										
+28227	PPP2R3B	protein phosphatase 2 regulatory subunit B''beta										
+5522	PPP2R2C	protein phosphatase 2 regulatory subunit Bgamma										
+54776	PPP1R12C	protein phosphatase 1 regulatory subunit 12C										
+57595	PDZD4	PDZ domain containing 4										
+5098	PCDHGC3	protocadherin gamma subfamily C, 3										
+9506	PAGE4	PAGE family member 4										
+116039	OSR2	odd-skipped related transciption factor 2										
+114876	OSBPL1A	oxysterol binding protein like 1A										
+4947	OAZ2	ornithine decarboxylase antizyme 2										
+260294	NSUN5P2	NOP2/Sun RNA methyltransferase family member 5 pseudogene 2										
+4900	NRGN	neurogranin										
+4884	NPTX1	neuronal pentraxin 1										
+4882	NPR2	natriuretic peptide receptor 2										
+56654	NPDC1	neural proliferation, differentiation and control 1										
+80022	MYO15B	myosin XVB										
+80198	MUS81	MUS81 structure-specific endonuclease subunit										
+79006	METRN	meteorin, glial cell differentiation regulator										
+150365	MEI1	meiotic double-stranded break formation protein 1										
+29079	MED4	mediator complex subunit 4										
+81857	MED25	mediator complex subunit 25										
+5600	MAPK11	mitogen-activated protein kinase 11										
+4123	MAN2C1	mannosidase alpha class 2C member 1										
+51176	LEF1	lymphoid enhancer binding factor 1										
+158062	LCN6	lipocalin 6										
+10365	KLF2	Kruppel like factor 2										
+653319	KIAA0895L	KIAA0895 like										
+9424	KCNK6	potassium two pore domain channel subfamily K member 6										
+9445	ITM2B	integral membrane protein 2B										
+51015	ISOC1	isochorismatase domain containing 1										
+196294	IMMP1L	inner mitochondrial membrane peptidase subunit 1										
+84966	IGSF21	immunoglobin superfamily member 21										
+112752	IFT43	intraflagellar transport 43										
+10410	IFITM3	interferon induced transmembrane protein 3										
+10581	IFITM2	interferon induced transmembrane protein 2										
+3241	HPCAL1	hippocalcin like 1										
+3235	HOXD9	homeobox D9										
+3233	HOXD4	homeobox D4										
+3232	HOXD3	homeobox D3										
+3237	HOXD11	homeobox D11										
+3236	HOXD10	homeobox D10										
+3202	HOXA5	homeobox A5										
+3207	HOXA11	homeobox A11										
+55502	HES6	hes family bHLH transcription factor 6										
+57801	HES4	hes family bHLH transcription factor 4										
+9464	HAND2	heart and neural crest derivatives expressed 2										
+84264	HAGHL	hydroxyacylglutathione hydrolase like										
+2675	GFRA2	GDNF family receptor alpha 2										
+2217	FCGRT	Fc fragment of IgG receptor and transporter										
+NA	FBXO18	NA										
+375061	FAM89A	family with sequence similarity 89 member A										
+25817	FAM19A5	family with sequence similarity 19 member A5, C-C motif chemokine like										
+65990	FAM173A	family with sequence similarity 173 member A										
+2077	ERF	ETS2 repressor factor										
+2051	EPHB6	EPH receptor B6										
+5168	ENPP2	ectonucleotide pyrophosphatase/phosphodiesterase 2										
+196047	EMX2OS	EMX2 opposite strand/antisense RNA										
+2018	EMX2	empty spiracles homeobox 2										
+1944	EFNA3	ephrin A3										
+133283	EEF1A1P13	eukaryotic translation elongation factor 1 alpha 1 pseudogene 13										
+9427	ECEL1	endothelin converting enzyme like 1										
+1804	DPP6	dipeptidyl peptidase like 6										
+22943	DKK1	dickkopf WNT signaling pathway inhibitor 1										
+27147	DENND2A	DENN domain containing 2A										
+NA	CXorf36	NA										
+404217	CTXN1	cortexin 1										
+1416	CRYBB2P1	crystallin beta B2 pseudogene 1										
+1394	CRHR1	corticotropin releasing hormone receptor 1										
+4435	CITED1	Cbp/p300 interacting transactivator with Glu/Asp rich carboxy-terminal domain 1										
+64377	CHST8	carbohydrate sulfotransferase 8										
+1120	CHKB	choline kinase beta										
+11140	CDC37	cell division cycle 37										
+401115	C4orf48	chromosome 4 open reading frame 48										
+NA	C21orf2	NA										
+NA	C1orf123	NA										
+NA	C19orf60	NA										
+590	BCHE	butyrylcholinesterase										
+483	ATP1B3	ATPase Na+/K+ transporting subunit beta 3										
+482	ATP1B2	ATPase Na+/K+ transporting subunit beta 2										
+23245	ASTN2	astrotactin 2										
+138649	ANKRD19P	ankyrin repeat domain 19, pseudogene										
+216	ALDH1A1	aldehyde dehydrogenase 1 family member A1										
+84632	AFAP1L2	actin filament associated protein 1 like 2										
+152	ADRA2C	adrenoceptor alpha 2C										
+196883	ADCY4	adenylate cyclase 4										
+37	ACADVL	acyl-CoA dehydrogenase very long chain										
+11194	ABCB8	ATP binding cassette subfamily B member 8										
