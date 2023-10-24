@@ -1,0 +1,229 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	18
+# genesets in collections:	1379
+# genes in comparison (n):	196
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+KEGG_SPLICEOSOME	128	Spliceosome	11	0.08594	1.009e-11	1.391e-8
+REACTOME_MRNA_3_END_PROCESSING	35	Genes involved in mRNA 3'-end processing	6	0.1714	8.161e-9	5.627e-6
+REACTOME_MRNA_PROCESSING	161	Genes involved in mRNA Processing	9	0.0559	3.544e-8	9.775e-6
+REACTOME_MRNA_SPLICING	111	Genes involved in mRNA Splicing	8	0.07207	2.877e-8	9.775e-6
+REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_	44	Genes involved in Cleavage of Growing Transcript in the Termination Region	6	0.1364	3.438e-8	9.775e-6
+REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA	140	Genes involved in Processing of Capped Intron-Containing Pre-mRNA	8	0.05714	1.751e-7	4.024e-5
+REACTOME_RNA_POL_II_TRANSCRIPTION	105	Genes involved in RNA Polymerase II Transcription	7	0.06667	3.686e-7	6.354e-5
+REACTOME_TRANSCRIPTION	210	Genes involved in Transcription	9	0.04286	3.417e-7	6.354e-5
+REACTOME_MITOCHONDRIAL_TRNA_AMINOACYLATION	21	Genes involved in Mitochondrial tRNA aminoacylation	4	0.1905	1.814e-6	2.78e-4
+REACTOME_TRANSPORT_OF_MATURE_TRANSCRIPT_TO_CYTOPLASM	54	Genes involved in Transport of Mature Transcript to Cytoplasm	5	0.09259	3.578e-6	4.934e-4
+PID_MYC_REPRESS_PATHWAY	63	Validated targets of C-MYC transcriptional repression	5	0.07937	7.709e-6	9.665e-4
+KEGG_AMINOACYL_TRNA_BIOSYNTHESIS	41	Aminoacyl-tRNA biosynthesis	4	0.09756	2.872e-5	0.003297
+PID_ERB_GENOMIC_PATHWAY	15	Validated nuclear estrogen receptor beta network	3	0.2	3.347e-5	0.003297
+REACTOME_TRNA_AMINOACYLATION	42	Genes involved in tRNA Aminoacylation	4	0.09524	3.163e-5	0.003297
+REACTOME_APOPTOSIS	148	Genes involved in Apoptosis	5	0.03378	4.525e-4	0.0416
+HALLMARK_IL6_JAK_STAT3_SIGNALING	87	Genes up-regulated by IL6 [GeneID=3569] via STAT3 [GeneID=6774], e.g., during acute phase response.	4	0.04598	5.417e-4	0.04663
+REACTOME_METABOLISM_OF_RNA	330	Genes involved in Metabolism of RNA	7	0.02121	5.749e-4	0.04663
+HALLMARK_UV_RESPONSE_UP	158	Genes up-regulated in response to ultraviolet (UV) radiation.	5	0.03165	6.09e-4	0.04666
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	KEGG_SPLICEOSOME	REACTOME_MRNA_3_END_PROCESSING	REACTOME_MRNA_PROCESSING	REACTOME_MRNA_SPLICING	REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_	REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA	REACTOME_RNA_POL_II_TRANSCRIPTION	REACTOME_TRANSCRIPTION	REACTOME_MITOCHONDRIAL_TRNA_AMINOACYLATION	REACTOME_TRANSPORT_OF_MATURE_TRANSCRIPT_TO_CYTOPLASM	PID_MYC_REPRESS_PATHWAY	KEGG_AMINOACYL_TRNA_BIOSYNTHESIS	PID_ERB_GENOMIC_PATHWAY	REACTOME_TRNA_AMINOACYLATION	REACTOME_APOPTOSIS	HALLMARK_IL6_JAK_STAT3_SIGNALING	REACTOME_METABOLISM_OF_RNA	HALLMARK_UV_RESPONSE_UP
+9939	RBM8A	RNA binding motif protein 8A	KEGG_SPLICEOSOME	REACTOME_MRNA_3_END_PROCESSING	REACTOME_MRNA_PROCESSING	REACTOME_MRNA_SPLICING	REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_	REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA	REACTOME_RNA_POL_II_TRANSCRIPTION	REACTOME_TRANSCRIPTION		REACTOME_TRANSPORT_OF_MATURE_TRANSCRIPT_TO_CYTOPLASM							REACTOME_METABOLISM_OF_RNA	
+11338	U2AF2	U2 small nuclear RNA auxiliary factor 2	KEGG_SPLICEOSOME	REACTOME_MRNA_3_END_PROCESSING	REACTOME_MRNA_PROCESSING	REACTOME_MRNA_SPLICING	REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_	REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA	REACTOME_RNA_POL_II_TRANSCRIPTION	REACTOME_TRANSCRIPTION		REACTOME_TRANSPORT_OF_MATURE_TRANSCRIPT_TO_CYTOPLASM								
+9785	DHX38	DEAH-box helicase 38	KEGG_SPLICEOSOME	REACTOME_MRNA_3_END_PROCESSING	REACTOME_MRNA_PROCESSING	REACTOME_MRNA_SPLICING	REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_	REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA	REACTOME_RNA_POL_II_TRANSCRIPTION	REACTOME_TRANSCRIPTION		REACTOME_TRANSPORT_OF_MATURE_TRANSCRIPT_TO_CYTOPLASM								
+83443	SF3B5	splicing factor 3b subunit 5	KEGG_SPLICEOSOME		REACTOME_MRNA_PROCESSING	REACTOME_MRNA_SPLICING		REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA												
+10946	SF3A3	splicing factor 3a subunit 3	KEGG_SPLICEOSOME		REACTOME_MRNA_PROCESSING	REACTOME_MRNA_SPLICING		REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA												
+22985	ACIN1	apoptotic chromatin condensation inducer 1	KEGG_SPLICEOSOME														REACTOME_APOPTOSIS			
+9129	PRPF3	pre-mRNA processing factor 3	KEGG_SPLICEOSOME																	HALLMARK_UV_RESPONSE_UP
+29896	TRA2A	transformer 2 alpha homolog	KEGG_SPLICEOSOME																	
+26121	PRPF31	pre-mRNA processing factor 31	KEGG_SPLICEOSOME																	
+3310	HSPA6	heat shock protein family A (Hsp70) member 6	KEGG_SPLICEOSOME																	
+8449	DHX16	DEAH-box helicase 16	KEGG_SPLICEOSOME																	
+65109	UPF3B	UPF3B, regulator of nonsense mediated mRNA decay		REACTOME_MRNA_3_END_PROCESSING	REACTOME_MRNA_PROCESSING	REACTOME_MRNA_SPLICING	REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_	REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA	REACTOME_RNA_POL_II_TRANSCRIPTION	REACTOME_TRANSCRIPTION		REACTOME_TRANSPORT_OF_MATURE_TRANSCRIPT_TO_CYTOPLASM							REACTOME_METABOLISM_OF_RNA	
+51692	CPSF3	cleavage and polyadenylation specific factor 3		REACTOME_MRNA_3_END_PROCESSING	REACTOME_MRNA_PROCESSING	REACTOME_MRNA_SPLICING	REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_	REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA	REACTOME_RNA_POL_II_TRANSCRIPTION	REACTOME_TRANSCRIPTION		REACTOME_TRANSPORT_OF_MATURE_TRANSCRIPT_TO_CYTOPLASM								
+8106	PABPN1	poly(A) binding protein nuclear 1		REACTOME_MRNA_3_END_PROCESSING	REACTOME_MRNA_PROCESSING	REACTOME_MRNA_SPLICING	REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_	REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA	REACTOME_RNA_POL_II_TRANSCRIPTION	REACTOME_TRANSCRIPTION										
+2968	GTF2H4	general transcription factor IIH subunit 4			REACTOME_MRNA_PROCESSING				REACTOME_RNA_POL_II_TRANSCRIPTION	REACTOME_TRANSCRIPTION										
+9013	TAF1C	TATA-box binding protein associated factor, RNA polymerase I subunit C								REACTOME_TRANSCRIPTION										
+661	POLR3D	RNA polymerase III subunit D								REACTOME_TRANSCRIPTION										
+80222	TARS2	threonyl-tRNA synthetase 2, mitochondrial									REACTOME_MITOCHONDRIAL_TRNA_AMINOACYLATION			KEGG_AMINOACYL_TRNA_BIOSYNTHESIS		REACTOME_TRNA_AMINOACYLATION				
+57038	RARS2	arginyl-tRNA synthetase 2, mitochondrial									REACTOME_MITOCHONDRIAL_TRNA_AMINOACYLATION			KEGG_AMINOACYL_TRNA_BIOSYNTHESIS		REACTOME_TRNA_AMINOACYLATION				
+23438	HARS2	histidyl-tRNA synthetase 2, mitochondrial									REACTOME_MITOCHONDRIAL_TRNA_AMINOACYLATION			KEGG_AMINOACYL_TRNA_BIOSYNTHESIS		REACTOME_TRNA_AMINOACYLATION				
+2617	GARS	glycyl-tRNA synthetase									REACTOME_MITOCHONDRIAL_TRNA_AMINOACYLATION			KEGG_AMINOACYL_TRNA_BIOSYNTHESIS		REACTOME_TRNA_AMINOACYLATION				
+6556	SLC11A1	solute carrier family 11 member 1											PID_MYC_REPRESS_PATHWAY							
+3398	ID2	inhibitor of DNA binding 2											PID_MYC_REPRESS_PATHWAY							
+8841	HDAC3	histone deacetylase 3											PID_MYC_REPRESS_PATHWAY							
+1788	DNMT3A	DNA methyltransferase 3 alpha											PID_MYC_REPRESS_PATHWAY							
+1649	DDIT3	DNA damage inducible transcript 3											PID_MYC_REPRESS_PATHWAY							
+9040	UBE2M	ubiquitin conjugating enzyme E2 M													PID_ERB_GENOMIC_PATHWAY					
+6605	SMARCE1	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily e, member 1													PID_ERB_GENOMIC_PATHWAY					
+4738	NEDD8	neural precursor cell expressed, developmentally down-regulated 8													PID_ERB_GENOMIC_PATHWAY					
+5710	PSMD4	proteasome 26S subunit, non-ATPase 4															REACTOME_APOPTOSIS		REACTOME_METABOLISM_OF_RNA	
+5700	PSMC1	proteasome 26S subunit, ATPase 1															REACTOME_APOPTOSIS		REACTOME_METABOLISM_OF_RNA	
+28988	DBNL	drebrin like															REACTOME_APOPTOSIS			
+54205	CYCS	cytochrome c, somatic															REACTOME_APOPTOSIS			
+3162	HMOX1	heme oxygenase 1																HALLMARK_IL6_JAK_STAT3_SIGNALING		HALLMARK_UV_RESPONSE_UP
+7297	TYK2	tyrosine kinase 2																HALLMARK_IL6_JAK_STAT3_SIGNALING		
+1441	CSF3R	colony stimulating factor 3 receptor																HALLMARK_IL6_JAK_STAT3_SIGNALING		
+1271	CNTFR	ciliary neurotrophic factor receptor																HALLMARK_IL6_JAK_STAT3_SIGNALING		
+10419	PRMT5	protein arginine methyltransferase 5																	REACTOME_METABOLISM_OF_RNA	
+23644	EDC4	enhancer of mRNA decapping 4																	REACTOME_METABOLISM_OF_RNA	
+4849	CNOT3	CCR4-NOT transcription complex subunit 3																	REACTOME_METABOLISM_OF_RNA	
+10652	YKT6	YKT6 v-SNARE homolog																		HALLMARK_UV_RESPONSE_UP
+10948	STARD3	StAR related lipid transfer domain containing 3																		HALLMARK_UV_RESPONSE_UP
+10038	PARP2	poly(ADP-ribose) polymerase 2																		HALLMARK_UV_RESPONSE_UP
+51157	ZNF580	zinc finger protein 580																		
+163033	ZNF579	zinc finger protein 579																		
+27300	ZNF544	zinc finger protein 544																		
+149076	ZNF362	zinc finger protein 362																		
+10782	ZNF274	zinc finger protein 274																		
+83637	ZMIZ2	zinc finger MIZ-type containing 2																		
+90637	ZFAND2A	zinc finger AN1-type containing 2A																		
+79844	ZDHHC11	zinc finger DHHC-type containing 11																		
+124245	ZC3H18	zinc finger CCCH-type containing 18																		
+54663	WDR74	WD repeat domain 74																		
+9277	WDR46	WD repeat domain 46																		
+7265	TTC1	tetratricopeptide repeat domain 1																		
+54210	TREM1	triggering receptor expressed on myeloid cells 1																		
+7156	TOP3A	DNA topoisomerase III alpha																		
+129787	TMEM18	transmembrane protein 18																		
+26520	TIMM9	translocase of inner mitochondrial membrane 9																		
+10469	TIMM44	translocase of inner mitochondrial membrane 44																		
+29844	TFPT	TCF3 fusion partner																		
+6949	TCOF1	treacle ribosome biogenesis factor 1																		
+9913	SUPT7L	SPT7 like, STAGA complex gamma subunit																		
+6830	SUPT6H	SPT6 homolog, histone chaperone																		
+6810	STX4	syntaxin 4																		
+27148	STK36	serine/threonine kinase 36																		
+8859	STK19	serine/threonine kinase 19																		
+6793	STK10	serine/threonine kinase 10																		
+6742	SSBP1	single stranded DNA binding protein 1																		
+6760	SS18	SS18, nBAF chromatin remodeling complex subunit																		
+6729	SRP54	signal recognition particle 54																		
+6515	SLC2A3	solute carrier family 2 member 3																		
+51312	SLC25A37	solute carrier family 25 member 37																		
+6499	SKIV2L	Ski2 like RNA helicase																		
+989	SEPT7	septin 7																		
+79005	SCNM1	sodium channel modifier 1																		
+100316904	SAP25	Sin3A associated protein 25																		
+148398	SAMD11	sterile alpha motif domain containing 11																		
+88745	RRP36	ribosomal RNA processing 36																		
+6100	RP9	RP9, pre-mRNA splicing factor																		
+55072	RNF31	ring finger protein 31																		
+64320	RNF25	ring finger protein 25																		
+115992	RNF166	ring finger protein 166																		
+246243	RNASEH1	ribonuclease H1																		
+10231	RCAN2	regulator of calcineurin 2																		
+55131	RBM28	RNA binding motif protein 28																		
+79706	PRKRIP1	PRKR interacting protein 1																		
+22870	PPP6R1	protein phosphatase 6 regulatory subunit 1																		
+54776	PPP1R12C	protein phosphatase 1 regulatory subunit 12C																		
+64208	POPDC3	popeye domain containing 3																		
+5411	PNN	pinin, desmosome associated protein																		
+8394	PIP5K1A	phosphatidylinositol-4-phosphate 5-kinase type 1 alpha																		
+221692	PHACTR1	phosphatase and actin regulator 1																		
+26167	PCDHB5	protocadherin beta 5																		
+5089	PBX2	PBX homeobox 2																		
+55593	OTUD5	OTU deubiquitinase 5																		
+55644	OSGEP	O-sialoglycoprotein endopeptidase																		
+29959	NRBP1	nuclear receptor binding protein 1																		
+4841	NONO	non-POU domain containing octamer binding																		
+51406	NOL7	nucleolar protein 7																		
+79954	NOL10	nucleolar protein 10																		
+28511	NKIRAS2	NFKB inhibitor interacting Ras like 2																		
+25983	NGDN	neuroguidin																		
+25977	NECAP1	NECAP endocytosis associated 1																		
+65220	NADK	NAD kinase																		
+4542	MYO1F	myosin IF																		
+4084	MXD1	MAX dimerization protein 1																		
+4439	MSH5	mutS homolog 5																		
+64965	MRPS9	mitochondrial ribosomal protein S9																		
+64969	MRPS5	mitochondrial ribosomal protein S5																		
+64983	MRPL32	mitochondrial ribosomal protein L32																		
+375056	MIA3	MIA SH3 domain ER export factor 3																		
+79091	METTL22	methyltransferase like 22																		
+64745	METTL17	methyltransferase like 17																		
+4212	MEIS2	Meis homeobox 2																		
+4211	MEIS1	Meis homeobox 1																		
+55384	MEG3	maternally expressed 3																		
+57192	MCOLN1	mucolipin 1																		
+5871	MAP4K2	mitogen-activated protein kinase kinase kinase kinase 2																		
+728269	MAGEA9B	MAGE family member A9B																		
+84946	LTV1	LTV1 ribosome biogenesis factor																		
+222229	LRWD1	leucine rich repeats and WD repeat domain containing 1																		
+4034	LRCH4	leucine rich repeats and calponin homology domain containing 4																		
+11025	LILRB3	leukocyte immunoglobulin like receptor B3																		
+114823	LENG8	leukocyte receptor cluster member 8																		
+3937	LCP2	lymphocyte cytosolic protein 2																		
+10319	LAMC3	laminin subunit gamma 3																		
+65095	KRI1	KRI1 homolog																		
+55975	KLHL7	kelch like family member 7																		
+10625	IVNS1ABP	influenza virus NS1A binding protein																		
+3687	ITGAX	integrin subunit alpha X																		
+55846	ITFG2	integrin alpha FG-GAP repeat containing 2																		
+3636	INPPL1	inositol polyphosphate phosphatase like 1																		
+22876	INPP5F	inositol polyphosphate-5-phosphatase F																		
+92856	IMP4	IMP4, U3 small nucleolar ribonucleoprotein																		
+3589	IL11	interleukin 11																		
+3481	IGF2	insulin like growth factor 2																		
+3475	IFRD1	interferon related developmental regulator 1																		
+3201	HOXA4	homeobox A4																		
+3200	HOXA3	homeobox A3																		
+22993	HMGXB3	HMG-box containing 3																		
+9324	HMGN3	high mobility group nucleosomal binding domain 3																		
+8843	HCAR3	hydroxycarboxylic acid receptor 3																		
+338442	HCAR2	hydroxycarboxylic acid receptor 2																		
+10007	GNPDA1	glucosamine-6-phosphate deaminase 1																		
+64599	GIGYF1	GRB10 interacting GYF protein 1																		
+51608	GET4	golgi to ER traffic protein 4																		
+50486	G0S2	G0/G1 switch 2																		
+NA	FTSJ2	NA																		
+2357	FPR1	formyl peptide receptor 1																		
+55572	FOXRED1	FAD dependent oxidoreductase domain containing 1																		
+10211	FLOT1	flotillin 1																		
+201163	FLCN	folliculin																		
+81608	FIP1L1	factor interacting with PAPOLA and CPSF1																		
+2275	FHL3	four and a half LIM domains 3																		
+2268	FGR	FGR proto-oncogene, Src family tyrosine kinase																		
+2215	FCGR3B	Fc fragment of IgG receptor IIIb																		
+54850	FBXL12	F-box and leucine rich repeat protein 12																		
+64319	FBRS	fibrosin																		
+9130	FAM50A	family with sequence similarity 50 member A																		
+80011	FAM192A	family with sequence similarity 192 member A																		
+8666	EIF3G	eukaryotic translation initiation factor 3 subunit G																		
+8662	EIF3B	eukaryotic translation initiation factor 3 subunit B																		
+1819	DRG2	developmentally regulated GTP binding protein 2																		
+55735	DNAJC11	DnaJ heat shock protein family (Hsp40) member C11																		
+9704	DHX34	DExH-box helicase 34																		
+51428	DDX41	DEAD-box helicase 41																		
+51339	DACT1	dishevelled binding antagonist of beta catenin 1																		
+54883	CWC25	CWC25 spliceosome associated protein homolog																		
+8533	COPS3	COP9 signalosome subunit 3																		
+29099	COMMD9	COMM domain containing 9																		
+57680	CHD8	chromodomain helicase DNA binding protein 8																		
+22897	CEP164	centrosomal protein 164																		
+80152	CENPT	centromere protein T																		
+984	CDK11B	cyclin dependent kinase 11B																		
+728642	CDK11A	cyclin dependent kinase 11A																		
+11140	CDC37	cell division cycle 37																		
+11314	CD300A	CD300a molecule																		
+283316	CD163L1	CD163 molecule like 1																		
+79080	CCDC86	coiled-coil domain containing 86																		
+NA	CBWD7	NA																		
+728	C5AR1	complement C5a receptor 1																		
+79169	C1orf35	chromosome 1 open reading frame 35																		
+11120	BTN2A1	butyrophilin subfamily 2 member A1																		
+25855	BRMS1	BRMS1, transcriptional repressor and anoikis regulator																		
+65980	BRD9	bromodomain containing 9																		
+91272	BOD1	biorientation of chromosomes in cell division 1																		
+597	BCL2A1	BCL2 related protein A1																		
+23192	ATG4B	autophagy related 4B cysteine peptidase																		
+23130	ATG2A	autophagy related 2A																		
+89849	ATG16L2	autophagy related 16 like 2																		
+271	AMPD2	adenosine monophosphate deaminase 2																		
+8854	ALDH1A2	aldehyde dehydrogenase 1 family member A2																		
+196883	ADCY4	adenylate cyclase 4																		
+52	ACP1	acid phosphatase 1																		
+23	ABCF1	ATP binding cassette subfamily F member 1																		

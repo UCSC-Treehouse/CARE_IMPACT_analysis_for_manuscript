@@ -1,0 +1,99 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	13
+# genesets in collections:	1379
+# genes in comparison (n):	71
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+HALLMARK_MYOGENESIS	200	Genes involved in development of skeletal muscle (myogenesis).	15	0.075	1.6480000000000001e-21	2.272e-18
+REACTOME_STRIATED_MUSCLE_CONTRACTION	27	Genes involved in Striated Muscle Contraction	6	0.2222	3.16e-12	2.179e-9
+REACTOME_MUSCLE_CONTRACTION	48	Genes involved in Muscle contraction	6	0.125	1.277e-10	5.87e-8
+KEGG_BLADDER_CANCER	42	Bladder cancer	3	0.07143	3.885e-5	0.01339
+KEGG_GLIOMA	65	Glioma	3	0.04615	1.441e-4	0.03312
+PID_RB_1PATHWAY	65	Regulation of retinoblastoma protein	3	0.04615	1.441e-4	0.03312
+KEGG_MELANOMA	71	Melanoma	3	0.04225	1.873e-4	0.03506
+KEGG_CHRONIC_MYELOID_LEUKEMIA	73	Chronic myeloid leukemia	3	0.0411	2.034e-4	0.03506
+SA_G1_AND_S_PHASES	15	Cdk2, 4, and 6 bind cyclin D in G1, while cdk2/cyclin E promotes the G1/S transition.	2	0.1333	2.439e-4	0.03737
+BIOCARTA_P53_PATHWAY	16	p53 Signaling Pathway	2	0.125	2.785e-4	0.0384
+BIOCARTA_MAL_PATHWAY	19	Role of MAL in Rho-Mediated Activation of SRF	2	0.1053	3.956e-4	0.04197
+REACTOME_SIGNALING_BY_ERBB4	90	Genes involved in Signaling by ERBB4	3	0.03333	3.77e-4	0.04197
+REACTOME_PROLONGED_ERK_ACTIVATION_EVENTS	19	Genes involved in Prolonged ERK activation events	2	0.1053	3.956e-4	0.04197
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION	KEGG_BLADDER_CANCER	KEGG_GLIOMA	PID_RB_1PATHWAY	KEGG_MELANOMA	KEGG_CHRONIC_MYELOID_LEUKEMIA	SA_G1_AND_S_PHASES	BIOCARTA_P53_PATHWAY	BIOCARTA_MAL_PATHWAY	REACTOME_SIGNALING_BY_ERBB4	REACTOME_PROLONGED_ERK_ACTIVATION_EVENTS
+7136	TNNI2	troponin I2, fast skeletal type	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION										
+8557	TCAP	titin-cap	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION										
+4632	MYL1	myosin light chain 1	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION										
+7125	TNNC2	troponin C2, fast skeletal type	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION										
+1158	CKM	creatine kinase, M-type	HALLMARK_MYOGENESIS					PID_RB_1PATHWAY							
+58	ACTA1	actin, alpha 1, skeletal muscle	HALLMARK_MYOGENESIS										BIOCARTA_MAL_PATHWAY		
+25970	SH2B1	SH2B adaptor protein 1	HALLMARK_MYOGENESIS											REACTOME_SIGNALING_BY_ERBB4	
+79629	OCEL1	occludin/ELL domain containing 1	HALLMARK_MYOGENESIS												
+29895	MYLPF	myosin light chain, phosphorylatable, fast skeletal muscle	HALLMARK_MYOGENESIS												
+2027	ENO3	enolase 3	HALLMARK_MYOGENESIS												
+4619	MYH1	myosin heavy chain 1	HALLMARK_MYOGENESIS												
+70	ACTC1	actin, alpha, cardiac muscle 1	HALLMARK_MYOGENESIS												
+4151	MB	myoglobin	HALLMARK_MYOGENESIS												
+7140	TNNT3	troponin T3, fast skeletal type	HALLMARK_MYOGENESIS												
+1339	COX6A2	cytochrome c oxidase subunit 6A2	HALLMARK_MYOGENESIS												
+4703	NEB	nebulin		REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION										
+4606	MYBPC2	myosin binding protein C, fast type		REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION										
+4193	MDM2	MDM2 proto-oncogene				KEGG_BLADDER_CANCER	KEGG_GLIOMA	PID_RB_1PATHWAY	KEGG_MELANOMA	KEGG_CHRONIC_MYELOID_LEUKEMIA	SA_G1_AND_S_PHASES	BIOCARTA_P53_PATHWAY		REACTOME_SIGNALING_BY_ERBB4	
+1019	CDK4	cyclin dependent kinase 4				KEGG_BLADDER_CANCER	KEGG_GLIOMA	PID_RB_1PATHWAY	KEGG_MELANOMA	KEGG_CHRONIC_MYELOID_LEUKEMIA	SA_G1_AND_S_PHASES	BIOCARTA_P53_PATHWAY			
+5605	MAP2K2	mitogen-activated protein kinase kinase 2				KEGG_BLADDER_CANCER	KEGG_GLIOMA		KEGG_MELANOMA	KEGG_CHRONIC_MYELOID_LEUKEMIA			BIOCARTA_MAL_PATHWAY	REACTOME_SIGNALING_BY_ERBB4	REACTOME_PROLONGED_ERK_ACTIVATION_EVENTS
+10818	FRS2	fibroblast growth factor receptor substrate 2													REACTOME_PROLONGED_ERK_ACTIVATION_EVENTS
+389125	MUSTN1	musculoskeletal, embryonic nuclear protein 1													
+89845	ABCC10	ATP binding cassette subfamily C member 10													
+NA	METTL21B	NA													
+246329	STAC3	SH3 and cysteine rich domain 3													
+285386	TPRG1	tumor protein p63 regulated 1													
+4848	CNOT2	CCR4-NOT transcription complex subunit 2													
+90379	DCAF15	DDB1 and CUL4 associated factor 15													
+3931	LCAT	lecithin-cholesterol acyltransferase													
+1917	EEF1A2	eukaryotic translation elongation factor 1 alpha 2													
+196403	DTX3	deltex E3 ubiquitin ligase 3													
+2583	B4GALNT1	beta-1,4-N-acetyl-galactosaminyltransferase 1													
+115557	ARHGEF25	Rho guanine nucleotide exchange factor 25													
+80279	CDK5RAP3	CDK5 regulatory subunit associated protein 3													
+4234	METTL1	methyltransferase like 1													
+54923	LIME1	Lck interacting transmembrane adaptor 1													
+6357	CCL13	C-C motif chemokine ligand 13													
+10106	CTDSP2	CTD small phosphatase 2													
+8771	TNFRSF6B	TNF receptor superfamily member 6b													
+9670	IPO13	importin 13													
+NA	CCDC101	NA													
+692205	SNORD89	small nucleolar RNA, C/D box 89													
+4326	MMP17	matrix metallopeptidase 17													
+81794	ADAMTS10	ADAM metallopeptidase with thrombospondin type 1 motif 10													
+10806	SDCCAG8	serologically defined colon cancer antigen 8													
+6302	TSPAN31	tetraspanin 31													
+2307	FOXS1	forkhead box S1													
+10956	OS9	OS9, endoplasmic reticulum lectin													
+1594	CYP27B1	cytochrome P450 family 27 subfamily B member 1													
+7060	THBS4	thrombospondin 4													
+91156	IGFN1	immunoglobulin-like and fibronectin type III domain containing 1													
+10576	CCT2	chaperonin containing TCP1 subunit 2													
+83719	YPEL3	yippee like 3													
+79174	CRELD2	cysteine rich with EGF like domains 2													
+8089	YEATS4	YEATS domain containing 4													
+84619	ZGPAT	zinc finger CCCH-type and G-patch domain containing													
+27345	KCNMB4	potassium calcium-activated channel subfamily M regulatory beta subunit 4													
+NA	XRCC6BP1	NA													
+126075	CCDC159	coiled-coil domain containing 159													
+9622	KLK4	kallikrein related peptidase 4													
+3754	KCNF1	potassium voltage-gated channel modifier subfamily F member 1													
+65012	SLC26A10	solute carrier family 26 member 10													
+5322	PLA2G5	phospholipase A2 group V													
+374666	WASH3P	WAS protein family homolog 3, pseudogene													
+9244	CRLF1	cytokine receptor like factor 1													
+10677	AVIL	advillin													
+10102	TSFM	Ts translation elongation factor, mitochondrial													
+92979	MARCH9	membrane associated ring-CH-type finger 9													
+7297	TYK2	tyrosine kinase 2													
+149954	BPIFB4	BPI fold containing family B member 4													
+117177	RAB3IP	RAB3A interacting protein													

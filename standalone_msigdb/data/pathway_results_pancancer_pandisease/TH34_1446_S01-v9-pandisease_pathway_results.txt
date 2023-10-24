@@ -1,0 +1,74 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	14
+# genesets in collections:	1379
+# genes in comparison (n):	45
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	7	0.02545	9.511e-9	1.312e-5
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	10	0.009728	4.712e-8	3.249e-5
+HALLMARK_MYOGENESIS	200	Genes involved in development of skeletal muscle (myogenesis).	5	0.025	1.575e-6	5.429e-4
+HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	200	Genes defining epithelial-mesenchymal transition, as in wound healing, fibrosis and metastasis.	5	0.025	1.575e-6	5.429e-4
+NABA_COLLAGENS	44	Genes encoding collagen proteins	3	0.06818	1.13e-5	0.003116
+REACTOME_COLLAGEN_FORMATION	58	Genes involved in Collagen formation	3	0.05172	2.607e-5	0.005991
+HALLMARK_TNFA_SIGNALING_VIA_NFKB	200	Genes regulated by NF-kB in response to TNF [GeneID=7124].	4	0.02	4.51e-5	0.008884
+PID_AVB3_INTEGRIN_PATHWAY	75	Integrins in angiogenesis	3	0.04	5.639e-5	0.00972
+REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION	87	Genes involved in Extracellular matrix organization	3	0.03448	8.779e-5	0.01345
+PID_S1P_S1P1_PATHWAY	21	S1P1 pathway	2	0.09524	1.946e-4	0.02683
+HALLMARK_COAGULATION	138	Genes encoding components of blood coagulation system; also up-regulated in platelets.	3	0.02174	3.428e-4	0.03699
+BIOCARTA_EDG1_PATHWAY	27	Phospholipids as signalling intermediaries	2	0.07407	3.24e-4	0.03699
+PID_WNT_SIGNALING_PATHWAY	28	Wnt signaling network	2	0.07143	3.487e-4	0.03699
+PID_AVB3_OPN_PATHWAY	31	Osteopontin-mediated events	2	0.06452	4.281e-4	0.04217
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_CORE_MATRISOME	NABA_MATRISOME	HALLMARK_MYOGENESIS	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	NABA_COLLAGENS	REACTOME_COLLAGEN_FORMATION	HALLMARK_TNFA_SIGNALING_VIA_NFKB	PID_AVB3_INTEGRIN_PATHWAY	REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION	PID_S1P_S1P1_PATHWAY	HALLMARK_COAGULATION	BIOCARTA_EDG1_PATHWAY	PID_WNT_SIGNALING_PATHWAY	PID_AVB3_OPN_PATHWAY
+1303	COL12A1	collagen type XII alpha 1 chain	NABA_CORE_MATRISOME	NABA_MATRISOME		HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	NABA_COLLAGENS	REACTOME_COLLAGEN_FORMATION		PID_AVB3_INTEGRIN_PATHWAY	REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION					
+115908	CTHRC1	collagen triple helix repeat containing 1	NABA_CORE_MATRISOME	NABA_MATRISOME		HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION									PID_WNT_SIGNALING_PATHWAY	
+1305	COL13A1	collagen type XIII alpha 1 chain	NABA_CORE_MATRISOME	NABA_MATRISOME			NABA_COLLAGENS	REACTOME_COLLAGEN_FORMATION		PID_AVB3_INTEGRIN_PATHWAY	REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION					
+169044	COL22A1	collagen type XXII alpha 1 chain	NABA_CORE_MATRISOME	NABA_MATRISOME			NABA_COLLAGENS	REACTOME_COLLAGEN_FORMATION			REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION					
+163175	LGI4	leucine rich repeat LGI family member 4	NABA_CORE_MATRISOME	NABA_MATRISOME												
+79883	PODNL1	podocan like 1	NABA_CORE_MATRISOME	NABA_MATRISOME												
+7060	THBS4	thrombospondin 4	NABA_CORE_MATRISOME	NABA_MATRISOME												
+10468	FST	follistatin		NABA_MATRISOME	HALLMARK_MYOGENESIS											
+5055	SERPINB2	serpin family B member 2		NABA_MATRISOME					HALLMARK_TNFA_SIGNALING_VIA_NFKB				HALLMARK_COAGULATION			
+2668	GDNF	glial cell derived neurotrophic factor		NABA_MATRISOME												
+8877	SPHK1	sphingosine kinase 1			HALLMARK_MYOGENESIS				HALLMARK_TNFA_SIGNALING_VIA_NFKB			PID_S1P_S1P1_PATHWAY		BIOCARTA_EDG1_PATHWAY		
+2934	GSN	gelsolin			HALLMARK_MYOGENESIS								HALLMARK_COAGULATION			PID_AVB3_OPN_PATHWAY
+6649	SOD3	superoxide dismutase 3			HALLMARK_MYOGENESIS											
+347	APOD	apolipoprotein D			HALLMARK_MYOGENESIS											
+3690	ITGB3	integrin subunit beta 3				HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION				PID_AVB3_INTEGRIN_PATHWAY		PID_S1P_S1P1_PATHWAY	HALLMARK_COAGULATION	BIOCARTA_EDG1_PATHWAY		PID_AVB3_OPN_PATHWAY
+22943	DKK1	dickkopf WNT signaling pathway inhibitor 1				HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION									PID_WNT_SIGNALING_PATHWAY	
+6641	SNTB1	syntrophin beta 1				HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION										
+10365	KLF2	Kruppel like factor 2							HALLMARK_TNFA_SIGNALING_VIA_NFKB							
+7262	PHLDA2	pleckstrin homology like domain family A member 2							HALLMARK_TNFA_SIGNALING_VIA_NFKB							
+375719	AQP7P1	aquaporin 7 pseudogene 1														
+54997	TESC	tescalcin														
+79778	MICALL2	MICAL like 2														
+25894	PLEKHG4	pleckstrin homology and RhoGEF domain containing G4														
+283131	NEAT1	nuclear paraspeckle assembly transcript 1														
+149111	CNIH3	cornichon family AMPA receptor auxiliary protein 3														
+29906	ST8SIA5	ST8 alpha-N-acetyl-neuraminide alpha-2,8-sialyltransferase 5														
+NA	MFI2	NA														
+1604	CD55	CD55 molecule (Cromer blood group)														
+1836	SLC26A2	solute carrier family 26 member 2														
+64968	MRPS6	mitochondrial ribosomal protein S6														
+254102	EHBP1L1	EH domain binding protein 1 like 1														
+59341	TRPV4	transient receptor potential cation channel subfamily V member 4														
+728577	CNTNAP3B	contactin associated protein like 3B														
+79054	TRPM8	transient receptor potential cation channel subfamily M member 8														
+84824	FCRLA	Fc receptor like A														
+220	ALDH1A3	aldehyde dehydrogenase 1 family member A3														
+90226	UCN2	urocortin 2														
+54862	CC2D1A	coiled-coil and C2 domain containing 1A														
+NA	C2orf82	NA														
+8496	PPFIBP1	PPFIA binding protein 1														
+6642	SNX1	sorting nexin 1														
+2042	EPHA3	EPH receptor A3														
+8190	MIA	MIA SH3 domain containing														
+5420	PODXL	podocalyxin like														
+53827	FXYD5	FXYD domain containing ion transport regulator 5														

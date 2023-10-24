@@ -1,0 +1,108 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	4
+# genesets in collections:	1379
+# genes in comparison (n):	89
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_ECM_AFFILIATED	171	Genes encoding proteins affiliated structurally or functionally to extracellular matrix proteins	7	0.04094	4.653e-8	6.417e-5
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	11	0.0107	4.956e-6	0.003417
+REACTOME_TERMINATION_OF_O_GLYCAN_BIOSYNTHESIS	24	Genes involved in Termination of O-glycan biosynthesis	3	0.125	1.38e-5	0.006342
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	8	0.01062	1.1e-4	0.03794
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_ECM_AFFILIATED	NABA_MATRISOME	REACTOME_TERMINATION_OF_O_GLYCAN_BIOSYNTHESIS	NABA_MATRISOME_ASSOCIATED
+4588	MUC6	mucin 6, oligomeric mucus/gel-forming	NABA_ECM_AFFILIATED	NABA_MATRISOME	REACTOME_TERMINATION_OF_O_GLYCAN_BIOSYNTHESIS	NABA_MATRISOME_ASSOCIATED
+4586	MUC5AC	mucin 5AC, oligomeric mucus/gel-forming	NABA_ECM_AFFILIATED	NABA_MATRISOME	REACTOME_TERMINATION_OF_O_GLYCAN_BIOSYNTHESIS	NABA_MATRISOME_ASSOCIATED
+4583	MUC2	mucin 2, oligomeric mucus/gel-forming	NABA_ECM_AFFILIATED	NABA_MATRISOME	REACTOME_TERMINATION_OF_O_GLYCAN_BIOSYNTHESIS	NABA_MATRISOME_ASSOCIATED
+6440	SFTPC	surfactant protein C	NABA_ECM_AFFILIATED	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED
+6439	SFTPB	surfactant protein B	NABA_ECM_AFFILIATED	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED
+729238	SFTPA2	surfactant protein A2	NABA_ECM_AFFILIATED	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED
+653509	SFTPA1	surfactant protein A1	NABA_ECM_AFFILIATED	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED
+147381	CBLN2	cerebellin 2 precursor		NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED
+2201	FBN2	fibrillin 2		NABA_MATRISOME		
+1299	COL9A3	collagen type IX alpha 3 chain		NABA_MATRISOME		
+1297	COL9A1	collagen type IX alpha 1 chain		NABA_MATRISOME		
+85446	ZFHX2	zinc finger homeobox 2				
+51352	WT1-AS	WT1 antisense RNA				
+7490	WT1	Wilms tumor 1				
+65266	WNK4	WNK lysine deficient protein kinase 4				
+7425	VGF	VGF nerve growth factor inducible				
+7140	TNNT3	troponin T3, fast skeletal type				
+7137	TNNI3	troponin I3, cardiac type				
+92293	TMEM132C	transmembrane protein 132C				
+NA	T	NA				
+221711	SYCP2L	synaptonemal complex protein 2 like				
+100130958	SYCE1L	synaptonemal complex central element protein 1 like				
+25830	SULT4A1	sulfotransferase family 4A member 1				
+6783	SULT1E1	sulfotransferase family 1E member 1				
+10147	SUGP2	SURP and G-patch domain containing 2				
+57731	SPTBN4	spectrin beta, non-erythrocytic 4				
+6700	SPRR2A	small proline rich protein 2A				
+399473	SPRED3	sprouty related EVH1 domain containing 3				
+6511	SLC1A6	solute carrier family 1 member 6				
+26266	SLC13A4	solute carrier family 13 member 4				
+152573	SHISA3	shisa family member 3				
+53358	SHC3	SHC adaptor protein 3				
+6338	SCNN1B	sodium channel epithelial 1 beta subunit				
+8601	RGS20	regulator of G protein signaling 20				
+3516	RBPJ	recombination signal binding protein for immunoglobulin kappa J region				
+138046	RALYL	RALY RNA binding protein like				
+138639	PTPDC1	protein tyrosine phosphatase domain containing 1				
+5426	POLE	DNA polymerase epsilon, catalytic subunit				
+54872	PIGG	phosphatidylinositol glycan anchor biosynthesis class G				
+5047	PAEP	progestagen associated endometrial protein				
+29991	OBP2A	odorant binding protein 2A				
+4885	NPTX2	neuronal pentraxin 2				
+55384	MEG3	maternally expressed 3				
+4193	MDM2	MDM2 proto-oncogene				
+90632	LINC00473	long intergenic non-protein coding RNA 473				
+401944	LDLRAD2	low density lipoprotein receptor class A domain containing 2				
+402665	IGLON5	IgLON family member 5				
+116835	HSPA12B	heat shock protein family A (Hsp70) member 12B				
+64344	HIF3A	hypoxia inducible factor 3 subunit alpha				
+352887	GYG2P1	glycogenin 2 pseudogene 1				
+121355	GTSF1	gametocyte specific factor 1				
+2796	GNRH1	gonadotropin releasing hormone 1				
+2784	GNB3	G protein subunit beta 3				
+84850	GLIS3-AS1	GLIS3 antisense RNA 1				
+199720	GGN	gametogenetin				
+79187	FSD1	fibronectin type III and SPRY domain containing 1				
+2303	FOXC2	forkhead box C2				
+27023	FOXB1	forkhead box B1				
+56776	FMN2	formin 2				
+2324	FLT4	fms related tyrosine kinase 4				
+23768	FLRT2	fibronectin leucine rich transmembrane protein 2				
+2173	FABP7	fatty acid binding protein 7				
+90625	ERVH48-1	endogenous retrovirus group 48 member 1				
+57634	EP400	E1A binding protein p400				
+64641	EBF2	EBF transcription factor 2				
+285489	DOK7	docking protein 7				
+123872	DNAAF1	dynein axonemal assembly factor 1				
+8788	DLK1	delta like non-canonical Notch ligand 1				
+64150	DIO3OS	DIO3 opposite strand upstream RNA				
+1735	DIO3	iodothyronine deiodinase 3				
+389903	CSAG3	CSAG family member 3				
+158511	CSAG1	chondrosarcoma associated gene 1				
+1392	CRH	corticotropin releasing hormone				
+1258	CNGB1	cyclic nucleotide gated channel beta 1				
+63922	CHTF18	chromosome transmission fidelity factor 18				
+26038	CHD5	chromodomain helicase DNA binding protein 5				
+1002	CDH4	cadherin 4				
+401577	CD99P1	CD99 molecule pseudogene 1				
+57172	CAMK1G	calcium/calmodulin dependent protein kinase IG				
+671	BPI	bactericidal permeability increasing protein				
+618	BCYRN1	brain cytoplasmic RNA 1				
+644165	BCRP3	breakpoint cluster region pseudogene 3				
+83875	BCO2	beta-carotene oxygenase 2				
+421	ARVCF	ARVCF, delta catenin family member				
+144193	AMDHD1	amidohydrolase domain containing 1				
+8092	ALX1	ALX homeobox 1				
+57491	AHRR	aryl-hydrocarbon receptor repressor				
+80221	ACSF2	acyl-CoA synthetase family member 2				
+6833	ABCC8	ATP binding cassette subfamily C member 8				

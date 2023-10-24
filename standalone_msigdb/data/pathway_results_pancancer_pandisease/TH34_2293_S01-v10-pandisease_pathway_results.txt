@@ -1,0 +1,174 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	7
+# genesets in collections:	1379
+# genes in comparison (n):	152
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	23	0.02237	5.747e-13	7.925e-10
+NABA_ECM_AFFILIATED	171	Genes encoding proteins affiliated structurally or functionally to extracellular matrix proteins	11	0.06433	1.505e-11	1.038e-8
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	17	0.02258	6.497e-10	2.986e-7
+KEGG_LYSOSOME	121	Lysosome	5	0.04132	5.409e-5	0.01865
+REACTOME_KERATAN_SULFATE_BIOSYNTHESIS	26	Genes involved in Keratan sulfate biosynthesis	3	0.1154	8.722e-5	0.02405
+REACTOME_KERATAN_SULFATE_KERATIN_METABOLISM	30	Genes involved in Keratan sulfate/keratin metabolism	3	0.1	1.349e-4	0.031
+NABA_PROTEOGLYCANS	35	Genes encoding proteoglycans	3	0.08571	2.148e-4	0.04232
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_MATRISOME	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	KEGG_LYSOSOME	REACTOME_KERATAN_SULFATE_BIOSYNTHESIS	REACTOME_KERATAN_SULFATE_KERATIN_METABOLISM	NABA_PROTEOGLYCANS
+114904	C1QTNF6	C1q and TNF related 6	NABA_MATRISOME	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED				
+5361	PLXNA1	plexin A1	NABA_MATRISOME	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED				
+9976	CLEC2B	C-type lectin domain family 2 member B	NABA_MATRISOME	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED				
+4585	MUC4	mucin 4, cell surface associated	NABA_MATRISOME	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED				
+653509	SFTPA1	surfactant protein A1	NABA_MATRISOME	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED				
+729238	SFTPA2	surfactant protein A2	NABA_MATRISOME	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED				
+389376	SFTA2	surfactant associated 2	NABA_MATRISOME	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED				
+253970	SFTA3	surfactant associated 3	NABA_MATRISOME	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED				
+6440	SFTPC	surfactant protein C	NABA_MATRISOME	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED				
+6439	SFTPB	surfactant protein B	NABA_MATRISOME	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED				
+6441	SFTPD	surfactant protein D	NABA_MATRISOME	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED				
+80760	ITIH5	inter-alpha-trypsin inhibitor heavy chain family member 5	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED				
+140766	ADAMTS14	ADAM metallopeptidase with thrombospondin type 1 motif 14	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED				
+80274	SCUBE1	signal peptide, CUB domain and EGF like domain containing 1	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED				
+222663	SCUBE3	signal peptide, CUB domain and EGF like domain containing 3	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED				
+2920	CXCL2	C-X-C motif chemokine ligand 2	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED				
+5046	PCSK6	proprotein convertase subtilisin/kexin type 6	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED				
+4958	OMD	osteomodulin	NABA_MATRISOME				REACTOME_KERATAN_SULFATE_BIOSYNTHESIS	REACTOME_KERATAN_SULFATE_KERATIN_METABOLISM	NABA_PROTEOGLYCANS
+2331	FMOD	fibromodulin	NABA_MATRISOME				REACTOME_KERATAN_SULFATE_BIOSYNTHESIS	REACTOME_KERATAN_SULFATE_KERATIN_METABOLISM	NABA_PROTEOGLYCANS
+54829	ASPN	asporin	NABA_MATRISOME						NABA_PROTEOGLYCANS
+1282	COL4A1	collagen type IV alpha 1 chain	NABA_MATRISOME						
+1755	DMBT1	deleted in malignant brain tumors 1	NABA_MATRISOME						
+91522	COL23A1	collagen type XXIII alpha 1 chain	NABA_MATRISOME						
+2588	GALNS	galactosamine (N-acetyl)-6-sulfatase				KEGG_LYSOSOME			
+1176	AP3S1	adaptor related protein complex 3 subunit sigma 1				KEGG_LYSOSOME			
+27074	LAMP3	lysosomal associated membrane protein 3				KEGG_LYSOSOME			
+3988	LIPA	lipase A, lysosomal acid type				KEGG_LYSOSOME			
+9476	NAPSA	napsin A aspartic peptidase				KEGG_LYSOSOME			
+8534	CHST1	carbohydrate sulfotransferase 1					REACTOME_KERATAN_SULFATE_BIOSYNTHESIS	REACTOME_KERATAN_SULFATE_KERATIN_METABOLISM	
+4884	NPTX1	neuronal pentraxin 1							
+6747	SSR3	signal sequence receptor subunit 3							
+6894	TARBP1	TAR (HIV-1) RNA binding protein 1							
+2303	FOXC2	forkhead box C2							
+1528	CYB5A	cytochrome b5 type A							
+10551	AGR2	anterior gradient 2, protein disulphide isomerase family member							
+415	ARSE	arylsulfatase E							
+22821	RASA3	RAS p21 protein activator 3							
+23178	PASK	PAS domain containing serine/threonine kinase							
+4249	MGAT5	alpha-1,6-mannosylglycoprotein 6-beta-N-acetylglucosaminyltransferase							
+3495	IGHD	immunoglobulin heavy constant delta							
+64714	PDIA2	protein disulfide isomerase family A member 2							
+6622	SNCA	synuclein alpha							
+6540	SLC6A13	solute carrier family 6 member 13							
+109731405	PDXDC2P	pyridoxal dependent decarboxylase domain containing 2, pseudogene							
+79953	SYNDIG1	synapse differentiation inducing 1							
+23094	SIPA1L3	signal induced proliferation associated 1 like 3							
+79888	LPCAT1	lysophosphatidylcholine acyltransferase 1							
+23209	MLC1	megalencephalic leukoencephalopathy with subcortical cysts 1							
+55769	ZNF83	zinc finger protein 83							
+117581	TWIST2	twist family bHLH transcription factor 2							
+57139	RGL3	ral guanine nucleotide dissociation stimulator like 3							
+51693	TRAPPC2L	trafficking protein particle complex 2 like							
+5225	PGC	progastricsin							
+29123	ANKRD11	ankyrin repeat domain 11							
+54997	TESC	tescalcin							
+23250	ATP11A	ATPase phospholipid transporting 11A							
+55691	FRMD4A	FERM domain containing 4A							
+55191	NADSYN1	NAD synthetase 1							
+51131	PHF11	PHD finger protein 11							
+55274	PHF10	PHD finger protein 10							
+362	AQP5	aquaporin 5							
+9639	ARHGEF10	Rho guanine nucleotide exchange factor 10							
+81847	RNF146	ring finger protein 146							
+339044	PKD1P1	polycystin 1, transient receptor potential channel interacting pseudogene 1							
+11083	DIDO1	death inducer-obliterator 1							
+54674	LRRN3	leucine rich repeat neuronal 3							
+6904	TBCD	tubulin folding cofactor D							
+63910	SLC17A9	solute carrier family 17 member 9							
+6002	RGS12	regulator of G protein signaling 12							
+2300	FOXL1	forkhead box L1							
+58189	WFDC1	WAP four-disulfide core domain 1							
+28514	DLL1	delta like canonical Notch ligand 1							
+253738	EBF3	EBF transcription factor 3							
+5376	PMP22	peripheral myelin protein 22							
+NA	FAM159B	NA							
+7204	TRIO	trio Rho guanine nucleotide exchange factor							
+157697	ERICH1	glutamate rich 1							
+10147	SUGP2	SURP and G-patch domain containing 2							
+9096	TBX18	T-box 18							
+942	CD86	CD86 molecule							
+26039	SS18L1	SS18L1, nBAF chromatin remodeling complex subunit							
+26508	HEYL	hes related family bHLH transcription factor with YRPW motif-like							
+8537	BCAS1	breast carcinoma amplified sequence 1							
+2571	GAD1	glutamate decarboxylase 1							
+64150	DIO3OS	DIO3 opposite strand upstream RNA							
+8788	DLK1	delta like non-canonical Notch ligand 1							
+NA	PP7080	NA							
+23677	SH3BP4	SH3 domain binding protein 4							
+9150	CTDP1	CTD phosphatase subunit 1							
+10806	SDCCAG8	serologically defined colon cancer antigen 8							
+9071	CLDN10	claudin 10							
+9172	MYOM2	myomesin 2							
+63901	FAM111A	family with sequence similarity 111 member A							
+8522	GAS7	growth arrest specific 7							
+9521	EEF1E1	eukaryotic translation elongation factor 1 epsilon 1							
+57687	VAT1L	vesicle amine transport 1 like							
+6433	SFSWAP	splicing factor SWAP							
+NA	FAM150B	NA							
+147111	NOTUM	notum, palmitoleoyl-protein carboxylesterase							
+51304	ZDHHC3	zinc finger DHHC-type containing 3							
+29945	ANAPC4	anaphase promoting complex subunit 4							
+255812	SDHAP1	succinate dehydrogenase complex flavoprotein subunit A pseudogene 1							
+55082	ARGLU1	arginine and glutamate rich 1							
+50614	GALNT9	polypeptide N-acetylgalactosaminyltransferase 9							
+153579	BTNL9	butyrophilin like 9							
+55276	PGM2	phosphoglucomutase 2							
+83700	JAM3	junctional adhesion molecule 3							
+64061	TSPYL2	TSPY like 2							
+10570	DPYSL4	dihydropyrimidinase like 4							
+128414	NKAIN4	sodium/potassium transporting ATPase interacting 4							
+26118	WSB1	WD repeat and SOCS box containing 1							
+9651	PLCH2	phospholipase C eta 2							
+25797	QPCT	glutaminyl-peptide cyclotransferase							
+84879	MFSD2A	major facilitator superfamily domain containing 2A							
+722	C4BPA	complement component 4 binding protein alpha							
+219348	PLAC9	placenta specific 9							
+6550	SLC9A3	solute carrier family 9 member A3							
+4752	NEK3	NIMA related kinase 3							
+55255	WDR41	WD repeat domain 41							
+146556	C16orf89	chromosome 16 open reading frame 89							
+23308	ICOSLG	inducible T cell costimulator ligand							
+152330	CNTN4	contactin 4							
+83892	KCTD10	potassium channel tetramerization domain containing 10							
+10079	ATP9A	ATPase phospholipid transporting 9A (putative)							
+4772	NFATC1	nuclear factor of activated T cells 1							
+80765	STARD5	StAR related lipid transfer domain containing 5							
+1804	DPP6	dipeptidyl peptidase like 6							
+54739	XAF1	XIAP associated factor 1							
+284340	CXCL17	C-X-C motif chemokine ligand 17							
+84504	NKX6-2	NK6 homeobox 2							
+123096	SLC25A29	solute carrier family 25 member 29							
+55743	CHFR	checkpoint with forkhead and ring finger domains							
+84223	IQCG	IQ motif containing G							
+7181	NR2C1	nuclear receptor subfamily 2 group C member 1							
+953	ENTPD1	ectonucleoside triphosphate diphosphohydrolase 1							
+80204	FBXO11	F-box protein 11							
+7327	UBE2G2	ubiquitin conjugating enzyme E2 G2							
+339456	TMEM52	transmembrane protein 52							
+10568	SLC34A2	solute carrier family 34 member 2							
+2801	GOLGA2	golgin A2							
+863	CBFA2T3	CBFA2/RUNX1 translocation partner 3							
+774	CACNA1B	calcium voltage-gated channel subunit alpha1 B							
+8874	ARHGEF7	Rho guanine nucleotide exchange factor 7							
+79839	CCDC102B	coiled-coil domain containing 102B							
+51150	SDF4	stromal cell derived factor 4							
+56940	DUSP22	dual specificity phosphatase 22							
+503638	DUXAP9	double homeobox A pseudogene 9							
+503637	DUXAP8	double homeobox A pseudogene 8							
+177	AGER	advanced glycosylation end-product specific receptor							
+55002	TMCO3	transmembrane and coiled-coil domains 3							
+11060	WWP2	WW domain containing E3 ubiquitin protein ligase 2							
+6531	SLC6A3	solute carrier family 6 member 3							

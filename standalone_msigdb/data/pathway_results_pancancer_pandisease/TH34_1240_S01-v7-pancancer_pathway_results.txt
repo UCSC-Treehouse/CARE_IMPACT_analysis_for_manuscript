@@ -1,0 +1,109 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	9
+# genesets in collections:	1379
+# genes in comparison (n):	85
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+HALLMARK_MYOGENESIS	200	Genes involved in development of skeletal muscle (myogenesis).	27	0.135	2.509e-43	3.46e-40
+REACTOME_STRIATED_MUSCLE_CONTRACTION	27	Genes involved in Striated Muscle Contraction	11	0.4074	5.623e-24	3.877e-21
+REACTOME_MUSCLE_CONTRACTION	48	Genes involved in Muscle contraction	11	0.2292	9.447e-21	4.342e-18
+KEGG_CARDIAC_MUSCLE_CONTRACTION	80	Cardiac muscle contraction	6	0.075	9.01e-9	3.106e-6
+KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	85	Hypertrophic cardiomyopathy (HCM)	6	0.07059	1.302e-8	3.59e-6
+KEGG_DILATED_CARDIOMYOPATHY	92	Dilated cardiomyopathy	6	0.06522	2.101e-8	4.828e-6
+HALLMARK_KRAS_SIGNALING_DN	200	Genes down-regulated by KRAS activation.	7	0.035	9.857e-8	1.942e-5
+KEGG_TIGHT_JUNCTION	134	Tight junction	5	0.03731	5.319e-6	9.168e-4
+NABA_ECM_AFFILIATED	171	Genes encoding proteins affiliated structurally or functionally to extracellular matrix proteins	4	0.02339	2.963e-4	0.0454
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION	KEGG_CARDIAC_MUSCLE_CONTRACTION	KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	KEGG_DILATED_CARDIOMYOPATHY	HALLMARK_KRAS_SIGNALING_DN	KEGG_TIGHT_JUNCTION	NABA_ECM_AFFILIATED
+4633	MYL2	myosin light chain 2	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION	KEGG_CARDIAC_MUSCLE_CONTRACTION	KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	KEGG_DILATED_CARDIOMYOPATHY		KEGG_TIGHT_JUNCTION	
+7134	TNNC1	troponin C1, slow skeletal and cardiac type	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION	KEGG_CARDIAC_MUSCLE_CONTRACTION	KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	KEGG_DILATED_CARDIOMYOPATHY			
+4634	MYL3	myosin light chain 3	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION	KEGG_CARDIAC_MUSCLE_CONTRACTION	KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	KEGG_DILATED_CARDIOMYOPATHY			
+1674	DES	desmin	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION		KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	KEGG_DILATED_CARDIOMYOPATHY			
+88	ACTN2	actinin alpha 2	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION					KEGG_TIGHT_JUNCTION	
+7136	TNNI2	troponin I2, fast skeletal type	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION						
+7135	TNNI1	troponin I1, slow skeletal type	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION						
+7125	TNNC2	troponin C2, fast skeletal type	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION						
+8557	TCAP	titin-cap	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION						
+4625	MYH7	myosin heavy chain 7	HALLMARK_MYOGENESIS			KEGG_CARDIAC_MUSCLE_CONTRACTION	KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	KEGG_DILATED_CARDIOMYOPATHY	HALLMARK_KRAS_SIGNALING_DN	KEGG_TIGHT_JUNCTION	
+70	ACTC1	actin, alpha, cardiac muscle 1	HALLMARK_MYOGENESIS			KEGG_CARDIAC_MUSCLE_CONTRACTION	KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	KEGG_DILATED_CARDIOMYOPATHY	HALLMARK_KRAS_SIGNALING_DN		
+1339	COX6A2	cytochrome c oxidase subunit 6A2	HALLMARK_MYOGENESIS			KEGG_CARDIAC_MUSCLE_CONTRACTION					
+1158	CKM	creatine kinase, M-type	HALLMARK_MYOGENESIS						HALLMARK_KRAS_SIGNALING_DN		
+29895	MYLPF	myosin light chain, phosphorylatable, fast skeletal muscle	HALLMARK_MYOGENESIS							KEGG_TIGHT_JUNCTION	
+4620	MYH2	myosin heavy chain 2	HALLMARK_MYOGENESIS							KEGG_TIGHT_JUNCTION	
+7140	TNNT3	troponin T3, fast skeletal type	HALLMARK_MYOGENESIS								
+6588	SLN	sarcolipin	HALLMARK_MYOGENESIS								
+5837	PYGM	glycogen phosphorylase, muscle associated	HALLMARK_MYOGENESIS								
+58529	MYOZ1	myozenin 1	HALLMARK_MYOGENESIS								
+9172	MYOM2	myomesin 2	HALLMARK_MYOGENESIS								
+4151	MB	myoglobin	HALLMARK_MYOGENESIS								
+11155	LDB3	LIM domain binding 3	HALLMARK_MYOGENESIS								
+2027	ENO3	enolase 3	HALLMARK_MYOGENESIS								
+8048	CSRP3	cysteine and glycine rich protein 3	HALLMARK_MYOGENESIS								
+844	CASQ1	calsequestrin 1	HALLMARK_MYOGENESIS								
+26287	ANKRD2	ankyrin repeat domain 2	HALLMARK_MYOGENESIS								
+58	ACTA1	actin, alpha 1, skeletal muscle	HALLMARK_MYOGENESIS								
+4703	NEB	nebulin		REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION						
+4604	MYBPC1	myosin binding protein C, slow type		REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION						
+7038	TG	thyroglobulin							HALLMARK_KRAS_SIGNALING_DN		
+7021	TFAP2B	transcription factor AP-2 beta							HALLMARK_KRAS_SIGNALING_DN		
+23676	SMPX	small muscle protein X-linked							HALLMARK_KRAS_SIGNALING_DN		
+9499	MYOT	myotilin							HALLMARK_KRAS_SIGNALING_DN		
+54437	SEMA5B	semaphorin 5B									NABA_ECM_AFFILIATED
+4588	MUC6	mucin 6, oligomeric mucus/gel-forming									NABA_ECM_AFFILIATED
+158326	FREM1	FRAS1 related extracellular matrix 1									NABA_ECM_AFFILIATED
+6320	CLEC11A	C-type lectin domain containing 11A									NABA_ECM_AFFILIATED
+100125288	ZGLP1	zinc finger, GATA-like protein 1									
+129446	XIRP2	xin actin binding repeat containing 2									
+653067	XAGE1B	X antigen family member 1B									
+653220	XAGE1A	X antigen family member 1A									
+167127	UGT3A2	UDP glycosyltransferase family 3 member A2									
+83869	TTTY14	testis-specific transcript, Y-linked 14									
+650368	TSSC2	tumor suppressing subtransferable candidate 2 pseudogene									
+55621	TRMT1	tRNA methyltransferase 1									
+28692	TRAV1-2	T cell receptor alpha variable 1-2									
+137835	TMEM71	transmembrane protein 71									
+83940	TATDN1	TatD DNase domain containing 1									
+6847	SYCP1	synaptonemal complex protein 1									
+246329	STAC3	SH3 and cysteine rich domain 3									
+285180	RUFY4	RUN and FYVE domain containing 4									
+6234	RPS28	ribosomal protein S28									
+6176	RPLP1	ribosomal protein lateral stalk subunit P1									
+51458	RHCG	Rh family C glycoprotein									
+54033	RBM11	RNA binding motif protein 11									
+401399	PRRT4	proline rich transmembrane protein 4									
+116729	PPP1R27	protein phosphatase 1 regulatory subunit 27									
+64714	PDIA2	protein disulfide isomerase family A member 2									
+5015	OTX2	orthodenticle homeobox 2									
+190	NR0B1	nuclear receptor subfamily 0 group B member 1									
+283869	NPW	neuropeptide W									
+4715	NDUFB9	NADH:ubiquinone oxidoreductase subunit B9									
+389125	MUSTN1	musculoskeletal, embryonic nuclear protein 1									
+256714	MAP7D2	MAP7 domain containing 2									
+125336	LOXHD1	lipoxygenase homology domains 1									
+149998	LIPI	lipase I									
+339451	KLHL17	kelch like family member 17									
+27129	HSPB7	heat shock protein family B (small) member 7									
+9001	HAP1	huntingtin associated protein 1									
+2922	GRP	gastrin releasing peptide									
+2812	GP1BB	glycoprotein Ib platelet subunit beta									
+2793	GNGT2	G protein subunit gamma transducin 2									
+389549	FEZF1	FEZ family zinc finger 1									
+85395	FAM207A	family with sequence similarity 207 member A									
+54055	CYP4F29P	cytochrome P450 family 4 subfamily F member 29, pseudogene									
+27132	CPNE7	copine 7									
+27098	CLUL1	clusterin like 1									
+885	CCK	cholecystokinin									
+147872	CCDC155	coiled-coil domain containing 155									
+79012	CAMKV	CaM kinase like vesicle associated									
+761	CA3	carbonic anhydrase 3									
+100506581	C16orf95	chromosome 16 open reading frame 95									
+200539	ANKRD23	ankyrin repeat domain 23									
+27063	ANKRD1	ankyrin repeat domain 1									
+155	ADRB3	adrenoceptor beta 3									

@@ -1,0 +1,69 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	3
+# genesets in collections:	1379
+# genes in comparison (n):	51
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+PID_HIF1_TFPATHWAY	66	HIF-1-alpha transcription factor network	4	0.06061	9.213e-7	0.00127
+HALLMARK_HYPOXIA	200	Genes up-regulated in response to low oxygen levels (hypoxia).	4	0.02	7.411e-5	0.03407
+HALLMARK_XENOBIOTIC_METABOLISM	200	Genes encoding proteins involved in processing of drugs and other xenobiotics.	4	0.02	7.411e-5	0.03407
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	PID_HIF1_TFPATHWAY	HALLMARK_HYPOXIA	HALLMARK_XENOBIOTIC_METABOLISM
+3162	HMOX1	heme oxygenase 1	PID_HIF1_TFPATHWAY	HALLMARK_HYPOXIA	HALLMARK_XENOBIOTIC_METABOLISM
+133	ADM	adrenomedullin	PID_HIF1_TFPATHWAY	HALLMARK_HYPOXIA	
+3939	LDHA	lactate dehydrogenase A	PID_HIF1_TFPATHWAY	HALLMARK_HYPOXIA	
+123	PLIN2	perilipin 2	PID_HIF1_TFPATHWAY	HALLMARK_HYPOXIA	
+5166	PDK4	pyruvate dehydrogenase kinase 4			HALLMARK_XENOBIOTIC_METABOLISM
+126	ADH1C	alcohol dehydrogenase 1C (class I), gamma polypeptide			HALLMARK_XENOBIOTIC_METABOLISM
+2326	FMO1	flavin containing monooxygenase 1			HALLMARK_XENOBIOTIC_METABOLISM
+NA	CARKD	NA			
+647099	RPL23AP42	ribosomal protein L23a pseudogene 42			
+84973	SNHG7	small nucleolar RNA host gene 7			
+8451	CUL4A	cullin 4A			
+91612	CHURC1	churchill domain containing 1			
+79101	TAF1D	TATA-box binding protein associated factor, RNA polymerase I subunit D			
+3576	CXCL8	C-X-C motif chemokine ligand 8			
+2963	GTF2F2	general transcription factor IIF subunit 2			
+100506211	MIR210HG	MIR210 host gene			
+3621	ING1	inhibitor of growth family member 1			
+2173	FABP7	fatty acid binding protein 7			
+7335	UBE2V1	ubiquitin conjugating enzyme E2 V1			
+2098	ESD	esterase D			
+91694	LONRF1	LON peptidase N-terminal domain and ring finger 1			
+22970	RPL41P2	ribosomal protein L41 pseudogene 2			
+51371	POMP	proteasome maturation protein			
+10544	PROCR	protein C receptor			
+11083	DIDO1	death inducer-obliterator 1			
+9584	RBM39	RNA binding motif protein 39			
+2495	FTH1	ferritin heavy chain 1			
+7035	TFPI	tissue factor pathway inhibitor			
+10284	SAP18	Sin3A associated protein 18			
+8428	STK24	serine/threonine kinase 24			
+51726	DNAJB11	DnaJ heat shock protein family (Hsp40) member B11			
+NA	UTP11L	NA			
+10240	MRPS31	mitochondrial ribosomal protein S31			
+51569	UFM1	ubiquitin fold modifier 1			
+643847	PGA4	pepsinogen 4, group I (pepsinogen A)			
+286133	SCARA5	scavenger receptor class A member 5			
+8881	CDC16	cell division cycle 16			
+643834	PGA3	pepsinogen 3, group I (pepsinogen A)			
+2483	FRG1	FSHD region gene 1			
+5222	PGA5	pepsinogen 5, group I (pepsinogen A)			
+1909	EDNRA	endothelin receptor type A			
+152687	ZNF595	zinc finger protein 595			
+121355	GTSF1	gametocyte specific factor 1			
+219402	MTIF3	mitochondrial translational initiation factor 3			
+10216	PRG4	proteoglycan 4			
+2289	FKBP5	FKBP prolyl isomerase 5			
+158511	CSAG1	chondrosarcoma associated gene 1			
+619499	SNORA27	small nucleolar RNA, H/ACA box 27			
+23704	KCNE4	potassium voltage-gated channel subfamily E regulatory subunit 4			
+29079	MED4	mediator complex subunit 4			
+583	BBS2	Bardet-Biedl syndrome 2			

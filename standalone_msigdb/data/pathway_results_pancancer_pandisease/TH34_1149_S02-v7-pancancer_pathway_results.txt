@@ -1,0 +1,99 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	4
+# genesets in collections:	1379
+# genes in comparison (n):	80
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_ECM_AFFILIATED	171	Genes encoding proteins affiliated structurally or functionally to extracellular matrix proteins	9	0.05263	2.044e-11	2.819e-8
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	15	0.01459	2.721e-10	1.876e-7
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	13	0.01726	6.372e-10	2.929e-7
+PID_HNF3A_PATHWAY	44	FOXA1 transcription factor network	4	0.09091	1.096e-6	3.778e-4
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_ECM_AFFILIATED	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	PID_HNF3A_PATHWAY
+6441	SFTPD	surfactant protein D	NABA_ECM_AFFILIATED	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	PID_HNF3A_PATHWAY
+729238	SFTPA2	surfactant protein A2	NABA_ECM_AFFILIATED	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	PID_HNF3A_PATHWAY
+653509	SFTPA1	surfactant protein A1	NABA_ECM_AFFILIATED	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	PID_HNF3A_PATHWAY
+6440	SFTPC	surfactant protein C	NABA_ECM_AFFILIATED	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	
+6439	SFTPB	surfactant protein B	NABA_ECM_AFFILIATED	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	
+389376	SFTA2	surfactant associated 2	NABA_ECM_AFFILIATED	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	
+94025	MUC16	mucin 16, cell surface associated	NABA_ECM_AFFILIATED	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	
+8547	FCN3	ficolin 3	NABA_ECM_AFFILIATED	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	
+154790	CLEC2L	C-type lectin domain family 2 member L	NABA_ECM_AFFILIATED	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	
+10637	LEFTY1	left-right determination factor 1		NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	
+3479	IGF1	insulin like growth factor 1		NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	
+268	AMH	anti-Mullerian hormone		NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	
+8728	ADAM19	ADAM metallopeptidase domain 19		NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	
+8076	MFAP5	microfibril associated protein 5		NABA_MATRISOME		
+3339	HSPG2	heparan sulfate proteoglycan 2		NABA_MATRISOME		
+7356	SCGB1A1	secretoglobin family 1A member 1				PID_HNF3A_PATHWAY
+131540	ZDHHC19	zinc finger DHHC-type containing 19				
+9671	WSCD2	WSC domain containing 2				
+7398	USP1	ubiquitin specific peptidase 1				
+7137	TNNI3	troponin I3, cardiac type				
+349408	TLR8-AS1	TLR8 antisense RNA 1				
+6894	TARBP1	TAR (HIV-1) RNA binding protein 1				
+57731	SPTBN4	spectrin beta, non-erythrocytic 4				
+64321	SOX17	SRY-box 17				
+9306	SOCS6	suppressor of cytokine signaling 6				
+117156	SCGB3A2	secretoglobin family 3A member 2				
+92304	SCGB3A1	secretoglobin family 3A member 1				
+25914	RTTN	rotatin				
+25897	RNF19A	ring finger protein 19A, RBR E3 ubiquitin protein ligase				
+57494	RIMKLB	ribosomal modification protein rimK like family member B				
+8786	RGS11	regulator of G protein signaling 11				
+376267	RAB15	RAB15, member RAS oncogene family				
+5420	PODXL	podocalyxin like				
+5225	PGC	progastricsin				
+50940	PDE11A	phosphodiesterase 11A				
+84333	PCGF5	polycomb group ring finger 5				
+57526	PCDH19	protocadherin 19				
+9891	NUAK1	NUAK family kinase 1				
+4916	NTRK3	neurotrophic receptor tyrosine kinase 3				
+340527	NHSL2	NHS like 2				
+342897	NCCRP1	non-specific cytotoxic cell receptor protein 1 homolog (zebrafish)				
+9476	NAPSA	napsin A aspartic peptidase				
+4356	MPP3	membrane palmitoylated protein 3				
+440823	MIAT	myocardial infarction associated transcript				
+79091	METTL22	methyltransferase like 22				
+4223	MEOX2	mesenchyme homeobox 2				
+56890	MDM1	Mdm1 nuclear protein				
+4149	MAX	MYC associated factor X				
+92979	MARCH9	membrane associated ring-CH-type finger 9				
+55534	MAML3	mastermind like transcriptional coactivator 3				
+23499	MACF1	microtubule-actin crosslinking factor 1				
+4057	LTF	lactotransferrin				
+145978	LINC00052	long intergenic non-protein coding RNA 52				
+114823	LENG8	leukocyte receptor cluster member 8				
+54596	L1TD1	LINE1 type transposase domain containing 1				
+3853	KRT6A	keratin 6A				
+3851	KRT4	keratin 4				
+163782	KANK4	KN motif and ankyrin repeat domains 4				
+3655	ITGA6	integrin subunit alpha 6				
+388555	IGFL3	IGF like family member 3				
+147920	IGFL2	IGF like family member 2				
+3306	HSPA2	heat shock protein family A (Hsp70) member 2				
+2342	FNTB	farnesyltransferase, CAAX box, beta				
+55294	FBXW7	F-box and WD repeat domain containing 7				
+114907	FBXO32	F-box protein 32				
+NA	FAM159B	NA				
+2045	EPHA7	EPH receptor A7				
+2027	ENO3	enolase 3				
+9229	DLGAP1	DLG associated protein 1				
+NA	DKFZp434J0226	NA				
+1240	CMKLR1	chemerin chemokine-like receptor 1				
+386593	CHKB-CPT1B	CHKB-CPT1B readthrough (NMD candidate)				
+8556	CDC14A	cell division cycle 14A				
+541565	C8orf58	chromosome 8 open reading frame 58				
+54149	C21orf91	chromosome 21 open reading frame 91				
+483	ATP1B3	ATPase Na+/K+ transporting subunit beta 3				
+323	APBB2	amyloid beta precursor protein binding family B member 2				
+27063	ANKRD1	ankyrin repeat domain 1				
+177	AGER	advanced glycosylation end-product specific receptor				
+147	ADRA1B	adrenoceptor alpha 1B				

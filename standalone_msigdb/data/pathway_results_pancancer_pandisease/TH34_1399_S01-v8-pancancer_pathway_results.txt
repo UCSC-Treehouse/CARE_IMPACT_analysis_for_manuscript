@@ -1,0 +1,133 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	10
+# genesets in collections:	1379
+# genes in comparison (n):	108
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	20	0.01946	3.764e-13	5.19e-10
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	8	0.02909	3.117e-7	1.433e-4
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	12	0.01594	2.281e-7	1.433e-4
+NABA_SECRETED_FACTORS	344	Genes encoding secreted soluble factors	7	0.02035	1.808e-5	0.006233
+HALLMARK_HYPOXIA	200	Genes up-regulated in response to low oxygen levels (hypoxia).	5	0.025	1.151e-4	0.02645
+NABA_ECM_GLYCOPROTEINS	196	Genes encoding structural ECM glycoproteins	5	0.02551	1.047e-4	0.02645
+PID_BMP_PATHWAY	42	BMP receptor signaling	3	0.07143	1.355e-4	0.0267
+NABA_COLLAGENS	44	Genes encoding collagen proteins	3	0.06818	1.558e-4	0.02686
+NABA_ECM_REGULATORS	238	Genes encoding enzymes and their regulators involved in the remodeling of the extracellular matrix	5	0.02101	2.58e-4	0.03954
+PID_TGFBR_PATHWAY	55	TGF-beta receptor signaling	3	0.05455	3.029e-4	0.04178
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_MATRISOME	NABA_CORE_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_SECRETED_FACTORS	HALLMARK_HYPOXIA	NABA_ECM_GLYCOPROTEINS	PID_BMP_PATHWAY	NABA_COLLAGENS	NABA_ECM_REGULATORS	PID_TGFBR_PATHWAY
+NA	WISP1	NA	NABA_MATRISOME	NABA_CORE_MATRISOME				NABA_ECM_GLYCOPROTEINS				
+7148	TNXB	tenascin XB	NABA_MATRISOME	NABA_CORE_MATRISOME				NABA_ECM_GLYCOPROTEINS				
+84628	NTNG2	netrin G2	NABA_MATRISOME	NABA_CORE_MATRISOME				NABA_ECM_GLYCOPROTEINS				
+285313	IGSF10	immunoglobulin superfamily member 10	NABA_MATRISOME	NABA_CORE_MATRISOME				NABA_ECM_GLYCOPROTEINS				
+84467	FBN3	fibrillin 3	NABA_MATRISOME	NABA_CORE_MATRISOME				NABA_ECM_GLYCOPROTEINS				
+91522	COL23A1	collagen type XXIII alpha 1 chain	NABA_MATRISOME	NABA_CORE_MATRISOME						NABA_COLLAGENS		
+169044	COL22A1	collagen type XXII alpha 1 chain	NABA_MATRISOME	NABA_CORE_MATRISOME						NABA_COLLAGENS		
+57642	COL20A1	collagen type XX alpha 1 chain	NABA_MATRISOME	NABA_CORE_MATRISOME						NABA_COLLAGENS		
+8646	CHRD	chordin	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED	NABA_SECRETED_FACTORS			PID_BMP_PATHWAY			
+4902	NRTN	neurturin	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED	NABA_SECRETED_FACTORS						
+3481	IGF2	insulin like growth factor 2	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED	NABA_SECRETED_FACTORS						
+3479	IGF1	insulin like growth factor 1	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED	NABA_SECRETED_FACTORS						
+25975	EGFL6	EGF like domain multiple 6	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED	NABA_SECRETED_FACTORS						
+6370	CCL25	C-C motif chemokine ligand 25	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED	NABA_SECRETED_FACTORS						
+9048	ARTN	artemin	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED	NABA_SECRETED_FACTORS						
+5033	P4HA1	prolyl 4-hydroxylase subunit alpha 1	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED		HALLMARK_HYPOXIA				NABA_ECM_REGULATORS	
+5272	SERPINB9	serpin family B member 9	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED						NABA_ECM_REGULATORS	
+84695	LOXL3	lysyl oxidase like 3	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED						NABA_ECM_REGULATORS	
+80760	ITIH5	inter-alpha-trypsin inhibitor heavy chain family member 5	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED						NABA_ECM_REGULATORS	
+3698	ITIH2	inter-alpha-trypsin inhibitor heavy chain 2	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED						NABA_ECM_REGULATORS	
+23327	NEDD4L	neural precursor cell expressed, developmentally down-regulated 4-like, E3 ubiquitin protein ligase					HALLMARK_HYPOXIA					PID_TGFBR_PATHWAY
+26118	WSB1	WD repeat and SOCS box containing 1					HALLMARK_HYPOXIA					
+55818	KDM3A	lysine demethylase 3A					HALLMARK_HYPOXIA					
+126792	B3GALT6	beta-1,3-galactosyltransferase 6					HALLMARK_HYPOXIA					
+9765	ZFYVE16	zinc finger FYVE-type containing 16							PID_BMP_PATHWAY			PID_TGFBR_PATHWAY
+64750	SMURF2	SMAD specific E3 ubiquitin protein ligase 2							PID_BMP_PATHWAY			PID_TGFBR_PATHWAY
+7743	ZNF189	zinc finger protein 189										
+196441	ZFC3H1	zinc finger C3H1-type containing										
+9671	WSCD2	WSC domain containing 2										
+643224	TUBBP5	tubulin beta pseudogene 5										
+440730	TRIM67	tripartite motif containing 67										
+7140	TNNT3	troponin T3, fast skeletal type										
+57156	TMEM63C	transmembrane protein 63C										
+NA	TMEM2	NA										
+9984	THOC1	THO complex 1										
+255394	TCP11L2	t-complex 11 like 2										
+29114	TAGLN3	transgelin 3										
+81849	ST6GALNAC5	ST6 N-acetylgalactosaminide alpha-2,6-sialyltransferase 5										
+23137	SMC5	structural maintenance of chromosomes 5										
+84631	SLITRK2	SLIT and NTRK like family member 2										
+65010	SLC26A6	solute carrier family 26 member 6										
+6573	SLC19A1	solute carrier family 19 member 1										
+6474	SHOX2	short stature homeobox 2										
+7857	SCG2	secretogranin II										
+58490	RPRD1B	regulation of nuclear pre-mRNA domain containing 1B										
+146713	RBFOX3	RNA binding fox-1 homolog 3										
+5924	RASGRF2	Ras protein specific guanine nucleotide releasing factor 2										
+374462	PTPRQ	protein tyrosine phosphatase, receptor type Q										
+375743	PTAR1	protein prenyltransferase alpha subunit repeat containing 1										
+163154	PRR22	proline rich 22										
+55291	PPP6R3	protein phosphatase 6 regulatory subunit 3										
+126520	PLK5	polo like kinase 5										
+5338	PLD2	phospholipase D2										
+151056	PLB1	phospholipase B1										
+57595	PDZD4	PDZ domain containing 4										
+NA	PCNX	NA										
+390874	ONECUT3	one cut homeobox 3										
+8473	OGT	O-linked N-acetylglucosamine (GlcNAc) transferase										
+81532	MOB2	MOB kinase activator 2										
+55384	MEG3	maternally expressed 3										
+4062	LY6H	lymphocyte antigen 6 family member H										
+4047	LSS	lanosterol synthase										
+9388	LIPG	lipase G, endothelial type										
+645323	LINC00461	long intergenic non-protein coding RNA 461										
+150759	LINC00342	long intergenic non-protein coding RNA 342										
+114823	LENG8	leukocyte receptor cluster member 8										
+51176	LEF1	lymphoid enhancer binding factor 1										
+79412	KREMEN2	kringle containing transmembrane protein 2										
+5653	KLK6	kallikrein related peptidase 6										
+115207	KCTD12	potassium channel tetramerization domain containing 12										
+57582	KCNT1	potassium sodium-activated channel subfamily T member 1										
+84223	IQCG	IQ motif containing G										
+26512	INTS6	integrator complex subunit 6										
+3563	IL3RA	interleukin 3 receptor subunit alpha										
+10357	HMGB1P1	high mobility group box 1 pseudogene 1										
+10804	GJB6	gap junction protein beta 6										
+25801	GCA	grancalcin										
+51083	GAL	galanin and GMAP prepropeptide										
+10841	FTCD	formimidoyltransferase cyclodeaminase										
+157769	FAM91A1	family with sequence similarity 91 member A1										
+131583	FAM43A	family with sequence similarity 43 member A										
+NA	FAM132A	NA										
+57488	ESYT2	extended synaptotagmin 2										
+377841	ENTPD8	ectonucleoside triphosphate diphosphohydrolase 8										
+9427	ECEL1	endothelin converting enzyme like 1										
+56931	DUS3L	dihydrouridine synthase 3 like										
+1804	DPP6	dipeptidyl peptidase like 6										
+9988	DMTF1	cyclin D binding myb like transcription factor 1										
+1735	DIO3	iodothyronine deiodinase 3										
+9811	CTIF	cap binding complex dependent translation initiation factor										
+9746	CLSTN3	calsyntenin 3										
+9074	CLDN6	claudin 6										
+5010	CLDN11	claudin 11										
+1107	CHD3	chromodomain helicase DNA binding protein 3										
+90799	CEP95	centrosomal protein 95										
+54520	CCDC93	coiled-coil domain containing 93										
+801	CALM1	calmodulin 1										
+57863	CADM3	cell adhesion molecule 3										
+9254	CACNA2D2	calcium voltage-gated channel auxiliary subunit alpha2delta 2										
+NA	C20orf166-AS1	NA										
+54991	C1orf159	chromosome 1 open reading frame 159										
+65998	C11orf95	chromosome 11 open reading frame 95										
+153579	BTNL9	butyrophilin like 9										
+335	APOA1	apolipoprotein A1										
+246	ALOX15	arachidonate 15-lipoxygenase										
+26993	AKAP8L	A-kinase anchoring protein 8 like										
+8227	AKAP17A	A-kinase anchoring protein 17A										
+10347	ABCA7	ATP binding cassette subfamily A member 7										
