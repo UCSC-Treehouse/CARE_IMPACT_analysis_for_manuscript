@@ -1,0 +1,113 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	6
+# genesets in collections:	1379
+# genes in comparison (n):	92
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+KEGG_PRIMARY_IMMUNODEFICIENCY	35	Primary immunodeficiency	5	0.1429	8.916e-9	1.229e-5
+PID_BCR_5PATHWAY	65	BCR signaling pathway	4	0.06154	9.273e-6	0.006393
+REACTOME_ANTIGEN_ACTIVATES_B_CELL_RECEPTOR_LEADING_TO_GENERATION_OF_SECOND_MESSENGERS	29	Genes involved in Antigen Activates B Cell Receptor Leading to Generation of Second Messengers	3	0.1034	2.732e-5	0.01256
+ST_B_CELL_ANTIGEN_RECEPTOR	40	B Cell Antigen Receptor	3	0.075	7.27e-5	0.02506
+SIG_BCR_SIGNALING_PATHWAY	46	Members of the BCR signaling pathway	3	0.06522	1.107e-4	0.03054
+PID_PI3KCI_PATHWAY	49	Class I PI3K signaling events	3	0.06122	1.338e-4	0.03075
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	KEGG_PRIMARY_IMMUNODEFICIENCY	PID_BCR_5PATHWAY	REACTOME_ANTIGEN_ACTIVATES_B_CELL_RECEPTOR_LEADING_TO_GENERATION_OF_SECOND_MESSENGERS	ST_B_CELL_ANTIGEN_RECEPTOR	SIG_BCR_SIGNALING_PATHWAY	PID_PI3KCI_PATHWAY
+930	CD19	CD19 molecule	KEGG_PRIMARY_IMMUNODEFICIENCY	PID_BCR_5PATHWAY	REACTOME_ANTIGEN_ACTIVATES_B_CELL_RECEPTOR_LEADING_TO_GENERATION_OF_SECOND_MESSENGERS	ST_B_CELL_ANTIGEN_RECEPTOR	SIG_BCR_SIGNALING_PATHWAY	
+7535	ZAP70	zeta chain of T cell receptor associated protein kinase 70	KEGG_PRIMARY_IMMUNODEFICIENCY					PID_PI3KCI_PATHWAY
+115650	TNFRSF13C	TNF receptor superfamily member 13C	KEGG_PRIMARY_IMMUNODEFICIENCY					
+23495	TNFRSF13B	TNF receptor superfamily member 13B	KEGG_PRIMARY_IMMUNODEFICIENCY					
+5993	RFX5	regulatory factor X5	KEGG_PRIMARY_IMMUNODEFICIENCY					
+5336	PLCG2	phospholipase C gamma 2		PID_BCR_5PATHWAY	REACTOME_ANTIGEN_ACTIVATES_B_CELL_RECEPTOR_LEADING_TO_GENERATION_OF_SECOND_MESSENGERS	ST_B_CELL_ANTIGEN_RECEPTOR	SIG_BCR_SIGNALING_PATHWAY	PID_PI3KCI_PATHWAY
+1445	CSK	C-terminal Src kinase		PID_BCR_5PATHWAY		ST_B_CELL_ANTIGEN_RECEPTOR	SIG_BCR_SIGNALING_PATHWAY	
+971	CD72	CD72 molecule		PID_BCR_5PATHWAY				
+640	BLK	BLK proto-oncogene, Src family tyrosine kinase			REACTOME_ANTIGEN_ACTIVATES_B_CELL_RECEPTOR_LEADING_TO_GENERATION_OF_SECOND_MESSENGERS			PID_PI3KCI_PATHWAY
+84186	ZCCHC7	zinc finger CCHC-type containing 7						
+29802	VPREB3	V-set pre-B cell surrogate light chain 3						
+7441	VPREB1	V-set pre-B cell surrogate light chain 1						
+164118	TTC24	tetratricopeptide repeat domain 24						
+10077	TSPAN32	tetraspanin 32						
+7706	TRIM25	tripartite motif containing 25						
+80305	TRABD	TraB domain containing						
+90313	TP53I13	tumor protein p53 inducible protein 13						
+7011	TEP1	telomerase associated protein 1						
+200132	TCTEX1D1	Tctex1 domain containing 1						
+27004	TCL6	T cell leukemia/lymphoma 6						
+9623	TCL1B	T cell leukemia/lymphoma 1B						
+8115	TCL1A	T cell leukemia/lymphoma 1A						
+NA	TBC1D27	NA						
+374403	TBC1D10C	TBC1 domain family member 10C						
+84447	SYVN1	synoviolin 1						
+57620	STIM2	stromal interaction molecule 2						
+26228	STAP1	signal transducing adaptor family member 1						
+27090	ST6GALNAC4	ST6 N-acetylgalactosaminide alpha-2,6-sialyltransferase 4						
+6689	SPIB	Spi-B transcription factor						
+79856	SNX22	sorting nexin 22						
+27240	SIT1	signaling threshold regulating transmembrane adaptor 1						
+1731	SEPT1	septin 1						
+256380	SCML4	Scm polycomb group protein like 4						
+285613	RELL2	RELT like 2						
+8437	RASAL1	RAS protein activator like 1						
+79874	RABEP2	rabaptin, RAB GTPase binding effector protein 2						
+53917	RAB24	RAB24, member RAS oncogene family						
+55278	QRSL1	QRSL1, glutaminyl-tRNA amidotransferase subunit A						
+27434	POLM	DNA polymerase mu						
+5179	PENK	proenkephalin						
+5079	PAX5	paired box 5						
+165631	PARP15	poly(ADP-ribose) polymerase family member 15						
+5032	P2RY11	purinergic receptor P2Y11						
+341277	OVCH2	ovochymase 2 (gene/pseudogene)						
+8481	OFD1	OFD1, centriole and centriolar satellite protein						
+79661	NEIL1	nei like DNA glycosylase 1						
+55191	NADSYN1	NAD synthetase 1						
+4636	MYL5	myosin light chain 5						
+931	MS4A1	membrane spanning 4-domains A1						
+219972	MPEG1	macrophage expressed 1						
+255231	MCOLN2	mucolipin 2						
+4058	LTK	leukocyte receptor tyrosine kinase						
+401944	LDLRAD2	low density lipoprotein receptor class A domain containing 2						
+138307	LCN8	lipocalin 8						
+65095	KRI1	KRI1 homolog						
+22914	KLRK1	killer cell lectin like receptor K1						
+100431172	KLRF2	killer cell lectin like receptor F2						
+100528032	KLRC4-KLRK1	KLRC4-KLRK1 readthrough						
+NA	KIAA0226L	NA						
+51305	KCNK9	potassium two pore domain channel subfamily K member 9						
+3662	IRF4	interferon regulatory factor 4						
+28793	IGLV3-25	immunoglobulin lambda variable 3-25						
+28831	IGLJ3	immunoglobulin lambda joining 3						
+28387	IGHV5-78	immunoglobulin heavy variable 5-78 (pseudogene)						
+28445	IGHV3-20	immunoglobulin heavy variable 3-20						
+3425	IDUA	iduronidase, alpha-L-						
+2696	GIPR	gastric inhibitory polypeptide receptor						
+79760	GEMIN7	gem nuclear organelle associated protein 7						
+2356	FPGS	folylpolyglutamate synthase						
+84824	FCRLA	Fc receptor like A						
+115350	FCRL1	Fc receptor like 1						
+NA	FAM150B	NA						
+199786	FAM129C	family with sequence similarity 129 member C						
+157697	ERICH1	glutamate rich 1						
+197342	EME2	essential meiotic structure-specific endonuclease subunit 2						
+160365	CLECL1	C-type lectin like 1						
+29121	CLEC2D	C-type lectin domain family 2 member D						
+386593	CHKB-CPT1B	CHKB-CPT1B readthrough (NMD candidate)						
+90273	CEACAM21	carcinoembryonic antigen related cell adhesion molecule 21						
+222256	CDHR3	cadherin related family member 3						
+970	CD70	CD70 molecule						
+124093	CCDC78	coiled-coil domain containing 78						
+NA	C17orf62	NA						
+NA	C16orf93	NA						
+404550	C16orf74	chromosome 16 open reading frame 74						
+55653	BCAS4	breast carcinoma amplified sequence 4						
+27113	BBC3	BCL2 binding component 3						
+55024	BANK1	B cell scaffold protein with ankyrin repeats 1						
+NA	ATHL1	NA						
+344454	AOX2P	aldehyde oxidase 2 pseudogene						
+134637	ADAT2	adenosine deaminase, tRNA specific 2						
+116236	ABHD15	abhydrolase domain containing 15						

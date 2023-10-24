@@ -1,0 +1,128 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	5
+# genesets in collections:	1379
+# genes in comparison (n):	108
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_ECM_AFFILIATED	171	Genes encoding proteins affiliated structurally or functionally to extracellular matrix proteins	11	0.06433	3.453e-13	4.762e-10
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	13	0.01726	2.737e-8	1.887e-5
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	13	0.01265	9.452e-7	4.345e-4
+PID_HNF3A_PATHWAY	44	FOXA1 transcription factor network	4	0.09091	3.642e-6	0.001255
+KEGG_ALDOSTERONE_REGULATED_SODIUM_REABSORPTION	42	Aldosterone-regulated sodium reabsorption	3	0.07143	1.355e-4	0.03738
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME	PID_HNF3A_PATHWAY	KEGG_ALDOSTERONE_REGULATED_SODIUM_REABSORPTION
+6441	SFTPD	surfactant protein D	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME	PID_HNF3A_PATHWAY	
+729238	SFTPA2	surfactant protein A2	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME	PID_HNF3A_PATHWAY	
+653509	SFTPA1	surfactant protein A1	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME	PID_HNF3A_PATHWAY	
+6440	SFTPC	surfactant protein C	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME		
+6439	SFTPB	surfactant protein B	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME		
+253970	SFTA3	surfactant associated 3	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME		
+389376	SFTA2	surfactant associated 2	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME		
+142683	ITLN2	intelectin 2	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME		
+8547	FCN3	ficolin 3	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME		
+728113	ANXA8L1	annexin A8 like 1	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME		
+653145	ANXA8	annexin A8	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME		
+11197	WIF1	WNT inhibitory factor 1		NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME		
+NA	FIGF	NA		NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME		
+7356	SCGB1A1	secretoglobin family 1A member 1				PID_HNF3A_PATHWAY	
+6338	SCNN1B	sodium channel epithelial 1 beta subunit					KEGG_ALDOSTERONE_REGULATED_SODIUM_REABSORPTION
+6337	SCNN1A	sodium channel epithelial 1 alpha subunit					KEGG_ALDOSTERONE_REGULATED_SODIUM_REABSORPTION
+5595	MAPK3	mitogen-activated protein kinase 3					KEGG_ALDOSTERONE_REGULATED_SODIUM_REABSORPTION
+653635	WASH7P	WAS protein family homolog 7, pseudogene					
+10490	VTI1B	vesicle transport through interaction with t-SNAREs 1B					
+23584	VSIG2	V-set and immunoglobulin domain containing 2					
+7433	VIPR1	vasoactive intestinal peptide receptor 1					
+105375355	UPK3B	uroplakin 3B					
+128218	TMEM125	transmembrane protein 125					
+55273	TMEM100	transmembrane protein 100					
+4070	TACSTD2	tumor associated calcium signal transducer 2					
+56241	SUSD2	sushi domain containing 2					
+7341	SUMO1	small ubiquitin-like modifier 1					
+7982	ST7	suppression of tumorigenicity 7					
+677825	SNORA44	small nucleolar RNA, H/ACA box 44					
+6606	SMN1	survival of motor neuron 1, telomeric					
+6578	SLCO2A1	solute carrier organic anion transporter family member 2A1					
+6532	SLC6A4	solute carrier family 6 member 4					
+64116	SLC39A8	solute carrier family 39 member 8					
+10568	SLC34A2	solute carrier family 34 member 2					
+23094	SIPA1L3	signal induced proliferation associated 1 like 3					
+207107	SFTA1P	surfactant associated 1, pseudogene					
+NA	SDPR	NA					
+117156	SCGB3A2	secretoglobin family 3A member 2					
+8796	SCEL	sciellin					
+219790	RTKN2	rhotekin 2					
+54538	ROBO4	roundabout guidance receptor 4					
+5939	RBMS2	RNA binding motif single stranded interacting protein 2					
+54922	RASIP1	Ras interacting protein 1					
+130271	PLEKHH2	pleckstrin homology, MyTH4 and FERM domain containing H2					
+5319	PLA2G1B	phospholipase A2 group IB					
+5284	PIGR	polymeric immunoglobulin receptor					
+5225	PGC	progastricsin					
+157310	PEBP4	phosphatidylethanolamine binding protein 4					
+7080	NKX2-1	NK2 homeobox 1					
+25836	NIPBL	NIPBL, cohesin loading factor					
+81565	NDEL1	nudE neurodevelopment protein 1 like 1					
+9476	NAPSA	napsin A aspartic peptidase					
+100820829	MYZAP	myocardial zonula adherens protein					
+219995	MS4A15	membrane spanning 4-domains A15					
+256691	MAMDC2	MAM domain containing 2					
+23499	MACF1	microtubule-actin crosslinking factor 1					
+55679	LIMS2	LIM zinc finger domain containing 2					
+27074	LAMP3	lysosomal associated membrane protein 3					
+11012	KLK11	kallikrein related peptidase 11					
+3694	ITGB6	integrin subunit beta 6					
+51763	INPP5K	inositol polyphosphate-5-phosphatase K					
+11185	INMT	indolethylamine N-methyltransferase					
+9173	IL1RL1	interleukin 1 receptor like 1					
+132014	IL17RE	interleukin 17 receptor E					
+3295	HSD17B4	hydroxysteroid 17-beta dehydrogenase 4					
+646962	HRCT1	histidine rich carboxyl terminus 1					
+3248	HPGD	15-hydroxyprostaglandin dehydrogenase					
+64344	HIF3A	hypoxia inducible factor 3 subunit alpha					
+9052	GPRC5A	G protein-coupled receptor class C group 5 member A					
+200504	GKN2	gastrokine 2					
+155038	GIMAP8	GTPase, IMAP family member 8					
+55340	GIMAP5	GTPase, IMAP family member 5					
+115361	GBP4	guanylate binding protein 4					
+5349	FXYD3	FXYD domain containing ion transport regulator 3					
+2327	FMO2	flavin containing monooxygenase 2					
+6468	FBXW4	F-box and WD repeat domain containing 4					
+NA	FAM65A	NA					
+257415	FAM133B	family with sequence similarity 133 member B					
+2073	ERCC5	ERCC excision repair 5, endonuclease					
+NA	ERBB2IP	NA					
+2034	EPAS1	endothelial PAS domain protein 1					
+2013	EMP2	epithelial membrane protein 2					
+53905	DUOX1	dual oxidase 1					
+1580	CYP4B1	cytochrome P450 family 4 subfamily B member 1					
+284340	CXCL17	C-X-C motif chemokine ligand 17					
+200186	CRTC2	CREB regulated transcription coactivator 2					
+53405	CLIC5	chloride intracellular channel 5					
+51208	CLDN18	claudin 18					
+9541	CIR1	corepressor interacting with RBPJ, 1					
+55561	CDC42BPG	CDC42 binding protein kinase gamma					
+1604	CD55	CD55 molecule (Cromer blood group)					
+9034	CCRL2	C-C motif chemokine receptor like 2					
+762	CA4	carbonic anhydrase 4					
+722	C4BPA	complement component 4 binding protein alpha					
+79098	C1orf116	chromosome 1 open reading frame 116					
+153579	BTNL9	butyrophilin like 9					
+283149	BCL9L	BCL9 like					
+9275	BCL7B	BCL7B, BAF complex component					
+84239	ATP13A4	ATPase 13A4					
+11016	ATF7	activating transcription factor 7					
+22899	ARHGEF15	Rho guanine nucleotide exchange factor 15					
+64411	ARAP3	ArfGAP with RhoGAP domain, ankyrin repeat and PH domain 3					
+80833	APOL3	apolipoprotein L3					
+147463	ANKRD29	ankyrin repeat domain 29					
+27063	ANKRD1	ankyrin repeat domain 1					
+259173	ALS2CL	ALS2 C-terminal like					
+177	AGER	advanced glycosylation end-product specific receptor					
+94	ACVRL1	activin A receptor like type 1					

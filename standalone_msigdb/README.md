@@ -35,9 +35,10 @@ Start with: [`TH34_rollup_cohort_outliers.txt`](https://github.com/UCSC-Treehous
 
 Run `standalone_dgidb.py`:
 ```
-analysis-methods/script/DGIdb_and_MSigDB_pathways_aka_GSEA/standalone_dgidb.py \
-    TH34_rollup_cohort_outliers.txt \
-    TH34_rollup_cohort_outliers_with_drugs_2023-09-20.txt
+scriptdir=~/code/analysis-methods/script/DGIdb_and_MSigDB_pathways_aka_GSEA/
+$scriptdir/standalone_dgidb.py \
+    data/TH34_rollup_cohort_outliers.txt \
+    data/TH34_rollup_cohort_outliers_with_drugs_2023-09-20.txt
 ```
 
 This generates `TH34_rollup_cohort_outliers_with_drugs_2023-09-20.txt`.
@@ -75,10 +76,21 @@ jupyter/datascience-notebook:python-3.11 /bin/bash
 cd /workdir/data/pathway_results_rollup_cohort/
 /analysis-methods/script/DGIdb_and_MSigDB_pathways_aka_GSEA/standalone_msigdb_pathways.R
 ```
+This generates 204 pathway result files in `data/pathway_results_rollup_cohort` eg
+`TH34_1379_S01-v8-v11_TH03_TH34_rollup_pathway_results.txt`
 
+Finally, we will merge those pathway result files with `TH34_rollup_cohort_outliers_with_drugs_2023-09-20.txt` using
+`msigdb_pathways_to_tall_table.py`.
 
-
-
+```
+scriptdir=~/code/analysis-methods/script/DGIdb_and_MSigDB_pathways_aka_GSEA/
+$scriptdir/msigdb_pathways_to_tall_table.py \
+    data/pathway_results_rollup_cohort \
+    data/TH34_rollup_cohort_outliers_with_drugs_2023-09-20.txt \
+    > data/TH34_tall_rollup_cohort_outliers_with_drugs_pathways_2023-09-28.tsv.txt
+```
+This generates the final result file:
+`fff9a52894cc729fbce87e0eacfa516a  TH34_tall_rollup_cohort_outliers_with_drugs_pathways_2023-09-28.tsv.txt`
 
 
 ### Original tertiary outliers

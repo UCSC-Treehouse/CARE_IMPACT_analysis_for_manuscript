@@ -1,0 +1,99 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	10
+# genesets in collections:	1379
+# genes in comparison (n):	74
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+REACTOME_STRIATED_MUSCLE_CONTRACTION	27	Genes involved in Striated Muscle Contraction	6	0.2222	4.082e-12	5.63e-9
+HALLMARK_MYOGENESIS	200	Genes involved in development of skeletal muscle (myogenesis).	9	0.045	4.045e-11	2.789e-8
+REACTOME_MUSCLE_CONTRACTION	48	Genes involved in Muscle contraction	6	0.125	1.648e-10	7.575e-8
+NABA_COLLAGENS	44	Genes encoding collagen proteins	4	0.09091	8.006e-7	2.76e-4
+REACTOME_COLLAGEN_FORMATION	58	Genes involved in Collagen formation	4	0.06897	2.46e-6	6.784e-4
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	6	0.02182	5.726e-6	0.001316
+REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION	87	Genes involved in Extracellular matrix organization	4	0.04598	1.246e-5	0.002454
+REACTOME_TANDEM_PORE_DOMAIN_POTASSIUM_CHANNELS	12	Genes involved in Tandem pore domain potassium channels	2	0.1667	1.671e-4	0.0288
+KEGG_CARDIAC_MUSCLE_CONTRACTION	80	Cardiac muscle contraction	3	0.0375	3.012e-4	0.04615
+KEGG_ECM_RECEPTOR_INTERACTION	84	ECM-receptor interaction	3	0.03571	3.477e-4	0.04795
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	REACTOME_STRIATED_MUSCLE_CONTRACTION	HALLMARK_MYOGENESIS	REACTOME_MUSCLE_CONTRACTION	NABA_COLLAGENS	REACTOME_COLLAGEN_FORMATION	NABA_CORE_MATRISOME	REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION	REACTOME_TANDEM_PORE_DOMAIN_POTASSIUM_CHANNELS	KEGG_CARDIAC_MUSCLE_CONTRACTION	KEGG_ECM_RECEPTOR_INTERACTION
+7139	TNNT2	troponin T2, cardiac type	REACTOME_STRIATED_MUSCLE_CONTRACTION	HALLMARK_MYOGENESIS	REACTOME_MUSCLE_CONTRACTION						KEGG_CARDIAC_MUSCLE_CONTRACTION	
+7138	TNNT1	troponin T1, slow skeletal type	REACTOME_STRIATED_MUSCLE_CONTRACTION	HALLMARK_MYOGENESIS	REACTOME_MUSCLE_CONTRACTION							
+7136	TNNI2	troponin I2, fast skeletal type	REACTOME_STRIATED_MUSCLE_CONTRACTION	HALLMARK_MYOGENESIS	REACTOME_MUSCLE_CONTRACTION							
+7135	TNNI1	troponin I1, slow skeletal type	REACTOME_STRIATED_MUSCLE_CONTRACTION	HALLMARK_MYOGENESIS	REACTOME_MUSCLE_CONTRACTION							
+7125	TNNC2	troponin C2, fast skeletal type	REACTOME_STRIATED_MUSCLE_CONTRACTION	HALLMARK_MYOGENESIS	REACTOME_MUSCLE_CONTRACTION							
+4703	NEB	nebulin	REACTOME_STRIATED_MUSCLE_CONTRACTION		REACTOME_MUSCLE_CONTRACTION							
+7140	TNNT3	troponin T3, fast skeletal type		HALLMARK_MYOGENESIS								
+6442	SGCA	sarcoglycan alpha		HALLMARK_MYOGENESIS								
+3270	HRC	histidine rich calcium binding protein		HALLMARK_MYOGENESIS								
+2027	ENO3	enolase 3		HALLMARK_MYOGENESIS								
+50509	COL5A3	collagen type V alpha 3 chain				NABA_COLLAGENS	REACTOME_COLLAGEN_FORMATION	NABA_CORE_MATRISOME	REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION			KEGG_ECM_RECEPTOR_INTERACTION
+1280	COL2A1	collagen type II alpha 1 chain				NABA_COLLAGENS	REACTOME_COLLAGEN_FORMATION	NABA_CORE_MATRISOME	REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION			KEGG_ECM_RECEPTOR_INTERACTION
+1302	COL11A2	collagen type XI alpha 2 chain				NABA_COLLAGENS	REACTOME_COLLAGEN_FORMATION	NABA_CORE_MATRISOME	REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION			KEGG_ECM_RECEPTOR_INTERACTION
+81578	COL21A1	collagen type XXI alpha 1 chain				NABA_COLLAGENS	REACTOME_COLLAGEN_FORMATION	NABA_CORE_MATRISOME	REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION			
+126147	NTN5	netrin 5						NABA_CORE_MATRISOME				
+84467	FBN3	fibrillin 3						NABA_CORE_MATRISOME				
+51305	KCNK9	potassium two pore domain channel subfamily K member 9								REACTOME_TANDEM_PORE_DOMAIN_POTASSIUM_CHANNELS		
+3776	KCNK2	potassium two pore domain channel subfamily K member 2								REACTOME_TANDEM_PORE_DOMAIN_POTASSIUM_CHANNELS		
+84701	COX4I2	cytochrome c oxidase subunit 4I2									KEGG_CARDIAC_MUSCLE_CONTRACTION	
+477	ATP1A2	ATPase Na+/K+ transporting subunit alpha 2									KEGG_CARDIAC_MUSCLE_CONTRACTION	
+84449	ZNF333	zinc finger protein 333										
+7535	ZAP70	zeta chain of T cell receptor associated protein kinase 70										
+23352	UBR4	ubiquitin protein ligase E3 component n-recognin 4										
+80263	TRIM45	tripartite motif containing 45										
+339456	TMEM52	transmembrane protein 52										
+6999	TDO2	tryptophan 2,3-dioxygenase										
+246329	STAC3	SH3 and cysteine rich domain 3										
+6345	SRL	sarcalumenin										
+54861	SNRK	SNF related kinase										
+724102	SNHG4	small nucleolar RNA host gene 4										
+6581	SLC22A3	solute carrier family 22 member 3										
+56920	SEMA3G	semaphorin 3G										
+55183	RIF1	replication timing regulatory factor 1										
+5959	RDH5	retinol dehydrogenase 5										
+5913	RAPSN	receptor associated protein of the synapse										
+5457	POU4F1	POU class 4 homeobox 1										
+5308	PITX2	paired like homeodomain 2										
+5307	PITX1	paired like homeodomain 1										
+5222	PGA5	pepsinogen 5, group I (pepsinogen A)										
+643847	PGA4	pepsinogen 4, group I (pepsinogen A)										
+643834	PGA3	pepsinogen 3, group I (pepsinogen A)										
+5081	PAX7	paired box 7										
+116039	OSR2	odd-skipped related transciption factor 2										
+NA	ORAOV1	NA										
+83714	NRIP2	nuclear receptor interacting protein 2										
+4880	NPPC	natriuretic peptide C										
+4868	NPHS1	NPHS1, nephrin										
+10276	NET1	neuroepithelial cell transforming 1										
+4723	NDUFV1	NADH:ubiquinone oxidoreductase core subunit V1										
+4617	MYF5	myogenic factor 5										
+389125	MUSTN1	musculoskeletal, embryonic nuclear protein 1										
+4124	MAN2A1	mannosidase alpha class 2A member 1										
+55144	LRRC8D	leucine rich repeat containing 8 VRAC subunit D										
+9388	LIPG	lipase G, endothelial type										
+8549	LGR5	leucine rich repeat containing G protein-coupled receptor 5										
+100506243	KRBOX1	KRAB box domain containing 1										
+57565	KLHL14	kelch like family member 14										
+84063	KIRREL2	kirre like nephrin family adhesion molecule 2										
+3664	IRF6	interferon regulatory factor 6										
+NA	GUCY1B3	NA										
+2326	FMO1	flavin containing monooxygenase 1										
+2264	FGFR4	fibroblast growth factor receptor 4										
+9873	FCHSD2	FCH and double SH3 domains 2										
+1938	EEF2	eukaryotic translation elongation factor 2										
+1908	EDN3	endothelin 3										
+10655	DMRT2	doublesex and mab-3 related transcription factor 2										
+64150	DIO3OS	DIO3 opposite strand upstream RNA										
+1184	CLCN5	chloride voltage-gated channel 5										
+140578	CHODL	chondrolectin										
+1024	CDK8	cyclin dependent kinase 8										
+80323	CCDC68	coiled-coil domain containing 68										
+799	CALCR	calcitonin receptor										
+NA	C1orf95	NA										
+NA	C1orf27	NA										

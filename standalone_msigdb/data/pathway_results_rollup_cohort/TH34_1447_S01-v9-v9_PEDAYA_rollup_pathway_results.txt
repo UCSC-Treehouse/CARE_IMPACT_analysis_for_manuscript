@@ -1,0 +1,81 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	11
+# genesets in collections:	1379
+# genes in comparison (n):	55
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+HALLMARK_MYC_TARGETS_V1	200	A subgroup of genes regulated by MYC - version 1 (v1).	5	0.025	4.328e-6	0.002984
+REACTOME_METABOLISM_OF_RNA	330	Genes involved in Metabolism of RNA	6	0.01818	2.824e-6	0.002984
+REACTOME_MRNA_SPLICING	111	Genes involved in mRNA Splicing	4	0.03604	9.996e-6	0.003562
+REACTOME_MRNA_3_END_PROCESSING	35	Genes involved in mRNA 3'-end processing	3	0.08571	1.033e-5	0.003562
+KEGG_SPLICEOSOME	128	Spliceosome	4	0.03125	1.754e-5	0.004299
+REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA	140	Genes involved in Processing of Capped Intron-Containing Pre-mRNA	4	0.02857	2.494e-5	0.004299
+REACTOME_METABOLISM_OF_MRNA	284	Genes involved in Metabolism of mRNA	5	0.01761	2.351e-5	0.004299
+REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_	44	Genes involved in Cleavage of Growing Transcript in the Termination Region	3	0.06818	2.075e-5	0.004299
+REACTOME_TRANSPORT_OF_MATURE_TRANSCRIPT_TO_CYTOPLASM	54	Genes involved in Transport of Mature Transcript to Cytoplasm	3	0.05556	3.853e-5	0.005903
+REACTOME_MRNA_PROCESSING	161	Genes involved in mRNA Processing	4	0.02484	4.306e-5	0.005937
+REACTOME_RNA_POL_II_TRANSCRIPTION	105	Genes involved in RNA Polymerase II Transcription	3	0.02857	2.789e-4	0.03496
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	HALLMARK_MYC_TARGETS_V1	REACTOME_METABOLISM_OF_RNA	REACTOME_MRNA_SPLICING	REACTOME_MRNA_3_END_PROCESSING	KEGG_SPLICEOSOME	REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA	REACTOME_METABOLISM_OF_MRNA	REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_	REACTOME_TRANSPORT_OF_MATURE_TRANSCRIPT_TO_CYTOPLASM	REACTOME_MRNA_PROCESSING	REACTOME_RNA_POL_II_TRANSCRIPTION
+5713	PSMD7	proteasome 26S subunit, non-ATPase 7	HALLMARK_MYC_TARGETS_V1	REACTOME_METABOLISM_OF_RNA					REACTOME_METABOLISM_OF_MRNA				
+26121	PRPF31	pre-mRNA processing factor 31	HALLMARK_MYC_TARGETS_V1				KEGG_SPLICEOSOME						
+6742	SSBP1	single stranded DNA binding protein 1	HALLMARK_MYC_TARGETS_V1										
+8662	EIF3B	eukaryotic translation initiation factor 3 subunit B	HALLMARK_MYC_TARGETS_V1										
+52	ACP1	acid phosphatase 1	HALLMARK_MYC_TARGETS_V1										
+9939	RBM8A	RNA binding motif protein 8A		REACTOME_METABOLISM_OF_RNA	REACTOME_MRNA_SPLICING	REACTOME_MRNA_3_END_PROCESSING	KEGG_SPLICEOSOME	REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA	REACTOME_METABOLISM_OF_MRNA	REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_	REACTOME_TRANSPORT_OF_MATURE_TRANSCRIPT_TO_CYTOPLASM	REACTOME_MRNA_PROCESSING	REACTOME_RNA_POL_II_TRANSCRIPTION
+65109	UPF3B	UPF3B, regulator of nonsense mediated mRNA decay		REACTOME_METABOLISM_OF_RNA	REACTOME_MRNA_SPLICING	REACTOME_MRNA_3_END_PROCESSING		REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA	REACTOME_METABOLISM_OF_MRNA	REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_	REACTOME_TRANSPORT_OF_MATURE_TRANSCRIPT_TO_CYTOPLASM	REACTOME_MRNA_PROCESSING	REACTOME_RNA_POL_II_TRANSCRIPTION
+23658	LSM5	LSM5 homolog, U6 small nuclear RNA and mRNA degradation associated		REACTOME_METABOLISM_OF_RNA			KEGG_SPLICEOSOME		REACTOME_METABOLISM_OF_MRNA				
+4849	CNOT3	CCR4-NOT transcription complex subunit 3		REACTOME_METABOLISM_OF_RNA					REACTOME_METABOLISM_OF_MRNA				
+8487	GEMIN2	gem nuclear organelle associated protein 2		REACTOME_METABOLISM_OF_RNA									
+51692	CPSF3	cleavage and polyadenylation specific factor 3			REACTOME_MRNA_SPLICING	REACTOME_MRNA_3_END_PROCESSING		REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA		REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_	REACTOME_TRANSPORT_OF_MATURE_TRANSCRIPT_TO_CYTOPLASM	REACTOME_MRNA_PROCESSING	REACTOME_RNA_POL_II_TRANSCRIPTION
+83443	SF3B5	splicing factor 3b subunit 5			REACTOME_MRNA_SPLICING		KEGG_SPLICEOSOME	REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA				REACTOME_MRNA_PROCESSING	
+10782	ZNF274	zinc finger protein 274											
+7490	WT1	Wilms tumor 1											
+9040	UBE2M	ubiquitin conjugating enzyme E2 M											
+26520	TIMM9	translocase of inner mitochondrial membrane 9											
+29844	TFPT	TCF3 fusion partner											
+7018	TF	transferrin											
+29101	SSU72	SSU72 homolog, RNA polymerase II CTD phosphatase											
+6729	SRP54	signal recognition particle 54											
+10371	SEMA3A	semaphorin 3A											
+79005	SCNM1	sodium channel modifier 1											
+100316904	SAP25	Sin3A associated protein 25											
+6100	RP9	RP9, pre-mRNA splicing factor											
+285498	RNF212	ring finger protein 212											
+246243	RNASEH1	ribonuclease H1											
+5354	PLP1	proteolipid protein 1											
+55003	PAK1IP1	PAK1 interacting protein 1											
+4922	NTS	neurotensin											
+51406	NOL7	nucleolar protein 7											
+79954	NOL10	nucleolar protein 10											
+64965	MRPS9	mitochondrial ribosomal protein S9											
+26002	MOXD1	monooxygenase DBH like 1											
+4155	MBP	myelin basic protein											
+728269	MAGEA9B	MAGE family member A9B											
+84946	LTV1	LTV1 ribosome biogenesis factor											
+9786	KIAA0586	KIAA0586											
+92856	IMP4	IMP4, U3 small nucleolar ribonucleoprotein											
+9324	HMGN3	high mobility group nucleosomal binding domain 3											
+2719	GPC3	glypican 3											
+79017	GGCT	gamma-glutamylcyclotransferase											
+2670	GFAP	glial fibrillary acidic protein											
+81608	FIP1L1	factor interacting with PAPOLA and CPSF1											
+1674	DES	desmin											
+51339	DACT1	dishevelled binding antagonist of beta catenin 1											
+54205	CYCS	cytochrome c, somatic											
+29099	COMMD9	COMM domain containing 9											
+1280	COL2A1	collagen type II alpha 1 chain											
+29082	CHMP4A	charged multivesicular body protein 4A											
+283316	CD163L1	CD163 molecule like 1											
+NA	CBWD7	NA											
+55871	CBWD1	COBW domain containing 1											
+8854	ALDH1A2	aldehyde dehydrogenase 1 family member A2											
+140	ADORA3	adenosine A3 receptor											
+23	ABCF1	ATP binding cassette subfamily F member 1											

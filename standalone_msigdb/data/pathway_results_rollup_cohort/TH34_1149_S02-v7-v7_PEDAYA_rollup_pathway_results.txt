@@ -1,0 +1,101 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	8
+# genesets in collections:	1379
+# genes in comparison (n):	78
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_ECM_AFFILIATED	171	Genes encoding proteins affiliated structurally or functionally to extracellular matrix proteins	10	0.05848	3.945e-13	5.441e-10
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	12	0.01594	5.555e-9	3.83e-6
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	13	0.01265	1.876e-8	8.622e-6
+PID_HNF3A_PATHWAY	44	FOXA1 transcription factor network	4	0.09091	9.897e-7	3.412e-4
+PID_REG_GR_PATHWAY	82	Glucocorticoid receptor regulatory network	4	0.04878	1.214e-5	0.003349
+PID_DELTA_NP63_PATHWAY	47	Validated transcriptional targets of deltaNp63 isoforms	3	0.06383	7.227e-5	0.01661
+KEGG_STEROID_HORMONE_BIOSYNTHESIS	55	Steroid hormone biosynthesis	3	0.05455	1.158e-4	0.02281
+KEGG_METABOLISM_OF_XENOBIOTICS_BY_CYTOCHROME_P450	70	Metabolism of xenobiotics by cytochrome P450	3	0.04286	2.372e-4	0.04089
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME	PID_HNF3A_PATHWAY	PID_REG_GR_PATHWAY	PID_DELTA_NP63_PATHWAY	KEGG_STEROID_HORMONE_BIOSYNTHESIS	KEGG_METABOLISM_OF_XENOBIOTICS_BY_CYTOCHROME_P450
+6441	SFTPD	surfactant protein D	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME	PID_HNF3A_PATHWAY				
+729238	SFTPA2	surfactant protein A2	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME	PID_HNF3A_PATHWAY				
+653509	SFTPA1	surfactant protein A1	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME	PID_HNF3A_PATHWAY				
+6440	SFTPC	surfactant protein C	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME					
+6439	SFTPB	surfactant protein B	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME					
+389376	SFTA2	surfactant associated 2	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME					
+94025	MUC16	mucin 16, cell surface associated	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME					
+4582	MUC1	mucin 1, cell surface associated	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME					
+8547	FCN3	ficolin 3	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME					
+154790	CLEC2L	C-type lectin domain family 2 member L	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME					
+10637	LEFTY1	left-right determination factor 1		NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME					
+3479	IGF1	insulin like growth factor 1		NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME					
+8076	MFAP5	microfibril associated protein 5			NABA_MATRISOME					
+7356	SCGB1A1	secretoglobin family 1A member 1				PID_HNF3A_PATHWAY				
+3852	KRT5	keratin 5					PID_REG_GR_PATHWAY	PID_DELTA_NP63_PATHWAY		
+3861	KRT14	keratin 14					PID_REG_GR_PATHWAY	PID_DELTA_NP63_PATHWAY		
+7433	VIPR1	vasoactive intestinal peptide receptor 1					PID_REG_GR_PATHWAY			
+3872	KRT17	keratin 17					PID_REG_GR_PATHWAY			
+2877	GPX2	glutathione peroxidase 2						PID_DELTA_NP63_PATHWAY		
+8644	AKR1C3	aldo-keto reductase family 1 member C3							KEGG_STEROID_HORMONE_BIOSYNTHESIS	KEGG_METABOLISM_OF_XENOBIOTICS_BY_CYTOCHROME_P450
+1646	AKR1C2	aldo-keto reductase family 1 member C2							KEGG_STEROID_HORMONE_BIOSYNTHESIS	KEGG_METABOLISM_OF_XENOBIOTICS_BY_CYTOCHROME_P450
+1645	AKR1C1	aldo-keto reductase family 1 member C1							KEGG_STEROID_HORMONE_BIOSYNTHESIS	KEGG_METABOLISM_OF_XENOBIOTICS_BY_CYTOCHROME_P450
+131540	ZDHHC19	zinc finger DHHC-type containing 19								
+9671	WSCD2	WSC domain containing 2								
+100287345	VENTXP2	VENT homeobox pseudogene 2								
+7138	TNNT1	troponin T1, slow skeletal type								
+7137	TNNI3	troponin I3, cardiac type								
+9725	TMEM63A	transmembrane protein 63A								
+349408	TLR8-AS1	TLR8 antisense RNA 1								
+64321	SOX17	SRY-box 17								
+9306	SOCS6	suppressor of cytokine signaling 6								
+117156	SCGB3A2	secretoglobin family 3A member 2								
+92304	SCGB3A1	secretoglobin family 3A member 1								
+25914	RTTN	rotatin								
+25897	RNF19A	ring finger protein 19A, RBR E3 ubiquitin protein ligase								
+57494	RIMKLB	ribosomal modification protein rimK like family member B								
+376267	RAB15	RAB15, member RAS oncogene family								
+5225	PGC	progastricsin								
+50940	PDE11A	phosphodiesterase 11A								
+84333	PCGF5	polycomb group ring finger 5								
+57526	PCDH19	protocadherin 19								
+340527	NHSL2	NHS like 2								
+342897	NCCRP1	non-specific cytotoxic cell receptor protein 1 homolog (zebrafish)								
+9476	NAPSA	napsin A aspartic peptidase								
+4356	MPP3	membrane palmitoylated protein 3								
+440823	MIAT	myocardial infarction associated transcript								
+4223	MEOX2	mesenchyme homeobox 2								
+56890	MDM1	Mdm1 nuclear protein								
+4149	MAX	MYC associated factor X								
+4057	LTF	lactotransferrin								
+145978	LINC00052	long intergenic non-protein coding RNA 52								
+54596	L1TD1	LINE1 type transposase domain containing 1								
+3855	KRT7	keratin 7								
+3853	KRT6A	keratin 6A								
+3851	KRT4	keratin 4								
+3868	KRT16	keratin 16								
+688	KLF5	Kruppel like factor 5								
+163782	KANK4	KN motif and ankyrin repeat domains 4								
+3655	ITGA6	integrin subunit alpha 6								
+388555	IGFL3	IGF like family member 3								
+147920	IGFL2	IGF like family member 2								
+3306	HSPA2	heat shock protein family A (Hsp70) member 2								
+3248	HPGD	15-hydroxyprostaglandin dehydrogenase								
+114907	FBXO32	F-box protein 32								
+9413	FAM189A2	family with sequence similarity 189 member A2								
+NA	FAM159B	NA								
+2045	EPHA7	EPH receptor A7								
+9229	DLGAP1	DLG associated protein 1								
+NA	DKFZp434J0226	NA								
+284340	CXCL17	C-X-C motif chemokine ligand 17								
+1264	CNN1	calponin 1								
+8556	CDC14A	cell division cycle 14A								
+64073	C19orf33	chromosome 19 open reading frame 33								
+483	ATP1B3	ATPase Na+/K+ transporting subunit beta 3								
+23779	ARHGAP8	Rho GTPase activating protein 8								
+27063	ANKRD1	ankyrin repeat domain 1								
+177	AGER	advanced glycosylation end-product specific receptor								
+147	ADRA1B	adrenoceptor alpha 1B								

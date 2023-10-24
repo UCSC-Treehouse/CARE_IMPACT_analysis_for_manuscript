@@ -1,0 +1,190 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	14
+# genesets in collections:	1379
+# genes in comparison (n):	161
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	38	0.03696	8.619e-28	1.189e-24
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	24	0.03187	2.903e-16	2.002e-13
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	14	0.05091	1.247e-12	5.731e-10
+NABA_ECM_AFFILIATED	171	Genes encoding proteins affiliated structurally or functionally to extracellular matrix proteins	11	0.06433	2.812e-11	9.696e-9
+REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION	87	Genes involved in Extracellular matrix organization	7	0.08046	2.624e-8	7.236e-6
+HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	200	Genes defining epithelial-mesenchymal transition, as in wound healing, fibrosis and metastasis.	9	0.045	4.217e-8	9.691e-6
+REACTOME_COLLAGEN_FORMATION	58	Genes involved in Collagen formation	6	0.1034	5.861e-8	1.155e-5
+NABA_ECM_REGULATORS	238	Genes encoding enzymes and their regulators involved in the remodeling of the extracellular matrix	8	0.03361	2.185e-6	3.766e-4
+NABA_ECM_GLYCOPROTEINS	196	Genes encoding structural ECM glycoproteins	7	0.03571	6.457e-6	9.894e-4
+NABA_COLLAGENS	44	Genes encoding collagen proteins	4	0.09091	1.766e-5	0.002435
+KEGG_LYSOSOME	121	Lysosome	5	0.04132	7.104e-5	0.008905
+HALLMARK_MITOTIC_SPINDLE	200	Genes important for mitotic spindle assembly.	6	0.03	7.928e-5	0.009111
+NABA_PROTEOGLYCANS	35	Genes encoding proteoglycans	3	0.08571	2.544e-4	0.02698
+PID_HNF3A_PATHWAY	44	FOXA1 transcription factor network	3	0.06818	5.03e-4	0.04954
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_CORE_MATRISOME	NABA_ECM_AFFILIATED	REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	REACTOME_COLLAGEN_FORMATION	NABA_ECM_REGULATORS	NABA_ECM_GLYCOPROTEINS	NABA_COLLAGENS	KEGG_LYSOSOME	HALLMARK_MITOTIC_SPINDLE	NABA_PROTEOGLYCANS	PID_HNF3A_PATHWAY
+6441	SFTPD	surfactant protein D	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		NABA_ECM_AFFILIATED										PID_HNF3A_PATHWAY
+729238	SFTPA2	surfactant protein A2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		NABA_ECM_AFFILIATED										PID_HNF3A_PATHWAY
+653509	SFTPA1	surfactant protein A1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		NABA_ECM_AFFILIATED										PID_HNF3A_PATHWAY
+6440	SFTPC	surfactant protein C	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		NABA_ECM_AFFILIATED										
+6439	SFTPB	surfactant protein B	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		NABA_ECM_AFFILIATED										
+253970	SFTA3	surfactant associated 3	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		NABA_ECM_AFFILIATED										
+389376	SFTA2	surfactant associated 2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		NABA_ECM_AFFILIATED										
+4585	MUC4	mucin 4, cell surface associated	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		NABA_ECM_AFFILIATED										
+9976	CLEC2B	C-type lectin domain family 2 member B	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		NABA_ECM_AFFILIATED										
+6320	CLEC11A	C-type lectin domain containing 11A	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		NABA_ECM_AFFILIATED										
+114904	C1QTNF6	C1q and TNF related 6	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		NABA_ECM_AFFILIATED										
+9509	ADAMTS2	ADAM metallopeptidase with thrombospondin type 1 motif 2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED			REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION		REACTOME_COLLAGEN_FORMATION	NABA_ECM_REGULATORS						
+140766	ADAMTS14	ADAM metallopeptidase with thrombospondin type 1 motif 14	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED			REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION		REACTOME_COLLAGEN_FORMATION	NABA_ECM_REGULATORS						
+4322	MMP13	matrix metallopeptidase 13	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED			REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION			NABA_ECM_REGULATORS						
+4015	LOX	lysyl oxidase	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED				HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION		NABA_ECM_REGULATORS						
+1510	CTSE	cathepsin E	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED						NABA_ECM_REGULATORS			KEGG_LYSOSOME			
+64175	P3H1	prolyl 3-hydroxylase 1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED						NABA_ECM_REGULATORS						
+8510	MMP23B	matrix metallopeptidase 23B	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED						NABA_ECM_REGULATORS						
+80760	ITIH5	inter-alpha-trypsin inhibitor heavy chain family member 5	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED						NABA_ECM_REGULATORS						
+222663	SCUBE3	signal peptide, CUB domain and EGF like domain containing 3	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED												
+80274	SCUBE1	signal peptide, CUB domain and EGF like domain containing 1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED												
+3481	IGF2	insulin like growth factor 2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED												
+23452	ANGPTL2	angiopoietin like 2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED												
+9068	ANGPTL1	angiopoietin like 1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED												
+1289	COL5A1	collagen type V alpha 1 chain	NABA_MATRISOME		NABA_CORE_MATRISOME		REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	REACTOME_COLLAGEN_FORMATION			NABA_COLLAGENS				
+1307	COL16A1	collagen type XVI alpha 1 chain	NABA_MATRISOME		NABA_CORE_MATRISOME		REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	REACTOME_COLLAGEN_FORMATION			NABA_COLLAGENS				
+91522	COL23A1	collagen type XXIII alpha 1 chain	NABA_MATRISOME		NABA_CORE_MATRISOME		REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION		REACTOME_COLLAGEN_FORMATION			NABA_COLLAGENS				
+7373	COL14A1	collagen type XIV alpha 1 chain	NABA_MATRISOME		NABA_CORE_MATRISOME		REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION		REACTOME_COLLAGEN_FORMATION			NABA_COLLAGENS				
+6678	SPARC	secreted protein acidic and cysteine rich	NABA_MATRISOME		NABA_CORE_MATRISOME			HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION			NABA_ECM_GLYCOPROTEINS					
+4147	MATN2	matrilin 2	NABA_MATRISOME		NABA_CORE_MATRISOME			HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION			NABA_ECM_GLYCOPROTEINS					
+2200	FBN1	fibrillin 1	NABA_MATRISOME		NABA_CORE_MATRISOME			HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION			NABA_ECM_GLYCOPROTEINS					
+2006	ELN	elastin	NABA_MATRISOME		NABA_CORE_MATRISOME			HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION			NABA_ECM_GLYCOPROTEINS					
+1842	ECM2	extracellular matrix protein 2	NABA_MATRISOME		NABA_CORE_MATRISOME			HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION			NABA_ECM_GLYCOPROTEINS					
+NA	WISP1	NA	NABA_MATRISOME		NABA_CORE_MATRISOME						NABA_ECM_GLYCOPROTEINS					
+1755	DMBT1	deleted in malignant brain tumors 1	NABA_MATRISOME		NABA_CORE_MATRISOME						NABA_ECM_GLYCOPROTEINS					
+4958	OMD	osteomodulin	NABA_MATRISOME		NABA_CORE_MATRISOME										NABA_PROTEOGLYCANS	
+4969	OGN	osteoglycin	NABA_MATRISOME		NABA_CORE_MATRISOME										NABA_PROTEOGLYCANS	
+54829	ASPN	asporin	NABA_MATRISOME		NABA_CORE_MATRISOME										NABA_PROTEOGLYCANS	
+2303	FOXC2	forkhead box C2						HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION								
+9476	NAPSA	napsin A aspartic peptidase											KEGG_LYSOSOME			
+3988	LIPA	lipase A, lysosomal acid type											KEGG_LYSOSOME			
+2588	GALNS	galactosamine (N-acetyl)-6-sulfatase											KEGG_LYSOSOME			
+1176	AP3S1	adaptor related protein complex 3 subunit sigma 1											KEGG_LYSOSOME			
+7204	TRIO	trio Rho guanine nucleotide exchange factor												HALLMARK_MITOTIC_SPINDLE		
+6904	TBCD	tubulin folding cofactor D												HALLMARK_MITOTIC_SPINDLE		
+64857	PLEKHG2	pleckstrin homology and RhoGEF domain containing G2												HALLMARK_MITOTIC_SPINDLE		
+5311	PKD2	polycystin 2, transient receptor potential cation channel												HALLMARK_MITOTIC_SPINDLE		
+5116	PCNT	pericentrin												HALLMARK_MITOTIC_SPINDLE		
+8874	ARHGEF7	Rho guanine nucleotide exchange factor 7												HALLMARK_MITOTIC_SPINDLE		
+10781	ZNF266	zinc finger protein 266														
+11060	WWP2	WW domain containing E3 ubiquitin protein ligase 2														
+26118	WSB1	WD repeat and SOCS box containing 1														
+58189	WFDC1	WAP four-disulfide core domain 1														
+253769	WDR27	WD repeat domain 27														
+57687	VAT1L	vesicle amine transport 1 like														
+117581	TWIST2	twist family bHLH transcription factor 2														
+51693	TRAPPC2L	trafficking protein particle complex 2 like														
+7140	TNNT3	troponin T3, fast skeletal type														
+11013	TMSB15A	thymosin beta 15a														
+339456	TMEM52	transmembrane protein 52														
+55002	TMCO3	transmembrane and coiled-coil domains 3														
+7073	TIAL1	TIA1 cytotoxic granule associated RNA binding protein like 1														
+9096	TBX18	T-box 18														
+23102	TBC1D2B	TBC1 domain family member 2B														
+6894	TARBP1	TAR (HIV-1) RNA binding protein 1														
+79953	SYNDIG1	synapse differentiation inducing 1														
+23353	SUN1	Sad1 and UNC84 domain containing 1														
+80765	STARD5	StAR related lipid transfer domain containing 5														
+26039	SS18L1	SS18L1, nBAF chromatin remodeling complex subunit														
+9295	SRSF11	serine and arginine rich splicing factor 11														
+57537	SORCS2	sortilin related VPS10 domain containing receptor 2														
+6550	SLC9A3	solute carrier family 9 member A3														
+6531	SLC6A3	solute carrier family 6 member 3														
+6540	SLC6A13	solute carrier family 6 member 13														
+63910	SLC17A9	solute carrier family 17 member 9														
+6433	SFSWAP	splicing factor SWAP														
+255812	SDHAP1	succinate dehydrogenase complex flavoprotein subunit A pseudogene 1														
+51150	SDF4	stromal cell derived factor 4														
+1903	S1PR3	sphingosine-1-phosphate receptor 3														
+9781	RNF144A	ring finger protein 144A														
+57381	RHOJ	ras homolog family member J														
+10180	RBM6	RNA binding motif protein 6														
+10181	RBM5	RNA binding motif protein 5														
+22821	RASA3	RAS p21 protein activator 3														
+NA	PP7080	NA														
+23275	POFUT2	protein O-fucosyltransferase 2														
+5411	PNN	pinin, desmosome associated protein														
+9651	PLCH2	phospholipase C eta 2														
+219348	PLAC9	placenta specific 9														
+339044	PKD1P1	polycystin 1, transient receptor potential channel interacting pseudogene 1														
+55274	PHF10	PHD finger protein 10														
+55276	PGM2	phosphoglucomutase 2														
+5225	PGC	progastricsin														
+109731405	PDXDC2P	pyridoxal dependent decarboxylase domain containing 2, pseudogene														
+64714	PDIA2	protein disulfide isomerase family A member 2														
+10336	PCGF3	polycomb group ring finger 3														
+23178	PASK	PAS domain containing serine/threonine kinase														
+9060	PAPSS2	3'-phosphoadenosine 5'-phosphosulfate synthase 2														
+7181	NR2C1	nuclear receptor subfamily 2 group C member 1														
+4884	NPTX1	neuronal pentraxin 1														
+147111	NOTUM	notum, palmitoleoyl-protein carboxylesterase														
+84504	NKX6-2	NK6 homeobox 2														
+128414	NKAIN4	sodium/potassium transporting ATPase interacting 4														
+4772	NFATC1	nuclear factor of activated T cells 1														
+4752	NEK3	NIMA related kinase 3														
+55191	NADSYN1	NAD synthetase 1														
+9172	MYOM2	myomesin 2														
+23209	MLC1	megalencephalic leukoencephalopathy with subcortical cysts 1														
+8569	MKNK1	MAP kinase interacting serine/threonine kinase 1														
+55384	MEG3	maternally expressed 3														
+54674	LRRN3	leucine rich repeat neuronal 3														
+10234	LRRC17	leucine rich repeat containing 17														
+9079	LDB2	LIM domain binding 2														
+83892	KCTD10	potassium channel tetramerization domain containing 10														
+84223	IQCG	IQ motif containing G														
+23308	ICOSLG	inducible T cell costimulator ligand														
+26508	HEYL	hes related family bHLH transcription factor with YRPW motif-like														
+2801	GOLGA2	golgin A2														
+50614	GALNT9	polypeptide N-acetylgalactosaminyltransferase 9														
+2571	GAD1	glutamate decarboxylase 1														
+55691	FRMD4A	FERM domain containing 4A														
+2300	FOXL1	forkhead box L1														
+2296	FOXC1	forkhead box C1														
+23360	FNBP4	formin binding protein 4														
+23768	FLRT2	fibronectin leucine rich transmembrane protein 2														
+51661	FKBP7	FKBP prolyl isomerase 7														
+80204	FBXO11	F-box protein 11														
+NA	FAM159B	NA														
+29057	FAM156A	family with sequence similarity 156 member A														
+NA	FAM150B	NA														
+63901	FAM111A	family with sequence similarity 111 member A														
+157697	ERICH1	glutamate rich 1														
+253738	EBF3	EBF transcription factor 3														
+503638	DUXAP9	double homeobox A pseudogene 9														
+503637	DUXAP8	double homeobox A pseudogene 8														
+10570	DPYSL4	dihydropyrimidinase like 4														
+1804	DPP6	dipeptidyl peptidase like 6														
+9988	DMTF1	cyclin D binding myb like transcription factor 1														
+28514	DLL1	delta like canonical Notch ligand 1														
+8788	DLK1	delta like non-canonical Notch ligand 1														
+64150	DIO3OS	DIO3 opposite strand upstream RNA														
+9150	CTDP1	CTD phosphatase subunit 1														
+55454	CSGALNACT2	chondroitin sulfate N-acetylgalactosaminyltransferase 2														
+58487	CREBZF	CREB/ATF bZIP transcription factor														
+8532	CPZ	carboxypeptidase Z														
+152330	CNTN4	contactin 4														
+55743	CHFR	checkpoint with forkhead and ring finger domains														
+942	CD86	CD86 molecule														
+81669	CCNL2	cyclin L2														
+79839	CCDC102B	coiled-coil domain containing 102B														
+863	CBFA2T3	CBFA2/RUNX1 translocation partner 3														
+774	CACNA1B	calcium voltage-gated channel subunit alpha1 B														
+722	C4BPA	complement component 4 binding protein alpha														
+153579	BTNL9	butyrophilin like 9														
+9639	ARHGEF10	Rho guanine nucleotide exchange factor 10														
+55082	ARGLU1	arginine and glutamate rich 1														
+362	AQP5	aquaporin 5														
+29945	ANAPC4	anaphase promoting complex subunit 4														
+177	AGER	advanced glycosylation end-product specific receptor														
+22985	ACIN1	apoptotic chromatin condensation inducer 1														
+10351	ABCA8	ATP binding cassette subfamily A member 8														

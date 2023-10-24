@@ -1,0 +1,64 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	4
+# genesets in collections:	1379
+# genes in comparison (n):	45
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	11	0.0107	3.371e-9	4.649e-6
+NABA_ECM_AFFILIATED	171	Genes encoding proteins affiliated structurally or functionally to extracellular matrix proteins	6	0.03509	1.755e-8	1.21e-5
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	9	0.01195	4.247e-8	1.952e-5
+PID_HNF3A_PATHWAY	44	FOXA1 transcription factor network	4	0.09091	1.058e-7	3.647e-5
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_MATRISOME	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	PID_HNF3A_PATHWAY
+6441	SFTPD	surfactant protein D	NABA_MATRISOME	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	PID_HNF3A_PATHWAY
+729238	SFTPA2	surfactant protein A2	NABA_MATRISOME	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	PID_HNF3A_PATHWAY
+653509	SFTPA1	surfactant protein A1	NABA_MATRISOME	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	PID_HNF3A_PATHWAY
+6440	SFTPC	surfactant protein C	NABA_MATRISOME	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	
+6439	SFTPB	surfactant protein B	NABA_MATRISOME	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	
+389376	SFTA2	surfactant associated 2	NABA_MATRISOME	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	
+4321	MMP12	matrix metallopeptidase 12	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED	
+3569	IL6	interleukin 6	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED	
+147381	CBLN2	cerebellin 2 precursor	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED	
+8076	MFAP5	microfibril associated protein 5	NABA_MATRISOME			
+1297	COL9A1	collagen type IX alpha 1 chain	NABA_MATRISOME			
+7356	SCGB1A1	secretoglobin family 1A member 1				PID_HNF3A_PATHWAY
+7425	VGF	VGF nerve growth factor inducible				
+7200	TRH	thyrotropin releasing hormone				
+7980	TFPI2	tissue factor pathway inhibitor 2				
+100130958	SYCE1L	synaptonemal complex central element protein 1 like				
+6783	SULT1E1	sulfotransferase family 1E member 1				
+10568	SLC34A2	solute carrier family 34 member 2				
+6511	SLC1A6	solute carrier family 1 member 6				
+152573	SHISA3	shisa family member 3				
+117156	SCGB3A2	secretoglobin family 3A member 2				
+5739	PTGIR	prostaglandin I2 receptor				
+5426	POLE	DNA polymerase epsilon, catalytic subunit				
+7262	PHLDA2	pleckstrin homology like domain family A member 2				
+8622	PDE8B	phosphodiesterase 8B				
+9476	NAPSA	napsin A aspartic peptidase				
+4606	MYBPC2	myosin binding protein C, fast type				
+406886	MIRLET7D	microRNA let-7d				
+23162	MAPK8IP3	mitogen-activated protein kinase 8 interacting protein 3				
+28834	IGLC7	immunoglobulin lambda constant 7				
+28902	IGKV1D-13	immunoglobulin kappa variable 1D-13				
+23308	ICOSLG	inducible T cell costimulator ligand				
+2710	GK	glycerol kinase				
+2324	FLT4	fms related tyrosine kinase 4				
+2118	ETV4	ETS variant 4				
+197342	EME2	essential meiotic structure-specific endonuclease subunit 2				
+54567	DLL4	delta like canonical Notch ligand 4				
+64150	DIO3OS	DIO3 opposite strand upstream RNA				
+1735	DIO3	iodothyronine deiodinase 3				
+284340	CXCL17	C-X-C motif chemokine ligand 17				
+9696	CROCC	ciliary rootlet coiled-coil, rootletin				
+1392	CRH	corticotropin releasing hormone				
+768	CA9	carbonic anhydrase 9				
+389336	C5orf46	chromosome 5 open reading frame 46				
+6833	ABCC8	ATP binding cassette subfamily C member 8				

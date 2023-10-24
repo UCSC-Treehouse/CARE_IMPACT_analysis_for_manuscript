@@ -1,0 +1,101 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	5
+# genesets in collections:	1379
+# genes in comparison (n):	81
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	17	0.01654	2.591e-12	3.572e-9
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	14	0.01859	5.913e-11	4.077e-8
+NABA_ECM_AFFILIATED	171	Genes encoding proteins affiliated structurally or functionally to extracellular matrix proteins	8	0.04678	7.955e-10	3.657e-7
+KEGG_LYSOSOME	121	Lysosome	5	0.04132	2.542e-6	8.763e-4
+PID_HNF3A_PATHWAY	44	FOXA1 transcription factor network	3	0.06818	6.631e-5	0.01829
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED	KEGG_LYSOSOME	PID_HNF3A_PATHWAY
+6441	SFTPD	surfactant protein D	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED		PID_HNF3A_PATHWAY
+729238	SFTPA2	surfactant protein A2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED		PID_HNF3A_PATHWAY
+653509	SFTPA1	surfactant protein A1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED		PID_HNF3A_PATHWAY
+6440	SFTPC	surfactant protein C	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED		
+6439	SFTPB	surfactant protein B	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED		
+253970	SFTA3	surfactant associated 3	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED		
+389376	SFTA2	surfactant associated 2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED		
+4585	MUC4	mucin 4, cell surface associated	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED		
+1510	CTSE	cathepsin E	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		KEGG_LYSOSOME	
+222663	SCUBE3	signal peptide, CUB domain and EGF like domain containing 3	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED			
+5046	PCSK6	proprotein convertase subtilisin/kexin type 6	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED			
+4322	MMP13	matrix metallopeptidase 13	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED			
+23452	ANGPTL2	angiopoietin like 2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED			
+140766	ADAMTS14	ADAM metallopeptidase with thrombospondin type 1 motif 14	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED			
+4958	OMD	osteomodulin	NABA_MATRISOME				
+1755	DMBT1	deleted in malignant brain tumors 1	NABA_MATRISOME				
+91522	COL23A1	collagen type XXIII alpha 1 chain	NABA_MATRISOME				
+9476	NAPSA	napsin A aspartic peptidase				KEGG_LYSOSOME	
+3988	LIPA	lipase A, lysosomal acid type				KEGG_LYSOSOME	
+27074	LAMP3	lysosomal associated membrane protein 3				KEGG_LYSOSOME	
+1176	AP3S1	adaptor related protein complex 3 subunit sigma 1				KEGG_LYSOSOME	
+51693	TRAPPC2L	trafficking protein particle complex 2 like					
+58986	TMEM8A	transmembrane protein 8A					
+339456	TMEM52	transmembrane protein 52					
+57146	TMEM159	transmembrane protein 159					
+83862	TMEM120A	transmembrane protein 120A					
+55002	TMCO3	transmembrane and coiled-coil domains 3					
+6904	TBCD	tubulin folding cofactor D					
+79953	SYNDIG1	synapse differentiation inducing 1					
+6772	STAT1	signal transducer and activator of transcription 1					
+80765	STARD5	StAR related lipid transfer domain containing 5					
+6747	SSR3	signal sequence receptor subunit 3					
+26039	SS18L1	SS18L1, nBAF chromatin remodeling complex subunit					
+6550	SLC9A3	solute carrier family 9 member A3					
+6531	SLC6A3	solute carrier family 6 member 3					
+6540	SLC6A13	solute carrier family 6 member 13					
+10568	SLC34A2	solute carrier family 34 member 2					
+23094	SIPA1L3	signal induced proliferation associated 1 like 3					
+51150	SDF4	stromal cell derived factor 4					
+6002	RGS12	regulator of G protein signaling 12					
+5965	RECQL	RecQ like helicase					
+22821	RASA3	RAS p21 protein activator 3					
+NA	PP7080	NA					
+9651	PLCH2	phospholipase C eta 2					
+55274	PHF10	PHD finger protein 10					
+55276	PGM2	phosphoglucomutase 2					
+5225	PGC	progastricsin					
+64714	PDIA2	protein disulfide isomerase family A member 2					
+5121	PCP4	Purkinje cell protein 4					
+5116	PCNT	pericentrin					
+23178	PASK	PAS domain containing serine/threonine kinase					
+4884	NPTX1	neuronal pentraxin 1					
+84504	NKX6-2	NK6 homeobox 2					
+128414	NKAIN4	sodium/potassium transporting ATPase interacting 4					
+4249	MGAT5	alpha-1,6-mannosylglycoprotein 6-beta-N-acetylglucosaminyltransferase					
+84223	IQCG	IQ motif containing G					
+23308	ICOSLG	inducible T cell costimulator ligand					
+26508	HEYL	hes related family bHLH transcription factor with YRPW motif-like					
+9052	GPRC5A	G protein-coupled receptor class C group 5 member A					
+50614	GALNT9	polypeptide N-acetylgalactosaminyltransferase 9					
+2571	GAD1	glutamate decarboxylase 1					
+2300	FOXL1	forkhead box L1					
+2303	FOXC2	forkhead box C2					
+NA	FAM159B	NA					
+NA	FAM150B	NA					
+253738	EBF3	EBF transcription factor 3					
+28514	DLL1	delta like canonical Notch ligand 1					
+64150	DIO3OS	DIO3 opposite strand upstream RNA					
+284340	CXCL17	C-X-C motif chemokine ligand 17					
+9150	CTDP1	CTD phosphatase subunit 1					
+8532	CPZ	carboxypeptidase Z					
+152330	CNTN4	contactin 4					
+9071	CLDN10	claudin 10					
+79839	CCDC102B	coiled-coil domain containing 102B					
+863	CBFA2T3	CBFA2/RUNX1 translocation partner 3					
+27092	CACNG4	calcium voltage-gated channel auxiliary subunit gamma 4					
+774	CACNA1B	calcium voltage-gated channel subunit alpha1 B					
+8537	BCAS1	breast carcinoma amplified sequence 1					
+415	ARSE	arylsulfatase E					
+362	AQP5	aquaporin 5					
+29945	ANAPC4	anaphase promoting complex subunit 4					

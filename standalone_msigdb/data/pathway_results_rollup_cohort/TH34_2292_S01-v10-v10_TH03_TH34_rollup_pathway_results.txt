@@ -1,0 +1,140 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	14
+# genesets in collections:	1379
+# genes in comparison (n):	111
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+HALLMARK_HYPOXIA	200	Genes up-regulated in response to low oxygen levels (hypoxia).	7	0.035	6.165e-7	4.251e-4
+PID_HIF1_TFPATHWAY	66	HIF-1-alpha transcription factor network	5	0.07576	5.965e-7	4.251e-4
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	13	0.01265	1.296e-6	5.958e-4
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	11	0.01461	2.28e-6	7.861e-4
+HALLMARK_TNFA_SIGNALING_VIA_NFKB	200	Genes regulated by NF-kB in response to TNF [GeneID=7124].	6	0.03	9.761e-6	0.001683
+HALLMARK_COMPLEMENT	200	Genes encoding components of the complement system, which is part of the innate immune system.	6	0.03	9.761e-6	0.001683
+HALLMARK_MTORC1_SIGNALING	200	Genes up-regulated through activation of mTORC1 complex.	6	0.03	9.761e-6	0.001683
+HALLMARK_KRAS_SIGNALING_UP	200	Genes up-regulated by KRAS activation.	6	0.03	9.761e-6	0.001683
+NABA_SECRETED_FACTORS	344	Genes encoding secreted soluble factors	7	0.02035	2.161e-5	0.003311
+REACTOME_INNATE_IMMUNE_SYSTEM	279	Genes involved in Innate Immune System	6	0.02151	6.301e-5	0.008689
+REACTOME_IMMUNE_SYSTEM	933	Genes involved in Immune System	10	0.01072	9.217e-5	0.01156
+REACTOME_DEFENSINS	51	Genes involved in Defensins	3	0.05882	2.624e-4	0.03016
+KEGG_MAPK_SIGNALING_PATHWAY	267	MAPK signaling pathway	5	0.01873	4.949e-4	0.04875
+PID_MYC_REPRESS_PATHWAY	63	Validated targets of C-MYC transcriptional repression	3	0.04762	4.9e-4	0.04875
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	HALLMARK_HYPOXIA	PID_HIF1_TFPATHWAY	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	HALLMARK_TNFA_SIGNALING_VIA_NFKB	HALLMARK_COMPLEMENT	HALLMARK_MTORC1_SIGNALING	HALLMARK_KRAS_SIGNALING_UP	NABA_SECRETED_FACTORS	REACTOME_INNATE_IMMUNE_SYSTEM	REACTOME_IMMUNE_SYSTEM	REACTOME_DEFENSINS	KEGG_MAPK_SIGNALING_PATHWAY	PID_MYC_REPRESS_PATHWAY
+3099	HK2	hexokinase 2	HALLMARK_HYPOXIA	PID_HIF1_TFPATHWAY					HALLMARK_MTORC1_SIGNALING							
+10397	NDRG1	N-myc downstream regulated 1	HALLMARK_HYPOXIA	PID_HIF1_TFPATHWAY												PID_MYC_REPRESS_PATHWAY
+123	PLIN2	perilipin 2	HALLMARK_HYPOXIA	PID_HIF1_TFPATHWAY												
+NA	ERO1L	NA	HALLMARK_HYPOXIA						HALLMARK_MTORC1_SIGNALING	HALLMARK_KRAS_SIGNALING_UP						
+1649	DDIT3	DNA damage inducible transcript 3	HALLMARK_HYPOXIA						HALLMARK_MTORC1_SIGNALING						KEGG_MAPK_SIGNALING_PATHWAY	PID_MYC_REPRESS_PATHWAY
+2821	GPI	glucose-6-phosphate isomerase	HALLMARK_HYPOXIA						HALLMARK_MTORC1_SIGNALING							
+8497	PPFIA4	PTPRF interacting protein alpha 4	HALLMARK_HYPOXIA													
+3952	LEP	leptin		PID_HIF1_TFPATHWAY	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED					NABA_SECRETED_FACTORS					
+768	CA9	carbonic anhydrase 9		PID_HIF1_TFPATHWAY												
+6283	S100A12	S100 calcium binding protein A12			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		HALLMARK_COMPLEMENT			NABA_SECRETED_FACTORS	REACTOME_INNATE_IMMUNE_SYSTEM	REACTOME_IMMUNE_SYSTEM			
+6280	S100A9	S100 calcium binding protein A9			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		HALLMARK_COMPLEMENT			NABA_SECRETED_FACTORS					
+2219	FCN1	ficolin 1			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		HALLMARK_COMPLEMENT								
+101	ADAM8	ADAM metallopeptidase domain 8			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED				HALLMARK_KRAS_SIGNALING_UP						
+8074	FGF23	fibroblast growth factor 23			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED					NABA_SECRETED_FACTORS				KEGG_MAPK_SIGNALING_PATHWAY	
+6279	S100A8	S100 calcium binding protein A8			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED					NABA_SECRETED_FACTORS					
+3576	CXCL8	C-X-C motif chemokine ligand 8			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED					NABA_SECRETED_FACTORS					
+1393	CRHBP	corticotropin releasing hormone binding protein			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED					NABA_SECRETED_FACTORS					
+8985	PLOD3	procollagen-lysine,2-oxoglutarate 5-dioxygenase 3			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED										
+64386	MMP25	matrix metallopeptidase 25			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED										
+10417	SPON2	spondin 2			NABA_MATRISOME											
+1297	COL9A1	collagen type IX alpha 1 chain			NABA_MATRISOME											
+8878	SQSTM1	sequestosome 1					HALLMARK_TNFA_SIGNALING_VIA_NFKB		HALLMARK_MTORC1_SIGNALING				REACTOME_IMMUNE_SYSTEM			
+10135	NAMPT	nicotinamide phosphoribosyltransferase					HALLMARK_TNFA_SIGNALING_VIA_NFKB		HALLMARK_MTORC1_SIGNALING							
+4791	NFKB2	nuclear factor kappa B subunit 2					HALLMARK_TNFA_SIGNALING_VIA_NFKB					REACTOME_INNATE_IMMUNE_SYSTEM	REACTOME_IMMUNE_SYSTEM		KEGG_MAPK_SIGNALING_PATHWAY	
+1846	DUSP4	dual specificity phosphatase 4					HALLMARK_TNFA_SIGNALING_VIA_NFKB					REACTOME_INNATE_IMMUNE_SYSTEM	REACTOME_IMMUNE_SYSTEM		KEGG_MAPK_SIGNALING_PATHWAY	
+23308	ICOSLG	inducible T cell costimulator ligand					HALLMARK_TNFA_SIGNALING_VIA_NFKB						REACTOME_IMMUNE_SYSTEM			
+597	BCL2A1	BCL2 related protein A1					HALLMARK_TNFA_SIGNALING_VIA_NFKB									
+7980	TFPI2	tissue factor pathway inhibitor 2						HALLMARK_COMPLEMENT								
+4057	LTF	lactotransferrin						HALLMARK_COMPLEMENT								
+978	CDA	cytidine deaminase						HALLMARK_COMPLEMENT								
+2324	FLT4	fms related tyrosine kinase 4								HALLMARK_KRAS_SIGNALING_UP						
+2119	ETV5	ETS variant 5								HALLMARK_KRAS_SIGNALING_UP						
+2118	ETV4	ETS variant 4								HALLMARK_KRAS_SIGNALING_UP						
+383	ARG1	arginase 1								HALLMARK_KRAS_SIGNALING_UP						
+1668	DEFA3	defensin alpha 3										REACTOME_INNATE_IMMUNE_SYSTEM	REACTOME_IMMUNE_SYSTEM	REACTOME_DEFENSINS		
+728358	DEFA1B	defensin alpha 1B										REACTOME_INNATE_IMMUNE_SYSTEM	REACTOME_IMMUNE_SYSTEM	REACTOME_DEFENSINS		
+1667	DEFA1	defensin alpha 1										REACTOME_INNATE_IMMUNE_SYSTEM	REACTOME_IMMUNE_SYSTEM	REACTOME_DEFENSINS		
+11025	LILRB3	leukocyte immunoglobulin like receptor B3											REACTOME_IMMUNE_SYSTEM			
+10053	AP1M2	adaptor related protein complex 1 subunit mu 2											REACTOME_IMMUNE_SYSTEM			
+3310	HSPA6	heat shock protein family A (Hsp70) member 6													KEGG_MAPK_SIGNALING_PATHWAY	
+6556	SLC11A1	solute carrier family 11 member 1														PID_MYC_REPRESS_PATHWAY
+8875	VNN2	vanin 2														
+7425	VGF	VGF nerve growth factor inducible														
+91373	UAP1L1	UDP-N-acetylglucosamine pyrophosphorylase 1 like 1														
+8794	TNFRSF10C	TNF receptor superfamily member 10c														
+283953	TMEM114	transmembrane protein 114														
+123283	TARSL2	threonyl-tRNA synthetase like 2														
+55351	STK32B	serine/threonine kinase 32B														
+400410	ST20	suppressor of tumorigenicity 20														
+399473	SPRED3	sprouty related EVH1 domain containing 3														
+6647	SOD1	superoxide dismutase 1														
+677822	SNORA40	small nucleolar RNA, H/ACA box 40														
+51312	SLC25A37	solute carrier family 25 member 37														
+152573	SHISA3	shisa family member 3														
+79729	SH3D21	SH3 domain containing 21														
+6338	SCNN1B	sodium channel epithelial 1 beta subunit														
+5426	POLE	DNA polymerase epsilon, catalytic subunit														
+440503	PLIN5	perilipin 5														
+5252	PHF1	PHD finger protein 1														
+8993	PGLYRP1	peptidoglycan recognition protein 1														
+5210	PFKFB4	6-phosphofructo-2-kinase/fructose-2,6-biphosphatase 4														
+8622	PDE8B	phosphodiesterase 8B														
+NA	PCNX	NA														
+23569	PADI4	peptidyl arginine deiminase 4														
+114885	OSBPL11	oxysterol binding protein like 11														
+4884	NPTX1	neuronal pentraxin 1														
+654817	NCF1C	neutrophil cytosolic factor 1C pseudogene														
+654816	NCF1B	neutrophil cytosolic factor 1B pseudogene														
+653361	NCF1	neutrophil cytosolic factor 1														
+65220	NADK	NAD kinase														
+4606	MYBPC2	myosin binding protein C, fast type														
+9110	MTMR4	myotubularin related protein 4														
+126308	MOB3A	MOB kinase activator 3A														
+100506211	MIR210HG	MIR210 host gene														
+406934	MIR142	microRNA 142														
+4163	MCC	MCC, WNT signaling pathway regulator														
+79168	LILRA6	leukocyte immunoglobulin like receptor A6														
+9355	LHX2	LIM homeobox 2														
+85449	KIAA1755	KIAA1755														
+79192	IRX1	iroquois homeobox 1														
+8843	HCAR3	hydroxycarboxylic acid receptor 3														
+338442	HCAR2	hydroxycarboxylic acid receptor 2														
+2564	GABRE	gamma-aminobutyric acid type A receptor epsilon subunit														
+2268	FGR	FGR proto-oncogene, Src family tyrosine kinase														
+55277	FGGY	FGGY carbohydrate kinase domain containing														
+80307	FER1L4	fer-1 like family member 4, pseudogene														
+2215	FCGR3B	Fc fragment of IgG receptor IIIb														
+2204	FCAR	Fc fragment of IgA receptor														
+2173	FABP7	fatty acid binding protein 7														
+1908	EDN3	endothelin 3														
+80005	DOCK5	dedicator of cytokinesis 5														
+64150	DIO3OS	DIO3 opposite strand upstream RNA														
+1735	DIO3	iodothyronine deiodinase 3														
+1441	CSF3R	colony stimulating factor 3 receptor														
+1392	CRH	corticotropin releasing hormone														
+57699	CPNE5	copine 5														
+57126	CD177	CD177 molecule														
+283234	CCDC88B	coiled-coil domain containing 88B														
+794	CALB2	calbindin 2														
+135398	C6orf141	chromosome 6 open reading frame 141														
+84419	C15orf48	chromosome 15 open reading frame 48														
+671	BPI	bactericidal permeability increasing protein														
+23130	ATG2A	autophagy related 2A														
+23092	ARHGAP26	Rho GTPase activating protein 26														
+64411	ARAP3	ArfGAP with RhoGAP domain, ankyrin repeat and PH domain 3														
+116985	ARAP1	ArfGAP with RhoGAP domain, ankyrin repeat and PH domain 1														
+55911	APOBR	apolipoprotein B receptor														
+200315	APOBEC3A	apolipoprotein B mRNA editing enzyme catalytic subunit 3A														
+NA	AGPAT6	NA														
+105	ADARB2	adenosine deaminase, RNA specific B2 (inactive)														
+80221	ACSF2	acyl-CoA synthetase family member 2														

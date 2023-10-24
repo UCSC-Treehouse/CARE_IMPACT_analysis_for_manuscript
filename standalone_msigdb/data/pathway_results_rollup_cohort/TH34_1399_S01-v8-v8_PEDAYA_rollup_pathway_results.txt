@@ -1,0 +1,120 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	8
+# genesets in collections:	1379
+# genes in comparison (n):	97
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	21	0.02043	3.609e-15	4.977e-12
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	10	0.03636	3.977e-10	2.742e-7
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	11	0.01461	5.894e-7	2.709e-4
+NABA_COLLAGENS	44	Genes encoding collagen proteins	4	0.09091	2.372e-6	8.179e-4
+NABA_ECM_GLYCOPROTEINS	196	Genes encoding structural ECM glycoproteins	6	0.03061	3.99e-6	0.0011
+HALLMARK_ESTROGEN_RESPONSE_LATE	200	Genes defining late response to estrogen.	5	0.025	6.916e-5	0.0159
+NABA_SECRETED_FACTORS	344	Genes encoding secreted soluble factors	6	0.01744	9.389e-5	0.0185
+REACTOME_COLLAGEN_FORMATION	58	Genes involved in Collagen formation	3	0.05172	2.585e-4	0.04456
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_MATRISOME	NABA_CORE_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_COLLAGENS	NABA_ECM_GLYCOPROTEINS	HALLMARK_ESTROGEN_RESPONSE_LATE	NABA_SECRETED_FACTORS	REACTOME_COLLAGEN_FORMATION
+91522	COL23A1	collagen type XXIII alpha 1 chain	NABA_MATRISOME	NABA_CORE_MATRISOME		NABA_COLLAGENS				REACTOME_COLLAGEN_FORMATION
+169044	COL22A1	collagen type XXII alpha 1 chain	NABA_MATRISOME	NABA_CORE_MATRISOME		NABA_COLLAGENS				REACTOME_COLLAGEN_FORMATION
+1300	COL10A1	collagen type X alpha 1 chain	NABA_MATRISOME	NABA_CORE_MATRISOME		NABA_COLLAGENS				REACTOME_COLLAGEN_FORMATION
+57642	COL20A1	collagen type XX alpha 1 chain	NABA_MATRISOME	NABA_CORE_MATRISOME		NABA_COLLAGENS				
+NA	WISP1	NA	NABA_MATRISOME	NABA_CORE_MATRISOME			NABA_ECM_GLYCOPROTEINS			
+7148	TNXB	tenascin XB	NABA_MATRISOME	NABA_CORE_MATRISOME			NABA_ECM_GLYCOPROTEINS			
+84628	NTNG2	netrin G2	NABA_MATRISOME	NABA_CORE_MATRISOME			NABA_ECM_GLYCOPROTEINS			
+285313	IGSF10	immunoglobulin superfamily member 10	NABA_MATRISOME	NABA_CORE_MATRISOME			NABA_ECM_GLYCOPROTEINS			
+84467	FBN3	fibrillin 3	NABA_MATRISOME	NABA_CORE_MATRISOME			NABA_ECM_GLYCOPROTEINS			
+1311	COMP	cartilage oligomeric matrix protein	NABA_MATRISOME	NABA_CORE_MATRISOME			NABA_ECM_GLYCOPROTEINS			
+4902	NRTN	neurturin	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED				NABA_SECRETED_FACTORS	
+3479	IGF1	insulin like growth factor 1	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED				NABA_SECRETED_FACTORS	
+25975	EGFL6	EGF like domain multiple 6	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED				NABA_SECRETED_FACTORS	
+8646	CHRD	chordin	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED				NABA_SECRETED_FACTORS	
+6370	CCL25	C-C motif chemokine ligand 25	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED				NABA_SECRETED_FACTORS	
+9048	ARTN	artemin	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED				NABA_SECRETED_FACTORS	
+5033	P4HA1	prolyl 4-hydroxylase subunit alpha 1	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED					
+4015	LOX	lysyl oxidase	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED					
+80760	ITIH5	inter-alpha-trypsin inhibitor heavy chain family member 5	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED					
+3698	ITIH2	inter-alpha-trypsin inhibitor heavy chain 2	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED					
+306	ANXA3	annexin A3	NABA_MATRISOME		NABA_MATRISOME_ASSOCIATED					
+23650	TRIM29	tripartite motif containing 29						HALLMARK_ESTROGEN_RESPONSE_LATE		
+57419	SLC24A3	solute carrier family 24 member 3						HALLMARK_ESTROGEN_RESPONSE_LATE		
+10874	NMU	neuromedin U						HALLMARK_ESTROGEN_RESPONSE_LATE		
+51083	GAL	galanin and GMAP prepropeptide						HALLMARK_ESTROGEN_RESPONSE_LATE		
+9254	CACNA2D2	calcium voltage-gated channel auxiliary subunit alpha2delta 2						HALLMARK_ESTROGEN_RESPONSE_LATE		
+7743	ZNF189	zinc finger protein 189								
+9671	WSCD2	WSC domain containing 2								
+340260	UNCX	UNC homeobox								
+643224	TUBBP5	tubulin beta pseudogene 5								
+440730	TRIM67	tripartite motif containing 67								
+7140	TNNT3	troponin T3, fast skeletal type								
+57156	TMEM63C	transmembrane protein 63C								
+NA	TMEM2	NA								
+255394	TCP11L2	t-complex 11 like 2								
+26872	STEAP1	STEAP family member 1								
+81849	ST6GALNAC5	ST6 N-acetylgalactosaminide alpha-2,6-sialyltransferase 5								
+64750	SMURF2	SMAD specific E3 ubiquitin protein ligase 2								
+84631	SLITRK2	SLIT and NTRK like family member 2								
+65010	SLC26A6	solute carrier family 26 member 6								
+6573	SLC19A1	solute carrier family 19 member 1								
+84561	SLC12A8	solute carrier family 12 member 8								
+6474	SHOX2	short stature homeobox 2								
+146713	RBFOX3	RNA binding fox-1 homolog 3								
+5924	RASGRF2	Ras protein specific guanine nucleotide releasing factor 2								
+374462	PTPRQ	protein tyrosine phosphatase, receptor type Q								
+163154	PRR22	proline rich 22								
+55291	PPP6R3	protein phosphatase 6 regulatory subunit 3								
+84152	PPP1R1B	protein phosphatase 1 regulatory inhibitor subunit 1B								
+126520	PLK5	polo like kinase 5								
+151056	PLB1	phospholipase B1								
+NA	PCNX	NA								
+390874	ONECUT3	one cut homeobox 3								
+23327	NEDD4L	neural precursor cell expressed, developmentally down-regulated 4-like, E3 ubiquitin protein ligase								
+10232	MSLN	mesothelin								
+81532	MOB2	MOB kinase activator 2								
+100506211	MIR210HG	MIR210 host gene								
+225689	MAPK15	mitogen-activated protein kinase 15								
+9388	LIPG	lipase G, endothelial type								
+645323	LINC00461	long intergenic non-protein coding RNA 461								
+25984	KRT23	keratin 23								
+3872	KRT17	keratin 17								
+79412	KREMEN2	kringle containing transmembrane protein 2								
+5653	KLK6	kallikrein related peptidase 6								
+57582	KCNT1	potassium sodium-activated channel subfamily T member 1								
+153572	IRX2	iroquois homeobox 2								
+84223	IQCG	IQ motif containing G								
+440498	HSBP1L1	heat shock factor binding protein 1 like 1								
+3240	HP	haptoglobin								
+10357	HMGB1P1	high mobility group box 1 pseudogene 1								
+2938	GSTA1	glutathione S-transferase alpha 1								
+10804	GJB6	gap junction protein beta 6								
+2706	GJB2	gap junction protein beta 2								
+25801	GCA	grancalcin								
+85569	GALP	galanin like peptide								
+10841	FTCD	formimidoyltransferase cyclodeaminase								
+114907	FBXO32	F-box protein 32								
+9413	FAM189A2	family with sequence similarity 189 member A2								
+NA	FAM132A	NA								
+57488	ESYT2	extended synaptotagmin 2								
+377841	ENTPD8	ectonucleoside triphosphate diphosphohydrolase 8								
+9427	ECEL1	endothelin converting enzyme like 1								
+56931	DUS3L	dihydrouridine synthase 3 like								
+1735	DIO3	iodothyronine deiodinase 3								
+1674	DES	desmin								
+29785	CYP2S1	cytochrome P450 family 2 subfamily S member 1								
+9074	CLDN6	claudin 6								
+5010	CLDN11	claudin 11								
+1116	CHI3L1	chitinase 3 like 1								
+629	CFB	complement factor B								
+801	CALM1	calmodulin 1								
+768	CA9	carbonic anhydrase 9								
+NA	C20orf166-AS1	NA								
+54991	C1orf159	chromosome 1 open reading frame 159								
+153579	BTNL9	butyrophilin like 9								
+335	APOA1	apolipoprotein A1								
+246	ALOX15	arachidonate 15-lipoxygenase								

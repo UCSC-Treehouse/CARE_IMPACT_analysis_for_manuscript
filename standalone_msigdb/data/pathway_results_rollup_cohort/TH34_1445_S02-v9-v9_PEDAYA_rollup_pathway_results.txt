@@ -1,0 +1,97 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	7
+# genesets in collections:	1379
+# genes in comparison (n):	75
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	8	0.02909	1.771e-8	2.442e-5
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	12	0.01167	1.055e-7	7.273e-5
+KEGG_CARDIAC_MUSCLE_CONTRACTION	80	Cardiac muscle contraction	4	0.05	9.418e-6	0.004329
+REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES	186	Genes involved in Transmission across Chemical Synapses	5	0.02688	1.412e-5	0.004867
+NABA_PROTEOGLYCANS	35	Genes encoding proteoglycans	3	0.08571	2.631e-5	0.007258
+REACTOME_NEURONAL_SYSTEM	279	Genes involved in Neuronal System	5	0.01792	9.705e-5	0.02231
+REACTOME_CS_DS_DEGRADATION	12	Genes involved in CS/DS degradation	2	0.1667	1.716e-4	0.03381
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_CORE_MATRISOME	NABA_MATRISOME	KEGG_CARDIAC_MUSCLE_CONTRACTION	REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES	NABA_PROTEOGLYCANS	REACTOME_NEURONAL_SYSTEM	REACTOME_CS_DS_DEGRADATION
+1463	NCAN	neurocan	NABA_CORE_MATRISOME	NABA_MATRISOME			NABA_PROTEOGLYCANS		REACTOME_CS_DS_DEGRADATION
+63827	BCAN	brevican	NABA_CORE_MATRISOME	NABA_MATRISOME			NABA_PROTEOGLYCANS		REACTOME_CS_DS_DEGRADATION
+1101	CHAD	chondroadherin	NABA_CORE_MATRISOME	NABA_MATRISOME			NABA_PROTEOGLYCANS		
+7143	TNR	tenascin R	NABA_CORE_MATRISOME	NABA_MATRISOME					
+9423	NTN1	netrin 1	NABA_CORE_MATRISOME	NABA_MATRISOME					
+163175	LGI4	leucine rich repeat LGI family member 4	NABA_CORE_MATRISOME	NABA_MATRISOME					
+1297	COL9A1	collagen type IX alpha 1 chain	NABA_CORE_MATRISOME	NABA_MATRISOME					
+57642	COL20A1	collagen type XX alpha 1 chain	NABA_CORE_MATRISOME	NABA_MATRISOME					
+12	SERPINA3	serpin family A member 3		NABA_MATRISOME					
+5365	PLXNB3	plexin B3		NABA_MATRISOME					
+10675	CSPG5	chondroitin sulfate proteoglycan 5		NABA_MATRISOME					
+339479	BRINP3	BMP/retinoic acid inducible neural specific 3		NABA_MATRISOME					
+59284	CACNG7	calcium voltage-gated channel auxiliary subunit gamma 7			KEGG_CARDIAC_MUSCLE_CONTRACTION				
+27091	CACNG5	calcium voltage-gated channel auxiliary subunit gamma 5			KEGG_CARDIAC_MUSCLE_CONTRACTION				
+482	ATP1B2	ATPase Na+/K+ transporting subunit beta 2			KEGG_CARDIAC_MUSCLE_CONTRACTION				
+477	ATP1A2	ATPase Na+/K+ transporting subunit alpha 2			KEGG_CARDIAC_MUSCLE_CONTRACTION				
+6529	SLC6A1	solute carrier family 6 member 1				REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES		REACTOME_NEURONAL_SYSTEM	
+3766	KCNJ10	potassium voltage-gated channel subfamily J member 10				REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES		REACTOME_NEURONAL_SYSTEM	
+2899	GRIK3	glutamate ionotropic receptor kainate type subunit 3				REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES		REACTOME_NEURONAL_SYSTEM	
+2891	GRIA2	glutamate ionotropic receptor AMPA type subunit 2				REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES		REACTOME_NEURONAL_SYSTEM	
+2571	GAD1	glutamate decarboxylase 1				REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES		REACTOME_NEURONAL_SYSTEM	
+7425	VGF	VGF nerve growth factor inducible							
+57348	TTYH1	tweety family member 1							
+79054	TRPM8	transient receptor potential cation channel subfamily M member 8							
+114088	TRIM9	tripartite motif containing 9							
+114795	TMEM132B	transmembrane protein 132B							
+7018	TF	transferrin							
+399473	SPRED3	sprouty related EVH1 domain containing 3							
+90853	SPOCD1	SPOC domain containing 1							
+347689	SOX2-OT	SOX2 overlapping transcript							
+6657	SOX2	SRY-box 2							
+6663	SOX10	SRY-box 10							
+222553	SLC35F1	solute carrier family 35 member F1							
+729993	SHISA9	shisa family member 9							
+6198	RPS6KB1	ribosomal protein S6 kinase B1							
+5803	PTPRZ1	protein tyrosine phosphatase, receptor type Z1							
+5455	POU3F3	POU class 3 homeobox 3							
+5375	PMP2	peripheral myelin protein 2							
+5354	PLP1	proteolipid protein 1							
+10215	OLIG2	oligodendrocyte transcription factor 2							
+116448	OLIG1	oligodendrocyte transcription factor 1							
+30010	NXPH1	neurexophilin 1							
+4836	NMT1	N-myristoyltransferase 1							
+54413	NLGN3	neuroligin 3							
+4504	MT3	metallothionein 3							
+440823	MIAT	myocardial infarction associated transcript							
+4155	MBP	myelin basic protein							
+51438	MAGEC2	MAGE family member C2							
+4004	LMO1	LIM domain only 1							
+55220	KLHDC8A	kelch domain containing 8A							
+22997	IGSF9B	immunoglobulin superfamily member 9B							
+2823	GPM6A	glycoprotein M6A							
+2670	GFAP	glial fibrillary acidic protein							
+53822	FXYD7	FXYD domain containing ion transport regulator 7							
+84824	FCRLA	Fc receptor like A							
+84923	FAM104A	family with sequence similarity 104 member A							
+2173	FABP7	fatty acid binding protein 7							
+55531	ELMOD1	ELMO domain containing 1							
+1655	DDX5	DEAD-box helicase 5							
+1356	CP	ceruloplasmin							
+84735	CNDP1	carnosine dipeptidase 1							
+116173	CMTM5	CKLF like MARVEL transmembrane domain containing 5							
+10752	CHL1	cell adhesion molecule L1 like							
+1117	CHI3L2	chitinase 3 like 2							
+1116	CHI3L1	chitinase 3 like 1							
+11189	CELF3	CUGBP Elav-like family member 3							
+28513	CDH19	cadherin 19							
+726	CAPN5	calpain 5							
+771	CA12	carbonic anhydrase 12							
+56934	CA10	carbonic anhydrase 10							
+10485	C1orf61	chromosome 1 open reading frame 61							
+8537	BCAS1	breast carcinoma amplified sequence 1							
+563	AZGP1	alpha-2-glycoprotein 1, zinc-binding							
+127829	ARL8A	ADP ribosylation factor like GTPase 8A							
+220	ALDH1A3	aldehyde dehydrogenase 1 family member A3							
