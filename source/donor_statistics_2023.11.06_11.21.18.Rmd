@@ -1,0 +1,64 @@
+---
+title: "`r gsub('.Rmd', ' ', gsub('_', ' ', knitr::current_input()))`"
+author: "`r Sys.getenv('USER')`"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    toc: yes
+---
+  
+
+
+```{r setup, include = FALSE}
+
+library(tidyverse)
+library(knitr)
+library(janitor)
+library(kableExtra)
+```
+
+
+```{r}
+
+latest_sample_metadata_file_name <- "../input_data/ckcc2_samples_and_metadata_from_redcap_2023.10.24_13.26.34.tsv"
+
+sample_metadata <- read_tsv(latest_sample_metadata_file_name,
+                            col_types = cols(.default = "c")) %>%
+  mutate(dx_group_factor = fct_lump_min(dx_group, 2),
+         dx_group = as.character(dx_group_factor))
+
+donor_disease <- sample_metadata %>%
+  select(donorID, disease, dx_group, age_at_dx, gender) %>%
+  distinct() 
+
+```
+
+```{r}
+
+donor_disease %>%
+  kbl() %>%
+  kable_styling(full_width = F)
+
+donor_disease %>%
+  tabyl(disease) %>%
+  kbl() %>%
+  kable_styling(full_width = F)
+
+donor_disease %>%
+  tabyl(dx_group) %>%
+  kbl() %>%
+  kable_styling(full_width = F)
+
+donor_disease %>%
+  tabyl(gender) %>%
+  kbl() %>%
+  kable_styling(full_width = F)
+```
+
+
+
+# Session Info
+```{r}
+sessionInfo()
+```
+

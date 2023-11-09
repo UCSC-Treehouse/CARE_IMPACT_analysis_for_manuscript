@@ -1,0 +1,24 @@
+outlier_gene_group	gene_group_abbrev	gene_group_x_axis_label	gene_group_color
+Receptor Tyrosine Kinase (RTK)	RTK	RTK	#A6CEE3
+PI3K/AKT/mTOR	PI3K/AKT/mTOR	"PI3K/
+AKT/
+mTOR"	#1F78B4
+Cell Cycle	Cell Cycle	"Cell
+Cycle"	#B2DF8A
+Hypoxia	Hypoxia	Hypoxia	#33A02C
+JAK/STAT	JAK/STAT	"JAK/
+STAT"	#FB9A99
+B-cell receptor signaling	BCR	BCR	#E31A1C
+RAS/RAF/MEK	RAS/RAF/MEK	"RAS/
+RAF/
+MEK"	#FF7F00
+DNA repair	DNA repair	"DNA
+repair"	#FDBF6F
+BCL2/MDM2	BCL2/MDM2	"BCL2/
+MDM2"	#B15928
+Sonic Hedgehog (SHH)	SHH	SHH	#6A3D9A
+Heat Shock Proteins	HSP	HSP	#CAB2D6
+Immune Checkpoint	Immune	Immune	#999999
+JNK MAPK pathway	JNK MAPK	JNK MAPK	#999999
+Notch Signaling	Notch	Notch	#999999
+Other	Other	Other	#999999

@@ -1,0 +1,171 @@
+---
+title: "`r gsub('.Rmd', ' ', gsub('_', ' ', knitr::current_input()))`"
+author: "`r Sys.getenv('USER')`"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    toc: yes
+---
+  
+  
+```{r setup, include = FALSE}
+
+library(tidyverse)
+library(redcapAPI)
+library(knitr)
+
+```
+
+# Retrieve list of samples in project
+```{r}
+
+sample_ids_in_project <- read_tsv("manually_curated_CKCC2_sample_ids.txt") %>%
+  mutate(donor_id = str_remove(THid, "_S[0-9][0-9]$"))
+
+```
+
+
+# Redcap access setup
+```{r}
+source("~/Documents/Dropbox/ucsc/projects/redcapAPI/rcConfig.R")
+
+rcon <- redcapConnection(url= uri, token= token)
+```
+
+# Define project and source reports
+```{r}
+
+hbDonorInfoReportID=129
+hbSampleInfoReportID=140
+
+```
+
+### Retrieve data from redcap
+```{r}
+
+donorDataRaw <- as_tibble (
+  exportReports(rcon, hbDonorInfoReportID, 
+                checkboxLabels = TRUE) # checkboxLabels gives values for checkboxes, e.g. race 
+  ) 
+
+sampleDataRaw <- as_tibble(exportReports(rcon, hbSampleInfoReportID))  %>% dplyr::rename(THid= th_sampleid)
+
+```
+
+
+### Select samples and columns
+```{r}
+
+dd_selected <- donorDataRaw %>% 
+  filter(th_donor_id %in% sample_ids_in_project$donor_id) %>% 
+  select(th_donor_id, disease, dx_group, age_at_dx, gender, ethnicity, 
+         histology, subcat, starts_with("race"), other_race_2)
+
+sd_selected <- sampleDataRaw %>% 
+  filter(THid %in% sample_ids_in_project$THid) %>% 
+#  filter(grepl(paste0("^", this_project_id), )) %>%
+  select(THid, qc, rin, anat_sample)
+
+```
+
+
+### Retain "label" values only
+
+```{r}
+# e.g. sampletype as "Primary blood-derived cancer - Peripheral blood" instead of 1
+
+
+donorDataFactor <- dd_selected %>% as_factor
+sampleDataFactor <- sd_selected %>% as_factor
+
+donorDataCharacterRaw <- apply(donorDataFactor, 2, as.character) %>% as_tibble %>%
+	mutate(
+		age_at_dx=as.numeric(age_at_dx)
+	) %>%
+  rename(donorID = th_donor_id)
+
+donorDataCharacter <- donorDataCharacterRaw %>%
+  select(donorID, disease, dx_group, age_at_dx, gender, histology, subcat)
+
+sampleDataCharacter<-apply(sampleDataFactor, 2, as.character) %>% 
+  as_tibble %>%
+  mutate(donorID = str_remove(THid, "_S[0-9][0-9]"))
+```
+
+
+### Merge samples and donors
+```{r}
+
+combined_sample_donor_data <- left_join(sampleDataCharacter, donorDataCharacter, by=c("donorID"))
+
+```
+
+
+### Convert race and ethnicity to readable text
+
+```{r}
+
+ 
+
+race_info_cols <- c(paste0("race_2___", 1:5), "race_2___99")
+
+#selected_sample_donor_data <- 
+
+donor_summary_race_for_review <- #combined_sample_donor_data %>% 
+  donorDataCharacterRaw %>% 
+  select(donorID, starts_with("race"), other_race_2, ethnicity) %>%
+
+ #select(donorID, starts_with("race"), other_race_2, ethnicity)  %>%
+  mutate(across(everything(), ~na_if(., ""))) %>%
+  mutate(race_2___3 = ifelse(is.na(race_2___3), NA,
+                             ifelse(race_2___3 == "American Indian or Alaskan Native",
+                                    ifelse(str_detect(other_race_2, "Native American"), "Native American",
+                                    "American Indian or Alaskan Native")))) %>%
+  select(-race_2___6) %>%
+  unite(race1, race_info_cols, sep=", ", na.rm = TRUE, remove = FALSE) %>%
+  mutate(ethnicity_to_report = ifelse(ethnicity == "Hispanic or Latino", "Hispanic or Latino", NA),
+         race_and_ethnicity = case_when(
+           race1 == "" & ethnicity == "Hispanic or Latino" ~ paste0(other_race_2, " (", ethnicity, ")"),
+           race1 == "Not reported or Unknown" ~ "Not reported or Unknown",
+           ethnicity != "Hispanic or Latino" & is.na(other_race_2) ~ race1,
+           ethnicity != "Hispanic or Latino" ~ paste0(race1, " (", other_race_2, ")"),
+           ethnicity == "Hispanic or Latino" ~ paste0(race1, " (", other_race_2, "; ", ethnicity, ")"),
+         TRUE ~ ""))
+         
+
+selected_sample_donor_data <- combined_sample_donor_data %>%
+  #select(-c(starts_with("race"), other_race_2, ethnicity)) %>%
+  left_join(donor_summary_race_for_review %>% select(donorID, race_and_ethnicity))
+
+```
+
+
+
+
+### Review sample data
+```{r}
+
+kable(selected_sample_donor_data)
+
+```
+
+## Save data
+```{r}
+
+ts <- paste(format(Sys.time(),"%Y-%m-%d"),paste(format(Sys.time(), "%H.%M.%S"),sep=""),sep= "_")
+
+write_tsv(selected_sample_donor_data, paste0("../input_data/ckcc2_metadata_from_redcap_", ts, ".tsv"))
+
+
+n_distinct(selected_sample_donor_data$donorID)
+n_distinct(selected_sample_donor_data$THid)
+
+```
+
+# Review race coding
+```{r}
+
+donor_summary_race_for_review %>%
+  kable
+
+```

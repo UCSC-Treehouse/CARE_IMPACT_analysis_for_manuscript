@@ -1,0 +1,6 @@
+original_disease_group_name	long_disease_group_name_for_plot	disease_group_abbrev_for_plot	disease_group_color
+Sarcoma other (all other types)	Soft tissue sarcoma	SRC-soft	#984EA3
+Sarcoma bone (osteo and Ewing)	Bone sarcoma	SRC-bone	#4DAF4A
+CNS	CNS	CNS	#377EB8
+Hematopoietic	Hematopoietic	HEME	#E41A1C
+Other	Other	Other	#999999

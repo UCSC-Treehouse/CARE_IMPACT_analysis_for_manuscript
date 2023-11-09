@@ -1,0 +1,87 @@
+eTable8. Treehouse finding prioritization by patient						
+Patient ID	Drug	Molecular Abnormality	Molecular Category	Prioritization	Prioritization Reason	Prioritized Finding Outcome
+TH34_1239	Everolimus	PIK3CD	PI3K/AKT/mTOR	Deferred	Treatment with more disease data	
+TH34_1239	Trametinib or Selumetinib	NRAS	RAS/RAF/MEK	Deferred	Treatment with more disease data	
+TH34_1238	Everolimus	mTOR	PI3K/AKT/mTOR	Deferred	Treatment with more disease data	
+TH34_1238	Trametinib or Selumetinib	KRAS	RAS/RAF/MEK	Deferred	Treatment with more disease data	
+TH34_1350	Everolimus	PIK3R5	PI3K/AKT/mTOR	Deferred	Treatment with more disease data	
+TH34_1350	Trametinib or Selumetinib	MEK	RAS/RAF/MEK	Deferred	Treatment with more disease data	
+TH34_1381	Bevacizumab	VEGFA	VEGF	Deferred	Treatment with more disease data	
+TH34_1381	Lapatinib	ERBB2	ERBB	Prioritized	Implemented	Rapid disease progression
+TH34_1381	Olaparib	PARP1	PARP	Declined	Not FDA approved	
+TH34_2410	Nilotinib	MAPK11	p38	Deferred	Standard of care	
+TH34_2410	Palbociclib	ESR1	Estrogen Receptor	Deferred	Standard of care	
+TH34_2410	Regorafenib or Ulixertinib	ABCB1	ABCB1	Deferred	Standard of care	
+TH34_1162	Pazopanib	CSF1R	RTK	Deferred	Treatment with more disease data	
+TH34_1162	Ruxolitinib	JAK1	JAK/STAT	Deferred	Treatment with more disease data	
+TH34_2411	ALRN-6924	MDM2	MDM2/MDMX	Declined	Not FDA approved	
+TH34_2411	Dinutuximab	B4GALNT1	B4GALNT1	Deferred	Treatment with more disease data	
+TH34_2411	Palbociclib	CDK4	Cell Cycle	Deferred	Treatment with more disease data	
+TH34_2411	Trametinib or Selumetinib	MAP2K2	RAS/RAF/MEK	Deferred	Treatment with more disease data	
+TH34_2666	APG-115 or ALRN-6924	MDM2	MDM2/MDMX	Declined	Not FDA approved	
+TH34_2666	Pazopanib	FLT4	RTK	Deferred	No further treatment needed	
+TH34_1163	Metformin or Ganitumab	IGF2	IGF1R	Declined	Evidence against Treehouse therapy	
+TH34_1163	Nitroglycerin or EZN-2208	HIF1 signaling/HMOX1	Other: HMOX1/HIF1A Hypoxia Signaling	Deferred	Treatment with more disease data	
+TH34_1149	Entrectinib	NTRK3	NTRK	Declined	Evidence against Treehouse therapy	
+TH34_1150	Dinaciclib	CDK9	CDK	Declined	Not FDA approved	
+TH34_1150	Pembrolizumab	PDCD1	T-Cell	Declined	Evidence against Treehouse therapy	
+TH34_1150	Ruxolitinib	JAK1	JAK/STAT	Deferred	Treatment with more disease data	
+TH34_1179	Pazopanib	FGFR1	RTK	Deferred	Standard of care	
+TH34_1179	Trametinib or Selumetinib	KRAS	RAS/RAF/MEK	Deferred	Standard of care	
+TH34_1179	Vismodegib	Hedgehog signaling	Other: Hedgehog signaling	Deferred	Standard of care	
+TH34_1240	MYC-targeted drugs (clinical trials for INCB05987 (NCT0351440) or TK216 (NCT02657005))	EWSR1-FLI1	EWSR1-FLI1	Prioritized	Not implemented	Rapid disease progression
+TH34_1349	Imatinib or Sunitinib or Regorafenib	KIT	KIT	Prioritized	Implemented	Response
+TH34_1349	Linsitinib	IGF2, IGF1R	IGF1R	Declined	Not FDA approved	
+TH34_1349	Trametinib or Selumetinib	ETV1	RAS/RAF/MEK	Deferred	Treatment with more disease data	
+TH34_1349	Vismodegib	PTCH1	Hedgehog Signaling	Deferred	Treatment with more disease data	
+TH34_1351	Trametinib or Selumetinib	MEK	RAS/RAF/MEK	Deferred	Treatment with more disease data	
+TH34_1351	Vemurafenib	MAP2K4	JNK	Deferred	Treatment with more disease data	
+TH34_1352	Pazopanib	FGFR1, FGFR2, PDGFRA	RTK	Prioritized	Implemented	Progression
+TH34_1352	Ribociclib	CCND2	Cell Cycle	Prioritized	Implemented	Response
+TH34_1379	Ganitumab	IGF2, IGF1R	IGF1R	Declined	Not FDA approved	
+TH34_1379	Pazopanib	FGFR1	RTK	Prioritized	Not implemented	Rapid disease progression
+TH34_1379	Ribociclib	CCND2, CDK4	Cell Cycle	Deferred	Treatment with more disease data	
+TH34_1380	Ganitumab	IGF2, IGF1R	IGF1R	Declined	Not FDA approved	
+TH34_1380	Tarextumab	NOTCH3	NOTCH	Prioritized 	Not implemented	Waiting for treatment approval
+TH34_1399	Bevacizumab	VEGFA	VEGF	Deferred	Treatment with more disease data	
+TH34_1399	Ganitumab	IGF1, IGF2	IGF1R	Declined	Not FDA approved	
+TH34_1400	Ruxolitinib	STAT5A	JAK/STAT	Deferred	No further treatment needed	
+TH34_1412	Entrectinib	NTRK3	NTRK	Declined	Evidence against Treehouse therapy	
+TH34_1412	Ganitumab	IGF2	IGF1R	Declined	Not FDA approved	
+TH34_1412	Pazopanib	KDR	RTK	Declined	Evidence against Treehouse therapy	
+TH34_1412	Trastuzumab	ERBB2	ERBB	Deferred	Treatment with more disease data	
+TH34_1414	Crizotinib	ALK	ALK	Deferred	Treatment with more disease data	
+TH34_1414	Ganitumab	IGF2	IGF1R	Declined	Not FDA approved	
+TH34_1414	Ponatinib	FGFR4	RTK	Deferred	Treatment with more disease data	
+TH34_1414	Ribociclib	CDK4	Cell Cycle	Deferred	Treatment with more disease data	
+TH34_1415	Pazopanib	FLT4 (VEGFR3)	RTK	Deferred	Treatment with more disease data	
+TH34_1415	Siltuximab	IL6	IL6	Deferred	Treatment with more disease data	
+TH34_1444	Everolimus	AKT1, AKT2	PI3K/AKT/mTOR	Deferred	Standard of care	
+TH34_1444	Pazopanib	VEGFC	RTK (VEGFR)	Deferred	Standard of care	
+TH34_1444	Sunitinib	KIT	KIT	Deferred	Standard of care	
+TH34_1445	Adavosertib	WEE1	WEE1	Deferred	Treatment with more disease data	
+TH34_1445	Bevacizumab	VEGFA	VEGF	Deferred	Treatment with more disease data	
+TH34_1445	Entrectinib	NTRK3	NTRK	Declined	Evidence against Treehouse therapy	
+TH34_1445	Ganitumab	IGF2	IGF1R	Declined	Not FDA approved	
+TH34_1446	Entrectinib	NTRK3	NTRK	Deferred	Treatment with more disease data	
+TH34_1447	Bortezomib	PSMB5, PSMC1, PSMD4	Proteasome	Deferred	Treatment with more disease data	
+TH34_1447	Dinaciclib	CCNE1	Cell Cycle	Declined	Not FDA approved	
+TH34_1447	Ganitumab	IGF2	IGF1R	Declined	Not FDA approved	
+TH34_1447	Olaparib	PARP1, PARP2	PARP	Declined	Not FDA approved	
+TH34_1452	Everolimus	PIK3R2	PI3K/AKT/mTOR	Deferred	Treatment with more disease data	
+TH34_1452	Ganitumab	IGF2	IGF1R	Declined	Not FDA approved	
+TH34_1452	Pazopanib	FGFR3	RTK	Deferred	Treatment with more disease data	
+TH34_1452	Vorinostat	HDAC4	HDAC	Deferred	Treatment with more disease data	
+TH34_1455	Dinaciclib	CDK9	CDK	Declined	Not FDA approved	
+TH34_1455	Ganitumab	IGF2	IGF1R	Declined	Not FDA approved	
+TH34_1455	Neratinib	ERBB2	ERBB	Prioritized	Not implemented	Therapy unavailable
+TH34_1455	Pazopanib	FGFR3	RTK	Deferred	Treatment with more disease data	
+TH34_1456	Bortezomib	GATA2	Proteasome	Deferred	Treatment with more disease data	
+TH34_1456	Pazopanib	KDR	RTK	Prioritized	Implemented	Response
+TH34_1456	Vorinostat	HDAC7	HDAC	Deferred	Treatment with more disease data	
+TH34_2292	Bevacizumab	VEGFA	VEGF	Prioritized 	Not implemented	Rapid disease progression
+TH34_2292	Pazopanib	FLT4	RTK	Deferred	Unable to take oral medication	
+TH34_2293	Dinaciclib	CDK1	CDK1	Declined	Not FDA approved	
+TH34_2293	Nirogacestat	NOTCH3	NOTCH	Declined	Not FDA approved	
+TH34_2351	Nitroglycerin	HIF1 signaling/HMOX1	Other: HMOX1/HIF1A Hypoxia Signaling	Declined	No phase I data in children	
+TH34_2351	Trametinib or Selumetinib	MAP2K1	MAPK	Prioritized	Implemented	Progression
