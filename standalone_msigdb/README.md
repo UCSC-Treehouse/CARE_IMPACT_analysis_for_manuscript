@@ -85,6 +85,7 @@ Finally, we will merge those pathway result files with `TH34_rollup_cohort_outli
 ```
 scriptdir=~/code/analysis-methods/script/DGIdb_and_MSigDB_pathways_aka_GSEA/
 $scriptdir/msigdb_pathways_to_tall_table.py \
+    --drugs \
     data/pathway_results_rollup_cohort \
     data/TH34_rollup_cohort_outliers_with_drugs_2023-09-20.txt \
     > data/TH34_tall_rollup_cohort_outliers_with_drugs_pathways_2023-09-28.tsv.txt
@@ -167,6 +168,7 @@ Finally, build the tall table.
 ```
 scriptdir=~/code/analysis-methods/script/DGIdb_and_MSigDB_pathways_aka_GSEA/
 $scriptdir/msigdb_pathways_to_tall_table.py \
+	--drugs \
 	data/pathway_results_pancancer_pandisease \
 	data/TH34_pc_pd_outliers_with_drugs_2023-10-03.txt \
 	> data/TH34_tall_pancancer_pandisease_outliers_with_drugs_pathways_2023-10-03.tsv.txt
@@ -223,9 +225,11 @@ Then, use `msigdb_pathways_to_tall_table.py` from analysis\_methods, providing i
 This will create a "tall" file with the pathways column attached.
 
 ```
-/private/home/ekephart/code/analysis-methods/script/DGIdb_and_MSigDB_pathways_aka_GSEA/msigdb_pathways_to_tall_table.py \
-    pathway_results_lowstringent_pd \
-    TH34_tall_lowstringent-pd_drugs_2023-10-20.tsv.txt \
-    > TH34_tall_lowstringent-pd_drugs_pathways_2023-10-20.tsv.txt
+scriptdir=~/code/analysis-methods/script/DGIdb_and_MSigDB_pathways_aka_GSEA/
+$scriptdir/msigdb_pathways_to_tall_table.py \
+    --drugs \
+    data/pathway_results_lowstringent_pd \
+    data/TH34_tall_lowstringent-pd_drugs_2023-10-20.tsv.txt \
+    > data/TH34_tall_lowstringent-pd_drugs_pathways_2023-10-20.tsv.txt
 
-Final output: `TH34_tall_lowstringent-pd_drugs_pathways_2023-10-20.tsv.txt`
+Final output: `45373b46b8c2db05e873747f5185424d  TH34_tall_lowstringent-pd_drugs_2023-10-20.tsv.txt`
