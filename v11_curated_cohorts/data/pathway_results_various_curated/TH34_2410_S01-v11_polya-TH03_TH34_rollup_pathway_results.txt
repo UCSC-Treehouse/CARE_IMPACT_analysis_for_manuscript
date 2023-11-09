@@ -1,0 +1,90 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	3
+# genesets in collections:	1379
+# genes in comparison (n):	72
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	11	0.0107	5.792e-7	7.987e-4
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	8	0.01062	2.379e-5	0.01641
+NABA_ECM_REGULATORS	238	Genes encoding enzymes and their regulators involved in the remodeling of the extracellular matrix	5	0.02101	3.767e-5	0.01732
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_REGULATORS
+4320	MMP11	matrix metallopeptidase 11	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_REGULATORS
+1515	CTSV	cathepsin V	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_REGULATORS
+284018	C17orf58	chromosome 17 open reading frame 58	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_REGULATORS
+171019	ADAMTS19	ADAM metallopeptidase with thrombospondin type 1 motif 19	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_REGULATORS
+80332	ADAM33	ADAM metallopeptidase domain 33	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_REGULATORS
+7481	WNT11	Wnt family member 11	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	
+57758	SCUBE2	signal peptide, CUB domain and EGF like domain containing 2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	
+9244	CRLF1	cytokine receptor like factor 1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	
+2621	GAS6	growth arrest specific 6	NABA_MATRISOME		
+78987	CRELD1	cysteine rich with EGF like domains 1	NABA_MATRISOME		
+136227	COL26A1	collagen type XXVI alpha 1 chain	NABA_MATRISOME		
+9658	ZNF516	zinc finger protein 516			
+170261	ZCCHC12	zinc finger CCHC-type containing 12			
+7490	WT1	Wilms tumor 1			
+7425	VGF	VGF nerve growth factor inducible			
+10078	TSSC4	tumor suppressing subtransferable candidate 4			
+83707	TRPT1	tRNA phosphotransferase 1			
+81786	TRIM7	tripartite motif containing 7			
+10758	TRAF3IP2	TRAF3 interacting protein 2			
+90313	TP53I13	tumor protein p53 inducible protein 13			
+124842	TMEM132E	transmembrane protein 132E			
+144404	TMEM120B	transmembrane protein 120B			
+780851	SNORD3A	small nucleolar RNA, C/D box 3A			
+55244	SLC47A1	solute carrier family 47 member 1			
+6580	SLC22A1	solute carrier family 22 member 1			
+112483	SAT2	spermidine/spermine N1-acetyltransferase family member 2			
+56475	RPRM	reprimo, TP53 dependent G2 arrest mediator homolog			
+388344	RPL13P12	ribosomal protein L13 pseudogene 12			
+10594	PRPF8	pre-mRNA processing factor 8			
+5522	PPP2R2C	protein phosphatase 2 regulatory subunit Bgamma			
+5241	PGR	progesterone receptor			
+9506	PAGE4	PAGE family member 4			
+116039	OSR2	odd-skipped related transciption factor 2			
+4884	NPTX1	neuronal pentraxin 1			
+4882	NPR2	natriuretic peptide receptor 2			
+4832	NME3	NME/NM23 nucleoside diphosphate kinase 3			
+80097	MZT2B	mitotic spindle organizing protein 2B			
+150365	MEI1	meiotic double-stranded break formation protein 1			
+55679	LIMS2	LIM zinc finger domain containing 2			
+158062	LCN6	lipocalin 6			
+9424	KCNK6	potassium two pore domain channel subfamily K member 6			
+51015	ISOC1	isochorismatase domain containing 1			
+3235	HOXD9	homeobox D9			
+3233	HOXD4	homeobox D4			
+3232	HOXD3	homeobox D3			
+3237	HOXD11	homeobox D11			
+3236	HOXD10	homeobox D10			
+3207	HOXA11	homeobox A11			
+9464	HAND2	heart and neural crest derivatives expressed 2			
+2675	GFRA2	GDNF family receptor alpha 2			
+10912	GADD45G	growth arrest and DNA damage inducible gamma			
+NA	FBXO18	NA			
+2099	ESR1	estrogen receptor 1			
+2051	EPHB6	EPH receptor B6			
+196047	EMX2OS	EMX2 opposite strand/antisense RNA			
+2018	EMX2	empty spiracles homeobox 2			
+133283	EEF1A1P13	eukaryotic translation elongation factor 1 alpha 1 pseudogene 13			
+9427	ECEL1	endothelin converting enzyme like 1			
+22943	DKK1	dickkopf WNT signaling pathway inhibitor 1			
+1394	CRHR1	corticotropin releasing hormone receptor 1			
+1264	CNN1	calponin 1			
+22883	CLSTN1	calsyntenin 1			
+4435	CITED1	Cbp/p300 interacting transactivator with Glu/Asp rich carboxy-terminal domain 1			
+64377	CHST8	carbohydrate sulfotransferase 8			
+8912	CACNA1H	calcium voltage-gated channel subunit alpha1 H			
+NA	C21orf2	NA			
+NA	C19orf60	NA			
+483	ATP1B3	ATPase Na+/K+ transporting subunit beta 3			
+482	ATP1B2	ATPase Na+/K+ transporting subunit beta 2			
+138649	ANKRD19P	ankyrin repeat domain 19, pseudogene			
+152	ADRA2C	adrenoceptor alpha 2C			
+72	ACTG2	actin, gamma 2, smooth muscle, enteric			

@@ -1,0 +1,144 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	6
+# genesets in collections:	1379
+# genes in comparison (n):	123
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	8	0.02909	8.441e-7	0.001164
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	13	0.01265	4.144e-6	0.002858
+KEGG_ECM_RECEPTOR_INTERACTION	84	ECM-receptor interaction	4	0.04762	7.989e-5	0.03672
+HALLMARK_HYPOXIA	200	Genes up-regulated in response to low oxygen levels (hypoxia).	5	0.025	2.116e-4	0.04864
+REACTOME_NCAM1_INTERACTIONS	39	Genes involved in NCAM1 interactions	3	0.07692	1.594e-4	0.04864
+NABA_ECM_GLYCOPROTEINS	196	Genes encoding structural ECM glycoproteins	5	0.02551	1.927e-4	0.04864
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_CORE_MATRISOME	NABA_MATRISOME	KEGG_ECM_RECEPTOR_INTERACTION	HALLMARK_HYPOXIA	REACTOME_NCAM1_INTERACTIONS	NABA_ECM_GLYCOPROTEINS
+1280	COL2A1	collagen type II alpha 1 chain	NABA_CORE_MATRISOME	NABA_MATRISOME	KEGG_ECM_RECEPTOR_INTERACTION		REACTOME_NCAM1_INTERACTIONS	
+5649	RELN	reelin	NABA_CORE_MATRISOME	NABA_MATRISOME	KEGG_ECM_RECEPTOR_INTERACTION			NABA_ECM_GLYCOPROTEINS
+284217	LAMA1	laminin subunit alpha 1	NABA_CORE_MATRISOME	NABA_MATRISOME	KEGG_ECM_RECEPTOR_INTERACTION			NABA_ECM_GLYCOPROTEINS
+1463	NCAN	neurocan	NABA_CORE_MATRISOME	NABA_MATRISOME		HALLMARK_HYPOXIA	REACTOME_NCAM1_INTERACTIONS	
+63827	BCAN	brevican	NABA_CORE_MATRISOME	NABA_MATRISOME		HALLMARK_HYPOXIA		
+146177	VWA3A	von Willebrand factor A domain containing 3A	NABA_CORE_MATRISOME	NABA_MATRISOME				NABA_ECM_GLYCOPROTEINS
+343637	RSPO4	R-spondin 4	NABA_CORE_MATRISOME	NABA_MATRISOME				NABA_ECM_GLYCOPROTEINS
+340419	RSPO2	R-spondin 2	NABA_CORE_MATRISOME	NABA_MATRISOME				NABA_ECM_GLYCOPROTEINS
+7481	WNT11	Wnt family member 11		NABA_MATRISOME				
+4582	MUC1	mucin 1, cell surface associated		NABA_MATRISOME				
+2662	GDF10	growth differentiation factor 10		NABA_MATRISOME				
+2657	GDF1	growth differentiation factor 1		NABA_MATRISOME				
+170690	ADAMTS16	ADAM metallopeptidase with thrombospondin type 1 motif 16		NABA_MATRISOME				
+3691	ITGB4	integrin subunit beta 4			KEGG_ECM_RECEPTOR_INTERACTION			
+8277	TKTL1	transketolase like 1				HALLMARK_HYPOXIA		
+5837	PYGM	glycogen phosphorylase, muscle associated				HALLMARK_HYPOXIA		
+2597	GAPDH	glyceraldehyde-3-phosphate dehydrogenase				HALLMARK_HYPOXIA		
+6900	CNTN2	contactin 2					REACTOME_NCAM1_INTERACTIONS	
+51364	ZMYND10	zinc finger MYND-type containing 10						
+84107	ZIC4	Zic family member 4						
+7546	ZIC2	Zic family member 2						
+9213	XPR1	xenotropic and polytropic retrovirus receptor 1						
+7434	VIPR2	vasoactive intestinal peptide receptor 2						
+10083	USH1C	USH1 protein network component harmonin						
+51506	UFC1	ubiquitin-fold modifier conjugating enzyme 1						
+9654	TTLL4	tubulin tyrosine ligase like 4						
+10440	TIMM17A	translocase of inner mitochondrial membrane 17A						
+200132	TCTEX1D1	Tctex1 domain containing 1						
+80222	TARS2	threonyl-tRNA synthetase 2, mitochondrial						
+117143	TADA1	transcriptional adaptor 1						
+55061	SUSD4	sushi domain containing 4						
+342667	STAC2	SH3 and cysteine rich domain 2						
+128153	SPATA17	spermatogenesis associated 17						
+26206	SPAG8	sperm associated antigen 8						
+9576	SPAG6	sperm associated antigen 6						
+6657	SOX2	SRY-box 2						
+23557	SNAPIN	SNAP associated protein						
+64754	SMYD3	SET and MYND domain containing 3						
+9887	SMG7	SMG7, nonsense mediated mRNA decay factor						
+6538	SLC6A11	solute carrier family 6 member 11						
+10991	SLC38A3	solute carrier family 38 member 3						
+6581	SLC22A3	solute carrier family 22 member 3						
+23513	SCRIB	scribbled planar cell polarity protein						
+10067	SCAMP3	secretory carrier membrane protein 3						
+89765	RSPH1	radial spoke head component 1						
+6045	RNF2	ring finger protein 2						
+196475	RMST	rhabdomyosarcoma 2 associated transcript						
+5992	RFX4	regulatory factor X4						
+9939	RBM8A	RNA binding motif protein 8A						
+84249	PSD2	pleckstrin and Sec7 domain containing 2						
+84152	PPP1R1B	protein phosphatase 1 regulatory inhibitor subunit 1B						
+4660	PPP1R12B	protein phosphatase 1 regulatory subunit 12B						
+5455	POU3F3	POU class 3 homeobox 3						
+144100	PLEKHA7	pleckstrin homology domain containing A7						
+10401	PIAS3	protein inhibitor of activated STAT 3						
+5210	PFKFB4	6-phosphofructo-2-kinase/fructose-2,6-biphosphatase 4						
+5174	PDZK1	PDZ domain containing 1						
+5121	PCP4	Purkinje cell protein 4						
+5080	PAX6	paired box 6						
+5077	PAX3	paired box 3						
+79957	PAQR6	progestin and adipoQ receptor family member 6						
+9722	NOS1AP	nitric oxide synthase 1 adaptor protein						
+79858	NEK11	NIMA related kinase 11						
+23385	NCSTN	nicastrin						
+4487	MSX1	msh homeobox 1						
+26002	MOXD1	monooxygenase DBH like 1						
+225689	MAPK15	mitogen-activated protein kinase 15						
+10586	MAB21L2	mab-21 like 2						
+10446	LRRN2	leucine rich repeat neuronal 2						
+149499	LRRC71	leucine rich repeat containing 71						
+55885	LMO3	LIM domain only 3						
+645323	LINC00461	long intergenic non-protein coding RNA 461						
+59352	LGR6	leucine rich repeat containing G protein-coupled receptor 6						
+64147	KIF9	kinesin family member 9						
+3766	KCNJ10	potassium voltage-gated channel subfamily J member 10						
+3707	ITPKB	inositol-trisphosphate 3-kinase B						
+84223	IQCG	IQ motif containing G						
+3547	IGSF1	immunoglobulin superfamily member 1						
+64344	HIF3A	hypoxia inducible factor 3 subunit alpha						
+220296	HEPACAM	hepatic and glial cell adhesion molecule						
+2949	GSTM5	glutathione S-transferase mu 5						
+2893	GRIA4	glutamate ionotropic receptor AMPA type subunit 4						
+NA	GRAMD2	NA						
+653519	GPR89A	G protein-coupled receptor 89A						
+9283	GPR37L1	G protein-coupled receptor 37 like 1						
+169792	GLIS3	GLIS family zinc finger 3						
+2670	GFAP	glial fibrillary acidic protein						
+54857	GDPD2	glycerophosphodiester phosphodiesterase domain containing 2						
+2302	FOXJ1	forkhead box J1						
+114827	FHAD1	forkhead associated phosphopeptide binding domain 1						
+153643	FAM81B	family with sequence similarity 81 member B						
+9413	FAM189A2	family with sequence similarity 189 member A2						
+NA	FAM179A	NA						
+79645	EFCAB1	EF-hand calcium binding domain 1						
+11266	DUSP12	dual specificity phosphatase 12						
+1770	DNAH9	dynein axonemal heavy chain 9						
+66002	CYP4F12	cytochrome P450 family 4 subfamily F member 12						
+286204	CRB2	crumbs cell polarity complex component 2						
+23418	CRB1	crumbs cell polarity complex component 1						
+9362	CPNE6	copine 6						
+1314	COPA	coatomer protein complex subunit alpha						
+140578	CHODL	chondrolectin						
+64072	CDH23	cadherin related 23						
+55036	CCDC40	coiled-coil domain containing 40						
+NA	CCDC37	NA						
+93233	CCDC114	coiled-coil domain containing 114						
+828	CAPS	calcyphosine						
+768	CA9	carbonic anhydrase 9						
+84688	C9orf24	chromosome 9 open reading frame 24						
+134121	C5orf49	chromosome 5 open reading frame 49						
+257407	C2orf72	chromosome 2 open reading frame 72						
+10485	C1orf61	chromosome 1 open reading frame 61						
+127003	C1orf194	chromosome 1 open reading frame 194						
+8938	BAIAP3	BAI1 associated protein 3						
+493	ATP2B4	ATPase plasma membrane Ca2+ transporting 4						
+477	ATP1A2	ATPase Na+/K+ transporting subunit alpha 2						
+219681	ARMC3	armadillo repeat containing 3						
+361	AQP4	aquaporin 4						
+10297	APC2	APC2, WNT signaling pathway regulator						
+10840	ALDH1L1	aldehyde dehydrogenase 1 family member L1						
+150209	AIFM3	apoptosis inducing factor, mitochondria associated 3						
+150	ADRA2A	adrenoceptor alpha 2A						
+108	ADCY2	adenylate cyclase 2						

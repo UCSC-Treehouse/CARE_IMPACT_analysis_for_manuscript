@@ -1,0 +1,82 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	6
+# genesets in collections:	1379
+# genes in comparison (n):	61
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+REACTOME_RNA_POL_II_TRANSCRIPTION	105	Genes involved in RNA Polymerase II Transcription	4	0.0381	1.215e-5	0.009742
+REACTOME_MRNA_3_END_PROCESSING	35	Genes involved in mRNA 3'-end processing	3	0.08571	1.413e-5	0.009742
+KEGG_SPLICEOSOME	128	Spliceosome	4	0.03125	2.649e-5	0.009773
+REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_	44	Genes involved in Cleavage of Growing Transcript in the Termination Region	3	0.06818	2.835e-5	0.009773
+REACTOME_TRANSPORT_OF_MATURE_TRANSCRIPT_TO_CYTOPLASM	54	Genes involved in Transport of Mature Transcript to Cytoplasm	3	0.05556	5.259e-5	0.0145
+REACTOME_TRANSCRIPTION	210	Genes involved in Transcription	4	0.01905	1.803e-4	0.04144
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	REACTOME_RNA_POL_II_TRANSCRIPTION	REACTOME_MRNA_3_END_PROCESSING	KEGG_SPLICEOSOME	REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_	REACTOME_TRANSPORT_OF_MATURE_TRANSCRIPT_TO_CYTOPLASM	REACTOME_TRANSCRIPTION
+9939	RBM8A	RNA binding motif protein 8A	REACTOME_RNA_POL_II_TRANSCRIPTION	REACTOME_MRNA_3_END_PROCESSING	KEGG_SPLICEOSOME	REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_	REACTOME_TRANSPORT_OF_MATURE_TRANSCRIPT_TO_CYTOPLASM	REACTOME_TRANSCRIPTION
+65109	UPF3B	UPF3B, regulator of nonsense mediated mRNA decay	REACTOME_RNA_POL_II_TRANSCRIPTION	REACTOME_MRNA_3_END_PROCESSING		REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_	REACTOME_TRANSPORT_OF_MATURE_TRANSCRIPT_TO_CYTOPLASM	REACTOME_TRANSCRIPTION
+51692	CPSF3	cleavage and polyadenylation specific factor 3	REACTOME_RNA_POL_II_TRANSCRIPTION	REACTOME_MRNA_3_END_PROCESSING		REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_	REACTOME_TRANSPORT_OF_MATURE_TRANSCRIPT_TO_CYTOPLASM	REACTOME_TRANSCRIPTION
+6882	TAF11	TATA-box binding protein associated factor 11	REACTOME_RNA_POL_II_TRANSCRIPTION					REACTOME_TRANSCRIPTION
+26121	PRPF31	pre-mRNA processing factor 31			KEGG_SPLICEOSOME			
+10465	PPIH	peptidylprolyl isomerase H			KEGG_SPLICEOSOME			
+23658	LSM5	LSM5 homolog, U6 small nuclear RNA and mRNA degradation associated			KEGG_SPLICEOSOME			
+7490	WT1	Wilms tumor 1						
+9040	UBE2M	ubiquitin conjugating enzyme E2 M						
+129787	TMEM18	transmembrane protein 18						
+26520	TIMM9	translocase of inner mitochondrial membrane 9						
+29844	TFPT	TCF3 fusion partner						
+7018	TF	transferrin						
+29101	SSU72	SSU72 homolog, RNA polymerase II CTD phosphatase						
+6742	SSBP1	single stranded DNA binding protein 1						
+6729	SRP54	signal recognition particle 54						
+10371	SEMA3A	semaphorin 3A						
+79005	SCNM1	sodium channel modifier 1						
+100316904	SAP25	Sin3A associated protein 25						
+6100	RP9	RP9, pre-mRNA splicing factor						
+285498	RNF212	ring finger protein 212						
+57038	RARS2	arginyl-tRNA synthetase 2, mitochondrial						
+26167	PCDHB5	protocadherin beta 5						
+55003	PAK1IP1	PAK1 interacting protein 1						
+4922	NTS	neurotensin						
+51406	NOL7	nucleolar protein 7						
+79954	NOL10	nucleolar protein 10						
+64965	MRPS9	mitochondrial ribosomal protein S9						
+26002	MOXD1	monooxygenase DBH like 1						
+4155	MBP	myelin basic protein						
+728269	MAGEA9B	MAGE family member A9B						
+84946	LTV1	LTV1 ribosome biogenesis factor						
+9786	KIAA0586	KIAA0586						
+92856	IMP4	IMP4, U3 small nucleolar ribonucleoprotein						
+9324	HMGN3	high mobility group nucleosomal binding domain 3						
+8091	HMGA2	high mobility group AT-hook 2						
+2719	GPC3	glypican 3						
+79017	GGCT	gamma-glutamylcyclotransferase						
+2670	GFAP	glial fibrillary acidic protein						
+8487	GEMIN2	gem nuclear organelle associated protein 2						
+2617	GARS	glycyl-tRNA synthetase						
+116113	FOXP4	forkhead box P4						
+1819	DRG2	developmentally regulated GTP binding protein 2						
+93099	DMKN	dermokine						
+1674	DES	desmin						
+51339	DACT1	dishevelled binding antagonist of beta catenin 1						
+54205	CYCS	cytochrome c, somatic						
+63932	CXorf56	chromosome X open reading frame 56						
+29099	COMMD9	COMM domain containing 9						
+1280	COL2A1	collagen type II alpha 1 chain						
+29082	CHMP4A	charged multivesicular body protein 4A						
+387103	CENPW	centromere protein W						
+283316	CD163L1	CD163 molecule like 1						
+NA	CBWD7	NA						
+55871	CBWD1	COBW domain containing 1						
+79169	C1orf35	chromosome 1 open reading frame 35						
+25855	BRMS1	BRMS1, transcriptional repressor and anoikis regulator						
+8854	ALDH1A2	aldehyde dehydrogenase 1 family member A2						
+140	ADORA3	adenosine A3 receptor						
+52	ACP1	acid phosphatase 1						
+23	ABCF1	ATP binding cassette subfamily F member 1						

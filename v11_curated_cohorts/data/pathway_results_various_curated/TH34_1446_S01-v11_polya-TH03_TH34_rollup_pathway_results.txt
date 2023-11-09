@@ -1,0 +1,92 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	5
+# genesets in collections:	1379
+# genes in comparison (n):	72
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	11	0.0107	5.792e-7	7.987e-4
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	6	0.02182	4.878e-6	0.003363
+HALLMARK_COAGULATION	138	Genes encoding components of blood coagulation system; also up-regulated in platelets.	4	0.02899	6.834e-5	0.01885
+PID_AJDISS_2PATHWAY	48	Posttranslational regulation of adherens junction stability and dissassembly	3	0.0625	6.062e-5	0.01885
+NABA_COLLAGENS	44	Genes encoding collagen proteins	3	0.06818	4.663e-5	0.01885
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_MATRISOME	NABA_CORE_MATRISOME	HALLMARK_COAGULATION	PID_AJDISS_2PATHWAY	NABA_COLLAGENS
+340267	COL28A1	collagen type XXVIII alpha 1 chain	NABA_MATRISOME	NABA_CORE_MATRISOME			NABA_COLLAGENS
+169044	COL22A1	collagen type XXII alpha 1 chain	NABA_MATRISOME	NABA_CORE_MATRISOME			NABA_COLLAGENS
+57642	COL20A1	collagen type XX alpha 1 chain	NABA_MATRISOME	NABA_CORE_MATRISOME			NABA_COLLAGENS
+163175	LGI4	leucine rich repeat LGI family member 4	NABA_MATRISOME	NABA_CORE_MATRISOME			
+60484	HAPLN2	hyaluronan and proteoglycan link protein 2	NABA_MATRISOME	NABA_CORE_MATRISOME			
+63827	BCAN	brevican	NABA_MATRISOME	NABA_CORE_MATRISOME			
+5055	SERPINB2	serpin family B member 2	NABA_MATRISOME		HALLMARK_COAGULATION		
+2668	GDNF	glial cell derived neurotrophic factor	NABA_MATRISOME			PID_AJDISS_2PATHWAY	
+6285	S100B	S100 calcium binding protein B	NABA_MATRISOME				
+5365	PLXNB3	plexin B3	NABA_MATRISOME				
+10882	C1QL1	complement C1q like 1	NABA_MATRISOME				
+7018	TF	transferrin			HALLMARK_COAGULATION		
+3690	ITGB3	integrin subunit beta 3			HALLMARK_COAGULATION		
+726	CAPN5	calpain 5			HALLMARK_COAGULATION		
+6642	SNX1	sorting nexin 1				PID_AJDISS_2PATHWAY	
+4915	NTRK2	neurotrophic receptor tyrosine kinase 2				PID_AJDISS_2PATHWAY	
+7425	VGF	VGF nerve growth factor inducible					
+90226	UCN2	urocortin 2					
+79054	TRPM8	transient receptor potential cation channel subfamily M member 8					
+7204	TRIO	trio Rho guanine nucleotide exchange factor					
+29906	ST8SIA5	ST8 alpha-N-acetyl-neuraminide alpha-2,8-sialyltransferase 5					
+30812	SOX8	SRY-box 8					
+347689	SOX2-OT	SOX2 overlapping transcript					
+6657	SOX2	SRY-box 2					
+6663	SOX10	SRY-box 10					
+6649	SOD3	superoxide dismutase 3					
+79856	SNX22	sorting nexin 22					
+11341	SCRG1	stimulator of chondrogenesis 1					
+29106	SCG3	secretogranin III					
+5834	PYGB	glycogen phosphorylase B					
+5803	PTPRZ1	protein tyrosine phosphatase, receptor type Z1					
+5521	PPP2R2B	protein phosphatase 2 regulatory subunit Bbeta					
+5420	PODXL	podocalyxin like					
+5375	PMP2	peripheral myelin protein 2					
+5354	PLP1	proteolipid protein 1					
+58473	PLEKHB1	pleckstrin homology domain containing B1					
+10215	OLIG2	oligodendrocyte transcription factor 2					
+116448	OLIG1	oligodendrocyte transcription factor 1					
+54413	NLGN3	neuroligin 3					
+4821	NKX2-2	NK2 homeobox 2					
+4504	MT3	metallothionein 3					
+64968	MRPS6	mitochondrial ribosomal protein S6					
+79778	MICALL2	MICAL like 2					
+8190	MIA	MIA SH3 domain containing					
+5653	KLK6	kallikrein related peptidase 6					
+55220	KLHDC8A	kelch domain containing 8A					
+3766	KCNJ10	potassium voltage-gated channel subfamily J member 10					
+3754	KCNF1	potassium voltage-gated channel modifier subfamily F member 1					
+2824	GPM6B	glycoprotein M6B					
+2705	GJB1	gap junction protein beta 1					
+2670	GFAP	glial fibrillary acidic protein					
+2596	GAP43	growth associated protein 43					
+2571	GAD1	glutamate decarboxylase 1					
+53822	FXYD7	FXYD domain containing ion transport regulator 7					
+84824	FCRLA	Fc receptor like A					
+8857	FCGBP	Fc fragment of IgG binding protein					
+2173	FABP7	fatty acid binding protein 7					
+2134	EXTL1	exostosin like glycosyltransferase 1					
+23052	ENDOD1	endonuclease domain containing 1					
+22943	DKK1	dickkopf WNT signaling pathway inhibitor 1					
+147015	DHRS13	dehydrogenase/reductase 13					
+728577	CNTNAP3B	contactin associated protein like 3B					
+149111	CNIH3	cornichon family AMPA receptor auxiliary protein 3					
+116173	CMTM5	CKLF like MARVEL transmembrane domain containing 5					
+10752	CHL1	cell adhesion molecule L1 like					
+54862	CC2D1A	coiled-coil and C2 domain containing 1A					
+NA	C2orf82	NA					
+10485	C1orf61	chromosome 1 open reading frame 61					
+8537	BCAS1	breast carcinoma amplified sequence 1					
+563	AZGP1	alpha-2-glycoprotein 1, zinc-binding					
+375719	AQP7P1	aquaporin 7 pseudogene 1					
+347	APOD	apolipoprotein D					

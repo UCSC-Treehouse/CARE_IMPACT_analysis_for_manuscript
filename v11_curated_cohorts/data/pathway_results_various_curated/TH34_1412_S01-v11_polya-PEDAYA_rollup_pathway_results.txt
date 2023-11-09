@@ -1,0 +1,211 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	14
+# genesets in collections:	1379
+# genes in comparison (n):	182
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	26	0.02529	7.245e-14	9.991e-11
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	18	0.0239	1.53e-9	1.055e-6
+HALLMARK_ESTROGEN_RESPONSE_LATE	200	Genes defining late response to estrogen.	8	0.04	1.496e-6	6.878e-4
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	8	0.02909	1.546e-5	0.00533
+ST_DIFFERENTIATION_PATHWAY_IN_PC12_CELLS	45	Differentiation Pathway in PC12 Cells; this is a specific case of PAC1 Receptor Pathway.	4	0.08889	3.123e-5	0.007178
+NABA_COLLAGENS	44	Genes encoding collagen proteins	4	0.09091	2.854e-5	0.007178
+NABA_ECM_REGULATORS	238	Genes encoding enzymes and their regulators involved in the remodeling of the extracellular matrix	7	0.02941	4.955e-5	0.009761
+PID_FGF_PATHWAY	55	FGF signaling pathway	4	0.07273	6.932e-5	0.01062
+NABA_ECM_AFFILIATED	171	Genes encoding proteins affiliated structurally or functionally to extracellular matrix proteins	6	0.03509	6.574e-5	0.01062
+BIOCARTA_IL2_PATHWAY	22	IL 2 signaling pathway	3	0.1364	8.901e-5	0.01227
+REACTOME_REGULATION_OF_BETA_CELL_DEVELOPMENT	30	Genes involved in Regulation of beta-cell development	3	0.1	2.293e-4	0.02874
+PID_NETRIN_PATHWAY	32	Netrin-mediated signaling events	3	0.09375	2.785e-4	0.032
+PID_ALPHA_SYNUCLEIN_PATHWAY	33	Alpha-synuclein signaling	3	0.09091	3.054e-4	0.0324
+HALLMARK_UV_RESPONSE_UP	158	Genes up-regulated in response to ultraviolet (UV) radiation.	5	0.03165	4.352e-4	0.04286
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	HALLMARK_ESTROGEN_RESPONSE_LATE	NABA_CORE_MATRISOME	ST_DIFFERENTIATION_PATHWAY_IN_PC12_CELLS	NABA_COLLAGENS	NABA_ECM_REGULATORS	PID_FGF_PATHWAY	NABA_ECM_AFFILIATED	BIOCARTA_IL2_PATHWAY	REACTOME_REGULATION_OF_BETA_CELL_DEVELOPMENT	PID_NETRIN_PATHWAY	PID_ALPHA_SYNUCLEIN_PATHWAY	HALLMARK_UV_RESPONSE_UP
+6768	ST14	suppression of tumorigenicity 14	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	HALLMARK_ESTROGEN_RESPONSE_LATE				NABA_ECM_REGULATORS							
+5272	SERPINB9	serpin family B member 9	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED					NABA_ECM_REGULATORS							
+84695	LOXL3	lysyl oxidase like 3	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED					NABA_ECM_REGULATORS							
+80760	ITIH5	inter-alpha-trypsin inhibitor heavy chain family member 5	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED					NABA_ECM_REGULATORS							
+3698	ITIH2	inter-alpha-trypsin inhibitor heavy chain 2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED					NABA_ECM_REGULATORS							
+339366	ADAMTSL5	ADAMTS like 5	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED					NABA_ECM_REGULATORS							
+170691	ADAMTS17	ADAM metallopeptidase with thrombospondin type 1 motif 17	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED					NABA_ECM_REGULATORS							
+91584	PLXNA4	plexin A4	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED							NABA_ECM_AFFILIATED					
+4588	MUC6	mucin 6, oligomeric mucus/gel-forming	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED							NABA_ECM_AFFILIATED					
+4583	MUC2	mucin 2, oligomeric mucus/gel-forming	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED							NABA_ECM_AFFILIATED					
+3957	LGALS2	galectin 2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED							NABA_ECM_AFFILIATED					
+114905	C1QTNF7	C1q and TNF related 7	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED							NABA_ECM_AFFILIATED					
+306	ANXA3	annexin A3	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED							NABA_ECM_AFFILIATED					
+140862	ISM1	isthmin 1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED												
+3083	HGFAC	HGF activator	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED												
+6370	CCL25	C-C motif chemokine ligand 25	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED												
+869	CBLN1	cerebellin 1 precursor	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED												
+9048	ARTN	artemin	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED												
+91522	COL23A1	collagen type XXIII alpha 1 chain	NABA_MATRISOME			NABA_CORE_MATRISOME		NABA_COLLAGENS								
+169044	COL22A1	collagen type XXII alpha 1 chain	NABA_MATRISOME			NABA_CORE_MATRISOME		NABA_COLLAGENS								
+57642	COL20A1	collagen type XX alpha 1 chain	NABA_MATRISOME			NABA_CORE_MATRISOME		NABA_COLLAGENS								
+1305	COL13A1	collagen type XIII alpha 1 chain	NABA_MATRISOME			NABA_CORE_MATRISOME		NABA_COLLAGENS								
+10216	PRG4	proteoglycan 4	NABA_MATRISOME			NABA_CORE_MATRISOME										
+89932	PAPLN	papilin, proteoglycan like sulfated glycoprotein	NABA_MATRISOME			NABA_CORE_MATRISOME										
+84628	NTNG2	netrin G2	NABA_MATRISOME			NABA_CORE_MATRISOME										
+285313	IGSF10	immunoglobulin superfamily member 10	NABA_MATRISOME			NABA_CORE_MATRISOME										
+7054	TH	tyrosine hydroxylase			HALLMARK_ESTROGEN_RESPONSE_LATE		ST_DIFFERENTIATION_PATHWAY_IN_PC12_CELLS								PID_ALPHA_SYNUCLEIN_PATHWAY	
+999	CDH1	cadherin 1			HALLMARK_ESTROGEN_RESPONSE_LATE					PID_FGF_PATHWAY						
+51083	GAL	galanin and GMAP prepropeptide			HALLMARK_ESTROGEN_RESPONSE_LATE											HALLMARK_UV_RESPONSE_UP
+23650	TRIM29	tripartite motif containing 29			HALLMARK_ESTROGEN_RESPONSE_LATE											
+57419	SLC24A3	solute carrier family 24 member 3			HALLMARK_ESTROGEN_RESPONSE_LATE											
+9254	CACNA2D2	calcium voltage-gated channel auxiliary subunit alpha2delta 2			HALLMARK_ESTROGEN_RESPONSE_LATE											
+10551	AGR2	anterior gradient 2, protein disulphide isomerase family member			HALLMARK_ESTROGEN_RESPONSE_LATE											
+5595	MAPK3	mitogen-activated protein kinase 3					ST_DIFFERENTIATION_PATHWAY_IN_PC12_CELLS			PID_FGF_PATHWAY		BIOCARTA_IL2_PATHWAY		PID_NETRIN_PATHWAY	PID_ALPHA_SYNUCLEIN_PATHWAY	
+2002	ELK1	ELK1, ETS transcription factor					ST_DIFFERENTIATION_PATHWAY_IN_PC12_CELLS					BIOCARTA_IL2_PATHWAY				
+5924	RASGRF2	Ras protein specific guanine nucleotide releasing factor 2					ST_DIFFERENTIATION_PATHWAY_IN_PC12_CELLS									
+815	CAMK2A	calcium/calmodulin dependent protein kinase II alpha								PID_FGF_PATHWAY				PID_NETRIN_PATHWAY		
+2264	FGFR4	fibroblast growth factor receptor 4								PID_FGF_PATHWAY						
+3560	IL2RB	interleukin 2 receptor subunit beta										BIOCARTA_IL2_PATHWAY				
+5080	PAX6	paired box 6											REACTOME_REGULATION_OF_BETA_CELL_DEVELOPMENT			
+390874	ONECUT3	one cut homeobox 3											REACTOME_REGULATION_OF_BETA_CELL_DEVELOPMENT			
+3170	FOXA2	forkhead box A2											REACTOME_REGULATION_OF_BETA_CELL_DEVELOPMENT			
+90249	UNC5A	unc-5 netrin receptor A												PID_NETRIN_PATHWAY		
+5653	KLK6	kallikrein related peptidase 6													PID_ALPHA_SYNUCLEIN_PATHWAY	
+58525	WIZ	WIZ zinc finger														HALLMARK_UV_RESPONSE_UP
+6474	SHOX2	short stature homeobox 2														HALLMARK_UV_RESPONSE_UP
+1482	NKX2-5	NK2 homeobox 5														HALLMARK_UV_RESPONSE_UP
+885	CCK	cholecystokinin														HALLMARK_UV_RESPONSE_UP
+84146	ZNF644	zinc finger protein 644														
+7743	ZNF189	zinc finger protein 189														
+283576	ZDHHC22	zinc finger DHHC-type containing 22														
+55113	XKR8	XK related 8														
+147179	WIPF2	WAS/WASL interacting protein family member 2														
+55112	WDR60	WD repeat domain 60														
+54532	USP53	ubiquitin specific peptidase 53														
+340260	UNCX	UNC homeobox														
+7325	UBE2E2	ubiquitin conjugating enzyme E2 E2														
+55833	UBAP2	ubiquitin associated protein 2														
+643224	TUBBP5	tubulin beta pseudogene 5														
+440730	TRIM67	tripartite motif containing 67														
+7140	TNNT3	troponin T3, fast skeletal type														
+57156	TMEM63C	transmembrane protein 63C														
+255394	TCP11L2	t-complex 11 like 2														
+123036	TC2N	tandem C2 domains, nuclear														
+7341	SUMO1	small ubiquitin-like modifier 1														
+81849	ST6GALNAC5	ST6 N-acetylgalactosaminide alpha-2,6-sialyltransferase 5														
+6753	SSTR3	somatostatin receptor 3														
+11166	SOX21	SRY-box 21														
+6657	SOX2	SRY-box 2														
+6618	SNAPC2	small nuclear RNA activating complex polypeptide 2														
+9342	SNAP29	synaptosome associated protein 29														
+64750	SMURF2	SMAD specific E3 ubiquitin protein ligase 2														
+27293	SMPDL3B	sphingomyelin phosphodiesterase acid like 3B														
+6607	SMN2	survival of motor neuron 2, centromeric														
+6606	SMN1	survival of motor neuron 1, telomeric														
+84631	SLITRK2	SLIT and NTRK like family member 2														
+6543	SLC8A2	solute carrier family 8 member A2														
+6540	SLC6A13	solute carrier family 6 member 13														
+65010	SLC26A6	solute carrier family 26 member 6														
+63027	SLC22A23	solute carrier family 22 member 23														
+6573	SLC19A1	solute carrier family 19 member 1														
+6442	SGCA	sarcoglycan alpha														
+9522	SCAMP1	secretory carrier membrane protein 1														
+51319	RSRC1	arginine and serine rich coiled-coil 1														
+8489	RPL23AP3	ribosomal protein L23a pseudogene 3														
+285498	RNF212	ring finger protein 212														
+57455	REXO1	RNA exonuclease 1 homolog														
+146713	RBFOX3	RNA binding fox-1 homolog 3														
+7879	RAB7A	RAB7A, member RAS oncogene family														
+374462	PTPRQ	protein tyrosine phosphatase, receptor type Q														
+55291	PPP6R3	protein phosphatase 6 regulatory subunit 3														
+84152	PPP1R1B	protein phosphatase 1 regulatory inhibitor subunit 1B														
+NA	PPAPDC2	NA														
+29954	POMT2	protein O-mannosyltransferase 2														
+126520	PLK5	polo like kinase 5														
+9651	PLCH2	phospholipase C eta 2														
+151056	PLB1	phospholipase B1														
+5164	PDK2	pyruvate dehydrogenase kinase 2														
+NA	PCNX	NA														
+26167	PCDHB5	protocadherin beta 5														
+53354	PANK1	pantothenate kinase 1														
+8106	PABPN1	poly(A) binding protein nuclear 1														
+4836	NMT1	N-myristoyltransferase 1														
+58157	NGB	neuroglobin														
+23327	NEDD4L	neural precursor cell expressed, developmentally down-regulated 4-like, E3 ubiquitin protein ligase														
+23026	MYO16	myosin XVI														
+10232	MSLN	mesothelin														
+81532	MOB2	MOB kinase activator 2														
+284021	MILR1	mast cell immunoglobulin like receptor 1														
+90550	MCU	mitochondrial calcium uniporter														
+9794	MAML1	mastermind like transcriptional coactivator 1														
+114569	MAL2	mal, T cell differentiation protein 2 (gene/pseudogene)														
+219527	LRRC55	leucine rich repeat containing 55														
+4008	LMO7	LIM domain 7														
+140828	LINC00261	long intergenic non-protein coding RNA 261														
+727701	LINC00165	long intergenic non-protein coding RNA 165														
+387267	KRTAP5-4	keratin associated protein 5-4														
+3858	KRT10	keratin 10														
+79412	KREMEN2	kringle containing transmembrane protein 2														
+64410	KLHL25	kelch like family member 25														
+NA	KIAA0368	NA														
+9710	KIAA0355	KIAA0355														
+57582	KCNT1	potassium sodium-activated channel subfamily T member 1														
+50805	IRX4	iroquois homeobox 4														
+84223	IQCG	IQ motif containing G														
+26512	INTS6	integrator complex subunit 6														
+10357	HMGB1P1	high mobility group box 1 pseudogene 1														
+653188	GUSBP3	glucuronidase, beta pseudogene 3														
+10804	GJB6	gap junction protein beta 6														
+2706	GJB2	gap junction protein beta 2														
+85569	GALP	galanin like peptide														
+10841	FTCD	formimidoyltransferase cyclodeaminase														
+2300	FOXL1	forkhead box L1														
+2294	FOXF1	forkhead box F1														
+2303	FOXC2	forkhead box C2														
+114907	FBXO32	F-box protein 32														
+23359	FAM189A1	family with sequence similarity 189 member A1														
+202134	FAM153B	family with sequence similarity 153 member B														
+285596	FAM153A	family with sequence similarity 153 member A														
+257415	FAM133B	family with sequence similarity 133 member B														
+NA	FAM132A	NA														
+220108	FAM124A	family with sequence similarity 124 member A														
+NA	FAM103A2P	NA														
+57488	ESYT2	extended synaptotagmin 2														
+80004	ESRP2	epithelial splicing regulatory protein 2														
+54845	ESRP1	epithelial splicing regulatory protein 1														
+121506	ERP27	endoplasmic reticulum protein 27														
+54869	EPS8L1	EPS8 like 1														
+26298	EHF	ETS homologous factor														
+9427	ECEL1	endothelin converting enzyme like 1														
+64641	EBF2	EBF transcription factor 2														
+93099	DMKN	dermokine														
+1745	DLX1	distal-less homeobox 1														
+129563	DIS3L2	DIS3 like 3'-5' exoribonuclease 2														
+1674	DES	desmin														
+1655	DDX5	DEAD-box helicase 5														
+29785	CYP2S1	cytochrome P450 family 2 subfamily S member 1														
+64784	CRTC3	CREB regulated transcription coactivator 3														
+119587	CPXM2	carboxypeptidase X, M14 family member 2														
+1356	CP	ceruloplasmin														
+81037	CLPTM1L	CLPTM1 like														
+1365	CLDN3	claudin 3														
+1137	CHRNA4	cholinergic receptor nicotinic alpha 4 subunit														
+1107	CHD3	chromodomain helicase DNA binding protein 3														
+9620	CELSR1	cadherin EGF LAG seven-pass G-type receptor 1														
+1024	CDK8	cyclin dependent kinase 8														
+80323	CCDC68	coiled-coil domain containing 68														
+NA	C20orf166-AS1	NA														
+54991	C1orf159	chromosome 1 open reading frame 159														
+146556	C16orf89	chromosome 16 open reading frame 89														
+153579	BTNL9	butyrophilin like 9														
+8938	BAIAP3	BAI1 associated protein 3														
+192134	B3GNT6	UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 6														
+491	ATP2B2	ATPase plasma membrane Ca2+ transporting 2														
+54529	ASNSD1	asparagine synthetase domain containing 1														
+26060	APPL1	adaptor protein, phosphotyrosine interacting with PH domain and leucine zipper 1														
+335	APOA1	apolipoprotein A1														
+338440	ANO9	anoctamin 9														
+57679	ALS2	ALS2, alsin Rho guanine nucleotide exchange factor														
+246	ALOX15	arachidonate 15-lipoxygenase														
+8227	AKAP17A	A-kinase anchoring protein 17A														
+28	ABO	ABO, alpha 1-3-N-acetylgalactosaminyltransferase and alpha 1-3-galactosyltransferase														

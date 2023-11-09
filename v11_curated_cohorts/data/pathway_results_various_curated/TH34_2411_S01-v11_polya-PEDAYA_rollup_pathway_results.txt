@@ -1,0 +1,120 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	20
+# genesets in collections:	1379
+# genes in comparison (n):	85
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	18	0.06545	4.647e-23	6.409e-20
+HALLMARK_MYOGENESIS	200	Genes involved in development of skeletal muscle (myogenesis).	15	0.075	3.072e-20	2.118e-17
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	24	0.02335	4.6420000000000004e-20	2.134e-17
+REACTOME_STRIATED_MUSCLE_CONTRACTION	27	Genes involved in Striated Muscle Contraction	8	0.2963	2.106e-16	7.261e-14
+REACTOME_MUSCLE_CONTRACTION	48	Genes involved in Muscle contraction	8	0.1667	3.469e-14	9.569e-12
+NABA_ECM_GLYCOPROTEINS	196	Genes encoding structural ECM glycoproteins	10	0.05102	3.746e-12	8.61e-10
+NABA_PROTEOGLYCANS	35	Genes encoding proteoglycans	6	0.1714	5.2e-11	1.024e-8
+KEGG_ECM_RECEPTOR_INTERACTION	84	ECM-receptor interaction	5	0.059520000000000003	5.288e-7	9.114e-5
+REACTOME_KERATAN_SULFATE_DEGRADATION	11	Genes involved in Keratan sulfate degradation	3	0.2727	9.968e-7	1.527e-4
+HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	200	Genes defining epithelial-mesenchymal transition, as in wound healing, fibrosis and metastasis.	6	0.03	2.071e-6	2.672e-4
+KEGG_FOCAL_ADHESION	201	Focal adhesion	6	0.02985	2.131e-6	2.672e-4
+PID_RB_1PATHWAY	65	Regulation of retinoblastoma protein	4	0.06154	6.769e-6	7.779e-4
+REACTOME_KERATAN_SULFATE_BIOSYNTHESIS	26	Genes involved in Keratan sulfate biosynthesis	3	0.1154	1.54e-5	0.001633
+KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	85	Hypertrophic cardiomyopathy (HCM)	4	0.04706	1.968e-5	0.001939
+REACTOME_KERATAN_SULFATE_KERATIN_METABOLISM	30	Genes involved in Keratan sulfate/keratin metabolism	3	0.1	2.391e-5	0.002198
+KEGG_DILATED_CARDIOMYOPATHY	92	Dilated cardiomyopathy	4	0.04348	2.69e-5	0.002318
+SA_G1_AND_S_PHASES	15	Cdk2, 4, and 6 bind cyclin D in G1, while cdk2/cyclin E promotes the G1/S transition.	2	0.1333	3.495e-4	0.02835
+BIOCARTA_P53_PATHWAY	16	p53 Signaling Pathway	2	0.125	3.989e-4	0.03056
+KEGG_CARDIAC_MUSCLE_CONTRACTION	80	Cardiac muscle contraction	3	0.0375	4.527e-4	0.03285
+REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION	87	Genes involved in Extracellular matrix organization	3	0.03448	5.786e-4	0.03989
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_CORE_MATRISOME	HALLMARK_MYOGENESIS	NABA_MATRISOME	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION	NABA_ECM_GLYCOPROTEINS	NABA_PROTEOGLYCANS	KEGG_ECM_RECEPTOR_INTERACTION	REACTOME_KERATAN_SULFATE_DEGRADATION	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	KEGG_FOCAL_ADHESION	PID_RB_1PATHWAY	REACTOME_KERATAN_SULFATE_BIOSYNTHESIS	KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	REACTOME_KERATAN_SULFATE_KERATIN_METABOLISM	KEGG_DILATED_CARDIOMYOPATHY	SA_G1_AND_S_PHASES	BIOCARTA_P53_PATHWAY	KEGG_CARDIAC_MUSCLE_CONTRACTION	REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION
+1311	COMP	cartilage oligomeric matrix protein	NABA_CORE_MATRISOME		NABA_MATRISOME			NABA_ECM_GLYCOPROTEINS		KEGG_ECM_RECEPTOR_INTERACTION		HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	KEGG_FOCAL_ADHESION									
+7060	THBS4	thrombospondin 4	NABA_CORE_MATRISOME		NABA_MATRISOME			NABA_ECM_GLYCOPROTEINS		KEGG_ECM_RECEPTOR_INTERACTION			KEGG_FOCAL_ADHESION									
+3381	IBSP	integrin binding sialoprotein	NABA_CORE_MATRISOME		NABA_MATRISOME			NABA_ECM_GLYCOPROTEINS		KEGG_ECM_RECEPTOR_INTERACTION			KEGG_FOCAL_ADHESION									
+8076	MFAP5	microfibril associated protein 5	NABA_CORE_MATRISOME		NABA_MATRISOME			NABA_ECM_GLYCOPROTEINS				HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION										
+632	BGLAP	bone gamma-carboxyglutamate protein	NABA_CORE_MATRISOME		NABA_MATRISOME			NABA_ECM_GLYCOPROTEINS						PID_RB_1PATHWAY								
+NA	WISP2	NA	NABA_CORE_MATRISOME		NABA_MATRISOME			NABA_ECM_GLYCOPROTEINS														
+27286	SRPX2	sushi repeat containing protein X-linked 2	NABA_CORE_MATRISOME		NABA_MATRISOME			NABA_ECM_GLYCOPROTEINS														
+84624	FNDC1	fibronectin type III domain containing 1	NABA_CORE_MATRISOME		NABA_MATRISOME			NABA_ECM_GLYCOPROTEINS														
+1805	DPT	dermatopontin	NABA_CORE_MATRISOME		NABA_MATRISOME			NABA_ECM_GLYCOPROTEINS														
+148113	CILP2	cartilage intermediate layer protein 2	NABA_CORE_MATRISOME		NABA_MATRISOME			NABA_ECM_GLYCOPROTEINS														
+1101	CHAD	chondroadherin	NABA_CORE_MATRISOME		NABA_MATRISOME				NABA_PROTEOGLYCANS	KEGG_ECM_RECEPTOR_INTERACTION			KEGG_FOCAL_ADHESION									
+4958	OMD	osteomodulin	NABA_CORE_MATRISOME		NABA_MATRISOME				NABA_PROTEOGLYCANS		REACTOME_KERATAN_SULFATE_DEGRADATION				REACTOME_KERATAN_SULFATE_BIOSYNTHESIS		REACTOME_KERATAN_SULFATE_KERATIN_METABOLISM					
+4969	OGN	osteoglycin	NABA_CORE_MATRISOME		NABA_MATRISOME				NABA_PROTEOGLYCANS		REACTOME_KERATAN_SULFATE_DEGRADATION				REACTOME_KERATAN_SULFATE_BIOSYNTHESIS		REACTOME_KERATAN_SULFATE_KERATIN_METABOLISM					
+176	ACAN	aggrecan	NABA_CORE_MATRISOME		NABA_MATRISOME				NABA_PROTEOGLYCANS		REACTOME_KERATAN_SULFATE_DEGRADATION				REACTOME_KERATAN_SULFATE_BIOSYNTHESIS		REACTOME_KERATAN_SULFATE_KERATIN_METABOLISM					
+79883	PODNL1	podocan like 1	NABA_CORE_MATRISOME		NABA_MATRISOME				NABA_PROTEOGLYCANS													
+54829	ASPN	asporin	NABA_CORE_MATRISOME		NABA_MATRISOME				NABA_PROTEOGLYCANS													
+1296	COL8A2	collagen type VIII alpha 2 chain	NABA_CORE_MATRISOME		NABA_MATRISOME							HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION										REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION
+1300	COL10A1	collagen type X alpha 1 chain	NABA_CORE_MATRISOME		NABA_MATRISOME																	REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION
+7134	TNNC1	troponin C1, slow skeletal and cardiac type		HALLMARK_MYOGENESIS		REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION									KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM		KEGG_DILATED_CARDIOMYOPATHY			KEGG_CARDIAC_MUSCLE_CONTRACTION	
+1674	DES	desmin		HALLMARK_MYOGENESIS		REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION									KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM		KEGG_DILATED_CARDIOMYOPATHY				
+7136	TNNI2	troponin I2, fast skeletal type		HALLMARK_MYOGENESIS		REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION															
+7125	TNNC2	troponin C2, fast skeletal type		HALLMARK_MYOGENESIS		REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION															
+8557	TCAP	titin-cap		HALLMARK_MYOGENESIS		REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION															
+4632	MYL1	myosin light chain 1		HALLMARK_MYOGENESIS		REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION															
+29895	MYLPF	myosin light chain, phosphorylatable, fast skeletal muscle		HALLMARK_MYOGENESIS									KEGG_FOCAL_ADHESION									
+1158	CKM	creatine kinase, M-type		HALLMARK_MYOGENESIS										PID_RB_1PATHWAY								
+70	ACTC1	actin, alpha, cardiac muscle 1		HALLMARK_MYOGENESIS												KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM		KEGG_DILATED_CARDIOMYOPATHY			KEGG_CARDIAC_MUSCLE_CONTRACTION	
+1339	COX6A2	cytochrome c oxidase subunit 6A2		HALLMARK_MYOGENESIS																	KEGG_CARDIAC_MUSCLE_CONTRACTION	
+7140	TNNT3	troponin T3, fast skeletal type		HALLMARK_MYOGENESIS																		
+79629	OCEL1	occludin/ELL domain containing 1		HALLMARK_MYOGENESIS																		
+4619	MYH1	myosin heavy chain 1		HALLMARK_MYOGENESIS																		
+4151	MB	myoglobin		HALLMARK_MYOGENESIS																		
+58	ACTA1	actin, alpha 1, skeletal muscle		HALLMARK_MYOGENESIS																		
+6424	SFRP4	secreted frizzled related protein 4			NABA_MATRISOME							HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION										
+9244	CRLF1	cytokine receptor like factor 1			NABA_MATRISOME							HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION										
+4322	MMP13	matrix metallopeptidase 13			NABA_MATRISOME																	REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION
+283208	P4HA3	prolyl 4-hydroxylase subunit alpha 3			NABA_MATRISOME																	
+1513	CTSK	cathepsin K			NABA_MATRISOME																	
+6357	CCL13	C-C motif chemokine ligand 13			NABA_MATRISOME																	
+4703	NEB	nebulin				REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION															
+4606	MYBPC2	myosin binding protein C, fast type				REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION															
+22801	ITGA11	integrin subunit alpha 11								KEGG_ECM_RECEPTOR_INTERACTION			KEGG_FOCAL_ADHESION			KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM		KEGG_DILATED_CARDIOMYOPATHY				
+131578	LRRC15	leucine rich repeat containing 15										HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION										
+4193	MDM2	MDM2 proto-oncogene												PID_RB_1PATHWAY					SA_G1_AND_S_PHASES	BIOCARTA_P53_PATHWAY		
+1019	CDK4	cyclin dependent kinase 4												PID_RB_1PATHWAY					SA_G1_AND_S_PHASES	BIOCARTA_P53_PATHWAY		
+8089	YEATS4	YEATS domain containing 4																				
+NA	XRCC6BP1	NA																				
+6302	TSPAN31	tetraspanin 31																				
+10102	TSFM	Ts translation elongation factor, mitochondrial																				
+64499	TPSB2	tryptase beta 2 (gene/pseudogene)																				
+285386	TPRG1	tumor protein p63 regulated 1																				
+8771	TNFRSF6B	TNF receptor superfamily member 6b																				
+246329	STAC3	SH3 and cysteine rich domain 3																				
+284297	SSC5D	scavenger receptor cysteine rich family member with 5 domains																				
+121340	SP7	Sp7 transcription factor																				
+692205	SNORD89	small nucleolar RNA, C/D box 89																				
+10736	SIX2	SIX homeobox 2																				
+57333	RCN3	reticulocalbin 3																				
+5950	RBP4	retinol binding protein 4																				
+51450	PRRX2	paired related homeobox 2																				
+5322	PLA2G5	phospholipase A2 group V																				
+5157	PDGFRL	platelet derived growth factor receptor like																				
+130497	OSR1	odd-skipped related transcription factor 1																				
+10956	OS9	OS9, endoplasmic reticulum lectin																				
+389125	MUSTN1	musculoskeletal, embryonic nuclear protein 1																				
+NA	METTL21B	NA																				
+4234	METTL1	methyltransferase like 1																				
+92979	MARCH9	membrane associated ring-CH-type finger 9																				
+9622	KLK4	kallikrein related peptidase 4																				
+27345	KCNMB4	potassium calcium-activated channel subfamily M regulatory beta subunit 4																				
+3754	KCNF1	potassium voltage-gated channel modifier subfamily F member 1																				
+9358	ITGBL1	integrin subunit beta like 1																				
+91156	IGFN1	immunoglobulin-like and fibronectin type III domain containing 1																				
+2307	FOXS1	forkhead box S1																				
+1749	DLX5	distal-less homeobox 5																				
+1747	DLX3	distal-less homeobox 3																				
+1594	CYP27B1	cytochrome P450 family 27 subfamily B member 1																				
+10106	CTDSP2	CTD small phosphatase 2																				
+4848	CNOT2	CCR4-NOT transcription complex subunit 2																				
+1013	CDH15	cadherin 15																				
+10576	CCT2	chaperonin containing TCP1 subunit 2																				
+149954	BPIFB4	BPI fold containing family B member 4																				
+2583	B4GALNT1	beta-1,4-N-acetyl-galactosaminyltransferase 1																				
+10677	AVIL	advillin																				
+54	ACP5	acid phosphatase 5, tartrate resistant																				
