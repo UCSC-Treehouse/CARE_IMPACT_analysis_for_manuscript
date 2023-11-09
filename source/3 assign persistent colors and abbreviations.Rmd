@@ -1,0 +1,167 @@
+---
+  title: "`r gsub('.Rmd', ' ', gsub('_', ' ', knitr::current_input()))`"
+author: "`r Sys.getenv('USER')`"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+  toc: yes
+---
+  
+  
+  
+```{r setup, include = FALSE}
+
+library(tidyverse)
+
+```
+
+
+```{r}
+### DEFINE DISEASE GROUP colors for all plots
+
+diseaseGroupColorOrder=tibble(diseaseGroup =levels(leadsRecoded$diseaseGroup))
+
+diseaseGroupColors_Raw=tibble(diseaseGroup=c("Hematopoietic", "CNS", "Sarcoma bone (osteo and Ewing)", "Sarcoma other (all other types)", "Liver", "Neuroblastoma/ganglioneuroblastoma", "Wilms & other kidney", "Germ cell tumor or teratoma", "Other"), groupColor=c("#E41A1C", "#377EB8", "#4DAF4A", "#984EA3", "#FF7F00", "#FFFF33", "#A65628", "#F781BF", "#999999"))
+
+diseaseGroupColors=left_join(diseaseGroupColorOrder, diseaseGroupColors_Raw, by = "diseaseGroup")
+
+#  confirm that these diseases are still in the cohort
+#  all(diseaseGroupColors$diseaseGroup  %in% leadsRecoded $diseaseGroup)
+
+if( all(leadsRecoded $diseaseGroup %in% diseaseGroupColors$diseaseGroup)) levels(leadsRecoded$diseaseGroup)= diseaseGroupColors$diseaseGroup
+
+diseaseGroupColorVec= diseaseGroupColors$groupColor
+names(diseaseGroupColorVec)= diseaseGroupColors$diseaseGroup
+
+
+### DEFINE LEAD colors for all plots
+
+# leadsRecoded$lead=factor(leadsRecoded$lead)
+
+
+LeadOrder=tibble(lead =levels(leadsRecoded$lead))
+
+library("RColorBrewer"); brewer.pal(12, "Paired")
+leadColors_Raw=tibble(lead=c("Receptor Tyrosine Kinase (RTK)", "PI3K/AKT/mTOR", "JAK/STAT", "Cell Cycle", "B-cell receptor signaling", "Sonic Hedgehog (SHH)", "BCL2/MDM2", "Heat Shock Proteins", "RAS/RAF/MEK", "DNA repair"), leadColor=brewer.pal(12, "Paired")[1:10])
+
+leadColors=left_join(LeadOrder, leadColors_Raw, by = "lead")
+
+if( all(leadsRecoded $lead %in% leadColors $lead)) levels(leadsRecoded $lead)= leadColors $lead
+
+leadColorVec= leadColors $leadColor
+names(leadColorVec)= leadColors $lead
+
+
+
+
+### following is code formerly found in "4 revised dx groups v2.R"
+### I'm sure this makes some code above redundant, but I haven't picked through to pretty it up
+
+
+oldNames= diseaseGroupColorVec
+
+diseaseGroupNames=tibble(oldName=names(diseaseGroupColorVec))
+
+diseaseGroupNames$newName=gsub("Sarcoma other \\(all other types\\)", "Soft tissue sarcoma" , 
+                               gsub("Sarcoma bone \\(osteo and Ewing\\)", "Bone sarcoma", 
+                                    gsub("Neuroblastoma/ganglioneuroblastoma", "Neuroblastoma", 
+                                         gsub("Wilms & other kidney", "Wilms and other kidney", 
+                                              diseaseGroupNames$oldName
+                                         )
+                                    )
+                               )
+)
+
+diseaseGroupNames$newShortName=gsub("Neuroblastoma", "NBL" , 
+                                    gsub("Soft tissue sarcoma", "SRC-soft", 
+                                         gsub("Bone sarcoma", "SRC-bone",
+                                              gsub( "Wilms and other kidney", "Wilms", 
+                                                    gsub( "Hematopoietic", "HEME", 
+                                                          diseaseGroupNames$newName
+                                                    )
+                                              )
+                                         )
+                                    )
+)
+
+
+# dput(unique(leadInfo2_pdOnly$lead))
+
+diseaseGroupColorVec2= diseaseGroupColorVec
+names(diseaseGroupColorVec2)= diseaseGroupNames$newName
+
+diseaseGroupColorVecShortest= diseaseGroupColorVec
+names(diseaseGroupColorVecShortest)= diseaseGroupNames$newShortName
+
+
+
+
+# leadsRecoded$diseaseGroup2= diseaseGroupNames$newName[match(leadsRecoded$diseaseGroup, diseaseGroupNames$oldName)]
+
+### LEAD NAMES
+leadNames=tibble(name1=c("Receptor Tyrosine Kinase (RTK)", 
+                         "PI3K/AKT/mTOR", "JAK/STAT", "Cell Cycle", "B-cell receptor signaling", 
+                         "Sonic Hedgehog (SHH)", "BCL2/MDM2", "Heat Shock Proteins", "RAS/RAF/MEK", 
+                         "DNA repair"))
+leadNames$abbrev=gsub("Neuroblastoma", "NBL" , 
+                      gsub("Receptor Tyrosine Kinase \\(RTK\\)", "RTK", 
+                           gsub("B-cell receptor signaling", "BCR",
+                                gsub( "Sonic Hedgehog \\(SHH\\)", "SHH", 
+                                      gsub( "Heat Shock Proteins", "HSP", 
+                                            leadNames $name1
+                                      )
+                                )
+                           )
+                      )
+)
+
+
+leadsRecoded$leadAbbrev=factor(leadNames$abbrev[match(	leadsRecoded$lead, leadNames$name1)], levels= leadNames$abbrev)	
+
+
+leadsRecoded2 <- leadsRecoded %>% 
+  mutate(diseaseGroup2 = factor(
+    diseaseGroupNames$newShortName[match(diseaseGroup, diseaseGroupNames$oldName)],
+    levels= diseaseGroupNames$newShortName))  %>% 
+  group_by(diseaseGroup) %>% 
+  mutate(
+    nSamplesPerDxGroup=length(unique(THid)),
+    diseaseGroup2Label=paste0(diseaseGroup2, "\n(N=", nSamplesPerDxGroup,")" )
+  ) %>%
+  group_by(lead) %>%
+  mutate(
+    nSamplesPeroutlierPathway=length(unique(THid)),
+    leadAbbrevLabel=paste0(leadAbbrev, "\n(N=", nSamplesPeroutlierPathway,")" )
+  )
+
+## get correct order of diagnosis group label
+
+diagGroupLabelsInOrder<-left_join(diseaseGroupNames, 
+                                  leadsRecoded2 %>% ungroup %>% select(diseaseGroup2, diseaseGroup2Label) %>% distinct,
+                                  by= c(newShortName ="diseaseGroup2")
+)
+# ignore warning message
+
+leadsRecoded2$diseaseGroup2Label =factor(leadsRecoded2$diseaseGroup2Label, levels= diagGroupLabelsInOrder $diseaseGroup2Label)
+
+
+## get correct order of lead abbrev label
+
+leadAbbrevLabelsInOrder<-left_join(leadNames, 
+                                   leadsRecoded2 %>% ungroup %>% select(leadAbbrev, leadAbbrevLabel) %>% distinct,
+                                   by= c(abbrev ="leadAbbrev")
+)
+# ignore warning message
+
+leadsRecoded2$leadAbbrevLabel=factor(leadsRecoded2$leadAbbrevLabel, levels= leadAbbrevLabelsInOrder$leadAbbrevLabel)
+
+## fix other things
+
+leadInfo$leadAbbrev=factor(leadNames$abbrev[match(	leadInfo $lead, leadNames$name1)], levels= leadNames$abbrev)									
+
+
+abbrevLeadColorVec= leadColors $leadColor
+names(abbrevLeadColorVec)= leadNames$abbrev[match( leadColors $lead,  leadNames$name1)]		
+
+
+```
