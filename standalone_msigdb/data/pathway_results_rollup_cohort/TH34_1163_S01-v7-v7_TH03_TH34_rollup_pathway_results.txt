@@ -1,0 +1,117 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	17
+# genesets in collections:	1379
+# genes in comparison (n):	85
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+HALLMARK_MYOGENESIS	200	Genes involved in development of skeletal muscle (myogenesis).	17	0.085	8.874e-24	1.2240000000000001e-20
+REACTOME_STRIATED_MUSCLE_CONTRACTION	27	Genes involved in Striated Muscle Contraction	9	0.3333	7.462e-19	5.145e-16
+REACTOME_MUSCLE_CONTRACTION	48	Genes involved in Muscle contraction	9	0.1875	2.588e-16	1.19e-13
+BIOCARTA_NO1_PATHWAY	33	Actions of Nitric Oxide in the Heart	3	0.09091	3.201e-5	0.01103
+BIOCARTA_AGR_PATHWAY	36	Agrin in Postsynaptic Differentiation	3	0.08333	4.172e-5	0.01151
+KEGG_TIGHT_JUNCTION	134	Tight junction	4	0.02985	1.165e-4	0.025
+REACTOME_NEUROTRANSMITTER_RECEPTOR_BINDING_AND_DOWNSTREAM_TRANSMISSION_IN_THE_POSTSYNAPTIC_CELL	137	Genes involved in Neurotransmitter Receptor Binding And Downstream Transmission In The  Postsynaptic Cell	4	0.0292	1.269e-4	0.025
+REACTOME_PRESYNAPTIC_NICOTINIC_ACETYLCHOLINE_RECEPTORS	12	Genes involved in Presynaptic nicotinic acetylcholine receptors	2	0.1667	2.205e-4	0.038
+KEGG_VIRAL_MYOCARDITIS	73	Viral myocarditis	3	0.0411	3.459e-4	0.0432
+REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES	186	Genes involved in Transmission across Chemical Synapses	4	0.02151	4.073e-4	0.0432
+REACTOME_ACETYLCHOLINE_BINDING_AND_DOWNSTREAM_EVENTS	16	Genes involved in Acetylcholine Binding And Downstream Events	2	0.125	3.989e-4	0.0432
+REACTOME_UNBLOCKING_OF_NMDA_RECEPTOR_GLUTAMATE_BINDING_AND_ACTIVATION	15	Genes involved in Unblocking of NMDA receptor, glutamate binding and activation	2	0.1333	3.495e-4	0.0432
+REACTOME_CREB_PHOSPHORYLATION_THROUGH_THE_ACTIVATION_OF_CAMKII	15	Genes involved in CREB phosphorylation through the activation of CaMKII	2	0.1333	3.495e-4	0.0432
+HALLMARK_APICAL_JUNCTION	200	Genes encoding components of apical junction complex.	4	0.02	5.351e-4	0.04385
+KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	85	Hypertrophic cardiomyopathy (HCM)	3	0.03529	5.406e-4	0.04385
+BIOCARTA_UCALPAIN_PATHWAY	18	uCalpain and friends in Cell spread	2	0.1111	5.074e-4	0.04385
+REACTOME_RAS_ACTIVATION_UOPN_CA2_INFUX_THROUGH_NMDA_RECEPTOR	17	Genes involved in Ras activation uopn Ca2+ infux through NMDA receptor	2	0.1176	4.516e-4	0.04385
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION	BIOCARTA_NO1_PATHWAY	BIOCARTA_AGR_PATHWAY	KEGG_TIGHT_JUNCTION	REACTOME_NEUROTRANSMITTER_RECEPTOR_BINDING_AND_DOWNSTREAM_TRANSMISSION_IN_THE_POSTSYNAPTIC_CELL	REACTOME_PRESYNAPTIC_NICOTINIC_ACETYLCHOLINE_RECEPTORS	KEGG_VIRAL_MYOCARDITIS	REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES	REACTOME_ACETYLCHOLINE_BINDING_AND_DOWNSTREAM_EVENTS	REACTOME_UNBLOCKING_OF_NMDA_RECEPTOR_GLUTAMATE_BINDING_AND_ACTIVATION	REACTOME_CREB_PHOSPHORYLATION_THROUGH_THE_ACTIVATION_OF_CAMKII	HALLMARK_APICAL_JUNCTION	KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	BIOCARTA_UCALPAIN_PATHWAY	REACTOME_RAS_ACTIVATION_UOPN_CA2_INFUX_THROUGH_NMDA_RECEPTOR
+7135	TNNI1	troponin I1, slow skeletal type	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION	BIOCARTA_NO1_PATHWAY													
+88	ACTN2	actinin alpha 2	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION			KEGG_TIGHT_JUNCTION	REACTOME_NEUROTRANSMITTER_RECEPTOR_BINDING_AND_DOWNSTREAM_TRANSMISSION_IN_THE_POSTSYNAPTIC_CELL			REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES		REACTOME_UNBLOCKING_OF_NMDA_RECEPTOR_GLUTAMATE_BINDING_AND_ACTIVATION	REACTOME_CREB_PHOSPHORYLATION_THROUGH_THE_ACTIVATION_OF_CAMKII	HALLMARK_APICAL_JUNCTION		BIOCARTA_UCALPAIN_PATHWAY	REACTOME_RAS_ACTIVATION_UOPN_CA2_INFUX_THROUGH_NMDA_RECEPTOR
+4621	MYH3	myosin heavy chain 3	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION			KEGG_TIGHT_JUNCTION			KEGG_VIRAL_MYOCARDITIS								
+7139	TNNT2	troponin T2, cardiac type	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION												KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM		
+7136	TNNI2	troponin I2, fast skeletal type	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION														
+7125	TNNC2	troponin C2, fast skeletal type	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION														
+4635	MYL4	myosin light chain 4	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION														
+4632	MYL1	myosin light chain 1	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION														
+1134	CHRNA1	cholinergic receptor nicotinic alpha 1 subunit	HALLMARK_MYOGENESIS			BIOCARTA_NO1_PATHWAY	BIOCARTA_AGR_PATHWAY		REACTOME_NEUROTRANSMITTER_RECEPTOR_BINDING_AND_DOWNSTREAM_TRANSMISSION_IN_THE_POSTSYNAPTIC_CELL	REACTOME_PRESYNAPTIC_NICOTINIC_ACETYLCHOLINE_RECEPTORS		REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES	REACTOME_ACETYLCHOLINE_BINDING_AND_DOWNSTREAM_EVENTS						
+58	ACTA1	actin, alpha 1, skeletal muscle	HALLMARK_MYOGENESIS			BIOCARTA_NO1_PATHWAY	BIOCARTA_AGR_PATHWAY									HALLMARK_APICAL_JUNCTION		BIOCARTA_UCALPAIN_PATHWAY	
+29895	MYLPF	myosin light chain, phosphorylatable, fast skeletal muscle	HALLMARK_MYOGENESIS					KEGG_TIGHT_JUNCTION											
+6442	SGCA	sarcoglycan alpha	HALLMARK_MYOGENESIS								KEGG_VIRAL_MYOCARDITIS						KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM		
+70	ACTC1	actin, alpha, cardiac muscle 1	HALLMARK_MYOGENESIS													HALLMARK_APICAL_JUNCTION	KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM		
+7140	TNNT3	troponin T3, fast skeletal type	HALLMARK_MYOGENESIS																
+4656	MYOG	myogenin	HALLMARK_MYOGENESIS																
+4608	MYBPH	myosin binding protein H	HALLMARK_MYOGENESIS																
+845	CASQ2	calsequestrin 2	HALLMARK_MYOGENESIS																
+4703	NEB	nebulin		REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION														
+5913	RAPSN	receptor associated protein of the synapse					BIOCARTA_AGR_PATHWAY												
+57644	MYH7B	myosin heavy chain 7B						KEGG_TIGHT_JUNCTION			KEGG_VIRAL_MYOCARDITIS								
+1144	CHRND	cholinergic receptor nicotinic delta subunit							REACTOME_NEUROTRANSMITTER_RECEPTOR_BINDING_AND_DOWNSTREAM_TRANSMISSION_IN_THE_POSTSYNAPTIC_CELL	REACTOME_PRESYNAPTIC_NICOTINIC_ACETYLCHOLINE_RECEPTORS		REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES	REACTOME_ACETYLCHOLINE_BINDING_AND_DOWNSTREAM_EVENTS						
+4747	NEFL	neurofilament light							REACTOME_NEUROTRANSMITTER_RECEPTOR_BINDING_AND_DOWNSTREAM_TRANSMISSION_IN_THE_POSTSYNAPTIC_CELL			REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES		REACTOME_UNBLOCKING_OF_NMDA_RECEPTOR_GLUTAMATE_BINDING_AND_ACTIVATION	REACTOME_CREB_PHOSPHORYLATION_THROUGH_THE_ACTIVATION_OF_CAMKII				REACTOME_RAS_ACTIVATION_UOPN_CA2_INFUX_THROUGH_NMDA_RECEPTOR
+1024	CDK8	cyclin dependent kinase 8														HALLMARK_APICAL_JUNCTION			
+84240	ZCCHC9	zinc finger CCHC-type containing 9																	
+51569	UFM1	ubiquitin fold modifier 1																	
+7993	UBXN8	UBX domain protein 8																	
+7335	UBE2V1	ubiquitin conjugating enzyme E2 V1																	
+7204	TRIO	trio Rho guanine nucleotide exchange factor																	
+7174	TPP2	tripeptidyl peptidase 2																	
+64102	TNMD	tenomodulin																	
+79101	TAF1D	TATA-box binding protein associated factor, RNA polymerase I subunit D																	
+246329	STAC3	SH3 and cysteine rich domain 3																	
+26576	SRPK3	SRSF protein kinase 3																	
+677831	SNORA51	small nucleolar RNA, H/ACA box 51																	
+619499	SNORA27	small nucleolar RNA, H/ACA box 27																	
+23676	SMPX	small muscle protein X-linked																	
+79677	SMC6	structural maintenance of chromosomes 6																	
+56961	SHD	Src homology 2 domain containing transforming protein D																	
+10284	SAP18	Sin3A associated protein 18																	
+388363	RPS7P1	ribosomal protein S7 pseudogene 1																	
+6230	RPS25	ribosomal protein S25																	
+6144	RPL21	ribosomal protein L21																	
+144581	RPL14P1	ribosomal protein L14 pseudogene 1																	
+9584	RBM39	RNA binding motif protein 39																	
+58517	RBM25	RNA binding motif protein 25																	
+80209	PROSER1	proline and serine rich 1																	
+10216	PRG4	proteoglycan 4																	
+51082	POLR1D	RNA polymerase I and III subunit D																	
+5222	PGA5	pepsinogen 5, group I (pepsinogen A)																	
+643847	PGA4	pepsinogen 4, group I (pepsinogen A)																	
+643834	PGA3	pepsinogen 3, group I (pepsinogen A)																	
+55795	PCID2	PCI domain containing 2																	
+5081	PAX7	paired box 7																	
+387921	NHLRC3	NHL repeat containing 3																	
+4741	NEFM	neurofilament medium																	
+4617	MYF5	myogenic factor 5																	
+60488	MRPS35	mitochondrial ribosomal protein S35																	
+10240	MRPS31	mitochondrial ribosomal protein S31																	
+100506211	MIR210HG	MIR210 host gene																	
+91694	LONRF1	LON peptidase N-terminal domain and ring finger 1																	
+NA	KIAA1429	NA																	
+27190	IL17B	interleukin 17B																	
+51214	IGF2-AS	IGF2 antisense RNA																	
+121355	GTSF1	gametocyte specific factor 1																	
+2963	GTF2F2	general transcription factor IIF subunit 2																	
+2620	GAS2	growth arrest specific 2																	
+252995	FNDC5	fibronectin type III domain containing 5																	
+2326	FMO1	flavin containing monooxygenase 1																	
+2173	FABP7	fatty acid binding protein 7																	
+11340	EXOSC8	exosome component 8																	
+90187	EMILIN3	elastin microfibril interfacer 3																	
+84677	DSCR8	Down syndrome critical region 8																	
+8451	CUL4A	cullin 4A																	
+389903	CSAG3	CSAG family member 3																	
+102723547	CSAG2	CSAG family member 2																	
+158511	CSAG1	chondrosarcoma associated gene 1																	
+136227	COL26A1	collagen type XXVI alpha 1 chain																	
+55835	CENPJ	centromere protein J																	
+8881	CDC16	cell division cycle 16																	
+827	CAPN6	calpain 6																	
+768	CA9	carbonic anhydrase 9																	
+64776	C11orf1	chromosome 11 open reading frame 1																	
+10904	BLCAP	BLCAP, apoptosis inducing factor																	
+55608	ANKRD10	ankyrin repeat domain 10																	
+126	ADH1C	alcohol dehydrogenase 1C (class I), gamma polypeptide																	

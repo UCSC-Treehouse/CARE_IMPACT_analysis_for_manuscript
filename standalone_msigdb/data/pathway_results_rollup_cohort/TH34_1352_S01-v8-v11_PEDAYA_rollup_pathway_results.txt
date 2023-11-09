@@ -1,0 +1,149 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	11
+# genesets in collections:	1379
+# genes in comparison (n):	123
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	23	0.02237	5.238e-15	7.223e-12
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	19	0.02523	1.876e-13	1.293e-10
+NABA_ECM_AFFILIATED	171	Genes encoding proteins affiliated structurally or functionally to extracellular matrix proteins	9	0.05263	1.012e-9	4.652e-7
+KEGG_TGF_BETA_SIGNALING_PATHWAY	86	TGF-beta signaling pathway	5	0.05814	3.705e-6	0.001277
+PID_HNF3A_PATHWAY	44	FOXA1 transcription factor network	4	0.09091	6.105e-6	0.001684
+HALLMARK_ESTROGEN_RESPONSE_EARLY	200	Genes defining early response to estrogen.	6	0.03	1.754e-5	0.003456
+REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES	413	Genes involved in Transmembrane transport of small molecules	8	0.01937	1.665e-5	0.003456
+NABA_ECM_REGULATORS	238	Genes encoding enzymes and their regulators involved in the remodeling of the extracellular matrix	6	0.02521	4.644e-5	0.008005
+KEGG_THYROID_CANCER	29	Thyroid cancer	3	0.1034	6.497e-5	0.009955
+PID_BMP_PATHWAY	42	BMP receptor signaling	3	0.07143	1.99e-4	0.02744
+PID_HNF3B_PATHWAY	45	FOXA2 and FOXA3 transcription factor networks	3	0.06667	2.445e-4	0.03066
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED	KEGG_TGF_BETA_SIGNALING_PATHWAY	PID_HNF3A_PATHWAY	HALLMARK_ESTROGEN_RESPONSE_EARLY	REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES	NABA_ECM_REGULATORS	KEGG_THYROID_CANCER	PID_BMP_PATHWAY	PID_HNF3B_PATHWAY
+6441	SFTPD	surfactant protein D	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED		PID_HNF3A_PATHWAY						
+729238	SFTPA2	surfactant protein A2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED		PID_HNF3A_PATHWAY						
+653509	SFTPA1	surfactant protein A1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED		PID_HNF3A_PATHWAY						
+4582	MUC1	mucin 1, cell surface associated	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED			HALLMARK_ESTROGEN_RESPONSE_EARLY					
+6440	SFTPC	surfactant protein C	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED								
+6439	SFTPB	surfactant protein B	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED								
+253970	SFTA3	surfactant associated 3	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED								
+389376	SFTA2	surfactant associated 2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED								
+158326	FREM1	FRAS1 related extracellular matrix 1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED								
+10468	FST	follistatin	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		KEGG_TGF_BETA_SIGNALING_PATHWAY						PID_BMP_PATHWAY	
+652	BMP4	bone morphogenetic protein 4	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		KEGG_TGF_BETA_SIGNALING_PATHWAY						PID_BMP_PATHWAY	
+8200	GDF5	growth differentiation factor 5	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		KEGG_TGF_BETA_SIGNALING_PATHWAY							
+6590	SLPI	secretory leukocyte peptidase inhibitor	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED						NABA_ECM_REGULATORS			
+5645	PRSS2	serine protease 2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED						NABA_ECM_REGULATORS			
+4316	MMP7	matrix metallopeptidase 7	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED						NABA_ECM_REGULATORS			
+84171	LOXL4	lysyl oxidase like 4	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED						NABA_ECM_REGULATORS			
+54757	FAM20A	FAM20A, golgi associated secretory pathway pseudokinase	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED						NABA_ECM_REGULATORS			
+1510	CTSE	cathepsin E	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED						NABA_ECM_REGULATORS			
+3082	HGF	hepatocyte growth factor	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED									
+7448	VTN	vitronectin	NABA_MATRISOME				PID_HNF3A_PATHWAY						
+4969	OGN	osteoglycin	NABA_MATRISOME										
+136227	COL26A1	collagen type XXVI alpha 1 chain	NABA_MATRISOME										
+81578	COL21A1	collagen type XXI alpha 1 chain	NABA_MATRISOME										
+9241	NOG	noggin				KEGG_TGF_BETA_SIGNALING_PATHWAY						PID_BMP_PATHWAY	
+5308	PITX2	paired like homeodomain 2				KEGG_TGF_BETA_SIGNALING_PATHWAY							
+9060	PAPSS2	3'-phosphoadenosine 5'-phosphosulfate synthase 2						HALLMARK_ESTROGEN_RESPONSE_EARLY					
+79083	MLPH	melanophilin						HALLMARK_ESTROGEN_RESPONSE_EARLY					
+3880	KRT19	keratin 19						HALLMARK_ESTROGEN_RESPONSE_EARLY					
+1999	ELF3	E74 like ETS transcription factor 3						HALLMARK_ESTROGEN_RESPONSE_EARLY					
+794	CALB2	calbindin 2						HALLMARK_ESTROGEN_RESPONSE_EARLY					
+213	ALB	albumin							REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES				PID_HNF3B_PATHWAY
+6529	SLC6A1	solute carrier family 6 member 1							REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES				
+10568	SLC34A2	solute carrier family 34 member 2							REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES				
+6511	SLC1A6	solute carrier family 1 member 6							REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES				
+5573	PRKAR1A	protein kinase cAMP-dependent type I regulatory subunit alpha							REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES				
+1356	CP	ceruloplasmin							REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES				
+79895	ATP8B4	ATPase phospholipid transporting 8B4 (putative)							REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES				
+10351	ABCA8	ATP binding cassette subfamily A member 8							REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES				
+6934	TCF7L2	transcription factor 7 like 2									KEGG_THYROID_CANCER		
+6258	RXRG	retinoid X receptor gamma									KEGG_THYROID_CANCER		
+999	CDH1	cadherin 1									KEGG_THYROID_CANCER		
+7080	NKX2-1	NK2 homeobox 1											PID_HNF3B_PATHWAY
+174	AFP	alpha fetoprotein											PID_HNF3B_PATHWAY
+7490	WT1	Wilms tumor 1											
+10406	WFDC2	WAP four-disulfide core domain 2											
+54957	TXNL4B	thioredoxin like 4B											
+7103	TSPAN8	tetraspanin 8											
+117854	TRIM6	tripartite motif containing 6											
+91147	TMEM67	transmembrane protein 67											
+55273	TMEM100	transmembrane protein 100											
+7020	TFAP2A	transcription factor AP-2 alpha											
+6910	TBX5	T-box 5											
+6899	TBX1	T-box 1											
+4070	TACSTD2	tumor associated calcium signal transducer 2											
+10923	SUB1	SUB1 homolog, transcriptional regulator											
+57620	STIM2	stromal interaction molecule 2											
+284297	SSC5D	scavenger receptor cysteine rich family member with 5 domains											
+200162	SPAG17	sperm associated antigen 17											
+100131390	SP9	Sp9 transcription factor											
+677831	SNORA51	small nucleolar RNA, H/ACA box 51											
+6525	SMTN	smoothelin											
+124925	SEZ6	seizure related 6 homolog											
+22872	SEC31A	SEC31 homolog A, COPII coat complex component											
+117156	SCGB3A2	secretoglobin family 3A member 2											
+92304	SCGB3A1	secretoglobin family 3A member 1											
+221662	RBM24	RNA binding motif protein 24											
+387496	RASL11A	RAS like family 11 member A											
+79660	PPP1R3B	protein phosphatase 1 regulatory subunit 3B											
+83449	PMFBP1	polyamine modulated factor 1 binding protein 1											
+8301	PICALM	phosphatidylinositol binding clathrin assembly protein											
+5080	PAX6	paired box 6											
+5028	P2RY1	purinergic receptor P2Y1											
+116039	OSR2	odd-skipped related transciption factor 2											
+130497	OSR1	odd-skipped related transcription factor 1											
+26343	OR5E1P	olfactory receptor family 5 subfamily E member 1 pseudogene											
+283298	OLFML1	olfactomedin like 1											
+11249	NXPH2	neurexophilin 2											
+4836	NMT1	N-myristoyltransferase 1											
+9476	NAPSA	napsin A aspartic peptidase											
+10903	MTMR11	myotubularin related protein 11											
+10232	MSLN	mesothelin											
+440823	MIAT	myocardial infarction associated transcript											
+4223	MEOX2	mesenchyme homeobox 2											
+7851	MALL	mal, T cell differentiation protein like											
+NA	LPPR4	NA											
+23566	LPAR3	lysophosphatidic acid receptor 3											
+27074	LAMP3	lysosomal associated membrane protein 3											
+3855	KRT7	keratin 7											
+3872	KRT17	keratin 17											
+3748	KCNC3	potassium voltage-gated channel subfamily C member 3											
+6453	ITSN1	intersectin 1											
+3694	ITGB6	integrin subunit beta 6											
+147920	IGFL2	IGF like family member 2											
+7087	ICAM5	intercellular adhesion molecule 5											
+3067	HDC	histidine decarboxylase											
+9464	HAND2	heart and neural crest derivatives expressed 2											
+284110	GSDMA	gasdermin A											
+80852	GRIP2	glutamate receptor interacting protein 2											
+2906	GRIN2D	glutamate ionotropic receptor NMDA type subunit 2D											
+29889	GNL2	G protein nucleolar 2											
+2627	GATA6	GATA binding protein 6											
+2348	FOLR1	folate receptor 1											
+80307	FER1L4	fer-1 like family member 4, pseudogene											
+27436	EML4	EMAP like 4											
+NA	DKFZp434J0226	NA											
+1592	CYP26A1	cytochrome P450 family 26 subfamily A member 1											
+284340	CXCL17	C-X-C motif chemokine ligand 17											
+125965	COX6B2	cytochrome c oxidase subunit 6B2											
+1264	CNN1	calponin 1											
+9076	CLDN1	claudin 1											
+80817	CEP44	centrosomal protein 44											
+50937	CDON	cell adhesion associated, oncogene regulated											
+9139	CBFA2T2	CBFA2/RUNX1 translocation partner 2											
+57091	CASS4	Cas scaffold protein family member 4											
+57172	CAMK1G	calcium/calmodulin dependent protein kinase IG											
+59284	CACNG7	calcium voltage-gated channel auxiliary subunit gamma 7											
+146556	C16orf89	chromosome 16 open reading frame 89											
+149478	BTBD19	BTB domain containing 19											
+340075	ARSI	arylsulfatase family member I											
+246	ALOX15	arachidonate 15-lipoxygenase											
+216	ALDH1A1	aldehyde dehydrogenase 1 family member A1											
+10551	AGR2	anterior gradient 2, protein disulphide isomerase family member											
+72	ACTG2	actin, gamma 2, smooth muscle, enteric											

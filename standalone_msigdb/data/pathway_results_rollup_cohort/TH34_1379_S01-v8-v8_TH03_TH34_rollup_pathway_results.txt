@@ -1,0 +1,233 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	75
+# genesets in collections:	1379
+# genes in comparison (n):	143
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	24	0.02335	1.693e-14	2.335e-11
+KEGG_COMPLEMENT_AND_COAGULATION_CASCADES	69	Complement and coagulation cascades	9	0.1304	1.025e-12	7.066e-10
+REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS	478	Genes involved in Metabolism of lipids and lipoproteins	15	0.03138	3.289e-11	1.134e-8
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	18	0.0239	2.816e-11	1.134e-8
+NABA_ECM_AFFILIATED	171	Genes encoding proteins affiliated structurally or functionally to extracellular matrix proteins	10	0.05848	1.82e-10	5.02e-8
+REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION	208	Genes involved in Platelet activation, signaling and aggregation	10	0.04808	1.229e-9	2.824e-7
+REACTOME_HEMOSTASIS	466	Genes involved in Hemostasis	13	0.0279	2.942e-9	5.796e-7
+PID_HNF3A_PATHWAY	44	FOXA1 transcription factor network	6	0.1364	5.23e-9	9.015e-7
+REACTOME_RESPONSE_TO_ELEVATED_PLATELET_CYTOSOLIC_CA2_	89	Genes involved in Response to elevated platelet cytosolic Ca2+	7	0.07865	1.356e-8	2.078e-6
+KEGG_GLYCEROPHOSPHOLIPID_METABOLISM	77	Glycerophospholipid metabolism	6	0.07792	1.615e-7	2.227e-5
+HALLMARK_COAGULATION	138	Genes encoding components of blood coagulation system; also up-regulated in platelets.	7	0.05072	2.81e-7	3.522e-5
+REACTOME_ACYL_CHAIN_REMODELLING_OF_PC	22	Genes involved in Acyl chain remodelling of PC	4	0.1818	6.294e-7	7.233e-5
+REACTOME_PTM_GAMMA_CARBOXYLATION_HYPUSINE_FORMATION_AND_ARYLSULFATASE_ACTIVATION	27	Genes involved in PTM: gamma carboxylation, hypusine formation and arylsulfatase activation	4	0.1481	1.492e-6	1.583e-4
+REACTOME_LIPOPROTEIN_METABOLISM	28	Genes involved in Lipoprotein metabolism	4	0.1429	1.736e-6	1.71e-4
+REACTOME_POST_TRANSLATIONAL_PROTEIN_MODIFICATION	188	Genes involved in Post-translational protein modification	7	0.03723	2.242e-6	2.061e-4
+HALLMARK_COMPLEMENT	200	Genes encoding components of the complement system, which is part of the innate immune system.	7	0.035	3.374e-6	2.488e-4
+KEGG_ETHER_LIPID_METABOLISM	33	Ether lipid metabolism	4	0.1212	3.429e-6	2.488e-4
+REACTOME_PHOSPHOLIPID_METABOLISM	198	Genes involved in Phospholipid metabolism	7	0.03535	3.158e-6	2.488e-4
+REACTOME_COMPLEMENT_CASCADE	32	Genes involved in Complement cascade	4	0.125	3.02e-6	2.488e-4
+REACTOME_GAMMA_CARBOXYLATION_TRANSPORT_AND_AMINO_TERMINAL_CLEAVAGE_OF_PROTEINS	11	Genes involved in Gamma-carboxylation, transport, and amino-terminal cleavage of proteins	3	0.2727	4.78e-6	3.295e-4
+REACTOME_GLYCEROPHOSPHOLIPID_BIOSYNTHESIS	82	Genes involved in Glycerophospholipid biosynthesis	5	0.06098	6.119e-6	4.018e-4
+REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES	413	Genes involved in Transmembrane transport of small molecules	9	0.02179	6.472e-6	4.057e-4
+BIOCARTA_EXTRINSIC_PATHWAY	13	Extrinsic Prothrombin Activation Pathway	3	0.2308	8.247e-6	4.944e-4
+REACTOME_REGULATION_OF_COMPLEMENT_CASCADE	14	Genes involved in Regulation of Complement cascade	3	0.2143	1.047e-5	5.179e-4
+REACTOME_CELL_SURFACE_INTERACTIONS_AT_THE_VASCULAR_WALL	91	Genes involved in Cell surface interactions at the vascular wall	5	0.05495	1.02e-5	5.179e-4
+REACTOME_COMMON_PATHWAY	14	Genes involved in Common Pathway	3	0.2143	1.047e-5	5.179e-4
+REACTOME_TRANSPORT_OF_GLUCOSE_AND_OTHER_SUGARS_BILE_SALTS_AND_ORGANIC_ACIDS_METAL_IONS_AND_AMINE_COMPOUNDS	89	Genes involved in Transport of glucose and other sugars, bile salts and organic acids, metal ions and amine compounds	5	0.05618	9.147e-6	5.179e-4
+NABA_ECM_REGULATORS	238	Genes encoding enzymes and their regulators involved in the remodeling of the extracellular matrix	7	0.02941	1.052e-5	5.179e-4
+REACTOME_LIPID_DIGESTION_MOBILIZATION_AND_TRANSPORT	46	Genes involved in Lipid digestion, mobilization, and transport	4	0.08696	1.325e-5	6.301e-4
+REACTOME_ACYL_CHAIN_REMODELLING_OF_PG	16	Genes involved in Acyl chain remodelling of PG	3	0.1875	1.604e-5	7.134e-4
+REACTOME_CHYLOMICRON_MEDIATED_LIPID_TRANSPORT	16	Genes involved in Chylomicron-mediated lipid transport	3	0.1875	1.604e-5	7.134e-4
+KEGG_ALPHA_LINOLENIC_ACID_METABOLISM	19	alpha-Linolenic acid metabolism	3	0.1579	2.756e-5	0.001188
+BIOCARTA_AMI_PATHWAY	20	Acute Myocardial Infarction	3	0.15	3.235e-5	0.001352
+REACTOME_ACYL_CHAIN_REMODELLING_OF_PE	21	Genes involved in Acyl chain remodelling of PE	3	0.1429	3.766e-5	0.001484
+NABA_ECM_GLYCOPROTEINS	196	Genes encoding structural ECM glycoproteins	6	0.03061	3.666e-5	0.001484
+REACTOME_METAL_ION_SLC_TRANSPORTERS	22	Genes involved in Metal ion SLC transporters	3	0.1364	4.35e-5	0.001666
+BIOCARTA_INTRINSIC_PATHWAY	23	Intrinsic Prothrombin Activation Pathway	3	0.1304	4.991e-5	0.0018600000000000001
+KEGG_PPAR_SIGNALING_PATHWAY	69	PPAR signaling pathway	4	0.05797	6.641e-5	0.00241
+REACTOME_SYNTHESIS_OF_PA	27	Genes involved in Synthesis of PA	3	0.1111	8.169e-5	0.002888
+KEGG_VEGF_SIGNALING_PATHWAY	76	VEGF signaling pathway	4	0.05263	9.69e-5	0.003341
+KEGG_LINOLEIC_ACID_METABOLISM	29	Linoleic acid metabolism	3	0.1034	1.016e-4	0.003417
+REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT	241	Genes involved in SLC-mediated transmembrane transport	6	0.0249	1.147e-4	0.003765
+REACTOME_FORMATION_OF_FIBRIN_CLOT_CLOTTING_CASCADE	32	Genes involved in Formation of Fibrin Clot (Clotting Cascade)	3	0.09375	1.37e-4	0.004392
+HALLMARK_ANGIOGENESIS	36	Genes up-regulated during formation of blood vessels (angiogenesis).	3	0.08333	1.954e-4	0.005856
+REACTOME_FATTY_ACID_TRIACYLGLYCEROL_AND_KETONE_BODY_METABOLISM	168	Genes involved in Fatty acid, triacylglycerol, and ketone body metabolism	5	0.029760000000000002	1.901e-4	0.005856
+REACTOME_PLATELET_AGGREGATION_PLUG_FORMATION	36	Genes involved in Platelet Aggregation (Plug Formation)	3	0.08333	1.954e-4	0.005856
+REACTOME_METABOLISM_OF_PROTEINS	518	Genes involved in Metabolism of proteins	8	0.01544	2.325e-4	0.006724
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	6	0.02182	2.341e-4	0.006724
+KEGG_GNRH_SIGNALING_PATHWAY	101	GnRH signaling pathway	4	0.0396	2.904e-4	0.008009
+PID_AMB2_NEUTROPHILS_PATHWAY	41	amb2 Integrin signaling	3	0.07317	2.884e-4	0.008009
+PID_UPA_UPAR_PATHWAY	42	Urokinase-type plasminogen activator (uPA) and uPAR-mediated signaling	3	0.07143	3.098e-4	0.008378
+HALLMARK_ADIPOGENESIS	200	Genes up-regulated during adipocyte differentiation (adipogenesis).	5	0.025	4.24e-4	0.01099
+HALLMARK_XENOBIOTIC_METABOLISM	200	Genes encoding proteins involved in processing of drugs and other xenobiotics.	5	0.025	4.24e-4	0.01099
+HALLMARK_BILE_ACID_METABOLISM	112	Genes involve in metabolism of bile acids and salts.	4	0.03571	4.302e-4	0.01099
+REACTOME_BILE_SALT_AND_ORGANIC_ANION_SLC_TRANSPORTERS	11	Genes involved in Bile salt and organic anion SLC transporters	2	0.1818	5.192e-4	0.01302
+BIOCARTA_FIBRINOLYSIS_PATHWAY	12	Fibrinolysis Pathway	2	0.1667	6.217e-4	0.01531
+KEGG_ARACHIDONIC_ACID_METABOLISM	58	Arachidonic acid metabolism	3	0.05172	8.031e-4	0.01909
+BIOCARTA_PPARA_PATHWAY	58	Mechanism of Gene Regulation by Peroxisome Proliferators via PPARa(alpha)	3	0.05172	8.031e-4	0.01909
+KEGG_TIGHT_JUNCTION	134	Tight junction	4	0.02985	8.438e-4	0.01962
+BIOCARTA_CELL2CELL_PATHWAY	14	Cell to Cell Adhesion Signaling	2	0.1429	8.538e-4	0.01962
+REACTOME_ACYL_CHAIN_REMODELLING_OF_PI	15	Genes involved in Acyl chain remodelling of PI	2	0.1333	9.831e-4	0.02054
+REACTOME_ACYL_CHAIN_REMODELLING_OF_PS	15	Genes involved in Acyl chain remodelling of PS	2	0.1333	9.831e-4	0.02054
+REACTOME_HDL_MEDIATED_LIPID_TRANSPORT	15	Genes involved in HDL-mediated lipid transport	2	0.1333	9.831e-4	0.02054
+REACTOME_P130CAS_LINKAGE_TO_MAPK_SIGNALING_FOR_INTEGRINS	15	Genes involved in p130Cas linkage to MAPK signaling for integrins	2	0.1333	9.831e-4	0.02054
+REACTOME_GRB2_SOS_PROVIDES_LINKAGE_TO_MAPK_SIGNALING_FOR_INTERGRINS_	15	Genes involved in GRB2:SOS provides linkage to MAPK signaling for Intergrins	2	0.1333	9.831e-4	0.02054
+REACTOME_ZINC_TRANSPORTERS	15	Genes involved in Zinc transporters	2	0.1333	9.831e-4	0.02054
+KEGG_LONG_TERM_DEPRESSION	70	Long-term depression	3	0.04286	0.001386	0.02854
+BIOCARTA_UCALPAIN_PATHWAY	18	uCalpain and friends in Cell spread	2	0.1111	0.001424	0.02887
+REACTOME_INNATE_IMMUNE_SYSTEM	279	Genes involved in Innate Immune System	5	0.01792	0.001869	0.03736
+KEGG_FC_EPSILON_RI_SIGNALING_PATHWAY	79	Fc epsilon RI signaling pathway	3	0.03797	0.001962	0.03812
+REACTOME_INTEGRIN_CELL_SURFACE_INTERACTIONS	79	Genes involved in Integrin cell surface interactions	3	0.03797	0.001962	0.03812
+BIOCARTA_SPPA_PATHWAY	22	Aspirin Blocks Signaling Pathway Involved in Platelet Activation	2	0.09091	0.002132	0.04084
+KEGG_NITROGEN_METABOLISM	23	Nitrogen metabolism	2	0.08696	0.00233	0.04285
+KEGG_PROXIMAL_TUBULE_BICARBONATE_RECLAMATION	23	Proximal tubule bicarbonate reclamation	2	0.08696	0.00233	0.04285
+ST_GA12_PATHWAY	23	G alpha 12 Pathway	2	0.08696	0.00233	0.04285
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_MATRISOME	KEGG_COMPLEMENT_AND_COAGULATION_CASCADES	REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED	REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION	REACTOME_HEMOSTASIS	PID_HNF3A_PATHWAY	REACTOME_RESPONSE_TO_ELEVATED_PLATELET_CYTOSOLIC_CA2_	KEGG_GLYCEROPHOSPHOLIPID_METABOLISM	HALLMARK_COAGULATION	REACTOME_ACYL_CHAIN_REMODELLING_OF_PC	REACTOME_PTM_GAMMA_CARBOXYLATION_HYPUSINE_FORMATION_AND_ARYLSULFATASE_ACTIVATION	REACTOME_LIPOPROTEIN_METABOLISM	REACTOME_POST_TRANSLATIONAL_PROTEIN_MODIFICATION	HALLMARK_COMPLEMENT	KEGG_ETHER_LIPID_METABOLISM	REACTOME_PHOSPHOLIPID_METABOLISM	REACTOME_COMPLEMENT_CASCADE	REACTOME_GAMMA_CARBOXYLATION_TRANSPORT_AND_AMINO_TERMINAL_CLEAVAGE_OF_PROTEINS	REACTOME_GLYCEROPHOSPHOLIPID_BIOSYNTHESIS	REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES	BIOCARTA_EXTRINSIC_PATHWAY	REACTOME_REGULATION_OF_COMPLEMENT_CASCADE	REACTOME_CELL_SURFACE_INTERACTIONS_AT_THE_VASCULAR_WALL	REACTOME_COMMON_PATHWAY	REACTOME_TRANSPORT_OF_GLUCOSE_AND_OTHER_SUGARS_BILE_SALTS_AND_ORGANIC_ACIDS_METAL_IONS_AND_AMINE_COMPOUNDS	NABA_ECM_REGULATORS	REACTOME_LIPID_DIGESTION_MOBILIZATION_AND_TRANSPORT	REACTOME_ACYL_CHAIN_REMODELLING_OF_PG	REACTOME_CHYLOMICRON_MEDIATED_LIPID_TRANSPORT	KEGG_ALPHA_LINOLENIC_ACID_METABOLISM	BIOCARTA_AMI_PATHWAY	REACTOME_ACYL_CHAIN_REMODELLING_OF_PE	NABA_ECM_GLYCOPROTEINS	REACTOME_METAL_ION_SLC_TRANSPORTERS	BIOCARTA_INTRINSIC_PATHWAY	KEGG_PPAR_SIGNALING_PATHWAY	REACTOME_SYNTHESIS_OF_PA	KEGG_VEGF_SIGNALING_PATHWAY	KEGG_LINOLEIC_ACID_METABOLISM	REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT	REACTOME_FORMATION_OF_FIBRIN_CLOT_CLOTTING_CASCADE	HALLMARK_ANGIOGENESIS	REACTOME_FATTY_ACID_TRIACYLGLYCEROL_AND_KETONE_BODY_METABOLISM	REACTOME_PLATELET_AGGREGATION_PLUG_FORMATION	REACTOME_METABOLISM_OF_PROTEINS	NABA_CORE_MATRISOME	KEGG_GNRH_SIGNALING_PATHWAY	PID_AMB2_NEUTROPHILS_PATHWAY	PID_UPA_UPAR_PATHWAY	HALLMARK_ADIPOGENESIS	HALLMARK_XENOBIOTIC_METABOLISM	HALLMARK_BILE_ACID_METABOLISM	REACTOME_BILE_SALT_AND_ORGANIC_ANION_SLC_TRANSPORTERS	BIOCARTA_FIBRINOLYSIS_PATHWAY	KEGG_ARACHIDONIC_ACID_METABOLISM	BIOCARTA_PPARA_PATHWAY	KEGG_TIGHT_JUNCTION	BIOCARTA_CELL2CELL_PATHWAY	REACTOME_ACYL_CHAIN_REMODELLING_OF_PI	REACTOME_ACYL_CHAIN_REMODELLING_OF_PS	REACTOME_HDL_MEDIATED_LIPID_TRANSPORT	REACTOME_P130CAS_LINKAGE_TO_MAPK_SIGNALING_FOR_INTEGRINS	REACTOME_GRB2_SOS_PROVIDES_LINKAGE_TO_MAPK_SIGNALING_FOR_INTERGRINS_	REACTOME_ZINC_TRANSPORTERS	KEGG_LONG_TERM_DEPRESSION	BIOCARTA_UCALPAIN_PATHWAY	REACTOME_INNATE_IMMUNE_SYSTEM	KEGG_FC_EPSILON_RI_SIGNALING_PATHWAY	REACTOME_INTEGRIN_CELL_SURFACE_INTERACTIONS	BIOCARTA_SPPA_PATHWAY	KEGG_NITROGEN_METABOLISM	KEGG_PROXIMAL_TUBULE_BICARBONATE_RECLAMATION	ST_GA12_PATHWAY
+5345	SERPINF2	serpin family F member 2	NABA_MATRISOME	KEGG_COMPLEMENT_AND_COAGULATION_CASCADES		NABA_MATRISOME_ASSOCIATED		REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION	REACTOME_HEMOSTASIS		REACTOME_RESPONSE_TO_ELEVATED_PLATELET_CYTOSOLIC_CA2_																			NABA_ECM_REGULATORS																																															
+2147	F2	coagulation factor II, thrombin	NABA_MATRISOME	KEGG_COMPLEMENT_AND_COAGULATION_CASCADES		NABA_MATRISOME_ASSOCIATED		REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION	REACTOME_HEMOSTASIS				HALLMARK_COAGULATION		REACTOME_PTM_GAMMA_CARBOXYLATION_HYPUSINE_FORMATION_AND_ARYLSULFATASE_ACTIVATION		REACTOME_POST_TRANSLATIONAL_PROTEIN_MODIFICATION	HALLMARK_COMPLEMENT				REACTOME_GAMMA_CARBOXYLATION_TRANSPORT_AND_AMINO_TERMINAL_CLEAVAGE_OF_PROTEINS			BIOCARTA_EXTRINSIC_PATHWAY		REACTOME_CELL_SURFACE_INTERACTIONS_AT_THE_VASCULAR_WALL	REACTOME_COMMON_PATHWAY		NABA_ECM_REGULATORS					BIOCARTA_AMI_PATHWAY				BIOCARTA_INTRINSIC_PATHWAY						REACTOME_FORMATION_OF_FIBRIN_CLOT_CLOTTING_CASCADE			REACTOME_PLATELET_AGGREGATION_PLUG_FORMATION	REACTOME_METABOLISM_OF_PROTEINS									BIOCARTA_FIBRINOLYSIS_PATHWAY																BIOCARTA_SPPA_PATHWAY			ST_GA12_PATHWAY
+3053	SERPIND1	serpin family D member 1	NABA_MATRISOME	KEGG_COMPLEMENT_AND_COAGULATION_CASCADES		NABA_MATRISOME_ASSOCIATED																								NABA_ECM_REGULATORS																																															
+2266	FGG	fibrinogen gamma chain	NABA_MATRISOME	KEGG_COMPLEMENT_AND_COAGULATION_CASCADES				REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION	REACTOME_HEMOSTASIS		REACTOME_RESPONSE_TO_ELEVATED_PLATELET_CYTOSOLIC_CA2_		HALLMARK_COAGULATION												BIOCARTA_EXTRINSIC_PATHWAY			REACTOME_COMMON_PATHWAY							BIOCARTA_AMI_PATHWAY		NABA_ECM_GLYCOPROTEINS		BIOCARTA_INTRINSIC_PATHWAY						REACTOME_FORMATION_OF_FIBRIN_CLOT_CLOTTING_CASCADE			REACTOME_PLATELET_AGGREGATION_PLUG_FORMATION		NABA_CORE_MATRISOME			PID_UPA_UPAR_PATHWAY					BIOCARTA_FIBRINOLYSIS_PATHWAY								REACTOME_P130CAS_LINKAGE_TO_MAPK_SIGNALING_FOR_INTEGRINS	REACTOME_GRB2_SOS_PROVIDES_LINKAGE_TO_MAPK_SIGNALING_FOR_INTERGRINS_						REACTOME_INTEGRIN_CELL_SURFACE_INTERACTIONS				
+6441	SFTPD	surfactant protein D	NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED			PID_HNF3A_PATHWAY																																																																			
+729238	SFTPA2	surfactant protein A2	NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED			PID_HNF3A_PATHWAY																																																																			
+653509	SFTPA1	surfactant protein A1	NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED			PID_HNF3A_PATHWAY																																																																			
+118430	MUCL1	mucin like 1	NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED										REACTOME_POST_TRANSLATIONAL_PROTEIN_MODIFICATION																																REACTOME_METABOLISM_OF_PROTEINS																												
+6440	SFTPC	surfactant protein C	NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED																																																																						
+6439	SFTPB	surfactant protein B	NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED																																																																						
+253970	SFTA3	surfactant associated 3	NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED																																																																						
+389376	SFTA2	surfactant associated 2	NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED																																																																						
+57715	SEMA4G	semaphorin 4G	NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED																																																																						
+4582	MUC1	mucin 1, cell surface associated	NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED																																																																						
+6906	SERPINA7	serpin family A member 7	NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED																								NABA_ECM_REGULATORS																																															
+3698	ITIH2	inter-alpha-trypsin inhibitor heavy chain 2	NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED																								NABA_ECM_REGULATORS																																															
+1472	CST4	cystatin S	NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED																								NABA_ECM_REGULATORS																																															
+259	AMBP	alpha-1-microglobulin/bikunin precursor	NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED																								NABA_ECM_REGULATORS																																															
+6370	CCL25	C-C motif chemokine ligand 25	NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED																																																	HALLMARK_XENOBIOTIC_METABOLISM																						
+7448	VTN	vitronectin	NABA_MATRISOME							PID_HNF3A_PATHWAY																											NABA_ECM_GLYCOPROTEINS									HALLMARK_ANGIOGENESIS				NABA_CORE_MATRISOME			PID_UPA_UPAR_PATHWAY		HALLMARK_XENOBIOTIC_METABOLISM																		REACTOME_INTEGRIN_CELL_SURFACE_INTERACTIONS				
+5649	RELN	reelin	NABA_MATRISOME																																		NABA_ECM_GLYCOPROTEINS													NABA_CORE_MATRISOME																											
+NA	NOV	NA	NABA_MATRISOME																																		NABA_ECM_GLYCOPROTEINS													NABA_CORE_MATRISOME																											
+4148	MATN3	matrilin 3	NABA_MATRISOME																																		NABA_ECM_GLYCOPROTEINS													NABA_CORE_MATRISOME																											
+1755	DMBT1	deleted in malignant brain tumors 1	NABA_MATRISOME																																		NABA_ECM_GLYCOPROTEINS													NABA_CORE_MATRISOME																											
+5624	PROC	protein C, inactivator of coagulation factors Va and VIIIa		KEGG_COMPLEMENT_AND_COAGULATION_CASCADES					REACTOME_HEMOSTASIS				HALLMARK_COAGULATION		REACTOME_PTM_GAMMA_CARBOXYLATION_HYPUSINE_FORMATION_AND_ARYLSULFATASE_ACTIVATION		REACTOME_POST_TRANSLATIONAL_PROTEIN_MODIFICATION					REACTOME_GAMMA_CARBOXYLATION_TRANSPORT_AND_AMINO_TERMINAL_CLEAVAGE_OF_PROTEINS			BIOCARTA_EXTRINSIC_PATHWAY		REACTOME_CELL_SURFACE_INTERACTIONS_AT_THE_VASCULAR_WALL	REACTOME_COMMON_PATHWAY							BIOCARTA_AMI_PATHWAY				BIOCARTA_INTRINSIC_PATHWAY						REACTOME_FORMATION_OF_FIBRIN_CLOT_CLOTTING_CASCADE				REACTOME_METABOLISM_OF_PROTEINS																												
+725	C4BPB	complement component 4 binding protein beta		KEGG_COMPLEMENT_AND_COAGULATION_CASCADES						PID_HNF3A_PATHWAY								HALLMARK_COMPLEMENT			REACTOME_COMPLEMENT_CASCADE					REACTOME_REGULATION_OF_COMPLEMENT_CASCADE																																													REACTOME_INNATE_IMMUNE_SYSTEM						
+4179	CD46	CD46 molecule		KEGG_COMPLEMENT_AND_COAGULATION_CASCADES														HALLMARK_COMPLEMENT			REACTOME_COMPLEMENT_CASCADE					REACTOME_REGULATION_OF_COMPLEMENT_CASCADE																																													REACTOME_INNATE_IMMUNE_SYSTEM						
+722	C4BPA	complement component 4 binding protein alpha		KEGG_COMPLEMENT_AND_COAGULATION_CASCADES																	REACTOME_COMPLEMENT_CASCADE					REACTOME_REGULATION_OF_COMPLEMENT_CASCADE																																													REACTOME_INNATE_IMMUNE_SYSTEM						
+727	C5	complement C5		KEGG_COMPLEMENT_AND_COAGULATION_CASCADES																	REACTOME_COMPLEMENT_CASCADE																																																		REACTOME_INNATE_IMMUNE_SYSTEM						
+335	APOA1	apolipoprotein A1			REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS			REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION	REACTOME_HEMOSTASIS		REACTOME_RESPONSE_TO_ELEVATED_PLATELET_CYTOSOLIC_CA2_		HALLMARK_COAGULATION			REACTOME_LIPOPROTEIN_METABOLISM								REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES							REACTOME_LIPID_DIGESTION_MOBILIZATION_AND_TRANSPORT		REACTOME_CHYLOMICRON_MEDIATED_LIPID_TRANSPORT							KEGG_PPAR_SIGNALING_PATHWAY							REACTOME_FATTY_ACID_TRIACYLGLYCEROL_AND_KETONE_BODY_METABOLISM									HALLMARK_BILE_ACID_METABOLISM				BIOCARTA_PPARA_PATHWAY					REACTOME_HDL_MEDIATED_LIPID_TRANSPORT												
+338	APOB	apolipoprotein B			REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS				REACTOME_HEMOSTASIS	PID_HNF3A_PATHWAY						REACTOME_LIPOPROTEIN_METABOLISM											REACTOME_CELL_SURFACE_INTERACTIONS_AT_THE_VASCULAR_WALL				REACTOME_LIPID_DIGESTION_MOBILIZATION_AND_TRANSPORT		REACTOME_CHYLOMICRON_MEDIATED_LIPID_TRANSPORT																			PID_AMB2_NEUTROPHILS_PATHWAY																									
+5320	PLA2G2A	phospholipase A2 group IIA			REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS							KEGG_GLYCEROPHOSPHOLIPID_METABOLISM		REACTOME_ACYL_CHAIN_REMODELLING_OF_PC					KEGG_ETHER_LIPID_METABOLISM	REACTOME_PHOSPHOLIPID_METABOLISM			REACTOME_GLYCEROPHOSPHOLIPID_BIOSYNTHESIS									REACTOME_ACYL_CHAIN_REMODELLING_OF_PG		KEGG_ALPHA_LINOLENIC_ACID_METABOLISM		REACTOME_ACYL_CHAIN_REMODELLING_OF_PE					REACTOME_SYNTHESIS_OF_PA	KEGG_VEGF_SIGNALING_PATHWAY	KEGG_LINOLEIC_ACID_METABOLISM								KEGG_GNRH_SIGNALING_PATHWAY								KEGG_ARACHIDONIC_ACID_METABOLISM				REACTOME_ACYL_CHAIN_REMODELLING_OF_PI	REACTOME_ACYL_CHAIN_REMODELLING_OF_PS					KEGG_LONG_TERM_DEPRESSION			KEGG_FC_EPSILON_RI_SIGNALING_PATHWAY					
+5319	PLA2G1B	phospholipase A2 group IB			REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS							KEGG_GLYCEROPHOSPHOLIPID_METABOLISM		REACTOME_ACYL_CHAIN_REMODELLING_OF_PC					KEGG_ETHER_LIPID_METABOLISM	REACTOME_PHOSPHOLIPID_METABOLISM			REACTOME_GLYCEROPHOSPHOLIPID_BIOSYNTHESIS									REACTOME_ACYL_CHAIN_REMODELLING_OF_PG		KEGG_ALPHA_LINOLENIC_ACID_METABOLISM		REACTOME_ACYL_CHAIN_REMODELLING_OF_PE					REACTOME_SYNTHESIS_OF_PA	KEGG_VEGF_SIGNALING_PATHWAY	KEGG_LINOLEIC_ACID_METABOLISM								KEGG_GNRH_SIGNALING_PATHWAY								KEGG_ARACHIDONIC_ACID_METABOLISM				REACTOME_ACYL_CHAIN_REMODELLING_OF_PI	REACTOME_ACYL_CHAIN_REMODELLING_OF_PS					KEGG_LONG_TERM_DEPRESSION			KEGG_FC_EPSILON_RI_SIGNALING_PATHWAY					
+79888	LPCAT1	lysophosphatidylcholine acyltransferase 1			REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS							KEGG_GLYCEROPHOSPHOLIPID_METABOLISM		REACTOME_ACYL_CHAIN_REMODELLING_OF_PC					KEGG_ETHER_LIPID_METABOLISM	REACTOME_PHOSPHOLIPID_METABOLISM			REACTOME_GLYCEROPHOSPHOLIPID_BIOSYNTHESIS									REACTOME_ACYL_CHAIN_REMODELLING_OF_PG									REACTOME_SYNTHESIS_OF_PA						REACTOME_FATTY_ACID_TRIACYLGLYCEROL_AND_KETONE_BODY_METABOLISM																														
+8398	PLA2G6	phospholipase A2 group VI			REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS							KEGG_GLYCEROPHOSPHOLIPID_METABOLISM		REACTOME_ACYL_CHAIN_REMODELLING_OF_PC					KEGG_ETHER_LIPID_METABOLISM	REACTOME_PHOSPHOLIPID_METABOLISM			REACTOME_GLYCEROPHOSPHOLIPID_BIOSYNTHESIS											KEGG_ALPHA_LINOLENIC_ACID_METABOLISM		REACTOME_ACYL_CHAIN_REMODELLING_OF_PE						KEGG_VEGF_SIGNALING_PATHWAY	KEGG_LINOLEIC_ACID_METABOLISM								KEGG_GNRH_SIGNALING_PATHWAY								KEGG_ARACHIDONIC_ACID_METABOLISM										KEGG_LONG_TERM_DEPRESSION			KEGG_FC_EPSILON_RI_SIGNALING_PATHWAY					
+1119	CHKA	choline kinase alpha			REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS							KEGG_GLYCEROPHOSPHOLIPID_METABOLISM								REACTOME_PHOSPHOLIPID_METABOLISM			REACTOME_GLYCEROPHOSPHOLIPID_BIOSYNTHESIS																																																						
+415	ARSE	arylsulfatase E			REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS										REACTOME_PTM_GAMMA_CARBOXYLATION_HYPUSINE_FORMATION_AND_ARYLSULFATASE_ACTIVATION		REACTOME_POST_TRANSLATIONAL_PROTEIN_MODIFICATION			REACTOME_PHOSPHOLIPID_METABOLISM																													REACTOME_METABOLISM_OF_PROTEINS																												
+336	APOA2	apolipoprotein A2			REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS											REACTOME_LIPOPROTEIN_METABOLISM															REACTOME_LIPID_DIGESTION_MOBILIZATION_AND_TRANSPORT		REACTOME_CHYLOMICRON_MEDIATED_LIPID_TRANSPORT							KEGG_PPAR_SIGNALING_PATHWAY							REACTOME_FATTY_ACID_TRIACYLGLYCEROL_AND_KETONE_BODY_METABOLISM													BIOCARTA_PPARA_PATHWAY																	
+949	SCARB1	scavenger receptor class B member 1			REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS											REACTOME_LIPOPROTEIN_METABOLISM															REACTOME_LIPID_DIGESTION_MOBILIZATION_AND_TRANSPORT																							HALLMARK_ADIPOGENESIS											REACTOME_HDL_MEDIATED_LIPID_TRANSPORT												
+29956	CERS2	ceramide synthase 2			REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS															REACTOME_PHOSPHOLIPID_METABOLISM																																																									
+2168	FABP1	fatty acid binding protein 1			REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS																																			KEGG_PPAR_SIGNALING_PATHWAY							REACTOME_FATTY_ACID_TRIACYLGLYCEROL_AND_KETONE_BODY_METABOLISM								HALLMARK_XENOBIOTIC_METABOLISM					BIOCARTA_PPARA_PATHWAY																	
+6576	SLC25A1	solute carrier family 25 member 1			REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS																																										REACTOME_FATTY_ACID_TRIACYLGLYCEROL_AND_KETONE_BODY_METABOLISM							HALLMARK_ADIPOGENESIS																							
+23600	AMACR	alpha-methylacyl-CoA racemase			REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS																																																			HALLMARK_BILE_ACID_METABOLISM																					
+6770	STAR	steroidogenic acute regulatory protein			REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS																																																																								
+7018	TF	transferrin						REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION	REACTOME_HEMOSTASIS		REACTOME_RESPONSE_TO_ELEVATED_PLATELET_CYTOSOLIC_CA2_		HALLMARK_COAGULATION											REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES																																																					
+88	ACTN2	actinin alpha 2						REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION	REACTOME_HEMOSTASIS		REACTOME_RESPONSE_TO_ELEVATED_PLATELET_CYTOSOLIC_CA2_							HALLMARK_COMPLEMENT																																											KEGG_TIGHT_JUNCTION	BIOCARTA_CELL2CELL_PATHWAY								BIOCARTA_UCALPAIN_PATHWAY							
+27154	BRPF3	bromodomain and PHD finger containing 3						REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION	REACTOME_HEMOSTASIS		REACTOME_RESPONSE_TO_ELEVATED_PLATELET_CYTOSOLIC_CA2_							HALLMARK_COMPLEMENT																																																											
+22927	HABP4	hyaluronan binding protein 4						REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION	REACTOME_HEMOSTASIS		REACTOME_RESPONSE_TO_ELEVATED_PLATELET_CYTOSOLIC_CA2_																																																																		
+8527	DGKD	diacylglycerol kinase delta						REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION	REACTOME_HEMOSTASIS			KEGG_GLYCEROPHOSPHOLIPID_METABOLISM																																																																	
+6714	SRC	SRC proto-oncogene, non-receptor tyrosine kinase						REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION	REACTOME_HEMOSTASIS									HALLMARK_COMPLEMENT									REACTOME_CELL_SURFACE_INTERACTIONS_AT_THE_VASCULAR_WALL															KEGG_VEGF_SIGNALING_PATHWAY						REACTOME_PLATELET_AGGREGATION_PLUG_FORMATION			KEGG_GNRH_SIGNALING_PATHWAY	PID_AMB2_NEUTROPHILS_PATHWAY	PID_UPA_UPAR_PATHWAY								KEGG_TIGHT_JUNCTION	BIOCARTA_CELL2CELL_PATHWAY				REACTOME_P130CAS_LINKAGE_TO_MAPK_SIGNALING_FOR_INTEGRINS	REACTOME_GRB2_SOS_PROVIDES_LINKAGE_TO_MAPK_SIGNALING_FOR_INTERGRINS_			BIOCARTA_UCALPAIN_PATHWAY			REACTOME_INTEGRIN_CELL_SURFACE_INTERACTIONS	BIOCARTA_SPPA_PATHWAY			ST_GA12_PATHWAY
+4973	OLR1	oxidized low density lipoprotein receptor 1							REACTOME_HEMOSTASIS				HALLMARK_COAGULATION					HALLMARK_COMPLEMENT									REACTOME_CELL_SURFACE_INTERACTIONS_AT_THE_VASCULAR_WALL													KEGG_PPAR_SIGNALING_PATHWAY						HALLMARK_ANGIOGENESIS																															
+22921	MSRB2	methionine sulfoxide reductase B2											HALLMARK_COAGULATION																																																																
+2677	GGCX	gamma-glutamyl carboxylase													REACTOME_PTM_GAMMA_CARBOXYLATION_HYPUSINE_FORMATION_AND_ARYLSULFATASE_ACTIVATION		REACTOME_POST_TRANSLATIONAL_PROTEIN_MODIFICATION					REACTOME_GAMMA_CARBOXYLATION_TRANSPORT_AND_AMINO_TERMINAL_CLEAVAGE_OF_PROTEINS																											REACTOME_METABOLISM_OF_PROTEINS																												
+10113	PREB	prolactin regulatory element binding															REACTOME_POST_TRANSLATIONAL_PROTEIN_MODIFICATION																																REACTOME_METABOLISM_OF_PROTEINS					HALLMARK_ADIPOGENESIS																							
+9761	MLEC	malectin															REACTOME_POST_TRANSLATIONAL_PROTEIN_MODIFICATION																																REACTOME_METABOLISM_OF_PROTEINS																												
+283375	SLC39A5	solute carrier family 39 member 5																						REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES					REACTOME_TRANSPORT_OF_GLUCOSE_AND_OTHER_SUGARS_BILE_SALTS_AND_ORGANIC_ACIDS_METAL_IONS_AND_AMINE_COMPOUNDS									REACTOME_METAL_ION_SLC_TRANSPORTERS						REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT																								REACTOME_ZINC_TRANSPORTERS									
+7781	SLC30A3	solute carrier family 30 member 3																						REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES					REACTOME_TRANSPORT_OF_GLUCOSE_AND_OTHER_SUGARS_BILE_SALTS_AND_ORGANIC_ACIDS_METAL_IONS_AND_AMINE_COMPOUNDS									REACTOME_METAL_ION_SLC_TRANSPORTERS						REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT																								REACTOME_ZINC_TRANSPORTERS									
+6556	SLC11A1	solute carrier family 11 member 1																						REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES					REACTOME_TRANSPORT_OF_GLUCOSE_AND_OTHER_SUGARS_BILE_SALTS_AND_ORGANIC_ACIDS_METAL_IONS_AND_AMINE_COMPOUNDS									REACTOME_METAL_ION_SLC_TRANSPORTERS						REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT																																	
+284111	SLC13A5	solute carrier family 13 member 5																						REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES					REACTOME_TRANSPORT_OF_GLUCOSE_AND_OTHER_SUGARS_BILE_SALTS_AND_ORGANIC_ACIDS_METAL_IONS_AND_AMINE_COMPOUNDS															REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT													REACTOME_BILE_SALT_AND_ORGANIC_ANION_SLC_TRANSPORTERS																				
+64849	SLC13A3	solute carrier family 13 member 3																						REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES					REACTOME_TRANSPORT_OF_GLUCOSE_AND_OTHER_SUGARS_BILE_SALTS_AND_ORGANIC_ACIDS_METAL_IONS_AND_AMINE_COMPOUNDS															REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT													REACTOME_BILE_SALT_AND_ORGANIC_ANION_SLC_TRANSPORTERS																				
+10568	SLC34A2	solute carrier family 34 member 2																						REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES																				REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT																																	
+366	AQP9	aquaporin 9																						REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES																															HALLMARK_XENOBIOTIC_METABOLISM	HALLMARK_BILE_ACID_METABOLISM																					
+350	APOH	apolipoprotein H																																												HALLMARK_ANGIOGENESIS																															
+6905	TBCE	tubulin folding cofactor E																																															REACTOME_METABOLISM_OF_PROTEINS																												
+177	AGER	advanced glycosylation end-product specific receptor																																																		PID_AMB2_NEUTROPHILS_PATHWAY																			REACTOME_INNATE_IMMUNE_SYSTEM						
+5004	ORM1	orosomucoid 1																																																				HALLMARK_ADIPOGENESIS																							
+1580	CYP4B1	cytochrome P450 family 4 subfamily B member 1																																																				HALLMARK_ADIPOGENESIS																							
+51380	CSAD	cysteine sulfinic acid decarboxylase																																																					HALLMARK_XENOBIOTIC_METABOLISM																						
+189	AGXT	alanine--glyoxylate and serine--pyruvate aminotransferase																																																						HALLMARK_BILE_ACID_METABOLISM																					
+57644	MYH7B	myosin heavy chain 7B																																																											KEGG_TIGHT_JUNCTION																
+51208	CLDN18	claudin 18																																																											KEGG_TIGHT_JUNCTION																
+2746	GLUD1	glutamate dehydrogenase 1																																																																									KEGG_NITROGEN_METABOLISM	KEGG_PROXIMAL_TUBULE_BICARBONATE_RECLAMATION	
+762	CA4	carbonic anhydrase 4																																																																									KEGG_NITROGEN_METABOLISM	KEGG_PROXIMAL_TUBULE_BICARBONATE_RECLAMATION	
+54963	UCKL1	uridine-cytidine kinase 1 like 1																																																																											
+9654	TTLL4	tubulin tyrosine ligase like 4																																																																											
+135892	TRIM50	tripartite motif containing 50																																																																											
+7200	TRH	thyrotropin releasing hormone																																																																											
+7136	TNNI2	troponin I2, fast skeletal type																																																																											
+10948	STARD3	StAR related lipid transfer domain containing 3																																																																											
+6690	SPINK1	serine peptidase inhibitor, Kazal type 1																																																																											
+389058	SP5	Sp5 transcription factor																																																																											
+27131	SNX5	sorting nexin 5																																																																											
+56950	SMYD2	SET and MYND domain containing 2																																																																											
+5250	SLC25A3	solute carrier family 25 member 3																																																																											
+146429	SLC22A31	solute carrier family 22 member 31																																																																											
+117156	SCGB3A2	secretoglobin family 3A member 2																																																																											
+6085	RNY3	RNA, Ro60-associated Y3																																																																											
+54894	RNF43	ring finger protein 43																																																																											
+284996	RNF149	ring finger protein 149																																																																											
+9886	RHOBTB1	Rho related BTB domain containing 1																																																																											
+57127	RHBG	Rh family B glycoprotein (gene/pseudogene)																																																																											
+23029	RBM34	RNA binding motif protein 34																																																																											
+118471	PRAP1	proline rich acidic protein 1																																																																											
+5446	PON3	paraoxonase 3																																																																											
+5445	PON2	paraoxonase 2																																																																											
+5354	PLP1	proteolipid protein 1																																																																											
+8502	PKP4	plakophilin 4																																																																											
+5225	PGC	progastricsin																																																																											
+5121	PCP4	Purkinje cell protein 4																																																																											
+5053	PAH	phenylalanine hydroxylase																																																																											
+80336	PABPC1L	poly(A) binding protein cytoplasmic 1 like																																																																											
+54959	ODAM	odontogenic, ameloblast associated																																																																											
+2516	NR5A1	nuclear receptor subfamily 5 group A member 1																																																																											
+85407	NKD1	NKD1, WNT signaling pathway inhibitor																																																																											
+63941	NECAB3	N-terminal EF-hand calcium binding protein 3																																																																											
+283131	NEAT1	nuclear paraspeckle assembly transcript 1																																																																											
+9476	NAPSA	napsin A aspartic peptidase																																																																											
+92170	MTG1	mitochondrial ribosome associated GTPase 1																																																																											
+57380	MRS2	magnesium transporter MRS2																																																																											
+4258	MGST2	microsomal glutathione S-transferase 2																																																																											
+56947	MFF	mitochondrial fission factor																																																																											
+4232	MEST	mesoderm specific transcript																																																																											
+27074	LAMP3	lysosomal associated membrane protein 3																																																																											
+84678	KDM2B	lysine demethylase 2B																																																																											
+3762	KCNJ5	potassium voltage-gated channel subfamily J member 5																																																																											
+83693	HSDL1	hydroxysteroid dehydrogenase like 1																																																																											
+9951	HS3ST4	heparan sulfate-glucosamine 3-sulfotransferase 4																																																																											
+NA	GYLTL1B	NA																																																																											
+9052	GPRC5A	G protein-coupled receptor class C group 5 member A																																																																											
+653519	GPR89A	G protein-coupled receptor 89A																																																																											
+51608	GET4	golgi to ER traffic protein 4																																																																											
+5349	FXYD3	FXYD domain containing ion transport regulator 3																																																																											
+79791	FBXO31	F-box protein 31																																																																											
+54097	FAM3B	family with sequence similarity 3 member B																																																																											
+NA	FAM178A	NA																																																																											
+90625	ERVH48-1	endogenous retrovirus group 48 member 1																																																																											
+1945	EFNA4	ephrin A4																																																																											
+1852	DUSP9	dual specificity phosphatase 9																																																																											
+1800	DPEP1	dipeptidase 1																																																																											
+284340	CXCL17	C-X-C motif chemokine ligand 17																																																																											
+51200	CPA4	carboxypeptidase A4																																																																											
+4680	CEACAM6	carcinoembryonic antigen related cell adhesion molecule 6																																																																											
+8558	CDK10	cyclin dependent kinase 10																																																																											
+257407	C2orf72	chromosome 2 open reading frame 72																																																																											
+NA	C10orf2	NA																																																																											
+171023	ASXL1	ASXL transcriptional regulator 1																																																																											
+79058	ASPSCR1	ASPSCR1, UBX domain containing tether for SLC2A4																																																																											
+346	APOC4	apolipoprotein C4																																																																											
+342	APOC1P1	apolipoprotein C1 pseudogene 1																																																																											
+8854	ALDH1A2	aldehyde dehydrogenase 1 family member A2																																																																											
+197	AHSG	alpha 2-HS glycoprotein																																																																											
+642517	AGAP9	ArfGAP with GTPase domain, ankyrin repeat and PH domain 9																																																																											
+55902	ACSS2	acyl-CoA synthetase short chain family member 2																																																																											

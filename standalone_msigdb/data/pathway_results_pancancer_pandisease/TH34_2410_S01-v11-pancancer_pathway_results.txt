@@ -1,0 +1,101 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	8
+# genesets in collections:	1379
+# genes in comparison (n):	78
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	16	0.01556	1.648e-11	2.273e-8
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	10	0.01328	6.066e-7	4.183e-4
+NABA_ECM_REGULATORS	238	Genes encoding enzymes and their regulators involved in the remodeling of the extracellular matrix	6	0.02521	3.407e-6	0.001566
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	6	0.02182	7.782e-6	0.002683
+KEGG_VASCULAR_SMOOTH_MUSCLE_CONTRACTION	115	Vascular smooth muscle contraction	4	0.03478	4.601e-5	0.01057
+REACTOME_NCAM1_INTERACTIONS	39	Genes involved in NCAM1 interactions	3	0.07692	4.113e-5	0.01057
+NABA_COLLAGENS	44	Genes encoding collagen proteins	3	0.06818	5.924e-5	0.01167
+REACTOME_NCAM_SIGNALING_FOR_NEURITE_OUT_GROWTH	64	Genes involved in NCAM signaling for neurite out-growth	3	0.04688	1.819e-4	0.03135
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_REGULATORS	NABA_CORE_MATRISOME	KEGG_VASCULAR_SMOOTH_MUSCLE_CONTRACTION	REACTOME_NCAM1_INTERACTIONS	NABA_COLLAGENS	REACTOME_NCAM_SIGNALING_FOR_NEURITE_OUT_GROWTH
+25891	PAMR1	peptidase domain containing associated with muscle regeneration 1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_REGULATORS					
+64175	P3H1	prolyl 3-hydroxylase 1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_REGULATORS					
+8692	HYAL2	hyaluronidase 2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_REGULATORS					
+284018	C17orf58	chromosome 17 open reading frame 58	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_REGULATORS					
+171019	ADAMTS19	ADAM metallopeptidase with thrombospondin type 1 motif 19	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_REGULATORS					
+80332	ADAM33	ADAM metallopeptidase domain 33	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_REGULATORS					
+7481	WNT11	Wnt family member 11	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED						
+6422	SFRP1	secreted frizzled related protein 1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED						
+9244	CRLF1	cytokine receptor like factor 1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED						
+6320	CLEC11A	C-type lectin domain containing 11A	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED						
+1280	COL2A1	collagen type II alpha 1 chain	NABA_MATRISOME			NABA_CORE_MATRISOME		REACTOME_NCAM1_INTERACTIONS	NABA_COLLAGENS	REACTOME_NCAM_SIGNALING_FOR_NEURITE_OUT_GROWTH
+85301	COL27A1	collagen type XXVII alpha 1 chain	NABA_MATRISOME			NABA_CORE_MATRISOME			NABA_COLLAGENS	
+136227	COL26A1	collagen type XXVI alpha 1 chain	NABA_MATRISOME			NABA_CORE_MATRISOME			NABA_COLLAGENS	
+7148	TNXB	tenascin XB	NABA_MATRISOME			NABA_CORE_MATRISOME				
+10319	LAMC3	laminin subunit gamma 3	NABA_MATRISOME			NABA_CORE_MATRISOME				
+2621	GAS6	growth arrest specific 6	NABA_MATRISOME			NABA_CORE_MATRISOME				
+94274	PPP1R14A	protein phosphatase 1 regulatory inhibitor subunit 14A					KEGG_VASCULAR_SMOOTH_MUSCLE_CONTRACTION			
+4882	NPR2	natriuretic peptide receptor 2					KEGG_VASCULAR_SMOOTH_MUSCLE_CONTRACTION			
+196883	ADCY4	adenylate cyclase 4					KEGG_VASCULAR_SMOOTH_MUSCLE_CONTRACTION			
+72	ACTG2	actin, gamma 2, smooth muscle, enteric					KEGG_VASCULAR_SMOOTH_MUSCLE_CONTRACTION			
+2675	GFRA2	GDNF family receptor alpha 2						REACTOME_NCAM1_INTERACTIONS		REACTOME_NCAM_SIGNALING_FOR_NEURITE_OUT_GROWTH
+8912	CACNA1H	calcium voltage-gated channel subunit alpha1 H						REACTOME_NCAM1_INTERACTIONS		REACTOME_NCAM_SIGNALING_FOR_NEURITE_OUT_GROWTH
+9658	ZNF516	zinc finger protein 516								
+170261	ZCCHC12	zinc finger CCHC-type containing 12								
+7490	WT1	Wilms tumor 1								
+7425	VGF	VGF nerve growth factor inducible								
+117581	TWIST2	twist family bHLH transcription factor 2								
+81786	TRIM7	tripartite motif containing 7								
+92162	TMEM88	transmembrane protein 88								
+25789	TMEM59L	transmembrane protein 59 like								
+124842	TMEM132E	transmembrane protein 132E								
+144404	TMEM120B	transmembrane protein 120B								
+55244	SLC47A1	solute carrier family 47 member 1								
+6580	SLC22A1	solute carrier family 22 member 1								
+56475	RPRM	reprimo, TP53 dependent G2 arrest mediator homolog								
+64221	ROBO3	roundabout guidance receptor 3								
+65997	RASL11B	RAS like family 11 member B								
+5745	PTH1R	parathyroid hormone 1 receptor								
+5662	PSD	pleckstrin and Sec7 domain containing								
+5241	PGR	progesterone receptor								
+57595	PDZD4	PDZ domain containing 4								
+9506	PAGE4	PAGE family member 4								
+116039	OSR2	odd-skipped related transciption factor 2								
+4884	NPTX1	neuronal pentraxin 1								
+150365	MEI1	meiotic double-stranded break formation protein 1								
+10234	LRRC17	leucine rich repeat containing 17								
+158062	LCN6	lipocalin 6								
+9424	KCNK6	potassium two pore domain channel subfamily K member 6								
+51015	ISOC1	isochorismatase domain containing 1								
+84966	IGSF21	immunoglobin superfamily member 21								
+3235	HOXD9	homeobox D9								
+3233	HOXD4	homeobox D4								
+3232	HOXD3	homeobox D3								
+3237	HOXD11	homeobox D11								
+3236	HOXD10	homeobox D10								
+3207	HOXA11	homeobox A11								
+9464	HAND2	heart and neural crest derivatives expressed 2								
+NA	FBXO18	NA								
+2099	ESR1	estrogen receptor 1								
+196047	EMX2OS	EMX2 opposite strand/antisense RNA								
+2018	EMX2	empty spiracles homeobox 2								
+1949	EFNB3	ephrin B3								
+133283	EEF1A1P13	eukaryotic translation elongation factor 1 alpha 1 pseudogene 13								
+9427	ECEL1	endothelin converting enzyme like 1								
+1804	DPP6	dipeptidyl peptidase like 6								
+22943	DKK1	dickkopf WNT signaling pathway inhibitor 1								
+1674	DES	desmin								
+27147	DENND2A	DENN domain containing 2A								
+NA	CXorf36	NA								
+1416	CRYBB2P1	crystallin beta B2 pseudogene 1								
+1394	CRHR1	corticotropin releasing hormone receptor 1								
+1264	CNN1	calponin 1								
+4435	CITED1	Cbp/p300 interacting transactivator with Glu/Asp rich carboxy-terminal domain 1								
+64377	CHST8	carbohydrate sulfotransferase 8								
+1028	CDKN1C	cyclin dependent kinase inhibitor 1C								
+482	ATP1B2	ATPase Na+/K+ transporting subunit beta 2								
+138649	ANKRD19P	ankyrin repeat domain 19, pseudogene								
+152	ADRA2C	adrenoceptor alpha 2C								

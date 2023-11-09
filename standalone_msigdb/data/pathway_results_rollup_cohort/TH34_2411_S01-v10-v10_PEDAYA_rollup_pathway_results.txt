@@ -1,0 +1,131 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	28
+# genesets in collections:	1379
+# genes in comparison (n):	88
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	19	0.06909	1.901e-24	2.621e-21
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	26	0.02529	3.5379999999999996e-22	2.44e-19
+HALLMARK_MYOGENESIS	200	Genes involved in development of skeletal muscle (myogenesis).	15	0.075	5.3600000000000004e-20	2.464e-17
+REACTOME_STRIATED_MUSCLE_CONTRACTION	27	Genes involved in Striated Muscle Contraction	8	0.2963	2.81e-16	9.687e-14
+REACTOME_MUSCLE_CONTRACTION	48	Genes involved in Muscle contraction	8	0.1667	4.623e-14	1.275e-11
+NABA_ECM_GLYCOPROTEINS	196	Genes encoding structural ECM glycoproteins	10	0.05102	5.344e-12	1.228e-9
+NABA_PROTEOGLYCANS	35	Genes encoding proteoglycans	6	0.1714	6.434e-11	1.267e-8
+KEGG_ECM_RECEPTOR_INTERACTION	84	ECM-receptor interaction	5	0.059520000000000003	6.288e-7	1.084e-4
+REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION	87	Genes involved in Extracellular matrix organization	5	0.05747	7.492e-7	1.148e-4
+REACTOME_KERATAN_SULFATE_DEGRADATION	11	Genes involved in Keratan sulfate degradation	3	0.2727	1.107e-6	1.527e-4
+PID_SYNDECAN_1_PATHWAY	46	Syndecan-1-mediated signaling events	4	0.08696	1.926e-6	2.414e-4
+HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	200	Genes defining epithelial-mesenchymal transition, as in wound healing, fibrosis and metastasis.	6	0.03	2.538e-6	2.771e-4
+KEGG_FOCAL_ADHESION	201	Focal adhesion	6	0.02985	2.612e-6	2.771e-4
+PID_RB_1PATHWAY	65	Regulation of retinoblastoma protein	4	0.06154	7.771e-6	7.655e-4
+REACTOME_KERATAN_SULFATE_BIOSYNTHESIS	26	Genes involved in Keratan sulfate biosynthesis	3	0.1154	1.709e-5	0.001571
+KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	85	Hypertrophic cardiomyopathy (HCM)	4	0.04706	2.257e-5	0.001946
+REACTOME_KERATAN_SULFATE_KERATIN_METABOLISM	30	Genes involved in Keratan sulfate/keratin metabolism	3	0.1	2.653e-5	0.002152
+KEGG_DILATED_CARDIOMYOPATHY	92	Dilated cardiomyopathy	4	0.04348	3.083e-5	0.002362
+KEGG_BLADDER_CANCER	42	Bladder cancer	3	0.07143	7.378e-5	0.005087
+PID_UPA_UPAR_PATHWAY	42	Urokinase-type plasminogen activator (uPA) and uPAR-mediated signaling	3	0.07143	7.378e-5	0.005087
+NABA_COLLAGENS	44	Genes encoding collagen proteins	3	0.06818	8.489e-5	0.005574
+REACTOME_COLLAGEN_FORMATION	58	Genes involved in Collagen formation	3	0.05172	1.94e-4	0.01216
+SA_G1_AND_S_PHASES	15	Cdk2, 4, and 6 bind cyclin D in G1, while cdk2/cyclin E promotes the G1/S transition.	2	0.1333	3.745e-4	0.02245
+BIOCARTA_P53_PATHWAY	16	p53 Signaling Pathway	2	0.125	4.275e-4	0.02358
+PID_AVB3_INTEGRIN_PATHWAY	75	Integrins in angiogenesis	3	0.04	4.146e-4	0.02358
+KEGG_CARDIAC_MUSCLE_CONTRACTION	80	Cardiac muscle contraction	3	0.0375	5.01e-4	0.02657
+HALLMARK_APICAL_JUNCTION	200	Genes encoding components of apical junction complex.	4	0.02	6.101e-4	0.03059
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	7	0.009296	6.211e-4	0.03059
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_CORE_MATRISOME	NABA_MATRISOME	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION	NABA_ECM_GLYCOPROTEINS	NABA_PROTEOGLYCANS	KEGG_ECM_RECEPTOR_INTERACTION	REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION	REACTOME_KERATAN_SULFATE_DEGRADATION	PID_SYNDECAN_1_PATHWAY	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	KEGG_FOCAL_ADHESION	PID_RB_1PATHWAY	REACTOME_KERATAN_SULFATE_BIOSYNTHESIS	KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	REACTOME_KERATAN_SULFATE_KERATIN_METABOLISM	KEGG_DILATED_CARDIOMYOPATHY	KEGG_BLADDER_CANCER	PID_UPA_UPAR_PATHWAY	NABA_COLLAGENS	REACTOME_COLLAGEN_FORMATION	SA_G1_AND_S_PHASES	BIOCARTA_P53_PATHWAY	PID_AVB3_INTEGRIN_PATHWAY	KEGG_CARDIAC_MUSCLE_CONTRACTION	HALLMARK_APICAL_JUNCTION	NABA_MATRISOME_ASSOCIATED
+1311	COMP	cartilage oligomeric matrix protein	NABA_CORE_MATRISOME	NABA_MATRISOME				NABA_ECM_GLYCOPROTEINS		KEGG_ECM_RECEPTOR_INTERACTION				HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	KEGG_FOCAL_ADHESION															
+7060	THBS4	thrombospondin 4	NABA_CORE_MATRISOME	NABA_MATRISOME				NABA_ECM_GLYCOPROTEINS		KEGG_ECM_RECEPTOR_INTERACTION					KEGG_FOCAL_ADHESION															
+3381	IBSP	integrin binding sialoprotein	NABA_CORE_MATRISOME	NABA_MATRISOME				NABA_ECM_GLYCOPROTEINS		KEGG_ECM_RECEPTOR_INTERACTION					KEGG_FOCAL_ADHESION															
+8076	MFAP5	microfibril associated protein 5	NABA_CORE_MATRISOME	NABA_MATRISOME				NABA_ECM_GLYCOPROTEINS						HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION																
+632	BGLAP	bone gamma-carboxyglutamate protein	NABA_CORE_MATRISOME	NABA_MATRISOME				NABA_ECM_GLYCOPROTEINS								PID_RB_1PATHWAY														
+NA	WISP2	NA	NABA_CORE_MATRISOME	NABA_MATRISOME				NABA_ECM_GLYCOPROTEINS																						
+27286	SRPX2	sushi repeat containing protein X-linked 2	NABA_CORE_MATRISOME	NABA_MATRISOME				NABA_ECM_GLYCOPROTEINS																						
+84624	FNDC1	fibronectin type III domain containing 1	NABA_CORE_MATRISOME	NABA_MATRISOME				NABA_ECM_GLYCOPROTEINS																						
+1805	DPT	dermatopontin	NABA_CORE_MATRISOME	NABA_MATRISOME				NABA_ECM_GLYCOPROTEINS																						
+148113	CILP2	cartilage intermediate layer protein 2	NABA_CORE_MATRISOME	NABA_MATRISOME				NABA_ECM_GLYCOPROTEINS																						
+1101	CHAD	chondroadherin	NABA_CORE_MATRISOME	NABA_MATRISOME					NABA_PROTEOGLYCANS	KEGG_ECM_RECEPTOR_INTERACTION					KEGG_FOCAL_ADHESION															
+4958	OMD	osteomodulin	NABA_CORE_MATRISOME	NABA_MATRISOME					NABA_PROTEOGLYCANS			REACTOME_KERATAN_SULFATE_DEGRADATION					REACTOME_KERATAN_SULFATE_BIOSYNTHESIS		REACTOME_KERATAN_SULFATE_KERATIN_METABOLISM											
+4969	OGN	osteoglycin	NABA_CORE_MATRISOME	NABA_MATRISOME					NABA_PROTEOGLYCANS			REACTOME_KERATAN_SULFATE_DEGRADATION					REACTOME_KERATAN_SULFATE_BIOSYNTHESIS		REACTOME_KERATAN_SULFATE_KERATIN_METABOLISM											
+176	ACAN	aggrecan	NABA_CORE_MATRISOME	NABA_MATRISOME					NABA_PROTEOGLYCANS			REACTOME_KERATAN_SULFATE_DEGRADATION					REACTOME_KERATAN_SULFATE_BIOSYNTHESIS		REACTOME_KERATAN_SULFATE_KERATIN_METABOLISM											
+79883	PODNL1	podocan like 1	NABA_CORE_MATRISOME	NABA_MATRISOME					NABA_PROTEOGLYCANS																					
+54829	ASPN	asporin	NABA_CORE_MATRISOME	NABA_MATRISOME					NABA_PROTEOGLYCANS																					
+1296	COL8A2	collagen type VIII alpha 2 chain	NABA_CORE_MATRISOME	NABA_MATRISOME							REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION		PID_SYNDECAN_1_PATHWAY	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION									NABA_COLLAGENS	REACTOME_COLLAGEN_FORMATION			PID_AVB3_INTEGRIN_PATHWAY			
+1305	COL13A1	collagen type XIII alpha 1 chain	NABA_CORE_MATRISOME	NABA_MATRISOME							REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION		PID_SYNDECAN_1_PATHWAY										NABA_COLLAGENS	REACTOME_COLLAGEN_FORMATION			PID_AVB3_INTEGRIN_PATHWAY			
+1300	COL10A1	collagen type X alpha 1 chain	NABA_CORE_MATRISOME	NABA_MATRISOME							REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION		PID_SYNDECAN_1_PATHWAY										NABA_COLLAGENS	REACTOME_COLLAGEN_FORMATION			PID_AVB3_INTEGRIN_PATHWAY			
+4318	MMP9	matrix metallopeptidase 9		NABA_MATRISOME							REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION		PID_SYNDECAN_1_PATHWAY								KEGG_BLADDER_CANCER	PID_UPA_UPAR_PATHWAY							HALLMARK_APICAL_JUNCTION	NABA_MATRISOME_ASSOCIATED
+4322	MMP13	matrix metallopeptidase 13		NABA_MATRISOME							REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION											PID_UPA_UPAR_PATHWAY								NABA_MATRISOME_ASSOCIATED
+6424	SFRP4	secreted frizzled related protein 4		NABA_MATRISOME										HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION																NABA_MATRISOME_ASSOCIATED
+9244	CRLF1	cytokine receptor like factor 1		NABA_MATRISOME										HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION																NABA_MATRISOME_ASSOCIATED
+283208	P4HA3	prolyl 4-hydroxylase subunit alpha 3		NABA_MATRISOME																										NABA_MATRISOME_ASSOCIATED
+1513	CTSK	cathepsin K		NABA_MATRISOME																										NABA_MATRISOME_ASSOCIATED
+6357	CCL13	C-C motif chemokine ligand 13		NABA_MATRISOME																										NABA_MATRISOME_ASSOCIATED
+7134	TNNC1	troponin C1, slow skeletal and cardiac type			HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION											KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM		KEGG_DILATED_CARDIOMYOPATHY								KEGG_CARDIAC_MUSCLE_CONTRACTION		
+1674	DES	desmin			HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION											KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM		KEGG_DILATED_CARDIOMYOPATHY										
+7136	TNNI2	troponin I2, fast skeletal type			HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION																							
+7125	TNNC2	troponin C2, fast skeletal type			HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION																							
+8557	TCAP	titin-cap			HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION																							
+4632	MYL1	myosin light chain 1			HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION																							
+29895	MYLPF	myosin light chain, phosphorylatable, fast skeletal muscle			HALLMARK_MYOGENESIS										KEGG_FOCAL_ADHESION															
+1158	CKM	creatine kinase, M-type			HALLMARK_MYOGENESIS											PID_RB_1PATHWAY														
+70	ACTC1	actin, alpha, cardiac muscle 1			HALLMARK_MYOGENESIS													KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM		KEGG_DILATED_CARDIOMYOPATHY								KEGG_CARDIAC_MUSCLE_CONTRACTION	HALLMARK_APICAL_JUNCTION	
+1339	COX6A2	cytochrome c oxidase subunit 6A2			HALLMARK_MYOGENESIS																							KEGG_CARDIAC_MUSCLE_CONTRACTION		
+58	ACTA1	actin, alpha 1, skeletal muscle			HALLMARK_MYOGENESIS																								HALLMARK_APICAL_JUNCTION	
+7140	TNNT3	troponin T3, fast skeletal type			HALLMARK_MYOGENESIS																									
+79629	OCEL1	occludin/ELL domain containing 1			HALLMARK_MYOGENESIS																									
+4619	MYH1	myosin heavy chain 1			HALLMARK_MYOGENESIS																									
+4151	MB	myoglobin			HALLMARK_MYOGENESIS																									
+4703	NEB	nebulin				REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION																							
+4606	MYBPC2	myosin binding protein C, fast type				REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION																							
+22801	ITGA11	integrin subunit alpha 11								KEGG_ECM_RECEPTOR_INTERACTION					KEGG_FOCAL_ADHESION			KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM		KEGG_DILATED_CARDIOMYOPATHY										
+131578	LRRC15	leucine rich repeat containing 15												HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION																
+4193	MDM2	MDM2 proto-oncogene														PID_RB_1PATHWAY					KEGG_BLADDER_CANCER				SA_G1_AND_S_PHASES	BIOCARTA_P53_PATHWAY				
+1019	CDK4	cyclin dependent kinase 4														PID_RB_1PATHWAY					KEGG_BLADDER_CANCER				SA_G1_AND_S_PHASES	BIOCARTA_P53_PATHWAY				
+9622	KLK4	kallikrein related peptidase 4																				PID_UPA_UPAR_PATHWAY								
+1013	CDH15	cadherin 15																											HALLMARK_APICAL_JUNCTION	
+8089	YEATS4	YEATS domain containing 4																												
+NA	XRCC6BP1	NA																												
+6302	TSPAN31	tetraspanin 31																												
+10102	TSFM	Ts translation elongation factor, mitochondrial																												
+64499	TPSB2	tryptase beta 2 (gene/pseudogene)																												
+285386	TPRG1	tumor protein p63 regulated 1																												
+8771	TNFRSF6B	TNF receptor superfamily member 6b																												
+246329	STAC3	SH3 and cysteine rich domain 3																												
+284297	SSC5D	scavenger receptor cysteine rich family member with 5 domains																												
+121340	SP7	Sp7 transcription factor																												
+692205	SNORD89	small nucleolar RNA, C/D box 89																												
+10736	SIX2	SIX homeobox 2																												
+57333	RCN3	reticulocalbin 3																												
+5950	RBP4	retinol binding protein 4																												
+51450	PRRX2	paired related homeobox 2																												
+5322	PLA2G5	phospholipase A2 group V																												
+5157	PDGFRL	platelet derived growth factor receptor like																												
+130497	OSR1	odd-skipped related transcription factor 1																												
+10956	OS9	OS9, endoplasmic reticulum lectin																												
+389125	MUSTN1	musculoskeletal, embryonic nuclear protein 1																												
+NA	METTL21B	NA																												
+4234	METTL1	methyltransferase like 1																												
+92979	MARCH9	membrane associated ring-CH-type finger 9																												
+10234	LRRC17	leucine rich repeat containing 17																												
+27345	KCNMB4	potassium calcium-activated channel subfamily M regulatory beta subunit 4																												
+3754	KCNF1	potassium voltage-gated channel modifier subfamily F member 1																												
+9358	ITGBL1	integrin subunit beta like 1																												
+91156	IGFN1	immunoglobulin-like and fibronectin type III domain containing 1																												
+2307	FOXS1	forkhead box S1																												
+1749	DLX5	distal-less homeobox 5																												
+1747	DLX3	distal-less homeobox 3																												
+1594	CYP27B1	cytochrome P450 family 27 subfamily B member 1																												
+10106	CTDSP2	CTD small phosphatase 2																												
+4848	CNOT2	CCR4-NOT transcription complex subunit 2																												
+10576	CCT2	chaperonin containing TCP1 subunit 2																												
+149954	BPIFB4	BPI fold containing family B member 4																												
+2583	B4GALNT1	beta-1,4-N-acetyl-galactosaminyltransferase 1																												
+10677	AVIL	advillin																												
+54	ACP5	acid phosphatase 5, tartrate resistant																												

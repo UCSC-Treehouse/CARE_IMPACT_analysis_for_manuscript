@@ -1,0 +1,184 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	29
+# genesets in collections:	1379
+# genes in comparison (n):	140
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	30	0.02918	6.272e-21	8.649e-18
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	23	0.03054	1.336e-16	9.21e-14
+NABA_ECM_AFFILIATED	171	Genes encoding proteins affiliated structurally or functionally to extracellular matrix proteins	13	0.07602	7.862e-15	3.614e-12
+HALLMARK_ESTROGEN_RESPONSE_LATE	200	Genes defining late response to estrogen.	7	0.035	2.932e-6	5.775e-4
+HALLMARK_MYOGENESIS	200	Genes involved in development of skeletal muscle (myogenesis).	7	0.035	2.932e-6	5.775e-4
+HALLMARK_INFLAMMATORY_RESPONSE	200	Genes defining inflammatory response.	7	0.035	2.932e-6	5.775e-4
+NABA_ECM_GLYCOPROTEINS	196	Genes encoding structural ECM glycoproteins	7	0.03571	2.565e-6	5.775e-4
+PID_INTEGRIN4_PATHWAY	11	Alpha6 beta4 integrin-ligand interactions	3	0.2727	4.485e-6	6.872e-4
+REACTOME_CELL_JUNCTION_ORGANIZATION	78	Genes involved in Cell junction organization	5	0.0641	4.311e-6	6.872e-4
+KEGG_DILATED_CARDIOMYOPATHY	92	Dilated cardiomyopathy	5	0.05435	9.706e-6	0.001277
+PID_HNF3A_PATHWAY	44	FOXA1 transcription factor network	4	0.09091	1.019e-5	0.001277
+PID_A6B1_A6B4_INTEGRIN_PATHWAY	46	a6b1 and a6b4 Integrin signaling	4	0.08696	1.219e-5	0.001401
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	7	0.02545	2.321e-5	0.002462
+HALLMARK_ESTROGEN_RESPONSE_EARLY	200	Genes defining early response to estrogen.	6	0.03	3.644e-5	0.00335
+REACTOME_CELL_CELL_COMMUNICATION	120	Genes involved in Cell-Cell communication	5	0.04167	3.513e-5	0.00335
+NABA_SECRETED_FACTORS	344	Genes encoding secreted soluble factors	7	0.02035	9.498e-5	0.008186
+KEGG_ECM_RECEPTOR_INTERACTION	84	ECM-receptor interaction	4	0.04762	1.318e-4	0.01057
+KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	85	Hypertrophic cardiomyopathy (HCM)	4	0.04706	1.379e-4	0.01057
+NABA_BASEMENT_MEMBRANES	40	Genes encoding structural components of basement membranes	3	0.075	2.517e-4	0.01827
+HALLMARK_APICAL_JUNCTION	200	Genes encoding components of apical junction complex.	5	0.025	3.848e-4	0.02468
+HALLMARK_IL2_STAT5_SIGNALING	200	Genes up-regulated by STAT5 in response to IL2 stimulation.	5	0.025	3.848e-4	0.02468
+KEGG_FOCAL_ADHESION	201	Focal adhesion	5	0.02488	3.937e-4	0.02468
+REACTOME_MUSCLE_CONTRACTION	48	Genes involved in Muscle contraction	3	0.0625	4.329e-4	0.02595
+KEGG_TASTE_TRANSDUCTION	52	Taste transduction	3	0.05769	5.482e-4	0.03024
+KEGG_PATHWAYS_IN_CANCER	328	Pathways in cancer	6	0.01829	5.317e-4	0.03024
+REACTOME_CELL_CELL_JUNCTION_ORGANIZATION	56	Genes involved in Cell-cell junction organization	3	0.05357	6.815e-4	0.03615
+KEGG_CELL_ADHESION_MOLECULES_CAMS	134	Cell adhesion molecules (CAMs)	4	0.02985	7.797e-4	0.0384
+KEGG_TIGHT_JUNCTION	134	Tight junction	4	0.02985	7.797e-4	0.0384
+REACTOME_REGULATION_OF_COMPLEMENT_CASCADE	14	Genes involved in Regulation of Complement cascade	2	0.1429	8.186e-4	0.03893
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED	HALLMARK_ESTROGEN_RESPONSE_LATE	HALLMARK_MYOGENESIS	HALLMARK_INFLAMMATORY_RESPONSE	NABA_ECM_GLYCOPROTEINS	PID_INTEGRIN4_PATHWAY	REACTOME_CELL_JUNCTION_ORGANIZATION	KEGG_DILATED_CARDIOMYOPATHY	PID_HNF3A_PATHWAY	PID_A6B1_A6B4_INTEGRIN_PATHWAY	NABA_CORE_MATRISOME	HALLMARK_ESTROGEN_RESPONSE_EARLY	REACTOME_CELL_CELL_COMMUNICATION	NABA_SECRETED_FACTORS	KEGG_ECM_RECEPTOR_INTERACTION	KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	NABA_BASEMENT_MEMBRANES	HALLMARK_APICAL_JUNCTION	HALLMARK_IL2_STAT5_SIGNALING	KEGG_FOCAL_ADHESION	REACTOME_MUSCLE_CONTRACTION	KEGG_TASTE_TRANSDUCTION	KEGG_PATHWAYS_IN_CANCER	REACTOME_CELL_CELL_JUNCTION_ORGANIZATION	KEGG_CELL_ADHESION_MOLECULES_CAMS	KEGG_TIGHT_JUNCTION	REACTOME_REGULATION_OF_COMPLEMENT_CASCADE
+6441	SFTPD	surfactant protein D	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED								PID_HNF3A_PATHWAY																		
+729238	SFTPA2	surfactant protein A2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED								PID_HNF3A_PATHWAY																		
+653509	SFTPA1	surfactant protein A1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED								PID_HNF3A_PATHWAY																		
+4582	MUC1	mucin 1, cell surface associated	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED											HALLMARK_ESTROGEN_RESPONSE_EARLY							HALLMARK_IL2_STAT5_SIGNALING								
+6440	SFTPC	surfactant protein C	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED																										
+6439	SFTPB	surfactant protein B	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED																										
+253970	SFTA3	surfactant associated 3	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED																										
+389376	SFTA2	surfactant associated 2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED																										
+142683	ITLN2	intelectin 2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED																										
+8547	FCN3	ficolin 3	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED																										
+728113	ANXA8L1	annexin A8 like 1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED																										
+653145	ANXA8	annexin A8	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED																										
+306	ANXA3	annexin A3	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED																										
+6768	ST14	suppression of tumorigenicity 14	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		HALLMARK_ESTROGEN_RESPONSE_LATE																									
+8743	TNFSF10	TNF superfamily member 10	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED				HALLMARK_INFLAMMATORY_RESPONSE										NABA_SECRETED_FACTORS					HALLMARK_IL2_STAT5_SIGNALING								
+NA	FIGF	NA	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED														NABA_SECRETED_FACTORS						KEGG_FOCAL_ADHESION			KEGG_PATHWAYS_IN_CANCER				
+2252	FGF7	fibroblast growth factor 7	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED														NABA_SECRETED_FACTORS									KEGG_PATHWAYS_IN_CANCER				
+11197	WIF1	WNT inhibitory factor 1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED														NABA_SECRETED_FACTORS													
+57402	S100A14	S100 calcium binding protein A14	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED														NABA_SECRETED_FACTORS													
+6366	CCL21	C-C motif chemokine ligand 21	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED														NABA_SECRETED_FACTORS													
+6363	CCL19	C-C motif chemokine ligand 19	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED														NABA_SECRETED_FACTORS													
+6590	SLPI	secretory leukocyte peptidase inhibitor	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED																											
+3373	HYAL1	hyaluronidase 1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED																											
+3918	LAMC2	laminin subunit gamma 2	NABA_MATRISOME			HALLMARK_ESTROGEN_RESPONSE_LATE			NABA_ECM_GLYCOPROTEINS	PID_INTEGRIN4_PATHWAY	REACTOME_CELL_JUNCTION_ORGANIZATION			PID_A6B1_A6B4_INTEGRIN_PATHWAY	NABA_CORE_MATRISOME		REACTOME_CELL_CELL_COMMUNICATION		KEGG_ECM_RECEPTOR_INTERACTION		NABA_BASEMENT_MEMBRANES	HALLMARK_APICAL_JUNCTION		KEGG_FOCAL_ADHESION			KEGG_PATHWAYS_IN_CANCER				
+3908	LAMA2	laminin subunit alpha 2	NABA_MATRISOME				HALLMARK_MYOGENESIS		NABA_ECM_GLYCOPROTEINS	PID_INTEGRIN4_PATHWAY		KEGG_DILATED_CARDIOMYOPATHY		PID_A6B1_A6B4_INTEGRIN_PATHWAY	NABA_CORE_MATRISOME				KEGG_ECM_RECEPTOR_INTERACTION	KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	NABA_BASEMENT_MEMBRANES			KEGG_FOCAL_ADHESION			KEGG_PATHWAYS_IN_CANCER				
+3909	LAMA3	laminin subunit alpha 3	NABA_MATRISOME						NABA_ECM_GLYCOPROTEINS	PID_INTEGRIN4_PATHWAY	REACTOME_CELL_JUNCTION_ORGANIZATION			PID_A6B1_A6B4_INTEGRIN_PATHWAY	NABA_CORE_MATRISOME		REACTOME_CELL_CELL_COMMUNICATION		KEGG_ECM_RECEPTOR_INTERACTION		NABA_BASEMENT_MEMBRANES	HALLMARK_APICAL_JUNCTION		KEGG_FOCAL_ADHESION			KEGG_PATHWAYS_IN_CANCER				
+79625	NDNF	neuron derived neurotrophic factor	NABA_MATRISOME						NABA_ECM_GLYCOPROTEINS						NABA_CORE_MATRISOME																
+285313	IGSF10	immunoglobulin superfamily member 10	NABA_MATRISOME						NABA_ECM_GLYCOPROTEINS						NABA_CORE_MATRISOME																
+1805	DPT	dermatopontin	NABA_MATRISOME						NABA_ECM_GLYCOPROTEINS						NABA_CORE_MATRISOME																
+25890	ABI3BP	ABI family member 3 binding protein	NABA_MATRISOME						NABA_ECM_GLYCOPROTEINS						NABA_CORE_MATRISOME																
+7134	TNNC1	troponin C1, slow skeletal and cardiac type				HALLMARK_ESTROGEN_RESPONSE_LATE	HALLMARK_MYOGENESIS					KEGG_DILATED_CARDIOMYOPATHY								KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM					REACTOME_MUSCLE_CONTRACTION						
+999	CDH1	cadherin 1				HALLMARK_ESTROGEN_RESPONSE_LATE					REACTOME_CELL_JUNCTION_ORGANIZATION			PID_A6B1_A6B4_INTEGRIN_PATHWAY			REACTOME_CELL_CELL_COMMUNICATION					HALLMARK_APICAL_JUNCTION					KEGG_PATHWAYS_IN_CANCER	REACTOME_CELL_CELL_JUNCTION_ORGANIZATION	KEGG_CELL_ADHESION_MOLECULES_CAMS		
+6337	SCNN1A	sodium channel epithelial 1 alpha subunit				HALLMARK_ESTROGEN_RESPONSE_LATE										HALLMARK_ESTROGEN_RESPONSE_EARLY										KEGG_TASTE_TRANSDUCTION					
+3880	KRT19	keratin 19				HALLMARK_ESTROGEN_RESPONSE_LATE										HALLMARK_ESTROGEN_RESPONSE_EARLY															
+11012	KLK11	kallikrein related peptidase 11				HALLMARK_ESTROGEN_RESPONSE_LATE																									
+1674	DES	desmin					HALLMARK_MYOGENESIS					KEGG_DILATED_CARDIOMYOPATHY								KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM					REACTOME_MUSCLE_CONTRACTION						
+4629	MYH11	myosin heavy chain 11					HALLMARK_MYOGENESIS																		REACTOME_MUSCLE_CONTRACTION					KEGG_TIGHT_JUNCTION	
+7433	VIPR1	vasoactive intestinal peptide receptor 1					HALLMARK_MYOGENESIS																								
+688	KLF5	Kruppel like factor 5					HALLMARK_MYOGENESIS																								
+2702	GJA5	gap junction protein alpha 5					HALLMARK_MYOGENESIS																								
+1604	CD55	CD55 molecule (Cromer blood group)						HALLMARK_INFLAMMATORY_RESPONSE																							REACTOME_REGULATION_OF_COMPLEMENT_CASCADE
+4973	OLR1	oxidized low density lipoprotein receptor 1						HALLMARK_INFLAMMATORY_RESPONSE																							
+8685	MARCO	macrophage receptor with collagenous structure						HALLMARK_INFLAMMATORY_RESPONSE																							
+27074	LAMP3	lysosomal associated membrane protein 3						HALLMARK_INFLAMMATORY_RESPONSE																							
+1906	EDN1	endothelin 1						HALLMARK_INFLAMMATORY_RESPONSE																							
+9034	CCRL2	C-C motif chemokine receptor like 2						HALLMARK_INFLAMMATORY_RESPONSE																							
+1366	CLDN7	claudin 7									REACTOME_CELL_JUNCTION_ORGANIZATION					HALLMARK_ESTROGEN_RESPONSE_EARLY	REACTOME_CELL_CELL_COMMUNICATION					HALLMARK_APICAL_JUNCTION						REACTOME_CELL_CELL_JUNCTION_ORGANIZATION	KEGG_CELL_ADHESION_MOLECULES_CAMS	KEGG_TIGHT_JUNCTION	
+51208	CLDN18	claudin 18									REACTOME_CELL_JUNCTION_ORGANIZATION						REACTOME_CELL_CELL_COMMUNICATION					HALLMARK_APICAL_JUNCTION						REACTOME_CELL_CELL_JUNCTION_ORGANIZATION	KEGG_CELL_ADHESION_MOLECULES_CAMS	KEGG_TIGHT_JUNCTION	
+3694	ITGB6	integrin subunit beta 6										KEGG_DILATED_CARDIOMYOPATHY							KEGG_ECM_RECEPTOR_INTERACTION	KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM				KEGG_FOCAL_ADHESION							
+196883	ADCY4	adenylate cyclase 4										KEGG_DILATED_CARDIOMYOPATHY														KEGG_TASTE_TRANSDUCTION					
+7356	SCGB1A1	secretoglobin family 1A member 1											PID_HNF3A_PATHWAY																		
+79083	MLPH	melanophilin														HALLMARK_ESTROGEN_RESPONSE_EARLY															
+1999	ELF3	E74 like ETS transcription factor 3														HALLMARK_ESTROGEN_RESPONSE_EARLY															
+6403	SELP	selectin P																					HALLMARK_IL2_STAT5_SIGNALING						KEGG_CELL_ADHESION_MOLECULES_CAMS		
+9173	IL1RL1	interleukin 1 receptor like 1																					HALLMARK_IL2_STAT5_SIGNALING								
+177	AGER	advanced glycosylation end-product specific receptor																					HALLMARK_IL2_STAT5_SIGNALING								
+6338	SCNN1B	sodium channel epithelial 1 beta subunit																								KEGG_TASTE_TRANSDUCTION					
+57530	CGN	cingulin																												KEGG_TIGHT_JUNCTION	
+722	C4BPA	complement component 4 binding protein alpha																													REACTOME_REGULATION_OF_COMPLEMENT_CASCADE
+23584	VSIG2	V-set and immunoglobulin domain containing 2																													
+105375355	UPK3B	uroplakin 3B																													
+64499	TPSB2	tryptase beta 2 (gene/pseudogene)																													
+7113	TMPRSS2	transmembrane serine protease 2																													
+128218	TMEM125	transmembrane protein 125																													
+55273	TMEM100	transmembrane protein 100																													
+147798	TMC4	transmembrane channel like 4																													
+9496	TBX4	T-box 4																													
+4070	TACSTD2	tumor associated calcium signal transducer 2																													
+56241	SUSD2	sushi domain containing 2																													
+7341	SUMO1	small ubiquitin-like modifier 1																													
+677825	SNORA44	small nucleolar RNA, H/ACA box 44																													
+9342	SNAP29	synaptosome associated protein 29																													
+6578	SLCO2A1	solute carrier organic anion transporter family member 2A1																													
+6532	SLC6A4	solute carrier family 6 member 4																													
+10568	SLC34A2	solute carrier family 34 member 2																													
+207107	SFTA1P	surfactant associated 1, pseudogene																													
+117156	SCGB3A2	secretoglobin family 3A member 2																													
+8796	SCEL	sciellin																													
+219790	RTKN2	rhotekin 2																													
+54538	ROBO4	roundabout guidance receptor 4																													
+5939	RBMS2	RNA binding motif single stranded interacting protein 2																													
+7879	RAB7A	RAB7A, member RAS oncogene family																													
+57111	RAB25	RAB25, member RAS oncogene family																													
+5652	PRSS8	serine protease 8																													
+11272	PRR4	proline rich 4																													
+130271	PLEKHH2	pleckstrin homology, MyTH4 and FERM domain containing H2																													
+5319	PLA2G1B	phospholipase A2 group IB																													
+5284	PIGR	polymeric immunoglobulin receptor																													
+5225	PGC	progastricsin																													
+157310	PEBP4	phosphatidylethanolamine binding protein 4																													
+123803	NTAN1	N-terminal asparagine amidase																													
+84081	NSRP1	nuclear speckle splicing regulatory protein 1																													
+115677	NOSTRIN	nitric oxide synthase trafficking																													
+4836	NMT1	N-myristoyltransferase 1																													
+7080	NKX2-1	NK2 homeobox 1																													
+9476	NAPSA	napsin A aspartic peptidase																													
+100820829	MYZAP	myocardial zonula adherens protein																													
+219995	MS4A15	membrane spanning 4-domains A15																													
+256691	MAMDC2	MAM domain containing 2																													
+114569	MAL2	mal, T cell differentiation protein 2 (gene/pseudogene)																													
+4008	LMO7	LIM domain 7																													
+3855	KRT7	keratin 7																													
+11185	INMT	indolethylamine N-methyltransferase																													
+132014	IL17RE	interleukin 17 receptor E																													
+28919	IGKV2-30	immunoglobulin kappa variable 2-30																													
+646962	HRCT1	histidine rich carboxyl terminus 1																													
+3248	HPGD	15-hydroxyprostaglandin dehydrogenase																													
+9052	GPRC5A	G protein-coupled receptor class C group 5 member A																													
+200504	GKN2	gastrokine 2																													
+155038	GIMAP8	GTPase, IMAP family member 8																													
+55340	GIMAP5	GTPase, IMAP family member 5																													
+2635	GBP3	guanylate binding protein 3																													
+5349	FXYD3	FXYD domain containing ion transport regulator 3																													
+2348	FOLR1	folate receptor 1																													
+2327	FMO2	flavin containing monooxygenase 2																													
+2167	FABP4	fatty acid binding protein 4																													
+64787	EPS8L2	EPS8 like 2																													
+53905	DUOX1	dual oxidase 1																													
+1580	CYP4B1	cytochrome P450 family 4 subfamily B member 1																													
+284340	CXCL17	C-X-C motif chemokine ligand 17																													
+53405	CLIC5	chloride intracellular channel 5																													
+1066	CES1	carboxylesterase 1																													
+4680	CEACAM6	carcinoembryonic antigen related cell adhesion molecule 6																													
+55561	CDC42BPG	CDC42 binding protein kinase gamma																													
+762	CA4	carbonic anhydrase 4																													
+79098	C1orf116	chromosome 1 open reading frame 116																													
+64073	C19orf33	chromosome 19 open reading frame 33																													
+146556	C16orf89	chromosome 16 open reading frame 89																													
+153579	BTNL9	butyrophilin like 9																													
+9275	BCL7B	BCL7B, BAF complex component																													
+84239	ATP13A4	ATPase 13A4																													
+11016	ATF7	activating transcription factor 7																													
+22899	ARHGEF15	Rho guanine nucleotide exchange factor 15																													
+9912	ARHGAP44	Rho GTPase activating protein 44																													
+361	AQP4	aquaporin 4																													
+8639	AOC3	amine oxidase, copper containing 3																													
+147463	ANKRD29	ankyrin repeat domain 29																													
+27063	ANKRD1	ankyrin repeat domain 1																													
+125	ADH1B	alcohol dehydrogenase 1B (class I), beta polypeptide																													
+10351	ABCA8	ATP binding cassette subfamily A member 8																													

@@ -1,0 +1,153 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	15
+# genesets in collections:	1379
+# genes in comparison (n):	123
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+HALLMARK_MYOGENESIS	200	Genes involved in development of skeletal muscle (myogenesis).	17	0.085	7.172e-21	9.891e-18
+REACTOME_STRIATED_MUSCLE_CONTRACTION	27	Genes involved in Striated Muscle Contraction	7	0.2593	7.029e-13	4.846e-10
+REACTOME_MUSCLE_CONTRACTION	48	Genes involved in Muscle contraction	7	0.1458	5.563e-11	2.557e-8
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	17	0.01654	2.497e-9	8.607e-7
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	9	0.03273	6.265e-8	1.728e-5
+PID_RB_1PATHWAY	65	Regulation of retinoblastoma protein	5	0.07692	9.191e-7	2.113e-4
+NABA_ECM_GLYCOPROTEINS	196	Genes encoding structural ECM glycoproteins	6	0.03061	1.565e-5	0.003084
+KEGG_CHRONIC_MYELOID_LEUKEMIA	73	Chronic myeloid leukemia	4	0.05479	4.61e-5	0.007947
+KEGG_ECM_RECEPTOR_INTERACTION	84	ECM-receptor interaction	4	0.04762	7.989e-5	0.01224
+HALLMARK_APICAL_JUNCTION	200	Genes encoding components of apical junction complex.	5	0.025	2.116e-4	0.02298
+HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	200	Genes defining epithelial-mesenchymal transition, as in wound healing, fibrosis and metastasis.	5	0.025	2.116e-4	0.02298
+KEGG_FOCAL_ADHESION	201	Focal adhesion	5	0.02488	2.166e-4	0.02298
+KEGG_BLADDER_CANCER	42	Bladder cancer	3	0.07143	1.99e-4	0.02298
+KEGG_CELL_CYCLE	128	Cell cycle	4	0.03125	4.035e-4	0.03974
+PID_FGF_PATHWAY	55	FGF signaling pathway	3	0.05455	4.434e-4	0.04076
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION	NABA_MATRISOME	NABA_CORE_MATRISOME	PID_RB_1PATHWAY	NABA_ECM_GLYCOPROTEINS	KEGG_CHRONIC_MYELOID_LEUKEMIA	KEGG_ECM_RECEPTOR_INTERACTION	HALLMARK_APICAL_JUNCTION	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	KEGG_FOCAL_ADHESION	KEGG_BLADDER_CANCER	KEGG_CELL_CYCLE	PID_FGF_PATHWAY
+7138	TNNT1	troponin T1, slow skeletal type	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION												
+7136	TNNI2	troponin I2, fast skeletal type	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION												
+7125	TNNC2	troponin C2, fast skeletal type	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION												
+8557	TCAP	titin-cap	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION												
+4632	MYL1	myosin light chain 1	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION												
+7040	TGFB1	transforming growth factor beta 1	HALLMARK_MYOGENESIS			NABA_MATRISOME				KEGG_CHRONIC_MYELOID_LEUKEMIA			HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION			KEGG_CELL_CYCLE	
+1158	CKM	creatine kinase, M-type	HALLMARK_MYOGENESIS					PID_RB_1PATHWAY									
+70	ACTC1	actin, alpha, cardiac muscle 1	HALLMARK_MYOGENESIS									HALLMARK_APICAL_JUNCTION					
+58	ACTA1	actin, alpha 1, skeletal muscle	HALLMARK_MYOGENESIS									HALLMARK_APICAL_JUNCTION					
+29895	MYLPF	myosin light chain, phosphorylatable, fast skeletal muscle	HALLMARK_MYOGENESIS											KEGG_FOCAL_ADHESION			
+7140	TNNT3	troponin T3, fast skeletal type	HALLMARK_MYOGENESIS														
+25970	SH2B1	SH2B adaptor protein 1	HALLMARK_MYOGENESIS														
+79629	OCEL1	occludin/ELL domain containing 1	HALLMARK_MYOGENESIS														
+4619	MYH1	myosin heavy chain 1	HALLMARK_MYOGENESIS														
+4151	MB	myoglobin	HALLMARK_MYOGENESIS														
+2027	ENO3	enolase 3	HALLMARK_MYOGENESIS														
+1339	COX6A2	cytochrome c oxidase subunit 6A2	HALLMARK_MYOGENESIS														
+4703	NEB	nebulin		REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION												
+4606	MYBPC2	myosin binding protein C, fast type		REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION												
+632	BGLAP	bone gamma-carboxyglutamate protein				NABA_MATRISOME	NABA_CORE_MATRISOME	PID_RB_1PATHWAY	NABA_ECM_GLYCOPROTEINS								PID_FGF_PATHWAY
+1311	COMP	cartilage oligomeric matrix protein				NABA_MATRISOME	NABA_CORE_MATRISOME		NABA_ECM_GLYCOPROTEINS		KEGG_ECM_RECEPTOR_INTERACTION		HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	KEGG_FOCAL_ADHESION			
+7060	THBS4	thrombospondin 4				NABA_MATRISOME	NABA_CORE_MATRISOME		NABA_ECM_GLYCOPROTEINS		KEGG_ECM_RECEPTOR_INTERACTION			KEGG_FOCAL_ADHESION			
+3381	IBSP	integrin binding sialoprotein				NABA_MATRISOME	NABA_CORE_MATRISOME		NABA_ECM_GLYCOPROTEINS		KEGG_ECM_RECEPTOR_INTERACTION			KEGG_FOCAL_ADHESION			
+8076	MFAP5	microfibril associated protein 5				NABA_MATRISOME	NABA_CORE_MATRISOME		NABA_ECM_GLYCOPROTEINS				HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION				
+79174	CRELD2	cysteine rich with EGF like domains 2				NABA_MATRISOME	NABA_CORE_MATRISOME		NABA_ECM_GLYCOPROTEINS								
+1101	CHAD	chondroadherin				NABA_MATRISOME	NABA_CORE_MATRISOME				KEGG_ECM_RECEPTOR_INTERACTION			KEGG_FOCAL_ADHESION			
+1305	COL13A1	collagen type XIII alpha 1 chain				NABA_MATRISOME	NABA_CORE_MATRISOME										
+176	ACAN	aggrecan				NABA_MATRISOME	NABA_CORE_MATRISOME										
+9244	CRLF1	cytokine receptor like factor 1				NABA_MATRISOME							HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION				
+283208	P4HA3	prolyl 4-hydroxylase subunit alpha 3				NABA_MATRISOME											
+4326	MMP17	matrix metallopeptidase 17				NABA_MATRISOME											
+56975	FAM20C	FAM20C, golgi associated secretory pathway kinase				NABA_MATRISOME											
+6320	CLEC11A	C-type lectin domain containing 11A				NABA_MATRISOME											
+6357	CCL13	C-C motif chemokine ligand 13				NABA_MATRISOME											
+81794	ADAMTS10	ADAM metallopeptidase with thrombospondin type 1 motif 10				NABA_MATRISOME											
+4193	MDM2	MDM2 proto-oncogene						PID_RB_1PATHWAY		KEGG_CHRONIC_MYELOID_LEUKEMIA					KEGG_BLADDER_CANCER	KEGG_CELL_CYCLE	
+1019	CDK4	cyclin dependent kinase 4						PID_RB_1PATHWAY		KEGG_CHRONIC_MYELOID_LEUKEMIA					KEGG_BLADDER_CANCER	KEGG_CELL_CYCLE	
+860	RUNX2	runt related transcription factor 2						PID_RB_1PATHWAY									PID_FGF_PATHWAY
+5605	MAP2K2	mitogen-activated protein kinase kinase 2								KEGG_CHRONIC_MYELOID_LEUKEMIA					KEGG_BLADDER_CANCER		
+3636	INPPL1	inositol polyphosphate phosphatase like 1										HALLMARK_APICAL_JUNCTION					
+51148	CERCAM	cerebral endothelial cell adhesion molecule										HALLMARK_APICAL_JUNCTION					
+1013	CDH15	cadherin 15										HALLMARK_APICAL_JUNCTION					
+4487	MSX1	msh homeobox 1											HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION				
+1032	CDKN2D	cyclin dependent kinase inhibitor 2D														KEGG_CELL_CYCLE	
+10818	FRS2	fibroblast growth factor receptor substrate 2															PID_FGF_PATHWAY
+84619	ZGPAT	zinc finger CCCH-type and G-patch domain containing															
+83719	YPEL3	yippee like 3															
+8089	YEATS4	YEATS domain containing 4															
+NA	XRCC6BP1	NA															
+374666	WASH3P	WAS protein family homolog 3, pseudogene															
+7297	TYK2	tyrosine kinase 2															
+6302	TSPAN31	tetraspanin 31															
+10102	TSFM	Ts translation elongation factor, mitochondrial															
+285386	TPRG1	tumor protein p63 regulated 1															
+8771	TNFRSF6B	TNF receptor superfamily member 6b															
+50861	STMN3	stathmin 3															
+246329	STAC3	SH3 and cysteine rich domain 3															
+121340	SP7	Sp7 transcription factor															
+692205	SNORD89	small nucleolar RNA, C/D box 89															
+735301	SNHG9	small nucleolar RNA host gene 9															
+6615	SNAI1	snail family transcriptional repressor 1															
+91252	SLC39A13	solute carrier family 39 member 13															
+2030	SLC29A1	solute carrier family 29 member 1 (Augustine blood group)															
+65012	SLC26A10	solute carrier family 26 member 10															
+63910	SLC17A9	solute carrier family 17 member 9															
+6388	SDF2	stromal cell derived factor 2															
+10806	SDCCAG8	serologically defined colon cancer antigen 8															
+64285	RHBDF1	rhomboid 5 homolog 1															
+5998	RGS3	regulator of G protein signaling 3															
+117177	RAB3IP	RAB3A interacting protein															
+5745	PTH1R	parathyroid hormone 1 receptor															
+78994	PRR14	proline rich 14															
+5322	PLA2G5	phospholipase A2 group V															
+5252	PHF1	PHD finger protein 1															
+130497	OSR1	odd-skipped related transcription factor 1															
+10956	OS9	OS9, endoplasmic reticulum lectin															
+94103	ORMDL3	ORMDL sphingolipid biosynthesis regulator 3															
+25903	OLFML2B	olfactomedin like 2B															
+283820	NOMO2	NODAL modulator 2															
+389125	MUSTN1	musculoskeletal, embryonic nuclear protein 1															
+79778	MICALL2	MICAL like 2															
+142678	MIB2	mindbomb E3 ubiquitin protein ligase 2															
+NA	METTL21B	NA															
+4234	METTL1	methyltransferase like 1															
+55384	MEG3	maternally expressed 3															
+92979	MARCH9	membrane associated ring-CH-type finger 9															
+54923	LIME1	Lck interacting transmembrane adaptor 1															
+51451	LCMT1	leucine carboxyl methyltransferase 1															
+3931	LCAT	lecithin-cholesterol acyltransferase															
+9622	KLK4	kallikrein related peptidase 4															
+NA	KIAA1462	NA															
+27345	KCNMB4	potassium calcium-activated channel subfamily M regulatory beta subunit 4															
+3754	KCNF1	potassium voltage-gated channel modifier subfamily F member 1															
+2648	KAT2A	lysine acetyltransferase 2A															
+51477	ISYNA1	inositol-3-phosphate synthase 1															
+9670	IPO13	importin 13															
+91156	IGFN1	immunoglobulin-like and fibronectin type III domain containing 1															
+3299	HSF4	heat shock transcription factor 4															
+56927	GPR108	G protein-coupled receptor 108															
+2307	FOXS1	forkhead box S1															
+79813	EHMT1	euchromatic histone lysine methyltransferase 1															
+1917	EEF1A2	eukaryotic translation elongation factor 1 alpha 2															
+8291	DYSF	dysferlin															
+196403	DTX3	deltex E3 ubiquitin ligase 3															
+1749	DLX5	distal-less homeobox 5															
+1747	DLX3	distal-less homeobox 3															
+1643	DDB2	damage specific DNA binding protein 2															
+90379	DCAF15	DDB1 and CUL4 associated factor 15															
+1594	CYP27B1	cytochrome P450 family 27 subfamily B member 1															
+10106	CTDSP2	CTD small phosphatase 2															
+51226	COPZ2	coatomer protein complex subunit zeta 2															
+4848	CNOT2	CCR4-NOT transcription complex subunit 2															
+1240	CMKLR1	chemerin chemokine-like receptor 1															
+80279	CDK5RAP3	CDK5 regulatory subunit associated protein 3															
+10576	CCT2	chaperonin containing TCP1 subunit 2															
+126075	CCDC159	coiled-coil domain containing 159															
+NA	CCDC101	NA															
+441150	C6orf226	chromosome 6 open reading frame 226															
+149954	BPIFB4	BPI fold containing family B member 4															
+2583	B4GALNT1	beta-1,4-N-acetyl-galactosaminyltransferase 1															
+10677	AVIL	advillin															
+115557	ARHGEF25	Rho guanine nucleotide exchange factor 25															
+89845	ABCC10	ATP binding cassette subfamily C member 10															

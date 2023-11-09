@@ -1,0 +1,78 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	1
+# genesets in collections:	1379
+# genes in comparison (n):	62
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+KEGG_PRIMARY_IMMUNODEFICIENCY	35	Primary immunodeficiency	3	0.08571	1.484e-5	0.02046
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	KEGG_PRIMARY_IMMUNODEFICIENCY
+115650	TNFRSF13C	TNF receptor superfamily member 13C	KEGG_PRIMARY_IMMUNODEFICIENCY
+23495	TNFRSF13B	TNF receptor superfamily member 13B	KEGG_PRIMARY_IMMUNODEFICIENCY
+930	CD19	CD19 molecule	KEGG_PRIMARY_IMMUNODEFICIENCY
+84186	ZCCHC7	zinc finger CCHC-type containing 7	
+29802	VPREB3	V-set pre-B cell surrogate light chain 3	
+7441	VPREB1	V-set pre-B cell surrogate light chain 1	
+80305	TRABD	TraB domain containing	
+200132	TCTEX1D1	Tctex1 domain containing 1	
+27004	TCL6	T cell leukemia/lymphoma 6	
+9623	TCL1B	T cell leukemia/lymphoma 1B	
+8115	TCL1A	T cell leukemia/lymphoma 1A	
+NA	TBC1D27	NA	
+57620	STIM2	stromal interaction molecule 2	
+6689	SPIB	Spi-B transcription factor	
+27240	SIT1	signaling threshold regulating transmembrane adaptor 1	
+1731	SEPT1	septin 1	
+256380	SCML4	Scm polycomb group protein like 4	
+8437	RASAL1	RAS protein activator like 1	
+79874	RABEP2	rabaptin, RAB GTPase binding effector protein 2	
+53917	RAB24	RAB24, member RAS oncogene family	
+55278	QRSL1	QRSL1, glutaminyl-tRNA amidotransferase subunit A	
+5179	PENK	proenkephalin	
+165631	PARP15	poly(ADP-ribose) polymerase family member 15	
+341277	OVCH2	ovochymase 2 (gene/pseudogene)	
+4521	NUDT1	nudix hydrolase 1	
+51491	NOP16	NOP16 nucleolar protein	
+79661	NEIL1	nei like DNA glycosylase 1	
+4636	MYL5	myosin light chain 5	
+931	MS4A1	membrane spanning 4-domains A1	
+219972	MPEG1	macrophage expressed 1	
+255231	MCOLN2	mucolipin 2	
+4058	LTK	leukocyte receptor tyrosine kinase	
+401944	LDLRAD2	low density lipoprotein receptor class A domain containing 2	
+138307	LCN8	lipocalin 8	
+22914	KLRK1	killer cell lectin like receptor K1	
+100431172	KLRF2	killer cell lectin like receptor F2	
+100528032	KLRC4-KLRK1	KLRC4-KLRK1 readthrough	
+NA	KIAA0226L	NA	
+51305	KCNK9	potassium two pore domain channel subfamily K member 9	
+3662	IRF4	interferon regulatory factor 4	
+28793	IGLV3-25	immunoglobulin lambda variable 3-25	
+28831	IGLJ3	immunoglobulin lambda joining 3	
+28387	IGHV5-78	immunoglobulin heavy variable 5-78 (pseudogene)	
+28445	IGHV3-20	immunoglobulin heavy variable 3-20	
+2696	GIPR	gastric inhibitory polypeptide receptor	
+79760	GEMIN7	gem nuclear organelle associated protein 7	
+84824	FCRLA	Fc receptor like A	
+115350	FCRL1	Fc receptor like 1	
+NA	FAM150B	NA	
+199786	FAM129C	family with sequence similarity 129 member C	
+160365	CLECL1	C-type lectin like 1	
+29121	CLEC2D	C-type lectin domain family 2 member D	
+222256	CDHR3	cadherin related family member 3	
+971	CD72	CD72 molecule	
+970	CD70	CD70 molecule	
+124093	CCDC78	coiled-coil domain containing 78	
+404550	C16orf74	chromosome 16 open reading frame 74	
+640	BLK	BLK proto-oncogene, Src family tyrosine kinase	
+55653	BCAS4	breast carcinoma amplified sequence 4	
+27113	BBC3	BCL2 binding component 3	
+344454	AOX2P	aldehyde oxidase 2 pseudogene	
+134637	ADAT2	adenosine deaminase, tRNA specific 2	

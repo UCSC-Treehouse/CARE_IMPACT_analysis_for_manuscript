@@ -1,0 +1,110 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	2
+# genesets in collections:	1379
+# genes in comparison (n):	93
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+HALLMARK_HYPOXIA	200	Genes up-regulated in response to low oxygen levels (hypoxia).	8	0.04	8.297e-9	1.144e-5
+PID_HIF1_TFPATHWAY	66	HIF-1-alpha transcription factor network	5	0.07576	2.467e-7	1.701e-4
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	HALLMARK_HYPOXIA	PID_HIF1_TFPATHWAY
+123	PLIN2	perilipin 2	HALLMARK_HYPOXIA	PID_HIF1_TFPATHWAY
+10397	NDRG1	N-myc downstream regulated 1	HALLMARK_HYPOXIA	PID_HIF1_TFPATHWAY
+3939	LDHA	lactate dehydrogenase A	HALLMARK_HYPOXIA	PID_HIF1_TFPATHWAY
+3162	HMOX1	heme oxygenase 1	HALLMARK_HYPOXIA	PID_HIF1_TFPATHWAY
+133	ADM	adrenomedullin	HALLMARK_HYPOXIA	PID_HIF1_TFPATHWAY
+4493	MT1E	metallothionein 1E	HALLMARK_HYPOXIA	
+55818	KDM3A	lysine demethylase 3A	HALLMARK_HYPOXIA	
+2152	F3	coagulation factor III, tissue factor	HALLMARK_HYPOXIA	
+152687	ZNF595	zinc finger protein 595		
+90637	ZFAND2A	zinc finger AN1-type containing 2A		
+NA	UTP11L	NA		
+51569	UFM1	ubiquitin fold modifier 1		
+7993	UBXN8	UBX domain protein 8		
+7335	UBE2V1	ubiquitin conjugating enzyme E2 V1		
+7174	TPP2	tripeptidyl peptidase 2		
+9537	TP53I11	tumor protein p53 inducible protein 11		
+64102	TNMD	tenomodulin		
+57187	THOC2	THO complex 2		
+7035	TFPI	tissue factor pathway inhibitor		
+79101	TAF1D	TATA-box binding protein associated factor, RNA polymerase I subunit D		
+8428	STK24	serine/threonine kinase 24		
+653226	SRP9P1	signal recognition particle 9 pseudogene 1		
+NA	SPG20	NA		
+677831	SNORA51	small nucleolar RNA, H/ACA box 51		
+619499	SNORA27	small nucleolar RNA, H/ACA box 27		
+84973	SNHG7	small nucleolar RNA host gene 7		
+10463	SLC30A9	solute carrier family 30 member 9		
+286133	SCARA5	scavenger receptor class A member 5		
+10284	SAP18	Sin3A associated protein 18		
+1903	S1PR3	sphingosine-1-phosphate receptor 3		
+22970	RPL41P2	ribosomal protein L41 pseudogene 2		
+647099	RPL23AP42	ribosomal protein L23a pseudogene 42		
+8731	RNMT	RNA guanine-7 methyltransferase		
+9584	RBM39	RNA binding motif protein 39		
+5806	PTX3	pentraxin 3		
+10544	PROCR	protein C receptor		
+10216	PRG4	proteoglycan 4		
+10775	POP4	POP4 homolog, ribonuclease P/MRP subunit		
+51371	POMP	proteasome maturation protein		
+5222	PGA5	pepsinogen 5, group I (pepsinogen A)		
+643847	PGA4	pepsinogen 4, group I (pepsinogen A)		
+643834	PGA3	pepsinogen 3, group I (pepsinogen A)		
+23047	PDS5B	PDS5 cohesin associated factor B		
+5166	PDK4	pyruvate dehydrogenase kinase 4		
+5156	PDGFRA	platelet derived growth factor receptor alpha		
+55795	PCID2	PCI domain containing 2		
+28987	NOB1	NIN1 (RPN12) binding protein 1 homolog		
+22795	NID2	nidogen 2		
+387921	NHLRC3	NHL repeat containing 3		
+25977	NECAP1	NECAP endocytosis associated 1		
+10135	NAMPT	nicotinamide phosphoribosyltransferase		
+57644	MYH7B	myosin heavy chain 7B		
+4617	MYF5	myogenic factor 5		
+219402	MTIF3	mitochondrial translational initiation factor 3		
+57504	MTA3	metastasis associated 1 family member 3		
+60488	MRPS35	mitochondrial ribosomal protein S35		
+10240	MRPS31	mitochondrial ribosomal protein S31		
+56945	MRPS22	mitochondrial ribosomal protein S22		
+4318	MMP9	matrix metallopeptidase 9		
+4311	MME	membrane metalloendopeptidase		
+100506211	MIR210HG	MIR210 host gene		
+29079	MED4	mediator complex subunit 4		
+91694	LONRF1	LON peptidase N-terminal domain and ring finger 1		
+23704	KCNE4	potassium voltage-gated channel subfamily E regulatory subunit 4		
+3621	ING1	inhibitor of growth family member 1		
+3460	IFNGR2	interferon gamma receptor 2		
+121355	GTSF1	gametocyte specific factor 1		
+2963	GTF2F2	general transcription factor IIF subunit 2		
+2495	FTH1	ferritin heavy chain 1		
+2483	FRG1	FSHD region gene 1		
+2326	FMO1	flavin containing monooxygenase 1		
+2289	FKBP5	FKBP prolyl isomerase 5		
+2173	FABP7	fatty acid binding protein 7		
+2098	ESD	esterase D		
+2073	ERCC5	ERCC excision repair 5, endonuclease		
+1909	EDNRA	endothelin receptor type A		
+51726	DNAJB11	DnaJ heat shock protein family (Hsp40) member B11		
+11083	DIDO1	death inducer-obliterator 1		
+3576	CXCL8	C-X-C motif chemokine ligand 8		
+8451	CUL4A	cullin 4A		
+389903	CSAG3	CSAG family member 3		
+102723547	CSAG2	CSAG family member 2		
+158511	CSAG1	chondrosarcoma associated gene 1		
+9946	CRYZL1	crystallin zeta like 1		
+25927	CNRIP1	cannabinoid receptor interacting protein 1		
+91612	CHURC1	churchill domain containing 1		
+10428	CFDP1	craniofacial development protein 1		
+8881	CDC16	cell division cycle 16		
+NA	CARKD	NA		
+583	BBS2	Bardet-Biedl syndrome 2		
+55082	ARGLU1	arginine and glutamate rich 1		
+29880	ALG5	ALG5, dolichyl-phosphate beta-glucosyltransferase		
+126	ADH1C	alcohol dehydrogenase 1C (class I), gamma polypeptide		

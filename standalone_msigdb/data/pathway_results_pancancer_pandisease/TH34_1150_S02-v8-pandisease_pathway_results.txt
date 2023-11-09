@@ -1,0 +1,87 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	2
+# genesets in collections:	1379
+# genes in comparison (n):	70
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_ECM_AFFILIATED	171	Genes encoding proteins affiliated structurally or functionally to extracellular matrix proteins	5	0.02924	6.694e-6	0.009232
+PID_HNF3A_PATHWAY	44	FOXA1 transcription factor network	3	0.06818	4.286e-5	0.02955
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_ECM_AFFILIATED	PID_HNF3A_PATHWAY
+653509	SFTPA1	surfactant protein A1	NABA_ECM_AFFILIATED	PID_HNF3A_PATHWAY
+729238	SFTPA2	surfactant protein A2	NABA_ECM_AFFILIATED	PID_HNF3A_PATHWAY
+26585	GREM1	gremlin 1, DAN family BMP antagonist	NABA_ECM_AFFILIATED	
+6440	SFTPC	surfactant protein C	NABA_ECM_AFFILIATED	
+6439	SFTPB	surfactant protein B	NABA_ECM_AFFILIATED	
+1027	CDKN1B	cyclin dependent kinase inhibitor 1B		PID_HNF3A_PATHWAY
+84187	TMEM164	transmembrane protein 164		
+6328	SCN3A	sodium voltage-gated channel alpha subunit 3		
+604	BCL6	BCL6, transcription repressor		
+200132	TCTEX1D1	Tctex1 domain containing 1		
+1025	CDK9	cyclin dependent kinase 9		
+84859	LRCH3	leucine rich repeats and calponin homology domain containing 3		
+11037	STON1	stonin 1		
+25807	RHBDD3	rhomboid domain containing 3		
+144100	PLEKHA7	pleckstrin homology domain containing A7		
+5603	MAPK13	mitogen-activated protein kinase 13		
+5930	RBBP6	RB binding protein 6, ubiquitin ligase		
+28793	IGLV3-25	immunoglobulin lambda variable 3-25		
+2356	FPGS	folylpolyglutamate synthase		
+11325	DDX42	DEAD-box helicase 42		
+28976	ACAD9	acyl-CoA dehydrogenase family member 9		
+5801	PTPRR	protein tyrosine phosphatase, receptor type R		
+10208	USPL1	ubiquitin specific peptidase like 1		
+23233	EXOC6B	exocyst complex component 6B		
+6590	SLPI	secretory leukocyte peptidase inhibitor		
+85004	RERG	RAS like estrogen regulated growth inhibitor		
+4179	CD46	CD46 molecule		
+23099	ZBTB43	zinc finger and BTB domain containing 43		
+9476	NAPSA	napsin A aspartic peptidase		
+113146	AHNAK2	AHNAK nucleoprotein 2		
+10950	BTG3	BTG anti-proliferation factor 3		
+8339	HIST1H2BG	histone cluster 1 H2B family member g		
+442582	STAG3L2	stromal antigen 3-like 2 (pseudogene)		
+11011	TLK2	tousled like kinase 2		
+54441	STAG3L1	stromal antigen 3-like 1 (pseudogene)		
+9687	GREB1	growth regulating estrogen receptor binding 1		
+NA	BZRAP1	NA		
+23500	DAAM2	dishevelled associated activator of morphogenesis 2		
+442578	STAG3L3	stromal antigen 3-like 3 (pseudogene)		
+6323	SCN1A	sodium voltage-gated channel alpha subunit 1		
+58486	ZBED5	zinc finger BED-type containing 5		
+8425	LTBP4	latent transforming growth factor beta binding protein 4		
+51747	LUC7L3	LUC7 like 3 pre-mRNA splicing factor		
+9988	DMTF1	cyclin D binding myb like transcription factor 1		
+51626	DYNC2LI1	dynein cytoplasmic 2 light intermediate chain 1		
+79785	RERGL	RERG like		
+10278	EFS	embryonal Fyn-associated substrate		
+26118	WSB1	WD repeat and SOCS box containing 1		
+27154	BRPF3	bromodomain and PHD finger containing 3		
+117246	FTSJ3	FtsJ RNA methyltransferase homolog 3		
+140735	DYNLL2	dynein light chain LC8-type 2		
+9755	TBKBP1	TBK1 binding protein 1		
+8500	PPFIA1	PTPRF interacting protein alpha 1		
+55117	SLC6A15	solute carrier family 6 member 15		
+NA	KIAA0907	NA		
+1998	ELF2	E74 like ETS transcription factor 2		
+4072	EPCAM	epithelial cell adhesion molecule		
+55316	RSAD1	radical S-adenosyl methionine domain containing 1		
+51326	ARL17A	ADP ribosylation factor like GTPase 17A		
+56940	DUSP22	dual specificity phosphatase 22		
+134466	ZNF300P1	zinc finger protein 300 pseudogene 1		
+27327	TNRC6A	trinucleotide repeat containing 6A		
+80332	ADAM33	ADAM metallopeptidase domain 33		
+26002	MOXD1	monooxygenase DBH like 1		
+130271	PLEKHH2	pleckstrin homology, MyTH4 and FERM domain containing H2		
+54806	AHI1	Abelson helper integration site 1		
+5122	PCSK1	proprotein convertase subtilisin/kexin type 1		
+79809	TTC21B	tetratricopeptide repeat domain 21B		
+55608	ANKRD10	ankyrin repeat domain 10		
+23152	CIC	capicua transcriptional repressor		

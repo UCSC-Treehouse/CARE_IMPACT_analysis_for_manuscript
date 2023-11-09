@@ -1,0 +1,233 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	58
+# genesets in collections:	1379
+# genes in comparison (n):	160
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+KEGG_SPLICEOSOME	128	Spliceosome	7	0.05469	3.609e-7	4.976e-4
+HALLMARK_MYC_TARGETS_V1	200	A subgroup of genes regulated by MYC - version 1 (v1).	7	0.035	7.074e-6	0.00325
+HALLMARK_MYC_TARGETS_V2	58	A subgroup of genes regulated by MYC - version 2 (v2).	4	0.06897	5.185e-5	0.00325
+KEGG_PROTEASOME	48	Proteasome	4	0.08333	2.443e-5	0.00325
+REACTOME_CROSS_PRESENTATION_OF_SOLUBLE_EXOGENOUS_ANTIGENS_ENDOSOMES	48	Genes involved in Cross-presentation of soluble exogenous antigens (endosomes)	4	0.08333	2.443e-5	0.00325
+REACTOME_DOWNSTREAM_SIGNALING_EVENTS_OF_B_CELL_RECEPTOR_BCR	97	Genes involved in Downstream Signaling Events Of B Cell Receptor (BCR)	5	0.05155	2.391e-5	0.00325
+REACTOME_P53_INDEPENDENT_G1_S_DNA_DAMAGE_CHECKPOINT	51	Genes involved in p53-Independent G1/S DNA damage checkpoint	4	0.07843	3.113e-5	0.00325
+REACTOME_CDK_MEDIATED_PHOSPHORYLATION_AND_REMOVAL_OF_CDC6	48	Genes involved in CDK-mediated phosphorylation and removal of Cdc6	4	0.08333	2.443e-5	0.00325
+REACTOME_TRANSPORT_OF_MATURE_TRANSCRIPT_TO_CYTOPLASM	54	Genes involved in Transport of Mature Transcript to Cytoplasm	4	0.07407	3.907e-5	0.00325
+REACTOME_REGULATION_OF_ORNITHINE_DECARBOXYLASE_ODC	49	Genes involved in Regulation of ornithine decarboxylase (ODC)	4	0.08163	2.653e-5	0.00325
+REACTOME_REGULATION_OF_APOPTOSIS	58	Genes involved in Regulation of Apoptosis	4	0.06897	5.185e-5	0.00325
+REACTOME_P53_DEPENDENT_G1_DNA_DAMAGE_RESPONSE	57	Genes involved in p53-Dependent G1 DNA Damage Response	4	0.07018	4.841e-5	0.00325
+REACTOME_MRNA_SPLICING	111	Genes involved in mRNA Splicing	5	0.04505	4.573e-5	0.00325
+REACTOME_MRNA_3_END_PROCESSING	35	Genes involved in mRNA 3'-end processing	4	0.1143	6.811e-6	0.00325
+REACTOME_CDT1_ASSOCIATION_WITH_THE_CDC6_ORC_ORIGIN_COMPLEX	56	Genes involved in CDT1 association with the CDC6:ORC:origin complex	4	0.07143	4.513e-5	0.00325
+REACTOME_AUTODEGRADATION_OF_THE_E3_UBIQUITIN_LIGASE_COP1	51	Genes involved in Autodegradation of the E3 ubiquitin ligase COP1	4	0.07843	3.113e-5	0.00325
+REACTOME_DESTABILIZATION_OF_MRNA_BY_AUF1_HNRNP_D0	53	Genes involved in Destabilization of mRNA by AUF1 (hnRNP D0)	4	0.07547	3.628e-5	0.00325
+REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_	44	Genes involved in Cleavage of Growing Transcript in the Termination Region	4	0.09091	1.723e-5	0.00325
+REACTOME_APOPTOSIS	148	Genes involved in Apoptosis	6	0.04054	1.42e-5	0.00325
+REACTOME_SCF_BETA_TRCP_MEDIATED_DEGRADATION_OF_EMI1	51	Genes involved in SCF-beta-TrCP mediated degradation of Emi1	4	0.07843	3.113e-5	0.00325
+REACTOME_SCFSKP2_MEDIATED_DEGRADATION_OF_P27_P21	56	Genes involved in SCF(Skp2)-mediated degradation of p27/p21	4	0.07143	4.513e-5	0.00325
+REACTOME_VIF_MEDIATED_DEGRADATION_OF_APOBEC3G	52	Genes involved in Vif-mediated degradation of APOBEC3G	4	0.07692	3.363e-5	0.00325
+HALLMARK_MTORC1_SIGNALING	200	Genes up-regulated through activation of mTORC1 complex.	6	0.03	7.66e-5	0.003717
+REACTOME_SIGNALING_BY_WNT	65	Genes involved in Signaling by Wnt	4	0.06154	8.12e-5	0.003717
+REACTOME_ER_PHAGOSOME_PATHWAY	61	Genes involved in ER-Phagosome pathway	4	0.06557	6.327e-5	0.003717
+REACTOME_ACTIVATION_OF_NF_KAPPAB_IN_B_CELLS	64	Genes involved in Activation of NF-kappaB in B Cells	4	0.0625	7.641e-5	0.003717
+REACTOME_SIGNALING_BY_THE_B_CELL_RECEPTOR_BCR	126	Genes involved in Signaling by the B Cell Receptor (BCR)	5	0.03968	8.356e-5	0.003717
+REACTOME_CYCLIN_E_ASSOCIATED_EVENTS_DURING_G1_S_TRANSITION_	65	Genes involved in Cyclin E associated events during G1/S transition	4	0.06154	8.12e-5	0.003717
+REACTOME_METABOLISM_OF_MRNA	284	Genes involved in Metabolism of mRNA	7	0.02465	6.664e-5	0.003717
+REACTOME_ASSEMBLY_OF_THE_PRE_REPLICATIVE_COMPLEX	65	Genes involved in Assembly of the pre-replicative complex	4	0.06154	8.12e-5	0.003717
+REACTOME_AUTODEGRADATION_OF_CDH1_BY_CDH1_APC_C	64	Genes involved in Autodegradation of Cdh1 by Cdh1:APC/C	4	0.0625	7.641e-5	0.003717
+REACTOME_MEMBRANE_TRAFFICKING	129	Genes involved in Membrane Trafficking	5	0.03876	9.339e-5	0.003902
+REACTOME_ORC1_REMOVAL_FROM_CHROMATIN	67	Genes involved in Orc1 removal from chromatin	4	0.0597	9.143e-5	0.003902
+REACTOME_ANTIGEN_PROCESSING_UBIQUITINATION_PROTEASOME_DEGRADATION	212	Genes involved in Antigen processing: Ubiquitination & Proteasome degradation	6	0.0283	1.055e-4	0.004277
+BIOCARTA_PROTEASOME_PATHWAY	28	Proteasome Complex	3	0.1071	1.273e-4	0.004761
+REACTOME_APC_C_CDH1_MEDIATED_DEGRADATION_OF_CDC20_AND_OTHER_APC_C_CDH1_TARGETED_PROTEINS_IN_LATE_MITOSIS_EARLY_G1	72	Genes involved in APC/C:Cdh1 mediated degradation of Cdc20 and other APC/C:Cdh1 targeted proteins in late mitosis/early G1	4	0.05556	1.211e-4	0.004761
+REACTOME_APC_C_CDC20_MEDIATED_DEGRADATION_OF_MITOTIC_PROTEINS	73	Genes involved in APC/C:Cdc20 mediated degradation of mitotic proteins	4	0.05479	1.277e-4	0.004761
+REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA	140	Genes involved in Processing of Capped Intron-Containing Pre-mRNA	5	0.03571	1.372e-4	0.004979
+REACTOME_ANTIGEN_PROCESSING_CROSS_PRESENTATION	76	Genes involved in Antigen processing-Cross presentation	4	0.05263	1.494e-4	0.005281
+REACTOME_METABOLISM_OF_RNA	330	Genes involved in Metabolism of RNA	7	0.02121	1.686e-4	0.005813
+REACTOME_M_G1_TRANSITION	81	Genes involved in M/G1 Transition	4	0.04938	1.911e-4	0.006427
+REACTOME_REGULATION_OF_MRNA_STABILITY_BY_PROTEINS_THAT_BIND_AU_RICH_ELEMENTS	84	Genes involved in Regulation of mRNA Stability by Proteins that Bind AU-rich Elements	4	0.04762	2.198e-4	0.007218
+REACTOME_REGULATION_OF_MITOTIC_CELL_CYCLE	85	Genes involved in Regulation of mitotic cell cycle	4	0.04706	2.301e-4	0.007378
+REACTOME_MRNA_PROCESSING	161	Genes involved in mRNA Processing	5	0.03106	2.628e-4	0.008055
+REACTOME_CLASS_I_MHC_MEDIATED_ANTIGEN_PROCESSING_PRESENTATION	251	Genes involved in Class I MHC mediated antigen processing & presentation	6	0.0239	2.629e-4	0.008055
+REACTOME_SYNTHESIS_OF_DNA	92	Genes involved in Synthesis of DNA	4	0.04348	3.115e-4	0.00934
+REACTOME_RNA_POL_II_TRANSCRIPTION	105	Genes involved in RNA Polymerase II Transcription	4	0.0381	5.146e-4	0.0151
+REACTOME_SIGNALING_BY_EGFR_IN_CANCER	109	Genes involved in Signaling by EGFR in Cancer	4	0.0367	5.925e-4	0.01668
+REACTOME_S_PHASE	109	Genes involved in S Phase	4	0.0367	5.925e-4	0.01668
+REACTOME_ADAPTIVE_IMMUNE_SYSTEM	539	Genes involved in Adaptive Immune System	8	0.01484	6.405e-4	0.01766
+REACTOME_G1_S_TRANSITION	112	Genes involved in G1/S Transition	4	0.03571	6.562e-4	0.01774
+REACTOME_TRANSCRIPTION	210	Genes involved in Transcription	5	0.02381	8.785e-4	0.0233
+BIOCARTA_P27_PATHWAY	13	Regulation of p27 Phosphorylation during Cell Cycle Progression	2	0.1538	9.162e-4	0.02384
+REACTOME_CELL_CYCLE_CHECKPOINTS	124	Genes involved in Cell Cycle Checkpoints	4	0.03226	9.597e-4	0.02451
+PID_ERB_GENOMIC_PATHWAY	15	Validated nuclear estrogen receptor beta network	2	0.1333	0.001228	0.03023
+REACTOME_HOST_INTERACTIONS_OF_HIV_FACTORS	132	Genes involved in Host Interactions of HIV factors	4	0.0303	0.00121	0.03023
+PID_MYC_REPRESS_PATHWAY	63	Validated targets of C-MYC transcriptional repression	3	0.04762	0.001411	0.03355
+REACTOME_MITOTIC_G1_G1_S_PHASES	137	Genes involved in Mitotic G1-G1/S phases	4	0.0292	0.001387	0.03355
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	KEGG_SPLICEOSOME	HALLMARK_MYC_TARGETS_V1	HALLMARK_MYC_TARGETS_V2	KEGG_PROTEASOME	REACTOME_CROSS_PRESENTATION_OF_SOLUBLE_EXOGENOUS_ANTIGENS_ENDOSOMES	REACTOME_DOWNSTREAM_SIGNALING_EVENTS_OF_B_CELL_RECEPTOR_BCR	REACTOME_P53_INDEPENDENT_G1_S_DNA_DAMAGE_CHECKPOINT	REACTOME_CDK_MEDIATED_PHOSPHORYLATION_AND_REMOVAL_OF_CDC6	REACTOME_TRANSPORT_OF_MATURE_TRANSCRIPT_TO_CYTOPLASM	REACTOME_REGULATION_OF_ORNITHINE_DECARBOXYLASE_ODC	REACTOME_REGULATION_OF_APOPTOSIS	REACTOME_P53_DEPENDENT_G1_DNA_DAMAGE_RESPONSE	REACTOME_MRNA_SPLICING	REACTOME_MRNA_3_END_PROCESSING	REACTOME_CDT1_ASSOCIATION_WITH_THE_CDC6_ORC_ORIGIN_COMPLEX	REACTOME_AUTODEGRADATION_OF_THE_E3_UBIQUITIN_LIGASE_COP1	REACTOME_DESTABILIZATION_OF_MRNA_BY_AUF1_HNRNP_D0	REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_	REACTOME_APOPTOSIS	REACTOME_SCF_BETA_TRCP_MEDIATED_DEGRADATION_OF_EMI1	REACTOME_SCFSKP2_MEDIATED_DEGRADATION_OF_P27_P21	REACTOME_VIF_MEDIATED_DEGRADATION_OF_APOBEC3G	HALLMARK_MTORC1_SIGNALING	REACTOME_SIGNALING_BY_WNT	REACTOME_ER_PHAGOSOME_PATHWAY	REACTOME_ACTIVATION_OF_NF_KAPPAB_IN_B_CELLS	REACTOME_SIGNALING_BY_THE_B_CELL_RECEPTOR_BCR	REACTOME_CYCLIN_E_ASSOCIATED_EVENTS_DURING_G1_S_TRANSITION_	REACTOME_METABOLISM_OF_MRNA	REACTOME_ASSEMBLY_OF_THE_PRE_REPLICATIVE_COMPLEX	REACTOME_AUTODEGRADATION_OF_CDH1_BY_CDH1_APC_C	REACTOME_MEMBRANE_TRAFFICKING	REACTOME_ORC1_REMOVAL_FROM_CHROMATIN	REACTOME_ANTIGEN_PROCESSING_UBIQUITINATION_PROTEASOME_DEGRADATION	BIOCARTA_PROTEASOME_PATHWAY	REACTOME_APC_C_CDH1_MEDIATED_DEGRADATION_OF_CDC20_AND_OTHER_APC_C_CDH1_TARGETED_PROTEINS_IN_LATE_MITOSIS_EARLY_G1	REACTOME_APC_C_CDC20_MEDIATED_DEGRADATION_OF_MITOTIC_PROTEINS	REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA	REACTOME_ANTIGEN_PROCESSING_CROSS_PRESENTATION	REACTOME_METABOLISM_OF_RNA	REACTOME_M_G1_TRANSITION	REACTOME_REGULATION_OF_MRNA_STABILITY_BY_PROTEINS_THAT_BIND_AU_RICH_ELEMENTS	REACTOME_REGULATION_OF_MITOTIC_CELL_CYCLE	REACTOME_MRNA_PROCESSING	REACTOME_CLASS_I_MHC_MEDIATED_ANTIGEN_PROCESSING_PRESENTATION	REACTOME_SYNTHESIS_OF_DNA	REACTOME_RNA_POL_II_TRANSCRIPTION	REACTOME_SIGNALING_BY_EGFR_IN_CANCER	REACTOME_S_PHASE	REACTOME_ADAPTIVE_IMMUNE_SYSTEM	REACTOME_G1_S_TRANSITION	REACTOME_TRANSCRIPTION	BIOCARTA_P27_PATHWAY	REACTOME_CELL_CYCLE_CHECKPOINTS	PID_ERB_GENOMIC_PATHWAY	REACTOME_HOST_INTERACTIONS_OF_HIV_FACTORS	PID_MYC_REPRESS_PATHWAY	REACTOME_MITOTIC_G1_G1_S_PHASES
+26121	PRPF31	pre-mRNA processing factor 31	KEGG_SPLICEOSOME	HALLMARK_MYC_TARGETS_V1																																																								
+9939	RBM8A	RNA binding motif protein 8A	KEGG_SPLICEOSOME								REACTOME_TRANSPORT_OF_MATURE_TRANSCRIPT_TO_CYTOPLASM				REACTOME_MRNA_SPLICING	REACTOME_MRNA_3_END_PROCESSING				REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_											REACTOME_METABOLISM_OF_MRNA									REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA		REACTOME_METABOLISM_OF_RNA				REACTOME_MRNA_PROCESSING			REACTOME_RNA_POL_II_TRANSCRIPTION					REACTOME_TRANSCRIPTION						
+11338	U2AF2	U2 small nuclear RNA auxiliary factor 2	KEGG_SPLICEOSOME								REACTOME_TRANSPORT_OF_MATURE_TRANSCRIPT_TO_CYTOPLASM				REACTOME_MRNA_SPLICING	REACTOME_MRNA_3_END_PROCESSING				REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_																				REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA						REACTOME_MRNA_PROCESSING			REACTOME_RNA_POL_II_TRANSCRIPTION					REACTOME_TRANSCRIPTION						
+83443	SF3B5	splicing factor 3b subunit 5	KEGG_SPLICEOSOME												REACTOME_MRNA_SPLICING																									REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA						REACTOME_MRNA_PROCESSING														
+6631	SNRPC	small nuclear ribonucleoprotein polypeptide C	KEGG_SPLICEOSOME																																																									
+9092	SART1	spliceosome associated factor 1, recruiter of U4/U6.U5 tri-snRNP	KEGG_SPLICEOSOME																																																									
+3310	HSPA6	heat shock protein family A (Hsp70) member 6	KEGG_SPLICEOSOME																																																									
+5691	PSMB3	proteasome subunit beta 3		HALLMARK_MYC_TARGETS_V1		KEGG_PROTEASOME	REACTOME_CROSS_PRESENTATION_OF_SOLUBLE_EXOGENOUS_ANTIGENS_ENDOSOMES	REACTOME_DOWNSTREAM_SIGNALING_EVENTS_OF_B_CELL_RECEPTOR_BCR	REACTOME_P53_INDEPENDENT_G1_S_DNA_DAMAGE_CHECKPOINT	REACTOME_CDK_MEDIATED_PHOSPHORYLATION_AND_REMOVAL_OF_CDC6		REACTOME_REGULATION_OF_ORNITHINE_DECARBOXYLASE_ODC	REACTOME_REGULATION_OF_APOPTOSIS	REACTOME_P53_DEPENDENT_G1_DNA_DAMAGE_RESPONSE			REACTOME_CDT1_ASSOCIATION_WITH_THE_CDC6_ORC_ORIGIN_COMPLEX	REACTOME_AUTODEGRADATION_OF_THE_E3_UBIQUITIN_LIGASE_COP1	REACTOME_DESTABILIZATION_OF_MRNA_BY_AUF1_HNRNP_D0		REACTOME_APOPTOSIS	REACTOME_SCF_BETA_TRCP_MEDIATED_DEGRADATION_OF_EMI1	REACTOME_SCFSKP2_MEDIATED_DEGRADATION_OF_P27_P21	REACTOME_VIF_MEDIATED_DEGRADATION_OF_APOBEC3G		REACTOME_SIGNALING_BY_WNT	REACTOME_ER_PHAGOSOME_PATHWAY	REACTOME_ACTIVATION_OF_NF_KAPPAB_IN_B_CELLS	REACTOME_SIGNALING_BY_THE_B_CELL_RECEPTOR_BCR	REACTOME_CYCLIN_E_ASSOCIATED_EVENTS_DURING_G1_S_TRANSITION_	REACTOME_METABOLISM_OF_MRNA	REACTOME_ASSEMBLY_OF_THE_PRE_REPLICATIVE_COMPLEX	REACTOME_AUTODEGRADATION_OF_CDH1_BY_CDH1_APC_C		REACTOME_ORC1_REMOVAL_FROM_CHROMATIN	REACTOME_ANTIGEN_PROCESSING_UBIQUITINATION_PROTEASOME_DEGRADATION	BIOCARTA_PROTEASOME_PATHWAY	REACTOME_APC_C_CDH1_MEDIATED_DEGRADATION_OF_CDC20_AND_OTHER_APC_C_CDH1_TARGETED_PROTEINS_IN_LATE_MITOSIS_EARLY_G1	REACTOME_APC_C_CDC20_MEDIATED_DEGRADATION_OF_MITOTIC_PROTEINS		REACTOME_ANTIGEN_PROCESSING_CROSS_PRESENTATION	REACTOME_METABOLISM_OF_RNA	REACTOME_M_G1_TRANSITION	REACTOME_REGULATION_OF_MRNA_STABILITY_BY_PROTEINS_THAT_BIND_AU_RICH_ELEMENTS	REACTOME_REGULATION_OF_MITOTIC_CELL_CYCLE		REACTOME_CLASS_I_MHC_MEDIATED_ANTIGEN_PROCESSING_PRESENTATION	REACTOME_SYNTHESIS_OF_DNA			REACTOME_S_PHASE	REACTOME_ADAPTIVE_IMMUNE_SYSTEM	REACTOME_G1_S_TRANSITION			REACTOME_CELL_CYCLE_CHECKPOINTS		REACTOME_HOST_INTERACTIONS_OF_HIV_FACTORS		REACTOME_MITOTIC_G1_G1_S_PHASES
+5713	PSMD7	proteasome 26S subunit, non-ATPase 7		HALLMARK_MYC_TARGETS_V1		KEGG_PROTEASOME	REACTOME_CROSS_PRESENTATION_OF_SOLUBLE_EXOGENOUS_ANTIGENS_ENDOSOMES	REACTOME_DOWNSTREAM_SIGNALING_EVENTS_OF_B_CELL_RECEPTOR_BCR	REACTOME_P53_INDEPENDENT_G1_S_DNA_DAMAGE_CHECKPOINT	REACTOME_CDK_MEDIATED_PHOSPHORYLATION_AND_REMOVAL_OF_CDC6		REACTOME_REGULATION_OF_ORNITHINE_DECARBOXYLASE_ODC	REACTOME_REGULATION_OF_APOPTOSIS	REACTOME_P53_DEPENDENT_G1_DNA_DAMAGE_RESPONSE			REACTOME_CDT1_ASSOCIATION_WITH_THE_CDC6_ORC_ORIGIN_COMPLEX	REACTOME_AUTODEGRADATION_OF_THE_E3_UBIQUITIN_LIGASE_COP1	REACTOME_DESTABILIZATION_OF_MRNA_BY_AUF1_HNRNP_D0		REACTOME_APOPTOSIS	REACTOME_SCF_BETA_TRCP_MEDIATED_DEGRADATION_OF_EMI1	REACTOME_SCFSKP2_MEDIATED_DEGRADATION_OF_P27_P21	REACTOME_VIF_MEDIATED_DEGRADATION_OF_APOBEC3G		REACTOME_SIGNALING_BY_WNT	REACTOME_ER_PHAGOSOME_PATHWAY	REACTOME_ACTIVATION_OF_NF_KAPPAB_IN_B_CELLS	REACTOME_SIGNALING_BY_THE_B_CELL_RECEPTOR_BCR	REACTOME_CYCLIN_E_ASSOCIATED_EVENTS_DURING_G1_S_TRANSITION_	REACTOME_METABOLISM_OF_MRNA	REACTOME_ASSEMBLY_OF_THE_PRE_REPLICATIVE_COMPLEX	REACTOME_AUTODEGRADATION_OF_CDH1_BY_CDH1_APC_C		REACTOME_ORC1_REMOVAL_FROM_CHROMATIN	REACTOME_ANTIGEN_PROCESSING_UBIQUITINATION_PROTEASOME_DEGRADATION		REACTOME_APC_C_CDH1_MEDIATED_DEGRADATION_OF_CDC20_AND_OTHER_APC_C_CDH1_TARGETED_PROTEINS_IN_LATE_MITOSIS_EARLY_G1	REACTOME_APC_C_CDC20_MEDIATED_DEGRADATION_OF_MITOTIC_PROTEINS		REACTOME_ANTIGEN_PROCESSING_CROSS_PRESENTATION	REACTOME_METABOLISM_OF_RNA	REACTOME_M_G1_TRANSITION	REACTOME_REGULATION_OF_MRNA_STABILITY_BY_PROTEINS_THAT_BIND_AU_RICH_ELEMENTS	REACTOME_REGULATION_OF_MITOTIC_CELL_CYCLE		REACTOME_CLASS_I_MHC_MEDIATED_ANTIGEN_PROCESSING_PRESENTATION	REACTOME_SYNTHESIS_OF_DNA			REACTOME_S_PHASE	REACTOME_ADAPTIVE_IMMUNE_SYSTEM	REACTOME_G1_S_TRANSITION			REACTOME_CELL_CYCLE_CHECKPOINTS		REACTOME_HOST_INTERACTIONS_OF_HIV_FACTORS		REACTOME_MITOTIC_G1_G1_S_PHASES
+6742	SSBP1	single stranded DNA binding protein 1		HALLMARK_MYC_TARGETS_V1																																																								
+5496	PPM1G	protein phosphatase, Mg2+/Mn2+ dependent 1G		HALLMARK_MYC_TARGETS_V1																																																								
+8662	EIF3B	eukaryotic translation initiation factor 3 subunit B		HALLMARK_MYC_TARGETS_V1																																																								
+52	ACP1	acid phosphatase 1		HALLMARK_MYC_TARGETS_V1																																																								
+6949	TCOF1	treacle ribosome biogenesis factor 1			HALLMARK_MYC_TARGETS_V2																																																							
+9238	TBRG4	transforming growth factor beta regulator 4			HALLMARK_MYC_TARGETS_V2																																																							
+79711	IPO4	importin 4			HALLMARK_MYC_TARGETS_V2																																																							
+92856	IMP4	IMP4, U3 small nucleolar ribonucleoprotein			HALLMARK_MYC_TARGETS_V2																																																							
+5693	PSMB5	proteasome subunit beta 5				KEGG_PROTEASOME	REACTOME_CROSS_PRESENTATION_OF_SOLUBLE_EXOGENOUS_ANTIGENS_ENDOSOMES	REACTOME_DOWNSTREAM_SIGNALING_EVENTS_OF_B_CELL_RECEPTOR_BCR	REACTOME_P53_INDEPENDENT_G1_S_DNA_DAMAGE_CHECKPOINT	REACTOME_CDK_MEDIATED_PHOSPHORYLATION_AND_REMOVAL_OF_CDC6		REACTOME_REGULATION_OF_ORNITHINE_DECARBOXYLASE_ODC	REACTOME_REGULATION_OF_APOPTOSIS	REACTOME_P53_DEPENDENT_G1_DNA_DAMAGE_RESPONSE			REACTOME_CDT1_ASSOCIATION_WITH_THE_CDC6_ORC_ORIGIN_COMPLEX	REACTOME_AUTODEGRADATION_OF_THE_E3_UBIQUITIN_LIGASE_COP1	REACTOME_DESTABILIZATION_OF_MRNA_BY_AUF1_HNRNP_D0		REACTOME_APOPTOSIS	REACTOME_SCF_BETA_TRCP_MEDIATED_DEGRADATION_OF_EMI1	REACTOME_SCFSKP2_MEDIATED_DEGRADATION_OF_P27_P21	REACTOME_VIF_MEDIATED_DEGRADATION_OF_APOBEC3G	HALLMARK_MTORC1_SIGNALING	REACTOME_SIGNALING_BY_WNT	REACTOME_ER_PHAGOSOME_PATHWAY	REACTOME_ACTIVATION_OF_NF_KAPPAB_IN_B_CELLS	REACTOME_SIGNALING_BY_THE_B_CELL_RECEPTOR_BCR	REACTOME_CYCLIN_E_ASSOCIATED_EVENTS_DURING_G1_S_TRANSITION_	REACTOME_METABOLISM_OF_MRNA	REACTOME_ASSEMBLY_OF_THE_PRE_REPLICATIVE_COMPLEX	REACTOME_AUTODEGRADATION_OF_CDH1_BY_CDH1_APC_C		REACTOME_ORC1_REMOVAL_FROM_CHROMATIN	REACTOME_ANTIGEN_PROCESSING_UBIQUITINATION_PROTEASOME_DEGRADATION	BIOCARTA_PROTEASOME_PATHWAY	REACTOME_APC_C_CDH1_MEDIATED_DEGRADATION_OF_CDC20_AND_OTHER_APC_C_CDH1_TARGETED_PROTEINS_IN_LATE_MITOSIS_EARLY_G1	REACTOME_APC_C_CDC20_MEDIATED_DEGRADATION_OF_MITOTIC_PROTEINS		REACTOME_ANTIGEN_PROCESSING_CROSS_PRESENTATION	REACTOME_METABOLISM_OF_RNA	REACTOME_M_G1_TRANSITION	REACTOME_REGULATION_OF_MRNA_STABILITY_BY_PROTEINS_THAT_BIND_AU_RICH_ELEMENTS	REACTOME_REGULATION_OF_MITOTIC_CELL_CYCLE		REACTOME_CLASS_I_MHC_MEDIATED_ANTIGEN_PROCESSING_PRESENTATION	REACTOME_SYNTHESIS_OF_DNA			REACTOME_S_PHASE	REACTOME_ADAPTIVE_IMMUNE_SYSTEM	REACTOME_G1_S_TRANSITION			REACTOME_CELL_CYCLE_CHECKPOINTS		REACTOME_HOST_INTERACTIONS_OF_HIV_FACTORS		REACTOME_MITOTIC_G1_G1_S_PHASES
+5717	PSMD11	proteasome 26S subunit, non-ATPase 11				KEGG_PROTEASOME	REACTOME_CROSS_PRESENTATION_OF_SOLUBLE_EXOGENOUS_ANTIGENS_ENDOSOMES	REACTOME_DOWNSTREAM_SIGNALING_EVENTS_OF_B_CELL_RECEPTOR_BCR	REACTOME_P53_INDEPENDENT_G1_S_DNA_DAMAGE_CHECKPOINT	REACTOME_CDK_MEDIATED_PHOSPHORYLATION_AND_REMOVAL_OF_CDC6		REACTOME_REGULATION_OF_ORNITHINE_DECARBOXYLASE_ODC	REACTOME_REGULATION_OF_APOPTOSIS	REACTOME_P53_DEPENDENT_G1_DNA_DAMAGE_RESPONSE			REACTOME_CDT1_ASSOCIATION_WITH_THE_CDC6_ORC_ORIGIN_COMPLEX	REACTOME_AUTODEGRADATION_OF_THE_E3_UBIQUITIN_LIGASE_COP1	REACTOME_DESTABILIZATION_OF_MRNA_BY_AUF1_HNRNP_D0		REACTOME_APOPTOSIS	REACTOME_SCF_BETA_TRCP_MEDIATED_DEGRADATION_OF_EMI1	REACTOME_SCFSKP2_MEDIATED_DEGRADATION_OF_P27_P21	REACTOME_VIF_MEDIATED_DEGRADATION_OF_APOBEC3G		REACTOME_SIGNALING_BY_WNT	REACTOME_ER_PHAGOSOME_PATHWAY	REACTOME_ACTIVATION_OF_NF_KAPPAB_IN_B_CELLS	REACTOME_SIGNALING_BY_THE_B_CELL_RECEPTOR_BCR	REACTOME_CYCLIN_E_ASSOCIATED_EVENTS_DURING_G1_S_TRANSITION_	REACTOME_METABOLISM_OF_MRNA	REACTOME_ASSEMBLY_OF_THE_PRE_REPLICATIVE_COMPLEX	REACTOME_AUTODEGRADATION_OF_CDH1_BY_CDH1_APC_C		REACTOME_ORC1_REMOVAL_FROM_CHROMATIN	REACTOME_ANTIGEN_PROCESSING_UBIQUITINATION_PROTEASOME_DEGRADATION	BIOCARTA_PROTEASOME_PATHWAY	REACTOME_APC_C_CDH1_MEDIATED_DEGRADATION_OF_CDC20_AND_OTHER_APC_C_CDH1_TARGETED_PROTEINS_IN_LATE_MITOSIS_EARLY_G1	REACTOME_APC_C_CDC20_MEDIATED_DEGRADATION_OF_MITOTIC_PROTEINS		REACTOME_ANTIGEN_PROCESSING_CROSS_PRESENTATION	REACTOME_METABOLISM_OF_RNA	REACTOME_M_G1_TRANSITION	REACTOME_REGULATION_OF_MRNA_STABILITY_BY_PROTEINS_THAT_BIND_AU_RICH_ELEMENTS	REACTOME_REGULATION_OF_MITOTIC_CELL_CYCLE		REACTOME_CLASS_I_MHC_MEDIATED_ANTIGEN_PROCESSING_PRESENTATION	REACTOME_SYNTHESIS_OF_DNA			REACTOME_S_PHASE	REACTOME_ADAPTIVE_IMMUNE_SYSTEM	REACTOME_G1_S_TRANSITION			REACTOME_CELL_CYCLE_CHECKPOINTS		REACTOME_HOST_INTERACTIONS_OF_HIV_FACTORS		REACTOME_MITOTIC_G1_G1_S_PHASES
+6199	RPS6KB2	ribosomal protein S6 kinase B2						REACTOME_DOWNSTREAM_SIGNALING_EVENTS_OF_B_CELL_RECEPTOR_BCR																					REACTOME_SIGNALING_BY_THE_B_CELL_RECEPTOR_BCR																					REACTOME_SIGNALING_BY_EGFR_IN_CANCER		REACTOME_ADAPTIVE_IMMUNE_SYSTEM								
+65109	UPF3B	UPF3B, regulator of nonsense mediated mRNA decay									REACTOME_TRANSPORT_OF_MATURE_TRANSCRIPT_TO_CYTOPLASM				REACTOME_MRNA_SPLICING	REACTOME_MRNA_3_END_PROCESSING				REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_											REACTOME_METABOLISM_OF_MRNA									REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA		REACTOME_METABOLISM_OF_RNA				REACTOME_MRNA_PROCESSING			REACTOME_RNA_POL_II_TRANSCRIPTION					REACTOME_TRANSCRIPTION						
+51692	CPSF3	cleavage and polyadenylation specific factor 3									REACTOME_TRANSPORT_OF_MATURE_TRANSCRIPT_TO_CYTOPLASM				REACTOME_MRNA_SPLICING	REACTOME_MRNA_3_END_PROCESSING				REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_																				REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA						REACTOME_MRNA_PROCESSING			REACTOME_RNA_POL_II_TRANSCRIPTION					REACTOME_TRANSCRIPTION						
+28988	DBNL	drebrin like																			REACTOME_APOPTOSIS																																							
+54205	CYCS	cytochrome c, somatic																			REACTOME_APOPTOSIS																																							
+1649	DDIT3	DNA damage inducible transcript 3																							HALLMARK_MTORC1_SIGNALING																																		PID_MYC_REPRESS_PATHWAY	
+10652	YKT6	YKT6 v-SNARE homolog																							HALLMARK_MTORC1_SIGNALING																																			
+11333	PDAP1	PDGFA associated protein 1																							HALLMARK_MTORC1_SIGNALING																																			
+3308	HSPA4	heat shock protein family A (Hsp70) member 4																							HALLMARK_MTORC1_SIGNALING																																			
+2539	G6PD	glucose-6-phosphate dehydrogenase																							HALLMARK_MTORC1_SIGNALING																																			
+4849	CNOT3	CCR4-NOT transcription complex subunit 3																													REACTOME_METABOLISM_OF_MRNA											REACTOME_METABOLISM_OF_RNA																		
+6810	STX4	syntaxin 4																																REACTOME_MEMBRANE_TRAFFICKING																										
+10113	PREB	prolactin regulatory element binding																																REACTOME_MEMBRANE_TRAFFICKING																										
+2580	GAK	cyclin G associated kinase																																REACTOME_MEMBRANE_TRAFFICKING																										
+29082	CHMP4A	charged multivesicular body protein 4A																																REACTOME_MEMBRANE_TRAFFICKING																										
+27243	CHMP2A	charged multivesicular body protein 2A																																REACTOME_MEMBRANE_TRAFFICKING																										
+9040	UBE2M	ubiquitin conjugating enzyme E2 M																																		REACTOME_ANTIGEN_PROCESSING_UBIQUITINATION_PROTEASOME_DEGRADATION											REACTOME_CLASS_I_MHC_MEDIATED_ANTIGEN_PROCESSING_PRESENTATION					REACTOME_ADAPTIVE_IMMUNE_SYSTEM			BIOCARTA_P27_PATHWAY		PID_ERB_GENOMIC_PATHWAY			
+81559	TRIM11	tripartite motif containing 11																																		REACTOME_ANTIGEN_PROCESSING_UBIQUITINATION_PROTEASOME_DEGRADATION											REACTOME_CLASS_I_MHC_MEDIATED_ANTIGEN_PROCESSING_PRESENTATION					REACTOME_ADAPTIVE_IMMUNE_SYSTEM								
+29924	EPN1	epsin 1																																																REACTOME_SIGNALING_BY_EGFR_IN_CANCER										
+11140	CDC37	cell division cycle 37																																																REACTOME_SIGNALING_BY_EGFR_IN_CANCER										
+196883	ADCY4	adenylate cyclase 4																																																REACTOME_SIGNALING_BY_EGFR_IN_CANCER										
+11025	LILRB3	leukocyte immunoglobulin like receptor B3																																																		REACTOME_ADAPTIVE_IMMUNE_SYSTEM								
+2976	GTF3C2	general transcription factor IIIC subunit 2																																																				REACTOME_TRANSCRIPTION						
+4738	NEDD8	neural precursor cell expressed, developmentally down-regulated 8																																																					BIOCARTA_P27_PATHWAY		PID_ERB_GENOMIC_PATHWAY			
+6556	SLC11A1	solute carrier family 11 member 1																																																									PID_MYC_REPRESS_PATHWAY	
+3398	ID2	inhibitor of DNA binding 2																																																									PID_MYC_REPRESS_PATHWAY	
+125150	ZSWIM7	zinc finger SWIM-type containing 7																																																										
+730051	ZNF814	zinc finger protein 814																																																										
+163033	ZNF579	zinc finger protein 579																																																										
+149076	ZNF362	zinc finger protein 362																																																										
+10782	ZNF274	zinc finger protein 274																																																										
+90637	ZFAND2A	zinc finger AN1-type containing 2A																																																										
+79844	ZDHHC11	zinc finger DHHC-type containing 11																																																										
+339487	ZBTB8OS	zinc finger and BTB domain containing 8 opposite strand																																																										
+9277	WDR46	WD repeat domain 46																																																										
+7407	VARS	valyl-tRNA synthetase																																																										
+129787	TMEM18	transmembrane protein 18																																																										
+26520	TIMM9	translocase of inner mitochondrial membrane 9																																																										
+10469	TIMM44	translocase of inner mitochondrial membrane 44																																																										
+29844	TFPT	TCF3 fusion partner																																																										
+6830	SUPT6H	SPT6 homolog, histone chaperone																																																										
+30968	STOML2	stomatin like 2																																																										
+8859	STK19	serine/threonine kinase 19																																																										
+10948	STARD3	StAR related lipid transfer domain containing 3																																																										
+29101	SSU72	SSU72 homolog, RNA polymerase II CTD phosphatase																																																										
+6729	SRP54	signal recognition particle 54																																																										
+6623	SNCG	synuclein gamma																																																										
+51312	SLC25A37	solute carrier family 25 member 37																																																										
+94081	SFXN1	sideroflexin 1																																																										
+79005	SCNM1	sodium channel modifier 1																																																										
+100316904	SAP25	Sin3A associated protein 25																																																										
+6286	S100P	S100 calcium binding protein P																																																										
+88745	RRP36	ribosomal RNA processing 36																																																										
+6100	RP9	RP9, pre-mRNA splicing factor																																																										
+9810	RNF40	ring finger protein 40																																																										
+55072	RNF31	ring finger protein 31																																																										
+115992	RNF166	ring finger protein 166																																																										
+246243	RNASEH1	ribonuclease H1																																																										
+55131	RBM28	RNA binding motif protein 28																																																										
+5917	RARS	arginyl-tRNA synthetase																																																										
+5550	PREP	prolyl endopeptidase																																																										
+22870	PPP6R1	protein phosphatase 6 regulatory subunit 1																																																										
+5531	PPP4C	protein phosphatase 4 catalytic subunit																																																										
+54776	PPP1R12C	protein phosphatase 1 regulatory subunit 12C																																																										
+64208	POPDC3	popeye domain containing 3																																																										
+10471	PFDN6	prefoldin subunit 6																																																										
+26167	PCDHB5	protocadherin beta 5																																																										
+29959	NRBP1	nuclear receptor binding protein 1																																																										
+51406	NOL7	nucleolar protein 7																																																										
+79954	NOL10	nucleolar protein 10																																																										
+25983	NGDN	neuroguidin																																																										
+4726	NDUFS6	NADH:ubiquinone oxidoreductase subunit S6																																																										
+65220	NADK	NAD kinase																																																										
+4084	MXD1	MAX dimerization protein 1																																																										
+64965	MRPS9	mitochondrial ribosomal protein S9																																																										
+64969	MRPS5	mitochondrial ribosomal protein S5																																																										
+128308	MRPL55	mitochondrial ribosomal protein L55																																																										
+122704	MRPL52	mitochondrial ribosomal protein L52																																																										
+64978	MRPL38	mitochondrial ribosomal protein L38																																																										
+64983	MRPL32	mitochondrial ribosomal protein L32																																																										
+219927	MRPL21	mitochondrial ribosomal protein L21																																																										
+55052	MRPL20	mitochondrial ribosomal protein L20																																																										
+5871	MAP4K2	mitogen-activated protein kinase kinase kinase kinase 2																																																										
+728269	MAGEA9B	MAGE family member A9B																																																										
+11313	LYPLA2	lysophospholipase 2																																																										
+84946	LTV1	LTV1 ribosome biogenesis factor																																																										
+4034	LRCH4	leucine rich repeats and calponin homology domain containing 4																																																										
+55975	KLHL7	kelch like family member 7																																																										
+10625	IVNS1ABP	influenza virus NS1A binding protein																																																										
+26173	INTS1	integrator complex subunit 1																																																										
+3589	IL11	interleukin 11																																																										
+3201	HOXA4	homeobox A4																																																										
+3200	HOXA3	homeobox A3																																																										
+9324	HMGN3	high mobility group nucleosomal binding domain 3																																																										
+8843	HCAR3	hydroxycarboxylic acid receptor 3																																																										
+338442	HCAR2	hydroxycarboxylic acid receptor 2																																																										
+112495	GTF3C6	general transcription factor IIIC subunit 6																																																										
+10007	GNPDA1	glucosamine-6-phosphate deaminase 1																																																										
+79017	GGCT	gamma-glutamylcyclotransferase																																																										
+51608	GET4	golgi to ER traffic protein 4																																																										
+50486	G0S2	G0/G1 switch 2																																																										
+NA	FTSJ2	NA																																																										
+10211	FLOT1	flotillin 1																																																										
+2314	FLII	FLII, actin remodeling protein																																																										
+2288	FKBP4	FKBP prolyl isomerase 4																																																										
+2268	FGR	FGR proto-oncogene, Src family tyrosine kinase																																																										
+NA	FDX1L	NA																																																										
+2215	FCGR3B	Fc fragment of IgG receptor IIIb																																																										
+54850	FBXL12	F-box and leucine rich repeat protein 12																																																										
+9130	FAM50A	family with sequence similarity 50 member A																																																										
+10436	EMG1	EMG1, N1-specific pseudouridine methyltransferase																																																										
+9669	EIF5B	eukaryotic translation initiation factor 5B																																																										
+1819	DRG2	developmentally regulated GTP binding protein 2																																																										
+7266	DNAJC7	DnaJ heat shock protein family (Hsp40) member C7																																																										
+27000	DNAJC2	DnaJ heat shock protein family (Hsp40) member C2																																																										
+9704	DHX34	DExH-box helicase 34																																																										
+51428	DDX41	DEAD-box helicase 41																																																										
+54883	CWC25	CWC25 spliceosome associated protein homolog																																																										
+1460	CSNK2B	casein kinase 2 beta																																																										
+1453	CSNK1D	casein kinase 1 delta																																																										
+8533	COPS3	COP9 signalosome subunit 3																																																										
+81037	CLPTM1L	CLPTM1 like																																																										
+57019	CIAPIN1	cytokine induced apoptosis inhibitor 1																																																										
+57680	CHD8	chromodomain helicase DNA binding protein 8																																																										
+984	CDK11B	cyclin dependent kinase 11B																																																										
+892	CCNC	cyclin C																																																										
+79080	CCDC86	coiled-coil domain containing 86																																																										
+84310	C7orf50	chromosome 7 open reading frame 50																																																										
+79169	C1orf35	chromosome 1 open reading frame 35																																																										
+84419	C15orf48	chromosome 15 open reading frame 48																																																										
+11120	BTN2A1	butyrophilin subfamily 2 member A1																																																										
+25855	BRMS1	BRMS1, transcriptional repressor and anoikis regulator																																																										
+65980	BRD9	bromodomain containing 9																																																										
+552900	BOLA2	bolA family member 2																																																										
+10295	BCKDK	branched chain ketoacid dehydrogenase kinase																																																										
+7917	BAG6	BCL2 associated athanogene 6																																																										
+23130	ATG2A	autophagy related 2A																																																										
+55210	ATAD3A	ATPase family, AAA domain containing 3A																																																										
+10552	ARPC1A	actin related protein 2/3 complex subunit 1A																																																										
+8854	ALDH1A2	aldehyde dehydrogenase 1 family member A2																																																										
+23	ABCF1	ATP binding cassette subfamily F member 1																																																										

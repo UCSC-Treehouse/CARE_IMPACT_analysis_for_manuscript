@@ -1,0 +1,146 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	21
+# genesets in collections:	1379
+# genes in comparison (n):	110
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+HALLMARK_MYOGENESIS	200	Genes involved in development of skeletal muscle (myogenesis).	12	0.06	8.015e-14	1.105e-10
+REACTOME_MUSCLE_CONTRACTION	48	Genes involved in Muscle contraction	6	0.125	1.852e-9	1.277e-6
+KEGG_NEUROACTIVE_LIGAND_RECEPTOR_INTERACTION	272	Neuroactive ligand-receptor interaction	9	0.03309	2.153e-8	9.895e-6
+HALLMARK_KRAS_SIGNALING_DN	200	Genes down-regulated by KRAS activation.	8	0.04	3.134e-8	1.08e-5
+REACTOME_STRIATED_MUSCLE_CONTRACTION	27	Genes involved in Striated Muscle Contraction	4	0.1481	5.226e-7	1.441e-4
+REACTOME_PRESYNAPTIC_NICOTINIC_ACETYLCHOLINE_RECEPTORS	12	Genes involved in Presynaptic nicotinic acetylcholine receptors	3	0.25	2.89e-6	6.641e-4
+REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES	186	Genes involved in Transmission across Chemical Synapses	6	0.03226	6.125e-6	0.001006
+REACTOME_NEURONAL_SYSTEM	279	Genes involved in Neuronal System	7	0.02509	5.264e-6	0.001006
+REACTOME_ACETYLCHOLINE_BINDING_AND_DOWNSTREAM_EVENTS	16	Genes involved in Acetylcholine Binding And Downstream Events	3	0.1875	7.304e-6	0.001006
+REACTOME_G_ALPHA_I_SIGNALLING_EVENTS	195	Genes involved in G alpha (i) signalling events	6	0.03077	8.022e-6	0.001006
+REACTOME_GPCR_LIGAND_BINDING	408	Genes involved in GPCR ligand binding	8	0.01961	6.708e-6	0.001006
+REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS	305	Genes involved in Class A/1 (Rhodopsin-like receptors)	7	0.02295	9.395e-6	0.00108
+REACTOME_MYOGENESIS	28	Genes involved in Myogenesis	3	0.1071	4.184e-5	0.004439
+KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	85	Hypertrophic cardiomyopathy (HCM)	4	0.04706	5.418e-5	0.005337
+KEGG_DILATED_CARDIOMYOPATHY	92	Dilated cardiomyopathy	4	0.04348	7.382e-5	0.006786
+HALLMARK_PANCREAS_BETA_CELLS	40	Genes specifically up-regulated in pancreatic beta cells.	3	0.075	1.236e-4	0.01065
+REACTOME_CHEMOKINE_RECEPTORS_BIND_CHEMOKINES	57	Genes involved in Chemokine receptors bind chemokines	3	0.05263	3.553e-4	0.02722
+REACTOME_NEUROTRANSMITTER_RECEPTOR_BINDING_AND_DOWNSTREAM_TRANSMISSION_IN_THE_POSTSYNAPTIC_CELL	137	Genes involved in Neurotransmitter Receptor Binding And Downstream Transmission In The  Postsynaptic Cell	4	0.0292	3.416e-4	0.02722
+REACTOME_DEVELOPMENTAL_BIOLOGY	396	Genes involved in Developmental Biology	6	0.01515	3.973e-4	0.02884
+BIOCARTA_ACH_PATHWAY	16	Role of nicotinic acetylcholine receptors in the regulation of apoptosis	2	0.125	6.665e-4	0.04596
+REACTOME_NA_CL_DEPENDENT_NEUROTRANSMITTER_TRANSPORTERS	17	Genes involved in Na+/Cl- dependent neurotransmitter transporters	2	0.1176	7.542e-4	0.04953
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	HALLMARK_MYOGENESIS	REACTOME_MUSCLE_CONTRACTION	KEGG_NEUROACTIVE_LIGAND_RECEPTOR_INTERACTION	HALLMARK_KRAS_SIGNALING_DN	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_PRESYNAPTIC_NICOTINIC_ACETYLCHOLINE_RECEPTORS	REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES	REACTOME_NEURONAL_SYSTEM	REACTOME_ACETYLCHOLINE_BINDING_AND_DOWNSTREAM_EVENTS	REACTOME_G_ALPHA_I_SIGNALLING_EVENTS	REACTOME_GPCR_LIGAND_BINDING	REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS	REACTOME_MYOGENESIS	KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	KEGG_DILATED_CARDIOMYOPATHY	HALLMARK_PANCREAS_BETA_CELLS	REACTOME_CHEMOKINE_RECEPTORS_BIND_CHEMOKINES	REACTOME_NEUROTRANSMITTER_RECEPTOR_BINDING_AND_DOWNSTREAM_TRANSMISSION_IN_THE_POSTSYNAPTIC_CELL	REACTOME_DEVELOPMENTAL_BIOLOGY	BIOCARTA_ACH_PATHWAY	REACTOME_NA_CL_DEPENDENT_NEUROTRANSMITTER_TRANSPORTERS
+7139	TNNT2	troponin T2, cardiac type	HALLMARK_MYOGENESIS	REACTOME_MUSCLE_CONTRACTION			REACTOME_STRIATED_MUSCLE_CONTRACTION									KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	KEGG_DILATED_CARDIOMYOPATHY						
+1674	DES	desmin	HALLMARK_MYOGENESIS	REACTOME_MUSCLE_CONTRACTION			REACTOME_STRIATED_MUSCLE_CONTRACTION									KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	KEGG_DILATED_CARDIOMYOPATHY						
+7135	TNNI1	troponin I1, slow skeletal type	HALLMARK_MYOGENESIS	REACTOME_MUSCLE_CONTRACTION			REACTOME_STRIATED_MUSCLE_CONTRACTION																
+4635	MYL4	myosin light chain 4	HALLMARK_MYOGENESIS	REACTOME_MUSCLE_CONTRACTION			REACTOME_STRIATED_MUSCLE_CONTRACTION																
+140465	MYL6B	myosin light chain 6B	HALLMARK_MYOGENESIS	REACTOME_MUSCLE_CONTRACTION																			
+1146	CHRNG	cholinergic receptor nicotinic gamma subunit	HALLMARK_MYOGENESIS		KEGG_NEUROACTIVE_LIGAND_RECEPTOR_INTERACTION	HALLMARK_KRAS_SIGNALING_DN		REACTOME_PRESYNAPTIC_NICOTINIC_ACETYLCHOLINE_RECEPTORS	REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES	REACTOME_NEURONAL_SYSTEM	REACTOME_ACETYLCHOLINE_BINDING_AND_DOWNSTREAM_EVENTS									REACTOME_NEUROTRANSMITTER_RECEPTOR_BINDING_AND_DOWNSTREAM_TRANSMISSION_IN_THE_POSTSYNAPTIC_CELL		BIOCARTA_ACH_PATHWAY	
+1134	CHRNA1	cholinergic receptor nicotinic alpha 1 subunit	HALLMARK_MYOGENESIS		KEGG_NEUROACTIVE_LIGAND_RECEPTOR_INTERACTION			REACTOME_PRESYNAPTIC_NICOTINIC_ACETYLCHOLINE_RECEPTORS	REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES	REACTOME_NEURONAL_SYSTEM	REACTOME_ACETYLCHOLINE_BINDING_AND_DOWNSTREAM_EVENTS									REACTOME_NEUROTRANSMITTER_RECEPTOR_BINDING_AND_DOWNSTREAM_TRANSMISSION_IN_THE_POSTSYNAPTIC_CELL			
+70	ACTC1	actin, alpha, cardiac muscle 1	HALLMARK_MYOGENESIS			HALLMARK_KRAS_SIGNALING_DN										KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	KEGG_DILATED_CARDIOMYOPATHY						
+4842	NOS1	nitric oxide synthase 1	HALLMARK_MYOGENESIS			HALLMARK_KRAS_SIGNALING_DN																	
+4656	MYOG	myogenin	HALLMARK_MYOGENESIS												REACTOME_MYOGENESIS						REACTOME_DEVELOPMENTAL_BIOLOGY		
+6442	SGCA	sarcoglycan alpha	HALLMARK_MYOGENESIS													KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	KEGG_DILATED_CARDIOMYOPATHY						
+7140	TNNT3	troponin T3, fast skeletal type	HALLMARK_MYOGENESIS																				
+4637	MYL6	myosin light chain 6		REACTOME_MUSCLE_CONTRACTION																	REACTOME_DEVELOPMENTAL_BIOLOGY		
+152	ADRA2C	adrenoceptor alpha 2C			KEGG_NEUROACTIVE_LIGAND_RECEPTOR_INTERACTION	HALLMARK_KRAS_SIGNALING_DN																	
+1144	CHRND	cholinergic receptor nicotinic delta subunit			KEGG_NEUROACTIVE_LIGAND_RECEPTOR_INTERACTION			REACTOME_PRESYNAPTIC_NICOTINIC_ACETYLCHOLINE_RECEPTORS	REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES	REACTOME_NEURONAL_SYSTEM	REACTOME_ACETYLCHOLINE_BINDING_AND_DOWNSTREAM_EVENTS									REACTOME_NEUROTRANSMITTER_RECEPTOR_BINDING_AND_DOWNSTREAM_TRANSMISSION_IN_THE_POSTSYNAPTIC_CELL			
+2902	GRIN1	glutamate ionotropic receptor NMDA type subunit 1			KEGG_NEUROACTIVE_LIGAND_RECEPTOR_INTERACTION				REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES	REACTOME_NEURONAL_SYSTEM										REACTOME_NEUROTRANSMITTER_RECEPTOR_BINDING_AND_DOWNSTREAM_TRANSMISSION_IN_THE_POSTSYNAPTIC_CELL			
+11255	HRH3	histamine receptor H3			KEGG_NEUROACTIVE_LIGAND_RECEPTOR_INTERACTION							REACTOME_G_ALPHA_I_SIGNALLING_EVENTS	REACTOME_GPCR_LIGAND_BINDING	REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS									
+1268	CNR1	cannabinoid receptor 1			KEGG_NEUROACTIVE_LIGAND_RECEPTOR_INTERACTION							REACTOME_G_ALPHA_I_SIGNALLING_EVENTS	REACTOME_GPCR_LIGAND_BINDING	REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS									
+2912	GRM2	glutamate metabotropic receptor 2			KEGG_NEUROACTIVE_LIGAND_RECEPTOR_INTERACTION								REACTOME_GPCR_LIGAND_BINDING										
+5617	PRL	prolactin			KEGG_NEUROACTIVE_LIGAND_RECEPTOR_INTERACTION																		
+6531	SLC6A3	solute carrier family 6 member 3				HALLMARK_KRAS_SIGNALING_DN			REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES	REACTOME_NEURONAL_SYSTEM													REACTOME_NA_CL_DEPENDENT_NEUROTRANSMITTER_TRANSPORTERS
+7021	TFAP2B	transcription factor AP-2 beta				HALLMARK_KRAS_SIGNALING_DN																	
+23676	SMPX	small muscle protein X-linked				HALLMARK_KRAS_SIGNALING_DN																	
+5317	PKP1	plakophilin 1				HALLMARK_KRAS_SIGNALING_DN																	
+6529	SLC6A1	solute carrier family 6 member 1							REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES	REACTOME_NEURONAL_SYSTEM													REACTOME_NA_CL_DEPENDENT_NEUROTRANSMITTER_TRANSPORTERS
+3752	KCND3	potassium voltage-gated channel subfamily D member 3								REACTOME_NEURONAL_SYSTEM													
+4283	CXCL9	C-X-C motif chemokine ligand 9										REACTOME_G_ALPHA_I_SIGNALLING_EVENTS	REACTOME_GPCR_LIGAND_BINDING	REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS					REACTOME_CHEMOKINE_RECEPTORS_BIND_CHEMOKINES				
+6366	CCL21	C-C motif chemokine ligand 21										REACTOME_G_ALPHA_I_SIGNALLING_EVENTS	REACTOME_GPCR_LIGAND_BINDING	REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS					REACTOME_CHEMOKINE_RECEPTORS_BIND_CHEMOKINES				
+6363	CCL19	C-C motif chemokine ligand 19										REACTOME_G_ALPHA_I_SIGNALLING_EVENTS	REACTOME_GPCR_LIGAND_BINDING	REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS					REACTOME_CHEMOKINE_RECEPTORS_BIND_CHEMOKINES				
+5995	RGR	retinal G protein coupled receptor										REACTOME_G_ALPHA_I_SIGNALLING_EVENTS	REACTOME_GPCR_LIGAND_BINDING	REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS									
+1908	EDN3	endothelin 3											REACTOME_GPCR_LIGAND_BINDING	REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS									
+4654	MYOD1	myogenic differentiation 1													REACTOME_MYOGENESIS						REACTOME_DEVELOPMENTAL_BIOLOGY		
+1013	CDH15	cadherin 15													REACTOME_MYOGENESIS						REACTOME_DEVELOPMENTAL_BIOLOGY		
+1641	DCX	doublecortin																HALLMARK_PANCREAS_BETA_CELLS			REACTOME_DEVELOPMENTAL_BIOLOGY		
+3670	ISL1	ISL LIM homeobox 1																HALLMARK_PANCREAS_BETA_CELLS					
+1113	CHGA	chromogranin A																HALLMARK_PANCREAS_BETA_CELLS					
+8648	NCOA1	nuclear receptor coactivator 1																			REACTOME_DEVELOPMENTAL_BIOLOGY		
+5913	RAPSN	receptor associated protein of the synapse																				BIOCARTA_ACH_PATHWAY	
+283576	ZDHHC22	zinc finger DHHC-type containing 22																					
+10426	TUBGCP3	tubulin gamma complex associated protein 3																					
+10102	TSFM	Ts translation elongation factor, mitochondrial																					
+NA	TMEM8C	NA																					
+7033	TFF3	trefoil factor 3																					
+56155	TEX14	testis expressed 14, intercellular bridge forming factor																					
+11075	STMN2	stathmin 2																					
+246329	STAC3	SH3 and cysteine rich domain 3																					
+84530	SRRM4	serine/arginine repetitive matrix 4																					
+26576	SRPK3	SRSF protein kinase 3																					
+6601	SMARCC2	SWI/SNF related, matrix associated, actin dependent regulator of chromatin subfamily c member 2																					
+400745	SH2D5	SH2 domain containing 5																					
+124925	SEZ6	seizure related 6 homolog																					
+10193	RNF41	ring finger protein 41																					
+59335	PRDM12	PR/SET domain 12																					
+64208	POPDC3	popeye domain containing 3																					
+5308	PITX2	paired like homeodomain 2																					
+83394	PITPNM3	PITPNM family member 3																					
+51268	PIPOX	pipecolic acid and sarcosine oxidase																					
+80714	PBX4	PBX homeobox 4																					
+9924	PAN2	poly(A) specific ribonuclease subunit PAN2																					
+5015	OTX2	orthodenticle homeobox 2																					
+116448	OLIG1	oligodendrocyte transcription factor 1																					
+4807	NHLH1	nescient helix-loop-helix 1																					
+4745	NELL1	neural EGFL like 1																					
+4648	MYO7B	myosin VIIB																					
+84700	MYO18B	myosin XVIIIB																					
+343263	MYBPHL	myosin binding protein H like																					
+NA	METTL21B	NA																					
+4234	METTL1	methyltransferase like 1																					
+4222	MEOX1	mesenchyme homeobox 1																					
+92979	MARCH9	membrane associated ring-CH-type finger 9																					
+284358	MAMSTR	MEF2 activating motif and SAP domain containing transcriptional regulator																					
+9388	LIPG	lipase G, endothelial type																					
+124602	KIF19	kinesin family member 19																					
+57710	KIAA1614	KIAA1614																					
+163782	KANK4	KN motif and ankyrin repeat domains 4																					
+28935	IGKV1-27	immunoglobulin kappa variable 1-27																					
+28385	IGHV6-1	immunoglobulin heavy variable 6-1																					
+28423	IGHV3-49	immunoglobulin heavy variable 3-49																					
+28468	IGHV1-18	immunoglobulin heavy variable 1-18																					
+256158	HMCN2	hemicentin 2																					
+22844	FRMPD1	FERM and PDZ domain containing 1																					
+252995	FNDC5	fibronectin type III domain containing 5																					
+161247	FITM1	fat storage inducing transmembrane protein 1																					
+2264	FGFR4	fibroblast growth factor receptor 4																					
+283849	EXOC3L1	exocyst complex component 3 like 1																					
+2046	EPHA8	EPH receptor A8																					
+644168	DRGX	dorsal root ganglia homeobox																					
+285489	DOK7	docking protein 7																					
+10655	DMRT2	doublesex and mab-3 related transcription factor 2																					
+10540	DCTN2	dynactin subunit 2																					
+92196	DAPL1	death associated protein like 1																					
+30848	CTAG2	cancer/testis antigen 2																					
+1485	CTAG1B	cancer/testis antigen 1B																					
+246100	CTAG1A	cancer/testis antigen 1A																					
+389903	CSAG3	CSAG family member 3																					
+158511	CSAG1	chondrosarcoma associated gene 1																					
+1431	CS	citrate synthase																					
+93979	CPA5	carboxypeptidase A5																					
+51200	CPA4	carboxypeptidase A4																					
+1184	CLCN5	chloride voltage-gated channel 5																					
+8483	CILP	cartilage intermediate layer protein																					
+64377	CHST8	carbohydrate sulfotransferase 8																					
+51032	CELA2B	chymotrypsin like elastase family member 2B																					
+869	CBLN1	cerebellin 1 precursor																					
+827	CAPN6	calpain 6																					
+NA	C20orf166-AS1	NA																					
+92346	C1orf105	chromosome 1 open reading frame 105																					
+283373	ANKRD52	ankyrin repeat domain 52																					
+238	ALK	ALK receptor tyrosine kinase																					
+22977	AKR7A3	aldo-keto reductase family 7 member A3																					

@@ -1,0 +1,896 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	56
+# genesets in collections:	1379
+# genes in comparison (n):	825
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+REACTOME_MITOTIC_G2_G2_M_PHASES	81	Genes involved in Mitotic G2-G2/M phases	11	0.1358	2.261e-7	3.118e-4
+HALLMARK_HEME_METABOLISM	200	Genes involved in metabolism of heme (a cofactor consisting of iron and porphyrin) and erythroblast differentiation.	16	0.08	7.973e-7	4.802e-4
+REACTOME_LOSS_OF_NLP_FROM_MITOTIC_CENTROSOMES	59	Genes involved in Loss of Nlp from mitotic centrosomes	9	0.1525	1.045e-6	4.802e-4
+REACTOME_CELL_CYCLE	421	Genes involved in Cell Cycle	23	0.05463	3.054e-6	7.019e-4
+REACTOME_RECRUITMENT_OF_MITOTIC_CENTROSOME_PROTEINS_AND_COMPLEXES	66	Genes involved in Recruitment of mitotic centrosome proteins and complexes	9	0.1364	2.751e-6	7.019e-4
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	18	0.06545	3.048e-6	7.019e-4
+REACTOME_MRNA_PROCESSING	161	Genes involved in mRNA Processing	13	0.08075	7.648e-6	0.001507
+PID_P73PATHWAY	79	p73 transcription factor network	9	0.1139	1.243e-5	0.002143
+KEGG_SPLICEOSOME	128	Spliceosome	11	0.08594	2.119e-5	0.003136
+PID_HEDGEHOG_GLI_PATHWAY	48	Hedgehog signaling events mediated by Gli proteins	7	0.1458	2.274e-5	0.003136
+HALLMARK_BILE_ACID_METABOLISM	112	Genes involve in metabolism of bile acids and salts.	10	0.08929	3.59e-5	0.0045
+KEGG_UBIQUITIN_MEDIATED_PROTEOLYSIS	138	Ubiquitin mediated proteolysis	11	0.07971	4.262e-5	0.004897
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	37	0.03599	6.379e-5	0.006767
+HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	200	Genes defining epithelial-mesenchymal transition, as in wound healing, fibrosis and metastasis.	13	0.065	7.497e-5	0.006892
+KEGG_GLYCEROPHOSPHOLIPID_METABOLISM	77	Glycerophospholipid metabolism	8	0.1039	7.366e-5	0.006892
+REACTOME_CELL_CYCLE_MITOTIC	325	Genes involved in Cell Cycle, Mitotic	17	0.05231	9.756e-5	0.008408
+HALLMARK_PEROXISOME	104	Genes encoding components of peroxisome.	9	0.08654	1.115e-4	0.008663
+KEGG_MAPK_SIGNALING_PATHWAY	267	MAPK signaling pathway	15	0.05618	1.131e-4	0.008663
+REACTOME_RNA_POL_II_TRANSCRIPTION	105	Genes involved in RNA Polymerase II Transcription	9	0.08571	1.201e-4	0.008716
+REACTOME_SIGNALING_BY_TGF_BETA_RECEPTOR_COMPLEX	63	Genes involved in Signaling by TGF-beta Receptor Complex	7	0.1111	1.354e-4	0.009336
+KEGG_HUNTINGTONS_DISEASE	185	Huntington's disease	12	0.06486	1.429e-4	0.009384
+KEGG_PURINE_METABOLISM	159	Purine metabolism	11	0.06918	1.525e-4	0.00956
+REACTOME_MRNA_SPLICING	111	Genes involved in mRNA Splicing	9	0.08108	1.836e-4	0.01064
+REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS	478	Genes involved in Metabolism of lipids and lipoproteins	21	0.04393	1.852e-4	0.01064
+KEGG_PROSTATE_CANCER	89	Prostate cancer	8	0.08989	2.048e-4	0.0113
+HALLMARK_REACTIVE_OXIGEN_SPECIES_PATHWAY	49	Genes up-regulated by reactive oxigen species (ROS).	6	0.1224	2.382e-4	0.01217
+REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA	140	Genes involved in Processing of Capped Intron-Containing Pre-mRNA	10	0.07143	2.325e-4	0.01217
+HALLMARK_G2M_CHECKPOINT	200	Genes involved in the G2/M checkpoint, as in progression through the cell division cycle.	12	0.06	2.938e-4	0.01397
+HALLMARK_ESTROGEN_RESPONSE_LATE	200	Genes defining late response to estrogen.	12	0.06	2.938e-4	0.01397
+PID_ARF_3PATHWAY	19	Arf1 pathway	4	0.2105	3.224e-4	0.01482
+HALLMARK_DNA_REPAIR	150	Genes involved in DNA repair.	10	0.06667	4.042e-4	0.01654
+KEGG_INOSITOL_PHOSPHATE_METABOLISM	54	Inositol phosphate metabolism	6	0.1111	4.078e-4	0.01654
+KEGG_ADHERENS_JUNCTION	75	Adherens junction	7	0.09333	4.035e-4	0.01654
+PID_AVB3_INTEGRIN_PATHWAY	75	Integrins in angiogenesis	7	0.09333	4.035e-4	0.01654
+REACTOME_SIGNALING_BY_ERBB2	101	Genes involved in Signaling by ERBB2	8	0.07921	4.857e-4	0.01914
+KEGG_PEROXISOME	78	Peroxisome	7	0.08974	5.128e-4	0.01964
+PID_MYC_ACTIV_PATHWAY	79	Validated targets of C-MYC transcriptional activation	7	0.08861	5.541e-4	0.02054
+REACTOME_NUCLEAR_SIGNALING_BY_ERBB4	38	Genes involved in Nuclear signaling by ERBB4	5	0.1316	5.66e-4	0.02054
+HALLMARK_FATTY_ACID_METABOLISM	158	Genes encoding proteins involved in metabolism of fatty acids.	10	0.06329	6.078e-4	0.02105
+REACTOME_SIGNALLING_BY_NGF	217	Genes involved in Signalling by NGF	12	0.0553	6.107e-4	0.02105
+BIOCARTA_P53HYPOXIA_PATHWAY	23	Hypoxia and p53 in the Cardiovascular system	4	0.1739	6.956e-4	0.0234
+PID_RANBP2_PATHWAY	11	Sumoylation by RanBP2 regulates transcriptional repression	3	0.2727	8.541e-4	0.02804
+NABA_ECM_GLYCOPROTEINS	196	Genes encoding structural ECM glycoproteins	11	0.05612	9.006e-4	0.02888
+KEGG_PATHWAYS_IN_CANCER	328	Pathways in cancer	15	0.04573	9.852e-4	0.03088
+KEGG_NUCLEOTIDE_EXCISION_REPAIR	44	Nucleotide excision repair	5	0.1136	0.001121	0.03178
+WNT_SIGNALING	89	Genes related to Wnt-mediated signal transduction	7	0.07865	0.001129	0.03178
+REACTOME_DOWNREGULATION_OF_ERBB2_ERBB3_SIGNALING	12	Genes involved in Downregulation of ERBB2:ERBB3 signaling	3	0.25	0.001124	0.03178
+REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_	44	Genes involved in Cleavage of Growing Transcript in the Termination Region	5	0.1136	0.001121	0.03178
+NABA_COLLAGENS	44	Genes encoding collagen proteins	5	0.1136	0.001121	0.03178
+PID_ILK_PATHWAY	45	Integrin-linked kinase signaling	5	0.1111	0.001242	0.03233
+PID_HDAC_CLASSI_PATHWAY	66	Signaling events mediated by HDAC Class I	6	0.09091	0.001197	0.03233
+REACTOME_SIGNALING_BY_ERBB4	90	Genes involved in Signaling by ERBB4	7	0.07778	0.001206	0.03233
+REACTOME_FORMATION_OF_RNA_POL_II_ELONGATION_COMPLEX_	45	Genes involved in Formation of RNA Pol II elongation complex	5	0.1111	0.001242	0.03233
+KEGG_THYROID_CANCER	29	Thyroid cancer	4	0.1379	0.001713	0.04375
+KEGG_ENDOCYTOSIS	183	Endocytosis	10	0.05464	0.001849	0.04636
+REACTOME_MRNA_CAPPING	30	Genes involved in mRNA Capping	4	0.1333	0.001949	0.048
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	REACTOME_MITOTIC_G2_G2_M_PHASES	HALLMARK_HEME_METABOLISM	REACTOME_LOSS_OF_NLP_FROM_MITOTIC_CENTROSOMES	REACTOME_CELL_CYCLE	REACTOME_RECRUITMENT_OF_MITOTIC_CENTROSOME_PROTEINS_AND_COMPLEXES	NABA_CORE_MATRISOME	REACTOME_MRNA_PROCESSING	PID_P73PATHWAY	KEGG_SPLICEOSOME	PID_HEDGEHOG_GLI_PATHWAY	HALLMARK_BILE_ACID_METABOLISM	KEGG_UBIQUITIN_MEDIATED_PROTEOLYSIS	NABA_MATRISOME	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	KEGG_GLYCEROPHOSPHOLIPID_METABOLISM	REACTOME_CELL_CYCLE_MITOTIC	HALLMARK_PEROXISOME	KEGG_MAPK_SIGNALING_PATHWAY	REACTOME_RNA_POL_II_TRANSCRIPTION	REACTOME_SIGNALING_BY_TGF_BETA_RECEPTOR_COMPLEX	KEGG_HUNTINGTONS_DISEASE	KEGG_PURINE_METABOLISM	REACTOME_MRNA_SPLICING	REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS	KEGG_PROSTATE_CANCER	HALLMARK_REACTIVE_OXIGEN_SPECIES_PATHWAY	REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA	HALLMARK_G2M_CHECKPOINT	HALLMARK_ESTROGEN_RESPONSE_LATE	PID_ARF_3PATHWAY	HALLMARK_DNA_REPAIR	KEGG_INOSITOL_PHOSPHATE_METABOLISM	KEGG_ADHERENS_JUNCTION	PID_AVB3_INTEGRIN_PATHWAY	REACTOME_SIGNALING_BY_ERBB2	KEGG_PEROXISOME	PID_MYC_ACTIV_PATHWAY	REACTOME_NUCLEAR_SIGNALING_BY_ERBB4	HALLMARK_FATTY_ACID_METABOLISM	REACTOME_SIGNALLING_BY_NGF	BIOCARTA_P53HYPOXIA_PATHWAY	PID_RANBP2_PATHWAY	NABA_ECM_GLYCOPROTEINS	KEGG_PATHWAYS_IN_CANCER	KEGG_NUCLEOTIDE_EXCISION_REPAIR	WNT_SIGNALING	REACTOME_DOWNREGULATION_OF_ERBB2_ERBB3_SIGNALING	REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_	NABA_COLLAGENS	PID_ILK_PATHWAY	PID_HDAC_CLASSI_PATHWAY	REACTOME_SIGNALING_BY_ERBB4	REACTOME_FORMATION_OF_RNA_POL_II_ELONGATION_COMPLEX_	KEGG_THYROID_CANCER	KEGG_ENDOCYTOSIS	REACTOME_MRNA_CAPPING
+7846	TUBA1A	tubulin alpha 1a	REACTOME_MITOTIC_G2_G2_M_PHASES		REACTOME_LOSS_OF_NLP_FROM_MITOTIC_CENTROSOMES	REACTOME_CELL_CYCLE	REACTOME_RECRUITMENT_OF_MITOTIC_CENTROSOME_PROTEINS_AND_COMPLEXES			PID_P73PATHWAY								REACTOME_CELL_CYCLE_MITOTIC																																								
+3320	HSP90AA1	heat shock protein 90 alpha family class A member 1	REACTOME_MITOTIC_G2_G2_M_PHASES		REACTOME_LOSS_OF_NLP_FROM_MITOTIC_CENTROSOMES	REACTOME_CELL_CYCLE	REACTOME_RECRUITMENT_OF_MITOTIC_CENTROSOME_PROTEINS_AND_COMPLEXES											REACTOME_CELL_CYCLE_MITOTIC									KEGG_PROSTATE_CANCER									PID_AVB3_INTEGRIN_PATHWAY	REACTOME_SIGNALING_BY_ERBB2		PID_MYC_ACTIV_PATHWAY		HALLMARK_FATTY_ACID_METABOLISM		BIOCARTA_P53HYPOXIA_PATHWAY			KEGG_PATHWAYS_IN_CANCER						PID_ILK_PATHWAY						
+1069	CETN2	centrin 2	REACTOME_MITOTIC_G2_G2_M_PHASES		REACTOME_LOSS_OF_NLP_FROM_MITOTIC_CENTROSOMES	REACTOME_CELL_CYCLE	REACTOME_RECRUITMENT_OF_MITOTIC_CENTROSOME_PROTEINS_AND_COMPLEXES											REACTOME_CELL_CYCLE_MITOTIC															HALLMARK_DNA_REPAIR														KEGG_NUCLEOTIDE_EXCISION_REPAIR											
+10383	TUBB4B	tubulin beta 4B class IVb	REACTOME_MITOTIC_G2_G2_M_PHASES		REACTOME_LOSS_OF_NLP_FROM_MITOTIC_CENTROSOMES	REACTOME_CELL_CYCLE	REACTOME_RECRUITMENT_OF_MITOTIC_CENTROSOME_PROTEINS_AND_COMPLEXES											REACTOME_CELL_CYCLE_MITOTIC																																								
+10806	SDCCAG8	serologically defined colon cancer antigen 8	REACTOME_MITOTIC_G2_G2_M_PHASES		REACTOME_LOSS_OF_NLP_FROM_MITOTIC_CENTROSOMES	REACTOME_CELL_CYCLE	REACTOME_RECRUITMENT_OF_MITOTIC_CENTROSOME_PROTEINS_AND_COMPLEXES											REACTOME_CELL_CYCLE_MITOTIC																																								
+5108	PCM1	pericentriolar material 1	REACTOME_MITOTIC_G2_G2_M_PHASES		REACTOME_LOSS_OF_NLP_FROM_MITOTIC_CENTROSOMES	REACTOME_CELL_CYCLE	REACTOME_RECRUITMENT_OF_MITOTIC_CENTROSOME_PROTEINS_AND_COMPLEXES											REACTOME_CELL_CYCLE_MITOTIC																																								
+8655	DYNLL1	dynein light chain LC8-type 1	REACTOME_MITOTIC_G2_G2_M_PHASES		REACTOME_LOSS_OF_NLP_FROM_MITOTIC_CENTROSOMES	REACTOME_CELL_CYCLE	REACTOME_RECRUITMENT_OF_MITOTIC_CENTROSOME_PROTEINS_AND_COMPLEXES											REACTOME_CELL_CYCLE_MITOTIC																																								
+95681	CEP41	centrosomal protein 41	REACTOME_MITOTIC_G2_G2_M_PHASES		REACTOME_LOSS_OF_NLP_FROM_MITOTIC_CENTROSOMES	REACTOME_CELL_CYCLE	REACTOME_RECRUITMENT_OF_MITOTIC_CENTROSOME_PROTEINS_AND_COMPLEXES											REACTOME_CELL_CYCLE_MITOTIC																																								
+10142	AKAP9	A-kinase anchoring protein 9	REACTOME_MITOTIC_G2_G2_M_PHASES		REACTOME_LOSS_OF_NLP_FROM_MITOTIC_CENTROSOMES	REACTOME_CELL_CYCLE	REACTOME_RECRUITMENT_OF_MITOTIC_CENTROSOME_PROTEINS_AND_COMPLEXES											REACTOME_CELL_CYCLE_MITOTIC																																								
+4331	MNAT1	MNAT1, CDK activating kinase assembly factor	REACTOME_MITOTIC_G2_G2_M_PHASES			REACTOME_CELL_CYCLE			REACTOME_MRNA_PROCESSING									REACTOME_CELL_CYCLE_MITOTIC			REACTOME_RNA_POL_II_TRANSCRIPTION									HALLMARK_G2M_CHECKPOINT																	KEGG_NUCLEOTIDE_EXCISION_REPAIR								REACTOME_FORMATION_OF_RNA_POL_II_ELONGATION_COMPLEX_			REACTOME_MRNA_CAPPING
+7514	XPO1	exportin 1	REACTOME_MITOTIC_G2_G2_M_PHASES			REACTOME_CELL_CYCLE						PID_HEDGEHOG_GLI_PATHWAY						REACTOME_CELL_CYCLE_MITOTIC				REACTOME_SIGNALING_BY_TGF_BETA_RECEPTOR_COMPLEX								HALLMARK_G2M_CHECKPOINT														PID_RANBP2_PATHWAY								PID_ILK_PATHWAY	PID_HDAC_CLASSI_PATHWAY					
+5715	PSMD9	proteasome 26S subunit, non-ATPase 9		HALLMARK_HEME_METABOLISM		REACTOME_CELL_CYCLE												REACTOME_CELL_CYCLE_MITOTIC																																								
+10181	RBM5	RNA binding motif protein 5		HALLMARK_HEME_METABOLISM					REACTOME_MRNA_PROCESSING																REACTOME_MRNA_SPLICING				REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA																													
+847	CAT	catalase		HALLMARK_HEME_METABOLISM									HALLMARK_BILE_ACID_METABOLISM						HALLMARK_PEROXISOME									HALLMARK_REACTIVE_OXIGEN_SPECIES_PATHWAY										KEGG_PEROXISOME																				
+23002	DAAM1	dishevelled associated activator of morphogenesis 1		HALLMARK_HEME_METABOLISM																																												WNT_SIGNALING										
+51646	YPEL5	yippee like 5		HALLMARK_HEME_METABOLISM																																																						
+51312	SLC25A37	solute carrier family 25 member 37		HALLMARK_HEME_METABOLISM																																																						
+55544	RBM38	RNA binding motif protein 38		HALLMARK_HEME_METABOLISM																																																						
+80148	PQLC1	PQ loop repeat containing 1		HALLMARK_HEME_METABOLISM																																																						
+5498	PPOX	protoporphyrinogen oxidase		HALLMARK_HEME_METABOLISM																																																						
+56180	MOSPD1	motile sperm domain containing 1		HALLMARK_HEME_METABOLISM																																																						
+3068	HDGF	heparin binding growth factor		HALLMARK_HEME_METABOLISM																																																						
+9541	CIR1	corepressor interacting with RBPJ, 1		HALLMARK_HEME_METABOLISM																																																						
+831	CAST	calpastatin		HALLMARK_HEME_METABOLISM																																																						
+665	BNIP3L	BCL2 interacting protein 3 like		HALLMARK_HEME_METABOLISM																																																						
+23568	ARL2BP	ADP ribosylation factor like GTPase 2 binding protein		HALLMARK_HEME_METABOLISM																																																						
+51094	ADIPOR1	adiponectin receptor 1		HALLMARK_HEME_METABOLISM																																																						
+4193	MDM2	MDM2 proto-oncogene				REACTOME_CELL_CYCLE				PID_P73PATHWAY				KEGG_UBIQUITIN_MEDIATED_PROTEOLYSIS													KEGG_PROSTATE_CANCER										REACTOME_SIGNALING_BY_ERBB2					REACTOME_SIGNALLING_BY_NGF	BIOCARTA_P53HYPOXIA_PATHWAY	PID_RANBP2_PATHWAY		KEGG_PATHWAYS_IN_CANCER								REACTOME_SIGNALING_BY_ERBB4			KEGG_ENDOCYTOSIS	
+51434	ANAPC7	anaphase promoting complex subunit 7				REACTOME_CELL_CYCLE								KEGG_UBIQUITIN_MEDIATED_PROTEOLYSIS				REACTOME_CELL_CYCLE_MITOTIC																																								
+595	CCND1	cyclin D1				REACTOME_CELL_CYCLE												REACTOME_CELL_CYCLE_MITOTIC									KEGG_PROSTATE_CANCER			HALLMARK_G2M_CHECKPOINT	HALLMARK_ESTROGEN_RESPONSE_LATE															KEGG_PATHWAYS_IN_CANCER		WNT_SIGNALING				PID_ILK_PATHWAY				KEGG_THYROID_CANCER		
+348235	SKA2	spindle and kinetochore associated complex subunit 2				REACTOME_CELL_CYCLE												REACTOME_CELL_CYCLE_MITOTIC																																								
+10726	NUDC	nuclear distribution C, dynein complex regulator				REACTOME_CELL_CYCLE												REACTOME_CELL_CYCLE_MITOTIC																																								
+25909	AHCTF1	AT-hook containing transcription factor 1				REACTOME_CELL_CYCLE												REACTOME_CELL_CYCLE_MITOTIC																																								
+10856	RUVBL2	RuvB like AAA ATPase 2				REACTOME_CELL_CYCLE																																	PID_MYC_ACTIV_PATHWAY													PID_ILK_PATHWAY						
+8607	RUVBL1	RuvB like AAA ATPase 1				REACTOME_CELL_CYCLE																																	PID_MYC_ACTIV_PATHWAY													PID_ILK_PATHWAY						
+55135	WRAP53	WD repeat containing antisense to TP53				REACTOME_CELL_CYCLE																																																				
+23224	SYNE2	spectrin repeat containing nuclear envelope protein 2				REACTOME_CELL_CYCLE																																																				
+23345	SYNE1	spectrin repeat containing nuclear envelope protein 1				REACTOME_CELL_CYCLE																																																				
+1307	COL16A1	collagen type XVI alpha 1 chain						NABA_CORE_MATRISOME							NABA_MATRISOME	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION																				PID_AVB3_INTEGRIN_PATHWAY															NABA_COLLAGENS							
+3909	LAMA3	laminin subunit alpha 3						NABA_CORE_MATRISOME							NABA_MATRISOME	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION																													NABA_ECM_GLYCOPROTEINS	KEGG_PATHWAYS_IN_CANCER												
+4147	MATN2	matrilin 2						NABA_CORE_MATRISOME							NABA_MATRISOME	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION																													NABA_ECM_GLYCOPROTEINS													
+2192	FBLN1	fibulin 1						NABA_CORE_MATRISOME							NABA_MATRISOME	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION																													NABA_ECM_GLYCOPROTEINS													
+2006	ELN	elastin						NABA_CORE_MATRISOME							NABA_MATRISOME	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION																													NABA_ECM_GLYCOPROTEINS													
+1842	ECM2	extracellular matrix protein 2						NABA_CORE_MATRISOME							NABA_MATRISOME	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION																													NABA_ECM_GLYCOPROTEINS													
+50509	COL5A3	collagen type V alpha 3 chain						NABA_CORE_MATRISOME							NABA_MATRISOME	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION																																			NABA_COLLAGENS							
+1287	COL4A5	collagen type IV alpha 5 chain						NABA_CORE_MATRISOME							NABA_MATRISOME																					PID_AVB3_INTEGRIN_PATHWAY															NABA_COLLAGENS							
+200403	VWA3B	von Willebrand factor A domain containing 3B						NABA_CORE_MATRISOME							NABA_MATRISOME																														NABA_ECM_GLYCOPROTEINS													
+146177	VWA3A	von Willebrand factor A domain containing 3A						NABA_CORE_MATRISOME							NABA_MATRISOME																														NABA_ECM_GLYCOPROTEINS													
+7059	THBS3	thrombospondin 3						NABA_CORE_MATRISOME							NABA_MATRISOME																														NABA_ECM_GLYCOPROTEINS													
+4239	MFAP4	microfibril associated protein 4						NABA_CORE_MATRISOME							NABA_MATRISOME																														NABA_ECM_GLYCOPROTEINS													
+4052	LTBP1	latent transforming growth factor beta binding protein 1						NABA_CORE_MATRISOME							NABA_MATRISOME																														NABA_ECM_GLYCOPROTEINS													
+8292	COLQ	collagen like tail subunit of asymmetric acetylcholinesterase						NABA_CORE_MATRISOME							NABA_MATRISOME																														NABA_ECM_GLYCOPROTEINS													
+81578	COL21A1	collagen type XXI alpha 1 chain						NABA_CORE_MATRISOME							NABA_MATRISOME																																				NABA_COLLAGENS							
+80781	COL18A1	collagen type XVIII alpha 1 chain						NABA_CORE_MATRISOME							NABA_MATRISOME																																				NABA_COLLAGENS							
+5552	SRGN	serglycin						NABA_CORE_MATRISOME							NABA_MATRISOME																																											
+127435	PODN	podocan						NABA_CORE_MATRISOME							NABA_MATRISOME																																											
+6431	SRSF6	serine and arginine rich splicing factor 6							REACTOME_MRNA_PROCESSING		KEGG_SPLICEOSOME										REACTOME_RNA_POL_II_TRANSCRIPTION				REACTOME_MRNA_SPLICING				REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA				HALLMARK_DNA_REPAIR																	REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_								
+4686	NCBP1	nuclear cap binding protein subunit 1							REACTOME_MRNA_PROCESSING		KEGG_SPLICEOSOME										REACTOME_RNA_POL_II_TRANSCRIPTION				REACTOME_MRNA_SPLICING				REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA																					REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_					REACTOME_FORMATION_OF_RNA_POL_II_ELONGATION_COMPLEX_			REACTOME_MRNA_CAPPING
+6430	SRSF5	serine and arginine rich splicing factor 5							REACTOME_MRNA_PROCESSING		KEGG_SPLICEOSOME										REACTOME_RNA_POL_II_TRANSCRIPTION				REACTOME_MRNA_SPLICING				REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA																					REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_								
+5441	POLR2L	RNA polymerase II subunit L							REACTOME_MRNA_PROCESSING												REACTOME_RNA_POL_II_TRANSCRIPTION		KEGG_HUNTINGTONS_DISEASE	KEGG_PURINE_METABOLISM	REACTOME_MRNA_SPLICING				REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA																										REACTOME_FORMATION_OF_RNA_POL_II_ELONGATION_COMPLEX_			REACTOME_MRNA_CAPPING
+1479	CSTF3	cleavage stimulation factor subunit 3							REACTOME_MRNA_PROCESSING												REACTOME_RNA_POL_II_TRANSCRIPTION				REACTOME_MRNA_SPLICING				REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA				HALLMARK_DNA_REPAIR																	REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_								
+6829	SUPT5H	SPT5 homolog, DSIF elongation factor subunit							REACTOME_MRNA_PROCESSING												REACTOME_RNA_POL_II_TRANSCRIPTION												HALLMARK_DNA_REPAIR																						REACTOME_FORMATION_OF_RNA_POL_II_ELONGATION_COMPLEX_			REACTOME_MRNA_CAPPING
+25888	ZNF473	zinc finger protein 473							REACTOME_MRNA_PROCESSING												REACTOME_RNA_POL_II_TRANSCRIPTION																													REACTOME_CLEAVAGE_OF_GROWING_TRANSCRIPT_IN_THE_TERMINATION_REGION_								
+5725	PTBP1	polypyrimidine tract binding protein 1							REACTOME_MRNA_PROCESSING																REACTOME_MRNA_SPLICING				REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA																													
+3188	HNRNPH2	heterogeneous nuclear ribonucleoprotein H2							REACTOME_MRNA_PROCESSING																REACTOME_MRNA_SPLICING				REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA																													
+3185	HNRNPF	heterogeneous nuclear ribonucleoprotein F							REACTOME_MRNA_PROCESSING																REACTOME_MRNA_SPLICING				REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA																													
+1977	EIF4E	eukaryotic translation initiation factor 4E							REACTOME_MRNA_PROCESSING																				REACTOME_PROCESSING_OF_CAPPED_INTRON_CONTAINING_PRE_MRNA										PID_MYC_ACTIV_PATHWAY																			
+NA	PPAP2A	NA								PID_P73PATHWAY							KEGG_GLYCEROPHOSPHOLIPID_METABOLISM									REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS																																
+10413	YAP1	Yes associated protein 1								PID_P73PATHWAY																REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS														REACTOME_NUCLEAR_SIGNALING_BY_ERBB4														REACTOME_SIGNALING_BY_ERBB4				
+7161	TP73	tumor protein p73								PID_P73PATHWAY																																																
+54894	RNF43	ring finger protein 43								PID_P73PATHWAY																																																
+3297	HSF1	heat shock transcription factor 1								PID_P73PATHWAY																																																
+23151	GRAMD4	GRAM domain containing 4								PID_P73PATHWAY																																																
+9191	DEDD	death effector domain containing								PID_P73PATHWAY																																																
+3303	HSPA1A	heat shock protein family A (Hsp70) member 1A									KEGG_SPLICEOSOME									KEGG_MAPK_SIGNALING_PATHWAY																							BIOCARTA_P53HYPOXIA_PATHWAY														KEGG_ENDOCYTOSIS	
+23350	U2SURP	U2 snRNP associated SURP domain containing									KEGG_SPLICEOSOME																																															
+29896	TRA2A	transformer 2 alpha homolog									KEGG_SPLICEOSOME																																															
+22938	SNW1	SNW domain containing 1									KEGG_SPLICEOSOME																																															
+58517	RBM25	RNA binding motif protein 25									KEGG_SPLICEOSOME																																															
+1655	DDX5	DEAD-box helicase 5									KEGG_SPLICEOSOME																																															
+11325	DDX42	DEAD-box helicase 42									KEGG_SPLICEOSOME																																															
+22985	ACIN1	apoptotic chromatin condensation inducer 1									KEGG_SPLICEOSOME																																															
+8554	PIAS1	protein inhibitor of activated STAT 1										PID_HEDGEHOG_GLI_PATHWAY		KEGG_UBIQUITIN_MEDIATED_PROTEOLYSIS																														PID_RANBP2_PATHWAY		KEGG_PATHWAYS_IN_CANCER												
+23309	SIN3B	SIN3 transcription regulator family member B										PID_HEDGEHOG_GLI_PATHWAY														REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS																											PID_HDAC_CLASSI_PATHWAY					
+8819	SAP30	Sin3A associated protein 30										PID_HEDGEHOG_GLI_PATHWAY																		HALLMARK_G2M_CHECKPOINT																							PID_HDAC_CLASSI_PATHWAY					
+27148	STK36	serine/threonine kinase 36										PID_HEDGEHOG_GLI_PATHWAY																																		KEGG_PATHWAYS_IN_CANCER												
+8100	IFT88	intraflagellar transport 88										PID_HEDGEHOG_GLI_PATHWAY																																														
+26160	IFT172	intraflagellar transport 172										PID_HEDGEHOG_GLI_PATHWAY																																														
+8443	GNPAT	glyceronephosphate O-acyltransferase											HALLMARK_BILE_ACID_METABOLISM				KEGG_GLYCEROPHOSPHOLIPID_METABOLISM		HALLMARK_PEROXISOME							REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS												KEGG_PEROXISOME																				
+3295	HSD17B4	hydroxysteroid 17-beta dehydrogenase 4											HALLMARK_BILE_ACID_METABOLISM						HALLMARK_PEROXISOME							REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS												KEGG_PEROXISOME			HALLMARK_FATTY_ACID_METABOLISM																	
+25824	PRDX5	peroxiredoxin 5											HALLMARK_BILE_ACID_METABOLISM						HALLMARK_PEROXISOME																			KEGG_PEROXISOME																				
+2053	EPHX2	epoxide hydrolase 2											HALLMARK_BILE_ACID_METABOLISM						HALLMARK_PEROXISOME																			KEGG_PEROXISOME																				
+223	ALDH9A1	aldehyde dehydrogenase 9 family member A1											HALLMARK_BILE_ACID_METABOLISM						HALLMARK_PEROXISOME																						HALLMARK_FATTY_ACID_METABOLISM																	
+83752	LONP2	lon peptidase 2, peroxisomal											HALLMARK_BILE_ACID_METABOLISM						HALLMARK_PEROXISOME																																							
+5824	PEX19	peroxisomal biogenesis factor 19											HALLMARK_BILE_ACID_METABOLISM																									KEGG_PEROXISOME																				
+114327	EFHC1	EF-hand domain containing 1											HALLMARK_BILE_ACID_METABOLISM																																													
+23461	ABCA5	ATP binding cassette subfamily A member 5											HALLMARK_BILE_ACID_METABOLISM																																													
+7323	UBE2D3	ubiquitin conjugating enzyme E2 D3												KEGG_UBIQUITIN_MEDIATED_PROTEOLYSIS								REACTOME_SIGNALING_BY_TGF_BETA_RECEPTOR_COMPLEX																																				
+8451	CUL4A	cullin 4A												KEGG_UBIQUITIN_MEDIATED_PROTEOLYSIS																HALLMARK_G2M_CHECKPOINT																	KEGG_NUCLEOTIDE_EXCISION_REPAIR											
+8452	CUL3	cullin 3												KEGG_UBIQUITIN_MEDIATED_PROTEOLYSIS																HALLMARK_G2M_CHECKPOINT																												
+1643	DDB2	damage specific DNA binding protein 2												KEGG_UBIQUITIN_MEDIATED_PROTEOLYSIS																			HALLMARK_DNA_REPAIR														KEGG_NUCLEOTIDE_EXCISION_REPAIR											
+1642	DDB1	damage specific DNA binding protein 1												KEGG_UBIQUITIN_MEDIATED_PROTEOLYSIS																			HALLMARK_DNA_REPAIR														KEGG_NUCLEOTIDE_EXCISION_REPAIR											
+10401	PIAS3	protein inhibitor of activated STAT 3												KEGG_UBIQUITIN_MEDIATED_PROTEOLYSIS																																KEGG_PATHWAYS_IN_CANCER												
+51366	UBR5	ubiquitin protein ligase E3 component n-recognin 5												KEGG_UBIQUITIN_MEDIATED_PROTEOLYSIS																																												
+25847	ANAPC13	anaphase promoting complex subunit 13												KEGG_UBIQUITIN_MEDIATED_PROTEOLYSIS																																												
+6382	SDC1	syndecan 1													NABA_MATRISOME	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION										REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS										PID_AVB3_INTEGRIN_PATHWAY																						
+6387	CXCL12	C-X-C motif chemokine ligand 12													NABA_MATRISOME	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION															HALLMARK_ESTROGEN_RESPONSE_LATE									REACTOME_NUCLEAR_SIGNALING_BY_ERBB4														REACTOME_SIGNALING_BY_ERBB4				
+11167	FSTL1	follistatin like 1													NABA_MATRISOME	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION																																										
+9542	NRG2	neuregulin 2													NABA_MATRISOME																						REACTOME_SIGNALING_BY_ERBB2			REACTOME_NUCLEAR_SIGNALING_BY_ERBB4									REACTOME_DOWNREGULATION_OF_ERBB2_ERBB3_SIGNALING					REACTOME_SIGNALING_BY_ERBB4				
+2487	FRZB	frizzled related protein													NABA_MATRISOME																																	WNT_SIGNALING										
+23654	PLXNB2	plexin B2													NABA_MATRISOME																																											
+54681	P4HTM	prolyl 4-hydroxylase, transmembrane													NABA_MATRISOME																																											
+55214	P3H2	prolyl 3-hydroxylase 2													NABA_MATRISOME																																											
+80760	ITIH5	inter-alpha-trypsin inhibitor heavy chain family member 5													NABA_MATRISOME																																											
+3481	IGF2	insulin like growth factor 2													NABA_MATRISOME																																											
+1476	CSTB	cystatin B													NABA_MATRISOME																																											
+1464	CSPG4	chondroitin sulfate proteoglycan 4													NABA_MATRISOME																																											
+81035	COLEC12	collectin subfamily member 12													NABA_MATRISOME																																											
+7123	CLEC3B	C-type lectin domain family 3 member B													NABA_MATRISOME																																											
+307	ANXA4	annexin A4													NABA_MATRISOME																																											
+311	ANXA11	annexin A11													NABA_MATRISOME																																											
+54507	ADAMTSL4	ADAMTS like 4													NABA_MATRISOME																																											
+9509	ADAMTS2	ADAM metallopeptidase with thrombospondin type 1 motif 2													NABA_MATRISOME																																											
+8751	ADAM15	ADAM metallopeptidase domain 15													NABA_MATRISOME																																											
+23705	CADM1	cell adhesion molecule 1														HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION			HALLMARK_PEROXISOME																																							
+1314	COPA	coatomer protein complex subunit alpha														HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION																PID_ARF_3PATHWAY																										
+2669	GEM	GTP binding protein overexpressed in skeletal muscle														HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION																																										
+8398	PLA2G6	phospholipase A2 group VI															KEGG_GLYCEROPHOSPHOLIPID_METABOLISM			KEGG_MAPK_SIGNALING_PATHWAY						REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS																																
+5321	PLA2G4A	phospholipase A2 group IVA															KEGG_GLYCEROPHOSPHOLIPID_METABOLISM			KEGG_MAPK_SIGNALING_PATHWAY						REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS																																
+5338	PLD2	phospholipase D2															KEGG_GLYCEROPHOSPHOLIPID_METABOLISM									REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS						PID_ARF_3PATHWAY																									KEGG_ENDOCYTOSIS	
+5130	PCYT1A	phosphate cytidylyltransferase 1, choline, alpha															KEGG_GLYCEROPHOSPHOLIPID_METABOLISM									REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS																																
+3931	LCAT	lecithin-cholesterol acyltransferase															KEGG_GLYCEROPHOSPHOLIPID_METABOLISM									REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS																																
+11313	LYPLA2	lysophospholipase 2															KEGG_GLYCEROPHOSPHOLIPID_METABOLISM																																									
+10478	SLC25A17	solute carrier family 25 member 17																	HALLMARK_PEROXISOME							REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS												KEGG_PEROXISOME																				
+2260	FGFR1	fibroblast growth factor receptor 1																		KEGG_MAPK_SIGNALING_PATHWAY							KEGG_PROSTATE_CANCER								KEGG_ADHERENS_JUNCTION											KEGG_PATHWAYS_IN_CANCER												
+3551	IKBKB	inhibitor of nuclear factor kappa B kinase subunit beta																		KEGG_MAPK_SIGNALING_PATHWAY							KEGG_PROSTATE_CANCER															REACTOME_SIGNALLING_BY_NGF				KEGG_PATHWAYS_IN_CANCER												
+6196	RPS6KA2	ribosomal protein S6 kinase A2																		KEGG_MAPK_SIGNALING_PATHWAY											HALLMARK_ESTROGEN_RESPONSE_LATE											REACTOME_SIGNALLING_BY_NGF																
+2261	FGFR3	fibroblast growth factor receptor 3																		KEGG_MAPK_SIGNALING_PATHWAY											HALLMARK_ESTROGEN_RESPONSE_LATE															KEGG_PATHWAYS_IN_CANCER											KEGG_ENDOCYTOSIS	
+2317	FLNB	filamin B																		KEGG_MAPK_SIGNALING_PATHWAY											HALLMARK_ESTROGEN_RESPONSE_LATE																											
+3164	NR4A1	nuclear receptor subfamily 4 group A member 1																		KEGG_MAPK_SIGNALING_PATHWAY																	REACTOME_SIGNALING_BY_ERBB2					REACTOME_SIGNALLING_BY_NGF												REACTOME_SIGNALING_BY_ERBB4				
+1845	DUSP3	dual specificity phosphatase 3																		KEGG_MAPK_SIGNALING_PATHWAY																						REACTOME_SIGNALLING_BY_NGF																
+5602	MAPK10	mitogen-activated protein kinase 10																		KEGG_MAPK_SIGNALING_PATHWAY																										KEGG_PATHWAYS_IN_CANCER												
+5536	PPP5C	protein phosphatase 5 catalytic subunit																		KEGG_MAPK_SIGNALING_PATHWAY																																						
+7786	MAP3K12	mitogen-activated protein kinase kinase kinase 12																		KEGG_MAPK_SIGNALING_PATHWAY																																						
+2318	FLNC	filamin C																		KEGG_MAPK_SIGNALING_PATHWAY																																						
+11072	DUSP14	dual specificity phosphatase 14																		KEGG_MAPK_SIGNALING_PATHWAY																																						
+1025	CDK9	cyclin dependent kinase 9																			REACTOME_RNA_POL_II_TRANSCRIPTION	REACTOME_SIGNALING_BY_TGF_BETA_RECEPTOR_COMPLEX																																	REACTOME_FORMATION_OF_RNA_POL_II_ELONGATION_COMPLEX_			
+56288	PARD3	par-3 family cell polarity regulator																				REACTOME_SIGNALING_BY_TGF_BETA_RECEPTOR_COMPLEX													KEGG_ADHERENS_JUNCTION																						KEGG_ENDOCYTOSIS	
+50848	F11R	F11 receptor																				REACTOME_SIGNALING_BY_TGF_BETA_RECEPTOR_COMPLEX														PID_AVB3_INTEGRIN_PATHWAY																						
+7050	TGIF1	TGFB induced factor homeobox 1																				REACTOME_SIGNALING_BY_TGF_BETA_RECEPTOR_COMPLEX																																				
+23645	PPP1R15A	protein phosphatase 1 regulatory subunit 15A																				REACTOME_SIGNALING_BY_TGF_BETA_RECEPTOR_COMPLEX																																				
+6391	SDHC	succinate dehydrogenase complex subunit C																					KEGG_HUNTINGTONS_DISEASE																		HALLMARK_FATTY_ACID_METABOLISM																	
+10126	DNAL4	dynein axonemal light chain 4																					KEGG_HUNTINGTONS_DISEASE																			REACTOME_SIGNALLING_BY_NGF																
+5481	PPID	peptidylprolyl isomerase D																					KEGG_HUNTINGTONS_DISEASE																																			
+55081	IFT57	intraflagellar transport 57																					KEGG_HUNTINGTONS_DISEASE																																			
+7802	DNALI1	dynein axonemal light intermediate chain 1																					KEGG_HUNTINGTONS_DISEASE																																			
+83544	DNAL1	dynein axonemal light chain 1																					KEGG_HUNTINGTONS_DISEASE																																			
+64446	DNAI2	dynein axonemal intermediate chain 2																					KEGG_HUNTINGTONS_DISEASE																																			
+27019	DNAI1	dynein axonemal intermediate chain 1																					KEGG_HUNTINGTONS_DISEASE																																			
+55567	DNAH3	dynein axonemal heavy chain 3																					KEGG_HUNTINGTONS_DISEASE																																			
+146754	DNAH2	dynein axonemal heavy chain 2																					KEGG_HUNTINGTONS_DISEASE																																			
+25981	DNAH1	dynein axonemal heavy chain 1																					KEGG_HUNTINGTONS_DISEASE																																			
+4882	NPR2	natriuretic peptide receptor 2																						KEGG_PURINE_METABOLISM									HALLMARK_DNA_REPAIR																									
+51292	GMPR2	guanosine monophosphate reductase 2																						KEGG_PURINE_METABOLISM									HALLMARK_DNA_REPAIR																									
+203	AK1	adenylate kinase 1																						KEGG_PURINE_METABOLISM									HALLMARK_DNA_REPAIR																									
+5631	PRPS1	phosphoribosyl pyrophosphate synthetase 1																						KEGG_PURINE_METABOLISM																																		
+11164	NUDT5	nudix hydrolase 5																						KEGG_PURINE_METABOLISM																																		
+29922	NME7	NME/NM23 family member 7																						KEGG_PURINE_METABOLISM																																		
+8382	NME5	NME/NM23 family member 5																						KEGG_PURINE_METABOLISM																																		
+2766	GMPR	guanosine monophosphate reductase																						KEGG_PURINE_METABOLISM																																		
+954	ENTPD2	ectonucleoside triphosphate diphosphohydrolase 2																						KEGG_PURINE_METABOLISM																																		
+122481	AK7	adenylate kinase 7																						KEGG_PURINE_METABOLISM																																		
+6713	SQLE	squalene epoxidase																								REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS				HALLMARK_G2M_CHECKPOINT																												
+5298	PI4KB	phosphatidylinositol 4-kinase beta																								REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS								KEGG_INOSITOL_PHOSPHATE_METABOLISM		PID_AVB3_INTEGRIN_PATHWAY																						
+3033	HADH	hydroxyacyl-CoA dehydrogenase																								REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS															HALLMARK_FATTY_ACID_METABOLISM																	
+37	ACADVL	acyl-CoA dehydrogenase very long chain																								REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS															HALLMARK_FATTY_ACID_METABOLISM																	
+8841	HDAC3	histone deacetylase 3																								REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS																REACTOME_SIGNALLING_BY_NGF											PID_HDAC_CLASSI_PATHWAY					
+5360	PLTP	phospholipid transfer protein																								REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS																																
+81857	MED25	mediator complex subunit 25																								REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS																																
+9453	GGPS1	geranylgeranyl diphosphate synthase 1																								REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS																																
+2581	GALC	galactosylceramidase																								REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS																																
+2064	ERBB2	erb-b2 receptor tyrosine kinase 2																									KEGG_PROSTATE_CANCER								KEGG_ADHERENS_JUNCTION		REACTOME_SIGNALING_BY_ERBB2									KEGG_PATHWAYS_IN_CANCER			REACTOME_DOWNREGULATION_OF_ERBB2_ERBB3_SIGNALING									
+6932	TCF7	transcription factor 7																									KEGG_PROSTATE_CANCER								KEGG_ADHERENS_JUNCTION											KEGG_PATHWAYS_IN_CANCER		WNT_SIGNALING								KEGG_THYROID_CANCER		
+51176	LEF1	lymphoid enhancer binding factor 1																									KEGG_PROSTATE_CANCER								KEGG_ADHERENS_JUNCTION											KEGG_PATHWAYS_IN_CANCER		WNT_SIGNALING								KEGG_THYROID_CANCER		
+1728	NQO1	NAD(P)H quinone dehydrogenase 1																										HALLMARK_REACTIVE_OXIGEN_SPECIES_PATHWAY															BIOCARTA_P53HYPOXIA_PATHWAY															
+140809	SRXN1	sulfiredoxin 1																										HALLMARK_REACTIVE_OXIGEN_SPECIES_PATHWAY																														
+5621	PRNP	prion protein																										HALLMARK_REACTIVE_OXIGEN_SPECIES_PATHWAY																														
+9124	PDLIM1	PDZ and LIM domain 1																										HALLMARK_REACTIVE_OXIGEN_SPECIES_PATHWAY																														
+4046	LSP1	lymphocyte specific protein 1																										HALLMARK_REACTIVE_OXIGEN_SPECIES_PATHWAY																														
+10419	PRMT5	protein arginine methyltransferase 5																												HALLMARK_G2M_CHECKPOINT																							PID_HDAC_CLASSI_PATHWAY					
+6760	SS18	SS18, nBAF chromatin remodeling complex subunit																												HALLMARK_G2M_CHECKPOINT																												
+8899	PRPF4B	pre-mRNA processing factor 4B																												HALLMARK_G2M_CHECKPOINT																												
+4957	ODF2	outer dense fiber of sperm tails 2																												HALLMARK_G2M_CHECKPOINT																												
+2130	EWSR1	EWS RNA binding protein 1																												HALLMARK_G2M_CHECKPOINT																												
+224	ALDH3A2	aldehyde dehydrogenase 3 family member A2																													HALLMARK_ESTROGEN_RESPONSE_LATE										HALLMARK_FATTY_ACID_METABOLISM																	
+7466	WFS1	wolframin ER transmembrane glycoprotein																													HALLMARK_ESTROGEN_RESPONSE_LATE																											
+10140	TOB1	transducer of ERBB2, 1																													HALLMARK_ESTROGEN_RESPONSE_LATE																											
+6566	SLC16A1	solute carrier family 16 member 1																													HALLMARK_ESTROGEN_RESPONSE_LATE																											
+27250	PDCD4	programmed cell death 4																													HALLMARK_ESTROGEN_RESPONSE_LATE																											
+3547	IGSF1	immunoglobulin superfamily member 1																													HALLMARK_ESTROGEN_RESPONSE_LATE																											
+55806	HR	HR, lysine demethylase and nuclear receptor corepressor																													HALLMARK_ESTROGEN_RESPONSE_LATE																											
+8394	PIP5K1A	phosphatidylinositol-4-phosphate 5-kinase type 1 alpha																														PID_ARF_3PATHWAY		KEGG_INOSITOL_PHOSPHATE_METABOLISM																							KEGG_ENDOCYTOSIS	
+23647	ARFIP2	ADP ribosylation factor interacting protein 2																														PID_ARF_3PATHWAY																										
+NA	DFNA5	NA																															HALLMARK_DNA_REPAIR																									
+5333	PLCD1	phospholipase C delta 1																																KEGG_INOSITOL_PHOSPHATE_METABOLISM																								
+3707	ITPKB	inositol-trisphosphate 3-kinase B																																KEGG_INOSITOL_PHOSPHATE_METABOLISM																								
+51477	ISYNA1	inositol-3-phosphate synthase 1																																KEGG_INOSITOL_PHOSPHATE_METABOLISM																								
+3612	IMPA1	inositol monophosphatase 1																																KEGG_INOSITOL_PHOSPHATE_METABOLISM																								
+5797	PTPRM	protein tyrosine phosphatase, receptor type M																																	KEGG_ADHERENS_JUNCTION																							
+NA	MLLT4	NA																																	KEGG_ADHERENS_JUNCTION																							
+2185	PTK2B	protein tyrosine kinase 2 beta																																		PID_AVB3_INTEGRIN_PATHWAY																						
+5573	PRKAR1A	protein kinase cAMP-dependent type I regulatory subunit alpha																																			REACTOME_SIGNALING_BY_ERBB2					REACTOME_SIGNALLING_BY_NGF																
+801	CALM1	calmodulin 1																																			REACTOME_SIGNALING_BY_ERBB2					REACTOME_SIGNALLING_BY_NGF																
+9101	USP8	ubiquitin specific peptidase 8																																			REACTOME_SIGNALING_BY_ERBB2												REACTOME_DOWNREGULATION_OF_ERBB2_ERBB3_SIGNALING								KEGG_ENDOCYTOSIS	
+9913	SUPT7L	SPT7 like, STAGA complex gamma subunit																																					PID_MYC_ACTIV_PATHWAY																			
+NA	MINA	NA																																					PID_MYC_ACTIV_PATHWAY																			
+3308	HSPA4	heat shock protein family A (Hsp70) member 4																																					PID_MYC_ACTIV_PATHWAY																			
+55851	PSENEN	presenilin enhancer, gamma-secretase subunit																																						REACTOME_NUCLEAR_SIGNALING_BY_ERBB4		REACTOME_SIGNALLING_BY_NGF												REACTOME_SIGNALING_BY_ERBB4				
+23385	NCSTN	nicastrin																																						REACTOME_NUCLEAR_SIGNALING_BY_ERBB4		REACTOME_SIGNALLING_BY_NGF												REACTOME_SIGNALING_BY_ERBB4				
+10808	HSPH1	heat shock protein family H (Hsp110) member 1																																							HALLMARK_FATTY_ACID_METABOLISM																	
+762	CA4	carbonic anhydrase 4																																							HALLMARK_FATTY_ACID_METABOLISM																	
+218	ALDH3A1	aldehyde dehydrogenase 3 family member A1																																							HALLMARK_FATTY_ACID_METABOLISM																	
+29	ABR	ABR, RhoGEF and GTPase activating protein																																								REACTOME_SIGNALLING_BY_NGF																
+7170	TPM3	tropomyosin 3																																												KEGG_PATHWAYS_IN_CANCER										KEGG_THYROID_CANCER		
+59343	SENP2	SUMO specific peptidase 2																																														WNT_SIGNALING										
+58480	RHOU	ras homolog family member U																																														WNT_SIGNALING										
+23410	SIRT3	sirtuin 3																																																			PID_HDAC_CLASSI_PATHWAY					
+80230	RUFY1	RUN and FYVE domain containing 1																																																							KEGG_ENDOCYTOSIS	
+5867	RAB4A	RAB4A, member RAS oncogene family																																																							KEGG_ENDOCYTOSIS	
+3133	HLA-E	major histocompatibility complex, class I, E																																																							KEGG_ENDOCYTOSIS	
+65982	ZSCAN18	zinc finger and SCAN domain containing 18																																																								
+9406	ZRANB2	zinc finger RANBP2-type containing 2																																																								
+144348	ZNF664	zinc finger protein 664																																																								
+23090	ZNF423	zinc finger protein 423																																																								
+284695	ZNF326	zinc finger protein 326																																																								
+7551	ZNF3	zinc finger protein 3																																																								
+10793	ZNF273	zinc finger protein 273																																																								
+84217	ZMYND12	zinc finger MYND-type containing 12																																																								
+51364	ZMYND10	zinc finger MYND-type containing 10																																																								
+51663	ZFR	zinc finger RNA binding protein																																																								
+23390	ZDHHC17	zinc finger DHHC-type containing 17																																																								
+79683	ZDHHC14	zinc finger DHHC-type containing 14																																																								
+29800	ZDHHC1	zinc finger DHHC-type containing 1																																																								
+79882	ZC3H14	zinc finger CCCH-type containing 14																																																								
+9877	ZC3H11A	zinc finger CCCH-type containing 11A																																																								
+79740	ZBBX	zinc finger B-box domain containing																																																								
+374887	YJEFN3	YjeF N-terminal domain containing 3																																																								
+90522	YIF1B	Yip1 interacting factor homolog B, membrane trafficking protein																																																								
+22803	XRN2	5'-3' exoribonuclease 2																																																								
+9213	XPR1	xenotropic and polytropic retrovirus receptor 1																																																								
+7485	WRB	tryptophan rich basic protein																																																								
+65268	WNK2	WNK lysine deficient protein kinase 2																																																								
+116143	WDR92	WD repeat domain 92																																																								
+197335	WDR90	WD repeat domain 90																																																								
+79819	WDR78	WD repeat domain 78																																																								
+84942	WDR73	WD repeat domain 73																																																								
+144406	WDR66	WD repeat domain 66																																																								
+126820	WDR63	WD repeat domain 63																																																								
+80349	WDR61	WD repeat domain 61																																																								
+55112	WDR60	WD repeat domain 60																																																								
+84058	WDR54	WD repeat domain 54																																																								
+151790	WDR49	WD repeat domain 49																																																								
+401551	WDR38	WD repeat domain 38																																																								
+253769	WDR27	WD repeat domain 27																																																								
+80232	WDR26	WD repeat domain 26																																																								
+57728	WDR19	WD repeat domain 19																																																								
+23339	VPS39	VPS39, HOPS complex subunit																																																								
+57216	VANGL2	VANGL planar cell polarity protein 2																																																								
+80146	UXS1	UDP-glucuronate decarboxylase 1																																																								
+27005	USP21	ubiquitin specific peptidase 21																																																								
+9099	USP2	ubiquitin specific peptidase 2																																																								
+7391	USF1	upstream transcription factor 1																																																								
+84747	UNC119B	unc-119 lipid binding chaperone B																																																								
+51506	UFC1	ubiquitin-fold modifier conjugating enzyme 1																																																								
+91544	UBXN11	UBX domain protein 11																																																								
+127733	UBXN10	UBX domain protein 10																																																								
+5412	UBL3	ubiquitin like 3																																																								
+9898	UBAP2L	ubiquitin associated protein 2 like																																																								
+337867	UBAC2	UBA domain containing 2																																																								
+7991	TUSC3	tumor suppressor candidate 3																																																								
+164395	TTLL9	tubulin tyrosine ligase like 9																																																								
+79739	TTLL7	tubulin tyrosine ligase like 7																																																								
+9654	TTLL4	tubulin tyrosine ligase like 4																																																								
+26140	TTLL3	tubulin tyrosine ligase like 3																																																								
+123016	TTC8	tetratricopeptide repeat domain 8																																																								
+83894	TTC29	tetratricopeptide repeat domain 29																																																								
+79989	TTC26	tetratricopeptide repeat domain 26																																																								
+83538	TTC25	tetratricopeptide repeat domain 25																																																								
+199223	TTC21A	tetratricopeptide repeat domain 21A																																																								
+55761	TTC17	tetratricopeptide repeat domain 17																																																								
+7105	TSPAN6	tetraspanin 6																																																								
+55815	TSNAXIP1	translin associated factor X interacting protein 1																																																								
+7257	TSNAX	translin associated factor X																																																								
+80705	TSGA10	testis specific 10																																																								
+90933	TRIM41	tripartite motif containing 41																																																								
+10346	TRIM22	tripartite motif containing 22																																																								
+10345	TRDN	triadin																																																								
+26146	TRAF3IP1	TRAF3 interacting protein 1																																																								
+127262	TPRG1L	tumor protein p63 regulated 1 like																																																								
+51673	TPPP3	tubulin polymerization promoting protein family member 3																																																								
+7158	TP53BP1	tumor protein p53 binding protein 1																																																								
+57690	TNRC6C	trinucleotide repeat containing 6C																																																								
+8718	TNFRSF25	TNF receptor superfamily member 25																																																								
+8795	TNFRSF10B	TNF receptor superfamily member 10b																																																								
+91147	TMEM67	transmembrane protein 67																																																								
+757	TMEM50B	transmembrane protein 50B																																																								
+65062	TMEM237	transmembrane protein 237																																																								
+56063	TMEM234	transmembrane protein 234																																																								
+642987	TMEM232	transmembrane protein 232																																																								
+79583	TMEM231	transmembrane protein 231																																																								
+219854	TMEM218	transmembrane protein 218																																																								
+441027	TMEM150C	transmembrane protein 150C																																																								
+51524	TMEM138	transmembrane protein 138																																																								
+114908	TMEM123	transmembrane protein 123																																																								
+NA	TMEM110	NA																																																								
+84314	TMEM107	transmembrane protein 107																																																								
+79022	TMEM106C	transmembrane protein 106C																																																								
+54499	TMCO1	transmembrane and coiled-coil domains 1																																																								
+9375	TM9SF2	transmembrane 9 superfamily member 2																																																								
+10548	TM9SF1	transmembrane 9 superfamily member 1																																																								
+374618	TEX9	testis expressed 9																																																								
+9894	TELO2	telomere maintenance 2																																																								
+150483	TEKT4	tektin 4																																																								
+27285	TEKT2	tektin 2																																																								
+83659	TEKT1	tektin 1																																																								
+79867	TCTN2	tectonic family member 2																																																								
+79600	TCTN1	tectonic family member 1																																																								
+255758	TCTEX1D2	Tctex1 domain containing 2																																																								
+200132	TCTEX1D1	Tctex1 domain containing 1																																																								
+6939	TCF15	transcription factor 15																																																								
+6894	TARBP1	TAR (HIV-1) RNA binding protein 1																																																								
+94120	SYTL3	synaptotagmin like 3																																																								
+8831	SYNGAP1	synaptic Ras GTPase activating protein 1																																																								
+81493	SYNC	syncoilin, intermediate filament protein																																																								
+375757	SWI5	SWI5 homologous recombination repair protein																																																								
+136306	SVOPL	SVOP like																																																								
+23353	SUN1	Sad1 and UNC84 domain containing 1																																																								
+8675	STX16	syntaxin 16																																																								
+55342	STRBP	spermatid perinuclear RNA binding protein																																																								
+92335	STRADA	STE20 related adaptor alpha																																																								
+161003	STOML3	stomatin like 3																																																								
+23012	STK38L	serine/threonine kinase 38 like																																																								
+65975	STK33	serine/threonine kinase 33																																																								
+114790	STK11IP	serine/threonine kinase 11 interacting protein																																																								
+6786	STIM1	stromal interaction molecule 1																																																								
+6773	STAT2	signal transducer and activator of transcription 2																																																								
+10402	ST3GAL6	ST3 beta-galactoside alpha-2,3-sialyltransferase 6																																																								
+170463	SSBP4	single stranded DNA binding protein 4																																																								
+23648	SSBP3	single stranded DNA binding protein 3																																																								
+6741	SSB	Sjogren syndrome antigen B																																																								
+51593	SRRT	serrate, RNA effector molecule																																																								
+6726	SRP9	signal recognition particle 9																																																								
+6728	SRP19	signal recognition particle 19																																																								
+6727	SRP14	signal recognition particle 14																																																								
+140890	SREK1	splicing regulatory glutamic acid and lysine rich protein 1																																																								
+80725	SRCIN1	SRC kinase signaling inhibitor 1																																																								
+10653	SPINT2	serine peptidase inhibitor, Kunitz type 2																																																								
+10927	SPIN1	spindlin 1																																																								
+NA	SPG20	NA																																																								
+79925	SPEF2	sperm flagellar 2																																																								
+25876	SPEF1	sperm flagellar 1																																																								
+132671	SPATA18	spermatogenesis associated 18																																																								
+128153	SPATA17	spermatogenesis associated 17																																																								
+26206	SPAG8	sperm associated antigen 8																																																								
+9576	SPAG6	sperm associated antigen 6																																																								
+200162	SPAG17	sperm associated antigen 17																																																								
+79582	SPAG16	sperm associated antigen 16																																																								
+6674	SPAG1	sperm associated antigen 1																																																								
+53340	SPA17	sperm autoantigenic protein 17																																																								
+8470	SORBS2	sorbin and SH3 domain containing 2																																																								
+6651	SON	SON DNA binding protein																																																								
+8835	SOCS2	suppressor of cytokine signaling 2																																																								
+57231	SNX14	sorting nexin 14																																																								
+132203	SNTN	sentan, cilia apical structure protein																																																								
+9627	SNCAIP	synuclein alpha interacting protein																																																								
+23557	SNAPIN	SNAP associated protein																																																								
+56950	SMYD2	SET and MYND domain containing 2																																																								
+9887	SMG7	SMG7, nonsense mediated mRNA decay factor																																																								
+NA	SMEK2	NA																																																								
+NA	SMEK1	NA																																																								
+6594	SMARCA1	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily a, member 1																																																								
+79811	SLTM	SAFB like transcription modulator																																																								
+146857	SLFN13	schlafen family member 13																																																								
+146802	SLC47A2	solute carrier family 47 member 2																																																								
+113235	SLC46A1	solute carrier family 46 member 1																																																								
+254428	SLC41A1	solute carrier family 41 member 1																																																								
+30061	SLC40A1	solute carrier family 40 member 1																																																								
+221074	SLC39A12	solute carrier family 39 member 12																																																								
+10991	SLC38A3	solute carrier family 38 member 3																																																								
+11000	SLC27A3	solute carrier family 27 member 3																																																								
+9122	SLC16A4	solute carrier family 16 member 4																																																								
+6560	SLC12A4	solute carrier family 12 member 4																																																								
+6450	SH3BGR	SH3 domain binding glutamate rich protein																																																								
+6433	SFSWAP	splicing factor SWAP																																																								
+7536	SF1	splicing factor 1																																																								
+26054	SENP6	SUMO specific peptidase 6																																																								
+59342	SCPEP1	serine carboxypeptidase 1																																																								
+51097	SCCPDH	saccharopine dehydrogenase (putative)																																																								
+113178	SCAMP4	secretory carrier membrane protein 4																																																								
+345895	RSPH4A	radial spoke head component 4A																																																								
+728194	RSPH10B2	radial spoke head 10 homolog B2																																																								
+222967	RSPH10B	radial spoke head 10 homolog B																																																								
+89765	RSPH1	radial spoke head component 1																																																								
+51093	RRNAD1	ribosomal RNA adenine dimethylase domain containing 1																																																								
+132241	RPL32P3	ribosomal protein L32 pseudogene 3																																																								
+6103	RPGR	retinitis pigmentosa GTPase regulator																																																								
+83853	ROPN1L	rhophilin associated tail protein 1 like																																																								
+6051	RNPEP	arginyl aminopeptidase																																																								
+55182	RNF220	ring finger protein 220																																																								
+196475	RMST	rhabdomyosarcoma 2 associated transcript																																																								
+57494	RIMKLB	ribosomal modification protein rimK like family member B																																																								
+284485	RIIAD1	regulatory subunit of type II PKA R-subunit (RIIa) domain containing 1																																																								
+26150	RIBC2	RIB43A domain with coiled-coils 2																																																								
+158787	RIBC1	RIB43A domain with coiled-coils 1																																																								
+5863	RGL2	ral guanine nucleotide dissociation stimulator like 2																																																								
+5993	RFX5	regulatory factor X5																																																								
+5990	RFX2	regulatory factor X2																																																								
+85004	RERG	RAS like estrogen regulated growth inhibitor																																																								
+221662	RBM24	RNA binding motif protein 24																																																								
+10266	RAMP2	receptor activity modifying protein 2																																																								
+11158	RABL2B	RAB, member of RAS oncogene family like 2B																																																								
+11159	RABL2A	RAB, member of RAS oncogene family like 2A																																																								
+9609	RAB36	RAB36, member RAS oncogene family																																																								
+29920	PYCR2	pyrroline-5-carboxylate reductase 2																																																								
+55037	PTCD3	pentatricopeptide repeat domain 3																																																								
+5723	PSPH	phosphoserine phosphatase																																																								
+8575	PRKRA	protein activator of interferon induced protein kinase EIF2AK2																																																								
+5510	PPP1R7	protein phosphatase 1 regulatory subunit 7																																																								
+286187	PPP1R42	protein phosphatase 1 regulatory subunit 42																																																								
+220004	PPP1R32	protein phosphatase 1 regulatory subunit 32																																																								
+84988	PPP1R16A	protein phosphatase 1 regulatory subunit 16A																																																								
+4660	PPP1R12B	protein phosphatase 1 regulatory subunit 12B																																																								
+333926	PPM1J	protein phosphatase, Mg2+/Mn2+ dependent 1J																																																								
+285755	PPIL6	peptidylprolyl isomerase like 6																																																								
+85313	PPIL4	peptidylprolyl isomerase like 4																																																								
+29954	POMT2	protein O-mannosyltransferase 2																																																								
+23126	POGZ	pogo transposable element derived with ZNF domain																																																								
+23275	POFUT2	protein O-fucosyltransferase 2																																																								
+10687	PNMA2	PNMA family member 2																																																								
+11284	PNKP	polynucleotide kinase 3'-phosphatase																																																								
+25957	PNISR	PNN interacting serine and arginine rich protein																																																								
+57449	PLEKHG5	pleckstrin homology and RhoGEF domain containing G5																																																								
+54477	PLEKHA5	pleckstrin homology domain containing A5																																																								
+9600	PITPNM1	phosphatidylinositol transfer protein membrane associated 1																																																								
+5306	PITPNA	phosphatidylinositol transfer protein alpha																																																								
+29990	PILRB	paired immunoglobin-like type 2 receptor beta																																																								
+120379	PIH1D2	PIH1 domain containing 2																																																								
+1911	PHC1	polyhomeotic homolog 1																																																								
+221692	PHACTR1	phosphatase and actin regulator 1																																																								
+5208	PFKFB2	6-phosphofructo-2-kinase/fructose-2,6-biphosphatase 2																																																								
+8566	PDXK	pyridoxal kinase																																																								
+9601	PDIA4	protein disulfide isomerase family A member 4																																																								
+NA	PDDC1	NA																																																								
+5089	PBX2	PBX homeobox 2																																																								
+23178	PASK	PAS domain containing serine/threonine kinase																																																								
+51247	PAIP2	poly(A) binding protein interacting protein 2																																																								
+135138	PACRG	parkin coregulated																																																								
+55644	OSGEP	O-sialoglycoprotein endopeptidase																																																								
+127700	OSCP1	organic solute carrier partner 1																																																								
+440836	ODF3B	outer dense fiber of sperm tails 3B																																																								
+57489	ODF2L	outer dense fiber of sperm tails 2 like																																																								
+23363	OBSL1	obscurin like 1																																																								
+64359	NXN	nucleoredoxin																																																								
+64710	NUCKS1	nuclear casein kinase and cyclin dependent kinase substrate 1																																																								
+4925	NUCB2	nucleobindin 2																																																								
+221294	NT5DC1	5'-nucleotidase domain containing 1																																																								
+29959	NRBP1	nuclear receptor binding protein 1																																																								
+8013	NR4A3	nuclear receptor subfamily 4 group A member 3																																																								
+4867	NPHP1	nephrocystin 1																																																								
+347736	NME9	NME/NM23 family member 9																																																								
+4817	NIT1	nitrilase 1																																																								
+11188	NISCH	nischarin																																																								
+341676	NEK5	NIMA related kinase 5																																																								
+6787	NEK4	NIMA related kinase 4																																																								
+79858	NEK11	NIMA related kinase 11																																																								
+79661	NEIL1	nei like DNA glycosylase 1																																																								
+283131	NEAT1	nuclear paraspeckle assembly transcript 1																																																								
+7593	MZF1	myeloid zinc finger 1																																																								
+50804	MYEF2	myelin expression factor 2																																																								
+84073	MYCBPAP	MYCBP associated protein																																																								
+26292	MYCBP	MYC binding protein																																																								
+4552	MTRR	5-methyltetrahydrofolate-homocysteine methyltransferase reductase																																																								
+10903	MTMR11	myotubularin related protein 11																																																								
+55154	MSTO1	misato mitochondrial distribution and morphology regulator 1																																																								
+124540	MSI2	musashi RNA binding protein 2																																																								
+51650	MRPS33	mitochondrial ribosomal protein S33																																																								
+64432	MRPS25	mitochondrial ribosomal protein S25																																																								
+63931	MRPS14	mitochondrial ribosomal protein S14																																																								
+64978	MRPL38	mitochondrial ribosomal protein L38																																																								
+9019	MPZL1	myelin protein zero like 1																																																								
+254956	MORN5	MORN repeat containing 5																																																								
+283385	MORN3	MORN repeat containing 3																																																								
+729967	MORN2	MORN repeat containing 2																																																								
+79906	MORN1	MORN repeat containing 1																																																								
+5891	MOK	MOK protein kinase																																																								
+55329	MNS1	meiosis specific nuclear structural 1																																																								
+4298	MLLT1	MLLT1, super elongation complex subunit																																																								
+4291	MLF1	myeloid leukemia factor 1																																																								
+54903	MKS1	Meckel syndrome, type 1																																																								
+79778	MICALL2	MICAL like 2																																																								
+375056	MIA3	MIA SH3 domain ER export factor 3																																																								
+4249	MGAT5	alpha-1,6-mannosylglycoprotein 6-beta-N-acetylglucosaminyltransferase																																																								
+64769	MEAF6	MYST/Esa1 associated factor 6																																																								
+56890	MDM1	Mdm1 nuclear protein																																																								
+130752	MDH1B	malate dehydrogenase 1B																																																								
+22924	MAPRE3	microtubule associated protein RP/EB family member 3																																																								
+225689	MAPK15	mitogen-activated protein kinase 15																																																								
+4135	MAP6	microtubule associated protein 6																																																								
+378938	MALAT1	metastasis associated lung adenocarcinoma transcript 1																																																								
+54585	LZTFL1	leucine zipper transcription factor like 1																																																								
+57149	LYRM1	LYR motif containing 1																																																								
+127018	LYPLAL1	lysophospholipase like 1																																																								
+220074	LRTOMT	leucine rich transmembrane and O-methyltransferase domain containing																																																								
+10446	LRRN2	leucine rich repeat neuronal 2																																																								
+84125	LRRIQ1	leucine rich repeats and IQ motif containing 1																																																								
+9209	LRRFIP2	LRR binding FLII interacting protein 2																																																								
+149499	LRRC71	leucine rich repeat containing 71																																																								
+23639	LRRC6	leucine rich repeat containing 6																																																								
+NA	LRRC48	NA																																																								
+90506	LRRC46	leucine rich repeat containing 46																																																								
+254050	LRRC43	leucine rich repeat containing 43																																																								
+10233	LRRC23	leucine rich repeat containing 23																																																								
+10234	LRRC17	leucine rich repeat containing 17																																																								
+NA	LINC00094	NA																																																								
+3985	LIMK2	LIM domain kinase 2																																																								
+59352	LGR6	leucine rich repeat containing G protein-coupled receptor 6																																																								
+150082	LCA5L	LCA5L, lebercilin like																																																								
+51574	LARP7	La ribonucleoprotein domain family member 7																																																								
+9741	LAPTM4A	lysosomal protein transmembrane 4 alpha																																																								
+3852	KRT5	keratin 5																																																								
+85442	KNDC1	kinase non-catalytic C-lobe domain containing 1																																																								
+126823	KLHDC9	kelch domain containing 9																																																								
+55220	KLHDC8A	kelch domain containing 8A																																																								
+7071	KLF10	Kruppel like factor 10																																																								
+22920	KIFAP3	kinesin associated protein 3																																																								
+64147	KIF9	kinesin family member 9																																																								
+124602	KIF19	kinesin family member 19																																																								
+90231	KIAA2013	KIAA2013																																																								
+NA	KIAA1407	NA																																																								
+23247	KIAA0556	KIAA0556																																																								
+79734	KCTD17	potassium channel tetramerization domain containing 17																																																								
+23416	KCNH3	potassium voltage-gated channel subfamily H member 3																																																								
+3755	KCNG1	potassium voltage-gated channel modifier subfamily G member 1																																																								
+10300	KATNB1	katanin regulatory subunit B1																																																								
+51528	JKAMP	JNK1/MAPK8 associated membrane protein																																																								
+55677	IWS1	IWS1, SUPT6H interacting protein																																																								
+23479	ISCU	iron-sulfur cluster assembly enzyme																																																								
+359948	IRF2BP2	interferon regulatory factor 2 binding protein 2																																																								
+124152	IQCK	IQ motif containing K																																																								
+84223	IQCG	IQ motif containing G																																																								
+115811	IQCD	IQ motif containing D																																																								
+79781	IQCA1	IQ motif containing with AAA domain 1																																																								
+117283	IP6K3	inositol hexakisphosphate kinase 3																																																								
+65123	INTS3	integrator complex subunit 3																																																								
+3598	IL13RA2	interleukin 13 receptor subunit alpha 2																																																								
+3550	IK	IK cytokine																																																								
+3514	IGKC	immunoglobulin kappa constant																																																								
+3500	IGHG1	immunoglobulin heavy constant gamma 1 (G1m marker)																																																								
+3493	IGHA1	immunoglobulin heavy constant alpha 1																																																								
+51214	IGF2-AS	IGF2 antisense RNA																																																								
+28981	IFT81	intraflagellar transport 81																																																								
+57560	IFT80	intraflagellar transport 80																																																								
+80173	IFT74	intraflagellar transport 74																																																								
+56912	IFT46	intraflagellar transport 46																																																								
+112752	IFT43	intraflagellar transport 43																																																								
+11020	IFT27	intraflagellar transport 27																																																								
+90410	IFT20	intraflagellar transport 20																																																								
+9742	IFT140	intraflagellar transport 140																																																								
+55764	IFT122	intraflagellar transport 122																																																								
+130026	ICA1L	islet cell autoantigen 1 like																																																								
+55699	IARS2	isoleucyl-tRNA synthetase 2, mitochondrial																																																								
+54768	HYDIN	HYDIN, axonemal central pair apparatus protein																																																								
+23640	HSPBP1	HSPA (Hsp70) binding protein 1																																																								
+3281	HSBP1	heat shock factor binding protein 1																																																								
+3162	HMOX1	heme oxygenase 1																																																								
+22993	HMGXB3	HMG-box containing 3																																																								
+9324	HMGN3	high mobility group nucleosomal binding domain 3																																																								
+204851	HIPK1	homeodomain interacting protein kinase 1																																																								
+3069	HDLBP	high density lipoprotein binding protein																																																								
+84264	HAGHL	hydroxyacylglutathione hydrolase like																																																								
+2946	GSTM2	glutathione S-transferase mu 2																																																								
+2926	GRSF1	G-rich RNA sequence binding factor 1																																																								
+65056	GPBP1	GC-rich promoter binding protein 1																																																								
+54856	GON4L	gon-4 like																																																								
+55204	GOLPH3L	golgi phosphoprotein 3 like																																																								
+440270	GOLGA8B	golgin A8 family member B																																																								
+55592	GOLGA2P5	GOLGA2 pseudogene 5																																																								
+2801	GOLGA2	golgin A2																																																								
+2799	GNS	glucosamine (N-acetyl)-6-sulfatase																																																								
+84656	GLYR1	glyoxylate reductase 1 homolog																																																								
+55830	GLT8D1	glycosyltransferase 8 domain containing 1																																																								
+89944	GLB1L2	galactosidase beta 1 like 2																																																								
+79411	GLB1L	galactosidase beta 1 like																																																								
+54960	GEMIN8	gem nuclear organelle associated protein 8																																																								
+54857	GDPD2	glycerophosphodiester phosphodiesterase domain containing 2																																																								
+2622	GAS8	growth arrest specific 8																																																								
+2588	GALNS	galactosamine (N-acetyl)-6-sulfatase																																																								
+2565	GABRG1	gamma-aminobutyric acid type A receptor gamma1 subunit																																																								
+8087	FXR1	FMR1 autosomal homolog 1																																																								
+143162	FRMPD2	FERM and PDZ domain containing 2																																																								
+257019	FRMD3	FERM domain containing 3																																																								
+2302	FOXJ1	forkhead box J1																																																								
+2354	FOSB	FosB proto-oncogene, AP-1 transcription factor subunit																																																								
+2348	FOLR1	folate receptor 1																																																								
+201163	FLCN	folliculin																																																								
+80206	FHOD3	formin homology 2 domain containing 3																																																								
+2273	FHL1	four and a half LIM domains 1																																																								
+114827	FHAD1	forkhead associated phosphopeptide binding domain 1																																																								
+51077	FCF1	FCF1, rRNA-processing protein																																																								
+201456	FBXO15	F-box protein 15																																																								
+64319	FBRS	fibrosin																																																								
+85302	FBF1	Fas binding factor 1																																																								
+79072	FASTKD3	FAST kinase domains 3																																																								
+92565	FANK1	fibronectin type III and ankyrin repeat domains 1																																																								
+25940	FAM98A	family with sequence similarity 98 member A																																																								
+339145	FAM92B	family with sequence similarity 92 member B																																																								
+NA	FAM92A1	NA																																																								
+153643	FAM81B	family with sequence similarity 81 member B																																																								
+51307	FAM53C	family with sequence similarity 53 member C																																																								
+100528020	FAM187A	family with sequence similarity 187 member A																																																								
+440585	FAM183A	family with sequence similarity 183 member A																																																								
+NA	FAM179A	NA																																																								
+345757	FAM174A	family with sequence similarity 174 member A																																																								
+730112	FAM166B	family with sequence similarity 166 member B																																																								
+64760	FAM160B2	family with sequence similarity 160 member B2																																																								
+131408	FAM131A	family with sequence similarity 131 member A																																																								
+55007	FAM118A	family with sequence similarity 118 member A																																																								
+10640	EXOC5	exocyst complex component 5																																																								
+54932	EXD3	exonuclease 3'-5' domain containing 3																																																								
+2107	ETF1	eukaryotic translation termination factor 1																																																								
+23344	ESYT1	extended synaptotagmin 1																																																								
+11160	ERLIN2	ER lipid raft associated 2																																																								
+79033	ERI3	ERI1 exoribonuclease family member 3																																																								
+51614	ERGIC3	ERGIC and golgi 3																																																								
+2077	ERF	ETS2 repressor factor																																																								
+2029	ENSA	endosulfine alpha																																																								
+59084	ENPP5	ectonucleotide pyrophosphatase/phosphodiesterase 5 (putative)																																																								
+55556	ENOSF1	enolase superfamily member 1																																																								
+219670	ENKUR	enkurin, TRPC channel interacting protein																																																								
+2010	EMD	emerin																																																								
+1994	ELAVL1	ELAV like RNA binding protein 1																																																								
+8672	EIF4G3	eukaryotic translation initiation factor 4 gamma 3																																																								
+1939	EIF2D	eukaryotic translation initiation factor 2D																																																								
+254102	EHBP1L1	EH domain binding protein 1 like 1																																																								
+80258	EFHC2	EF-hand domain containing 2																																																								
+84288	EFCAB2	EF-hand calcium binding domain 2																																																								
+100130771	EFCAB10	EF-hand calcium binding domain 10																																																								
+79645	EFCAB1	EF-hand calcium binding domain 1																																																								
+55268	ECHDC2	enoyl-CoA hydratase domain containing 2																																																								
+9666	DZIP3	DAZ interacting zinc finger protein 3																																																								
+199221	DZIP1L	DAZ interacting zinc finger protein 1 like																																																								
+22873	DZIP1	DAZ interacting zinc finger protein 1																																																								
+NA	DYX1C1	NA																																																								
+83657	DYNLRB2	dynein light chain roadblock-type 2																																																								
+51626	DYNC2LI1	dynein cytoplasmic 2 light intermediate chain 1																																																								
+79659	DYNC2H1	dynein cytoplasmic 2 heavy chain 1																																																								
+84332	DYDC2	DPY30 domain containing 2																																																								
+401124	DTHD1	death domain containing 1																																																								
+84661	DPY30	dpy-30, histone methyltransferase complex regulatory subunit																																																								
+25911	DPCD	deleted in primary ciliary dyskinesia homolog (mouse)																																																								
+8448	DOC2A	double C2 domain alpha																																																								
+54431	DNAJC10	DnaJ heat shock protein family (Hsp40) member C10																																																								
+11080	DNAJB4	DnaJ heat shock protein family (Hsp40) member B4																																																								
+374407	DNAJB13	DnaJ heat shock protein family (Hsp40) member B13																																																								
+3301	DNAJA1	DnaJ heat shock protein family (Hsp40) member A1																																																								
+1770	DNAH9	dynein axonemal heavy chain 9																																																								
+56171	DNAH7	dynein axonemal heavy chain 7																																																								
+201625	DNAH12	dynein axonemal heavy chain 12																																																								
+8701	DNAH11	dynein axonemal heavy chain 11																																																								
+123872	DNAAF1	dynein axonemal assembly factor 1																																																								
+93099	DMKN	dermokine																																																								
+9940	DLEC1	DLEC1, cilia and flagella associated protein																																																								
+79665	DHX40	DEAH-box helicase 40																																																								
+51009	DERL2	derlin 2																																																								
+10521	DDX17	DEAD-box helicase 17																																																								
+50717	DCAF8	DDB1 and CUL4 associated factor 8																																																								
+55152	DALRD3	DALR anticodon binding domain containing 3																																																								
+51706	CYB5R1	cytochrome b5 reductase 1																																																								
+124637	CYB5D1	cytochrome b5 domain containing 1																																																								
+1534	CYB561	cytochrome b561																																																								
+79848	CSPP1	centrosome and spindle pole associated protein 1																																																								
+9946	CRYZL1	crystallin zeta like 1																																																								
+9696	CROCC	ciliary rootlet coiled-coil, rootletin																																																								
+1396	CRIP1	cysteine rich protein 1																																																								
+286204	CRB2	crumbs cell polarity complex component 2																																																								
+221184	CPNE2	copine 2																																																								
+1353	COX11	cytochrome c oxidase copper chaperone COX11																																																								
+51117	COQ4	coenzyme Q4																																																								
+1315	COPB1	coatomer protein complex subunit beta 1																																																								
+23019	CNOT1	CCR4-NOT transcription complex subunit 1																																																								
+55748	CNDP2	carnosine dipeptidase 2																																																								
+23059	CLUAP1	clusterin associated protein 1																																																								
+1203	CLN5	CLN5, intracellular trafficking protein																																																								
+1196	CLK2	CDC like kinase 2																																																								
+11113	CIT	citron rho-interacting serine/threonine kinase																																																								
+91612	CHURC1	churchill domain containing 1																																																								
+26973	CHORDC1	cysteine and histidine rich domain containing 1																																																								
+9557	CHD1L	chromodomain helicase DNA binding protein 1 like																																																								
+1070	CETN3	centrin 3																																																								
+90799	CEP95	centrosomal protein 95																																																								
+1054	CEBPG	CCAAT enhancer binding protein gamma																																																								
+8832	CD84	CD84 molecule																																																								
+4179	CD46	CD46 molecule																																																								
+8763	CD164	CD164 molecule																																																								
+9332	CD163	CD163 molecule																																																								
+9236	CCPG1	cell cycle progression 1																																																								
+57018	CCNL1	cyclin L1																																																								
+54520	CCDC93	coiled-coil domain containing 93																																																								
+220388	CCDC89	coiled-coil domain containing 89																																																								
+79780	CCDC82	coiled-coil domain containing 82																																																								
+60494	CCDC81	coiled-coil domain containing 81																																																								
+124093	CCDC78	coiled-coil domain containing 78																																																								
+91409	CCDC74B	coiled-coil domain containing 74B																																																								
+90557	CCDC74A	coiled-coil domain containing 74A																																																								
+85478	CCDC65	coiled-coil domain containing 65																																																								
+284001	CCDC57	coiled-coil domain containing 57																																																								
+NA	CCDC53	NA																																																								
+NA	CCDC42B	NA																																																								
+55036	CCDC40	coiled-coil domain containing 40																																																								
+339829	CCDC39	coiled-coil domain containing 39																																																								
+NA	CCDC37	NA																																																								
+91057	CCDC34	coiled-coil domain containing 34																																																								
+80125	CCDC33	coiled-coil domain containing 33																																																								
+728621	CCDC30	coiled-coil domain containing 30																																																								
+149473	CCDC24	coiled-coil domain containing 24																																																								
+221262	CCDC162P	coiled-coil domain containing 162, pseudogene																																																								
+283152	CCDC153	coiled-coil domain containing 153																																																								
+57639	CCDC146	coiled-coil domain containing 146																																																								
+152206	CCDC13	coiled-coil domain containing 13																																																								
+93233	CCDC114	coiled-coil domain containing 114																																																								
+29070	CCDC113	coiled-coil domain containing 113																																																								
+NA	CCDC108	NA																																																								
+388389	CCDC103	coiled-coil domain containing 103																																																								
+57545	CC2D2A	coiled-coil and C2 domain containing 2A																																																								
+25776	CBY1	chibby family member 1, beta catenin antagonist																																																								
+55259	CASC1	cancer susceptibility 1																																																								
+133690	CAPSL	calcyphosine like																																																								
+84698	CAPS2	calcyphosine 2																																																								
+828	CAPS	calcyphosine																																																								
+4076	CAPRIN1	cell cycle associated protein 1																																																								
+824	CAPN2	calpain 2																																																								
+11132	CAPN10	calpain 10																																																								
+57658	CALCOCO1	calcium binding and coiled-coil domain 1																																																								
+81617	CAB39L	calcium binding protein 39 like																																																								
+NA	C9orf9	NA																																																								
+203228	C9orf72	chromosome 9 open reading frame 72																																																								
+84688	C9orf24	chromosome 9 open reading frame 24																																																								
+NA	C9orf171	NA																																																								
+138255	C9orf135	chromosome 9 open reading frame 135																																																								
+NA	C9orf117	NA																																																								
+138162	C9orf116	chromosome 9 open reading frame 116																																																								
+84933	C8orf76	chromosome 8 open reading frame 76																																																								
+116328	C8orf34	chromosome 8 open reading frame 34																																																								
+136288	C7orf57	chromosome 7 open reading frame 57																																																								
+NA	C6orf165	NA																																																								
+168090	C6orf118	chromosome 6 open reading frame 118																																																								
+729	C6	complement C6																																																								
+134121	C5orf49	chromosome 5 open reading frame 49																																																								
+NA	C5orf45	NA																																																								
+441054	C4orf47	chromosome 4 open reading frame 47																																																								
+NA	C4orf22	NA																																																								
+388963	C2orf81	chromosome 2 open reading frame 81																																																								
+NA	C21orf59	NA																																																								
+140680	C20orf96	chromosome 20 open reading frame 96																																																								
+NA	C1orf228	NA																																																								
+127003	C1orf194	chromosome 1 open reading frame 194																																																								
+93190	C1orf158	chromosome 1 open reading frame 158																																																								
+708	C1QBP	complement C1q binding protein																																																								
+NA	C16orf93	NA																																																								
+146562	C16orf71	chromosome 16 open reading frame 71																																																								
+NA	C15orf26	NA																																																								
+NA	C14orf79	NA																																																								
+NA	C14orf159	NA																																																								
+NA	C14orf142	NA																																																								
+399949	C11orf88	chromosome 11 open reading frame 88																																																								
+119710	C11orf74	chromosome 11 open reading frame 74																																																								
+NA	C11orf70	NA																																																								
+10944	C11orf58	chromosome 11 open reading frame 58																																																								
+NA	C10orf107	NA																																																								
+23246	BOP1	BOP1 ribosomal biogenesis factor																																																								
+91653	BOC	BOC cell adhesion associated, oncogene regulated																																																								
+55909	BIN3	bridging integrator 3																																																								
+8678	BECN1	beclin 1																																																								
+56898	BDH2	3-hydroxybutyrate dehydrogenase 2																																																								
+83875	BCO2	beta-carotene oxygenase 2																																																								
+9774	BCLAF1	BCL2 associated transcription factor 1																																																								
+129880	BBS5	Bardet-Biedl syndrome 5																																																								
+585	BBS4	Bardet-Biedl syndrome 4																																																								
+582	BBS1	Bardet-Biedl syndrome 1																																																								
+27077	B9D1	B9 domain containing 1																																																								
+64343	AZI2	5-azacytidine induced 2																																																								
+26053	AUTS2	AUTS2, activator of transcription and developmental regulator																																																								
+552889	ATXN7L3B	ataxin 7 like 3B																																																								
+6311	ATXN2	ataxin 2																																																								
+NA	ATPIF1	NA																																																								
+51382	ATP6V1D	ATPase H+ transporting V1 subunit D																																																								
+27032	ATP2C1	ATPase secretory pathway Ca2+ transporting 1																																																								
+1388	ATF6B	activating transcription factor 6 beta																																																								
+171023	ASXL1	ASXL transcriptional regulator 1																																																								
+55130	ARMC4	armadillo repeat containing 4																																																								
+219681	ARMC3	armadillo repeat containing 3																																																								
+84071	ARMC2	armadillo repeat containing 2																																																								
+400	ARL1	ADP ribosylation factor like GTPase 1																																																								
+25820	ARIH1	ariadne RBR E3 ubiquitin protein ligase 1																																																								
+394	ARHGAP5	Rho GTPase activating protein 5																																																								
+93663	ARHGAP18	Rho GTPase activating protein 18																																																								
+55139	ANKZF1	ankyrin repeat and zinc finger domain containing 1																																																								
+129138	ANKRD54	ankyrin repeat domain 54																																																								
+339416	ANKRD45	ankyrin repeat domain 45																																																								
+338699	ANKRD42	ankyrin repeat domain 42																																																								
+147463	ANKRD29	ankyrin repeat domain 29																																																								
+338692	ANKRD13D	ankyrin repeat domain 13D																																																								
+51281	ANKMY1	ankyrin repeat and MYND domain containing 1																																																								
+51321	AMZ2	archaelysin family metallopeptidase 2																																																								
+275	AMT	aminomethyltransferase																																																								
+347902	AMIGO2	adhesion molecule with Ig like domain 2																																																								
+8574	AKR7A2	aldo-keto reductase family 7 member A2																																																								
+80709	AKNA	AT-hook transcription factor																																																								
+79647	AKIRIN1	akirin 1																																																								
+158798	AKAP14	A-kinase anchoring protein 14																																																								
+27245	AHDC1	AT-hook DNA binding motif containing 1																																																								
+79841	AGBL2	ATP/GTP binding protein like 2																																																								
+NA	ADCK4	NA																																																								
+84129	ACAD11	acyl-CoA dehydrogenase family member 11																																																								
+60496	AASDHPPT	aminoadipate-semialdehyde dehydrogenase-phosphopantetheinyl transferase																																																								

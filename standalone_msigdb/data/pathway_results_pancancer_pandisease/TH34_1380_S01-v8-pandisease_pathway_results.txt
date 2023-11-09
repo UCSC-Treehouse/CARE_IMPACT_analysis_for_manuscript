@@ -1,0 +1,223 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	21
+# genesets in collections:	1379
+# genes in comparison (n):	187
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+HALLMARK_FATTY_ACID_METABOLISM	158	Genes encoding proteins involved in metabolism of fatty acids.	10	0.06329	1.16e-9	7.996e-7
+HALLMARK_OXIDATIVE_PHOSPHORYLATION	200	Genes encoding proteins involved in oxidative phosphorylation.	11	0.055	7.496e-10	7.996e-7
+KEGG_CITRATE_CYCLE_TCA_CYCLE	32	Citrate cycle (TCA cycle)	6	0.1875	3.475e-9	1.598e-6
+REACTOME_TCA_CYCLE_AND_RESPIRATORY_ELECTRON_TRANSPORT	141	Genes involved in The citric acid (TCA) cycle and respiratory electron transport	9	0.06383	7.429e-9	2.561e-6
+REACTOME_PYRUVATE_METABOLISM_AND_CITRIC_ACID_TCA_CYCLE	48	Genes involved in Pyruvate metabolism and Citric Acid (TCA) cycle	6	0.125	4.459e-8	1.23e-5
+BIOCARTA_KREB_PATHWAY	8	The Citric Acid Cycle	3	0.375	3.658e-6	7.289e-4
+REACTOME_CITRIC_ACID_CYCLE_TCA_CYCLE	26	Genes involved in Citric acid cycle (TCA cycle)	4	0.1538	3.7e-6	7.289e-4
+HALLMARK_NOTCH_SIGNALING	32	Genes up-regulated by activation of Notch signaling.	4	0.125	8.732e-6	0.001505
+KEGG_OXIDATIVE_PHOSPHORYLATION	135	Oxidative phosphorylation	6	0.04444	2.036e-5	0.002808
+KEGG_PARKINSONS_DISEASE	133	Parkinson's disease	6	0.04511	1.871e-5	0.002808
+KEGG_VASCULAR_SMOOTH_MUSCLE_CONTRACTION	115	Vascular smooth muscle contraction	5	0.04348	1.13e-4	0.01416
+HALLMARK_ADIPOGENESIS	200	Genes up-regulated during adipocyte differentiation (adipogenesis).	6	0.03	1.797e-4	0.02065
+BIOCARTA_MYOSIN_PATHWAY	31	PKC-catalyzed phosphorylation of inhibitory phosphoprotein of myosin phosphatase	3	0.09677	2.74e-4	0.02907
+KEGG_CARDIAC_MUSCLE_CONTRACTION	80	Cardiac muscle contraction	4	0.05	3.298e-4	0.03032
+REACTOME_RESPIRATORY_ELECTRON_TRANSPORT	79	Genes involved in Respiratory electron transport	4	0.05063	3.143e-4	0.03032
+BIOCARTA_PAR1_PATHWAY	37	Thrombin signaling and protease-activated receptors	3	0.08108	4.652e-4	0.0401
+HALLMARK_WNT_BETA_CATENIN_SIGNALING	42	Genes up-regulated by activation of WNT signaling through accumulation of beta catenin CTNNB1 [GeneID=1499].	3	0.07143	6.772e-4	0.04766
+KEGG_ALZHEIMERS_DISEASE	169	Alzheimer's disease	5	0.02959	6.677e-4	0.04766
+REACTOME_GENERIC_TRANSCRIPTION_PATHWAY	352	Genes involved in Generic Transcription Pathway	7	0.01989	6.364e-4	0.04766
+REACTOME_NRAGE_SIGNALS_DEATH_THROUGH_JNK	43	Genes involved in NRAGE signals death through JNK	3	0.06977	7.258e-4	0.04766
+REACTOME_RESPIRATORY_ELECTRON_TRANSPORT_ATP_SYNTHESIS_BY_CHEMIOSMOTIC_COUPLING_AND_HEAT_PRODUCTION_BY_UNCOUPLING_PROTEINS_	98	Genes involved in Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.	4	0.04082	7.116e-4	0.04766
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	HALLMARK_FATTY_ACID_METABOLISM	HALLMARK_OXIDATIVE_PHOSPHORYLATION	KEGG_CITRATE_CYCLE_TCA_CYCLE	REACTOME_TCA_CYCLE_AND_RESPIRATORY_ELECTRON_TRANSPORT	REACTOME_PYRUVATE_METABOLISM_AND_CITRIC_ACID_TCA_CYCLE	BIOCARTA_KREB_PATHWAY	REACTOME_CITRIC_ACID_CYCLE_TCA_CYCLE	HALLMARK_NOTCH_SIGNALING	KEGG_OXIDATIVE_PHOSPHORYLATION	KEGG_PARKINSONS_DISEASE	KEGG_VASCULAR_SMOOTH_MUSCLE_CONTRACTION	HALLMARK_ADIPOGENESIS	BIOCARTA_MYOSIN_PATHWAY	KEGG_CARDIAC_MUSCLE_CONTRACTION	REACTOME_RESPIRATORY_ELECTRON_TRANSPORT	BIOCARTA_PAR1_PATHWAY	HALLMARK_WNT_BETA_CATENIN_SIGNALING	KEGG_ALZHEIMERS_DISEASE	REACTOME_GENERIC_TRANSCRIPTION_PATHWAY	REACTOME_NRAGE_SIGNALS_DEATH_THROUGH_JNK	REACTOME_RESPIRATORY_ELECTRON_TRANSPORT_ATP_SYNTHESIS_BY_CHEMIOSMOTIC_COUPLING_AND_HEAT_PRODUCTION_BY_UNCOUPLING_PROTEINS_
+2271	FH	fumarate hydratase	HALLMARK_FATTY_ACID_METABOLISM	HALLMARK_OXIDATIVE_PHOSPHORYLATION	KEGG_CITRATE_CYCLE_TCA_CYCLE	REACTOME_TCA_CYCLE_AND_RESPIRATORY_ELECTRON_TRANSPORT	REACTOME_PYRUVATE_METABOLISM_AND_CITRIC_ACID_TCA_CYCLE	BIOCARTA_KREB_PATHWAY	REACTOME_CITRIC_ACID_CYCLE_TCA_CYCLE														
+6391	SDHC	succinate dehydrogenase complex subunit C	HALLMARK_FATTY_ACID_METABOLISM	HALLMARK_OXIDATIVE_PHOSPHORYLATION	KEGG_CITRATE_CYCLE_TCA_CYCLE	REACTOME_TCA_CYCLE_AND_RESPIRATORY_ELECTRON_TRANSPORT	REACTOME_PYRUVATE_METABOLISM_AND_CITRIC_ACID_TCA_CYCLE		REACTOME_CITRIC_ACID_CYCLE_TCA_CYCLE		KEGG_OXIDATIVE_PHOSPHORYLATION	KEGG_PARKINSONS_DISEASE		HALLMARK_ADIPOGENESIS			REACTOME_RESPIRATORY_ELECTRON_TRANSPORT			KEGG_ALZHEIMERS_DISEASE			REACTOME_RESPIRATORY_ELECTRON_TRANSPORT_ATP_SYNTHESIS_BY_CHEMIOSMOTIC_COUPLING_AND_HEAT_PRODUCTION_BY_UNCOUPLING_PROTEINS_
+3417	IDH1	isocitrate dehydrogenase (NADP(+)) 1, cytosolic	HALLMARK_FATTY_ACID_METABOLISM	HALLMARK_OXIDATIVE_PHOSPHORYLATION	KEGG_CITRATE_CYCLE_TCA_CYCLE	REACTOME_TCA_CYCLE_AND_RESPIRATORY_ELECTRON_TRANSPORT	REACTOME_PYRUVATE_METABOLISM_AND_CITRIC_ACID_TCA_CYCLE							HALLMARK_ADIPOGENESIS									
+5160	PDHA1	pyruvate dehydrogenase E1 alpha 1 subunit	HALLMARK_FATTY_ACID_METABOLISM	HALLMARK_OXIDATIVE_PHOSPHORYLATION	KEGG_CITRATE_CYCLE_TCA_CYCLE	REACTOME_TCA_CYCLE_AND_RESPIRATORY_ELECTRON_TRANSPORT	REACTOME_PYRUVATE_METABOLISM_AND_CITRIC_ACID_TCA_CYCLE																
+1374	CPT1A	carnitine palmitoyltransferase 1A	HALLMARK_FATTY_ACID_METABOLISM	HALLMARK_OXIDATIVE_PHOSPHORYLATION																			
+6999	TDO2	tryptophan 2,3-dioxygenase	HALLMARK_FATTY_ACID_METABOLISM																				
+2752	GLUL	glutamate-ammonia ligase	HALLMARK_FATTY_ACID_METABOLISM																				
+10005	ACOT8	acyl-CoA thioesterase 8	HALLMARK_FATTY_ACID_METABOLISM																				
+2326	FMO1	flavin containing monooxygenase 1	HALLMARK_FATTY_ACID_METABOLISM																				
+58476	TP53INP2	tumor protein p53 inducible nuclear protein 2	HALLMARK_FATTY_ACID_METABOLISM																				
+1431	CS	citrate synthase		HALLMARK_OXIDATIVE_PHOSPHORYLATION	KEGG_CITRATE_CYCLE_TCA_CYCLE	REACTOME_TCA_CYCLE_AND_RESPIRATORY_ELECTRON_TRANSPORT	REACTOME_PYRUVATE_METABOLISM_AND_CITRIC_ACID_TCA_CYCLE	BIOCARTA_KREB_PATHWAY	REACTOME_CITRIC_ACID_CYCLE_TCA_CYCLE					HALLMARK_ADIPOGENESIS									
+3418	IDH2	isocitrate dehydrogenase (NADP(+)) 2, mitochondrial		HALLMARK_OXIDATIVE_PHOSPHORYLATION	KEGG_CITRATE_CYCLE_TCA_CYCLE	REACTOME_TCA_CYCLE_AND_RESPIRATORY_ELECTRON_TRANSPORT	REACTOME_PYRUVATE_METABOLISM_AND_CITRIC_ACID_TCA_CYCLE	BIOCARTA_KREB_PATHWAY	REACTOME_CITRIC_ACID_CYCLE_TCA_CYCLE														
+4698	NDUFA5	NADH:ubiquinone oxidoreductase subunit A5		HALLMARK_OXIDATIVE_PHOSPHORYLATION		REACTOME_TCA_CYCLE_AND_RESPIRATORY_ELECTRON_TRANSPORT					KEGG_OXIDATIVE_PHOSPHORYLATION	KEGG_PARKINSONS_DISEASE		HALLMARK_ADIPOGENESIS			REACTOME_RESPIRATORY_ELECTRON_TRANSPORT			KEGG_ALZHEIMERS_DISEASE			REACTOME_RESPIRATORY_ELECTRON_TRANSPORT_ATP_SYNTHESIS_BY_CHEMIOSMOTIC_COUPLING_AND_HEAT_PRODUCTION_BY_UNCOUPLING_PROTEINS_
+7385	UQCRC2	ubiquinol-cytochrome c reductase core protein 2		HALLMARK_OXIDATIVE_PHOSPHORYLATION		REACTOME_TCA_CYCLE_AND_RESPIRATORY_ELECTRON_TRANSPORT					KEGG_OXIDATIVE_PHOSPHORYLATION	KEGG_PARKINSONS_DISEASE				KEGG_CARDIAC_MUSCLE_CONTRACTION	REACTOME_RESPIRATORY_ELECTRON_TRANSPORT			KEGG_ALZHEIMERS_DISEASE			REACTOME_RESPIRATORY_ELECTRON_TRANSPORT_ATP_SYNTHESIS_BY_CHEMIOSMOTIC_COUPLING_AND_HEAT_PRODUCTION_BY_UNCOUPLING_PROTEINS_
+4723	NDUFV1	NADH:ubiquinone oxidoreductase core subunit V1		HALLMARK_OXIDATIVE_PHOSPHORYLATION		REACTOME_TCA_CYCLE_AND_RESPIRATORY_ELECTRON_TRANSPORT					KEGG_OXIDATIVE_PHOSPHORYLATION	KEGG_PARKINSONS_DISEASE					REACTOME_RESPIRATORY_ELECTRON_TRANSPORT			KEGG_ALZHEIMERS_DISEASE			REACTOME_RESPIRATORY_ELECTRON_TRANSPORT_ATP_SYNTHESIS_BY_CHEMIOSMOTIC_COUPLING_AND_HEAT_PRODUCTION_BY_UNCOUPLING_PROTEINS_
+4976	OPA1	OPA1, mitochondrial dynamin like GTPase		HALLMARK_OXIDATIVE_PHOSPHORYLATION																			
+4851	NOTCH1	notch 1								HALLMARK_NOTCH_SIGNALING									HALLMARK_WNT_BETA_CATENIN_SIGNALING				
+182	JAG1	jagged 1								HALLMARK_NOTCH_SIGNALING									HALLMARK_WNT_BETA_CATENIN_SIGNALING				
+4854	NOTCH3	notch 3								HALLMARK_NOTCH_SIGNALING											REACTOME_GENERIC_TRANSCRIPTION_PATHWAY		
+26508	HEYL	hes related family bHLH transcription factor with YRPW motif-like								HALLMARK_NOTCH_SIGNALING													
+84701	COX4I2	cytochrome c oxidase subunit 4I2									KEGG_OXIDATIVE_PHOSPHORYLATION	KEGG_PARKINSONS_DISEASE				KEGG_CARDIAC_MUSCLE_CONTRACTION				KEGG_ALZHEIMERS_DISEASE			
+5464	PPA1	pyrophosphatase (inorganic) 1									KEGG_OXIDATIVE_PHOSPHORYLATION												
+5413	SEPT5	septin 5										KEGG_PARKINSONS_DISEASE											
+9826	ARHGEF11	Rho guanine nucleotide exchange factor 11											KEGG_VASCULAR_SMOOTH_MUSCLE_CONTRACTION		BIOCARTA_MYOSIN_PATHWAY			BIOCARTA_PAR1_PATHWAY				REACTOME_NRAGE_SIGNALS_DEATH_THROUGH_JNK	
+4660	PPP1R12B	protein phosphatase 1 regulatory subunit 12B											KEGG_VASCULAR_SMOOTH_MUSCLE_CONTRACTION		BIOCARTA_MYOSIN_PATHWAY			BIOCARTA_PAR1_PATHWAY					
+NA	GUCY1A3	NA											KEGG_VASCULAR_SMOOTH_MUSCLE_CONTRACTION										
+NA	GUCY1B3	NA											KEGG_VASCULAR_SMOOTH_MUSCLE_CONTRACTION										
+109	ADCY3	adenylate cyclase 3											KEGG_VASCULAR_SMOOTH_MUSCLE_CONTRACTION										
+27250	PDCD4	programmed cell death 4												HALLMARK_ADIPOGENESIS									
+25813	SAMM50	SAMM50 sorting and assembly machinery component												HALLMARK_ADIPOGENESIS									
+9828	ARHGEF17	Rho guanine nucleotide exchange factor 17													BIOCARTA_MYOSIN_PATHWAY			BIOCARTA_PAR1_PATHWAY				REACTOME_NRAGE_SIGNALS_DEATH_THROUGH_JNK	
+477	ATP1A2	ATPase Na+/K+ transporting subunit alpha 2														KEGG_CARDIAC_MUSCLE_CONTRACTION							
+482	ATP1B2	ATPase Na+/K+ transporting subunit beta 2														KEGG_CARDIAC_MUSCLE_CONTRACTION							
+23493	HEY2	hes related family bHLH transcription factor with YRPW motif 2																	HALLMARK_WNT_BETA_CATENIN_SIGNALING				
+84838	ZNF496	zinc finger protein 496																			REACTOME_GENERIC_TRANSCRIPTION_PATHWAY		
+2063	NR2F6	nuclear receptor subfamily 2 group F member 6																			REACTOME_GENERIC_TRANSCRIPTION_PATHWAY		
+84449	ZNF333	zinc finger protein 333																			REACTOME_GENERIC_TRANSCRIPTION_PATHWAY		
+84914	ZNF587	zinc finger protein 587																			REACTOME_GENERIC_TRANSCRIPTION_PATHWAY		
+93134	ZNF561	zinc finger protein 561																			REACTOME_GENERIC_TRANSCRIPTION_PATHWAY		
+10781	ZNF266	zinc finger protein 266																			REACTOME_GENERIC_TRANSCRIPTION_PATHWAY		
+10276	NET1	neuroepithelial cell transforming 1																				REACTOME_NRAGE_SIGNALS_DEATH_THROUGH_JNK	
+9481	SLC25A27	solute carrier family 25 member 27																					
+1938	EEF2	eukaryotic translation elongation factor 2																					
+5362	PLXNA2	plexin A2																					
+25875	LETMD1	LETM1 domain containing 1																					
+10902	BRD8	bromodomain containing 8																					
+55827	DCAF6	DDB1 and CUL4 associated factor 6																					
+7024	TFCP2	transcription factor CP2																					
+5876	RABGGTB	Rab geranylgeranyltransferase subunit beta																					
+27316	RBMX	RNA binding motif protein X-linked																					
+55129	ANO10	anoctamin 10																					
+4947	OAZ2	ornithine decarboxylase antizyme 2																					
+54888	NSUN2	NOP2/Sun RNA methyltransferase family member 2																					
+799	CALCR	calcitonin receptor																					
+582	BBS1	Bardet-Biedl syndrome 1																					
+50509	COL5A3	collagen type V alpha 3 chain																					
+90203	SNX21	sorting nexin family member 21																					
+57645	POGK	pogo transposable element derived with KRAB domain																					
+129563	DIS3L2	DIS3 like 3'-5' exoribonuclease 2																					
+5222	PGA5	pepsinogen 5, group I (pepsinogen A)																					
+643847	PGA4	pepsinogen 4, group I (pepsinogen A)																					
+643834	PGA3	pepsinogen 3, group I (pepsinogen A)																					
+8618	CADPS	calcium dependent secretion activator																					
+9905	SGSM2	small G protein signaling modulator 2																					
+55107	ANO1	anoctamin 1																					
+84467	FBN3	fibrillin 3																					
+6581	SLC22A3	solute carrier family 22 member 3																					
+1314	COPA	coatomer protein complex subunit alpha																					
+283417	DPY19L2	dpy-19 like 2																					
+65123	INTS3	integrator complex subunit 3																					
+55187	VPS13D	vacuolar protein sorting 13 homolog D																					
+7535	ZAP70	zeta chain of T cell receptor associated protein kinase 70																					
+10788	IQGAP2	IQ motif containing GTPase activating protein 2																					
+100506243	KRBOX1	KRAB box domain containing 1																					
+3776	KCNK2	potassium two pore domain channel subfamily K member 2																					
+NA	C1orf95	NA																					
+6926	TBX3	T-box 3																					
+54407	SLC38A2	solute carrier family 38 member 2																					
+7593	MZF1	myeloid zinc finger 1																					
+51305	KCNK9	potassium two pore domain channel subfamily K member 9																					
+1054	CEBPG	CCAAT enhancer binding protein gamma																					
+5129	CDK18	cyclin dependent kinase 18																					
+23126	POGZ	pogo transposable element derived with ZNF domain																					
+8525	DGKZ	diacylglycerol kinase zeta																					
+54997	TESC	tescalcin																					
+83714	NRIP2	nuclear receptor interacting protein 2																					
+51719	CAB39	calcium binding protein 39																					
+84064	HDHD2	haloacid dehalogenase like hydrolase domain containing 2																					
+23438	HARS2	histidyl-tRNA synthetase 2, mitochondrial																					
+117143	TADA1	transcriptional adaptor 1																					
+80179	MYO19	myosin XIX																					
+51053	GMNN	geminin, DNA replication inhibitor																					
+126147	NTN5	netrin 5																					
+6905	TBCE	tubulin folding cofactor E																					
+5498	PPOX	protoporphyrinogen oxidase																					
+56920	SEMA3G	semaphorin 3G																					
+53373	TPCN1	two pore segment channel 1																					
+9725	TMEM63A	transmembrane protein 63A																					
+23352	UBR4	ubiquitin protein ligase E3 component n-recognin 4																					
+55183	RIF1	replication timing regulatory factor 1																					
+284695	ZNF326	zinc finger protein 326																					
+55144	LRRC8D	leucine rich repeat containing 8 VRAC subunit D																					
+55861	DBNDD2	dysbindin domain containing 2																					
+441027	TMEM150C	transmembrane protein 150C																					
+5032	P2RY11	purinergic receptor P2Y11																					
+63027	SLC22A23	solute carrier family 22 member 23																					
+7832	BTG2	BTG anti-proliferation factor 2																					
+11311	VPS45	vacuolar protein sorting 45 homolog																					
+23176	SEPT8	septin 8																					
+5959	RDH5	retinol dehydrogenase 5																					
+10608	MXD4	MAX dimerization protein 4																					
+54674	LRRN3	leucine rich repeat neuronal 3																					
+10231	RCAN2	regulator of calcineurin 2																					
+81794	ADAMTS10	ADAM metallopeptidase with thrombospondin type 1 motif 10																					
+23196	FAM120A	family with sequence similarity 120A																					
+1153	CIRBP	cold inducible RNA binding protein																					
+2872	MKNK2	MAP kinase interacting serine/threonine kinase 2																					
+23201	FAM168A	family with sequence similarity 168 member A																					
+5887	RAD23B	RAD23 homolog B, nucleotide excision repair protein																					
+11142	PKIG	cAMP-dependent protein kinase inhibitor gamma																					
+55599	RNPC3	RNA binding region (RNP1, RRM) containing 3																					
+3613	IMPA2	inositol monophosphatase 2																					
+3664	IRF6	interferon regulatory factor 6																					
+121227	LRIG3	leucine rich repeats and immunoglobulin like domains 3																					
+257019	FRMD3	FERM domain containing 3																					
+255812	SDHAP1	succinate dehydrogenase complex flavoprotein subunit A pseudogene 1																					
+29956	CERS2	ceramide synthase 2																					
+8534	CHST1	carbohydrate sulfotransferase 1																					
+4868	NPHS1	NPHS1, nephrin																					
+10054	UBA2	ubiquitin like modifier activating enzyme 2																					
+4124	MAN2A1	mannosidase alpha class 2A member 1																					
+26269	FBXO8	F-box protein 8																					
+283120	H19	H19, imprinted maternally expressed transcript																					
+57704	GBA2	glucosylceramidase beta 2																					
+2628	GATM	glycine amidinotransferase																					
+84879	MFSD2A	major facilitator superfamily domain containing 2A																					
+9580	SOX13	SRY-box 13																					
+57507	ZNF608	zinc finger protein 608																					
+84181	CHD6	chromodomain helicase DNA binding protein 6																					
+1979	EIF4EBP2	eukaryotic translation initiation factor 4E binding protein 2																					
+5502	PPP1R1A	protein phosphatase 1 regulatory inhibitor subunit 1A																					
+57447	NDRG2	NDRG family member 2																					
+10221	TRIB1	tribbles pseudokinase 1																					
+NA	C1orf27	NA																					
+10955	SERINC3	serine incorporator 3																					
+80323	CCDC68	coiled-coil domain containing 68																					
+2948	GSTM4	glutathione S-transferase mu 4																					
+54906	FAM208B	family with sequence similarity 208 member B																					
+148252	DIRAS1	DIRAS family GTPase 1																					
+NA	PP7080	NA																					
+133584	EGFLAM	EGF like, fibronectin type III and laminin G domains																					
+54861	SNRK	SNF related kinase																					
+54902	TTC19	tetratricopeptide repeat domain 19																					
+1050	CEBPA	CCAAT enhancer binding protein alpha																					
+4852	NPY	neuropeptide Y																					
+8495	PPFIBP2	PPFIA binding protein 2																					
+1939	EIF2D	eukaryotic translation initiation factor 2D																					
+5337	PLD1	phospholipase D1																					
+9877	ZC3H11A	zinc finger CCCH-type containing 11A																					
+493	ATP2B4	ATPase plasma membrane Ca2+ transporting 4																					
+123096	SLC25A29	solute carrier family 25 member 29																					
+84063	KIRREL2	kirre like nephrin family adhesion molecule 2																					
+115286	SLC25A26	solute carrier family 25 member 26																					
+9873	FCHSD2	FCH and double SH3 domains 2																					
+121665	SPPL3	signal peptide peptidase like 3																					
+79966	SCD5	stearoyl-CoA desaturase 5																					
+22864	R3HDM2	R3H domain containing 2																					
+23002	DAAM1	dishevelled associated activator of morphogenesis 1																					
+9388	LIPG	lipase G, endothelial type																					
+441478	NRARP	NOTCH regulated ankyrin repeat protein																					
+27292	DIMT1	DIM1 dimethyladenosine transferase 1 homolog																					
+23367	LARP1	La ribonucleoprotein domain family member 1																					
+728689	EIF3CL	eukaryotic translation initiation factor 3 subunit C like																					
+1002	CDH4	cadherin 4																					
+89796	NAV1	neuron navigator 1																					
+91010	FMNL3	formin like 3																					
+79839	CCDC102B	coiled-coil domain containing 102B																					
+NA	KIAA0907	NA																					
+2562	GABRB3	gamma-aminobutyric acid type A receptor beta3 subunit																					
+159	ADSS	adenylosuccinate synthase																					
+65268	WNK2	WNK lysine deficient protein kinase 2																					
+28996	HIPK2	homeodomain interacting protein kinase 2																					
+11232	POLG2	DNA polymerase gamma 2, accessory subunit																					
+1302	COL11A2	collagen type XI alpha 2 chain																					
+79600	TCTN1	tectonic family member 1																					
+NA	ORAOV1	NA																					
+90139	TSPAN18	tetraspanin 18																					

@@ -1,0 +1,146 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	10
+# genesets in collections:	1379
+# genes in comparison (n):	121
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+HALLMARK_MYOGENESIS	200	Genes involved in development of skeletal muscle (myogenesis).	10	0.05	1.617e-10	1.719e-7
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	18	0.01751	2.493e-10	1.719e-7
+REACTOME_STRIATED_MUSCLE_CONTRACTION	27	Genes involved in Striated Muscle Contraction	5	0.1852	8.972e-9	4.124e-6
+REACTOME_MUSCLE_CONTRACTION	48	Genes involved in Muscle contraction	5	0.1042	1.821e-7	6.277e-5
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	12	0.01594	7.889e-7	2.176e-4
+HALLMARK_KRAS_SIGNALING_DN	200	Genes down-regulated by KRAS activation.	7	0.035	1.105e-6	2.54e-4
+NABA_ECM_REGULATORS	238	Genes encoding enzymes and their regulators involved in the remodeling of the extracellular matrix	7	0.02941	3.498e-6	6.892e-4
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	6	0.02182	9.397e-5	0.0162
+HALLMARK_APICAL_JUNCTION	200	Genes encoding components of apical junction complex.	5	0.025	1.961e-4	0.03005
+NABA_COLLAGENS	44	Genes encoding collagen proteins	3	0.06818	2.179e-4	0.03005
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	HALLMARK_MYOGENESIS	NABA_MATRISOME	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION	NABA_MATRISOME_ASSOCIATED	HALLMARK_KRAS_SIGNALING_DN	NABA_ECM_REGULATORS	NABA_CORE_MATRISOME	HALLMARK_APICAL_JUNCTION	NABA_COLLAGENS
+7139	TNNT2	troponin T2, cardiac type	HALLMARK_MYOGENESIS		REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION						
+7135	TNNI1	troponin I1, slow skeletal type	HALLMARK_MYOGENESIS		REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION						
+4635	MYL4	myosin light chain 4	HALLMARK_MYOGENESIS		REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION						
+4632	MYL1	myosin light chain 1	HALLMARK_MYOGENESIS		REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION						
+4621	MYH3	myosin heavy chain 3	HALLMARK_MYOGENESIS		REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION						
+70	ACTC1	actin, alpha, cardiac muscle 1	HALLMARK_MYOGENESIS					HALLMARK_KRAS_SIGNALING_DN			HALLMARK_APICAL_JUNCTION	
+7140	TNNT3	troponin T3, fast skeletal type	HALLMARK_MYOGENESIS									
+4656	MYOG	myogenin	HALLMARK_MYOGENESIS									
+29895	MYLPF	myosin light chain, phosphorylatable, fast skeletal muscle	HALLMARK_MYOGENESIS									
+1134	CHRNA1	cholinergic receptor nicotinic alpha 1 subunit	HALLMARK_MYOGENESIS									
+7051	TGM1	transglutaminase 1		NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED	HALLMARK_KRAS_SIGNALING_DN	NABA_ECM_REGULATORS			
+5055	SERPINB2	serpin family B member 2		NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED	HALLMARK_KRAS_SIGNALING_DN	NABA_ECM_REGULATORS			
+6318	SERPINB4	serpin family B member 4		NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED		NABA_ECM_REGULATORS			
+6317	SERPINB3	serpin family B member 3		NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED		NABA_ECM_REGULATORS			
+4322	MMP13	matrix metallopeptidase 13		NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED		NABA_ECM_REGULATORS			
+4017	LOXL2	lysyl oxidase like 2		NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED		NABA_ECM_REGULATORS			
+144568	A2ML1	alpha-2-macroglobulin like 1		NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED		NABA_ECM_REGULATORS			
+11197	WIF1	WNT inhibitory factor 1		NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED					
+5473	PPBP	pro-platelet basic protein		NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED					
+3481	IGF2	insulin like growth factor 2		NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED					
+2719	GPC3	glypican 3		NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED					
+49860	CRNN	cornulin		NABA_MATRISOME			NABA_MATRISOME_ASSOCIATED					
+1297	COL9A1	collagen type IX alpha 1 chain		NABA_MATRISOME						NABA_CORE_MATRISOME	HALLMARK_APICAL_JUNCTION	NABA_COLLAGENS
+7059	THBS3	thrombospondin 3		NABA_MATRISOME						NABA_CORE_MATRISOME	HALLMARK_APICAL_JUNCTION	
+136227	COL26A1	collagen type XXVI alpha 1 chain		NABA_MATRISOME						NABA_CORE_MATRISOME		NABA_COLLAGENS
+1302	COL11A2	collagen type XI alpha 2 chain		NABA_MATRISOME						NABA_CORE_MATRISOME		NABA_COLLAGENS
+10216	PRG4	proteoglycan 4		NABA_MATRISOME						NABA_CORE_MATRISOME		
+2201	FBN2	fibrillin 2		NABA_MATRISOME						NABA_CORE_MATRISOME		
+6707	SPRR3	small proline rich protein 3						HALLMARK_KRAS_SIGNALING_DN				
+7356	SCGB1A1	secretoglobin family 1A member 1						HALLMARK_KRAS_SIGNALING_DN				
+3851	KRT4	keratin 4						HALLMARK_KRAS_SIGNALING_DN				
+3860	KRT13	keratin 13						HALLMARK_KRAS_SIGNALING_DN				
+5335	PLCG1	phospholipase C gamma 1									HALLMARK_APICAL_JUNCTION	
+2318	FLNC	filamin C									HALLMARK_APICAL_JUNCTION	
+7553	ZNF7	zinc finger protein 7										
+7545	ZIC1	Zic family member 1										
+26118	WSB1	WD repeat and SOCS box containing 1										
+55093	WDYHV1	WDYHV motif containing 1										
+253769	WDR27	WD repeat domain 27										
+284013	VMO1	vitelline membrane outer layer 1 homolog										
+7348	UPK1B	uroplakin 1B										
+51366	UBR5	ubiquitin protein ligase E3 component n-recognin 5										
+117581	TWIST2	twist family bHLH transcription factor 2										
+64102	TNMD	tenomodulin										
+9407	TMPRSS11D	transmembrane serine protease 11D										
+51259	TMEM216	transmembrane protein 216										
+7072	TIA1	TIA1 cytotoxic granule associated RNA binding protein										
+6947	TCN1	transcobalamin 1										
+10915	TCERG1	transcription elongation regulator 1										
+9496	TBX4	T-box 4										
+83940	TATDN1	TatD DNase domain containing 1										
+6863	TAC1	tachykinin precursor 1										
+6703	SPRR2D	small proline rich protein 2D										
+6700	SPRR2A	small proline rich protein 2A										
+6699	SPRR1B	small proline rich protein 1B										
+6698	SPRR1A	small proline rich protein 1A										
+11005	SPINK5	serine peptidase inhibitor, Kazal type 5										
+51312	SLC25A37	solute carrier family 25 member 37										
+10736	SIX2	SIX homeobox 2										
+374897	SBSN	suprabasin										
+653702	RPL7P9	ribosomal protein L7 pseudogene 9										
+6156	RPL30	ribosomal protein L30										
+116149	RPL12P4	ribosomal protein L12 pseudogene 4										
+51458	RHCG	Rh family C glycoprotein										
+5999	RGS4	regulator of G protein signaling 4										
+55131	RBM28	RNA binding motif protein 28										
+5917	RARS	arginyl-tRNA synthetase										
+661	POLR3D	RNA polymerase III subunit D										
+728233	PI4KAP1	phosphatidylinositol 4-kinase alpha pseudogene 1										
+51105	PHF20L1	PHD finger protein 20 like 1										
+5178	PEG3	paternally expressed 3										
+283298	OLFML1	olfactomedin like 1										
+286053	NSMCE2	NSE2 (MMS21) homolog, SMC5-SMC6 complex SUMO ligase										
+4885	NPTX2	neuronal pentraxin 2										
+4826	NNAT	neuronatin										
+4741	NEFM	neurofilament medium										
+9242	MSC	musculin										
+283078	MKX	mohawk homeobox										
+4232	MEST	mesoderm specific transcript										
+4223	MEOX2	mesenchyme homeobox 2										
+137797	LYPD2	LY6/PLAUR domain containing 2										
+8581	LY6D	lymphocyte antigen 6 family member D										
+10234	LRRC17	leucine rich repeat containing 17										
+286887	KRT6C	keratin 6C										
+3854	KRT6B	keratin 6B										
+3853	KRT6A	keratin 6A										
+3868	KRT16	keratin 16										
+NA	KIAA0907	NA										
+3713	IVL	involucrin										
+55656	INTS8	integrator complex subunit 8										
+3590	IL11RA	interleukin 11 receptor subunit alpha										
+3187	HNRNPH1	heterogeneous nuclear ribonucleoprotein H1										
+8091	HMGA2	high mobility group AT-hook 2										
+64344	HIF3A	hypoxia inducible factor 3 subunit alpha										
+3048	HBG2	hemoglobin subunit gamma 2										
+2620	GAS2	growth arrest specific 2										
+2568	GABRP	gamma-aminobutyric acid type A receptor pi subunit										
+252995	FNDC5	fibronectin type III domain containing 5										
+23360	FNBP4	formin binding protein 4										
+23768	FLRT2	fibronectin leucine rich transmembrane protein 2										
+56943	ENY2	ENY2, transcription and export complex 2 subunit										
+9583	ENTPD4	ectonucleoside triphosphate diphosphohydrolase 4										
+5168	ENPP2	ectonucleotide pyrophosphatase/phosphodiesterase 2										
+8667	EIF3H	eukaryotic translation initiation factor 3 subunit H										
+3646	EIF3E	eukaryotic translation initiation factor 3 subunit E										
+11266	DUSP12	dual specificity phosphatase 12										
+1830	DSG3	desmoglein 3										
+84677	DSCR8	Down syndrome critical region 8										
+1788	DNMT3A	DNA methyltransferase 3 alpha										
+8788	DLK1	delta like non-canonical Notch ligand 1										
+23259	DDHD2	DDHD domain containing 2										
+54360	CYTL1	cytokine like 1										
+1381	CRABP1	cellular retinoic acid binding protein 1										
+50937	CDON	cell adhesion associated, oncogene regulated										
+81669	CCNL2	cyclin L2										
+119710	C11orf74	chromosome 11 open reading frame 74										
+92747	BPIFB1	BPI fold containing family B member 1										
+51297	BPIFA1	BPI fold containing family A member 1										
+91272	BOD1	biorientation of chromosomes in cell division 1										
+9140	ATG12	autophagy related 12										
+10717	AP4B1	adaptor related protein complex 4 subunit beta 1										

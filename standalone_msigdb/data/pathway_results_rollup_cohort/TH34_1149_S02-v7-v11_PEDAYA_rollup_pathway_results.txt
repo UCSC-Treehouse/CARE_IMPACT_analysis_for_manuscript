@@ -1,0 +1,101 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	11
+# genesets in collections:	1379
+# genes in comparison (n):	75
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_ECM_AFFILIATED	171	Genes encoding proteins affiliated structurally or functionally to extracellular matrix proteins	10	0.05848	2.624e-13	3.619e-10
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	14	0.01859	1.99e-11	1.372e-8
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	15	0.01459	1.037e-10	4.768e-8
+PID_HNF3A_PATHWAY	44	FOXA1 transcription factor network	4	0.09091	8.451e-7	2.913e-4
+PID_REG_GR_PATHWAY	82	Glucocorticoid receptor regulatory network	4	0.04878	1.039e-5	0.002865
+PID_DELTA_NP63_PATHWAY	47	Validated transcriptional targets of deltaNp63 isoforms	3	0.06383	6.428e-5	0.01477
+KEGG_STEROID_HORMONE_BIOSYNTHESIS	55	Steroid hormone biosynthesis	3	0.05455	1.03e-4	0.0203
+KEGG_METABOLISM_OF_XENOBIOTICS_BY_CYTOCHROME_P450	70	Metabolism of xenobiotics by cytochrome P450	3	0.04286	2.112e-4	0.03641
+HALLMARK_MYOGENESIS	200	Genes involved in development of skeletal muscle (myogenesis).	4	0.02	3.323e-4	0.04582
+HALLMARK_KRAS_SIGNALING_DN	200	Genes down-regulated by KRAS activation.	4	0.02	3.323e-4	0.04582
+KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	85	Hypertrophic cardiomyopathy (HCM)	3	0.03529	3.745e-4	0.04695
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME	PID_HNF3A_PATHWAY	PID_REG_GR_PATHWAY	PID_DELTA_NP63_PATHWAY	KEGG_STEROID_HORMONE_BIOSYNTHESIS	KEGG_METABOLISM_OF_XENOBIOTICS_BY_CYTOCHROME_P450	HALLMARK_MYOGENESIS	HALLMARK_KRAS_SIGNALING_DN	KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM
+6441	SFTPD	surfactant protein D	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME	PID_HNF3A_PATHWAY							
+729238	SFTPA2	surfactant protein A2	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME	PID_HNF3A_PATHWAY							
+653509	SFTPA1	surfactant protein A1	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME	PID_HNF3A_PATHWAY							
+6440	SFTPC	surfactant protein C	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME								
+6439	SFTPB	surfactant protein B	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME								
+389376	SFTA2	surfactant associated 2	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME								
+94025	MUC16	mucin 16, cell surface associated	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME								
+4582	MUC1	mucin 1, cell surface associated	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME								
+8547	FCN3	ficolin 3	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME								
+154790	CLEC2L	C-type lectin domain family 2 member L	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME								
+3479	IGF1	insulin like growth factor 1		NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME						HALLMARK_MYOGENESIS		KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM
+10637	LEFTY1	left-right determination factor 1		NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME								
+1515	CTSV	cathepsin V		NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME								
+6366	CCL21	C-C motif chemokine ligand 21		NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME								
+8076	MFAP5	microfibril associated protein 5			NABA_MATRISOME								
+7356	SCGB1A1	secretoglobin family 1A member 1				PID_HNF3A_PATHWAY						HALLMARK_KRAS_SIGNALING_DN	
+3852	KRT5	keratin 5					PID_REG_GR_PATHWAY	PID_DELTA_NP63_PATHWAY				HALLMARK_KRAS_SIGNALING_DN	
+3861	KRT14	keratin 14					PID_REG_GR_PATHWAY	PID_DELTA_NP63_PATHWAY					
+7433	VIPR1	vasoactive intestinal peptide receptor 1					PID_REG_GR_PATHWAY				HALLMARK_MYOGENESIS		
+3872	KRT17	keratin 17					PID_REG_GR_PATHWAY						
+2877	GPX2	glutathione peroxidase 2						PID_DELTA_NP63_PATHWAY					
+8644	AKR1C3	aldo-keto reductase family 1 member C3							KEGG_STEROID_HORMONE_BIOSYNTHESIS	KEGG_METABOLISM_OF_XENOBIOTICS_BY_CYTOCHROME_P450			
+1646	AKR1C2	aldo-keto reductase family 1 member C2							KEGG_STEROID_HORMONE_BIOSYNTHESIS	KEGG_METABOLISM_OF_XENOBIOTICS_BY_CYTOCHROME_P450			
+1645	AKR1C1	aldo-keto reductase family 1 member C1							KEGG_STEROID_HORMONE_BIOSYNTHESIS	KEGG_METABOLISM_OF_XENOBIOTICS_BY_CYTOCHROME_P450			
+7138	TNNT1	troponin T1, slow skeletal type									HALLMARK_MYOGENESIS		
+688	KLF5	Kruppel like factor 5									HALLMARK_MYOGENESIS		
+7137	TNNI3	troponin I3, cardiac type										HALLMARK_KRAS_SIGNALING_DN	KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM
+3851	KRT4	keratin 4										HALLMARK_KRAS_SIGNALING_DN	
+3655	ITGA6	integrin subunit alpha 6											KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM
+131540	ZDHHC19	zinc finger DHHC-type containing 19											
+9671	WSCD2	WSC domain containing 2											
+100287345	VENTXP2	VENT homeobox pseudogene 2											
+349408	TLR8-AS1	TLR8 antisense RNA 1											
+64321	SOX17	SRY-box 17											
+117156	SCGB3A2	secretoglobin family 3A member 2											
+92304	SCGB3A1	secretoglobin family 3A member 1											
+25914	RTTN	rotatin											
+25897	RNF19A	ring finger protein 19A, RBR E3 ubiquitin protein ligase											
+376267	RAB15	RAB15, member RAS oncogene family											
+5225	PGC	progastricsin											
+50940	PDE11A	phosphodiesterase 11A											
+84333	PCGF5	polycomb group ring finger 5											
+57526	PCDH19	protocadherin 19											
+340527	NHSL2	NHS like 2											
+342897	NCCRP1	non-specific cytotoxic cell receptor protein 1 homolog (zebrafish)											
+9476	NAPSA	napsin A aspartic peptidase											
+4356	MPP3	membrane palmitoylated protein 3											
+440823	MIAT	myocardial infarction associated transcript											
+4223	MEOX2	mesenchyme homeobox 2											
+4149	MAX	MYC associated factor X											
+4057	LTF	lactotransferrin											
+145978	LINC00052	long intergenic non-protein coding RNA 52											
+54596	L1TD1	LINE1 type transposase domain containing 1											
+3855	KRT7	keratin 7											
+3853	KRT6A	keratin 6A											
+3880	KRT19	keratin 19											
+3868	KRT16	keratin 16											
+163782	KANK4	KN motif and ankyrin repeat domains 4											
+388555	IGFL3	IGF like family member 3											
+147920	IGFL2	IGF like family member 2											
+3306	HSPA2	heat shock protein family A (Hsp70) member 2											
+3248	HPGD	15-hydroxyprostaglandin dehydrogenase											
+114907	FBXO32	F-box protein 32											
+NA	FAM159B	NA											
+2045	EPHA7	EPH receptor A7											
+9229	DLGAP1	DLG associated protein 1											
+NA	DKFZp434J0226	NA											
+284340	CXCL17	C-X-C motif chemokine ligand 17											
+1264	CNN1	calponin 1											
+64073	C19orf33	chromosome 19 open reading frame 33											
+483	ATP1B3	ATPase Na+/K+ transporting subunit beta 3											
+23779	ARHGAP8	Rho GTPase activating protein 8											
+27063	ANKRD1	ankyrin repeat domain 1											
+177	AGER	advanced glycosylation end-product specific receptor											
+147	ADRA1B	adrenoceptor alpha 1B											

@@ -1,0 +1,111 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	9
+# genesets in collections:	1379
+# genes in comparison (n):	87
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	27	0.02626	1.281e-23	1.767e-20
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	20	0.02656	1.29e-17	8.897e-15
+NABA_ECM_AFFILIATED	171	Genes encoding proteins affiliated structurally or functionally to extracellular matrix proteins	10	0.05848	1.219e-12	5.603e-10
+KEGG_LYSOSOME	121	Lysosome	6	0.04959	1.247e-7	4.3e-5
+NABA_ECM_REGULATORS	238	Genes encoding enzymes and their regulators involved in the remodeling of the extracellular matrix	7	0.02941	3.758e-7	1.037e-4
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	7	0.02545	9.887e-7	2.272e-4
+NABA_PROTEOGLYCANS	35	Genes encoding proteoglycans	3	0.08571	4.105e-5	0.008087
+PID_HNF3A_PATHWAY	44	FOXA1 transcription factor network	3	0.06818	8.205e-5	0.01414
+REACTOME_KERATAN_SULFATE_DEGRADATION	11	Genes involved in Keratan sulfate degradation	2	0.1818	1.927e-4	0.02953
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED	KEGG_LYSOSOME	NABA_ECM_REGULATORS	NABA_CORE_MATRISOME	NABA_PROTEOGLYCANS	PID_HNF3A_PATHWAY	REACTOME_KERATAN_SULFATE_DEGRADATION
+6441	SFTPD	surfactant protein D	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED					PID_HNF3A_PATHWAY	
+729238	SFTPA2	surfactant protein A2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED					PID_HNF3A_PATHWAY	
+653509	SFTPA1	surfactant protein A1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED					PID_HNF3A_PATHWAY	
+6440	SFTPC	surfactant protein C	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED						
+6439	SFTPB	surfactant protein B	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED						
+253970	SFTA3	surfactant associated 3	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED						
+389376	SFTA2	surfactant associated 2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED						
+4585	MUC4	mucin 4, cell surface associated	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED						
+4582	MUC1	mucin 1, cell surface associated	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED						
+114904	C1QTNF6	C1q and TNF related 6	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED						
+1510	CTSE	cathepsin E	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		KEGG_LYSOSOME	NABA_ECM_REGULATORS				
+6590	SLPI	secretory leukocyte peptidase inhibitor	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED			NABA_ECM_REGULATORS				
+5046	PCSK6	proprotein convertase subtilisin/kexin type 6	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED			NABA_ECM_REGULATORS				
+8510	MMP23B	matrix metallopeptidase 23B	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED			NABA_ECM_REGULATORS				
+4322	MMP13	matrix metallopeptidase 13	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED			NABA_ECM_REGULATORS				
+4015	LOX	lysyl oxidase	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED			NABA_ECM_REGULATORS				
+140766	ADAMTS14	ADAM metallopeptidase with thrombospondin type 1 motif 14	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED			NABA_ECM_REGULATORS				
+222663	SCUBE3	signal peptide, CUB domain and EGF like domain containing 3	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED							
+80274	SCUBE1	signal peptide, CUB domain and EGF like domain containing 1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED							
+9068	ANGPTL1	angiopoietin like 1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED							
+4958	OMD	osteomodulin	NABA_MATRISOME					NABA_CORE_MATRISOME	NABA_PROTEOGLYCANS		REACTOME_KERATAN_SULFATE_DEGRADATION
+4969	OGN	osteoglycin	NABA_MATRISOME					NABA_CORE_MATRISOME	NABA_PROTEOGLYCANS		REACTOME_KERATAN_SULFATE_DEGRADATION
+54829	ASPN	asporin	NABA_MATRISOME					NABA_CORE_MATRISOME	NABA_PROTEOGLYCANS		
+NA	WISP1	NA	NABA_MATRISOME					NABA_CORE_MATRISOME			
+10417	SPON2	spondin 2	NABA_MATRISOME					NABA_CORE_MATRISOME			
+1755	DMBT1	deleted in malignant brain tumors 1	NABA_MATRISOME					NABA_CORE_MATRISOME			
+91522	COL23A1	collagen type XXIII alpha 1 chain	NABA_MATRISOME					NABA_CORE_MATRISOME			
+9476	NAPSA	napsin A aspartic peptidase				KEGG_LYSOSOME					
+3988	LIPA	lipase A, lysosomal acid type				KEGG_LYSOSOME					
+27074	LAMP3	lysosomal associated membrane protein 3				KEGG_LYSOSOME					
+2588	GALNS	galactosamine (N-acetyl)-6-sulfatase				KEGG_LYSOSOME					
+1176	AP3S1	adaptor related protein complex 3 subunit sigma 1				KEGG_LYSOSOME					
+58189	WFDC1	WAP four-disulfide core domain 1									
+117581	TWIST2	twist family bHLH transcription factor 2									
+51693	TRAPPC2L	trafficking protein particle complex 2 like									
+7140	TNNT3	troponin T3, fast skeletal type									
+339456	TMEM52	transmembrane protein 52									
+55002	TMCO3	transmembrane and coiled-coil domains 3									
+9096	TBX18	T-box 18									
+6904	TBCD	tubulin folding cofactor D									
+80765	STARD5	StAR related lipid transfer domain containing 5									
+6550	SLC9A3	solute carrier family 9 member A3									
+6531	SLC6A3	solute carrier family 6 member 3									
+6540	SLC6A13	solute carrier family 6 member 13									
+10568	SLC34A2	solute carrier family 34 member 2									
+51150	SDF4	stromal cell derived factor 4									
+NA	PP7080	NA									
+9651	PLCH2	phospholipase C eta 2									
+219348	PLAC9	placenta specific 9									
+55276	PGM2	phosphoglucomutase 2									
+5225	PGC	progastricsin									
+64714	PDIA2	protein disulfide isomerase family A member 2									
+9060	PAPSS2	3'-phosphoadenosine 5'-phosphosulfate synthase 2									
+4884	NPTX1	neuronal pentraxin 1									
+147111	NOTUM	notum, palmitoleoyl-protein carboxylesterase									
+84504	NKX6-2	NK6 homeobox 2									
+4008	LMO7	LIM domain 7									
+3855	KRT7	keratin 7									
+84223	IQCG	IQ motif containing G									
+23308	ICOSLG	inducible T cell costimulator ligand									
+3240	HP	haptoglobin									
+9052	GPRC5A	G protein-coupled receptor class C group 5 member A									
+50614	GALNT9	polypeptide N-acetylgalactosaminyltransferase 9									
+2300	FOXL1	forkhead box L1									
+2303	FOXC2	forkhead box C2									
+2348	FOLR1	folate receptor 1									
+NA	FAM159B	NA									
+NA	FAM150B	NA									
+253738	EBF3	EBF transcription factor 3									
+503638	DUXAP9	double homeobox A pseudogene 9									
+64150	DIO3OS	DIO3 opposite strand upstream RNA									
+1528	CYB5A	cytochrome b5 type A									
+284340	CXCL17	C-X-C motif chemokine ligand 17									
+9150	CTDP1	CTD phosphatase subunit 1									
+8532	CPZ	carboxypeptidase Z									
+152330	CNTN4	contactin 4									
+9071	CLDN10	claudin 10									
+942	CD86	CD86 molecule									
+79839	CCDC102B	coiled-coil domain containing 102B									
+774	CACNA1B	calcium voltage-gated channel subunit alpha1 B									
+722	C4BPA	complement component 4 binding protein alpha									
+146556	C16orf89	chromosome 16 open reading frame 89									
+8537	BCAS1	breast carcinoma amplified sequence 1									
+415	ARSE	arylsulfatase E									
+362	AQP5	aquaporin 5									
+10551	AGR2	anterior gradient 2, protein disulphide isomerase family member									
+177	AGER	advanced glycosylation end-product specific receptor									

@@ -1,0 +1,214 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	40
+# genesets in collections:	1379
+# genes in comparison (n):	159
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+HALLMARK_HYPOXIA	200	Genes up-regulated in response to low oxygen levels (hypoxia).	14	0.07	1.334e-14	1.839e-11
+PID_HIF1_TFPATHWAY	66	HIF-1-alpha transcription factor network	8	0.1212	8.328e-11	5.742e-8
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	19	0.01848	3.538e-9	1.626e-6
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	16	0.02125	9.618e-9	3.316e-6
+NABA_SECRETED_FACTORS	344	Genes encoding secreted soluble factors	10	0.02907	3.856e-7	1.064e-4
+HALLMARK_TNFA_SIGNALING_VIA_NFKB	200	Genes regulated by NF-kB in response to TNF [GeneID=7124].	8	0.04	5.403e-7	1.064e-4
+HALLMARK_KRAS_SIGNALING_UP	200	Genes up-regulated by KRAS activation.	8	0.04	5.403e-7	1.064e-4
+REACTOME_GLYCOLYSIS	29	Genes involved in Glycolysis	4	0.1379	3.063e-6	5.28e-4
+KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION	267	Cytokine-cytokine receptor interaction	8	0.02996	4.649e-6	7.123e-4
+HALLMARK_ADIPOGENESIS	200	Genes up-regulated during adipocyte differentiation (adipogenesis).	7	0.035	6.789e-6	7.201e-4
+HALLMARK_COMPLEMENT	200	Genes encoding components of the complement system, which is part of the innate immune system.	7	0.035	6.789e-6	7.201e-4
+HALLMARK_XENOBIOTIC_METABOLISM	200	Genes encoding proteins involved in processing of drugs and other xenobiotics.	7	0.035	6.789e-6	7.201e-4
+KEGG_FRUCTOSE_AND_MANNOSE_METABOLISM	34	Fructose and mannose metabolism	4	0.1176	5.901e-6	7.201e-4
+BIOCARTA_AHSP_PATHWAY	13	Hemoglobin's Chaperone	3	0.2308	1.133e-5	0.001116
+REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES	413	Genes involved in Transmembrane transport of small molecules	9	0.02179	1.522e-5	0.001317
+REACTOME_TRANSPORT_OF_GLUCOSE_AND_OTHER_SUGARS_BILE_SALTS_AND_ORGANIC_ACIDS_METAL_IONS_AND_AMINE_COMPOUNDS	89	Genes involved in Transport of glucose and other sugars, bile salts and organic acids, metal ions and amine compounds	5	0.05618	1.528e-5	0.001317
+REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT	241	Genes involved in SLC-mediated transmembrane transport	7	0.02905	2.266e-5	0.001838
+REACTOME_METABOLISM_OF_CARBOHYDRATES	247	Genes involved in Metabolism of carbohydrates	7	0.02834	2.652e-5	0.002032
+REACTOME_HEMOSTASIS	466	Genes involved in Hemostasis	9	0.01931	3.902e-5	0.002832
+KEGG_LEUKOCYTE_TRANSENDOTHELIAL_MIGRATION	118	Leukocyte transendothelial migration	5	0.04237	5.943e-5	0.004097
+HALLMARK_MTORC1_SIGNALING	200	Genes up-regulated through activation of mTORC1 complex.	6	0.03	7.399e-5	0.004436
+HALLMARK_GLYCOLYSIS	200	Genes encoding proteins involved in glycolysis and gluconeogenesis.	6	0.03	7.399e-5	0.004436
+HALLMARK_IL2_STAT5_SIGNALING	200	Genes up-regulated by STAT5 in response to IL2 stimulation.	6	0.03	7.399e-5	0.004436
+REACTOME_GLUCOSE_METABOLISM	69	Genes involved in Glucose metabolism	4	0.05797	1.001e-4	0.005752
+KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY	137	Natural killer cell mediated cytotoxicity	5	0.0365	1.204e-4	0.006384
+KEGG_LEISHMANIA_INFECTION	72	Leishmania infection	4	0.05556	1.182e-4	0.006384
+REACTOME_LATENT_INFECTION_OF_HOMO_SAPIENS_WITH_MYCOBACTERIUM_TUBERCULOSIS	33	Genes involved in Latent infection of Homo sapiens with Mycobacterium tuberculosis	3	0.09091	2.054e-4	0.01049
+REACTOME_IMMUNE_SYSTEM	933	Genes involved in Immune System	11	0.01179	4.329e-4	0.02132
+PID_CXCR4_PATHWAY	102	CXCR4-mediated signaling events	4	0.03922	4.505e-4	0.02142
+PID_VEGF_VEGFR_PATHWAY	10	VEGF and VEGFR signaling network	2	0.2	5.256e-4	0.02338
+REACTOME_VEGF_LIGAND_RECEPTOR_INTERACTIONS	10	Genes involved in VEGF ligand-receptor interactions	2	0.2	5.256e-4	0.02338
+KEGG_CHEMOKINE_SIGNALING_PATHWAY	190	Chemokine signaling pathway	5	0.02632	5.445e-4	0.02346
+HALLMARK_INFLAMMATORY_RESPONSE	200	Genes defining inflammatory response.	5	0.025	6.863e-4	0.0286
+REACTOME_METABOLISM_OF_VITAMINS_AND_COFACTORS	51	Genes involved in Metabolism of vitamins and cofactors	3	0.05882	7.492e-4	0.0286
+REACTOME_DEFENSINS	51	Genes involved in Defensins	3	0.05882	7.492e-4	0.0286
+REACTOME_FACILITATIVE_NA_INDEPENDENT_GLUCOSE_TRANSPORTERS	12	Genes involved in Facilitative Na+-independent glucose transporters	2	0.1667	7.674e-4	0.0286
+REACTOME_SIGNAL_REGULATORY_PROTEIN_SIRP_FAMILY_INTERACTIONS	12	Genes involved in Signal regulatory protein (SIRP) family interactions	2	0.1667	7.674e-4	0.0286
+REACTOME_CELL_CELL_COMMUNICATION	120	Genes involved in Cell-Cell communication	4	0.03333	8.298e-4	0.03011
+KEGG_GLYCOLYSIS_GLUCONEOGENESIS	62	Glycolysis / Gluconeogenesis	3	0.04839	0.001323	0.04674
+PID_P53_DOWNSTREAM_PATHWAY	137	Direct p53 effectors	4	0.0292	0.001356	0.04674
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	HALLMARK_HYPOXIA	PID_HIF1_TFPATHWAY	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_SECRETED_FACTORS	HALLMARK_TNFA_SIGNALING_VIA_NFKB	HALLMARK_KRAS_SIGNALING_UP	REACTOME_GLYCOLYSIS	KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION	HALLMARK_ADIPOGENESIS	HALLMARK_COMPLEMENT	HALLMARK_XENOBIOTIC_METABOLISM	KEGG_FRUCTOSE_AND_MANNOSE_METABOLISM	BIOCARTA_AHSP_PATHWAY	REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES	REACTOME_TRANSPORT_OF_GLUCOSE_AND_OTHER_SUGARS_BILE_SALTS_AND_ORGANIC_ACIDS_METAL_IONS_AND_AMINE_COMPOUNDS	REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT	REACTOME_METABOLISM_OF_CARBOHYDRATES	REACTOME_HEMOSTASIS	KEGG_LEUKOCYTE_TRANSENDOTHELIAL_MIGRATION	HALLMARK_MTORC1_SIGNALING	HALLMARK_GLYCOLYSIS	HALLMARK_IL2_STAT5_SIGNALING	REACTOME_GLUCOSE_METABOLISM	KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY	KEGG_LEISHMANIA_INFECTION	REACTOME_LATENT_INFECTION_OF_HOMO_SAPIENS_WITH_MYCOBACTERIUM_TUBERCULOSIS	REACTOME_IMMUNE_SYSTEM	PID_CXCR4_PATHWAY	PID_VEGF_VEGFR_PATHWAY	REACTOME_VEGF_LIGAND_RECEPTOR_INTERACTIONS	KEGG_CHEMOKINE_SIGNALING_PATHWAY	HALLMARK_INFLAMMATORY_RESPONSE	REACTOME_METABOLISM_OF_VITAMINS_AND_COFACTORS	REACTOME_DEFENSINS	REACTOME_FACILITATIVE_NA_INDEPENDENT_GLUCOSE_TRANSPORTERS	REACTOME_SIGNAL_REGULATORY_PROTEIN_SIRP_FAMILY_INTERACTIONS	REACTOME_CELL_CELL_COMMUNICATION	KEGG_GLYCOLYSIS_GLUCONEOGENESIS	PID_P53_DOWNSTREAM_PATHWAY
+7422	VEGFA	vascular endothelial growth factor A	HALLMARK_HYPOXIA	PID_HIF1_TFPATHWAY	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_SECRETED_FACTORS	HALLMARK_TNFA_SIGNALING_VIA_NFKB			KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION										REACTOME_HEMOSTASIS			HALLMARK_GLYCOLYSIS								PID_VEGF_VEGFR_PATHWAY	REACTOME_VEGF_LIGAND_RECEPTOR_INTERACTIONS									
+5209	PFKFB3	6-phosphofructo-2-kinase/fructose-2,6-biphosphatase 3	HALLMARK_HYPOXIA	PID_HIF1_TFPATHWAY				HALLMARK_TNFA_SIGNALING_VIA_NFKB		REACTOME_GLYCOLYSIS		HALLMARK_ADIPOGENESIS			KEGG_FRUCTOSE_AND_MANNOSE_METABOLISM					REACTOME_METABOLISM_OF_CARBOHYDRATES						REACTOME_GLUCOSE_METABOLISM																
+5230	PGK1	phosphoglycerate kinase 1	HALLMARK_HYPOXIA	PID_HIF1_TFPATHWAY						REACTOME_GLYCOLYSIS										REACTOME_METABOLISM_OF_CARBOHYDRATES			HALLMARK_MTORC1_SIGNALING	HALLMARK_GLYCOLYSIS		REACTOME_GLUCOSE_METABOLISM															KEGG_GLYCOLYSIS_GLUCONEOGENESIS	
+123	PLIN2	perilipin 2	HALLMARK_HYPOXIA	PID_HIF1_TFPATHWAY								HALLMARK_ADIPOGENESIS													HALLMARK_IL2_STAT5_SIGNALING																	
+1356	CP	ceruloplasmin	HALLMARK_HYPOXIA	PID_HIF1_TFPATHWAY									HALLMARK_COMPLEMENT				REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES	REACTOME_TRANSPORT_OF_GLUCOSE_AND_OTHER_SUGARS_BILE_SALTS_AND_ORGANIC_ACIDS_METAL_IONS_AND_AMINE_COMPOUNDS	REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT																							
+3162	HMOX1	heme oxygenase 1	HALLMARK_HYPOXIA	PID_HIF1_TFPATHWAY										HALLMARK_XENOBIOTIC_METABOLISM			REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES																									
+3099	HK2	hexokinase 2	HALLMARK_HYPOXIA	PID_HIF1_TFPATHWAY											KEGG_FRUCTOSE_AND_MANNOSE_METABOLISM		REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES		REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT	REACTOME_METABOLISM_OF_CARBOHYDRATES			HALLMARK_MTORC1_SIGNALING	HALLMARK_GLYCOLYSIS	HALLMARK_IL2_STAT5_SIGNALING																KEGG_GLYCOLYSIS_GLUCONEOGENESIS	
+6515	SLC2A3	solute carrier family 2 member 3	HALLMARK_HYPOXIA					HALLMARK_TNFA_SIGNALING_VIA_NFKB									REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES	REACTOME_TRANSPORT_OF_GLUCOSE_AND_OTHER_SUGARS_BILE_SALTS_AND_ORGANIC_ACIDS_METAL_IONS_AND_AMINE_COMPOUNDS	REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT	REACTOME_METABOLISM_OF_CARBOHYDRATES			HALLMARK_MTORC1_SIGNALING		HALLMARK_IL2_STAT5_SIGNALING											REACTOME_METABOLISM_OF_VITAMINS_AND_COFACTORS		REACTOME_FACILITATIVE_NA_INDEPENDENT_GLUCOSE_TRANSPORTERS				
+NA	ERO1L	NA	HALLMARK_HYPOXIA						HALLMARK_KRAS_SIGNALING_UP														HALLMARK_MTORC1_SIGNALING	HALLMARK_GLYCOLYSIS																		
+230	ALDOC	aldolase, fructose-bisphosphate C	HALLMARK_HYPOXIA							REACTOME_GLYCOLYSIS					KEGG_FRUCTOSE_AND_MANNOSE_METABOLISM					REACTOME_METABOLISM_OF_CARBOHYDRATES						REACTOME_GLUCOSE_METABOLISM															KEGG_GLYCOLYSIS_GLUCONEOGENESIS	
+6533	SLC6A6	solute carrier family 6 member 6	HALLMARK_HYPOXIA											HALLMARK_XENOBIOTIC_METABOLISM			REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES	REACTOME_TRANSPORT_OF_GLUCOSE_AND_OTHER_SUGARS_BILE_SALTS_AND_ORGANIC_ACIDS_METAL_IONS_AND_AMINE_COMPOUNDS	REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT				HALLMARK_MTORC1_SIGNALING																			
+6518	SLC2A5	solute carrier family 2 member 5	HALLMARK_HYPOXIA														REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES	REACTOME_TRANSPORT_OF_GLUCOSE_AND_OTHER_SUGARS_BILE_SALTS_AND_ORGANIC_ACIDS_METAL_IONS_AND_AMINE_COMPOUNDS	REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT	REACTOME_METABOLISM_OF_CARBOHYDRATES																		REACTOME_FACILITATIVE_NA_INDEPENDENT_GLUCOSE_TRANSPORTERS				
+55139	ANKZF1	ankyrin repeat and zinc finger domain containing 1	HALLMARK_HYPOXIA																					HALLMARK_GLYCOLYSIS																		
+51316	PLAC8	placenta specific 8	HALLMARK_HYPOXIA																																							
+3952	LEP	leptin		PID_HIF1_TFPATHWAY	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_SECRETED_FACTORS				KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION	HALLMARK_ADIPOGENESIS																														
+3976	LIF	LIF, interleukin 6 family cytokine			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_SECRETED_FACTORS	HALLMARK_TNFA_SIGNALING_VIA_NFKB	HALLMARK_KRAS_SIGNALING_UP		KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION														HALLMARK_IL2_STAT5_SIGNALING										HALLMARK_INFLAMMATORY_RESPONSE							PID_P53_DOWNSTREAM_PATHWAY
+2919	CXCL1	C-X-C motif chemokine ligand 1			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_SECRETED_FACTORS	HALLMARK_TNFA_SIGNALING_VIA_NFKB			KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION		HALLMARK_COMPLEMENT																					KEGG_CHEMOKINE_SIGNALING_PATHWAY								
+6283	S100A12	S100 calcium binding protein A12			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_SECRETED_FACTORS						HALLMARK_COMPLEMENT																	REACTOME_IMMUNE_SYSTEM												
+6280	S100A9	S100 calcium binding protein A9			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_SECRETED_FACTORS						HALLMARK_COMPLEMENT																													
+6279	S100A8	S100 calcium binding protein A8			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_SECRETED_FACTORS																																			
+8074	FGF23	fibroblast growth factor 23			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_SECRETED_FACTORS																																			
+3576	CXCL8	C-X-C motif chemokine ligand 8			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_SECRETED_FACTORS																																			
+1393	CRHBP	corticotropin releasing hormone binding protein			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_SECRETED_FACTORS																																			
+12	SERPINA3	serpin family A member 3			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED			HALLMARK_KRAS_SIGNALING_UP																																	
+101	ADAM8	ADAM metallopeptidase domain 8			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED			HALLMARK_KRAS_SIGNALING_UP																																	
+2219	FCN1	ficolin 1			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED							HALLMARK_COMPLEMENT																													
+8530	CST7	cystatin F			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED																			HALLMARK_IL2_STAT5_SIGNALING																	
+64386	MMP25	matrix metallopeptidase 25			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED																																				
+78989	COLEC11	collectin subfamily member 11			NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED																																				
+10417	SPON2	spondin 2			NABA_MATRISOME																																					
+116844	LRG1	leucine rich alpha-2-glycoprotein 1			NABA_MATRISOME																																					
+1297	COL9A1	collagen type IX alpha 1 chain			NABA_MATRISOME																																					
+10135	NAMPT	nicotinamide phosphoribosyltransferase						HALLMARK_TNFA_SIGNALING_VIA_NFKB															HALLMARK_MTORC1_SIGNALING												HALLMARK_INFLAMMATORY_RESPONSE	REACTOME_METABOLISM_OF_VITAMINS_AND_COFACTORS						
+23308	ICOSLG	inducible T cell costimulator ligand						HALLMARK_TNFA_SIGNALING_VIA_NFKB																						REACTOME_IMMUNE_SYSTEM					HALLMARK_INFLAMMATORY_RESPONSE							
+597	BCL2A1	BCL2 related protein A1						HALLMARK_TNFA_SIGNALING_VIA_NFKB																																		PID_P53_DOWNSTREAM_PATHWAY
+2324	FLT4	fms related tyrosine kinase 4							HALLMARK_KRAS_SIGNALING_UP		KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION																					PID_VEGF_VEGFR_PATHWAY	REACTOME_VEGF_LIGAND_RECEPTOR_INTERACTIONS									
+383	ARG1	arginase 1							HALLMARK_KRAS_SIGNALING_UP					HALLMARK_XENOBIOTIC_METABOLISM																												
+2118	ETV4	ETS variant 4							HALLMARK_KRAS_SIGNALING_UP																HALLMARK_IL2_STAT5_SIGNALING																	
+2119	ETV5	ETS variant 5							HALLMARK_KRAS_SIGNALING_UP																																	
+5210	PFKFB4	6-phosphofructo-2-kinase/fructose-2,6-biphosphatase 4								REACTOME_GLYCOLYSIS					KEGG_FRUCTOSE_AND_MANNOSE_METABOLISM					REACTOME_METABOLISM_OF_CARBOHYDRATES						REACTOME_GLUCOSE_METABOLISM																
+8793	TNFRSF10D	TNF receptor superfamily member 10d									KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION																KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY															PID_P53_DOWNSTREAM_PATHWAY
+8794	TNFRSF10C	TNF receptor superfamily member 10c									KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION																KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY															PID_P53_DOWNSTREAM_PATHWAY
+1441	CSF3R	colony stimulating factor 3 receptor									KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION																								HALLMARK_INFLAMMATORY_RESPONSE							
+6647	SOD1	superoxide dismutase 1										HALLMARK_ADIPOGENESIS									REACTOME_HEMOSTASIS			HALLMARK_GLYCOLYSIS																		
+415116	PIM3	Pim-3 proto-oncogene, serine/threonine kinase										HALLMARK_ADIPOGENESIS																														
+5004	ORM1	orosomucoid 1										HALLMARK_ADIPOGENESIS																														
+80273	GRPEL1	GrpE like 1, mitochondrial										HALLMARK_ADIPOGENESIS																														
+978	CDA	cytidine deaminase											HALLMARK_COMPLEMENT	HALLMARK_XENOBIOTIC_METABOLISM																												
+4057	LTF	lactotransferrin											HALLMARK_COMPLEMENT																REACTOME_LATENT_INFECTION_OF_HOMO_SAPIENS_WITH_MYCOBACTERIUM_TUBERCULOSIS													
+366	AQP9	aquaporin 9												HALLMARK_XENOBIOTIC_METABOLISM			REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES																		HALLMARK_INFLAMMATORY_RESPONSE							
+1066	CES1	carboxylesterase 1												HALLMARK_XENOBIOTIC_METABOLISM																												
+384	ARG2	arginase 2												HALLMARK_XENOBIOTIC_METABOLISM																												
+3043	HBB	hemoglobin subunit beta														BIOCARTA_AHSP_PATHWAY					REACTOME_HEMOSTASIS																					
+3040	HBA2	hemoglobin subunit alpha 2														BIOCARTA_AHSP_PATHWAY																										
+3039	HBA1	hemoglobin subunit alpha 1														BIOCARTA_AHSP_PATHWAY																										
+6556	SLC11A1	solute carrier family 11 member 1															REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES	REACTOME_TRANSPORT_OF_GLUCOSE_AND_OTHER_SUGARS_BILE_SALTS_AND_ORGANIC_ACIDS_METAL_IONS_AND_AMINE_COMPOUNDS	REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT										REACTOME_LATENT_INFECTION_OF_HOMO_SAPIENS_WITH_MYCOBACTERIUM_TUBERCULOSIS													
+65010	SLC26A6	solute carrier family 26 member 6															REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES		REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT																							
+2268	FGR	FGR proto-oncogene, Src family tyrosine kinase																			REACTOME_HEMOSTASIS										PID_CXCR4_PATHWAY			KEGG_CHEMOKINE_SIGNALING_PATHWAY								
+409	ARRB2	arrestin beta 2																			REACTOME_HEMOSTASIS										PID_CXCR4_PATHWAY			KEGG_CHEMOKINE_SIGNALING_PATHWAY								
+54210	TREM1	triggering receptor expressed on myeloid cells 1																			REACTOME_HEMOSTASIS																					
+3687	ITGAX	integrin subunit alpha X																			REACTOME_HEMOSTASIS																					
+3048	HBG2	hemoglobin subunit gamma 2																			REACTOME_HEMOSTASIS																					
+80005	DOCK5	dedicator of cytokinesis 5																			REACTOME_HEMOSTASIS																					
+2185	PTK2B	protein tyrosine kinase 2 beta																				KEGG_LEUKOCYTE_TRANSENDOTHELIAL_MIGRATION					KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY			REACTOME_IMMUNE_SYSTEM	PID_CXCR4_PATHWAY			KEGG_CHEMOKINE_SIGNALING_PATHWAY					REACTOME_SIGNAL_REGULATORY_PROTEIN_SIRP_FAMILY_INTERACTIONS	REACTOME_CELL_CELL_COMMUNICATION		
+4688	NCF2	neutrophil cytosolic factor 2																				KEGG_LEUKOCYTE_TRANSENDOTHELIAL_MIGRATION						KEGG_LEISHMANIA_INFECTION	REACTOME_LATENT_INFECTION_OF_HOMO_SAPIENS_WITH_MYCOBACTERIUM_TUBERCULOSIS	REACTOME_IMMUNE_SYSTEM												
+5603	MAPK13	mitogen-activated protein kinase 13																				KEGG_LEUKOCYTE_TRANSENDOTHELIAL_MIGRATION						KEGG_LEISHMANIA_INFECTION		REACTOME_IMMUNE_SYSTEM										REACTOME_CELL_CELL_COMMUNICATION		
+653361	NCF1	neutrophil cytosolic factor 1																				KEGG_LEUKOCYTE_TRANSENDOTHELIAL_MIGRATION						KEGG_LEISHMANIA_INFECTION						KEGG_CHEMOKINE_SIGNALING_PATHWAY								
+9076	CLDN1	claudin 1																				KEGG_LEUKOCYTE_TRANSENDOTHELIAL_MIGRATION																		REACTOME_CELL_CELL_COMMUNICATION		
+2215	FCGR3B	Fc fragment of IgG receptor IIIb																									KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY	KEGG_LEISHMANIA_INFECTION														
+6452	SH3BP2	SH3 domain binding protein 2																									KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY															
+1668	DEFA3	defensin alpha 3																												REACTOME_IMMUNE_SYSTEM							REACTOME_DEFENSINS					
+728358	DEFA1B	defensin alpha 1B																												REACTOME_IMMUNE_SYSTEM							REACTOME_DEFENSINS					
+1667	DEFA1	defensin alpha 1																												REACTOME_IMMUNE_SYSTEM							REACTOME_DEFENSINS					
+11025	LILRB3	leukocyte immunoglobulin like receptor B3																												REACTOME_IMMUNE_SYSTEM												
+161	AP2A2	adaptor related protein complex 2 subunit alpha 2																												REACTOME_IMMUNE_SYSTEM												
+10053	AP1M2	adaptor related protein complex 1 subunit mu 2																												REACTOME_IMMUNE_SYSTEM												
+3635	INPP5D	inositol polyphosphate-5-phosphatase D																													PID_CXCR4_PATHWAY											
+55191	NADSYN1	NAD synthetase 1																																		REACTOME_METABOLISM_OF_VITAMINS_AND_COFACTORS						
+10326	SIRPB1	signal regulatory protein beta 1																																					REACTOME_SIGNAL_REGULATORY_PROTEIN_SIRP_FAMILY_INTERACTIONS	REACTOME_CELL_CELL_COMMUNICATION		
+8875	VNN2	vanin 2																																								
+7425	VGF	VGF nerve growth factor inducible																																								
+57687	VAT1L	vesicle amine transport 1 like																																								
+201294	UNC13D	unc-13 homolog D																																								
+91373	UAP1L1	UDP-N-acetylglucosamine pyrophosphorylase 1 like 1																																								
+284339	TMEM145	transmembrane protein 145																																								
+283953	TMEM114	transmembrane protein 114																																								
+54997	TESC	tescalcin																																								
+123283	TARSL2	threonyl-tRNA synthetase like 2																																								
+55351	STK32B	serine/threonine kinase 32B																																								
+6793	STK10	serine/threonine kinase 10																																								
+400410	ST20	suppressor of tumorigenicity 20																																								
+399473	SPRED3	sprouty related EVH1 domain containing 3																																								
+677822	SNORA40	small nucleolar RNA, H/ACA box 40																																								
+51312	SLC25A37	solute carrier family 25 member 37																																								
+152573	SHISA3	shisa family member 3																																								
+79729	SH3D21	SH3 domain containing 21																																								
+6338	SCNN1B	sodium channel epithelial 1 beta subunit																																								
+26824	RNU11	RNA, U11 small nuclear																																								
+440503	PLIN5	perilipin 5																																								
+23761	PISD	phosphatidylserine decarboxylase																																								
+221692	PHACTR1	phosphatase and actin regulator 1																																								
+8993	PGLYRP1	peptidoglycan recognition protein 1																																								
+8622	PDE8B	phosphodiesterase 8B																																								
+NA	PCNX	NA																																								
+23569	PADI4	peptidyl arginine deiminase 4																																								
+5032	P2RY11	purinergic receptor P2Y11																																								
+114885	OSBPL11	oxysterol binding protein like 11																																								
+4884	NPTX1	neuronal pentraxin 1																																								
+654817	NCF1C	neutrophil cytosolic factor 1C pseudogene																																								
+654816	NCF1B	neutrophil cytosolic factor 1B pseudogene																																								
+23218	NBEAL2	neurobeachin like 2																																								
+4542	MYO1F	myosin IF																																								
+4606	MYBPC2	myosin binding protein C, fast type																																								
+9110	MTMR4	myotubularin related protein 4																																								
+100506211	MIR210HG	MIR210 host gene																																								
+406934	MIR142	microRNA 142																																								
+4163	MCC	MCC, WNT signaling pathway regulator																																								
+79888	LPCAT1	lysophosphatidylcholine acyltransferase 1																																								
+79168	LILRA6	leukocyte immunoglobulin like receptor A6																																								
+11027	LILRA2	leukocyte immunoglobulin like receptor A2																																								
+3934	LCN2	lipocalin 2																																								
+8514	KCNAB2	potassium voltage-gated channel subfamily A regulatory beta subunit 2																																								
+10625	IVNS1ABP	influenza virus NS1A binding protein																																								
+79192	IRX1	iroquois homeobox 1																																								
+3310	HSPA6	heat shock protein family A (Hsp70) member 6																																								
+3241	HPCAL1	hippocalcin like 1																																								
+8843	HCAR3	hydroxycarboxylic acid receptor 3																																								
+338442	HCAR2	hydroxycarboxylic acid receptor 2																																								
+2564	GABRE	gamma-aminobutyric acid type A receptor epsilon subunit																																								
+55277	FGGY	FGGY carbohydrate kinase domain containing																																								
+80307	FER1L4	fer-1 like family member 4, pseudogene																																								
+2204	FCAR	Fc fragment of IgA receptor																																								
+54540	FAM193B	family with sequence similarity 193 member B																																								
+2173	FABP7	fatty acid binding protein 7																																								
+2124	EVI2B	ecotropic viral integration site 2B																																								
+79930	DOK3	docking protein 3																																								
+64150	DIO3OS	DIO3 opposite strand upstream RNA																																								
+1735	DIO3	iodothyronine deiodinase 3																																								
+22898	DENND3	DENN domain containing 3																																								
+1392	CRH	corticotropin releasing hormone																																								
+57699	CPNE5	copine 5																																								
+1198	CLK3	CDC like kinase 3																																								
+11314	CD300A	CD300a molecule																																								
+57126	CD177	CD177 molecule																																								
+283234	CCDC88B	coiled-coil domain containing 88B																																								
+794	CALB2	calbindin 2																																								
+135398	C6orf141	chromosome 6 open reading frame 141																																								
+84419	C15orf48	chromosome 15 open reading frame 48																																								
+671	BPI	bactericidal permeability increasing protein																																								
+23130	ATG2A	autophagy related 2A																																								
+89849	ATG16L2	autophagy related 16 like 2																																								
+23092	ARHGAP26	Rho GTPase activating protein 26																																								
+116985	ARAP1	ArfGAP with RhoGAP domain, ankyrin repeat and PH domain 1																																								
+55911	APOBR	apolipoprotein B receptor																																								
+200315	APOBEC3A	apolipoprotein B mRNA editing enzyme catalytic subunit 3A																																								
+241	ALOX5AP	arachidonate 5-lipoxygenase activating protein																																								
+240	ALOX5	arachidonate 5-lipoxygenase																																								
+105	ADARB2	adenosine deaminase, RNA specific B2 (inactive)																																								
+80221	ACSF2	acyl-CoA synthetase family member 2																																								

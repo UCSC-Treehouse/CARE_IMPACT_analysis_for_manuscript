@@ -1,0 +1,162 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	15
+# genesets in collections:	1379
+# genes in comparison (n):	132
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	21	0.02043	2.145e-12	2.957e-9
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	17	0.02258	6.904e-11	4.76e-8
+NABA_ECM_AFFILIATED	171	Genes encoding proteins affiliated structurally or functionally to extracellular matrix proteins	9	0.05263	1.896e-9	8.717e-7
+KEGG_TGF_BETA_SIGNALING_PATHWAY	86	TGF-beta signaling pathway	5	0.05814	5.235e-6	0.001805
+PID_HNF3A_PATHWAY	44	FOXA1 transcription factor network	4	0.09091	8.074e-6	0.002227
+HALLMARK_APICAL_JUNCTION	200	Genes encoding components of apical junction complex.	6	0.03	2.617e-5	0.006015
+KEGG_THYROID_CANCER	29	Thyroid cancer	3	0.1034	8.013e-5	0.01579
+REACTOME_NEURONAL_SYSTEM	279	Genes involved in Neuronal System	6	0.02151	1.639e-4	0.02825
+REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES	186	Genes involved in Transmission across Chemical Synapses	5	0.02688	2.101e-4	0.02897
+REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES	413	Genes involved in Transmembrane transport of small molecules	7	0.01695	2.024e-4	0.02897
+PID_BMP_PATHWAY	42	BMP receptor signaling	3	0.07143	2.45e-4	0.03071
+HALLMARK_ESTROGEN_RESPONSE_EARLY	200	Genes defining early response to estrogen.	5	0.025	2.936e-4	0.03192
+PID_HNF3B_PATHWAY	45	FOXA2 and FOXA3 transcription factor networks	3	0.06667	3.009e-4	0.03192
+KEGG_PATHWAYS_IN_CANCER	328	Pathways in cancer	6	0.01829	3.891e-4	0.03833
+KEGG_ENDOMETRIAL_CANCER	52	Endometrial cancer	3	0.05769	4.618e-4	0.04246
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED	KEGG_TGF_BETA_SIGNALING_PATHWAY	PID_HNF3A_PATHWAY	HALLMARK_APICAL_JUNCTION	KEGG_THYROID_CANCER	REACTOME_NEURONAL_SYSTEM	REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES	REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES	PID_BMP_PATHWAY	HALLMARK_ESTROGEN_RESPONSE_EARLY	PID_HNF3B_PATHWAY	KEGG_PATHWAYS_IN_CANCER	KEGG_ENDOMETRIAL_CANCER
+6441	SFTPD	surfactant protein D	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED		PID_HNF3A_PATHWAY										
+729238	SFTPA2	surfactant protein A2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED		PID_HNF3A_PATHWAY										
+653509	SFTPA1	surfactant protein A1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED		PID_HNF3A_PATHWAY										
+4582	MUC1	mucin 1, cell surface associated	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED									HALLMARK_ESTROGEN_RESPONSE_EARLY			
+6440	SFTPC	surfactant protein C	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED												
+6439	SFTPB	surfactant protein B	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED												
+253970	SFTA3	surfactant associated 3	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED												
+389376	SFTA2	surfactant associated 2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED												
+158326	FREM1	FRAS1 related extracellular matrix 1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED												
+652	BMP4	bone morphogenetic protein 4	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		KEGG_TGF_BETA_SIGNALING_PATHWAY							PID_BMP_PATHWAY			KEGG_PATHWAYS_IN_CANCER	
+10468	FST	follistatin	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		KEGG_TGF_BETA_SIGNALING_PATHWAY							PID_BMP_PATHWAY				
+8200	GDF5	growth differentiation factor 5	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		KEGG_TGF_BETA_SIGNALING_PATHWAY											
+3082	HGF	hepatocyte growth factor	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED												KEGG_PATHWAYS_IN_CANCER	
+5645	PRSS2	serine protease 2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED													
+4316	MMP7	matrix metallopeptidase 7	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED													
+84171	LOXL4	lysyl oxidase like 4	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED													
+1510	CTSE	cathepsin E	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED													
+7448	VTN	vitronectin	NABA_MATRISOME				PID_HNF3A_PATHWAY										
+4969	OGN	osteoglycin	NABA_MATRISOME														
+136227	COL26A1	collagen type XXVI alpha 1 chain	NABA_MATRISOME														
+81578	COL21A1	collagen type XXI alpha 1 chain	NABA_MATRISOME														
+9241	NOG	noggin				KEGG_TGF_BETA_SIGNALING_PATHWAY							PID_BMP_PATHWAY				
+5308	PITX2	paired like homeodomain 2				KEGG_TGF_BETA_SIGNALING_PATHWAY											
+999	CDH1	cadherin 1						HALLMARK_APICAL_JUNCTION	KEGG_THYROID_CANCER							KEGG_PATHWAYS_IN_CANCER	KEGG_ENDOMETRIAL_CANCER
+1739	DLG1	discs large MAGUK scaffold protein 1						HALLMARK_APICAL_JUNCTION		REACTOME_NEURONAL_SYSTEM	REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES						
+794	CALB2	calbindin 2						HALLMARK_APICAL_JUNCTION						HALLMARK_ESTROGEN_RESPONSE_EARLY			
+5728	PTEN	phosphatase and tensin homolog						HALLMARK_APICAL_JUNCTION								KEGG_PATHWAYS_IN_CANCER	KEGG_ENDOMETRIAL_CANCER
+7087	ICAM5	intercellular adhesion molecule 5						HALLMARK_APICAL_JUNCTION									
+72	ACTG2	actin, gamma 2, smooth muscle, enteric						HALLMARK_APICAL_JUNCTION									
+6934	TCF7L2	transcription factor 7 like 2							KEGG_THYROID_CANCER							KEGG_PATHWAYS_IN_CANCER	KEGG_ENDOMETRIAL_CANCER
+6258	RXRG	retinoid X receptor gamma							KEGG_THYROID_CANCER							KEGG_PATHWAYS_IN_CANCER	
+6529	SLC6A1	solute carrier family 6 member 1								REACTOME_NEURONAL_SYSTEM	REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES	REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES					
+6511	SLC1A6	solute carrier family 1 member 6								REACTOME_NEURONAL_SYSTEM	REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES	REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES					
+80852	GRIP2	glutamate receptor interacting protein 2								REACTOME_NEURONAL_SYSTEM	REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES						
+2906	GRIN2D	glutamate ionotropic receptor NMDA type subunit 2D								REACTOME_NEURONAL_SYSTEM	REACTOME_TRANSMISSION_ACROSS_CHEMICAL_SYNAPSES						
+3748	KCNC3	potassium voltage-gated channel subfamily C member 3								REACTOME_NEURONAL_SYSTEM							
+213	ALB	albumin										REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES			PID_HNF3B_PATHWAY		
+10568	SLC34A2	solute carrier family 34 member 2										REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES					
+1356	CP	ceruloplasmin										REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES					
+79895	ATP8B4	ATPase phospholipid transporting 8B4 (putative)										REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES					
+10351	ABCA8	ATP binding cassette subfamily A member 8										REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES					
+9060	PAPSS2	3'-phosphoadenosine 5'-phosphosulfate synthase 2												HALLMARK_ESTROGEN_RESPONSE_EARLY			
+79083	MLPH	melanophilin												HALLMARK_ESTROGEN_RESPONSE_EARLY			
+1999	ELF3	E74 like ETS transcription factor 3												HALLMARK_ESTROGEN_RESPONSE_EARLY			
+7080	NKX2-1	NK2 homeobox 1													PID_HNF3B_PATHWAY		
+174	AFP	alpha fetoprotein													PID_HNF3B_PATHWAY		
+7764	ZNF217	zinc finger protein 217															
+7490	WT1	Wilms tumor 1															
+10406	WFDC2	WAP four-disulfide core domain 2															
+55112	WDR60	WD repeat domain 60															
+54957	TXNL4B	thioredoxin like 4B															
+7103	TSPAN8	tetraspanin 8															
+117854	TRIM6	tripartite motif containing 6															
+91147	TMEM67	transmembrane protein 67															
+55273	TMEM100	transmembrane protein 100															
+7020	TFAP2A	transcription factor AP-2 alpha															
+6910	TBX5	T-box 5															
+6899	TBX1	T-box 1															
+4070	TACSTD2	tumor associated calcium signal transducer 2															
+57620	STIM2	stromal interaction molecule 2															
+117178	SSX2IP	SSX family member 2 interacting protein															
+284297	SSC5D	scavenger receptor cysteine rich family member with 5 domains															
+200162	SPAG17	sperm associated antigen 17															
+100131390	SP9	Sp9 transcription factor															
+677831	SNORA51	small nucleolar RNA, H/ACA box 51															
+677822	SNORA40	small nucleolar RNA, H/ACA box 40															
+6525	SMTN	smoothelin															
+7871	SLMAP	sarcolemma associated protein															
+117156	SCGB3A2	secretoglobin family 3A member 2															
+92304	SCGB3A1	secretoglobin family 3A member 1															
+221662	RBM24	RNA binding motif protein 24															
+387496	RASL11A	RAS like family 11 member A															
+80863	PRRT1	proline rich transmembrane protein 1															
+79660	PPP1R3B	protein phosphatase 1 regulatory subunit 3B															
+83449	PMFBP1	polyamine modulated factor 1 binding protein 1															
+8301	PICALM	phosphatidylinositol binding clathrin assembly protein															
+653583	PHLDB3	pleckstrin homology like domain family B member 3															
+5080	PAX6	paired box 6															
+5028	P2RY1	purinergic receptor P2Y1															
+116039	OSR2	odd-skipped related transciption factor 2															
+130497	OSR1	odd-skipped related transcription factor 1															
+26343	OR5E1P	olfactory receptor family 5 subfamily E member 1 pseudogene															
+283298	OLFML1	olfactomedin like 1															
+11249	NXPH2	neurexophilin 2															
+4836	NMT1	N-myristoyltransferase 1															
+9476	NAPSA	napsin A aspartic peptidase															
+10903	MTMR11	myotubularin related protein 11															
+10232	MSLN	mesothelin															
+5891	MOK	MOK protein kinase															
+440823	MIAT	myocardial infarction associated transcript															
+4223	MEOX2	mesenchyme homeobox 2															
+225689	MAPK15	mitogen-activated protein kinase 15															
+7851	MALL	mal, T cell differentiation protein like															
+NA	LPPR4	NA															
+23566	LPAR3	lysophosphatidic acid receptor 3															
+27074	LAMP3	lysosomal associated membrane protein 3															
+3855	KRT7	keratin 7															
+3872	KRT17	keratin 17															
+6453	ITSN1	intersectin 1															
+3694	ITGB6	integrin subunit beta 6															
+3494	IGHA2	immunoglobulin heavy constant alpha 2 (A2m marker)															
+147920	IGFL2	IGF like family member 2															
+25998	IBTK	inhibitor of Bruton tyrosine kinase															
+3067	HDC	histidine decarboxylase															
+9464	HAND2	heart and neural crest derivatives expressed 2															
+NA	GUCY1A3	NA															
+284110	GSDMA	gasdermin A															
+2823	GPM6A	glycoprotein M6A															
+2627	GATA6	GATA binding protein 6															
+2348	FOLR1	folate receptor 1															
+80307	FER1L4	fer-1 like family member 4, pseudogene															
+NA	DKFZp434J0226	NA															
+9785	DHX38	DEAH-box helicase 38															
+1592	CYP26A1	cytochrome P450 family 26 subfamily A member 1															
+284340	CXCL17	C-X-C motif chemokine ligand 17															
+1368	CPM	carboxypeptidase M															
+125965	COX6B2	cytochrome c oxidase subunit 6B2															
+1264	CNN1	calponin 1															
+9076	CLDN1	claudin 1															
+80817	CEP44	centrosomal protein 44															
+50937	CDON	cell adhesion associated, oncogene regulated															
+9139	CBFA2T2	CBFA2/RUNX1 translocation partner 2															
+57091	CASS4	Cas scaffold protein family member 4															
+57172	CAMK1G	calcium/calmodulin dependent protein kinase IG															
+59284	CACNG7	calcium voltage-gated channel auxiliary subunit gamma 7															
+146556	C16orf89	chromosome 16 open reading frame 89															
+149478	BTBD19	BTB domain containing 19															
+55054	ATG16L1	autophagy related 16 like 1															
+340075	ARSI	arylsulfatase family member I															
+246	ALOX15	arachidonate 15-lipoxygenase															
+216	ALDH1A1	aldehyde dehydrogenase 1 family member A1															
+10551	AGR2	anterior gradient 2, protein disulphide isomerase family member															

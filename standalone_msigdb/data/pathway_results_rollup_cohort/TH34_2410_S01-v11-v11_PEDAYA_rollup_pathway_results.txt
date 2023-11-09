@@ -1,0 +1,87 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	11
+# genesets in collections:	1379
+# genes in comparison (n):	61
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	16	0.01556	2.772e-13	3.822e-10
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	10	0.01328	5.583e-8	3.849e-5
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	6	0.02182	1.832e-6	8.42e-4
+HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	200	Genes defining epithelial-mesenchymal transition, as in wound healing, fibrosis and metastasis.	5	0.025	7.247e-6	0.001666
+KEGG_ECM_RECEPTOR_INTERACTION	84	ECM-receptor interaction	4	0.04762	5.005e-6	0.001666
+NABA_SECRETED_FACTORS	344	Genes encoding secreted soluble factors	6	0.01744	6.611e-6	0.001666
+REACTOME_MUSCLE_CONTRACTION	48	Genes involved in Muscle contraction	3	0.0625	3.688e-5	0.007265
+KEGG_FOCAL_ADHESION	201	Focal adhesion	4	0.0199	1.525e-4	0.02336
+NABA_ECM_GLYCOPROTEINS	196	Genes encoding structural ECM glycoproteins	4	0.02041	1.384e-4	0.02336
+WNT_SIGNALING	89	Genes related to Wnt-mediated signal transduction	3	0.03371	2.33e-4	0.03212
+NABA_ECM_REGULATORS	238	Genes encoding enzymes and their regulators involved in the remodeling of the extracellular matrix	4	0.01681	2.904e-4	0.0364
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_CORE_MATRISOME	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	KEGG_ECM_RECEPTOR_INTERACTION	NABA_SECRETED_FACTORS	REACTOME_MUSCLE_CONTRACTION	KEGG_FOCAL_ADHESION	NABA_ECM_GLYCOPROTEINS	WNT_SIGNALING	NABA_ECM_REGULATORS
+6424	SFRP4	secreted frizzled related protein 4	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION		NABA_SECRETED_FACTORS				WNT_SIGNALING	
+9244	CRLF1	cytokine receptor like factor 1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION		NABA_SECRETED_FACTORS					
+7481	WNT11	Wnt family member 11	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED				NABA_SECRETED_FACTORS				WNT_SIGNALING	
+57758	SCUBE2	signal peptide, CUB domain and EGF like domain containing 2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED				NABA_SECRETED_FACTORS					
+6366	CCL21	C-C motif chemokine ligand 21	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED				NABA_SECRETED_FACTORS					
+6358	CCL14	C-C motif chemokine ligand 14	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED				NABA_SECRETED_FACTORS					
+4320	MMP11	matrix metallopeptidase 11	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED									NABA_ECM_REGULATORS
+1515	CTSV	cathepsin V	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED									NABA_ECM_REGULATORS
+171019	ADAMTS19	ADAM metallopeptidase with thrombospondin type 1 motif 19	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED									NABA_ECM_REGULATORS
+80332	ADAM33	ADAM metallopeptidase domain 33	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED									NABA_ECM_REGULATORS
+3909	LAMA3	laminin subunit alpha 3	NABA_MATRISOME		NABA_CORE_MATRISOME	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	KEGG_ECM_RECEPTOR_INTERACTION			KEGG_FOCAL_ADHESION	NABA_ECM_GLYCOPROTEINS		
+1311	COMP	cartilage oligomeric matrix protein	NABA_MATRISOME		NABA_CORE_MATRISOME	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	KEGG_ECM_RECEPTOR_INTERACTION			KEGG_FOCAL_ADHESION	NABA_ECM_GLYCOPROTEINS		
+7148	TNXB	tenascin XB	NABA_MATRISOME		NABA_CORE_MATRISOME		KEGG_ECM_RECEPTOR_INTERACTION			KEGG_FOCAL_ADHESION	NABA_ECM_GLYCOPROTEINS		
+1280	COL2A1	collagen type II alpha 1 chain	NABA_MATRISOME		NABA_CORE_MATRISOME		KEGG_ECM_RECEPTOR_INTERACTION			KEGG_FOCAL_ADHESION			
+83872	HMCN1	hemicentin 1	NABA_MATRISOME		NABA_CORE_MATRISOME						NABA_ECM_GLYCOPROTEINS		
+136227	COL26A1	collagen type XXVI alpha 1 chain	NABA_MATRISOME		NABA_CORE_MATRISOME								
+22943	DKK1	dickkopf WNT signaling pathway inhibitor 1				HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION						WNT_SIGNALING	
+4629	MYH11	myosin heavy chain 11							REACTOME_MUSCLE_CONTRACTION				
+1674	DES	desmin							REACTOME_MUSCLE_CONTRACTION				
+72	ACTG2	actin, gamma 2, smooth muscle, enteric							REACTOME_MUSCLE_CONTRACTION				
+9658	ZNF516	zinc finger protein 516											
+170261	ZCCHC12	zinc finger CCHC-type containing 12											
+7490	WT1	Wilms tumor 1											
+7425	VGF	VGF nerve growth factor inducible											
+117581	TWIST2	twist family bHLH transcription factor 2											
+81786	TRIM7	tripartite motif containing 7											
+124842	TMEM132E	transmembrane protein 132E											
+55244	SLC47A1	solute carrier family 47 member 1											
+6580	SLC22A1	solute carrier family 22 member 1											
+56475	RPRM	reprimo, TP53 dependent G2 arrest mediator homolog											
+5241	PGR	progesterone receptor											
+9506	PAGE4	PAGE family member 4											
+116039	OSR2	odd-skipped related transciption factor 2											
+4884	NPTX1	neuronal pentraxin 1											
+26002	MOXD1	monooxygenase DBH like 1											
+158062	LCN6	lipocalin 6											
+9424	KCNK6	potassium two pore domain channel subfamily K member 6											
+51015	ISOC1	isochorismatase domain containing 1											
+3235	HOXD9	homeobox D9											
+3233	HOXD4	homeobox D4											
+3232	HOXD3	homeobox D3											
+3237	HOXD11	homeobox D11											
+3236	HOXD10	homeobox D10											
+3207	HOXA11	homeobox A11											
+9464	HAND2	heart and neural crest derivatives expressed 2											
+2675	GFRA2	GDNF family receptor alpha 2											
+2099	ESR1	estrogen receptor 1											
+196047	EMX2OS	EMX2 opposite strand/antisense RNA											
+2018	EMX2	empty spiracles homeobox 2											
+133283	EEF1A1P13	eukaryotic translation elongation factor 1 alpha 1 pseudogene 13											
+9427	ECEL1	endothelin converting enzyme like 1											
+1416	CRYBB2P1	crystallin beta B2 pseudogene 1											
+1394	CRHR1	corticotropin releasing hormone receptor 1											
+1264	CNN1	calponin 1											
+4435	CITED1	Cbp/p300 interacting transactivator with Glu/Asp rich carboxy-terminal domain 1											
+64377	CHST8	carbohydrate sulfotransferase 8											
+1066	CES1	carboxylesterase 1											
+138649	ANKRD19P	ankyrin repeat domain 19, pseudogene											
+216	ALDH1A1	aldehyde dehydrogenase 1 family member A1											
+152	ADRA2C	adrenoceptor alpha 2C											
+196883	ADCY4	adenylate cyclase 4											

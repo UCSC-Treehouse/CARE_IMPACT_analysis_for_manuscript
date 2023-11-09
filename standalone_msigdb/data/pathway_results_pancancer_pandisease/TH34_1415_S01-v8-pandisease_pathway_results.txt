@@ -1,0 +1,88 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	7
+# genesets in collections:	1379
+# genes in comparison (n):	66
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_ECM_AFFILIATED	171	Genes encoding proteins affiliated structurally or functionally to extracellular matrix proteins	8	0.04678	1.489e-10	2.054e-7
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	12	0.01594	7.532e-10	5.194e-7
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	13	0.01265	2.228e-9	1.024e-6
+PID_HNF3A_PATHWAY	44	FOXA1 transcription factor network	4	0.09091	5.043e-7	1.738e-4
+BIOCARTA_AHSP_PATHWAY	13	Hemoglobin's Chaperone	3	0.2308	8.008e-7	2.209e-4
+KEGG_SULFUR_METABOLISM	13	Sulfur metabolism	2	0.1538	1.568e-4	0.03601
+REACTOME_CYTOSOLIC_SULFONATION_OF_SMALL_MOLECULES	14	Genes involved in Cytosolic sulfonation of small molecules	2	0.1429	1.828e-4	0.03601
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME	PID_HNF3A_PATHWAY	BIOCARTA_AHSP_PATHWAY	KEGG_SULFUR_METABOLISM	REACTOME_CYTOSOLIC_SULFONATION_OF_SMALL_MOLECULES
+653509	SFTPA1	surfactant protein A1	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME	PID_HNF3A_PATHWAY			
+729238	SFTPA2	surfactant protein A2	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME	PID_HNF3A_PATHWAY			
+6441	SFTPD	surfactant protein D	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME	PID_HNF3A_PATHWAY			
+6320	CLEC11A	C-type lectin domain containing 11A	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME				
+57125	PLXDC1	plexin domain containing 1	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME				
+78989	COLEC11	collectin subfamily member 11	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME				
+6439	SFTPB	surfactant protein B	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME				
+6440	SFTPC	surfactant protein C	NABA_ECM_AFFILIATED	NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME				
+147381	CBLN2	cerebellin 2 precursor		NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME				
+1514	CTSL	cathepsin L		NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME				
+8510	MMP23B	matrix metallopeptidase 23B		NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME				
+7076	TIMP1	TIMP metallopeptidase inhibitor 1		NABA_MATRISOME_ASSOCIATED	NABA_MATRISOME				
+1297	COL9A1	collagen type IX alpha 1 chain			NABA_MATRISOME				
+7356	SCGB1A1	secretoglobin family 1A member 1				PID_HNF3A_PATHWAY			
+3040	HBA2	hemoglobin subunit alpha 2					BIOCARTA_AHSP_PATHWAY		
+3039	HBA1	hemoglobin subunit alpha 1					BIOCARTA_AHSP_PATHWAY		
+3043	HBB	hemoglobin subunit beta					BIOCARTA_AHSP_PATHWAY		
+6817	SULT1A1	sulfotransferase family 1A member 1						KEGG_SULFUR_METABOLISM	REACTOME_CYTOSOLIC_SULFONATION_OF_SMALL_MOLECULES
+6783	SULT1E1	sulfotransferase family 1E member 1						KEGG_SULFUR_METABOLISM	REACTOME_CYTOSOLIC_SULFONATION_OF_SMALL_MOLECULES
+6511	SLC1A6	solute carrier family 1 member 6							
+6833	ABCC8	ATP binding cassette subfamily C member 8							
+117156	SCGB3A2	secretoglobin family 3A member 2							
+4982	TNFRSF11B	TNF receptor superfamily member 11b							
+5739	PTGIR	prostaglandin I2 receptor							
+9696	CROCC	ciliary rootlet coiled-coil, rootletin							
+8490	RGS5	regulator of G protein signaling 5							
+55075	UACA	uveal autoantigen with coiled-coil domains and ankyrin repeats							
+375033	PEAR1	platelet endothelial aggregation receptor 1							
+286133	SCARA5	scavenger receptor class A member 5							
+100130958	SYCE1L	synaptonemal complex central element protein 1 like							
+3764	KCNJ8	potassium voltage-gated channel subfamily J member 8							
+23162	MAPK8IP3	mitogen-activated protein kinase 8 interacting protein 3							
+54567	DLL4	delta like canonical Notch ligand 4							
+5806	PTX3	pentraxin 3							
+2324	FLT4	fms related tyrosine kinase 4							
+64150	DIO3OS	DIO3 opposite strand upstream RNA							
+8788	DLK1	delta like non-canonical Notch ligand 1							
+5426	POLE	DNA polymerase epsilon, catalytic subunit							
+30845	EHD3	EH domain containing 3							
+54510	PCDH18	protocadherin 18							
+152573	SHISA3	shisa family member 3							
+4606	MYBPC2	myosin binding protein C, fast type							
+3162	HMOX1	heme oxygenase 1							
+2118	ETV4	ETS variant 4							
+80325	ABTB1	ankyrin repeat and BTB domain containing 1							
+83643	CCDC3	coiled-coil domain containing 3							
+7425	VGF	VGF nerve growth factor inducible							
+7200	TRH	thyrotropin releasing hormone							
+1735	DIO3	iodothyronine deiodinase 3							
+7262	PHLDA2	pleckstrin homology like domain family A member 2							
+23308	ICOSLG	inducible T cell costimulator ligand							
+1392	CRH	corticotropin releasing hormone							
+5414	SEPT4	septin 4							
+4885	NPTX2	neuronal pentraxin 2							
+590	BCHE	butyrylcholinesterase							
+197342	EME2	essential meiotic structure-specific endonuclease subunit 2							
+3048	HBG2	hemoglobin subunit gamma 2							
+8622	PDE8B	phosphodiesterase 8B							
+2710	GK	glycerol kinase							
+55384	MEG3	maternally expressed 3							
+23768	FLRT2	fibronectin leucine rich transmembrane protein 2							
+51747	LUC7L3	LUC7 like 3 pre-mRNA splicing factor							
+389336	C5orf46	chromosome 5 open reading frame 46							
+9476	NAPSA	napsin A aspartic peptidase							
+177	AGER	advanced glycosylation end-product specific receptor							
+406886	MIRLET7D	microRNA let-7d							

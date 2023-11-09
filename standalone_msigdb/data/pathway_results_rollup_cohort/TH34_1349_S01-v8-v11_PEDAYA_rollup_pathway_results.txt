@@ -1,0 +1,103 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	11
+# genesets in collections:	1379
+# genes in comparison (n):	77
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+REACTOME_NITRIC_OXIDE_STIMULATES_GUANYLATE_CYCLASE	25	Genes involved in Nitric oxide stimulates guanylate cyclase	4	0.16	8.97e-8	1.237e-4
+REACTOME_CGMP_EFFECTS	19	Genes involved in cGMP effects	3	0.1579	4.298e-6	0.002964
+REACTOME_PLATELET_HOMEOSTASIS	78	Genes involved in Platelet homeostasis	4	0.05128	9.456e-6	0.004347
+NABA_ECM_GLYCOPROTEINS	196	Genes encoding structural ECM glycoproteins	5	0.02551	2.065e-5	0.007119
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	9	0.008755	5.601e-5	0.01545
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	5	0.01818	1.028e-4	0.02363
+KEGG_PURINE_METABOLISM	159	Purine metabolism	4	0.02516	1.534e-4	0.02389
+REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS	478	Genes involved in Metabolism of lipids and lipoproteins	6	0.01255	1.559e-4	0.02389
+REACTOME_HEMOSTASIS	466	Genes involved in Hemostasis	6	0.01288	1.359e-4	0.02389
+HALLMARK_APICAL_JUNCTION	200	Genes encoding components of apical junction complex.	4	0.02	3.675e-4	0.04607
+HALLMARK_KRAS_SIGNALING_UP	200	Genes up-regulated by KRAS activation.	4	0.02	3.675e-4	0.04607
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	REACTOME_NITRIC_OXIDE_STIMULATES_GUANYLATE_CYCLASE	REACTOME_CGMP_EFFECTS	REACTOME_PLATELET_HOMEOSTASIS	NABA_ECM_GLYCOPROTEINS	NABA_MATRISOME	NABA_CORE_MATRISOME	KEGG_PURINE_METABOLISM	REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS	REACTOME_HEMOSTASIS	HALLMARK_APICAL_JUNCTION	HALLMARK_KRAS_SIGNALING_UP
+5139	PDE3A	phosphodiesterase 3A	REACTOME_NITRIC_OXIDE_STIMULATES_GUANYLATE_CYCLASE	REACTOME_CGMP_EFFECTS	REACTOME_PLATELET_HOMEOSTASIS				KEGG_PURINE_METABOLISM		REACTOME_HEMOSTASIS		
+5136	PDE1A	phosphodiesterase 1A	REACTOME_NITRIC_OXIDE_STIMULATES_GUANYLATE_CYCLASE	REACTOME_CGMP_EFFECTS	REACTOME_PLATELET_HOMEOSTASIS				KEGG_PURINE_METABOLISM		REACTOME_HEMOSTASIS		
+10335	MRVI1	murine retrovirus integration site 1 homolog	REACTOME_NITRIC_OXIDE_STIMULATES_GUANYLATE_CYCLASE	REACTOME_CGMP_EFFECTS	REACTOME_PLATELET_HOMEOSTASIS						REACTOME_HEMOSTASIS		
+NA	GUCY1A3	NA	REACTOME_NITRIC_OXIDE_STIMULATES_GUANYLATE_CYCLASE		REACTOME_PLATELET_HOMEOSTASIS				KEGG_PURINE_METABOLISM		REACTOME_HEMOSTASIS		HALLMARK_KRAS_SIGNALING_UP
+5649	RELN	reelin				NABA_ECM_GLYCOPROTEINS	NABA_MATRISOME	NABA_CORE_MATRISOME					HALLMARK_KRAS_SIGNALING_UP
+84870	RSPO3	R-spondin 3				NABA_ECM_GLYCOPROTEINS	NABA_MATRISOME	NABA_CORE_MATRISOME					
+4745	NELL1	neural EGFL like 1				NABA_ECM_GLYCOPROTEINS	NABA_MATRISOME	NABA_CORE_MATRISOME					
+10875	FGL2	fibrinogen like 2				NABA_ECM_GLYCOPROTEINS	NABA_MATRISOME	NABA_CORE_MATRISOME					
+1893	ECM1	extracellular matrix protein 1				NABA_ECM_GLYCOPROTEINS	NABA_MATRISOME	NABA_CORE_MATRISOME					
+6422	SFRP1	secreted frizzled related protein 1					NABA_MATRISOME						
+80274	SCUBE1	signal peptide, CUB domain and EGF like domain containing 1					NABA_MATRISOME						
+2249	FGF4	fibroblast growth factor 4					NABA_MATRISOME						
+306	ANXA3	annexin A3					NABA_MATRISOME						
+272	AMPD3	adenosine monophosphate deaminase 3							KEGG_PURINE_METABOLISM				
+6907	TBL1X	transducin beta like 1 X-linked								REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS			
+51144	HSD17B12	hydroxysteroid 17-beta dehydrogenase 12								REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS			
+2167	FABP4	fatty acid binding protein 4								REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS			
+51302	CYP39A1	cytochrome P450 family 39 subfamily A member 1								REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS			
+411	ARSB	arylsulfatase B								REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS			
+32	ACACB	acetyl-CoA carboxylase beta								REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS			
+2151	F2RL2	coagulation factor II thrombin receptor like 2									REACTOME_HEMOSTASIS		
+10257	ABCC4	ATP binding cassette subfamily C member 4									REACTOME_HEMOSTASIS		
+91624	NEXN	nexilin F-actin binding protein										HALLMARK_APICAL_JUNCTION	
+8515	ITGA10	integrin subunit alpha 10										HALLMARK_APICAL_JUNCTION	
+947	CD34	CD34 molecule										HALLMARK_APICAL_JUNCTION	
+147	ADRA1B	adrenoceptor alpha 1B										HALLMARK_APICAL_JUNCTION	
+55107	ANO1	anoctamin 1											HALLMARK_KRAS_SIGNALING_UP
+220	ALDH1A3	aldehyde dehydrogenase 1 family member A3											HALLMARK_KRAS_SIGNALING_UP
+23217	ZFR2	zinc finger RNA binding protein 2											
+7265	TTC1	tetratricopeptide repeat domain 1											
+7162	TPBG	trophoblast glycoprotein											
+55754	TMEM30A	transmembrane protein 30A											
+55080	TAPBPL	TAP binding protein like											
+284297	SSC5D	scavenger receptor cysteine rich family member with 5 domains											
+100642175	SPRY4-IT1	SPRY4 intronic transcript 1											
+114826	SMYD4	SET and MYND domain containing 4											
+6525	SMTN	smoothelin											
+6558	SLC12A2	solute carrier family 12 member 2											
+10736	SIX2	SIX homeobox 2											
+23235	SIK2	salt inducible kinase 2											
+56256	SERTAD4	SERTA domain containing 4											
+401190	RGS7BP	regulator of G protein signaling 7 binding protein											
+114825	PWWP2A	PWWP domain containing 2A											
+5782	PTPN12	protein tyrosine phosphatase, non-receptor type 12											
+11156	PTP4A3	protein tyrosine phosphatase type IVA, member 3											
+5307	PITX1	paired like homeodomain 1											
+5239	PGM5	phosphoglucomutase 5											
+84033	OBSCN	obscurin, cytoskeletal calmodulin and titin-interacting RhoGEF											
+4884	NPTX1	neuronal pentraxin 1											
+22829	NLGN4Y	neuroligin 4 Y-linked											
+579	NKX3-2	NK3 homeobox 2											
+4747	NEFL	neurofilament light											
+26002	MOXD1	monooxygenase DBH like 1											
+NA	MIR143HG	NA											
+441061	MARCH11	membrane associated ring-CH-type finger 11											
+221091	LRRN4CL	LRRN4 C-terminal like											
+3815	KIT	KIT proto-oncogene receptor tyrosine kinase											
+3777	KCNK3	potassium two pore domain channel subfamily K member 3											
+25959	KANK2	KN motif and ankyrin repeat domains 2											
+51015	ISOC1	isochorismatase domain containing 1											
+10068	IL18BP	interleukin 18 binding protein											
+55081	IFT57	intraflagellar transport 57											
+3090	HIC1	HIC ZBTB transcriptional repressor 1											
+9464	HAND2	heart and neural crest derivatives expressed 2											
+NA	GRAMD3	NA											
+2843	GPR20	G protein-coupled receptor 20											
+2674	GFRA1	GDNF family receptor alpha 1											
+2294	FOXF1	forkhead box F1											
+57628	DPP10	dipeptidyl peptidase like 10											
+51339	DACT1	dishevelled binding antagonist of beta catenin 1											
+1551	CYP3A7	cytochrome P450 family 3 subfamily A member 7											
+10435	CDC42EP2	CDC42 effector protein 2											
+887	CCKBR	cholecystokinin B receptor											
+56033	BARX1	BARX homeobox 1											
+8542	APOL1	apolipoprotein L1											
+3268	AGFG2	ArfGAP with FG repeats 2											
+125061	AFMID	arylformamidase											

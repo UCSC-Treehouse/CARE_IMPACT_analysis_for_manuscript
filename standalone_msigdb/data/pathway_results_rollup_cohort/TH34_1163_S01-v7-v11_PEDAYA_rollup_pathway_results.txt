@@ -1,0 +1,86 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	13
+# genesets in collections:	1379
+# genes in comparison (n):	58
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+HALLMARK_MYOGENESIS	200	Genes involved in development of skeletal muscle (myogenesis).	18	0.09	5.537e-29	7.636000000000001e-26
+REACTOME_STRIATED_MUSCLE_CONTRACTION	27	Genes involved in Striated Muscle Contraction	10	0.3704	3.7449999999999996e-23	2.5820000000000003e-20
+REACTOME_MUSCLE_CONTRACTION	48	Genes involved in Muscle contraction	10	0.2083	2.8460000000000005e-20	1.308e-17
+KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	85	Hypertrophic cardiomyopathy (HCM)	5	0.05882	8.149e-8	2.81e-5
+KEGG_DILATED_CARDIOMYOPATHY	92	Dilated cardiomyopathy	5	0.05435	1.214e-7	3.347e-5
+REACTOME_MYOGENESIS	28	Genes involved in Myogenesis	3	0.1071	6.111e-6	0.001404
+BIOCARTA_NO1_PATHWAY	33	Actions of Nitric Oxide in the Heart	3	0.09091	1.013e-5	0.001996
+BIOCARTA_AGR_PATHWAY	36	Agrin in Postsynaptic Differentiation	3	0.08333	1.322e-5	0.002279
+KEGG_VIRAL_MYOCARDITIS	73	Viral myocarditis	3	0.0411	1.114e-4	0.01537
+REACTOME_PRESYNAPTIC_NICOTINIC_ACETYLCHOLINE_RECEPTORS	12	Genes involved in Presynaptic nicotinic acetylcholine receptors	2	0.1667	1.025e-4	0.01537
+HALLMARK_APICAL_JUNCTION	200	Genes encoding components of apical junction complex.	4	0.02	1.229e-4	0.0154
+KEGG_CARDIAC_MUSCLE_CONTRACTION	80	Cardiac muscle contraction	3	0.0375	1.463e-4	0.01681
+REACTOME_ACETYLCHOLINE_BINDING_AND_DOWNSTREAM_EVENTS	16	Genes involved in Acetylcholine Binding And Downstream Events	2	0.125	1.857e-4	0.0197
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION	KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	KEGG_DILATED_CARDIOMYOPATHY	REACTOME_MYOGENESIS	BIOCARTA_NO1_PATHWAY	BIOCARTA_AGR_PATHWAY	KEGG_VIRAL_MYOCARDITIS	REACTOME_PRESYNAPTIC_NICOTINIC_ACETYLCHOLINE_RECEPTORS	HALLMARK_APICAL_JUNCTION	KEGG_CARDIAC_MUSCLE_CONTRACTION	REACTOME_ACETYLCHOLINE_BINDING_AND_DOWNSTREAM_EVENTS
+7139	TNNT2	troponin T2, cardiac type	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION	KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	KEGG_DILATED_CARDIOMYOPATHY							KEGG_CARDIAC_MUSCLE_CONTRACTION	
+7134	TNNC1	troponin C1, slow skeletal and cardiac type	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION	KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	KEGG_DILATED_CARDIOMYOPATHY							KEGG_CARDIAC_MUSCLE_CONTRACTION	
+1674	DES	desmin	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION	KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	KEGG_DILATED_CARDIOMYOPATHY								
+7135	TNNI1	troponin I1, slow skeletal type	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION				BIOCARTA_NO1_PATHWAY						
+4621	MYH3	myosin heavy chain 3	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION						KEGG_VIRAL_MYOCARDITIS				
+7138	TNNT1	troponin T1, slow skeletal type	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION										
+7136	TNNI2	troponin I2, fast skeletal type	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION										
+7125	TNNC2	troponin C2, fast skeletal type	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION										
+4632	MYL1	myosin light chain 1	HALLMARK_MYOGENESIS	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION										
+6442	SGCA	sarcoglycan alpha	HALLMARK_MYOGENESIS			KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	KEGG_DILATED_CARDIOMYOPATHY				KEGG_VIRAL_MYOCARDITIS				
+70	ACTC1	actin, alpha, cardiac muscle 1	HALLMARK_MYOGENESIS			KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM	KEGG_DILATED_CARDIOMYOPATHY						HALLMARK_APICAL_JUNCTION	KEGG_CARDIAC_MUSCLE_CONTRACTION	
+4656	MYOG	myogenin	HALLMARK_MYOGENESIS					REACTOME_MYOGENESIS							
+1134	CHRNA1	cholinergic receptor nicotinic alpha 1 subunit	HALLMARK_MYOGENESIS						BIOCARTA_NO1_PATHWAY	BIOCARTA_AGR_PATHWAY		REACTOME_PRESYNAPTIC_NICOTINIC_ACETYLCHOLINE_RECEPTORS			REACTOME_ACETYLCHOLINE_BINDING_AND_DOWNSTREAM_EVENTS
+58	ACTA1	actin, alpha 1, skeletal muscle	HALLMARK_MYOGENESIS						BIOCARTA_NO1_PATHWAY	BIOCARTA_AGR_PATHWAY			HALLMARK_APICAL_JUNCTION		
+7140	TNNT3	troponin T3, fast skeletal type	HALLMARK_MYOGENESIS												
+29895	MYLPF	myosin light chain, phosphorylatable, fast skeletal muscle	HALLMARK_MYOGENESIS												
+4608	MYBPH	myosin binding protein H	HALLMARK_MYOGENESIS												
+845	CASQ2	calsequestrin 2	HALLMARK_MYOGENESIS												
+4703	NEB	nebulin		REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION										
+1013	CDH15	cadherin 15						REACTOME_MYOGENESIS					HALLMARK_APICAL_JUNCTION		
+4617	MYF5	myogenic factor 5						REACTOME_MYOGENESIS							
+5913	RAPSN	receptor associated protein of the synapse								BIOCARTA_AGR_PATHWAY					
+57644	MYH7B	myosin heavy chain 7B									KEGG_VIRAL_MYOCARDITIS				
+1144	CHRND	cholinergic receptor nicotinic delta subunit										REACTOME_PRESYNAPTIC_NICOTINIC_ACETYLCHOLINE_RECEPTORS			REACTOME_ACETYLCHOLINE_BINDING_AND_DOWNSTREAM_EVENTS
+1024	CDK8	cyclin dependent kinase 8											HALLMARK_APICAL_JUNCTION		
+NA	UTP11L	NA													
+7335	UBE2V1	ubiquitin conjugating enzyme E2 V1													
+64102	TNMD	tenomodulin													
+246329	STAC3	SH3 and cysteine rich domain 3													
+26576	SRPK3	SRSF protein kinase 3													
+619499	SNORA27	small nucleolar RNA, H/ACA box 27													
+23676	SMPX	small muscle protein X-linked													
+286133	SCARA5	scavenger receptor class A member 5													
+10284	SAP18	Sin3A associated protein 18													
+10216	PRG4	proteoglycan 4													
+5222	PGA5	pepsinogen 5, group I (pepsinogen A)													
+643847	PGA4	pepsinogen 4, group I (pepsinogen A)													
+643834	PGA3	pepsinogen 3, group I (pepsinogen A)													
+5081	PAX7	paired box 7													
+4223	MEOX2	mesenchyme homeobox 2													
+NA	KIAA1429	NA													
+27190	IL17B	interleukin 17B													
+51214	IGF2-AS	IGF2 antisense RNA													
+121355	GTSF1	gametocyte specific factor 1													
+2620	GAS2	growth arrest specific 2													
+2326	FMO1	flavin containing monooxygenase 1													
+2173	FABP7	fatty acid binding protein 7													
+90187	EMILIN3	elastin microfibril interfacer 3													
+84677	DSCR8	Down syndrome critical region 8													
+8451	CUL4A	cullin 4A													
+389903	CSAG3	CSAG family member 3													
+102723547	CSAG2	CSAG family member 2													
+158511	CSAG1	chondrosarcoma associated gene 1													
+1381	CRABP1	cellular retinoic acid binding protein 1													
+136227	COL26A1	collagen type XXVI alpha 1 chain													
+827	CAPN6	calpain 6													
+768	CA9	carbonic anhydrase 9													
+126	ADH1C	alcohol dehydrogenase 1C (class I), gamma polypeptide													

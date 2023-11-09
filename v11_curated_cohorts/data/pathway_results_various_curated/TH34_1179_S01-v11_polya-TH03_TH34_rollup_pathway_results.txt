@@ -1,0 +1,159 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	33
+# genesets in collections:	1379
+# genes in comparison (n):	111
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	16	0.01556	3.928e-9	5.416e-6
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	13	0.01726	3.816e-8	2.631e-5
+KEGG_PATHWAYS_IN_CANCER	328	Pathways in cancer	7	0.02134	1.593e-5	0.005959
+REACTOME_FGFR_LIGAND_BINDING_AND_ACTIVATION	22	Genes involved in FGFR ligand binding and activation	3	0.1364	2.042e-5	0.005959
+NABA_SECRETED_FACTORS	344	Genes encoding secreted soluble factors	7	0.02035	2.161e-5	0.005959
+REACTOME_SHC_MEDIATED_CASCADE	28	Genes involved in SHC-mediated cascade	3	0.1071	4.299e-5	0.00988
+WNT_SIGNALING	89	Genes related to Wnt-mediated signal transduction	4	0.04494	6.719e-5	0.01324
+ST_WNT_BETA_CATENIN_PATHWAY	34	Wnt/beta-catenin Pathway	3	0.08824	7.77e-5	0.01339
+HALLMARK_WNT_BETA_CATENIN_SIGNALING	42	Genes up-regulated by activation of WNT signaling through accumulation of beta catenin CTNNB1 [GeneID=1499].	3	0.07143	1.47e-4	0.01351
+HALLMARK_ESTROGEN_RESPONSE_EARLY	200	Genes defining early response to estrogen.	5	0.025	1.309e-4	0.01351
+HALLMARK_ESTROGEN_RESPONSE_LATE	200	Genes defining late response to estrogen.	5	0.025	1.309e-4	0.01351
+HALLMARK_KRAS_SIGNALING_DN	200	Genes down-regulated by KRAS activation.	5	0.025	1.309e-4	0.01351
+KEGG_ALDOSTERONE_REGULATED_SODIUM_REABSORPTION	42	Aldosterone-regulated sodium reabsorption	3	0.07143	1.47e-4	0.01351
+REACTOME_NEGATIVE_REGULATION_OF_FGFR_SIGNALING	37	Genes involved in Negative regulation of FGFR signaling	3	0.08108	1.004e-4	0.01351
+REACTOME_FRS2_MEDIATED_CASCADE	36	Genes involved in FRS2-mediated cascade	3	0.08333	9.238e-5	0.01351
+PID_A6B1_A6B4_INTEGRIN_PATHWAY	46	a6b1 and a6b4 Integrin signaling	3	0.06522	1.93e-4	0.01663
+PID_DELTA_NP63_PATHWAY	47	Validated transcriptional targets of deltaNp63 isoforms	3	0.06383	2.058e-4	0.01669
+REACTOME_DEFENSINS	51	Genes involved in Defensins	3	0.05882	2.624e-4	0.02011
+PID_NFAT_3PATHWAY	54	Role of Calcineurin-dependent NFAT signaling in lymphocytes	3	0.05556	3.109e-4	0.02144
+REACTOME_PHOSPHOLIPASE_C_MEDIATED_CASCADE	54	Genes involved in Phospholipase C-mediated cascade	3	0.05556	3.109e-4	0.02144
+REACTOME_PI_3K_CASCADE	56	Genes involved in PI-3K cascade	3	0.05357	3.463e-4	0.02252
+REACTOME_PRESYNAPTIC_NICOTINIC_ACETYLCHOLINE_RECEPTORS	12	Genes involved in Presynaptic nicotinic acetylcholine receptors	2	0.1667	3.756e-4	0.02252
+REACTOME_FGFR4_LIGAND_BINDING_AND_ACTIVATION	12	Genes involved in FGFR4 ligand binding and activation	2	0.1667	3.756e-4	0.02252
+REACTOME_HIGHLY_CALCIUM_PERMEABLE_POSTSYNAPTIC_NICOTINIC_ACETYLCHOLINE_RECEPTORS	13	Genes involved in Highly calcium permeable postsynaptic nicotinic acetylcholine receptors	2	0.1538	4.432e-4	0.02546
+KEGG_WNT_SIGNALING_PATHWAY	151	Wnt signaling pathway	4	0.02649	5.106e-4	0.02738
+REACTOME_FGFR1_LIGAND_BINDING_AND_ACTIVATION	14	Genes involved in FGFR1 ligand binding and activation	2	0.1429	5.162e-4	0.02738
+KEGG_GLIOMA	65	Glioma	3	0.04615	5.371e-4	0.02743
+KEGG_MELANOMA	71	Melanoma	3	0.04225	6.955e-4	0.03094
+REACTOME_ACTIVATED_POINT_MUTANTS_OF_FGFR2	16	Genes involved in Activated point mutants of FGFR2	2	0.125	6.786e-4	0.03094
+REACTOME_ACETYLCHOLINE_BINDING_AND_DOWNSTREAM_EVENTS	16	Genes involved in Acetylcholine Binding And Downstream Events	2	0.125	6.786e-4	0.03094
+REACTOME_PI3K_CASCADE	71	Genes involved in PI3K Cascade	3	0.04225	6.955e-4	0.03094
+SA_CASPASE_CASCADE	19	Apoptosis is mediated by caspases, cysteine proteases arranged in a proteolytic cascade.	2	0.1053	9.624e-4	0.04112
+PID_BETA_CATENIN_NUC_PATHWAY	80	Regulation of nuclear beta catenin signaling and target gene transcription	3	0.0375	9.841e-4	0.04112
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	KEGG_PATHWAYS_IN_CANCER	REACTOME_FGFR_LIGAND_BINDING_AND_ACTIVATION	NABA_SECRETED_FACTORS	REACTOME_SHC_MEDIATED_CASCADE	WNT_SIGNALING	ST_WNT_BETA_CATENIN_PATHWAY	HALLMARK_WNT_BETA_CATENIN_SIGNALING	HALLMARK_ESTROGEN_RESPONSE_EARLY	HALLMARK_ESTROGEN_RESPONSE_LATE	HALLMARK_KRAS_SIGNALING_DN	KEGG_ALDOSTERONE_REGULATED_SODIUM_REABSORPTION	REACTOME_NEGATIVE_REGULATION_OF_FGFR_SIGNALING	REACTOME_FRS2_MEDIATED_CASCADE	PID_A6B1_A6B4_INTEGRIN_PATHWAY	PID_DELTA_NP63_PATHWAY	REACTOME_DEFENSINS	PID_NFAT_3PATHWAY	REACTOME_PHOSPHOLIPASE_C_MEDIATED_CASCADE	REACTOME_PI_3K_CASCADE	REACTOME_PRESYNAPTIC_NICOTINIC_ACETYLCHOLINE_RECEPTORS	REACTOME_FGFR4_LIGAND_BINDING_AND_ACTIVATION	REACTOME_HIGHLY_CALCIUM_PERMEABLE_POSTSYNAPTIC_NICOTINIC_ACETYLCHOLINE_RECEPTORS	KEGG_WNT_SIGNALING_PATHWAY	REACTOME_FGFR1_LIGAND_BINDING_AND_ACTIVATION	KEGG_GLIOMA	KEGG_MELANOMA	REACTOME_ACTIVATED_POINT_MUTANTS_OF_FGFR2	REACTOME_ACETYLCHOLINE_BINDING_AND_DOWNSTREAM_EVENTS	REACTOME_PI3K_CASCADE	SA_CASPASE_CASCADE	PID_BETA_CATENIN_NUC_PATHWAY
+26281	FGF20	fibroblast growth factor 20	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	KEGG_PATHWAYS_IN_CANCER	REACTOME_FGFR_LIGAND_BINDING_AND_ACTIVATION	NABA_SECRETED_FACTORS	REACTOME_SHC_MEDIATED_CASCADE								REACTOME_NEGATIVE_REGULATION_OF_FGFR_SIGNALING	REACTOME_FRS2_MEDIATED_CASCADE					REACTOME_PHOSPHOLIPASE_C_MEDIATED_CASCADE	REACTOME_PI_3K_CASCADE		REACTOME_FGFR4_LIGAND_BINDING_AND_ACTIVATION			REACTOME_FGFR1_LIGAND_BINDING_AND_ACTIVATION		KEGG_MELANOMA	REACTOME_ACTIVATED_POINT_MUTANTS_OF_FGFR2		REACTOME_PI3K_CASCADE		
+9965	FGF19	fibroblast growth factor 19	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	KEGG_PATHWAYS_IN_CANCER	REACTOME_FGFR_LIGAND_BINDING_AND_ACTIVATION	NABA_SECRETED_FACTORS	REACTOME_SHC_MEDIATED_CASCADE								REACTOME_NEGATIVE_REGULATION_OF_FGFR_SIGNALING	REACTOME_FRS2_MEDIATED_CASCADE					REACTOME_PHOSPHOLIPASE_C_MEDIATED_CASCADE	REACTOME_PI_3K_CASCADE		REACTOME_FGFR4_LIGAND_BINDING_AND_ACTIVATION					KEGG_MELANOMA			REACTOME_PI3K_CASCADE		
+2248	FGF3	fibroblast growth factor 3	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	KEGG_PATHWAYS_IN_CANCER	REACTOME_FGFR_LIGAND_BINDING_AND_ACTIVATION	NABA_SECRETED_FACTORS	REACTOME_SHC_MEDIATED_CASCADE								REACTOME_NEGATIVE_REGULATION_OF_FGFR_SIGNALING	REACTOME_FRS2_MEDIATED_CASCADE					REACTOME_PHOSPHOLIPASE_C_MEDIATED_CASCADE	REACTOME_PI_3K_CASCADE					REACTOME_FGFR1_LIGAND_BINDING_AND_ACTIVATION		KEGG_MELANOMA	REACTOME_ACTIVATED_POINT_MUTANTS_OF_FGFR2		REACTOME_PI3K_CASCADE		
+51384	WNT16	Wnt family member 16	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	KEGG_PATHWAYS_IN_CANCER		NABA_SECRETED_FACTORS		WNT_SIGNALING					HALLMARK_KRAS_SIGNALING_DN													KEGG_WNT_SIGNALING_PATHWAY								
+7039	TGFA	transforming growth factor alpha	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	KEGG_PATHWAYS_IN_CANCER		NABA_SECRETED_FACTORS																						KEGG_GLIOMA						
+356	FASLG	Fas ligand	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	KEGG_PATHWAYS_IN_CANCER		NABA_SECRETED_FACTORS																											SA_CASPASE_CASCADE	
+6469	SHH	sonic hedgehog signaling molecule	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	KEGG_PATHWAYS_IN_CANCER		NABA_SECRETED_FACTORS																												
+5274	SERPINI1	serpin family I member 1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED																															
+5365	PLXNB3	plexin B3	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED																															
+5648	MASP1	mannan binding lectin serine peptidase 1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED																															
+1469	CST1	cystatin SN	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED																															
+78989	COLEC11	collectin subfamily member 11	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED																															
+9719	ADAMTSL2	ADAMTS like 2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED																															
+258	AMBN	ameloblastin	NABA_MATRISOME											HALLMARK_KRAS_SIGNALING_DN																					
+4753	NELL2	neural EGFL like 2	NABA_MATRISOME																																
+129804	FBLN7	fibulin 7	NABA_MATRISOME																																
+22943	DKK1	dickkopf WNT signaling pathway inhibitor 1							WNT_SIGNALING	ST_WNT_BETA_CATENIN_PATHWAY	HALLMARK_WNT_BETA_CATENIN_SIGNALING																KEGG_WNT_SIGNALING_PATHWAY								PID_BETA_CATENIN_NUC_PATHWAY
+85407	NKD1	NKD1, WNT signaling pathway inhibitor							WNT_SIGNALING	ST_WNT_BETA_CATENIN_PATHWAY	HALLMARK_WNT_BETA_CATENIN_SIGNALING																KEGG_WNT_SIGNALING_PATHWAY								
+83999	KREMEN1	kringle containing transmembrane protein 1							WNT_SIGNALING																										
+27121	DKK4	dickkopf WNT signaling pathway inhibitor 4								ST_WNT_BETA_CATENIN_PATHWAY	HALLMARK_WNT_BETA_CATENIN_SIGNALING																KEGG_WNT_SIGNALING_PATHWAY								PID_BETA_CATENIN_NUC_PATHWAY
+2810	SFN	stratifin										HALLMARK_ESTROGEN_RESPONSE_EARLY	HALLMARK_ESTROGEN_RESPONSE_LATE		KEGG_ALDOSTERONE_REGULATED_SODIUM_REABSORPTION			PID_A6B1_A6B4_INTEGRIN_PATHWAY	PID_DELTA_NP63_PATHWAY		PID_NFAT_3PATHWAY														PID_BETA_CATENIN_NUC_PATHWAY
+6337	SCNN1A	sodium channel epithelial 1 alpha subunit										HALLMARK_ESTROGEN_RESPONSE_EARLY	HALLMARK_ESTROGEN_RESPONSE_LATE		KEGG_ALDOSTERONE_REGULATED_SODIUM_REABSORPTION																				
+64699	TMPRSS3	transmembrane serine protease 3										HALLMARK_ESTROGEN_RESPONSE_EARLY	HALLMARK_ESTROGEN_RESPONSE_LATE																						
+8140	SLC7A5	solute carrier family 7 member 5										HALLMARK_ESTROGEN_RESPONSE_EARLY	HALLMARK_ESTROGEN_RESPONSE_LATE																						
+11057	ABHD2	abhydrolase domain containing 2										HALLMARK_ESTROGEN_RESPONSE_EARLY	HALLMARK_ESTROGEN_RESPONSE_LATE																						
+3852	KRT5	keratin 5												HALLMARK_KRAS_SIGNALING_DN					PID_DELTA_NP63_PATHWAY																
+51806	CALML5	calmodulin like 5												HALLMARK_KRAS_SIGNALING_DN															KEGG_GLIOMA						
+8786	RGS11	regulator of G protein signaling 11												HALLMARK_KRAS_SIGNALING_DN																					
+476	ATP1A1	ATPase Na+/K+ transporting subunit alpha 1													KEGG_ALDOSTERONE_REGULATED_SODIUM_REABSORPTION																				
+840	CASP7	caspase 7																PID_A6B1_A6B4_INTEGRIN_PATHWAY																SA_CASPASE_CASCADE	
+4486	MST1R	macrophage stimulating 1 receptor																PID_A6B1_A6B4_INTEGRIN_PATHWAY																	
+2877	GPX2	glutathione peroxidase 2																	PID_DELTA_NP63_PATHWAY																
+1672	DEFB1	defensin beta 1																		REACTOME_DEFENSINS															
+1671	DEFA6	defensin alpha 6																		REACTOME_DEFENSINS															
+1670	DEFA5	defensin alpha 5																		REACTOME_DEFENSINS															
+10231	RCAN2	regulator of calcineurin 2																			PID_NFAT_3PATHWAY														
+5588	PRKCQ	protein kinase C theta																			PID_NFAT_3PATHWAY														
+1136	CHRNA3	cholinergic receptor nicotinic alpha 3 subunit																						REACTOME_PRESYNAPTIC_NICOTINIC_ACETYLCHOLINE_RECEPTORS		REACTOME_HIGHLY_CALCIUM_PERMEABLE_POSTSYNAPTIC_NICOTINIC_ACETYLCHOLINE_RECEPTORS						REACTOME_ACETYLCHOLINE_BINDING_AND_DOWNSTREAM_EVENTS			
+1134	CHRNA1	cholinergic receptor nicotinic alpha 1 subunit																						REACTOME_PRESYNAPTIC_NICOTINIC_ACETYLCHOLINE_RECEPTORS		REACTOME_HIGHLY_CALCIUM_PERMEABLE_POSTSYNAPTIC_NICOTINIC_ACETYLCHOLINE_RECEPTORS						REACTOME_ACETYLCHOLINE_BINDING_AND_DOWNSTREAM_EVENTS			
+810	CALML3	calmodulin like 3																											KEGG_GLIOMA						
+7425	VGF	VGF nerve growth factor inducible																																	
+55075	UACA	uveal autoantigen with coiled-coil domains and ankyrin repeats																																	
+10077	TSPAN32	tetraspanin 32																																	
+79054	TRPM8	transient receptor potential cation channel subfamily M member 8																																	
+28526	TRDC	T cell receptor delta constant																																	
+4982	TNFRSF11B	TNF receptor superfamily member 11b																																	
+7104	TM4SF4	transmembrane 4 L six family member 4																																	
+23216	TBC1D1	TBC1 domain family member 1																																	
+29114	TAGLN3	transgelin 3																																	
+9066	SYT7	synaptotagmin 7																																	
+11075	STMN2	stathmin 2																																	
+10948	STARD3	StAR related lipid transfer domain containing 3																																	
+26228	STAP1	signal transducing adaptor family member 1																																	
+6751	SSTR1	somatostatin receptor 1																																	
+80320	SP6	Sp6 transcription factor																																	
+10568	SLC34A2	solute carrier family 34 member 2																																	
+6510	SLC1A5	solute carrier family 1 member 5																																	
+124925	SEZ6	seizure related 6 homolog																																	
+90701	SEC11C	SEC11 homolog C, signal peptidase complex subunit																																	
+29106	SCG3	secretogranin III																																	
+284716	RIMKLA	ribosomal modification protein rimK like family member A																																	
+23504	RIMBP2	RIMS binding protein 2																																	
+57139	RGL3	ral guanine nucleotide dissociation stimulator like 3																																	
+65997	RASL11B	RAS like family 11 member B																																	
+376267	RAB15	RAB15, member RAS oncogene family																																	
+169714	QSOX2	quiescin sulfhydryl oxidase 2																																	
+646960	PRSS56	serine protease 56																																	
+10113	PREB	prolactin regulatory element binding																																	
+151056	PLB1	phospholipase B1																																	
+653583	PHLDB3	pleckstrin homology like domain family B member 3																																	
+90737	PAGE5	PAGE family member 5																																	
+389860	PAGE2B	PAGE family member 2B																																	
+NA	OVOS2	NA																																	
+143503	OR51E1	olfactory receptor family 51 subfamily E member 1																																	
+11248	NXPH3	neurexophilin 3																																	
+147111	NOTUM	notum, palmitoleoyl-protein carboxylesterase																																	
+23114	NFASC	neurofascin																																	
+57644	MYH7B	myosin heavy chain 7B																																	
+4488	MSX2	msh homeobox 2																																	
+440823	MIAT	myocardial infarction associated transcript																																	
+4249	MGAT5	alpha-1,6-mannosylglycoprotein 6-beta-N-acetylglucosaminyltransferase																																	
+80740	LY6G6C	lymphocyte antigen 6 family member G6C																																	
+57535	KIAA1324	KIAA1324																																	
+91156	IGFN1	immunoglobulin-like and fibronectin type III domain containing 1																																	
+NA	HMP19	NA																																	
+26508	HEYL	hes related family bHLH transcription factor with YRPW motif-like																																	
+NA	GYLTL1B	NA																																	
+2596	GAP43	growth associated protein 43																																	
+2571	GAD1	glutamate decarboxylase 1																																	
+22844	FRMPD1	FERM and PDZ domain containing 1																																	
+2307	FOXS1	forkhead box S1																																	
+84929	FIBCD1	fibrinogen C domain containing 1																																	
+54097	FAM3B	family with sequence similarity 3 member B																																	
+151313	FAHD2B	fumarylacetoacetate hydrolase domain containing 2B																																	
+100288413	ERVMER34-1	endogenous retrovirus group MER34 member 1, envelope																																	
+1800	DPEP1	dipeptidase 1																																	
+1748	DLX4	distal-less homeobox 4																																	
+1577	CYP3A5	cytochrome P450 family 3 subfamily A member 5																																	
+10814	CPLX2	complexin 2																																	
+1114	CHGB	chromogranin B																																	
+1113	CHGA	chromogranin A																																	
+64781	CERK	ceramide kinase																																	
+NA	CCDC64	NA																																	
+57639	CCDC146	coiled-coil domain containing 146																																	
+8618	CADPS	calcium dependent secretion activator																																	
+148345	C1orf127	chromosome 1 open reading frame 127																																	
+79058	ASPSCR1	ASPSCR1, UBX domain containing tether for SLC2A4																																	
+647219	ASCL5	achaete-scute family bHLH transcription factor 5																																	
+430	ASCL2	achaete-scute family bHLH transcription factor 2																																	
+421	ARVCF	ARVCF, delta catenin family member																																	
+338440	ANO9	anoctamin 9																																	

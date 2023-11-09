@@ -1,0 +1,68 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	5
+# genesets in collections:	1379
+# genes in comparison (n):	48
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	7	0.02545	1.52e-8	2.096e-5
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	9	0.008755	1.038e-6	7.159e-4
+NABA_PROTEOGLYCANS	35	Genes encoding proteoglycans	3	0.08571	6.836e-6	0.003142
+NABA_COLLAGENS	44	Genes encoding collagen proteins	3	0.06818	1.374e-5	0.004737
+HALLMARK_KRAS_SIGNALING_DN	200	Genes down-regulated by KRAS activation.	4	0.02	5.83e-5	0.01608
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_CORE_MATRISOME	NABA_MATRISOME	NABA_PROTEOGLYCANS	NABA_COLLAGENS	HALLMARK_KRAS_SIGNALING_DN
+79883	PODNL1	podocan like 1	NABA_CORE_MATRISOME	NABA_MATRISOME	NABA_PROTEOGLYCANS		
+60484	HAPLN2	hyaluronan and proteoglycan link protein 2	NABA_CORE_MATRISOME	NABA_MATRISOME	NABA_PROTEOGLYCANS		
+63827	BCAN	brevican	NABA_CORE_MATRISOME	NABA_MATRISOME	NABA_PROTEOGLYCANS		
+340267	COL28A1	collagen type XXVIII alpha 1 chain	NABA_CORE_MATRISOME	NABA_MATRISOME		NABA_COLLAGENS	
+169044	COL22A1	collagen type XXII alpha 1 chain	NABA_CORE_MATRISOME	NABA_MATRISOME		NABA_COLLAGENS	
+57642	COL20A1	collagen type XX alpha 1 chain	NABA_CORE_MATRISOME	NABA_MATRISOME		NABA_COLLAGENS	
+163175	LGI4	leucine rich repeat LGI family member 4	NABA_CORE_MATRISOME	NABA_MATRISOME			
+5055	SERPINB2	serpin family B member 2		NABA_MATRISOME			HALLMARK_KRAS_SIGNALING_DN
+2668	GDNF	glial cell derived neurotrophic factor		NABA_MATRISOME			HALLMARK_KRAS_SIGNALING_DN
+6663	SOX10	SRY-box 10					HALLMARK_KRAS_SIGNALING_DN
+55220	KLHDC8A	kelch domain containing 8A					HALLMARK_KRAS_SIGNALING_DN
+90226	UCN2	urocortin 2					
+59341	TRPV4	transient receptor potential cation channel subfamily V member 4					
+79054	TRPM8	transient receptor potential cation channel subfamily M member 8					
+7018	TF	transferrin					
+29906	ST8SIA5	ST8 alpha-N-acetyl-neuraminide alpha-2,8-sialyltransferase 5					
+90853	SPOCD1	SPOC domain containing 1					
+347689	SOX2-OT	SOX2 overlapping transcript					
+6649	SOD3	superoxide dismutase 3					
+79856	SNX22	sorting nexin 22					
+6642	SNX1	sorting nexin 1					
+11341	SCRG1	stimulator of chondrogenesis 1					
+5375	PMP2	peripheral myelin protein 2					
+10215	OLIG2	oligodendrocyte transcription factor 2					
+116448	OLIG1	oligodendrocyte transcription factor 1					
+4821	NKX2-2	NK2 homeobox 2					
+4504	MT3	metallothionein 3					
+8190	MIA	MIA SH3 domain containing					
+5653	KLK6	kallikrein related peptidase 6					
+3766	KCNJ10	potassium voltage-gated channel subfamily J member 10					
+3690	ITGB3	integrin subunit beta 3					
+2705	GJB1	gap junction protein beta 1					
+2670	GFAP	glial fibrillary acidic protein					
+53822	FXYD7	FXYD domain containing ion transport regulator 7					
+84824	FCRLA	Fc receptor like A					
+8857	FCGBP	Fc fragment of IgG binding protein					
+2173	FABP7	fatty acid binding protein 7					
+2134	EXTL1	exostosin like glycosyltransferase 1					
+2042	EPHA3	EPH receptor A3					
+22943	DKK1	dickkopf WNT signaling pathway inhibitor 1					
+728577	CNTNAP3B	contactin associated protein like 3B					
+116173	CMTM5	CKLF like MARVEL transmembrane domain containing 5					
+NA	C2orf82	NA					
+10485	C1orf61	chromosome 1 open reading frame 61					
+8537	BCAS1	breast carcinoma amplified sequence 1					
+563	AZGP1	alpha-2-glycoprotein 1, zinc-binding					
+375719	AQP7P1	aquaporin 7 pseudogene 1					
+347	APOD	apolipoprotein D					

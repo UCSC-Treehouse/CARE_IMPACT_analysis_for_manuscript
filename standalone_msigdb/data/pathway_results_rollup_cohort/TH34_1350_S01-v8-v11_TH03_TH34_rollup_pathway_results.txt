@@ -1,0 +1,288 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	72
+# genesets in collections:	1379
+# genes in comparison (n):	201
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+REACTOME_IMMUNE_SYSTEM	933	Genes involved in Immune System	26	0.02787	8.547e-14	1.179e-10
+HALLMARK_ALLOGRAFT_REJECTION	200	Genes up-regulated during transplant rejection.	14	0.07	3.435e-13	2.368e-10
+HALLMARK_COMPLEMENT	200	Genes encoding components of the complement system, which is part of the innate immune system.	13	0.065	6.261e-12	2.878e-9
+REACTOME_IMMUNOREGULATORY_INTERACTIONS_BETWEEN_A_LYMPHOID_AND_A_NON_LYMPHOID_CELL	70	Genes involved in Immunoregulatory interactions between a Lymphoid and a non-Lymphoid cell	9	0.1286	2.526e-11	8.71e-9
+REACTOME_HEMOSTASIS	466	Genes involved in Hemostasis	17	0.03648	3.439e-11	9.484e-9
+HALLMARK_INTERFERON_GAMMA_RESPONSE	200	Genes up-regulated in response to IFNG [GeneID=3458].	11	0.055	1.607e-9	3.693e-7
+KEGG_CHEMOKINE_SIGNALING_PATHWAY	190	Chemokine signaling pathway	10	0.05263	1.373e-8	2.705e-6
+PID_CXCR4_PATHWAY	102	CXCR4-mediated signaling events	8	0.07843	1.796e-8	3.096e-6
+HALLMARK_HEME_METABOLISM	200	Genes involved in metabolism of heme (a cofactor consisting of iron and porphyrin) and erythroblast differentiation.	10	0.05	2.235e-8	3.425e-6
+PID_CD8_TCR_PATHWAY	53	TCR signaling in na&#xef;ve CD8+ T cells	6	0.1132	1.257e-7	1.733e-5
+REACTOME_CELL_SURFACE_INTERACTIONS_AT_THE_VASCULAR_WALL	91	Genes involved in Cell surface interactions at the vascular wall	7	0.07692	1.636e-7	2.05e-5
+REACTOME_INTERFERON_GAMMA_SIGNALING	63	Genes involved in Interferon gamma signaling	6	0.09524	3.586e-7	4.121e-5
+BIOCARTA_CTL_PATHWAY	15	CTL mediated immune response against target cells	4	0.2667	4.668e-7	4.952e-5
+KEGG_LEISHMANIA_INFECTION	72	Leishmania infection	6	0.08333	7.982e-7	7.862e-5
+REACTOME_ADAPTIVE_IMMUNE_SYSTEM	539	Genes involved in Adaptive Immune System	13	0.02412	8.777e-7	8.069e-5
+KEGG_CELL_ADHESION_MOLECULES_CAMS	134	Cell adhesion molecules (CAMs)	7	0.05224	2.264e-6	1.951e-4
+PID_TXA2PATHWAY	57	Thromboxane A2 receptor signaling	5	0.08772	5.3e-6	4.299e-4
+PID_IL8_CXCR1_PATHWAY	28	IL8- and CXCR1-mediated signaling events	4	0.1429	6.697e-6	4.836e-4
+REACTOME_INTERFERON_SIGNALING	159	Genes involved in Interferon Signaling	7	0.04403	7.014e-6	4.836e-4
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	14	0.01859	6.784e-6	4.836e-4
+PID_CD8_TCR_DOWNSTREAM_PATHWAY	65	Downstream signaling in na&#xef;ve CD8+ T cells	5	0.07692	1.016e-5	6.674e-4
+PID_TCR_PATHWAY	66	TCR signaling in na&#xef;ve CD4+ T cells	5	0.07576	1.096e-5	6.868e-4
+BIOCARTA_MONOCYTE_PATHWAY	11	Monocyte and its Surface Molecules	3	0.2727	1.325e-5	7.853e-4
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	16	0.01556	1.367e-5	7.853e-4
+PID_IL8_CXCR2_PATHWAY	34	IL8- and CXCR2-mediated signaling events	4	0.1176	1.486e-5	8.197e-4
+BIOCARTA_GRANULOCYTES_PATHWAY	14	Adhesion and Diapedesis of Granulocytes	3	0.2143	2.896e-5	0.001426
+BIOCARTA_TCYTOTOXIC_PATHWAY	14	T Cytotoxic Cell Surface Molecules	3	0.2143	2.896e-5	0.001426
+REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM	270	Genes involved in Cytokine Signaling in Immune system	8	0.02963	2.766e-5	0.001426
+HALLMARK_INFLAMMATORY_RESPONSE	200	Genes defining inflammatory response.	7	0.035	3.09e-5	0.00147
+KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY	137	Natural killer cell mediated cytotoxicity	6	0.0438	3.318e-5	0.001525
+REACTOME_INNATE_IMMUNE_SYSTEM	279	Genes involved in Innate Immune System	8	0.02867	3.489e-5	0.001552
+SA_MMP_CYTOKINE_CONNECTION	15	Cytokines can induce activation of matrix metalloproteinases, which degrade extracellular matrix.	3	0.2	3.608e-5	0.001555
+PID_THROMBIN_PAR1_PATHWAY	43	PAR1-mediated thrombin signaling events	4	0.09302	3.835e-5	0.001602
+BIOCARTA_PML_PATHWAY	17	Regulation of transcriptional activity by PML	3	0.1765	5.357e-5	0.002173
+REACTOME_PD1_SIGNALING	18	Genes involved in PD-1 signaling	3	0.1667	6.408e-5	0.002525
+KEGG_FC_GAMMA_R_MEDIATED_PHAGOCYTOSIS	97	Fc gamma R-mediated phagocytosis	5	0.05155	7.081e-5	0.002712
+REACTOME_DEFENSINS	51	Genes involved in Defensins	4	0.07843	7.556e-5	0.002816
+REACTOME_TCR_SIGNALING	54	Genes involved in TCR signaling	4	0.07407	9.464e-5	0.003435
+PID_IL12_2PATHWAY	63	IL12-mediated signaling events	4	0.06349	1.729e-4	0.006088
+PID_TOLL_ENDOGENOUS_PATHWAY	25	Endogenous TLR signaling	3	0.12	1.766e-4	0.006088
+REACTOME_INTERFERON_ALPHA_BETA_SIGNALING	64	Genes involved in Interferon alpha/beta signaling	4	0.0625	1.838e-4	0.006181
+REACTOME_GENERATION_OF_SECOND_MESSENGER_MOLECULES	27	Genes involved in Generation of second messenger molecules	3	0.1111	2.231e-4	0.007326
+REACTOME_DEGRADATION_OF_THE_EXTRACELLULAR_MATRIX	29	Genes involved in Degradation of the extracellular matrix	3	0.1034	2.769e-4	0.008882
+PID_ALPHA_SYNUCLEIN_PATHWAY	33	Alpha-synuclein signaling	3	0.09091	4.082e-4	0.01251
+REACTOME_LATENT_INFECTION_OF_HOMO_SAPIENS_WITH_MYCOBACTERIUM_TUBERCULOSIS	33	Genes involved in Latent infection of Homo sapiens with Mycobacterium tuberculosis	3	0.09091	4.082e-4	0.01251
+KEGG_PRIMARY_IMMUNODEFICIENCY	35	Primary immunodeficiency	3	0.08571	4.866e-4	0.01459
+PID_CMYB_PATHWAY	84	C-MYB transcription factor network	4	0.04762	5.213e-4	0.0153
+REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION	87	Genes involved in Extracellular matrix organization	4	0.04598	5.953e-4	0.0171
+KEGG_HEMATOPOIETIC_CELL_LINEAGE	88	Hematopoietic cell lineage	4	0.04545	6.216e-4	0.01749
+PID_UPA_UPAR_PATHWAY	42	Urokinase-type plasminogen activator (uPA) and uPAR-mediated signaling	3	0.07143	8.345e-4	0.02263
+REACTOME_TRAF6_MEDIATED_IRF7_ACTIVATION_IN_TLR7_8_OR_9_SIGNALING	10	Genes involved in TRAF6 mediated IRF7 activation in TLR7/8 or 9 signaling	2	0.2	8.37e-4	0.02263
+HALLMARK_INTERFERON_ALPHA_RESPONSE	97	Genes up-regulated in response to alpha interferon proteins.	4	0.04124	8.957e-4	0.02331
+REACTOME_PLC_BETA_MEDIATED_EVENTS	43	Genes involved in PLC beta mediated events	3	0.06977	8.942e-4	0.02331
+NABA_ECM_AFFILIATED	171	Genes encoding proteins affiliated structurally or functionally to extracellular matrix proteins	5	0.02924	9.726e-4	0.02484
+BIOCARTA_LYM_PATHWAY	11	Adhesion and Diapedesis of Lymphocytes	2	0.1818	0.00102	0.02512
+BIOCARTA_SET_PATHWAY	11	Granzyme A mediated Apoptosis Pathway	2	0.1818	0.00102	0.02512
+REACTOME_SIGNAL_REGULATORY_PROTEIN_SIRP_FAMILY_INTERACTIONS	12	Genes involved in Signal regulatory protein (SIRP) family interactions	2	0.1667	0.001221	0.02953
+KEGG_ENDOCYTOSIS	183	Endocytosis	5	0.02732	0.001314	0.0312
+KEGG_T_CELL_RECEPTOR_SIGNALING_PATHWAY	108	T cell receptor signaling pathway	4	0.03704	0.001335	0.0312
+BIOCARTA_D4GDI_PATHWAY	13	D4-GDI Signaling Pathway	2	0.1538	0.001438	0.03252
+BIOCARTA_AHSP_PATHWAY	13	Hemoglobin's Chaperone	2	0.1538	0.001438	0.03252
+REACTOME_SIGNALING_BY_RHO_GTPASES	113	Genes involved in Signaling by Rho GTPases	4	0.0354	0.001577	0.03507
+BIOCARTA_THELPER_PATHWAY	14	T Helper Cell Surface Molecules	2	0.1429	0.001673	0.03663
+PID_RAC1_PATHWAY	54	RAC1 signaling pathway	3	0.05556	0.001735	0.03738
+KEGG_LEUKOCYTE_TRANSENDOTHELIAL_MIGRATION	118	Leukocyte transendothelial migration	4	0.0339	0.001848	0.0392
+HALLMARK_IL2_STAT5_SIGNALING	200	Genes up-regulated by STAT5 in response to IL2 stimulation.	5	0.025	0.00194	0.04043
+REACTOME_CELL_CELL_COMMUNICATION	120	Genes involved in Cell-Cell communication	4	0.03333	0.001964	0.04043
+REACTOME_PHOSPHORYLATION_OF_CD3_AND_TCR_ZETA_CHAINS	16	Genes involved in Phosphorylation of CD3 and TCR zeta chains	2	0.125	0.002194	0.04384
+REACTOME_PLATELET_SENSITIZATION_BY_LDL	16	Genes involved in Platelet sensitization by LDL	2	0.125	0.002194	0.04384
+BIOCARTA_IL17_PATHWAY	17	IL 17 Signaling Pathway	2	0.1176	0.002479	0.04884
+PID_PDGFRB_PATHWAY	129	PDGFR-beta signaling pathway	4	0.03101	0.002554	0.04949
+REACTOME_SIGNALING_BY_GPCR	920	Genes involved in Signaling by GPCR	11	0.01196	0.002584	0.04949
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	REACTOME_IMMUNE_SYSTEM	HALLMARK_ALLOGRAFT_REJECTION	HALLMARK_COMPLEMENT	REACTOME_IMMUNOREGULATORY_INTERACTIONS_BETWEEN_A_LYMPHOID_AND_A_NON_LYMPHOID_CELL	REACTOME_HEMOSTASIS	HALLMARK_INTERFERON_GAMMA_RESPONSE	KEGG_CHEMOKINE_SIGNALING_PATHWAY	PID_CXCR4_PATHWAY	HALLMARK_HEME_METABOLISM	PID_CD8_TCR_PATHWAY	REACTOME_CELL_SURFACE_INTERACTIONS_AT_THE_VASCULAR_WALL	REACTOME_INTERFERON_GAMMA_SIGNALING	BIOCARTA_CTL_PATHWAY	KEGG_LEISHMANIA_INFECTION	REACTOME_ADAPTIVE_IMMUNE_SYSTEM	KEGG_CELL_ADHESION_MOLECULES_CAMS	PID_TXA2PATHWAY	PID_IL8_CXCR1_PATHWAY	REACTOME_INTERFERON_SIGNALING	NABA_MATRISOME_ASSOCIATED	PID_CD8_TCR_DOWNSTREAM_PATHWAY	PID_TCR_PATHWAY	BIOCARTA_MONOCYTE_PATHWAY	NABA_MATRISOME	PID_IL8_CXCR2_PATHWAY	BIOCARTA_GRANULOCYTES_PATHWAY	BIOCARTA_TCYTOTOXIC_PATHWAY	REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM	HALLMARK_INFLAMMATORY_RESPONSE	KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY	REACTOME_INNATE_IMMUNE_SYSTEM	SA_MMP_CYTOKINE_CONNECTION	PID_THROMBIN_PAR1_PATHWAY	BIOCARTA_PML_PATHWAY	REACTOME_PD1_SIGNALING	KEGG_FC_GAMMA_R_MEDIATED_PHAGOCYTOSIS	REACTOME_DEFENSINS	REACTOME_TCR_SIGNALING	PID_IL12_2PATHWAY	PID_TOLL_ENDOGENOUS_PATHWAY	REACTOME_INTERFERON_ALPHA_BETA_SIGNALING	REACTOME_GENERATION_OF_SECOND_MESSENGER_MOLECULES	REACTOME_DEGRADATION_OF_THE_EXTRACELLULAR_MATRIX	PID_ALPHA_SYNUCLEIN_PATHWAY	REACTOME_LATENT_INFECTION_OF_HOMO_SAPIENS_WITH_MYCOBACTERIUM_TUBERCULOSIS	KEGG_PRIMARY_IMMUNODEFICIENCY	PID_CMYB_PATHWAY	REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION	KEGG_HEMATOPOIETIC_CELL_LINEAGE	PID_UPA_UPAR_PATHWAY	REACTOME_TRAF6_MEDIATED_IRF7_ACTIVATION_IN_TLR7_8_OR_9_SIGNALING	HALLMARK_INTERFERON_ALPHA_RESPONSE	REACTOME_PLC_BETA_MEDIATED_EVENTS	NABA_ECM_AFFILIATED	BIOCARTA_LYM_PATHWAY	BIOCARTA_SET_PATHWAY	REACTOME_SIGNAL_REGULATORY_PROTEIN_SIRP_FAMILY_INTERACTIONS	KEGG_ENDOCYTOSIS	KEGG_T_CELL_RECEPTOR_SIGNALING_PATHWAY	BIOCARTA_D4GDI_PATHWAY	BIOCARTA_AHSP_PATHWAY	REACTOME_SIGNALING_BY_RHO_GTPASES	BIOCARTA_THELPER_PATHWAY	PID_RAC1_PATHWAY	KEGG_LEUKOCYTE_TRANSENDOTHELIAL_MIGRATION	HALLMARK_IL2_STAT5_SIGNALING	REACTOME_CELL_CELL_COMMUNICATION	REACTOME_PHOSPHORYLATION_OF_CD3_AND_TCR_ZETA_CHAINS	REACTOME_PLATELET_SENSITIZATION_BY_LDL	BIOCARTA_IL17_PATHWAY	PID_PDGFRB_PATHWAY	REACTOME_SIGNALING_BY_GPCR
+3665	IRF7	interferon regulatory factor 7	REACTOME_IMMUNE_SYSTEM	HALLMARK_ALLOGRAFT_REJECTION	HALLMARK_COMPLEMENT		REACTOME_HEMOSTASIS	HALLMARK_INTERFERON_GAMMA_RESPONSE						REACTOME_INTERFERON_GAMMA_SIGNALING							REACTOME_INTERFERON_SIGNALING									REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM	HALLMARK_INFLAMMATORY_RESPONSE		REACTOME_INNATE_IMMUNE_SYSTEM										REACTOME_INTERFERON_ALPHA_BETA_SIGNALING										REACTOME_TRAF6_MEDIATED_IRF7_ACTIVATION_IN_TLR7_8_OR_9_SIGNALING	HALLMARK_INTERFERON_ALPHA_RESPONSE																				
+7454	WAS	Wiskott-Aldrich syndrome	REACTOME_IMMUNE_SYSTEM	HALLMARK_ALLOGRAFT_REJECTION	HALLMARK_COMPLEMENT				KEGG_CHEMOKINE_SIGNALING_PATHWAY								REACTOME_ADAPTIVE_IMMUNE_SYSTEM							PID_TCR_PATHWAY														KEGG_FC_GAMMA_R_MEDIATED_PHAGOCYTOSIS		REACTOME_TCR_SIGNALING				REACTOME_GENERATION_OF_SECOND_MESSENGER_MOLECULES																														
+3683	ITGAL	integrin subunit alpha L	REACTOME_IMMUNE_SYSTEM	HALLMARK_ALLOGRAFT_REJECTION		REACTOME_IMMUNOREGULATORY_INTERACTIONS_BETWEEN_A_LYMPHOID_AND_A_NON_LYMPHOID_CELL	REACTOME_HEMOSTASIS						REACTOME_CELL_SURFACE_INTERACTIONS_AT_THE_VASCULAR_WALL		BIOCARTA_CTL_PATHWAY		REACTOME_ADAPTIVE_IMMUNE_SYSTEM	KEGG_CELL_ADHESION_MOLECULES_CAMS							BIOCARTA_MONOCYTE_PATHWAY			BIOCARTA_GRANULOCYTES_PATHWAY	BIOCARTA_TCYTOTOXIC_PATHWAY			KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY																									BIOCARTA_LYM_PATHWAY								BIOCARTA_THELPER_PATHWAY		KEGG_LEUKOCYTE_TRANSENDOTHELIAL_MIGRATION							
+916	CD3E	CD3e molecule	REACTOME_IMMUNE_SYSTEM	HALLMARK_ALLOGRAFT_REJECTION		REACTOME_IMMUNOREGULATORY_INTERACTIONS_BETWEEN_A_LYMPHOID_AND_A_NON_LYMPHOID_CELL				PID_CXCR4_PATHWAY		PID_CD8_TCR_PATHWAY			BIOCARTA_CTL_PATHWAY		REACTOME_ADAPTIVE_IMMUNE_SYSTEM						PID_CD8_TCR_DOWNSTREAM_PATHWAY	PID_TCR_PATHWAY					BIOCARTA_TCYTOTOXIC_PATHWAY								REACTOME_PD1_SIGNALING			REACTOME_TCR_SIGNALING	PID_IL12_2PATHWAY			REACTOME_GENERATION_OF_SECOND_MESSENGER_MOLECULES				KEGG_PRIMARY_IMMUNODEFICIENCY			KEGG_HEMATOPOIETIC_CELL_LINEAGE										KEGG_T_CELL_RECEPTOR_SIGNALING_PATHWAY				BIOCARTA_THELPER_PATHWAY					REACTOME_PHOSPHORYLATION_OF_CD3_AND_TCR_ZETA_CHAINS		BIOCARTA_IL17_PATHWAY		
+925	CD8A	CD8a molecule	REACTOME_IMMUNE_SYSTEM	HALLMARK_ALLOGRAFT_REJECTION		REACTOME_IMMUNOREGULATORY_INTERACTIONS_BETWEEN_A_LYMPHOID_AND_A_NON_LYMPHOID_CELL						PID_CD8_TCR_PATHWAY					REACTOME_ADAPTIVE_IMMUNE_SYSTEM	KEGG_CELL_ADHESION_MOLECULES_CAMS					PID_CD8_TCR_DOWNSTREAM_PATHWAY						BIOCARTA_TCYTOTOXIC_PATHWAY												PID_IL12_2PATHWAY							KEGG_PRIMARY_IMMUNODEFICIENCY			KEGG_HEMATOPOIETIC_CELL_LINEAGE										KEGG_T_CELL_RECEPTOR_SIGNALING_PATHWAY											BIOCARTA_IL17_PATHWAY		
+926	CD8B	CD8b molecule	REACTOME_IMMUNE_SYSTEM	HALLMARK_ALLOGRAFT_REJECTION		REACTOME_IMMUNOREGULATORY_INTERACTIONS_BETWEEN_A_LYMPHOID_AND_A_NON_LYMPHOID_CELL						PID_CD8_TCR_PATHWAY					REACTOME_ADAPTIVE_IMMUNE_SYSTEM	KEGG_CELL_ADHESION_MOLECULES_CAMS					PID_CD8_TCR_DOWNSTREAM_PATHWAY																		PID_IL12_2PATHWAY							KEGG_PRIMARY_IMMUNODEFICIENCY			KEGG_HEMATOPOIETIC_CELL_LINEAGE										KEGG_T_CELL_RECEPTOR_SIGNALING_PATHWAY													
+5777	PTPN6	protein tyrosine phosphatase, non-receptor type 6	REACTOME_IMMUNE_SYSTEM	HALLMARK_ALLOGRAFT_REJECTION			REACTOME_HEMOSTASIS	HALLMARK_INTERFERON_GAMMA_RESPONSE		PID_CXCR4_PATHWAY		PID_CD8_TCR_PATHWAY	REACTOME_CELL_SURFACE_INTERACTIONS_AT_THE_VASCULAR_WALL	REACTOME_INTERFERON_GAMMA_SIGNALING		KEGG_LEISHMANIA_INFECTION	REACTOME_ADAPTIVE_IMMUNE_SYSTEM				REACTOME_INTERFERON_SIGNALING			PID_TCR_PATHWAY						REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM		KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY					REACTOME_PD1_SIGNALING						REACTOME_INTERFERON_ALPHA_BETA_SIGNALING																REACTOME_SIGNAL_REGULATORY_PROTEIN_SIRP_FAMILY_INTERACTIONS		KEGG_T_CELL_RECEPTOR_SIGNALING_PATHWAY								REACTOME_CELL_CELL_COMMUNICATION		REACTOME_PLATELET_SENSITIZATION_BY_LDL			
+1445	CSK	C-terminal Src kinase	REACTOME_IMMUNE_SYSTEM	HALLMARK_ALLOGRAFT_REJECTION			REACTOME_HEMOSTASIS		KEGG_CHEMOKINE_SIGNALING_PATHWAY	PID_CXCR4_PATHWAY		PID_CD8_TCR_PATHWAY					REACTOME_ADAPTIVE_IMMUNE_SYSTEM							PID_TCR_PATHWAY													REACTOME_PD1_SIGNALING			REACTOME_TCR_SIGNALING																														REACTOME_PHOSPHORYLATION_OF_CD3_AND_TCR_ZETA_CHAINS			PID_PDGFRB_PATHWAY	
+5580	PRKCD	protein kinase C delta	REACTOME_IMMUNE_SYSTEM		HALLMARK_COMPLEMENT		REACTOME_HEMOSTASIS		KEGG_CHEMOKINE_SIGNALING_PATHWAY					REACTOME_INTERFERON_GAMMA_SIGNALING					PID_TXA2PATHWAY		REACTOME_INTERFERON_SIGNALING									REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM					PID_THROMBIN_PAR1_PATHWAY			KEGG_FC_GAMMA_R_MEDIATED_PHAGOCYTOSIS								PID_ALPHA_SYNUCLEIN_PATHWAY									REACTOME_PLC_BETA_MEDIATED_EVENTS																		PID_PDGFRB_PATHWAY	REACTOME_SIGNALING_BY_GPCR
+6283	S100A12	S100 calcium binding protein A12	REACTOME_IMMUNE_SYSTEM		HALLMARK_COMPLEMENT																	NABA_MATRISOME_ASSOCIATED				NABA_MATRISOME							REACTOME_INNATE_IMMUNE_SYSTEM																																									
+6402	SELL	selectin L	REACTOME_IMMUNE_SYSTEM			REACTOME_IMMUNOREGULATORY_INTERACTIONS_BETWEEN_A_LYMPHOID_AND_A_NON_LYMPHOID_CELL	REACTOME_HEMOSTASIS						REACTOME_CELL_SURFACE_INTERACTIONS_AT_THE_VASCULAR_WALL				REACTOME_ADAPTIVE_IMMUNE_SYSTEM	KEGG_CELL_ADHESION_MOLECULES_CAMS							BIOCARTA_MONOCYTE_PATHWAY			BIOCARTA_GRANULOCYTES_PATHWAY			HALLMARK_INFLAMMATORY_RESPONSE			SA_MMP_CYTOKINE_CONNECTION																				HALLMARK_INTERFERON_ALPHA_RESPONSE			BIOCARTA_LYM_PATHWAY											HALLMARK_IL2_STAT5_SIGNALING						
+11025	LILRB3	leukocyte immunoglobulin like receptor B3	REACTOME_IMMUNE_SYSTEM			REACTOME_IMMUNOREGULATORY_INTERACTIONS_BETWEEN_A_LYMPHOID_AND_A_NON_LYMPHOID_CELL											REACTOME_ADAPTIVE_IMMUNE_SYSTEM																																																									
+10288	LILRB2	leukocyte immunoglobulin like receptor B2	REACTOME_IMMUNE_SYSTEM			REACTOME_IMMUNOREGULATORY_INTERACTIONS_BETWEEN_A_LYMPHOID_AND_A_NON_LYMPHOID_CELL											REACTOME_ADAPTIVE_IMMUNE_SYSTEM																																																									
+10859	LILRB1	leukocyte immunoglobulin like receptor B1	REACTOME_IMMUNE_SYSTEM			REACTOME_IMMUNOREGULATORY_INTERACTIONS_BETWEEN_A_LYMPHOID_AND_A_NON_LYMPHOID_CELL											REACTOME_ADAPTIVE_IMMUNE_SYSTEM																																																									
+11024	LILRA1	leukocyte immunoglobulin like receptor A1	REACTOME_IMMUNE_SYSTEM			REACTOME_IMMUNOREGULATORY_INTERACTIONS_BETWEEN_A_LYMPHOID_AND_A_NON_LYMPHOID_CELL											REACTOME_ADAPTIVE_IMMUNE_SYSTEM																																																									
+4940	OAS3	2'-5'-oligoadenylate synthetase 3	REACTOME_IMMUNE_SYSTEM					HALLMARK_INTERFERON_GAMMA_RESPONSE						REACTOME_INTERFERON_GAMMA_SIGNALING							REACTOME_INTERFERON_SIGNALING									REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM													REACTOME_INTERFERON_ALPHA_BETA_SIGNALING																															
+3663	IRF5	interferon regulatory factor 5	REACTOME_IMMUNE_SYSTEM					HALLMARK_INTERFERON_GAMMA_RESPONSE						REACTOME_INTERFERON_GAMMA_SIGNALING							REACTOME_INTERFERON_SIGNALING									REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM													REACTOME_INTERFERON_ALPHA_BETA_SIGNALING																															
+4615	MYD88	MYD88, innate immune signal transduction adaptor	REACTOME_IMMUNE_SYSTEM					HALLMARK_INTERFERON_GAMMA_RESPONSE								KEGG_LEISHMANIA_INFECTION														REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM			REACTOME_INNATE_IMMUNE_SYSTEM									PID_TOLL_ENDOGENOUS_PATHWAY											REACTOME_TRAF6_MEDIATED_IRF7_ACTIVATION_IN_TLR7_8_OR_9_SIGNALING																					
+115362	GBP5	guanylate binding protein 5	REACTOME_IMMUNE_SYSTEM											REACTOME_INTERFERON_GAMMA_SIGNALING							REACTOME_INTERFERON_SIGNALING									REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM																																												
+7408	VASP	vasodilator stimulated phosphoprotein	REACTOME_IMMUNE_SYSTEM														REACTOME_ADAPTIVE_IMMUNE_SYSTEM										PID_IL8_CXCR2_PATHWAY								PID_THROMBIN_PAR1_PATHWAY			KEGG_FC_GAMMA_R_MEDIATED_PHAGOCYTOSIS		REACTOME_TCR_SIGNALING				REACTOME_GENERATION_OF_SECOND_MESSENGER_MOLECULES																							KEGG_LEUKOCYTE_TRANSENDOTHELIAL_MIGRATION		REACTOME_CELL_CELL_COMMUNICATION					
+8021	NUP214	nucleoporin 214	REACTOME_IMMUNE_SYSTEM																		REACTOME_INTERFERON_SIGNALING									REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM																																												
+4210	MEFV	MEFV, pyrin innate immunity regulator	REACTOME_IMMUNE_SYSTEM																												HALLMARK_INFLAMMATORY_RESPONSE		REACTOME_INNATE_IMMUNE_SYSTEM																																									
+1669	DEFA4	defensin alpha 4	REACTOME_IMMUNE_SYSTEM																														REACTOME_INNATE_IMMUNE_SYSTEM						REACTOME_DEFENSINS																																			
+1668	DEFA3	defensin alpha 3	REACTOME_IMMUNE_SYSTEM																														REACTOME_INNATE_IMMUNE_SYSTEM						REACTOME_DEFENSINS																																			
+728358	DEFA1B	defensin alpha 1B	REACTOME_IMMUNE_SYSTEM																														REACTOME_INNATE_IMMUNE_SYSTEM						REACTOME_DEFENSINS																																			
+1667	DEFA1	defensin alpha 1	REACTOME_IMMUNE_SYSTEM																														REACTOME_INNATE_IMMUNE_SYSTEM						REACTOME_DEFENSINS																																			
+3002	GZMB	granzyme B		HALLMARK_ALLOGRAFT_REJECTION	HALLMARK_COMPLEMENT										BIOCARTA_CTL_PATHWAY								PID_CD8_TCR_DOWNSTREAM_PATHWAY									KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY									PID_IL12_2PATHWAY																	BIOCARTA_SET_PATHWAY				BIOCARTA_D4GDI_PATHWAY												
+2268	FGR	FGR proto-oncogene, Src family tyrosine kinase		HALLMARK_ALLOGRAFT_REJECTION			REACTOME_HEMOSTASIS		KEGG_CHEMOKINE_SIGNALING_PATHWAY	PID_CXCR4_PATHWAY									PID_TXA2PATHWAY	PID_IL8_CXCR1_PATHWAY							PID_IL8_CXCR2_PATHWAY																			PID_ALPHA_SYNUCLEIN_PATHWAY																									REACTOME_PLATELET_SENSITIZATION_BY_LDL		PID_PDGFRB_PATHWAY	
+7453	WARS	tryptophanyl-tRNA synthetase		HALLMARK_ALLOGRAFT_REJECTION				HALLMARK_INTERFERON_GAMMA_RESPONSE																																														HALLMARK_INTERFERON_ALPHA_RESPONSE																				
+5551	PRF1	perforin 1		HALLMARK_ALLOGRAFT_REJECTION								PID_CD8_TCR_PATHWAY			BIOCARTA_CTL_PATHWAY								PID_CD8_TCR_DOWNSTREAM_PATHWAY									KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY																										BIOCARTA_SET_PATHWAY				BIOCARTA_D4GDI_PATHWAY												
+1991	ELANE	elastase, neutrophil expressed		HALLMARK_ALLOGRAFT_REJECTION																		NABA_MATRISOME_ASSOCIATED				NABA_MATRISOME																			REACTOME_DEGRADATION_OF_THE_EXTRACELLULAR_MATRIX				PID_CMYB_PATHWAY	REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION		PID_UPA_UPAR_PATHWAY																						
+5199	CFP	complement factor properdin		HALLMARK_ALLOGRAFT_REJECTION																																																																						
+3684	ITGAM	integrin subunit alpha M			HALLMARK_COMPLEMENT		REACTOME_HEMOSTASIS						REACTOME_CELL_SURFACE_INTERACTIONS_AT_THE_VASCULAR_WALL			KEGG_LEISHMANIA_INFECTION		KEGG_CELL_ADHESION_MOLECULES_CAMS							BIOCARTA_MONOCYTE_PATHWAY			BIOCARTA_GRANULOCYTES_PATHWAY																							KEGG_HEMATOPOIETIC_CELL_LINEAGE	PID_UPA_UPAR_PATHWAY															KEGG_LEUKOCYTE_TRANSENDOTHELIAL_MIGRATION							
+391	RHOG	ras homolog family member G			HALLMARK_COMPLEMENT		REACTOME_HEMOSTASIS																								HALLMARK_INFLAMMATORY_RESPONSE																																	REACTOME_SIGNALING_BY_RHO_GTPASES										REACTOME_SIGNALING_BY_GPCR
+6280	S100A9	S100 calcium binding protein A9			HALLMARK_COMPLEMENT																	NABA_MATRISOME_ASSOCIATED				NABA_MATRISOME																PID_TOLL_ENDOGENOUS_PATHWAY																																
+4317	MMP8	matrix metallopeptidase 8			HALLMARK_COMPLEMENT																	NABA_MATRISOME_ASSOCIATED				NABA_MATRISOME																			REACTOME_DEGRADATION_OF_THE_EXTRACELLULAR_MATRIX					REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION																								
+2219	FCN1	ficolin 1			HALLMARK_COMPLEMENT																	NABA_MATRISOME_ASSOCIATED				NABA_MATRISOME																														NABA_ECM_AFFILIATED																		
+4057	LTF	lactotransferrin			HALLMARK_COMPLEMENT																																										REACTOME_LATENT_INFECTION_OF_HOMO_SAPIENS_WITH_MYCOBACTERIUM_TUBERCULOSIS																											
+4048	LTA4H	leukotriene A4 hydrolase			HALLMARK_COMPLEMENT																																																																					
+978	CDA	cytidine deaminase			HALLMARK_COMPLEMENT																																																																					
+409	ARRB2	arrestin beta 2					REACTOME_HEMOSTASIS		KEGG_CHEMOKINE_SIGNALING_PATHWAY	PID_CXCR4_PATHWAY									PID_TXA2PATHWAY	PID_IL8_CXCR1_PATHWAY							PID_IL8_CXCR2_PATHWAY																																	KEGG_ENDOCYTOSIS														
+4778	NFE2	nuclear factor, erythroid 2					REACTOME_HEMOSTASIS				HALLMARK_HEME_METABOLISM																																																															
+3045	HBD	hemoglobin subunit delta					REACTOME_HEMOSTASIS				HALLMARK_HEME_METABOLISM																																																															
+6693	SPN	sialophorin					REACTOME_HEMOSTASIS						REACTOME_CELL_SURFACE_INTERACTIONS_AT_THE_VASCULAR_WALL					KEGG_CELL_ADHESION_MOLECULES_CAMS																SA_MMP_CYTOKINE_CONNECTION																																								
+9056	SLC7A7	solute carrier family 7 member 7					REACTOME_HEMOSTASIS						REACTOME_CELL_SURFACE_INTERACTIONS_AT_THE_VASCULAR_WALL																																																													
+9046	DOK2	docking protein 2					REACTOME_HEMOSTASIS						REACTOME_CELL_SURFACE_INTERACTIONS_AT_THE_VASCULAR_WALL																																																													
+5023	P2RX1	purinergic receptor P2X 1					REACTOME_HEMOSTASIS																																																																			
+3048	HBG2	hemoglobin subunit gamma 2					REACTOME_HEMOSTASIS																																																																			
+10875	FGL2	fibrinogen like 2						HALLMARK_INTERFERON_GAMMA_RESPONSE																		NABA_MATRISOME																																										HALLMARK_IL2_STAT5_SIGNALING						
+3587	IL10RA	interleukin 10 receptor subunit alpha						HALLMARK_INTERFERON_GAMMA_RESPONSE																							HALLMARK_INFLAMMATORY_RESPONSE																																					HALLMARK_IL2_STAT5_SIGNALING						
+3431	SP110	SP110 nuclear body protein						HALLMARK_INTERFERON_GAMMA_RESPONSE																																														HALLMARK_INTERFERON_ALPHA_RESPONSE																				
+57823	SLAMF7	SLAM family member 7						HALLMARK_INTERFERON_GAMMA_RESPONSE																																																																		
+6398	SECTM1	secreted and transmembrane 1						HALLMARK_INTERFERON_GAMMA_RESPONSE																																																																		
+5330	PLCB2	phospholipase C beta 2							KEGG_CHEMOKINE_SIGNALING_PATHWAY	PID_CXCR4_PATHWAY									PID_TXA2PATHWAY	PID_IL8_CXCR1_PATHWAY							PID_IL8_CXCR2_PATHWAY								PID_THROMBIN_PAR1_PATHWAY											PID_ALPHA_SYNUCLEIN_PATHWAY									REACTOME_PLC_BETA_MEDIATED_EVENTS											PID_RAC1_PATHWAY								REACTOME_SIGNALING_BY_GPCR
+NA	ADRBK1	NA							KEGG_CHEMOKINE_SIGNALING_PATHWAY	PID_CXCR4_PATHWAY									PID_TXA2PATHWAY	PID_IL8_CXCR1_PATHWAY																																			REACTOME_PLC_BETA_MEDIATED_EVENTS					KEGG_ENDOCYTOSIS														REACTOME_SIGNALING_BY_GPCR
+2870	GRK6	G protein-coupled receptor kinase 6							KEGG_CHEMOKINE_SIGNALING_PATHWAY	PID_CXCR4_PATHWAY																																																		KEGG_ENDOCYTOSIS														
+653361	NCF1	neutrophil cytosolic factor 1							KEGG_CHEMOKINE_SIGNALING_PATHWAY							KEGG_LEISHMANIA_INFECTION																						KEGG_FC_GAMMA_R_MEDIATED_PHAGOCYTOSIS																												PID_RAC1_PATHWAY	KEGG_LEUKOCYTE_TRANSENDOTHELIAL_MIGRATION							
+1524	CX3CR1	C-X3-C motif chemokine receptor 1							KEGG_CHEMOKINE_SIGNALING_PATHWAY																																																																	REACTOME_SIGNALING_BY_GPCR
+759	CA1	carbonic anhydrase 1									HALLMARK_HEME_METABOLISM																																						PID_CMYB_PATHWAY																									
+212	ALAS2	5'-aminolevulinate synthase 2									HALLMARK_HEME_METABOLISM																																																				BIOCARTA_AHSP_PATHWAY											
+51327	AHSP	alpha hemoglobin stabilizing protein									HALLMARK_HEME_METABOLISM																																																				BIOCARTA_AHSP_PATHWAY											
+6521	SLC4A1	solute carrier family 4 member 1 (Diego blood group)									HALLMARK_HEME_METABOLISM																																																															
+51092	SIDT2	SID1 transmembrane family member 2									HALLMARK_HEME_METABOLISM																																																															
+51274	KLF3	Kruppel like factor 3									HALLMARK_HEME_METABOLISM																																																															
+2994	GYPB	glycophorin B (MNS blood group)									HALLMARK_HEME_METABOLISM																																																															
+2038	EPB42	erythrocyte membrane protein band 4.2									HALLMARK_HEME_METABOLISM																																																															
+2215	FCGR3B	Fc fragment of IgG receptor IIIb														KEGG_LEISHMANIA_INFECTION																KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY																																										
+9103	FCGR2C	Fc fragment of IgG receptor IIc (gene/pseudogene)														KEGG_LEISHMANIA_INFECTION																						KEGG_FC_GAMMA_R_MEDIATED_PHAGOCYTOSIS																																				
+923	CD6	CD6 molecule																KEGG_CELL_ADHESION_MOLECULES_CAMS																																																								
+6279	S100A8	S100 calcium binding protein A8																				NABA_MATRISOME_ASSOCIATED				NABA_MATRISOME																PID_TOLL_ENDOGENOUS_PATHWAY																																
+1511	CTSG	cathepsin G																				NABA_MATRISOME_ASSOCIATED				NABA_MATRISOME																			REACTOME_DEGRADATION_OF_THE_EXTRACELLULAR_MATRIX					REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION		PID_UPA_UPAR_PATHWAY																						
+64218	SEMA4A	semaphorin 4A																				NABA_MATRISOME_ASSOCIATED				NABA_MATRISOME																														NABA_ECM_AFFILIATED																		
+3957	LGALS2	galectin 2																				NABA_MATRISOME_ASSOCIATED				NABA_MATRISOME																														NABA_ECM_AFFILIATED																		
+26253	CLEC4E	C-type lectin domain family 4 member E																				NABA_MATRISOME_ASSOCIATED				NABA_MATRISOME																														NABA_ECM_AFFILIATED																		
+160364	CLEC12A	C-type lectin domain family 12 member A																				NABA_MATRISOME_ASSOCIATED				NABA_MATRISOME																														NABA_ECM_AFFILIATED																		
+8530	CST7	cystatin F																				NABA_MATRISOME_ASSOCIATED				NABA_MATRISOME																																										HALLMARK_IL2_STAT5_SIGNALING						
+6286	S100P	S100 calcium binding protein P																				NABA_MATRISOME_ASSOCIATED				NABA_MATRISOME																																																
+83888	FGFBP2	fibroblast growth factor binding protein 2																				NABA_MATRISOME_ASSOCIATED				NABA_MATRISOME																																																
+6452	SH3BP2	SH3 domain binding protein 2																						PID_TCR_PATHWAY								KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY																																										
+1308	COL17A1	collagen type XVII alpha 1 chain																								NABA_MATRISOME																								REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION																			REACTOME_CELL_CELL_COMMUNICATION					
+7133	TNFRSF1B	TNF receptor superfamily member 1B																													HALLMARK_INFLAMMATORY_RESPONSE			SA_MMP_CYTOKINE_CONNECTION		BIOCARTA_PML_PATHWAY																																HALLMARK_IL2_STAT5_SIGNALING						
+728	C5AR1	complement C5a receptor 1																													HALLMARK_INFLAMMATORY_RESPONSE																																											REACTOME_SIGNALING_BY_GPCR
+5585	PKN1	protein kinase N1																																	PID_THROMBIN_PAR1_PATHWAY																																							
+5914	RARA	retinoic acid receptor alpha																																		BIOCARTA_PML_PATHWAY																																						
+84106	PRAM1	PML-RARA regulated adaptor molecule 1																																		BIOCARTA_PML_PATHWAY																																						
+820	CAMP	cathelicidin antimicrobial peptide																																													REACTOME_LATENT_INFECTION_OF_HOMO_SAPIENS_WITH_MYCOBACTERIUM_TUBERCULOSIS																											
+527	ATP6V0C	ATPase H+ transporting V0 subunit c																																													REACTOME_LATENT_INFECTION_OF_HOMO_SAPIENS_WITH_MYCOBACTERIUM_TUBERCULOSIS																											
+5657	PRTN3	proteinase 3																																															PID_CMYB_PATHWAY																									
+4353	MPO	myeloperoxidase																																															PID_CMYB_PATHWAY																									
+10326	SIRPB1	signal regulatory protein beta 1																																																									REACTOME_SIGNAL_REGULATORY_PROTEIN_SIRP_FAMILY_INTERACTIONS										REACTOME_CELL_CELL_COMMUNICATION					
+116985	ARAP1	ArfGAP with RhoGAP domain, ankyrin repeat and PH domain 1																																																										KEGG_ENDOCYTOSIS				REACTOME_SIGNALING_BY_RHO_GTPASES									PID_PDGFRB_PATHWAY	
+64744	SMAP2	small ArfGAP2																																																										KEGG_ENDOCYTOSIS														
+221472	FGD2	FYVE, RhoGEF and PH domain containing 2																																																														REACTOME_SIGNALING_BY_RHO_GTPASES										REACTOME_SIGNALING_BY_GPCR
+51291	GMIP	GEM interacting protein																																																														REACTOME_SIGNALING_BY_RHO_GTPASES										
+4296	MAP3K11	mitogen-activated protein kinase kinase kinase 11																																																																PID_RAC1_PATHWAY								
+8698	S1PR4	sphingosine-1-phosphate receptor 4																																																																								REACTOME_SIGNALING_BY_GPCR
+10287	RGS19	regulator of G protein signaling 19																																																																								REACTOME_SIGNALING_BY_GPCR
+53829	P2RY13	purinergic receptor P2Y13																																																																								REACTOME_SIGNALING_BY_GPCR
+151306	GPBAR1	G protein-coupled bile acid receptor 1																																																																								REACTOME_SIGNALING_BY_GPCR
+25946	ZNF385A	zinc finger protein 385A																																																																								
+51043	ZBTB7B	zinc finger and BTB domain containing 7B																																																																								
+284415	VSTM1	V-set and transmembrane domain containing 1																																																																								
+9094	UNC119	unc-119 lipid binding chaperone																																																																								
+199746	U2AF1L4	U2 small nuclear RNA auxiliary factor 1 like 4																																																																								
+10077	TSPAN32	tetraspanin 32																																																																								
+147138	TMC8	transmembrane channel like 8																																																																								
+6934	TCF7L2	transcription factor 7 like 2																																																																								
+55357	TBC1D2	TBC1 domain family member 2																																																																								
+8676	STX11	syntaxin 11																																																																								
+11182	SLC2A6	solute carrier family 2 member 6																																																																								
+27180	SIGLEC9	sialic acid binding Ig like lectin 9																																																																								
+8778	SIGLEC5	sialic acid binding Ig like lectin 5																																																																								
+100049587	SIGLEC14	sialic acid binding Ig like lectin 14																																																																								
+89790	SIGLEC10	sialic acid binding Ig like lectin 10																																																																								
+92799	SHKBP1	SH3KBP1 binding protein 1																																																																								
+23616	SH3BP1	SH3 domain binding protein 1																																																																								
+9997	SCO2	SCO2, cytochrome c oxidase assembly protein																																																																								
+79641	ROGDI	rogdi atypical leucine zipper																																																																								
+115992	RNF166	ring finger protein 166																																																																								
+6037	RNASE3	ribonuclease A family member 3																																																																								
+6036	RNASE2	ribonuclease A family member 2																																																																								
+79890	RIN3	Ras and Rab interactor 3																																																																								
+79651	RHBDF2	rhomboid 5 homolog 2																																																																								
+266747	RGL4	ral guanine nucleotide dissociation stimulator like 4																																																																								
+56729	RETN	resistin																																																																								
+84957	RELT	RELT, TNF receptor																																																																								
+115727	RASGRP4	RAS guanyl releasing protein 4																																																																								
+26469	PTPN18	protein tyrosine phosphatase, non-receptor type 18																																																																								
+9050	PSTPIP2	proline-serine-threonine phosphatase interacting protein 2																																																																								
+400668	PRSS57	serine protease 57																																																																								
+5452	POU2F2	POU class 2 homeobox 2																																																																								
+51316	PLAC8	placenta specific 8																																																																								
+29992	PILRA	paired immunoglobin like type 2 receptor alpha																																																																								
+8993	PGLYRP1	peptidoglycan recognition protein 1																																																																								
+23569	PADI4	peptidyl arginine deiminase 4																																																																								
+126014	OSCAR	osteoclast associated, immunoglobulin-like receptor																																																																								
+440836	ODF3B	outer dense fiber of sperm tails 3B																																																																								
+4818	NKG7	natural killer cell granule protein 7																																																																								
+150372	NFAM1	NFAT activating protein with ITAM motif 1																																																																								
+654817	NCF1C	neutrophil cytosolic factor 1C pseudogene																																																																								
+654816	NCF1B	neutrophil cytosolic factor 1B pseudogene																																																																								
+8775	NAPA	NSF attachment protein alpha																																																																								
+65220	NADK	NAD kinase																																																																								
+64005	MYO1G	myosin IG																																																																								
+4542	MYO1F	myosin IF																																																																								
+932	MS4A3	membrane spanning 4-domains A3																																																																								
+84689	MS4A14	membrane spanning 4-domains A14																																																																								
+219972	MPEG1	macrophage expressed 1																																																																								
+126308	MOB3A	MOB kinase activator 3A																																																																								
+4332	MNDA	myeloid cell nuclear differentiation antigen																																																																								
+406934	MIR142	microRNA 142																																																																								
+4066	LYL1	LYL1, basic helix-loop-helix family member																																																																								
+7940	LST1	leukocyte specific transcript 1																																																																								
+126364	LRRC25	leucine rich repeat containing 25																																																																								
+79168	LILRA6	leukocyte immunoglobulin like receptor A6																																																																								
+353514	LILRA5	leukocyte immunoglobulin like receptor A5																																																																								
+11027	LILRA2	leukocyte immunoglobulin like receptor A2																																																																								
+3934	LCN2	lipocalin 2																																																																								
+10365	KLF2	Kruppel like factor 2																																																																								
+23765	IL17RA	interleukin 17 receptor A																																																																								
+10320	IKZF1	IKAROS family zinc finger 1																																																																								
+84329	HVCN1	hydrogen voltage gated channel 1																																																																								
+3311	HSPA7	heat shock protein family A (Hsp70) member 7																																																																								
+84941	HSH2D	hematopoietic SH2 domain containing																																																																								
+3101	HK3	hexokinase 3																																																																								
+3042	HBM	hemoglobin subunit mu																																																																								
+3047	HBG1	hemoglobin subunit gamma 1																																																																								
+2999	GZMH	granzyme H																																																																								
+202309	GAPT	GRB2 binding adaptor protein, transmembrane																																																																								
+2204	FCAR	Fc fragment of IgA receptor																																																																								
+NA	FAM26F	NA																																																																								
+2124	EVI2B	ecotropic viral integration site 2B																																																																								
+8525	DGKZ	diacylglycerol kinase zeta																																																																								
+162989	DEDD2	death effector domain containing 2																																																																								
+3580	CXCR2P1	C-X-C motif chemokine receptor 2 pseudogene 1																																																																								
+1523	CUX1	cut like homeobox 1																																																																								
+200186	CRTC2	CREB regulated transcription coactivator 2																																																																								
+23406	COTL1	coactosin like F-actin binding protein 1																																																																								
+163732	CITED4	Cbp/p300 interacting transactivator with Glu/Asp rich carboxy-terminal domain 4																																																																								
+NA	CECR1	NA																																																																								
+1088	CEACAM8	carcinoembryonic antigen related cell adhesion molecule 8																																																																								
+1084	CEACAM3	carcinoembryonic antigen related cell adhesion molecule 3																																																																								
+146722	CD300LF	CD300 molecule like family member f																																																																								
+342510	CD300E	CD300e molecule																																																																								
+10871	CD300C	CD300c molecule																																																																								
+57126	CD177	CD177 molecule																																																																								
+283234	CCDC88B	coiled-coil domain containing 88B																																																																								
+9854	C2CD2L	C2CD2 like																																																																								
+NA	C1orf228	NA																																																																								
+128346	C1orf162	chromosome 1 open reading frame 162																																																																								
+255809	C19orf38	chromosome 19 open reading frame 38																																																																								
+56905	C15orf39	chromosome 15 open reading frame 39																																																																								
+29125	C11orf21	chromosome 11 open reading frame 21																																																																								
+NA	C10orf54	NA																																																																								
+671	BPI	bactericidal permeability increasing protein																																																																								
+566	AZU1	azurocidin 1																																																																								
+201176	ARHGAP27	Rho GTPase activating protein 27																																																																								
+200315	APOBEC3A	apolipoprotein B mRNA editing enzyme catalytic subunit 3A																																																																								
+313	AOAH	acyloxyacyl hydrolase																																																																								
+84519	ACRBP	acrosin binding protein																																																																								
+51225	ABI3	ABI family member 3																																																																								

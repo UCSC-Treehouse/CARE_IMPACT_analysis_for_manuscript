@@ -1,0 +1,88 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	12
+# genesets in collections:	1379
+# genes in comparison (n):	61
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	9	0.03273	1.14e-10	1.573e-7
+NABA_COLLAGENS	44	Genes encoding collagen proteins	5	0.1136	3.636e-9	2.507e-6
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	12	0.01167	9.371e-9	4.308e-6
+REACTOME_COLLAGEN_FORMATION	58	Genes involved in Collagen formation	4	0.06897	1.129e-6	3.893e-4
+REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION	87	Genes involved in Extracellular matrix organization	4	0.04598	5.757e-6	0.001588
+REACTOME_DEVELOPMENTAL_BIOLOGY	396	Genes involved in Developmental Biology	6	0.01515	1.467e-5	0.00289
+NABA_PROTEOGLYCANS	35	Genes encoding proteoglycans	3	0.08571	1.413e-5	0.00289
+REACTOME_AXON_GUIDANCE	251	Genes involved in Axon guidance	5	0.01992	2.165e-5	0.003317
+REACTOME_NCAM1_INTERACTIONS	39	Genes involved in NCAM1 interactions	3	0.07692	1.965e-5	0.003317
+REACTOME_NCAM_SIGNALING_FOR_NEURITE_OUT_GROWTH	64	Genes involved in NCAM signaling for neurite out-growth	3	0.04688	8.751e-5	0.012070000000000001
+HALLMARK_KRAS_SIGNALING_DN	200	Genes down-regulated by KRAS activation.	4	0.02	1.496e-4	0.01719
+PID_AVB3_INTEGRIN_PATHWAY	75	Integrins in angiogenesis	3	0.04	1.404e-4	0.01719
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_CORE_MATRISOME	NABA_COLLAGENS	NABA_MATRISOME	REACTOME_COLLAGEN_FORMATION	REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION	REACTOME_DEVELOPMENTAL_BIOLOGY	NABA_PROTEOGLYCANS	REACTOME_AXON_GUIDANCE	REACTOME_NCAM1_INTERACTIONS	REACTOME_NCAM_SIGNALING_FOR_NEURITE_OUT_GROWTH	HALLMARK_KRAS_SIGNALING_DN	PID_AVB3_INTEGRIN_PATHWAY
+1299	COL9A3	collagen type IX alpha 3 chain	NABA_CORE_MATRISOME	NABA_COLLAGENS	NABA_MATRISOME	REACTOME_COLLAGEN_FORMATION	REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION	REACTOME_DEVELOPMENTAL_BIOLOGY		REACTOME_AXON_GUIDANCE	REACTOME_NCAM1_INTERACTIONS	REACTOME_NCAM_SIGNALING_FOR_NEURITE_OUT_GROWTH		PID_AVB3_INTEGRIN_PATHWAY
+1297	COL9A1	collagen type IX alpha 1 chain	NABA_CORE_MATRISOME	NABA_COLLAGENS	NABA_MATRISOME	REACTOME_COLLAGEN_FORMATION	REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION	REACTOME_DEVELOPMENTAL_BIOLOGY		REACTOME_AXON_GUIDANCE	REACTOME_NCAM1_INTERACTIONS	REACTOME_NCAM_SIGNALING_FOR_NEURITE_OUT_GROWTH		PID_AVB3_INTEGRIN_PATHWAY
+340267	COL28A1	collagen type XXVIII alpha 1 chain	NABA_CORE_MATRISOME	NABA_COLLAGENS	NABA_MATRISOME	REACTOME_COLLAGEN_FORMATION	REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION							
+169044	COL22A1	collagen type XXII alpha 1 chain	NABA_CORE_MATRISOME	NABA_COLLAGENS	NABA_MATRISOME	REACTOME_COLLAGEN_FORMATION	REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION							
+57642	COL20A1	collagen type XX alpha 1 chain	NABA_CORE_MATRISOME	NABA_COLLAGENS	NABA_MATRISOME									
+79883	PODNL1	podocan like 1	NABA_CORE_MATRISOME		NABA_MATRISOME				NABA_PROTEOGLYCANS					
+60484	HAPLN2	hyaluronan and proteoglycan link protein 2	NABA_CORE_MATRISOME		NABA_MATRISOME				NABA_PROTEOGLYCANS					
+63827	BCAN	brevican	NABA_CORE_MATRISOME		NABA_MATRISOME				NABA_PROTEOGLYCANS					
+163175	LGI4	leucine rich repeat LGI family member 4	NABA_CORE_MATRISOME		NABA_MATRISOME									
+2668	GDNF	glial cell derived neurotrophic factor			NABA_MATRISOME			REACTOME_DEVELOPMENTAL_BIOLOGY		REACTOME_AXON_GUIDANCE	REACTOME_NCAM1_INTERACTIONS	REACTOME_NCAM_SIGNALING_FOR_NEURITE_OUT_GROWTH	HALLMARK_KRAS_SIGNALING_DN	
+5365	PLXNB3	plexin B3			NABA_MATRISOME			REACTOME_DEVELOPMENTAL_BIOLOGY		REACTOME_AXON_GUIDANCE				
+5055	SERPINB2	serpin family B member 2			NABA_MATRISOME								HALLMARK_KRAS_SIGNALING_DN	
+3690	ITGB3	integrin subunit beta 3						REACTOME_DEVELOPMENTAL_BIOLOGY		REACTOME_AXON_GUIDANCE				PID_AVB3_INTEGRIN_PATHWAY
+4821	NKX2-2	NK2 homeobox 2						REACTOME_DEVELOPMENTAL_BIOLOGY						
+6663	SOX10	SRY-box 10											HALLMARK_KRAS_SIGNALING_DN	
+55220	KLHDC8A	kelch domain containing 8A											HALLMARK_KRAS_SIGNALING_DN	
+90226	UCN2	urocortin 2												
+59341	TRPV4	transient receptor potential cation channel subfamily V member 4												
+79054	TRPM8	transient receptor potential cation channel subfamily M member 8												
+7018	TF	transferrin												
+29906	ST8SIA5	ST8 alpha-N-acetyl-neuraminide alpha-2,8-sialyltransferase 5												
+90853	SPOCD1	SPOC domain containing 1												
+347689	SOX2-OT	SOX2 overlapping transcript												
+6657	SOX2	SRY-box 2												
+6649	SOD3	superoxide dismutase 3												
+79856	SNX22	sorting nexin 22												
+6642	SNX1	sorting nexin 1												
+11341	SCRG1	stimulator of chondrogenesis 1												
+5375	PMP2	peripheral myelin protein 2												
+5354	PLP1	proteolipid protein 1												
+58473	PLEKHB1	pleckstrin homology domain containing B1												
+51268	PIPOX	pipecolic acid and sarcosine oxidase												
+10215	OLIG2	oligodendrocyte transcription factor 2												
+116448	OLIG1	oligodendrocyte transcription factor 1												
+4504	MT3	metallothionein 3												
+79778	MICALL2	MICAL like 2												
+8190	MIA	MIA SH3 domain containing												
+5653	KLK6	kallikrein related peptidase 6												
+3766	KCNJ10	potassium voltage-gated channel subfamily J member 10												
+3754	KCNF1	potassium voltage-gated channel modifier subfamily F member 1												
+2705	GJB1	gap junction protein beta 1												
+2670	GFAP	glial fibrillary acidic protein												
+2571	GAD1	glutamate decarboxylase 1												
+53822	FXYD7	FXYD domain containing ion transport regulator 7												
+84824	FCRLA	Fc receptor like A												
+8857	FCGBP	Fc fragment of IgG binding protein												
+2173	FABP7	fatty acid binding protein 7												
+2134	EXTL1	exostosin like glycosyltransferase 1												
+2042	EPHA3	EPH receptor A3												
+22943	DKK1	dickkopf WNT signaling pathway inhibitor 1												
+728577	CNTNAP3B	contactin associated protein like 3B												
+116173	CMTM5	CKLF like MARVEL transmembrane domain containing 5												
+1116	CHI3L1	chitinase 3 like 1												
+54862	CC2D1A	coiled-coil and C2 domain containing 1A												
+NA	C2orf82	NA												
+10485	C1orf61	chromosome 1 open reading frame 61												
+8537	BCAS1	breast carcinoma amplified sequence 1												
+563	AZGP1	alpha-2-glycoprotein 1, zinc-binding												
+375719	AQP7P1	aquaporin 7 pseudogene 1												
+347	APOD	apolipoprotein D												
+8714	ABCC3	ATP binding cassette subfamily C member 3												

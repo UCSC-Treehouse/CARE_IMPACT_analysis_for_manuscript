@@ -1,0 +1,145 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	3
+# genesets in collections:	1379
+# genes in comparison (n):	127
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_ECM_AFFILIATED	171	Genes encoding proteins affiliated structurally or functionally to extracellular matrix proteins	6	0.03509	8.659e-6	0.01194
+REACTOME_GPCR_LIGAND_BINDING	408	Genes involved in GPCR ligand binding	8	0.01961	1.925e-5	0.01328
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	12	0.01167	3.005e-5	0.01381
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_ECM_AFFILIATED	REACTOME_GPCR_LIGAND_BINDING	NABA_MATRISOME
+6440	SFTPC	surfactant protein C	NABA_ECM_AFFILIATED		NABA_MATRISOME
+6439	SFTPB	surfactant protein B	NABA_ECM_AFFILIATED		NABA_MATRISOME
+729238	SFTPA2	surfactant protein A2	NABA_ECM_AFFILIATED		NABA_MATRISOME
+653509	SFTPA1	surfactant protein A1	NABA_ECM_AFFILIATED		NABA_MATRISOME
+26585	GREM1	gremlin 1, DAN family BMP antagonist	NABA_ECM_AFFILIATED		NABA_MATRISOME
+165257	C1QL2	complement C1q like 2	NABA_ECM_AFFILIATED		NABA_MATRISOME
+5179	PENK	proenkephalin		REACTOME_GPCR_LIGAND_BINDING	
+4889	NPY5R	neuropeptide Y receptor Y5		REACTOME_GPCR_LIGAND_BINDING	
+4886	NPY1R	neuropeptide Y receptor Y1		REACTOME_GPCR_LIGAND_BINDING	
+283869	NPW	neuropeptide W		REACTOME_GPCR_LIGAND_BINDING	
+2912	GRM2	glutamate metabotropic receptor 2		REACTOME_GPCR_LIGAND_BINDING	
+797	CALCB	calcitonin related polypeptide beta		REACTOME_GPCR_LIGAND_BINDING	
+796	CALCA	calcitonin related polypeptide alpha		REACTOME_GPCR_LIGAND_BINDING	
+146	ADRA1D	adrenoceptor alpha 1D		REACTOME_GPCR_LIGAND_BINDING	
+5069	PAPPA	pappalysin 1			NABA_MATRISOME
+4969	OGN	osteoglycin			NABA_MATRISOME
+3914	LAMB3	laminin subunit beta 3			NABA_MATRISOME
+83872	HMCN1	hemicentin 1			NABA_MATRISOME
+9048	ARTN	artemin			NABA_MATRISOME
+80332	ADAM33	ADAM metallopeptidase domain 33			NABA_MATRISOME
+134466	ZNF300P1	zinc finger protein 300 pseudogene 1			
+51304	ZDHHC3	zinc finger DHHC-type containing 3			
+340481	ZDHHC21	zinc finger DHHC-type containing 21			
+23091	ZC3H13	zinc finger CCCH-type containing 13			
+653067	XAGE1B	X antigen family member 1B			
+653220	XAGE1A	X antigen family member 1A			
+11023	VAX1	ventral anterior homeobox 1			
+79809	TTC21B	tetratricopeptide repeat domain 21B			
+7103	TSPAN8	tetraspanin 8			
+730130	TMEM229A	transmembrane protein 229A			
+200132	TCTEX1D1	Tctex1 domain containing 1			
+256536	TCERG1L	transcription elongation regulator 1 like			
+9882	TBC1D4	TBC1 domain family member 4			
+6860	SYT4	synaptotagmin 4			
+261729	STEAP2	STEAP2 metalloreductase			
+26872	STEAP1	STEAP family member 1			
+90627	STARD13	StAR related lipid transfer domain containing 13			
+54434	SSH1	slingshot protein phosphatase 1			
+55553	SOX6	SRY-box 6			
+6652	SORD	sorbitol dehydrogenase			
+55117	SLC6A15	solute carrier family 6 member 15			
+55089	SLC38A4	solute carrier family 38 member 4			
+6493	SIM2	SIM bHLH transcription factor 2			
+283514	SIAH3	siah E3 ubiquitin protein ligase family member 3			
+6335	SCN9A	sodium voltage-gated channel alpha subunit 9			
+6323	SCN1A	sodium voltage-gated channel alpha subunit 1			
+7857	SCG2	secretogranin II			
+50862	RNF141	ring finger protein 141			
+79785	RERGL	RERG like			
+54033	RBM11	RNA binding motif protein 11			
+153020	RASGEF1B	RasGEF domain family member 1B			
+5801	PTPRR	protein tyrosine phosphatase, receptor type R			
+167681	PRSS35	serine protease 35			
+NA	PPAPDC2	NA			
+5458	POU4F2	POU class 4 homeobox 2			
+5454	POU3F2	POU class 3 homeobox 2			
+5453	POU3F1	POU class 3 homeobox 1			
+130271	PLEKHH2	pleckstrin homology, MyTH4 and FERM domain containing H2			
+144100	PLEKHA7	pleckstrin homology domain containing A7			
+5317	PKP1	plakophilin 1			
+5133	PDCD1	programmed cell death 1			
+5126	PCSK2	proprotein convertase subtilisin/kexin type 2			
+5122	PCSK1	proprotein convertase subtilisin/kexin type 1			
+5100	PCDH8	protocadherin 8			
+5081	PAX7	paired box 7			
+5077	PAX3	paired box 3			
+118427	OLFM3	olfactomedin 3			
+190	NR0B1	nuclear receptor subfamily 0 group B member 1			
+4821	NKX2-2	NK2 homeobox 2			
+84224	NBPF3	NBPF member 3			
+9476	NAPSA	napsin A aspartic peptidase			
+4636	MYL5	myosin light chain 5			
+26002	MOXD1	monooxygenase DBH like 1			
+57689	LRRC4C	leucine rich repeat containing 4C			
+125336	LOXHD1	lipoxygenase homology domains 1			
+91694	LONRF1	LON peptidase N-terminal domain and ring finger 1			
+149998	LIPI	lipase I			
+NA	LECT1	NA			
+3880	KRT19	keratin 19			
+8564	KMO	kynurenine 3-monooxygenase			
+NA	KIAA1456	NA			
+2531	KDSR	3-ketodihydrosphingosine reductase			
+23704	KCNE4	potassium voltage-gated channel subfamily E regulatory subunit 4			
+56704	JPH1	junctophilin 1			
+3716	JAK1	Janus kinase 1			
+3667	IRS1	insulin receptor substrate 1			
+10642	IGF2BP1	insulin like growth factor 2 mRNA binding protein 1			
+9951	HS3ST4	heparan sulfate-glucosamine 3-sulfotransferase 4			
+3218	HOXB8	homeobox B8			
+3216	HOXB6	homeobox B6			
+10481	HOXB13	homeobox B13			
+51361	HOOK1	hook microtubule tethering protein 1			
+2949	GSTM5	glutathione S-transferase mu 5			
+2948	GSTM4	glutathione S-transferase mu 4			
+84636	GPR174	G protein-coupled receptor 174			
+2734	GLG1	golgi glycoprotein 1			
+50486	G0S2	G0/G1 switch 2			
+389549	FEZF1	FEZ family zinc finger 1			
+2217	FCGRT	Fc fragment of IgG receptor and transporter			
+79633	FAT4	FAT atypical cadherin 4			
+NA	FAM65C	NA			
+NA	FAM175A	NA			
+23233	EXOC6B	exocyst complex component 6B			
+9718	ECE2	endothelin converting enzyme 2			
+53905	DUOX1	dual oxidase 1			
+1740	DLG2	discs large MAGUK scaffold protein 2			
+27123	DKK2	dickkopf WNT signaling pathway inhibitor 2			
+126410	CYP4F22	cytochrome P450 family 4 subfamily F member 22			
+56603	CYP26B1	cytochrome P450 family 26 subfamily B member 1			
+134829	CLVS2	clavesin 2			
+9076	CLDN1	claudin 1			
+1124	CHN2	chimerin 2			
+283848	CES4A	carboxylesterase 4A			
+1066	CES1	carboxylesterase 1			
+51362	CDC40	cell division cycle 40			
+55664	CDC37L1	cell division cycle 37 like 1			
+401577	CD99P1	CD99 molecule pseudogene 1			
+57172	CAMK1G	calcium/calmodulin dependent protein kinase IG			
+783	CACNB2	calcium voltage-gated channel auxiliary subunit beta 2			
+768	CA9	carbonic anhydrase 9			
+27154	BRPF3	bromodomain and PHD finger containing 3			
+64919	BCL11B	BCL11B, BAF complex component			
+476	ATP1A1	ATPase Na+/K+ transporting subunit alpha 1			
+170302	ARX	aristaless related homeobox			
+55114	ARHGAP17	Rho GTPase activating protein 17			
+57406	ABHD6	abhydrolase domain containing 6			
+23461	ABCA5	ATP binding cassette subfamily A member 5			

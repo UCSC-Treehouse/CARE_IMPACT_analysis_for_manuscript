@@ -1,0 +1,113 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	21
+# genesets in collections:	1379
+# genes in comparison (n):	77
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+HALLMARK_MYOGENESIS	200	Genes involved in development of skeletal muscle (myogenesis).	12	0.06	9.488e-16	1.308e-12
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	11	0.04	1.358e-12	9.366e-10
+REACTOME_STRIATED_MUSCLE_CONTRACTION	27	Genes involved in Striated Muscle Contraction	6	0.2222	5.219e-12	2.399e-9
+REACTOME_MUSCLE_CONTRACTION	48	Genes involved in Muscle contraction	6	0.125	2.104e-10	7.254e-8
+NABA_ECM_GLYCOPROTEINS	196	Genes encoding structural ECM glycoproteins	8	0.04082	1.551e-9	3.758e-7
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	14	0.01362	1.635e-9	3.758e-7
+PID_RB_1PATHWAY	65	Regulation of retinoblastoma protein	4	0.06154	4.563e-6	8.989e-4
+KEGG_ECM_RECEPTOR_INTERACTION	84	ECM-receptor interaction	4	0.04762	1.269e-5	0.002188
+KEGG_FOCAL_ADHESION	201	Focal adhesion	5	0.02488	2.33e-5	0.00357
+NABA_PROTEOGLYCANS	35	Genes encoding proteoglycans	3	0.08571	2.848e-5	0.003927
+KEGG_BLADDER_CANCER	42	Bladder cancer	3	0.07143	4.953e-5	0.006209
+REACTOME_KERATAN_SULFATE_DEGRADATION	11	Genes involved in Keratan sulfate degradation	2	0.1818	1.509e-4	0.01734
+KEGG_GLIOMA	65	Glioma	3	0.04615	1.833e-4	0.01944
+KEGG_MELANOMA	71	Melanoma	3	0.04225	2.381e-4	0.02346
+KEGG_CHRONIC_MYELOID_LEUKEMIA	73	Chronic myeloid leukemia	3	0.0411	2.585e-4	0.02377
+SA_G1_AND_S_PHASES	15	Cdk2, 4, and 6 bind cyclin D in G1, while cdk2/cyclin E promotes the G1/S transition.	2	0.1333	2.869e-4	0.02472
+BIOCARTA_P53_PATHWAY	16	p53 Signaling Pathway	2	0.125	3.275e-4	0.02657
+HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	200	Genes defining epithelial-mesenchymal transition, as in wound healing, fibrosis and metastasis.	4	0.02	3.675e-4	0.02815
+BIOCARTA_MAL_PATHWAY	19	Role of MAL in Rho-Mediated Activation of SRF	2	0.1053	4.652e-4	0.03207
+REACTOME_PROLONGED_ERK_ACTIVATION_EVENTS	19	Genes involved in Prolonged ERK activation events	2	0.1053	4.652e-4	0.03207
+REACTOME_DOWNSTREAM_SIGNALING_OF_ACTIVATED_FGFR	100	Genes involved in Downstream signaling of activated FGFR	3	0.03	6.506e-4	0.04272
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	HALLMARK_MYOGENESIS	NABA_CORE_MATRISOME	REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION	NABA_ECM_GLYCOPROTEINS	NABA_MATRISOME	PID_RB_1PATHWAY	KEGG_ECM_RECEPTOR_INTERACTION	KEGG_FOCAL_ADHESION	NABA_PROTEOGLYCANS	KEGG_BLADDER_CANCER	REACTOME_KERATAN_SULFATE_DEGRADATION	KEGG_GLIOMA	KEGG_MELANOMA	KEGG_CHRONIC_MYELOID_LEUKEMIA	SA_G1_AND_S_PHASES	BIOCARTA_P53_PATHWAY	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	BIOCARTA_MAL_PATHWAY	REACTOME_PROLONGED_ERK_ACTIVATION_EVENTS	REACTOME_DOWNSTREAM_SIGNALING_OF_ACTIVATED_FGFR
+7136	TNNI2	troponin I2, fast skeletal type	HALLMARK_MYOGENESIS		REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION																	
+7125	TNNC2	troponin C2, fast skeletal type	HALLMARK_MYOGENESIS		REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION																	
+8557	TCAP	titin-cap	HALLMARK_MYOGENESIS		REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION																	
+4632	MYL1	myosin light chain 1	HALLMARK_MYOGENESIS		REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION																	
+1158	CKM	creatine kinase, M-type	HALLMARK_MYOGENESIS						PID_RB_1PATHWAY														
+29895	MYLPF	myosin light chain, phosphorylatable, fast skeletal muscle	HALLMARK_MYOGENESIS								KEGG_FOCAL_ADHESION												
+58	ACTA1	actin, alpha 1, skeletal muscle	HALLMARK_MYOGENESIS																		BIOCARTA_MAL_PATHWAY		
+79629	OCEL1	occludin/ELL domain containing 1	HALLMARK_MYOGENESIS																				
+4619	MYH1	myosin heavy chain 1	HALLMARK_MYOGENESIS																				
+4151	MB	myoglobin	HALLMARK_MYOGENESIS																				
+1339	COX6A2	cytochrome c oxidase subunit 6A2	HALLMARK_MYOGENESIS																				
+70	ACTC1	actin, alpha, cardiac muscle 1	HALLMARK_MYOGENESIS																				
+632	BGLAP	bone gamma-carboxyglutamate protein		NABA_CORE_MATRISOME			NABA_ECM_GLYCOPROTEINS	NABA_MATRISOME	PID_RB_1PATHWAY														
+1311	COMP	cartilage oligomeric matrix protein		NABA_CORE_MATRISOME			NABA_ECM_GLYCOPROTEINS	NABA_MATRISOME		KEGG_ECM_RECEPTOR_INTERACTION	KEGG_FOCAL_ADHESION									HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION			
+7060	THBS4	thrombospondin 4		NABA_CORE_MATRISOME			NABA_ECM_GLYCOPROTEINS	NABA_MATRISOME		KEGG_ECM_RECEPTOR_INTERACTION	KEGG_FOCAL_ADHESION												
+3381	IBSP	integrin binding sialoprotein		NABA_CORE_MATRISOME			NABA_ECM_GLYCOPROTEINS	NABA_MATRISOME		KEGG_ECM_RECEPTOR_INTERACTION	KEGG_FOCAL_ADHESION												
+8076	MFAP5	microfibril associated protein 5		NABA_CORE_MATRISOME			NABA_ECM_GLYCOPROTEINS	NABA_MATRISOME												HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION			
+NA	WISP2	NA		NABA_CORE_MATRISOME			NABA_ECM_GLYCOPROTEINS	NABA_MATRISOME															
+79174	CRELD2	cysteine rich with EGF like domains 2		NABA_CORE_MATRISOME			NABA_ECM_GLYCOPROTEINS	NABA_MATRISOME															
+148113	CILP2	cartilage intermediate layer protein 2		NABA_CORE_MATRISOME			NABA_ECM_GLYCOPROTEINS	NABA_MATRISOME															
+1101	CHAD	chondroadherin		NABA_CORE_MATRISOME				NABA_MATRISOME		KEGG_ECM_RECEPTOR_INTERACTION	KEGG_FOCAL_ADHESION	NABA_PROTEOGLYCANS											
+4958	OMD	osteomodulin		NABA_CORE_MATRISOME				NABA_MATRISOME				NABA_PROTEOGLYCANS		REACTOME_KERATAN_SULFATE_DEGRADATION									
+176	ACAN	aggrecan		NABA_CORE_MATRISOME				NABA_MATRISOME				NABA_PROTEOGLYCANS		REACTOME_KERATAN_SULFATE_DEGRADATION									
+4703	NEB	nebulin			REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION																	
+4606	MYBPC2	myosin binding protein C, fast type			REACTOME_STRIATED_MUSCLE_CONTRACTION	REACTOME_MUSCLE_CONTRACTION																	
+9244	CRLF1	cytokine receptor like factor 1						NABA_MATRISOME												HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION			
+4322	MMP13	matrix metallopeptidase 13						NABA_MATRISOME															
+6357	CCL13	C-C motif chemokine ligand 13						NABA_MATRISOME															
+4193	MDM2	MDM2 proto-oncogene							PID_RB_1PATHWAY				KEGG_BLADDER_CANCER		KEGG_GLIOMA	KEGG_MELANOMA	KEGG_CHRONIC_MYELOID_LEUKEMIA	SA_G1_AND_S_PHASES	BIOCARTA_P53_PATHWAY				REACTOME_DOWNSTREAM_SIGNALING_OF_ACTIVATED_FGFR
+1019	CDK4	cyclin dependent kinase 4							PID_RB_1PATHWAY				KEGG_BLADDER_CANCER		KEGG_GLIOMA	KEGG_MELANOMA	KEGG_CHRONIC_MYELOID_LEUKEMIA	SA_G1_AND_S_PHASES	BIOCARTA_P53_PATHWAY				
+5605	MAP2K2	mitogen-activated protein kinase kinase 2											KEGG_BLADDER_CANCER		KEGG_GLIOMA	KEGG_MELANOMA	KEGG_CHRONIC_MYELOID_LEUKEMIA				BIOCARTA_MAL_PATHWAY	REACTOME_PROLONGED_ERK_ACTIVATION_EVENTS	REACTOME_DOWNSTREAM_SIGNALING_OF_ACTIVATED_FGFR
+131578	LRRC15	leucine rich repeat containing 15																		HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION			
+10818	FRS2	fibroblast growth factor receptor substrate 2																				REACTOME_PROLONGED_ERK_ACTIVATION_EVENTS	REACTOME_DOWNSTREAM_SIGNALING_OF_ACTIVATED_FGFR
+84619	ZGPAT	zinc finger CCCH-type and G-patch domain containing																					
+8089	YEATS4	YEATS domain containing 4																					
+NA	XRCC6BP1	NA																					
+80700	UBXN6	UBX domain protein 6																					
+6302	TSPAN31	tetraspanin 31																					
+10102	TSFM	Ts translation elongation factor, mitochondrial																					
+285386	TPRG1	tumor protein p63 regulated 1																					
+90313	TP53I13	tumor protein p53 inducible protein 13																					
+8771	TNFRSF6B	TNF receptor superfamily member 6b																					
+121340	SP7	Sp7 transcription factor																					
+735301	SNHG9	small nucleolar RNA host gene 9																					
+2030	SLC29A1	solute carrier family 29 member 1 (Augustine blood group)																					
+65012	SLC26A10	solute carrier family 26 member 10																					
+388344	RPL13P12	ribosomal protein L13 pseudogene 12																					
+10567	RABAC1	Rab acceptor 1																					
+10594	PRPF8	pre-mRNA processing factor 8																					
+5322	PLA2G5	phospholipase A2 group V																					
+10956	OS9	OS9, endoplasmic reticulum lectin																					
+283820	NOMO2	NODAL modulator 2																					
+389125	MUSTN1	musculoskeletal, embryonic nuclear protein 1																					
+NA	METTL21B	NA																					
+4234	METTL1	methyltransferase like 1																					
+92979	MARCH9	membrane associated ring-CH-type finger 9																					
+9622	KLK4	kallikrein related peptidase 4																					
+27345	KCNMB4	potassium calcium-activated channel subfamily M regulatory beta subunit 4																					
+3754	KCNF1	potassium voltage-gated channel modifier subfamily F member 1																					
+91156	IGFN1	immunoglobulin-like and fibronectin type III domain containing 1																					
+56927	GPR108	G protein-coupled receptor 108																					
+2307	FOXS1	forkhead box S1																					
+84337	ELOF1	elongation factor 1 homolog																					
+196403	DTX3	deltex E3 ubiquitin ligase 3																					
+1749	DLX5	distal-less homeobox 5																					
+1747	DLX3	distal-less homeobox 3																					
+1594	CYP27B1	cytochrome P450 family 27 subfamily B member 1																					
+10106	CTDSP2	CTD small phosphatase 2																					
+4848	CNOT2	CCR4-NOT transcription complex subunit 2																					
+1013	CDH15	cadherin 15																					
+10576	CCT2	chaperonin containing TCP1 subunit 2																					
+NA	CCDC101	NA																					
+441150	C6orf226	chromosome 6 open reading frame 226																					
+149954	BPIFB4	BPI fold containing family B member 4																					
+2583	B4GALNT1	beta-1,4-N-acetyl-galactosaminyltransferase 1																					
+10677	AVIL	advillin																					
+115557	ARHGEF25	Rho guanine nucleotide exchange factor 25																					

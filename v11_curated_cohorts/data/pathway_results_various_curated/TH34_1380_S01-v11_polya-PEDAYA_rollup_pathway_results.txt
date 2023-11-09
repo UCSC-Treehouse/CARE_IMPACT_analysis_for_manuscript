@@ -1,0 +1,91 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	9
+# genesets in collections:	1379
+# genes in comparison (n):	67
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+HALLMARK_MYOGENESIS	200	Genes involved in development of skeletal muscle (myogenesis).	11	0.055	8.348e-15	1.151e-11
+REACTOME_MUSCLE_CONTRACTION	48	Genes involved in Muscle contraction	7	0.1458	7.117e-13	4.907e-10
+REACTOME_STRIATED_MUSCLE_CONTRACTION	27	Genes involved in Striated Muscle Contraction	6	0.2222	2.205e-12	1.014e-9
+NABA_COLLAGENS	44	Genes encoding collagen proteins	3	0.06818	3.758e-5	0.01296
+NABA_CORE_MATRISOME	275	Ensemble of genes encoding core extracellular matrix including ECM glycoproteins, collagens and proteoglycans	5	0.01818	5.277e-5	0.01455
+REACTOME_COLLAGEN_FORMATION	58	Genes involved in Collagen formation	3	0.05172	8.629e-5	0.01983
+REACTOME_TANDEM_PORE_DOMAIN_POTASSIUM_CHANNELS	12	Genes involved in Tandem pore domain potassium channels	2	0.1667	1.369e-4	0.02697
+KEGG_CARDIAC_MUSCLE_CONTRACTION	80	Cardiac muscle contraction	3	0.0375	2.246e-4	0.03871
+REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION	87	Genes involved in Extracellular matrix organization	3	0.03448	2.876e-4	0.04407
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	HALLMARK_MYOGENESIS	REACTOME_MUSCLE_CONTRACTION	REACTOME_STRIATED_MUSCLE_CONTRACTION	NABA_COLLAGENS	NABA_CORE_MATRISOME	REACTOME_COLLAGEN_FORMATION	REACTOME_TANDEM_PORE_DOMAIN_POTASSIUM_CHANNELS	KEGG_CARDIAC_MUSCLE_CONTRACTION	REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION
+7139	TNNT2	troponin T2, cardiac type	HALLMARK_MYOGENESIS	REACTOME_MUSCLE_CONTRACTION	REACTOME_STRIATED_MUSCLE_CONTRACTION					KEGG_CARDIAC_MUSCLE_CONTRACTION	
+7138	TNNT1	troponin T1, slow skeletal type	HALLMARK_MYOGENESIS	REACTOME_MUSCLE_CONTRACTION	REACTOME_STRIATED_MUSCLE_CONTRACTION						
+7136	TNNI2	troponin I2, fast skeletal type	HALLMARK_MYOGENESIS	REACTOME_MUSCLE_CONTRACTION	REACTOME_STRIATED_MUSCLE_CONTRACTION						
+7135	TNNI1	troponin I1, slow skeletal type	HALLMARK_MYOGENESIS	REACTOME_MUSCLE_CONTRACTION	REACTOME_STRIATED_MUSCLE_CONTRACTION						
+7125	TNNC2	troponin C2, fast skeletal type	HALLMARK_MYOGENESIS	REACTOME_MUSCLE_CONTRACTION	REACTOME_STRIATED_MUSCLE_CONTRACTION						
+140465	MYL6B	myosin light chain 6B	HALLMARK_MYOGENESIS	REACTOME_MUSCLE_CONTRACTION							
+7140	TNNT3	troponin T3, fast skeletal type	HALLMARK_MYOGENESIS								
+6442	SGCA	sarcoglycan alpha	HALLMARK_MYOGENESIS								
+9172	MYOM2	myomesin 2	HALLMARK_MYOGENESIS								
+29895	MYLPF	myosin light chain, phosphorylatable, fast skeletal muscle	HALLMARK_MYOGENESIS								
+3270	HRC	histidine rich calcium binding protein	HALLMARK_MYOGENESIS								
+4703	NEB	nebulin		REACTOME_MUSCLE_CONTRACTION	REACTOME_STRIATED_MUSCLE_CONTRACTION						
+1280	COL2A1	collagen type II alpha 1 chain				NABA_COLLAGENS	NABA_CORE_MATRISOME	REACTOME_COLLAGEN_FORMATION			REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION
+81578	COL21A1	collagen type XXI alpha 1 chain				NABA_COLLAGENS	NABA_CORE_MATRISOME	REACTOME_COLLAGEN_FORMATION			REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION
+1302	COL11A2	collagen type XI alpha 2 chain				NABA_COLLAGENS	NABA_CORE_MATRISOME	REACTOME_COLLAGEN_FORMATION			REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION
+126147	NTN5	netrin 5					NABA_CORE_MATRISOME				
+84467	FBN3	fibrillin 3					NABA_CORE_MATRISOME				
+51305	KCNK9	potassium two pore domain channel subfamily K member 9							REACTOME_TANDEM_PORE_DOMAIN_POTASSIUM_CHANNELS		
+3776	KCNK2	potassium two pore domain channel subfamily K member 2							REACTOME_TANDEM_PORE_DOMAIN_POTASSIUM_CHANNELS		
+84701	COX4I2	cytochrome c oxidase subunit 4I2								KEGG_CARDIAC_MUSCLE_CONTRACTION	
+477	ATP1A2	ATPase Na+/K+ transporting subunit alpha 2								KEGG_CARDIAC_MUSCLE_CONTRACTION	
+339456	TMEM52	transmembrane protein 52									
+6999	TDO2	tryptophan 2,3-dioxygenase									
+64220	STRA6	stimulated by retinoic acid 6									
+246329	STAC3	SH3 and cysteine rich domain 3									
+6345	SRL	sarcalumenin									
+54861	SNRK	SNF related kinase									
+6581	SLC22A3	solute carrier family 22 member 3									
+56920	SEMA3G	semaphorin 3G									
+5959	RDH5	retinol dehydrogenase 5									
+5913	RAPSN	receptor associated protein of the synapse									
+5457	POU4F1	POU class 4 homeobox 1									
+5308	PITX2	paired like homeodomain 2									
+5307	PITX1	paired like homeodomain 1									
+5222	PGA5	pepsinogen 5, group I (pepsinogen A)									
+643847	PGA4	pepsinogen 4, group I (pepsinogen A)									
+643834	PGA3	pepsinogen 3, group I (pepsinogen A)									
+5081	PAX7	paired box 7									
+116039	OSR2	odd-skipped related transciption factor 2									
+NA	ORAOV1	NA									
+83714	NRIP2	nuclear receptor interacting protein 2									
+4880	NPPC	natriuretic peptide C									
+4868	NPHS1	NPHS1, nephrin									
+10276	NET1	neuroepithelial cell transforming 1									
+4723	NDUFV1	NADH:ubiquinone oxidoreductase core subunit V1									
+4617	MYF5	myogenic factor 5									
+389125	MUSTN1	musculoskeletal, embryonic nuclear protein 1									
+4124	MAN2A1	mannosidase alpha class 2A member 1									
+9388	LIPG	lipase G, endothelial type									
+100506243	KRBOX1	KRAB box domain containing 1									
+57565	KLHL14	kelch like family member 14									
+84063	KIRREL2	kirre like nephrin family adhesion molecule 2									
+3664	IRF6	interferon regulatory factor 6									
+NA	GUCY1B3	NA									
+2326	FMO1	flavin containing monooxygenase 1									
+2264	FGFR4	fibroblast growth factor receptor 4									
+1938	EEF2	eukaryotic translation elongation factor 2									
+1908	EDN3	endothelin 3									
+10655	DMRT2	doublesex and mab-3 related transcription factor 2									
+64150	DIO3OS	DIO3 opposite strand upstream RNA									
+1184	CLCN5	chloride voltage-gated channel 5									
+140578	CHODL	chondrolectin									
+1024	CDK8	cyclin dependent kinase 8									
+10435	CDC42EP2	CDC42 effector protein 2									
+80323	CCDC68	coiled-coil domain containing 68									
+799	CALCR	calcitonin receptor									
+NA	C1orf95	NA									

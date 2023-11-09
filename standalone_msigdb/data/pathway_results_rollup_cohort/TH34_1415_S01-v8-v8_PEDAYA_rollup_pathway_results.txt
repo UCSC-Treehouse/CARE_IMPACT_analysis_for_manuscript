@@ -1,0 +1,89 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	12
+# genesets in collections:	1379
+# genes in comparison (n):	62
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	16	0.01556	3.658e-13	5.045e-10
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	14	0.01859	1.2560000000000001e-12	8.66e-10
+NABA_ECM_AFFILIATED	171	Genes encoding proteins affiliated structurally or functionally to extracellular matrix proteins	9	0.05263	1.894e-12	8.705e-10
+HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	200	Genes defining epithelial-mesenchymal transition, as in wound healing, fibrosis and metastasis.	7	0.035	1.069e-8	3.684e-6
+PID_HNF3A_PATHWAY	44	FOXA1 transcription factor network	4	0.09091	3.914e-7	1.079e-4
+KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION	267	Cytokine-cytokine receptor interaction	5	0.01873	3.148e-5	0.007235
+PID_HIF1_TFPATHWAY	66	HIF-1-alpha transcription factor network	3	0.04545	1.007e-4	0.01984
+HALLMARK_TNFA_SIGNALING_VIA_NFKB	200	Genes regulated by NF-kB in response to TNF [GeneID=7124].	4	0.02	1.594e-4	0.02198
+HALLMARK_COMPLEMENT	200	Genes encoding components of the complement system, which is part of the innate immune system.	4	0.02	1.594e-4	0.02198
+HALLMARK_INFLAMMATORY_RESPONSE	200	Genes defining inflammatory response.	4	0.02	1.594e-4	0.02198
+HALLMARK_IL6_JAK_STAT3_SIGNALING	87	Genes up-regulated by IL6 [GeneID=3569] via STAT3 [GeneID=6774], e.g., during acute phase response.	3	0.03448	2.286e-4	0.02762
+BIOCARTA_IL10_PATHWAY	17	IL-10 Anti-inflammatory Signaling Pathway	2	0.1176	2.404e-4	0.02762
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	PID_HNF3A_PATHWAY	KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION	PID_HIF1_TFPATHWAY	HALLMARK_TNFA_SIGNALING_VIA_NFKB	HALLMARK_COMPLEMENT	HALLMARK_INFLAMMATORY_RESPONSE	HALLMARK_IL6_JAK_STAT3_SIGNALING	BIOCARTA_IL10_PATHWAY
+26585	GREM1	gremlin 1, DAN family BMP antagonist	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED	HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION								
+6441	SFTPD	surfactant protein D	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED		PID_HNF3A_PATHWAY							
+729238	SFTPA2	surfactant protein A2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED		PID_HNF3A_PATHWAY							
+653509	SFTPA1	surfactant protein A1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED		PID_HNF3A_PATHWAY							
+6440	SFTPC	surfactant protein C	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED									
+6439	SFTPB	surfactant protein B	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED									
+389376	SFTA2	surfactant associated 2	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED									
+4582	MUC1	mucin 1, cell surface associated	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED									
+78989	COLEC11	collectin subfamily member 11	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED	NABA_ECM_AFFILIATED									
+3569	IL6	interleukin 6	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION		KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION		HALLMARK_TNFA_SIGNALING_VIA_NFKB	HALLMARK_COMPLEMENT	HALLMARK_INFLAMMATORY_RESPONSE	HALLMARK_IL6_JAK_STAT3_SIGNALING	BIOCARTA_IL10_PATHWAY
+5054	SERPINE1	serpin family E member 1	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED		HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION			PID_HIF1_TFPATHWAY	HALLMARK_TNFA_SIGNALING_VIA_NFKB	HALLMARK_COMPLEMENT	HALLMARK_INFLAMMATORY_RESPONSE		
+6362	CCL18	C-C motif chemokine ligand 18	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED				KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION						
+4321	MMP12	matrix metallopeptidase 12	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED							HALLMARK_COMPLEMENT			
+147381	CBLN2	cerebellin 2 precursor	NABA_MATRISOME	NABA_MATRISOME_ASSOCIATED										
+8076	MFAP5	microfibril associated protein 5	NABA_MATRISOME			HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION								
+1297	COL9A1	collagen type IX alpha 1 chain	NABA_MATRISOME											
+4982	TNFRSF11B	TNF receptor superfamily member 11b				HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION		KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION						
+5806	PTX3	pentraxin 3				HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION				HALLMARK_TNFA_SIGNALING_VIA_NFKB				
+7980	TFPI2	tissue factor pathway inhibitor 2				HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION					HALLMARK_COMPLEMENT			
+7356	SCGB1A1	secretoglobin family 1A member 1					PID_HNF3A_PATHWAY							
+8771	TNFRSF6B	TNF receptor superfamily member 6b						KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION						
+2324	FLT4	fms related tyrosine kinase 4						KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION						
+3162	HMOX1	heme oxygenase 1							PID_HIF1_TFPATHWAY				HALLMARK_IL6_JAK_STAT3_SIGNALING	BIOCARTA_IL10_PATHWAY
+768	CA9	carbonic anhydrase 9							PID_HIF1_TFPATHWAY					
+7262	PHLDA2	pleckstrin homology like domain family A member 2								HALLMARK_TNFA_SIGNALING_VIA_NFKB				
+5739	PTGIR	prostaglandin I2 receptor										HALLMARK_INFLAMMATORY_RESPONSE		
+8685	MARCO	macrophage receptor with collagenous structure										HALLMARK_INFLAMMATORY_RESPONSE		
+5320	PLA2G2A	phospholipase A2 group IIA											HALLMARK_IL6_JAK_STAT3_SIGNALING	
+7425	VGF	VGF nerve growth factor inducible												
+7200	TRH	thyrotropin releasing hormone												
+54210	TREM1	triggering receptor expressed on myeloid cells 1												
+64499	TPSB2	tryptase beta 2 (gene/pseudogene)												
+100130958	SYCE1L	synaptonemal complex central element protein 1 like												
+6783	SULT1E1	sulfotransferase family 1E member 1												
+10568	SLC34A2	solute carrier family 34 member 2												
+6511	SLC1A6	solute carrier family 1 member 6												
+84561	SLC12A8	solute carrier family 12 member 8												
+152573	SHISA3	shisa family member 3												
+117156	SCGB3A2	secretoglobin family 3A member 2												
+286133	SCARA5	scavenger receptor class A member 5												
+8622	PDE8B	phosphodiesterase 8B												
+9476	NAPSA	napsin A aspartic peptidase												
+4606	MYBPC2	myosin binding protein C, fast type												
+79083	MLPH	melanophilin												
+406886	MIRLET7D	microRNA let-7d												
+9358	ITGBL1	integrin subunit beta like 1												
+28834	IGLC7	immunoglobulin lambda constant 7												
+28902	IGKV1D-13	immunoglobulin kappa variable 1D-13												
+3494	IGHA2	immunoglobulin heavy constant alpha 2 (A2m marker)												
+3240	HP	haptoglobin												
+2710	GK	glycerol kinase												
+2118	ETV4	ETS variant 4												
+64150	DIO3OS	DIO3 opposite strand upstream RNA												
+1735	DIO3	iodothyronine deiodinase 3												
+284340	CXCL17	C-X-C motif chemokine ligand 17												
+1392	CRH	corticotropin releasing hormone												
+1366	CLDN7	claudin 7												
+1066	CES1	carboxylesterase 1												
+389336	C5orf46	chromosome 5 open reading frame 46												
+146556	C16orf89	chromosome 16 open reading frame 89												
+10053	AP1M2	adaptor related protein complex 1 subunit mu 2												
+177	AGER	advanced glycosylation end-product specific receptor												

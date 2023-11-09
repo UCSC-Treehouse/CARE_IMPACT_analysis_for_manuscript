@@ -1,0 +1,182 @@
+
+Overlap Results
+
+Collection(s):	CP, H
+# overlaps shown:	24
+# genesets in collections:	1379
+# genes in comparison (n):	143
+# genes in universe (N):	45956
+
+Gene Set Name	# Genes in Gene Set (K)	Description	# Genes in Overlap (k)	k/K	p-value	FDR q-value
+HALLMARK_ESTROGEN_RESPONSE_LATE	200	Genes defining late response to estrogen.	8	0.04	2.405e-7	3.316e-4
+HALLMARK_ESTROGEN_RESPONSE_EARLY	200	Genes defining early response to estrogen.	7	0.035	3.374e-6	0.001943
+KEGG_TIGHT_JUNCTION	134	Tight junction	6	0.04478	4.227e-6	0.001943
+REACTOME_AMINE_DERIVED_HORMONES	15	Genes involved in Amine-derived hormones	3	0.2	1.306e-5	0.003002
+REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT	241	Genes involved in SLC-mediated transmembrane transport	7	0.02905	1.14e-5	0.003002
+REACTOME_TRANSPORT_OF_INORGANIC_CATIONS_ANIONS_AND_AMINO_ACIDS_OLIGOPEPTIDES	94	Genes involved in Transport of inorganic cations/anions and amino acids/oligopeptides	5	0.05319	1.195e-5	0.003002
+NABA_MATRISOME	1028	Ensemble of genes encoding extracellular matrix and extracellular matrix-associated proteins	13	0.01265	2.145e-5	0.004226
+REACTOME_CELL_CELL_JUNCTION_ORGANIZATION	56	Genes involved in Cell-cell junction organization	4	0.07143	2.911e-5	0.005018
+REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES	413	Genes involved in Transmembrane transport of small molecules	8	0.01937	4.916e-5	0.007532
+KEGG_CELL_ADHESION_MOLECULES_CAMS	134	Cell adhesion molecules (CAMs)	5	0.03731	6.577e-5	0.00907
+REACTOME_TIGHT_JUNCTION_INTERACTIONS	29	Genes involved in Tight junction interactions	3	0.1034	1.016e-4	0.01232
+REACTOME_CELL_JUNCTION_ORGANIZATION	78	Genes involved in Cell junction organization	4	0.05128	1.072e-4	0.01232
+NABA_MATRISOME_ASSOCIATED	753	Ensemble of genes encoding ECM-associated proteins including ECM-affilaited proteins, ECM regulators and secreted factors	10	0.01328	1.33e-4	0.01411
+KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION	267	Cytokine-cytokine receptor interaction	6	0.02247	1.997e-4	0.01967
+REACTOME_GABA_B_RECEPTOR_ACTIVATION	38	Genes involved in GABA B receptor activation	3	0.07895	2.298e-4	0.02112
+REACTOME_APOPTOTIC_CLEAVAGE_OF_CELLULAR_PROTEINS	40	Genes involved in Apoptotic cleavage of cellular proteins	3	0.075	2.679e-4	0.02173
+REACTOME_POTASSIUM_CHANNELS	98	Genes involved in Potassium Channels	4	0.04082	2.588e-4	0.02173
+KEGG_AUTOIMMUNE_THYROID_DISEASE	53	Autoimmune thyroid disease	3	0.0566	6.166e-4	0.03728
+PID_ARF6_TRAFFICKING_PATHWAY	49	Arf6 trafficking events	3	0.06122	4.894e-4	0.03728
+REACTOME_CELL_CELL_COMMUNICATION	120	Genes involved in Cell-Cell communication	4	0.03333	5.582e-4	0.03728
+REACTOME_APOPTOTIC_CLEAVAGE_OF_CELL_ADHESION_PROTEINS	12	Genes involved in Apoptotic cleavage of cell adhesion  proteins	2	0.1667	6.217e-4	0.03728
+REACTOME_SIGNALING_BY_PDGF	122	Genes involved in Signaling by PDGF	4	0.03279	5.94e-4	0.03728
+REACTOME_GABA_RECEPTOR_ACTIVATION	52	Genes involved in GABA receptor activation	3	0.05769	5.831e-4	0.03728
+REACTOME_APOPTOTIC_EXECUTION_PHASE	54	Genes involved in Apoptotic execution  phase	3	0.05556	6.514e-4	0.03743
+
+
+Gene/Gene Set Overlap Matrix
+
+Entrez Gene Id	Gene Symbol	Gene Description	HALLMARK_ESTROGEN_RESPONSE_LATE	HALLMARK_ESTROGEN_RESPONSE_EARLY	KEGG_TIGHT_JUNCTION	REACTOME_AMINE_DERIVED_HORMONES	REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT	REACTOME_TRANSPORT_OF_INORGANIC_CATIONS_ANIONS_AND_AMINO_ACIDS_OLIGOPEPTIDES	NABA_MATRISOME	REACTOME_CELL_CELL_JUNCTION_ORGANIZATION	REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES	KEGG_CELL_ADHESION_MOLECULES_CAMS	REACTOME_TIGHT_JUNCTION_INTERACTIONS	REACTOME_CELL_JUNCTION_ORGANIZATION	NABA_MATRISOME_ASSOCIATED	KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION	REACTOME_GABA_B_RECEPTOR_ACTIVATION	REACTOME_APOPTOTIC_CLEAVAGE_OF_CELLULAR_PROTEINS	REACTOME_POTASSIUM_CHANNELS	KEGG_AUTOIMMUNE_THYROID_DISEASE	PID_ARF6_TRAFFICKING_PATHWAY	REACTOME_CELL_CELL_COMMUNICATION	REACTOME_APOPTOTIC_CLEAVAGE_OF_CELL_ADHESION_PROTEINS	REACTOME_SIGNALING_BY_PDGF	REACTOME_GABA_RECEPTOR_ACTIVATION	REACTOME_APOPTOTIC_EXECUTION_PHASE
+7033	TFF3	trefoil factor 3	HALLMARK_ESTROGEN_RESPONSE_LATE	HALLMARK_ESTROGEN_RESPONSE_EARLY																						
+3880	KRT19	keratin 19	HALLMARK_ESTROGEN_RESPONSE_LATE	HALLMARK_ESTROGEN_RESPONSE_EARLY																						
+9022	CLIC3	chloride intracellular channel 3	HALLMARK_ESTROGEN_RESPONSE_LATE	HALLMARK_ESTROGEN_RESPONSE_EARLY																						
+6768	ST14	suppression of tumorigenicity 14	HALLMARK_ESTROGEN_RESPONSE_LATE						NABA_MATRISOME						NABA_MATRISOME_ASSOCIATED											
+999	CDH1	cadherin 1	HALLMARK_ESTROGEN_RESPONSE_LATE							REACTOME_CELL_CELL_JUNCTION_ORGANIZATION		KEGG_CELL_ADHESION_MOLECULES_CAMS		REACTOME_CELL_JUNCTION_ORGANIZATION				REACTOME_APOPTOTIC_CLEAVAGE_OF_CELLULAR_PROTEINS			PID_ARF6_TRAFFICKING_PATHWAY	REACTOME_CELL_CELL_COMMUNICATION	REACTOME_APOPTOTIC_CLEAVAGE_OF_CELL_ADHESION_PROTEINS			REACTOME_APOPTOTIC_EXECUTION_PHASE
+6652	SORD	sorbitol dehydrogenase	HALLMARK_ESTROGEN_RESPONSE_LATE																							
+27250	PDCD4	programmed cell death 4	HALLMARK_ESTROGEN_RESPONSE_LATE																							
+8309	ACOX2	acyl-CoA oxidase 2	HALLMARK_ESTROGEN_RESPONSE_LATE																							
+1366	CLDN7	claudin 7		HALLMARK_ESTROGEN_RESPONSE_EARLY	KEGG_TIGHT_JUNCTION					REACTOME_CELL_CELL_JUNCTION_ORGANIZATION		KEGG_CELL_ADHESION_MOLECULES_CAMS	REACTOME_TIGHT_JUNCTION_INTERACTIONS	REACTOME_CELL_JUNCTION_ORGANIZATION								REACTOME_CELL_CELL_COMMUNICATION				
+115	ADCY9	adenylate cyclase 9		HALLMARK_ESTROGEN_RESPONSE_EARLY							REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES						REACTOME_GABA_B_RECEPTOR_ACTIVATION							REACTOME_SIGNALING_BY_PDGF	REACTOME_GABA_RECEPTOR_ACTIVATION	
+3856	KRT8	keratin 8		HALLMARK_ESTROGEN_RESPONSE_EARLY																						
+80004	ESRP2	epithelial splicing regulatory protein 2		HALLMARK_ESTROGEN_RESPONSE_EARLY																						
+1364	CLDN4	claudin 4			KEGG_TIGHT_JUNCTION					REACTOME_CELL_CELL_JUNCTION_ORGANIZATION		KEGG_CELL_ADHESION_MOLECULES_CAMS	REACTOME_TIGHT_JUNCTION_INTERACTIONS	REACTOME_CELL_JUNCTION_ORGANIZATION								REACTOME_CELL_CELL_COMMUNICATION				
+1365	CLDN3	claudin 3			KEGG_TIGHT_JUNCTION					REACTOME_CELL_CELL_JUNCTION_ORGANIZATION		KEGG_CELL_ADHESION_MOLECULES_CAMS	REACTOME_TIGHT_JUNCTION_INTERACTIONS	REACTOME_CELL_JUNCTION_ORGANIZATION								REACTOME_CELL_CELL_COMMUNICATION				
+5580	PRKCD	protein kinase C delta			KEGG_TIGHT_JUNCTION													REACTOME_APOPTOTIC_CLEAVAGE_OF_CELLULAR_PROTEINS						REACTOME_SIGNALING_BY_PDGF		REACTOME_APOPTOTIC_EXECUTION_PHASE
+208	AKT2	AKT serine/threonine kinase 2			KEGG_TIGHT_JUNCTION																			REACTOME_SIGNALING_BY_PDGF		
+57530	CGN	cingulin			KEGG_TIGHT_JUNCTION																					
+7173	TPO	thyroid peroxidase				REACTOME_AMINE_DERIVED_HORMONES			NABA_MATRISOME						NABA_MATRISOME_ASSOCIATED	KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION				KEGG_AUTOIMMUNE_THYROID_DISEASE						
+389434	IYD	iodotyrosine deiodinase				REACTOME_AMINE_DERIVED_HORMONES																				
+1734	DIO2	iodothyronine deiodinase 2				REACTOME_AMINE_DERIVED_HORMONES																				
+57835	SLC4A5	solute carrier family 4 member 5					REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT	REACTOME_TRANSPORT_OF_INORGANIC_CATIONS_ANIONS_AND_AMINO_ACIDS_OLIGOPEPTIDES			REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES															
+8671	SLC4A4	solute carrier family 4 member 4					REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT	REACTOME_TRANSPORT_OF_INORGANIC_CATIONS_ANIONS_AND_AMINO_ACIDS_OLIGOPEPTIDES			REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES															
+115111	SLC26A7	solute carrier family 26 member 7					REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT	REACTOME_TRANSPORT_OF_INORGANIC_CATIONS_ANIONS_AND_AMINO_ACIDS_OLIGOPEPTIDES			REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES															
+5172	SLC26A4	solute carrier family 26 member 4					REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT	REACTOME_TRANSPORT_OF_INORGANIC_CATIONS_ANIONS_AND_AMINO_ACIDS_OLIGOPEPTIDES			REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES															
+6575	SLC20A2	solute carrier family 20 member 2					REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT	REACTOME_TRANSPORT_OF_INORGANIC_CATIONS_ANIONS_AND_AMINO_ACIDS_OLIGOPEPTIDES			REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES															
+6578	SLCO2A1	solute carrier organic anion transporter family member 2A1					REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT				REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES															
+11046	SLC35D2	solute carrier family 35 member D2					REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT				REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES															
+7424	VEGFC	vascular endothelial growth factor C							NABA_MATRISOME						NABA_MATRISOME_ASSOCIATED	KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION										
+253970	SFTA3	surfactant associated 3							NABA_MATRISOME						NABA_MATRISOME_ASSOCIATED											
+223117	SEMA3D	semaphorin 3D							NABA_MATRISOME						NABA_MATRISOME_ASSOCIATED											
+222663	SCUBE3	signal peptide, CUB domain and EGF like domain containing 3							NABA_MATRISOME						NABA_MATRISOME_ASSOCIATED											
+57402	S100A14	S100 calcium binding protein A14							NABA_MATRISOME						NABA_MATRISOME_ASSOCIATED											
+143662	MUC15	mucin 15, cell surface associated							NABA_MATRISOME						NABA_MATRISOME_ASSOCIATED											
+1508	CTSB	cathepsin B							NABA_MATRISOME						NABA_MATRISOME_ASSOCIATED											
+1474	CST6	cystatin E/M							NABA_MATRISOME						NABA_MATRISOME_ASSOCIATED											
+1299	COL9A3	collagen type IX alpha 3 chain							NABA_MATRISOME															REACTOME_SIGNALING_BY_PDGF		
+255743	NPNT	nephronectin							NABA_MATRISOME																	
+25890	ABI3BP	ABI family member 3 binding protein							NABA_MATRISOME																	
+4099	MAG	myelin associated glycoprotein										KEGG_CELL_ADHESION_MOLECULES_CAMS														
+3815	KIT	KIT proto-oncogene receptor tyrosine kinase														KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION										
+58985	IL22RA1	interleukin 22 receptor subunit alpha 1														KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION										
+2057	EPOR	erythropoietin receptor														KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION										
+939	CD27	CD27 molecule														KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION										
+3773	KCNJ16	potassium voltage-gated channel subfamily J member 16															REACTOME_GABA_B_RECEPTOR_ACTIVATION		REACTOME_POTASSIUM_CHANNELS						REACTOME_GABA_RECEPTOR_ACTIVATION	
+3772	KCNJ15	potassium voltage-gated channel subfamily J member 15															REACTOME_GABA_B_RECEPTOR_ACTIVATION		REACTOME_POTASSIUM_CHANNELS						REACTOME_GABA_RECEPTOR_ACTIVATION	
+1832	DSP	desmoplakin																REACTOME_APOPTOTIC_CLEAVAGE_OF_CELLULAR_PROTEINS					REACTOME_APOPTOTIC_CLEAVAGE_OF_CELL_ADHESION_PROTEINS			REACTOME_APOPTOTIC_EXECUTION_PHASE
+3777	KCNK3	potassium two pore domain channel subfamily K member 3																	REACTOME_POTASSIUM_CHANNELS							
+7881	KCNAB1	potassium voltage-gated channel subfamily A member regulatory beta subunit 1																	REACTOME_POTASSIUM_CHANNELS							
+7253	TSHR	thyroid stimulating hormone receptor																		KEGG_AUTOIMMUNE_THYROID_DISEASE	PID_ARF6_TRAFFICKING_PATHWAY					
+7038	TG	thyroglobulin																		KEGG_AUTOIMMUNE_THYROID_DISEASE						
+8853	ASAP2	ArfGAP with SH3 domain, ankyrin repeat and PH domain 2																			PID_ARF6_TRAFFICKING_PATHWAY					
+23144	ZC3H3	zinc finger CCCH-type containing 3																								
+10406	WFDC2	WAP four-disulfide core domain 2																								
+10103	TSPAN1	tetraspanin 1																								
+7225	TRPC6	transient receptor potential cation channel subfamily C member 6																								
+140738	TMEM37	transmembrane protein 37																								
+161291	TMEM30B	transmembrane protein 30B																								
+387521	TMEM189	transmembrane protein 189																								
+NA	TMEM180	NA																								
+147798	TMC4	transmembrane channel like 4																								
+79816	TLE6	TLE family member 6, subcortical maternal complex member																								
+55852	TEX2	testis expressed 2																								
+256536	TCERG1L	transcription elongation regulator 1 like																								
+50945	TBX22	T-box 22																								
+94120	SYTL3	synaptotagmin like 3																								
+55620	STAP2	signal transducing adaptor family member 2																								
+84620	ST6GAL2	ST6 beta-galactoside alpha-2,6-sialyltransferase 2																								
+162515	SLC16A11	solute carrier family 16 member 11																								
+84561	SLC12A8	solute carrier family 12 member 8																								
+27036	SIGLEC7	sialic acid binding Ig like lectin 7																								
+79729	SH3D21	SH3 domain containing 21																								
+7356	SCGB1A1	secretoglobin family 1A member 1																								
+9501	RPH3AL	rabphilin 3A like (without C2 domains)																								
+285498	RNF212	ring finger protein 212																								
+57139	RGL3	ral guanine nucleotide dissociation stimulator like 3																								
+57111	RAB25	RAB25, member RAS oncogene family																								
+23615	PYY2	peptide YY 2 (pseudogene)																								
+5652	PRSS8	serine protease 8																								
+79170	PRR15L	proline rich 15 like																								
+150696	PROM2	prominin 2																								
+284352	PPP1R37	protein phosphatase 1 regulatory subunit 37																								
+5493	PPL	periplakin																								
+23759	PPIL2	peptidylprolyl isomerase like 2																								
+57475	PLEKHH1	pleckstrin homology, MyTH4 and FERM domain containing H1																								
+5316	PKNOX1	PBX/knotted 1 homeobox 1																								
+8622	PDE8B	phosphodiesterase 8B																								
+7849	PAX8	paired box 8																								
+150677	OTOS	otospiralin																								
+7080	NKX2-1	NK2 homeobox 1																								
+4635	MYL4	myosin light chain 4																								
+4496	MT1H	metallothionein 1H																								
+4495	MT1G	metallothionein 1G																								
+4494	MT1F	metallothionein 1F																								
+NA	MESDC2	NA																								
+51562	MBIP	MAP3K12 binding inhibitory protein 1																								
+153562	MARVELD2	MARVEL domain containing 2																								
+114569	MAL2	mal, T cell differentiation protein 2 (gene/pseudogene)																								
+9388	LIPG	lipase G, endothelial type																								
+3934	LCN2	lipocalin 2																								
+286256	LCN12	lipocalin 12																								
+196374	KRT78	keratin 78																								
+3855	KRT7	keratin 7																								
+688	KLF5	Kruppel like factor 5																								
+57179	KIAA1191	KIAA1191																								
+27124	INPP5J	inositol polyphosphate-5-phosphatase J																								
+64375	IKZF4	IKAROS family zinc finger 4																								
+9543	IGDCC3	immunoglobulin superfamily DCC subclass member 3																								
+126917	IFFO2	intermediate filament family orphan 2																								
+8091	HMGA2	high mobility group AT-hook 2																								
+7290	HIRA	histone cell cycle regulator																								
+23498	HAAO	3-hydroxyanthranilate 3,4-dioxygenase																								
+2948	GSTM4	glutathione S-transferase mu 4																								
+9052	GPRC5A	G protein-coupled receptor class C group 5 member A																								
+257019	FRMD3	FERM domain containing 3																								
+116113	FOXP4	forkhead box P4																								
+2304	FOXE1	forkhead box E1																								
+8857	FCGBP	Fc fragment of IgG binding protein																								
+9413	FAM189A2	family with sequence similarity 189 member A2																								
+83648	FAM167A	family with sequence similarity 167 member A																								
+2167	FABP4	fatty acid binding protein 4																								
+2125	EVPL	envoplakin																								
+64787	EPS8L2	EPS8 like 2																								
+54869	EPS8L1	EPS8 like 1																								
+4072	EPCAM	epithelial cell adhesion molecule																								
+1982	EIF4G2	eukaryotic translation initiation factor 4 gamma 2																								
+8892	EIF2B2	eukaryotic translation initiation factor 2B subunit beta																								
+405753	DUOXA2	dual oxidase maturation factor 2																								
+90527	DUOXA1	dual oxidase maturation factor 1																								
+50506	DUOX2	dual oxidase 2																								
+53905	DUOX1	dual oxidase 1																								
+10589	DRAP1	DR1 associated protein 1																								
+93099	DMKN	dermokine																								
+84649	DGAT2	diacylglycerol O-acyltransferase 2																								
+80157	CWH43	cell wall biogenesis 43 C-terminal homolog																								
+51117	COQ4	coenzyme Q4																								
+79935	CNTD2	cyclin N-terminal domain containing 2																								
+26504	CNNM4	cyclin and CBS domain divalent metal cation transport mediator 4																								
+996	CDC27	cell division cycle 27																								
+146556	C16orf89	chromosome 16 open reading frame 89																								
+1820	ARID3A	AT-rich interaction domain 3A																								
+23779	ARHGAP8	Rho GTPase activating protein 8																								
+10053	AP1M2	adaptor related protein complex 1 subunit mu 2																								
+211	ALAS1	5'-aminolevulinate synthase 1																								

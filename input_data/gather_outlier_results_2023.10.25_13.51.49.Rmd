@@ -1,0 +1,279 @@
+
+---
+title: "`r gsub('.Rmd', ' ', gsub('_', ' ', knitr::current_input()))`"
+author: "`r Sys.getenv('USER')`"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: yes
+---
+  
+
+
+
+mount drive locally as follows (not run on knit)
+
+```{r eval=FALSE, include=TRUE}
+
+server=hbeale@mustard:/; mount_name=mustard
+umount $server
+mnt_point=/Users/hbeale/servers/${mount_name}
+mkdir -p $mnt_point
+
+```
+
+```{r setup}
+
+library(tidyverse)
+library(jsonlite)
+library(janitor)
+
+```
+
+
+```{r}
+
+data_base_dir <- "data"
+# mustard_base <- "/Users/hbeale/servers/mustard/private/"
+# mustard_prefix <-  "/Users/hbeale/servers/mustard/"
+#mustard_base <- "/private/"
+#data_dir <- file.path(mustard_base, "groups/treehouse/working-projects/hbeale/ckcc2_2023_07")
+data_dir <- "."
+paths_file <- "original_tertiary_locations_as_of_2023_10_25-10_27_50_2023.tsv"
+samples_file <- "ckcc2_samples_and_metadata_from_redcap_2023.10.24_13.26.34.tsv"
+
+paths_raw <- read_tsv(paths_file,
+                      col_types = cols(.default = "c")) %>%
+  mutate(tertiary_path = file.path(
+    data_base_dir,
+    Sample,
+    "tertiary",
+    recorded_protocol_version,
+    compendium_version))
+
+nrow(paths_raw)
+
+project_samples <- read_tsv(samples_file,
+                      col_types = cols(.default = "c"))
+nrow(project_samples)
+
+# reminder; there are more lines in the paths_raw tibble than
+# in the project_samples tibble because some samples have
+# multiple tert outputs
+
+
+# check whether all samples are present in both data sources
+# if both groups are identical,  result will be "character(0)"
+setdiff(paths_raw$Sample, project_samples$THid)
+setdiff(project_samples$THid, paths_raw$Sample)
+
+tertiary_output_locations <- paths_raw %>%
+  select(sample_id = Sample, tertiary_path) 
+
+```
+
+# Compendium and protocol version survey
+```{r}
+
+
+paths_raw %>%
+  select(Sample, compendium_version,
+         recorded_protocol_version)
+#install.packages("janitor")
+
+tabyl(paths_raw , compendium_version)
+tabyl(paths_raw , recorded_protocol_version)
+```
+
+# Load druggable genes
+```{r}
+
+# druggable_genes <- read_tsv(file.path(data_dir, "treehouseDruggableGenes_2020-03_25.txt"))
+
+```
+
+# Load "automatedLeadsIdentified" outlier results 
+From this, we'll determine whether the gene was considered druggable at the time
+```{r}
+automatedLeadsIdentified <- tertiary_output_locations %>%
+ group_by(sample_id) %>% 
+  mutate(automatedLeadsIdentified_raw = map(file.path(tertiary_path, "automatedLeadsIdentified.tsv"), 
+                         read_tsv, col_types = cols(.default = "c"))) %>%
+unnest(automatedLeadsIdentified_raw)
+```
+
+# Make list of genes that were identified as druggable at the time
+```{r}
+druggable_genes <- automatedLeadsIdentified %>%
+  filter(assay == "druggableUpOutlier",
+         results != "No druggableUpOutliers") %>%
+  select(sample_id, gene = results, details) %>%
+  mutate(pc_up = str_detect(details, "pc"),
+         pd_up = str_detect(details, "pd"),
+         druggable = TRUE) %>%
+#  filter(sample_id == "TH34_1381_S01",
+ #        gene == "VEGFA") %>%
+  select(-details) %>%
+  replace_na(list(pc_up = FALSE, pd_up = FALSE)) 
+  
+```
+
+
+# pathway support
+```{r}
+warty_automatedLeadsIdentified <- automatedLeadsIdentified %>%
+  ungroup %>%
+  select(TH_id = THid, assay, results, details) %>%
+  filter(results != "No druggableUpOutliers",
+         results != "no enriched druggable geneSets",
+         str_detect(assay, "geneSets")) %>%
+  select(TH_id, results, details) %>%
+  mutate(gene_and_outlier_type = str_remove(details, "^druggable: ") %>%
+           str_split(pattern = ", ")) %>%
+  unnest(gene_and_outlier_type) %>%
+  mutate(gene = str_remove(gene_and_outlier_type, "\\(.*$") %>%
+           str_trim(),
+           outlier_type = str_remove(gene_and_outlier_type, "^.*\\(") %>%
+           str_remove("\\)"),
+         outlier_type = str_split(outlier_type, pattern = " and ")) %>%
+  unnest(outlier_type)
+         
+# sources of pathways        
+pathway_sources <- warty_automatedLeadsIdentified %>%
+  select(TH_id, gene, outlier_type, results) %>%
+  #mutate(results = str_sub(results, start = 1, end = 10)) %>%
+  mutate(source = str_remove(results, "_.*$")) 
+
+pathway_sources %>%
+  tabyl(source)
+
+pathway_sources %>%
+  group_by(source) %>%
+  slice_head(n=1)
+
+outliers_with_pathway_support <- warty_automatedLeadsIdentified %>%
+  select(TH_id, gene, results) %>%
+  distinct() %>%
+  group_by(TH_id, gene) %>%
+  summarize(n_pathways = n()) %>%
+  mutate(has_pathway_support = TRUE)
+   
+```
+
+# Save pathway details
+```{r}
+output_name <- paste0("contemporarily_druggable_up_outliers_with_pathway_support_gathered_", format(Sys.time(), "%Y_%m_%d-%H_%M_%S_%Y"), "_based_on_", paths_file)
+
+output_name
+
+
+write_tsv(warty_automatedLeadsIdentified %>%
+  select(TH_id, gene, outlier_type, results),
+  output_name)         
+
+
+```
+
+# Load pan cancer outlier results
+details on file structure: https://github.com/UCSC-Treehouse/reference-file-info/blob/master/Explainer%20for%20outlier_results_files.txt
+```{r}
+
+outlier_results_file_data <- tertiary_output_locations %>%
+ group_by(sample_id) %>% 
+  mutate(leads_raw = map(file.path(tertiary_path, paste0("outlier_results_", sample_id)), 
+                         read_tsv, col_types = cols(.default = "c"))) %>%
+unnest(leads_raw)
+
+```
+
+# Select pan-cancer up outliers 
+```{r}
+
+pc_outliers <- outlier_results_file_data %>%
+  filter(pc_outlier=="pc_up") %>%
+  select(sample_id, gene = Gene) %>%
+  mutate(pc_up = TRUE) 
+
+```
+
+# Import pan-disease up outliers
+### notes on using personalized_consensus_counts up_outliers
+j4$personalized_consensus_counts$up_outliers lists all genes that are up outliers relative to more than 1 pan disease cohort. I  confirmed with code that everything in the personalized_consensus_counts up_outliers in top 5
+
+takes about 2 seconds per samples
+```{r}
+# code for samples with two cohorts, currently TH34_1349_S01, TH34_1349_S02
+
+
+get_pan_disease_outliers <- function(this_tert_path){
+  j4 <- fromJSON(file.path(this_tert_path, "4.0.json"))
+  tibble(gene = names(j4$personalized_consensus_counts$up_outliers))
+}
+
+pan_disease_outliers_raw <- tertiary_output_locations %>%
+  mutate(pan_disease_outliers_raw = map(tertiary_path, get_pan_disease_outliers)) %>%
+  unnest(pan_disease_outliers_raw)
+
+pan_disease_outliers <- pan_disease_outliers_raw %>%
+  select(sample_id, gene) %>%
+  mutate(pd_up = TRUE)
+
+```
+
+# Combine
+```{r}
+all_outliers <- pc_outliers  %>%
+  full_join(pan_disease_outliers, by = c("sample_id", "gene")) %>%
+  left_join(druggable_genes %>%
+              select(-pd_up),
+            by = c("sample_id", "gene", "pc_up")) %>%
+  left_join(outliers_with_pathway_support %>%
+              select(-n_pathways),
+            by=c("sample_id"="TH_id", "gene")) %>%
+  arrange(has_pathway_support)  %>%
+  replace_na(list(druggable = FALSE, 
+                  pd_up = FALSE,
+                  pc_up = FALSE,
+                  has_pathway_support = FALSE)) 
+```
+
+
+```{r}
+
+
+all_outliers %>%
+  filter(pc_up, !pd_up) %>%
+  head()
+
+
+all_outliers %>%
+  filter(pd_up, !pc_up) %>%
+  head()
+
+
+all_outliers %>%
+  filter(pc_up, pd_up) %>%
+  head()
+
+all_outliers %>%
+  filter(druggable) %>%
+  head()
+
+
+all_outliers %>%
+  filter(has_pathway_support) %>%
+  head()
+
+```
+
+
+```{r}
+
+output_name <- paste0("outliers_gathered_", format(Sys.time(), "%Y_%m_%d-%H_%M_%S_%Y"), "_based_on_", paths_file)
+
+output_name
+
+write_tsv(all_outliers, output_name)
+
+```
+
