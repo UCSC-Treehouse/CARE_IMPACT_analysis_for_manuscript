@@ -1,0 +1,230 @@
+---
+title: "`r gsub('.Rmd', ' ', gsub('_', ' ', knitr::current_input()))`"
+author: "`r Sys.getenv('USER')`"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: yes
+---
+  
+
+
+```{r setup, include = FALSE}
+
+library(tidyverse)
+library(janitor)
+
+```
+
+
+# Load treehouse  tertiary results
+
+
+## Load metadata
+```{r}
+
+sample_metadata_file <- "../input_data/ckcc2_metadata_from_redcap_2023-11-09_10.34.27.tsv"
+ckcc2_samples <- read_tsv(sample_metadata_file)
+
+```
+
+## Load Treehouse druggable outliers
+This takes a couple minutes
+```{r}
+
+remote_tert_base_output_path <- "/Users/hbeale/servers/mustard/private/groups/treehouse/archive/downstream"
+automatedLeadsIdentified_file <- "tertiary/treehouse-care-0.17.1.0-8107fe7.4/compendium-v11_polya/automatedLeadsIdentified.tsv"
+
+ckcc2_outliers <- ckcc2_samples %>%
+  mutate(tert_path = file.path(remote_tert_base_output_path, THid, automatedLeadsIdentified_file)) %>%
+  rowwise %>%
+  mutate(outliers  = list(read_tsv(tert_path,
+                                     show_col_types = FALSE
+                                     ) %>%
+                            select(-THid))) %>%
+  
+  unnest(outliers)
+
+```
+
+## mark druggability 
+```{r}
+
+druggable_treehouse_outliers <- ckcc2_outliers %>%
+  filter(assay == "druggableUpOutlier",
+         results != "No druggableUpOutliers")  %>% 
+  select(THid, results, details) %>%
+  mutate(outlier = str_split(details, pattern = ", ")) %>%
+  unnest_longer(outlier) %>%
+  select(-details) %>%
+  mutate(druggable = TRUE)
+
+
+```
+
+## mark pathway support
+see https://github.com/UCSC-Treehouse/CKCC2_July_2023/issues/7 to discus "Should a pancancer up outlier be considered to have pathway support if the pathway is only present in pan-disease outliers? "
+```{r}
+
+# example "results" to handle: "comm_up (3/73) and pc_up (3/73) and pd_up (3/73))"
+
+outliers_with_pathway_support_raw <- ckcc2_outliers %>%
+  filter(assay != "druggableUpOutlier") %>% 
+  select(THid, results, details) %>%
+  mutate(details = str_remove(details, "druggable: ") %>%
+           str_split(pattern = ", ")) %>%
+  unnest_longer(details) %>%
+  mutate(compound_pathway_enrichment_source = str_remove(results, "^[^(]* \\(")) %>%
+  # select(compound_pathway_enrichment_source) %>%
+  mutate(pathway_enrichment_source_raw = str_split(compound_pathway_enrichment_source,
+                                               pattern = " and ")) %>%
+  unnest(pathway_enrichment_source_raw) %>%
+  mutate(pathway_enrichment_source = str_remove(pathway_enrichment_source_raw, 
+                                         " \\(.*$") %>%
+           str_remove("_up"))
+       
+# all pathways are "up" not down
+# is_up = str_detect(pathway_enrichment, "up"))
+# table(outliers_with_pathway_support_raw$is_up, useNA = "always")
+
+all_outliers_with_pathway_support_and_deconvolved_genes <- outliers_with_pathway_support_raw %>%
+  select(THid, pathway_enrichment_source, details) %>%
+  filter(pathway_enrichment_source != "comm") %>%
+  mutate(gene = str_remove(details, " .*$"),
+         outlier_source = str_remove(details, "^.* \\(") %>%
+           str_remove("\\)") %>%
+           str_split(pattern = " and ")) %>%
+  unnest(outlier_source) %>%
+  select(-details) %>% # after reviewing by eye
+  distinct()
+ 
+outliers_with_pathway_support_in_same_cohort_raw <- all_outliers_with_pathway_support_and_deconvolved_genes %>%
+  filter(pathway_enrichment_source == outlier_source) %>%
+  mutate(pathway_support = TRUE)
+
+# from 128 lines to 76 lines
+
+outliers_with_pathway_support_in_same_cohort <- outliers_with_pathway_support_in_same_cohort_raw %>% 
+  select(THid, gene, outlier_source, pathway_support)
+  
+  
+```
+## combine druggable and pathways support for treehouse outliers
+```{r}
+
+treehouse_druggable_outliers_and_pathway_support <- left_join(
+  druggable_treehouse_outliers %>%
+    rename(gene = results,
+           outlier_source = outlier),
+  outliers_with_pathway_support_in_same_cohort, 
+  by = c("THid", "gene", "outlier_source")) %>%
+  mutate(comparison_cohort = paste0("Treehouse_", outlier_source)) %>%
+  select(-outlier_source) %>%
+  replace_na(list(pathway_support = FALSE))
+
+```
+
+
+# Load outliers relative to other cohorts
+
+
+```{r}
+
+anno_outliers_relative_to_subset_cohorts_raw <- read_tsv("comparison_to_non_CARE_cohorts/data/TH34_tall_v11-various-curated_pathways_2023-11-09.tsv")
+
+table(anno_outliers_relative_to_subset_cohorts_raw$compendium_version)
+
+anno_outliers_relative_to_v11_subset_cohorts <- anno_outliers_relative_to_subset_cohorts_raw  %>%
+  mutate(comparison_cohort = str_remove(rollup_cohort, 
+                                         "_rollup")) %>%
+  select(Sample_ID, comparison_cohort, everything()) %>%
+  select(-compendium_version, -rollup_cohort)
+
+
+
+  
+
+```
+
+## Fixed problem with outlier counts
+I think the problem I observed previously is fixed. There were only ~800 v11 outliers for all three cohort types for 35 samples. There are usually more than 100 pan can outliers per sample, which would lead us to expect at least 3500 outliers from (100*35) just the TCGA comparison.   Now there are 19,670
+
+```{r}
+sum(n_distinct(anno_outliers_relative_to_subset_cohorts_raw$Sample_ID))
+nrow(anno_outliers_relative_to_v11_subset_cohorts)
+
+
+anno_outliers_relative_to_v11_subset_cohorts %>%
+  group_by(comparison_cohort) %>%
+  summarize(n=n())
+
+```
+
+## druggable genes
+```{r}
+
+druggable_genes <- read_tsv("../input_data/treehouseDruggableGenes_2020-03_25.txt")
+
+```
+
+
+
+```{r}
+
+
+sum(is.na(anno_outliers_relative_to_v11_subset_cohorts$Pathway_support_for_outlier))
+
+simplified_anno_outliers_relative_to_v11_subset_cohorts <- anno_outliers_relative_to_v11_subset_cohorts %>%
+  replace_na(list(Pathway_support_for_outlier = "None")) %>%
+  mutate(druggable = gene %in% druggable_genes$gene,
+         pathway_support = ! Pathway_support_for_outlier %in% c(
+           "NO_PATHWAY_SUPPORT_RESULTS",
+           "NO_OVERLAPS_FOUND",
+           "None"))
+
+```
+
+```{r}
+simplified_anno_outliers_relative_to_v11_subset_cohorts %>%
+  filter(druggable)
+```
+
+# Combine outliers from Treehouse and other cohort 
+
+```{r}
+
+all_outliers <- bind_rows(simplified_anno_outliers_relative_to_v11_subset_cohorts %>%
+  select(Sample_ID, comparison_cohort, gene, druggable, pathway_support),
+treehouse_druggable_outliers_and_pathway_support %>%
+  rename(Sample_ID = THid)) %>%
+  mutate(donor_ID = str_remove(Sample_ID, "_S[0-9][0-9]$"))
+
+```
+
+
+# Describe druggable and pathway outliers
+```{r}
+
+all_outliers %>%
+  tabyl(druggable, pathway_support, comparison_cohort) %>%
+    adorn_title(placement = "top")
+
+```
+# Limit to druggable outliers
+```{r}
+druggable_outliers <- all_outliers %>%
+  filter(druggable) %>%
+  select(-druggable)
+```
+
+
+
+```{r}
+
+druggable_outliers_output_file_name <- paste0("../input_data/druggable_outliers_from_treehouse_and_other_cohorts_", format(Sys.time(), "%Y_%m_%d-%H_%M_%S_%Y"), ".tsv")
+
+write_tsv(druggable_outliers, druggable_outliers_output_file_name)
+
+```
+
+this output was saved as `r druggable_outliers_output_file_name`
