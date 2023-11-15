@@ -204,29 +204,24 @@ disease_group_vector <- set_names(disease_group_info$disease_group_color, diseas
 
 # Barplot
 ```{r}
-# 
-# disease_group_for_plot <- sample_metadata %>%
-#   select(donorID, dx_group) %>% 
-#   left_join(disease_group_names, by=c("dx_group"="original_disease_group_name")) %>%
-#   group_by(dx_group) %>%
-#   mutate(dx_group_num = n()) %>%
-#   ungroup %>%
-#   arrange(order) %>%
-#   mutate(long_disease_group_name_for_plot_n = 
-#            paste(long_disease_group_name_for_plot_n, " (n=", dx_group_num, ")"),
-#          long_disease_group_name_for_plot_n = 
-#            factor(long_disease_group_name_for_plot_n, levels = unique(long_disease_group_name_for_plot_n) ))
 
+revised_molecular_category_type <- tibble(old_molecular_category_type = 
+c("predefined_molecular_category", "other_molecular_category", "none"),
+revised_molecular_category_type = factor(c("predefined_molecular_category", "ad_hoc_molecular_category", 
+"ad_hoc_molecular_category"), levels = c("predefined_molecular_category", "ad_hoc_molecular_category")))
 
 finding_categories_for_plot <- finding_categories %>%
   arrange(n_donors_with_vulnerability, simplified_molecular_category) %>%
   mutate(simplified_molecular_category = factor(simplified_molecular_category,
-                                                   levels = rev(unique(simplified_molecular_category)))) %>%
+                                                   levels = rev(unique(simplified_molecular_category))) %>%
+           fct_relevel("Other", after = Inf)) %>%
   left_join(sample_metadata %>%
               select(donorID, disease, dx_group) %>%
               distinct(), 
             by = "donorID") %>%
-  left_join(disease_group_info, by=c("dx_group"="original_disease_group_name"))
+  left_join(disease_group_info, by=c("dx_group"="original_disease_group_name")) %>%
+  left_join(revised_molecular_category_type, 
+            by=c("molecular_category_type" = "old_molecular_category_type"))
                                            
   
 wrap_labels <- function(x) str_replace_all(x, "/", "\n") %>%
@@ -240,10 +235,10 @@ intial_cap_no_underscore <- function(x) {
 ggplot(finding_categories_for_plot) +
   geom_bar(aes(x = simplified_molecular_category,
                fill = long_disease_group_name_for_plot_n)) +
-  facet_row(~molecular_category_type,
+  facet_row(~revised_molecular_category_type,
             scales = "free_x",
             space = "free",
-            labeller = labeller(molecular_category_type=intial_cap_no_underscore) )  + 
+            labeller = labeller(revised_molecular_category_type=intial_cap_no_underscore) )  + 
   theme_minimal() +
     scale_x_discrete(labels = wrap_labels) +
   theme(axis.title.x = element_blank(),
