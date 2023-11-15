@@ -1,0 +1,176 @@
+---
+title: "`r gsub('.Rmd', ' ', gsub('_', ' ', knitr::current_input()))`"
+author: "`r Sys.getenv('USER')`"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+  toc: yes
+---
+  
+  
+updated the report 2023.10.23_09.35.56 to include lead/target/rationale #4
+updated 2023.10.23_16.46.48 to include date of presentation
+
+```{r setup}
+
+library(tidyverse)
+library(redcapAPI)
+library(janitor)
+library(haven)
+library(kableExtra)
+
+```
+# Load samples
+```{r}
+
+samples <- read_tsv("ckcc2_samples_and_metadata_from_redcap_2023.10.23_14.44.26.tsv") %>%
+  mutate(donor_key = str_remove(donorID, "^TH.*_"))
+  
+```
+
+
+
+### Retrieve data from redcap
+
+```{r}
+
+source("~/Documents/Dropbox/ucsc/projects/redcapAPI/rcConfig.R")
+
+hb_findings_report_ID=538
+
+
+rcon <- redcapConnection(url= uri, token= token)
+
+findings_data_raw <- as_tibble (exportReports(rcon, hb_findings_report_ID)) 
+
+findings_data <- findings_data_raw %>% 
+  mutate_all(as.character) %>%
+  type_convert() %>%
+  filter(donor_key %in% samples$donor_key)
+```
+
+# Review donors with multiple findings records
+```{r}
+
+tabyl(findings_data,
+      current)
+
+
+multiple_entries_to_review <- findings_data %>%
+  filter(duplicated(donor_key)) %>%
+  pull(donor_key)
+
+dupe_findings <- findings_data %>%
+  arrange(donor_key, redcap_repeat_instance) %>%
+  filter(donor_key %in% multiple_entries_to_review) 
+
+dupe_findings %>%
+  kableExtra::kbl() %>%
+  kableExtra::kable_styling() %>% 
+  group_rows(index = setNames(rle(as.vector(dupe_findings$donor_key))[[1]],
+                              rle(as.vector(dupe_findings$donor_key))[[2]]))
+
+
+```
+
+
+## observations
+1149 has two findings for one sample, and the target, rationale and lead are the same; select redcap_repeat_instance == 2
+
+1162 has two findings for one sample, and the target, rationale and lead are the same; select redcap_repeat_instance == 2
+
+1349 has two findings for two samples, and they differ; use both
+
+1351 has two findings for two sets of samples. The target, rationale and lead are the same; select redcap_repeat_instance == 2
+
+1380 has two findings for two samples, and they differ; use both (one has no results)
+
+1445 has two findings for two samples, and they differ; use both
+
+1447 has two findings for two samples, and they differ; use both
+
+2351 has two findings for one sample. The target, rationale and lead for #2 has additional mutation info; select redcap_repeat_instance == 2
+
+2410 has two hits; redcap_repeat_instance == 2 is marked current, while #1 is not; use #2
+
+## record observations
+
+```{r}
+
+which_of_multiple_findings_to_keep <- tribble(
+  ~donor_key, ~redcap_repeat_instance,
+  1149, 2,
+  1162, 2,
+  1349, 1,
+  1349, 2,
+  1351, 2,
+  1380, 1,
+  1380, 2,
+  1445, 1,
+  1445, 2,
+  1447, 1,
+  1447, 2,
+  2351, 2,
+  2410, 2
+)
+
+findings_to_keep <- bind_rows(
+  findings_data %>%
+    filter(! donor_key %in% multiple_entries_to_review) %>%
+    select(donor_key, redcap_repeat_instance), #%>%
+    #type_convert(),
+  which_of_multiple_findings_to_keep)
+
+
+```
+
+
+
+```{r}
+
+findings_data_long_raw <- left_join(findings_to_keep,
+                                    findings_data,
+                                    by = c("donor_key", "redcap_repeat_instance")) %>%
+  select(donor_key, samples_used, redcap_repeat_instance, tb_date, starts_with(c("target_", "rationale_", "lead_"))) %>%
+  pivot_longer(cols = starts_with(c("target_", "rationale_", "lead_"))) %>%
+  mutate(
+    name_raw = name,
+    name = str_remove(name, "_.*$"),
+    iteration = str_remove(name_raw, "^.*_"))
+
+
+findings_data_long <- findings_data_long_raw %>%
+  select(-name_raw) %>%
+  pivot_wider() %>%
+  unnest_longer(starts_with(c("target", "rationale", "lead"))) %>%
+  filter(! is.na(target), 
+         ! is.na(rationale), 
+         ! is.na(lead)) %>%
+  arrange(donor_key,
+          redcap_repeat_instance)
+
+```
+
+
+```{r}
+
+underscore2space <- function(x) str_replace_all(x, "_", " ")
+
+findings_data_long %>%
+  rename_with(underscore2space) %>%
+  kableExtra::kbl() %>%
+  kableExtra::kable_styling()
+
+```
+
+
+```{r}
+
+output_file_name <- 
+  paste0("findings_", format(Sys.time(), "%Y%m%d_%H%M%S"), ".tsv")
+
+output_file_name
+
+write_tsv(findings_data_long, output_file_name)
+
+```
