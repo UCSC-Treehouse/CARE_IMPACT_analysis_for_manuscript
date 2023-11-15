@@ -1,0 +1,89 @@
+---
+title: "CKCC2_curation_vs_automated_findings"
+author: "Yvonne Vasquez"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+
+### Load libraries
+```{r}
+
+library(tidyverse)
+library("readxl")
+
+```
+
+### Load data
+# This file describes for all findings presented to Stanford, if they were found via our CARE pipeline using canonical cohorts or curated cohorts. It also describes if a finding was a pan-cancer outlier, pan-disease ouliter, expressed mutation, highly expressed gene (95th percentile). For pd outliers it further describes if it was a consensus outlier found in at least two cohorts or if it was a single-cohort outlier.
+
+```{r}
+
+ckcc2_findings_table <- read_tsv("CKCC2_evidence_for_findings_2023.11.15_13.16.11.tsv")
+nrow(ckcc2_findings_table)
+
+```
+### Quantify how many outliers fell into the following categories
+# 1) pan-cancer outlier only (pc)
+# 2) pan-disease ouliter only (pd)
+# 3) Bothpan-cancer and pan-disease outlier (pc,pd)
+# 4) expressed mutation (mutation)
+# 5) expressed fusion (fusion)
+# 6) highly expressed gene (95th percentile)
+
+```{r}
+
+ckcc2_finding_type <- plyr::count(ckcc2_findings_table$summary_of_finding)
+ckcc2_finding_type
+
+```
+### Quantify how many findings were identified by our canonical CARE pan-cancer pipeline
+
+```{r}
+
+pc_findings <- ckcc2_findings_table %>%
+  filter(pc_outlier == TRUE)
+nrow(pc_findings)
+
+```
+
+
+### Quantify how many pan-disease findings were identified and how many used curated vs canonical cohorts
+
+```{r}
+
+# Filter for pan-disease findings and quantify how many there were
+pd_findings <- ckcc2_findings_table %>%
+  filter(pd_outlier == TRUE)
+nrow(pd_findings)
+
+# Quantify how many findings were identified by our canonical CARE pan-disease pipeline (canonical consensus pd outliers)
+pd_canonical_consensus <- pd_findings %>%
+  filter(`canonical vs curated pd` == "canonical", `pd type` == "consensus")
+nrow(pd_canonical_consensus)
+
+# Quantify how many findings were identified by our canonical pd pipeline once we added a curated pd cohort (curated consensus)
+pd_curated_consensus <- pd_findings %>%
+  filter(`canonical vs curated pd` == "curated", `pd type` == "consensus")
+nrow(pd_curated_consensus)
+
+
+pd_findings_quantified <- plyr::count(pd_findings$`canonical vs curated pd`)
+pd_findings_quantified
+
+pd_findings_cohort_type <- plyr::count(pd_findings$`pd type`)
+pd_findings_cohort_type
+
+```
+
+### Quantify how many findings were identified by curation
+```{r}
+
+curated_findings <- ckcc2_findings_table %>%
+  filter(`canonical vs curated pd`== "curated")
+nrow(curated_findings)
+
+curated_findings_type <- plyr::count(curated_findings$summary_of_finding)
+curated_findings_type
+```
+
