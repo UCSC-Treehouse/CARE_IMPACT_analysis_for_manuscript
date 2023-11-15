@@ -113,7 +113,7 @@ ggVennDiagram(list_of_outliers_for_venn) +
 collapse_fun <- function(x){ paste(x,collapse = ", ") }
 
 all_outliers_combined_wide <- outliers %>%
-  select(-pathway_support, -donor_ID) %>%
+  select(-pathway_support, -donor_ID, -high_level_cohort) %>%
   pivot_wider(names_from = Sample_ID,
               values_from = comparison_cohort,
               values_fn = collapse_fun)
