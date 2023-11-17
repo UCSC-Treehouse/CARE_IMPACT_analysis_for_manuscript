@@ -13,12 +13,15 @@ output:
 
 library(tidyverse)
 library(janitor)
-library(khroma)
+# library(khroma)
 library(kableExtra)
+library(gridExtra)
+library(cowplot)
 ```
 
 
 ```{r}
+
 underscore_to_space <- function(x) str_replace_all(x, "_", " ")
 
 ```
@@ -81,6 +84,8 @@ ggplot(outliers_heatmap_data) +
 
 
 ```
+
+
 ```{r}
 
 library(ggVennDiagram)
@@ -235,7 +240,7 @@ all_outliers_abbrev_combined_wide <- outliers %>%
 
 ```
 
-#Out
+
 ```{r}
 
 
@@ -497,5 +502,15 @@ outliers_with_pathway_support_abbrev_combined_wide %>%
   kbl() %>%
   kable_styling(full_width = F,
                 bootstrap_options = "bordered")
+```
+
+
+
+
+
+
+
+```{r}
+sessionInfo()
 ```
 
