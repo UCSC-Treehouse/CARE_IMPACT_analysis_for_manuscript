@@ -13,7 +13,7 @@ output:
 
 library(tidyverse)
 library(janitor)
-# library(khroma)
+library(khroma)
 library(kableExtra)
 library(gridExtra)
 library(cowplot)
@@ -109,7 +109,17 @@ ggVennDiagram(list_of_outliers_for_venn) +
 
 ```
 
+# export list of genes found only by TCGA
+```{r}
 
+outliers %>%
+  group_by(Sample_ID, gene) %>%
+  filter(length(comparison_cohort) == 1,
+         "TCGA" %in% comparison_cohort) %>%
+  ungroup %>%
+  select(gene) %>% write_tsv("../gather_input_data/genes found only by TCGA in at least one sample.txt")
+
+```
 
 
 
