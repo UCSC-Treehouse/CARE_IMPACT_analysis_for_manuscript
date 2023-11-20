@@ -233,6 +233,7 @@ $scriptdir/msigdb_pathways_to_tall_table.py \
     > data/TH34_tall_lowstringent-pd_drugs_pathways_2023-10-20.tsv.txt
 
 Final output: `45373b46b8c2db05e873747f5185424d  TH34_tall_lowstringent-pd_drugs_2023-10-20.tsv.txt`
+```
 
 ### Run pathway support on outliers only detected by TCGA rollup cohort
 [Issue #10 - 2023 November 20](https://github.com/UCSC-Treehouse/CKCC2_July_2023/issues/10)
