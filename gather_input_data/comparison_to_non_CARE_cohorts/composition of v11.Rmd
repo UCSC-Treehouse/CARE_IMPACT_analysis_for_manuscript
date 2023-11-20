@@ -1,0 +1,193 @@
+---
+title: "`r gsub('.Rmd', ' ', gsub('_', ' ', knitr::current_input()))`"
+author: "`r Sys.getenv('USER')`"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: yes
+---
+  
+
+
+```{r setup, include = FALSE}
+
+library(tidyverse)
+library(UpSetR)
+library(janitor)
+library(kableExtra)
+```
+```{r}
+kbl_me <- function(x) {
+    adorn_pct_formatting(x) %>% 
+    kbl(format.args = list(big.mark = ","), digits = c(NA, 0, NA)) %>%
+    kable_styling(full_width = F) 
+}
+
+```
+
+# load public compendium data
+```{r}
+
+v11 <- read_tsv("https://xena.treehouse.gi.ucsc.edu/download/clinical_TumorCompendium_v11_PolyA_2020-04-09.tsv.gz")
+
+tabyl(v11$pedaya) %>% kbl_me
+
+v11 %>%
+  filter(is.na(pedaya),
+         ! is.na(age_at_dx)) %>%
+  nrow
+
+v11_min <- v11 %>%
+  select(th_sampleid, age_at_dx, pedaya) %>%
+  mutate(pedaya = ifelse(is.na(pedaya) & age_at_dx <30,
+                          "Yes, age < 30 years",
+                         pedaya))
+
+tabyl(v11_min$pedaya)  %>% kbl_me
+```
+# load redcap data
+```{r}
+
+redcap_metadata_v11 <- read_tsv("/Users/hbeale/Documents/Dropbox/ucsc/operations/redcap/redcap_combined_nonprivate_sample_donor_data_downloaded_via_API.v10.2023-11-09_09.33.56.txt.gz") %>%
+  filter(THid %in% v11$th_sampleid)
+
+# redcap_metadata_v11 %>%
+#   pull(age_at_dx) %>%
+#   summary()
+
+
+redcap_metadata_v11 %>%
+  tabyl(pedaya)   %>% 
+  kbl_me
+
+redcap_metadata_v11 %>%
+  filter(is.na(pedaya),
+         ! is.na(age_at_dx)) %>%
+  nrow
+
+redcap_metadata_v11_min <- redcap_metadata_v11 %>%
+  select(THid, pedaya, age_at_dx) %>%
+  mutate(pedaya = ifelse(is.na(pedaya) & age_at_dx <30,
+                         "Yes, age < 30 years",
+                                pedaya))
+redcap_metadata_v11_min %>%
+  tabyl(pedaya)  %>% kbl_me
+
+
+```
+
+# update v11 compendium metadata from redcap
+```{r}
+
+combined_metadata <- left_join(v11_min, 
+                               redcap_metadata_v11_min,
+                               by=c("th_sampleid"="THid"),
+                               suffix = c("_compendium", "_redcap")) 
+
+combined_metadata %>%
+  filter(pedaya_compendium != pedaya_redcap) %>%
+  kbl() %>%
+  kable_styling()
+
+combined_metadata %>%
+  filter(is.na(pedaya_compendium),
+         !is.na(pedaya_redcap))  %>%
+  nrow
+
+combined_metadata %>%
+  filter(is.na(pedaya_compendium),
+         !is.na(pedaya_redcap))  %>%
+  head %>%
+  kbl() %>%
+  kable_styling()
+
+combined_metadata %>%
+  filter(is.na(pedaya_redcap),
+         !is.na(pedaya_compendium)) %>%
+  kbl() %>%
+  kable_styling()
+
+
+use_redcap <- c("TARGET-40-0A4I4O-01A-01R",
+                combined_metadata %>%
+                  filter(is.na(pedaya_compendium),
+                         !is.na(pedaya_redcap))  %>%
+                  pull(th_sampleid))
+
+use_compendium_data <- c("TH27_2347_S02") # and everything else not from redcap
+
+updated_v11 <- bind_rows(
+  redcap_metadata_v11_min %>%
+    filter(THid %in% use_redcap) %>%
+    rename(th_sampleid = THid),
+  v11_min %>%
+    filter(!th_sampleid %in% use_redcap))
+
+
+```
+# samples with unknown pedaya status
+(see last table)
+
+
+# load list of stanford samples
+```{r}
+
+stanford <- read_tsv("data/TH03_TH34_rollup.sample_list.txt",
+                     col_names = "th_sampleid")
+```
+# convert to logical data 
+```{r}
+
+updated_v11_pops <- updated_v11 %>%
+  mutate(index = 1:n(),
+         TCGA = str_detect(th_sampleid, "^TCGA"),
+         is_pedaya = str_detect(pedaya, "Yes"),
+         stanford = th_sampleid %in% stanford$th_sampleid) %>%
+  replace_na(list(is_pedaya = FALSE)) %>% # 23 samples are unknown; i force them to false
+  mutate(other = !TCGA & !is_pedaya & !stanford)
+
+```
+
+
+size of each group independently
+```{r}
+
+
+updated_v11_pops %>% tabyl(TCGA) %>% kbl_me()
+
+updated_v11_pops %>% tabyl(is_pedaya) %>% kbl_me()
+
+
+updated_v11_pops %>% tabyl(stanford) %>% kbl_me()
+
+updated_v11_pops %>% tabyl(other) %>% kbl_me()
+
+updated_v11_pops %>% nrow
+```
+
+
+
+```{r fig.height=6, fig.width=8}
+
+updated_v11_pops %>%
+  select(index, TCGA, is_pedaya, stanford, other) %>%
+  as.data.frame %>%
+  mutate_all(as.numeric) %>%
+  upset(text.scale=1.5)
+
+
+```
+
+# who are the non ped, non TCGA samples?
+```{r}
+
+v11 %>%
+  filter(th_sampleid %in% (updated_v11_pops %>%
+                             filter(other) %>%
+                             pull(th_sampleid))) %>%
+  select(-site_donor_id, -site_sampleid) %>%
+  kbl() %>%
+  kable_styling()
+
+```
+

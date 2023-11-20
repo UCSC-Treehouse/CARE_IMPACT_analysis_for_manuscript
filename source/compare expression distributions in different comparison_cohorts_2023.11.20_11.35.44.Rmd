@@ -145,13 +145,83 @@ outliers %>%
   summarize(n_samples = length(unique(Sample_ID))) %>%
   arrange(desc(n_samples))
 
+
+```
+# Calculate statistics for each cohort
+```{r}
+
+
+
+cohort_thresholds_raw <- left_join(samples_in_cohorts,
+                                   expr,
+                                   by=c("Sample_ID")) %>%
+  group_by(Gene, cohort) %>%
+  summarize(q25 = quantile(log2TPM1, 0.25),
+            median = median(log2TPM1),
+            q75 = quantile(log2TPM1, 0.75),
+            IQR = q75-q25,
+            up_outlier_threshold = q75 + (1.5*IQR))
+  
+```
+
+# pediatric vs TCGA for one gene
+```{r}
+
+this_gene <- "ETV1"
+
+cohort_thresholds_raw %>%
+  filter(Gene == this_gene) %>%
+  group_by(Gene) %>%
+  pivot_longer(c(-Gene, -cohort)) %>%
+  pivot_wider(names_from = cohort, values_from = value) %>%
+  mutate(change_in_ped_relative_to_TCGA = 
+              (PEDAYA - TCGA) / TCGA,
+         change_in_treehouse_relative_to_TCGA = 
+            (Treehouse_pc - TCGA) / Treehouse_pc) %>%
+  select(-TH03_TH34)
+
+
+# is the biggest change to the median or to the IQR?
+  summarize(q_25_change_in_ped_relative_to_TCGA = 
+              (q25[cohort == "PEDAYA"] - q25[cohort == "TCGA"]) / q25[cohort == "TCGA"])
+
+```
+# for all genes
+```{r}
+
+cohort_thresholds <- cohort_thresholds_raw %>%
+  pivot_longer(c(-Gene, -cohort)) %>%
+  pivot_wider(names_from = cohort, values_from = value) %>%
+  mutate(change_in_ped_relative_to_TCGA = 
+              (PEDAYA - TCGA) / TCGA,
+         change_in_treehouse_relative_to_TCGA = 
+            (Treehouse_pc - TCGA) / Treehouse_pc) 
+
+
+ggplot(cohort_thresholds) +
+  geom_point(aes(x=change_in_ped_relative_to_TCGA,
+                 y=change_in_treehouse_relative_to_TCGA,
+                 color = name)) +
+  scale_color_brewer(palette = "Set1")
+             
+
+cohort_thresholds %>%
+  filter(name %in% c("median", "IQR")) %>%
+  select(Gene, name, change_in_ped_relative_to_TCGA) %>%
+  pivot_wider(names_from = name,
+              values_from = change_in_ped_relative_to_TCGA) %>%
+  ggplot + 
+  geom_point(aes(x=median, y=IQR)) + 
+  ggtitle("fraction change_in_ped_relative_to_TCGA")
+
+
 ```
 
 
 
 ```{r fig.height=12, fig.width=8}
 
-lapply(sort(outlier_genes_detected), function(this_gene){
+lapply(outlier_genes_detected, function(this_gene){
   # this_gene <- "BCL6"
   relevant_patient_expression <- patient_expression %>%
     filter(gene == this_gene) %>%
