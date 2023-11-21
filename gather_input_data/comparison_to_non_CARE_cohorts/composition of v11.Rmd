@@ -164,6 +164,22 @@ updated_v11_pops %>% tabyl(other) %>% kbl_me()
 
 updated_v11_pops %>% nrow
 ```
+What fraction of TCGA is pedaya
+```{r}
+
+updated_v11_pops %>% tabyl(TCGA, is_pedaya) %>% adorn_title
+
+updated_v11_pops %>%
+  filter(TCGA) %>%
+  tabyl(is_pedaya) %>% 
+  adorn_pct_formatting()
+
+updated_v11_pops %>%
+  filter(!TCGA) %>%
+  tabyl(is_pedaya) %>% 
+  adorn_pct_formatting()
+
+```
 
 
 

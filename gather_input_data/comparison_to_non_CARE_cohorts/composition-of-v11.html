@@ -11,7 +11,7 @@
 
 <meta name="author" content="hbeale" />
 
-<meta name="date" content="2023-11-20" />
+<meta name="date" content="2023-11-21" />
 
 <title>composition-of-v11</title>
 
@@ -576,7 +576,7 @@ display: none;
 
 <h1 class="title toc-ignore">composition-of-v11</h1>
 <h4 class="author">hbeale</h4>
-<h4 class="date">November 20, 2023</h4>
+<h4 class="date">November 21, 2023</h4>
 
 </div>
 
@@ -1406,6 +1406,26 @@ TRUE
 </table>
 <pre class="r"><code>updated_v11_pops %&gt;% nrow</code></pre>
 <pre><code>## [1] 12747</code></pre>
+<p>What fraction of TCGA is pedaya</p>
+<pre class="r"><code>updated_v11_pops %&gt;% tabyl(TCGA, is_pedaya) %&gt;% adorn_title</code></pre>
+<pre><code>##        is_pedaya     
+##   TCGA     FALSE TRUE
+##  FALSE        94 2847
+##   TRUE      9440  366</code></pre>
+<pre class="r"><code>updated_v11_pops %&gt;%
+  filter(TCGA) %&gt;%
+  tabyl(is_pedaya) %&gt;% 
+  adorn_pct_formatting()</code></pre>
+<pre><code>##  is_pedaya    n percent
+##      FALSE 9440   96.3%
+##       TRUE  366    3.7%</code></pre>
+<pre class="r"><code>updated_v11_pops %&gt;%
+  filter(!TCGA) %&gt;%
+  tabyl(is_pedaya) %&gt;% 
+  adorn_pct_formatting()</code></pre>
+<pre><code>##  is_pedaya    n percent
+##      FALSE   94    3.2%
+##       TRUE 2847   96.8%</code></pre>
 <pre class="r"><code>updated_v11_pops %&gt;%
   select(index, TCGA, is_pedaya, stanford, other) %&gt;%
   as.data.frame %&gt;%
