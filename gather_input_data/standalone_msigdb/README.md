@@ -233,3 +233,69 @@ $scriptdir/msigdb_pathways_to_tall_table.py \
     > data/TH34_tall_lowstringent-pd_drugs_pathways_2023-10-20.tsv.txt
 
 Final output: `45373b46b8c2db05e873747f5185424d  TH34_tall_lowstringent-pd_drugs_2023-10-20.tsv.txt`
+```
+
+### Run pathway support on outliers only detected by TCGA rollup cohort
+[Issue #10 - 2023 November 20](https://github.com/UCSC-Treehouse/CKCC2_July_2023/issues/10)
+Workdir: `CKCC2_July_2023/gather_input_data`
+
+Make the genelist and output dir for mSigDB:
+```
+tr "\n" "\t" < 'genes found only by TCGA in at least one sample.txt'  > genelist_found_by_TCGA_20231102.txt
+
+mkdir standalone_msigdb/data/pathway_results_TCGA_at_least_one_sample
+cp genelist_found_by_TCGA_20231102.txt standalone_msigdb/data/pathway_results_TCGA_at_least_one_sample/geneLists.txt
+```
+
+Run mSigDB:
+```
+docker run --rm -it -u `id -u`:`id -g` \
+-v /`pwd`/standalone_msigdb/data/pathway_results_TCGA_at_least_one_sample:/workdir \
+-v /private/home/ekephart/code/analysis-methods/:/analysis-methods:ro \
+-v /private/groups/treehouse/archive:/archive:ro \
+jupyter/datascience-notebook:python-3.11 /bin/bash
+
+cd /workdir
+/analysis-methods/script/DGIdb_and_MSigDB_pathways_aka_GSEA/standalone_msigdb_pathways.R
+exit
+```
+
+This generates a single pathway results file, `gene_pathway_results.txt`.
+
+Then, rename and manually make a "drugs file" so the "tall table" script can be used.
+
+```
+cd `pwd`/standalone_msigdb/data/pathway_results_TCGA_at_least_one_sample/
+mv gene_pathway_results.txt THID-TCGA-AtLeastOneSample_pathway_results.txt
+cd ..
+# workdir: /private/home/ekephart/code/CKCC2_July_2023/gather_input_data/standalone_msigdb/data
+
+# Set up the header
+
+printf "gene\tSample_ID\tcompendium_version\trollup_cohort\n"> TCGA_only_at_least_one_sample-2023-11-20.tsv
+
+# populate rows
+
+while read line;
+do echo -n $line;
+printf "\tTHID\tTCGA\tAtLeastOneSample\n"; done \
+< ../../genes\ found\ only\ by\ TCGA\ in\ at\ least\ one\ sample.txt  | tail -n +2 >> TCGA_only_at_least_one_sample-2023-11-20.tsv
+
+```
+
+Then make the Tall Table file `TCGA_only_at_least_one_sample-with_pathways-2023-11-20.tsv`
+```
+scriptdir=~/code/analysis-methods/script/DGIdb_and_MSigDB_pathways_aka_GSEA/
+$scriptdir/msigdb_pathways_to_tall_table.py \
+    --nodrugs \
+   pathway_results_TCGA_at_least_one_sample \
+   TCGA_only_at_least_one_sample-2023-11-20.tsv  \
+    > TCGA_only_at_least_one_sample-with_pathways-2023-11-20.tsv
+
+md5sum TCGA_only_at_least_one_sample-with_pathways-2023-11-20.tsv
+# 2a9353c448acea33ac2be096dfbd3c00
+```
+
+Note that this file only has 17 lines, since the original input file `'genes found only by TCGA in at least one sample.txt'`
+only has 16 unique genes despite being 22 lines long.
+
