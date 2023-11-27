@@ -3,7 +3,7 @@ title: "`r gsub('.Rmd', ' ', gsub('_', ' ', knitr::current_input()))`"
 author: "`r Sys.getenv('USER')`"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output:
-  pdf_document:
+  html_document:
     toc: yes
 ---
   
@@ -25,6 +25,7 @@ library(cowplot)
 ```{r}
 
 underscore_to_space <- function(x) str_replace_all(x, "_", " ")
+underscore_to_space_initial_cap <- function(x) str_replace_all(x, "_", " ") %>% str_to_sentence()
 
 ```
 
@@ -279,21 +280,26 @@ n_outliers_with_pathway_support_detected_by_any_method <- outliers %>%
   nrow()
 # these have pathway support in at least one cohort
 
+totals_tibble <-  tibble(high_level_cohort= " Total",
+                         comparison_cohort = " Total",
+                 n_outliers_detected = n_outliers_detected_by_any_method,
+                 n_outliers_with_pathway_support = n_outliers_with_pathway_support_detected_by_any_method,
+                 pct_outliers_with_pathway_support = 100*n_outliers_with_pathway_support_detected_by_any_method/n_outliers_detected_by_any_method)
 
 outlier_summary <- outliers %>% 
   group_by(comparison_cohort) %>%
   summarize(n_outliers_detected = n(),
-         n_outliers_with_pathway_support = sum(pathway_support),
-         pct_outliers_with_pathway_support = 100*n_outliers_with_pathway_support/n_outliers_detected,
-         pct_outliers_detected = 100*n_outliers_detected/n_outliers_detected_by_any_method)
-
+         n_outliers_with_pathway_support = sum(pathway_support)) %>%
+  ungroup() %>%
+  mutate(pct_outliers_detected = 100*n_outliers_detected/n_outliers_detected_by_any_method,
+         pct_outliers_with_pathway_support_detected =
+           100*n_outliers_with_pathway_support/n_outliers_with_pathway_support_detected_by_any_method,
+         pct_outliers_with_pathway_support = 100*n_outliers_with_pathway_support/n_outliers_detected)
+  
 outlier_summary_with_totals <- 
-bind_rows(outlier_summary,
-          tibble(comparison_cohort= " Total",
-                 n_outliers_detected = n_outliers_detected_by_any_method,
-                 n_outliers_with_pathway_support = n_outliers_with_pathway_support_detected_by_any_method,
-                 pct_outliers_with_pathway_support = 100*n_outliers_with_pathway_support_detected_by_any_method/n_outliers_detected_by_any_method))
-                 
+  bind_rows(outlier_summary,
+            totals_tibble %>% select(-high_level_cohort))
+
                  
   
 outlier_summary_with_totals %>% 
@@ -305,18 +311,6 @@ outlier_summary_with_totals %>%
 
 # Summary table for all outliers and high level cohorts
 ```{r}
-n_outliers_detected_by_any_method <- outliers %>%
-  select(Sample_ID, gene) %>%
-  distinct %>%
-  nrow()
-
-n_outliers_with_pathway_support_detected_by_any_method <- outliers %>%
-  filter(pathway_support) %>%
-  select(Sample_ID, gene) %>%
-  distinct %>%
-  nrow()
-# these have pathway support in at least one cohort
-
 
 high_level_outlier_summary <- outliers %>% 
   group_by(high_level_cohort, Sample_ID, gene) %>%
@@ -328,15 +322,12 @@ high_level_outlier_summary <- outliers %>%
          pct_outliers_detected = 100*n_outliers_detected/n_outliers_detected_by_any_method)
 
 high_level_outlier_summary_with_totals <- 
-bind_rows(high_level_outlier_summary %>%
-            arrange(desc(high_level_cohort)),
-          tibble(high_level_cohort= " Total",
-                 n_outliers_detected = n_outliers_detected_by_any_method,
-                 n_outliers_with_pathway_support = n_outliers_with_pathway_support_detected_by_any_method,
-                 pct_outliers_with_pathway_support = 100*n_outliers_with_pathway_support_detected_by_any_method/n_outliers_detected_by_any_method))
-                 
-                 
-  
+  bind_rows(high_level_outlier_summary %>%
+              arrange(desc(high_level_cohort)),
+            totals_tibble %>% select(-comparison_cohort))
+
+
+
 high_level_outlier_summary_with_totals %>% 
   rename_all(underscore_to_space) %>%
   kbl(format.args = list(big.mark = ","), digits = c(NA, 0, 0, 0, 0)) %>%
@@ -357,14 +348,55 @@ high_low <- bind_rows(
     mutate(index = 2:3)
 ) %>% 
   arrange(index) %>%
-  select(-index)
+  select(-index) 
+       
+
+high_low_outlier_summary <- high_low %>%
+  filter(! str_detect(comparison_cohort, "Total")) %>%
+  mutate(
+    comparison_cohort = str_replace(comparison_cohort, "_", " "),
+    pct_outliers_with_pathway_support_detected =
+      100*n_outliers_with_pathway_support/n_outliers_with_pathway_support_detected_by_any_method,
+    `Druggable outliers detected` = 
+      paste0(n_outliers_detected, "/", n_outliers_detected_by_any_method, " (",
+             round(pct_outliers_detected), "%)"),
+    `Druggable outliers with pathway support` = 
+      paste0(n_outliers_with_pathway_support, "/",
+             n_outliers_with_pathway_support_detected_by_any_method, " (",
+             round(pct_outliers_with_pathway_support_detected), "%)"),
+    `Fraction of druggable outliers with pathway support` = 
+      paste0(n_outliers_with_pathway_support, "/", 
+             n_outliers_detected, " (",
+             round(100*n_outliers_with_pathway_support/n_outliers_detected), "%)")
+  ) %>%
+  select(comparison_cohort, 
+         `Druggable outliers detected`,
+         `Druggable outliers with pathway support`,
+         `Fraction of druggable outliers with pathway support`) %>%
+  bind_rows(totals_tibble %>%
+              mutate(`Fraction of druggable outliers with pathway support` =
+                       paste0(n_outliers_with_pathway_support, "/", 
+                              n_outliers_detected, " (",
+                              round(100*n_outliers_with_pathway_support/n_outliers_detected), "%)"),
+                     `Druggable outliers detected` = as.character(n_outliers_detected),
+                     `Druggable outliers with pathway support` = as.character(n_outliers_with_pathway_support)
+              ) %>%
+              select(comparison_cohort, 
+                     `Druggable outliers detected`,
+                     `Druggable outliers with pathway support`,
+                     `Fraction of druggable outliers with pathway support`)
+  )
+
+         
+
 
   
 
-high_low %>%
-  rename_all(underscore_to_space) %>%
-  kbl(format.args = list(big.mark = ","), digits = c(NA, 0, 0, 0, 0)) %>%
-  kable_styling(full_width = F)
+high_low_outlier_summary %>%
+  rename_all(underscore_to_space_initial_cap) %>%
+  kbl() %>%
+  kable_styling(full_width = F) %>%
+  add_indent(c(2, 3), level_of_indent = 1)
 
 
 
@@ -475,7 +507,7 @@ outliers_with_pathway_support_combined_wide <- outliers %>%
               values_fn = collapse_fun)
 
 outliers_with_pathway_support_combined_long <- outliers_with_pathway_support_combined_wide %>%
-  pivot_longer(-gene,
+  pivot_longer(c(-gene, -high_level_cohort),
                names_to = "Sample_ID",
                values_to = "comparison_cohorts") %>%
   na.omit()
