@@ -3,7 +3,7 @@ title: "`r gsub('.Rmd', ' ', gsub('_', ' ', knitr::current_input()))`"
 author: "`r Sys.getenv('USER')`"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output:
-  html_document:
+  pdf_document:
     toc: yes
 ---
   
@@ -36,7 +36,8 @@ outliers <- read_tsv("../input_data/druggable_outliers_from_treehouse_and_other_
                                     comparison_cohort))
 
          
-         
+n_distinct(outliers$Sample_ID)       
+n_distinct(outliers$donor_ID)
 ```
 
 # Define cohort codes
