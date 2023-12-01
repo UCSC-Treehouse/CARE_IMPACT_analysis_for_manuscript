@@ -11,6 +11,8 @@ Version 2023.11.21_11.24.15 - focuses on genes found only relative to TCGA, not 
  
 Version 2023.11.29_09.19.33 - focuses on all druggable genes, not only genes that were outliers vs one cohort or another
 
+2023.11.30_13.38.01 - add pan-disease angle
+
 
 ```{r setup, include = FALSE}
 
@@ -36,6 +38,21 @@ outliers <- read_tsv("../input_data/druggable_outliers_from_treehouse_and_other_
 
          
          
+j1_file <- file.path(data_dir, "2.0.json")
+j2_file <- gsub("2.0.json", "2.2.json", j1_file)
+
+j1=fromJSON(j1_file)
+j2=fromJSON(j2_file)
+cohort_list<-list(
+  j1["first_degree_mcs_cohort"][[1]],
+  j1["pandisease_samples"][[1]],
+  j2["diagnosed_disease_cohort"][[1]],
+  j2["first_and_second_degree_mcs_cohort"][[1]]
+)
+names(cohort_list)=c("first_degree_mcs_cohort", "pandisease_samples", "diagnosed_disease_cohort", "first_and_second_degree_mcs_cohort")
+cohort_tibble <- map_df(cohort_list, ~as_tibble(.x), .id="id") %>% 
+  rename(cohort=id, neighbor=value)
+
 ```
 
 
