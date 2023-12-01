@@ -27,6 +27,17 @@ library(kableExtra)
 
 ```
 
+# General reference files
+```{r}
+
+
+treehouse_druggable_genes <- read_tsv("../input_data/treehouseDruggableGenes_2020-03_25.txt")
+
+gene_name_conversion <- read_tsv("../input_data/non_compendium_expression/EnsGeneID_Hugo_Observed_Conversions.txt")
+
+
+```
+
 
 
 ```{r}
@@ -36,8 +47,25 @@ outliers <- read_tsv("../input_data/druggable_outliers_from_treehouse_and_other_
                                     "Treehouse",
                                     comparison_cohort))
 
-         
-         
+other_genes_of_interest <- tribble(
+  ~gene, ~Sample_ID, ~outlier_relative_to,
+  "MAP2K1", "TH34_1350_S01", "non_outlier promoted by curation",
+  "MAP2K1", "TH34_1351_S01", "non_outlier promoted by curation",
+  "CDK1", "TH34_2293_S01", "non_outlier promoted by curation",
+  "NOTCH3", "TH34_2293_S01", "non_outlier promoted by curation",
+  "MAP2K1", "TH34_2351_S01", "non_outlier promoted by curation",
+  "PSMC1", "TH34_1447_S02", "single cohort pan disease outlier",
+  "PSMD4", "TH34_1447_S02", "single cohort pan disease outlier",
+  "FLT4", "TH34_2666_S01",  "pan cancer and single cohort pan disease outlier",
+  "MDM2", "TH34_2666_S01",  "pan cancer and single cohort pan disease outlier",
+) 
+
+all_genes_of_interest <- c(treehouse_druggable_genes$gene, 
+                           other_genes_of_interest$gene,
+                           outliers$gene) %>%
+  unique()
+                           
+
 ```
 
 
@@ -48,9 +76,10 @@ outliers <- read_tsv("../input_data/druggable_outliers_from_treehouse_and_other_
 
 outlier_genes_detected <- unique(outliers$gene)
 
-v11_expr <- read_tsv("../input_data/druggable_TumorCompendium_v11_PolyA_hugo_log2tpm_58581genes_2020-04-09.tsv.gz") %>%
+v11_expr <- read_tsv("../input_data/druggable_plus_TumorCompendium_v11_PolyA_hugo_log2tpm_58581genes_2020-04-09.tsv.gz") %>%
   rename(Sample_ID = TH_id) %>%
   mutate(ever_outlier_in_ckcc2 = Gene %in% outlier_genes_detected)
+
 
 stanford_samples  <- read_tsv("../gather_input_data/comparison_to_non_CARE_cohorts/data/TH03_TH34_rollup.sample_list.txt",
                               col_names = "Sample_ID") %>%
@@ -80,9 +109,11 @@ pd_cohorts <- read_tsv("../input_data/pan_disease_cohort_members_2023_11_30-16_3
 n_distinct(pd_cohorts$cohort)
 
 v8_expr <- read_tsv("../input_data/v8_expr_for_ckcc2.tsv.gz") %>%
+  filter(Gene %in% all_genes_of_interest) %>%
   mutate(ever_outlier_in_ckcc2 = Gene %in% outlier_genes_detected)
 
 v10_expr <- read_tsv("../input_data/v10_expr_for_ckcc2.tsv.gz") %>%
+  filter(Gene %in% all_genes_of_interest) %>%
   mutate(ever_outlier_in_ckcc2 = Gene %in% outlier_genes_detected)
 
 expr <- bind_rows(
@@ -106,11 +137,6 @@ samples_in_cohorts <- bind_rows(
     select(cohort, Sample_ID))
 
 
-tabyl(samples_in_cohorts,
-      cohort)
-
-
-
 ```
 
 
@@ -120,10 +146,8 @@ tabyl(samples_in_cohorts,
 
 rsem_path <- "../input_data/non_compendium_expression"
 
-gene_name_conversion <- read_tsv(file.path(rsem_path,
-                                           "EnsGeneID_Hugo_Observed_Conversions.txt"))
 relevant_gene_name_conversion <- gene_name_conversion %>%
-  filter(HugoID %in% outlier_genes_detected)
+  filter(HugoID %in% all_genes_of_interest)
 
 rsem_kitchen_sink_data <- tibble(file_name = list.files(
   path = rsem_path,
@@ -149,7 +173,9 @@ patient_expression_from_rsem_files <- rsem_kitchen_sink_data %>%
          log2TPM1,
          Sample_ID)
 
-patient_expression_from_compendia <- outliers %>%
+
+patient_expression_from_compendia <- bind_rows(outliers,
+                                               other_genes_of_interest) %>%
   select(Sample_ID, gene) %>%
   distinct() %>%
   left_join(expr, 
@@ -243,12 +269,10 @@ write_tsv(v10_relevant_longer, "v10_expr_for_ckcc2.tsv.gz")
 # Calculate statistics for each cohort
 ```{r}
 
-
-
 cohort_thresholds_raw <- left_join(samples_in_cohorts,
                                    expr,
                                    by=c("Sample_ID")) %>%
-  na.omit() %>% # while I'm missing expression data for some samples
+  #na.omit() %>% # while I'm missing expression data for some samples
   group_by(Gene, cohort) %>%
   summarize(q25 = quantile(log2TPM1, 0.25),
             median = median(log2TPM1),
@@ -268,6 +292,7 @@ cohort_thresholds <- cohort_thresholds_raw %>%
               (PEDAYA - TCGA) / TCGA,
          frac_change_in_treehouse_relative_to_TCGA = 
             (Treehouse_pc - TCGA) / Treehouse_pc)
+
 ```
 
 
@@ -293,7 +318,6 @@ expr_relevant_to_this_outlier <-  left_join(samples_in_cohorts %>%
                                    expr %>%
     filter(Gene == this_gene),
                                    by=c("Sample_ID")) %>%
-  na.omit() %>%  # while I'm missing expression data for some samples
   mutate(cohort = as.factor(cohort) %>%
            fct_relevel(c("Treehouse_pc", "TCGA", "PEDAYA", "TH03_TH34",
                          paste(this_sample_id, c("pan_disease_same_diagnosis",
@@ -328,26 +352,26 @@ ggplot(expr_relevant_to_this_outlier) +
 
 
 ```
-# Review all sample-outlier pairs
+
 
 ```{r}
 
-non_outliers_to_plot <- tribble(
-  ~gene, ~Sample_ID,
-  "MEK", "TH34_1350_S01"
-) %>%
-  mutate(outlier_relative_to = "non_outlier promoted by curation")
-  
+# PSMC1 is not in cohort_thresholds because it was not druggable
+#   expr %>%
+#   filter(Gene == "PSMC1")
 
 
 outliers_to_plot <- outliers %>%
   group_by(gene, Sample_ID) %>%
   summarize(outlier_relative_to = paste(comparison_cohort, collapse = ", "))
+```
 
+# Function to plot distributions and patient expression
 
+```{r}
 plot_distributions <- function(this_gene, this_sample_id, outlier_relative_to) {
-  #this_sample_id <- "TH34_1455_S01"
-  # this_gene <- "FGFR3"
+  # this_sample_id <- "TH34_1447_S02"
+  # this_gene <- "PSMC1"
   
   this_data <- cohort_thresholds %>%
     pivot_longer(c(-Gene, -stat), 
@@ -383,8 +407,8 @@ plot_distributions <- function(this_gene, this_sample_id, outlier_relative_to) {
     geom_boxplot(aes(y=cohort_with_n, x=log2TPM1),
                  #fill = cohort_with_n),
                  outlier.shape = NA) +
-    geom_vline(data = expr %>%
-                 filter(Gene == this_gene,
+    geom_vline(data = patient_expression %>%
+                 filter(gene == this_gene,
                         Sample_ID == this_sample_id),
                aes(xintercept = log2TPM1), 
                color = "red") +
@@ -392,14 +416,29 @@ plot_distributions <- function(this_gene, this_sample_id, outlier_relative_to) {
     theme(axis.text.y = element_blank(),
           axis.title.y = element_blank(),
           legend.position="none") +
-    ggtitle(paste(this_gene, "cohorts for", this_sample_id, ";", outlier_relative_to)) 
+    ggtitle(paste0(this_gene, " cohorts for ", this_sample_id, "; ", outlier_relative_to)) 
   
   return(p)
 }
+```
+
+
+# Show distributions for other genes of interest
+```{r}
 
 pmap(list(outliers_to_plot$gene, outliers_to_plot$Sample_ID, outliers_to_plot$outlier_relative_to), plot_distributions)
 
-pmap(list(non_outliers_to_plot$gene, non_outliers_to_plot$Sample_ID, non_outliers_to_plot$outlier_relative_to), plot_distributions)
-
 
 ```
+
+
+# Show distributions for other genes of interest
+```{r}
+
+pmap(list(other_genes_of_interest$gene, 
+          other_genes_of_interest$Sample_ID, 
+          other_genes_of_interest$outlier_relative_to), 
+     plot_distributions)
+
+```
+
