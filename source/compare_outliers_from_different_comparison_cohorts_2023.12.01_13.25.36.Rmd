@@ -622,13 +622,41 @@ outlier_upset <- outliers %>%
                   Treehouse_pd = FALSE))
 
 outlier_upset %>%
+  rename_with(~ str_replace(.x, "_", " ")) %>%
   as.data.frame %>%
   mutate_all(as.numeric) %>%
-  upset(text.scale=1.5)
+  upset(text.scale=1.5, 
+        mainbar.y.label = "Outliers detected by\ncohort combination",
+        sets.x.label = "Total outliers",
+        order.by = "freq")
 
+```
+```{r}
+
+outlier_upset %>%
+  as.data.frame %>%
+  mutate_all(as.numeric) %>%
+  upset(text.scale=1.5,
+         empty.intersections = "on")
 ```
 
 
+# While X outliers were detected by multiple cohorts...
+```{r}
+
+cohorts_per_outlier <- outliers %>%
+  mutate(index = paste(Sample_ID, gene)) %>%
+  group_by(index) %>%
+  summarize(n_cohorts = n()) 
+
+
+tabyl(cohorts_per_outlier$n_cohorts)
+
+cohorts_per_outlier %>%
+  filter(n_cohorts > 1) %>%
+  nrow()
+
+```
 
 ```{r}
 sessionInfo()
