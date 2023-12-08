@@ -62,7 +62,7 @@ tabyl(v11_metadata_min$pedaya)  %>% kbl_me
 ```{r}
 
 redcap_metadata_v11 <- read_tsv("/Users/hbeale/Documents/Dropbox/ucsc/operations/redcap/redcap_combined_nonprivate_sample_donor_data_downloaded_via_API.v10.2023-11-09_09.33.56.txt.gz") %>%
-  filter(THid %in% v11$th_sampleid)
+  filter(THid %in% v11_metadata$th_sampleid)
 
 # redcap_metadata_v11 %>%
 #   pull(age_at_dx) %>%
@@ -129,7 +129,7 @@ use_redcap <- c("TARGET-40-0A4I4O-01A-01R",
 
 use_compendium_data <- c("TH27_2347_S02") # and everything else not from redcap
 
-updated_v11 <- bind_rows(
+age_updated_v11 <- bind_rows(
   redcap_metadata_v11_min %>%
     filter(THid %in% use_redcap) %>%
     rename(th_sampleid = THid),
@@ -141,6 +141,16 @@ updated_v11 <- bind_rows(
 ```
 
 
+# Update disease
+```{r}
+
+updated_v11 <- left_join(
+  age_updated_v11,
+redcap_metadata_v11 %>%
+  select(THid, disease),
+by=c("Sample_ID" = "THid" ))
+
+```
 
 
 # COMPARE DISTRIBUTIONS FOR  OUTLIERS ACROSS COHORTS
@@ -164,476 +174,84 @@ pan_cancer_samples <- updated_v11 %>%
   distinct() %>%
   mutate(cohort = "Treehouse_pc")
 
+cohorts_in_order <- c("Treehouse_pc", "TCGA", "PEDAYA", "TH03_TH34")
 
+dput(unique(samples_in_cohorts$cohort))
 samples_in_cohorts <- bind_rows(
   stanford_samples,
   TCGA_samples,
   PEDAYA_samples,
-  pan_cancer_samples)
+  pan_cancer_samples) %>%
+  left_join(updated_v11) %>%
+  mutate(cohort = factor(cohort, levels = cohorts_in_order))
 
 
 tabyl(samples_in_cohorts,
       cohort)
 ```
-```{r}
-
-```
-
-
-
-
-# Calculate statistics for each cohort
-```{r}
-
-cohort_thresholds_raw <- left_join(samples_in_cohorts,
-                                   expr,
-                                   by=c("Sample_ID")) %>%
-  group_by(Gene, cohort) %>%
-  summarize(q25 = quantile(log2TPM1, 0.25),
-            median = median(log2TPM1),
-            q75 = quantile(log2TPM1, 0.75),
-            IQR = q75-q25,
-            up_outlier_threshold = q75 + (1.5*IQR))
-  
-```
-
-# assess changes for all genes
-```{r}
-cohort_thresholds <- cohort_thresholds_raw %>%
-  pivot_longer(c(-Gene, -cohort)) %>%
-  pivot_wider(names_from = cohort, values_from = value) %>%
-  mutate(frac_change_in_ped_relative_to_TCGA = 
-              (PEDAYA - TCGA) / TCGA,
-         change_in_treehouse_relative_to_TCGA = 
-            (Treehouse_pc - TCGA) / Treehouse_pc)
-```
-
-
-# changes plotted
-```{r}
-ggplot(cohort_thresholds) +
-  geom_point(aes(x=frac_change_in_ped_relative_to_TCGA,
-                 y=change_in_treehouse_relative_to_TCGA,
-                 color = name)) +
-  scale_color_brewer(palette = "Set1")
-```
-
-
-```{r}
-cohort_thresholds %>%
-  filter(name %in% c("median", "IQR")) %>%
-  select(Gene, name, frac_change_in_ped_relative_to_TCGA) %>%
-  pivot_wider(names_from = name,
-              values_from = frac_change_in_ped_relative_to_TCGA) %>%
-  ggplot + 
-  geom_point(aes(x=median, y=IQR)) + 
-  ggtitle("The IQR usually increased irrespective of the direction of change of the median", "fraction change_in_ped_relative_to_TCGA")
-
-
-```
-
-```{r fig.height=8, fig.width=8}
-
-cohort_thresholds_for_plot <- cohort_thresholds %>%
-         rename(stat = name) %>%
-  mutate(stat = factor(stat, levels = c("q25", "median", "q75", "IQR", "up_outlier_threshold"))) %>%
-  group_by(Gene) %>%
-         mutate(order_by_me = frac_change_in_ped_relative_to_TCGA[stat == "q25"]) 
-
-# %>%
-#   ungroup %>%
-#   mutate(Gene = factor(Gene) %>% fct_reorder(Gene, order_by_me, .fun = min))
-# levels(cohort_thresholds_for_plot$Gene)
-
-
-ggplot(cohort_thresholds_for_plot) +
-  #geom_tile(aes(x=stat, y= Gene, fill = frac_change_in_ped_relative_to_TCGA)) +
-  geom_tile(aes(x=stat, y= fct_reorder(Gene, order_by_me), fill = frac_change_in_ped_relative_to_TCGA)) +
-  scale_fill_gradient2("pct change in PEDAYA\nrelative to TCGA")
-  
-#geom_tile(aes(x=stat, y= fct_reorder(Gene, frac_change_in_ped_relative_to_TCGA), fill = frac_change_in_ped_relative_to_TCGA))
-```
-# plot boxplots for TCGA and PEDAYA 
-```{r}
-
-TP_cohort_expr <- left_join(samples_in_cohorts %>%
-                                     filter(cohort %in% c("PEDAYA", "TCGA")),
-                                   expr,
-                                   by=c("Sample_ID")) 
-  
-```
-
-# Boxplots of all genes
-```{r fig.height=20, fig.width=6}
-
-# TP_cohort_expr_subset <- TP_cohort_expr %>%
-#   slice_sample(n = 10000)
-
-ggplot(TP_cohort_expr) +
-  geom_boxplot(aes(y=cohort, x=log2TPM1,
-                   fill = cohort),
-               outlier.shape = NA) +
-  facet_wrap(~Gene, ncol = 1,
-             strip.position = "left") +
- theme(strip.text.y.left = element_text(angle = 0),
-       axis.text.y = element_blank(),
-        panel.spacing = unit(0.2, "lines"))  +
-  scale_fill_bright() 
-  
-```
-
-```{r}
-
-table(outliers$comparison_cohort)
-
-TCGA_only_outliers <- outliers %>%
-  group_by(gene, Sample_ID) %>%
-  mutate(TCGA_only = "TCGA" %in% comparison_cohort & 
-           n() == 1) %>%
-  filter(TCGA_only) %>%
-  arrange(Sample_ID, gene)
-
-n_distinct(TCGA_only_outliers$gene)
-
-```
-
 
 
 ```{r}
 
-TP_cohort_expr_of_TCGA_only_outliers <- TP_cohort_expr %>%
-         filter(Gene %in% TCGA_only_outliers$gene)
-
-ggplot(TP_cohort_expr_of_TCGA_only_outliers) +
-  geom_boxplot(aes(y=cohort, x=log2TPM1,
-                   fill = cohort),
-               outlier.shape = NA) +
-  facet_wrap(~Gene, ncol = 1,
-             strip.position = "left") +
- theme(strip.text.y.left = element_text(angle = 0),
-       axis.text.y = element_blank(),
-        panel.spacing = unit(0.2, "lines"))  +
-  scale_fill_bright() 
-
-manual_annotation_of_pedaya_relative_to_TCGA <- tribble(
-  ~Gene, ~IQR, ~shift,
-  "BCL6", "wider", "none",
-  "CCND1", "wider", "lower",
-  "CCND3", "wider", "higher",
-  "CDK9", "wider", "higher",
-  "ETV1", "wider", "lower",
-  "FGFR1", "wider", "higher",
-  "FGFR2", "wider", "lower",
-  "FGFR3", "wider", "lower",
-  "GATA2", "wider", "none",
-  "HMOX1", "wider", "lower",
-  "IGF2", "wider", "none",
-  "KDR", "wider", "lower",
-  "MTOR", "similar", "higher",
-  "PARP2", "similar", "higher",
-  "PDGFRA", "wider", "lower",
-  "PIK3CD", "wider", "higher",
-  "PTCH1", "wider", "higher",
-  "RPTOR", "similar", "higher",
-  "TSC2", "wider", "higher",
-  "VEGFA", "wider", "lower") %>%
-  filter(Gene %in% TCGA_only_outliers$gene)
-
-# cat(paste0("\"", unique(sort(TCGA_only_outliers$gene)), "\""), sep = ",\n")
-  
-```
-
-# medians for all druggable genes
-```{r}
-
-n_distinct(cohort_thresholds_for_plot$Gene)
-  
-ggplot(cohort_thresholds_for_plot  %>%
-              filter(stat == "median"),
-         aes(x=PEDAYA, y=TCGA)) +
-  #geom_histogram(aes(x=frac_change_in_ped_relative_to_TCGA))
-  geom_point() +
-  #geom_label_repel(aes(label = Gene)) +
-  geom_abline() +
-  coord_equal() +
-  #scale_y_continuous(breaks = c(0:3)) +
-  expand_limits(y=0,x=0) +
-  ggtitle("medians for all druggable genes") +
-  scale_color_highcontrast() 
-
-
-```
-
-
-# medians for genes that are outliers in TCGA and not Treehouse
-```{r}
-
-anno_cohort_thresholds_of_TCGA_only_outliers <-
-  left_join(cohort_thresholds_for_plot %>%
-              filter(Gene %in% TCGA_only_outliers$gene),
-            manual_annotation_of_pedaya_relative_to_TCGA)
-
-
-  ggplot(anno_cohort_thresholds_of_TCGA_only_outliers  %>%
-              filter(stat == "median"),
-         aes(x=PEDAYA, y=TCGA, color = shift)) +
-  #geom_histogram(aes(x=frac_change_in_ped_relative_to_TCGA))
-  geom_point() +
-  geom_label_repel(aes(label = Gene)) +
-  geom_abline() +
-  coord_equal() +
-  #scale_y_continuous(breaks = c(0:3)) +
-  expand_limits(y=0,x=0) +
-  ggtitle("medians for genes that are outliers in TCGA and not Treehouse") +
-  scale_color_highcontrast() 
-
-# cohort_thresholds_for_plot %>%
-#   filter(Gene %in% TCGA_only_outliers$gene) %>%
-#   filter(stat == "median") %>%
-#   arrange(frac_change_in_ped_relative_to_TCGA)
-
-```
-
-
-#  IQRs for all druggable genes
-```{r}
-
-ggplot(cohort_thresholds_for_plot  %>%
-         filter(stat == "IQR"),
-       aes(x=PEDAYA, y=TCGA)) +
-  #geom_histogram(aes(x=frac_change_in_ped_relative_to_TCGA))
-  geom_point() +
-  # geom_text_repel(aes(label = Gene)) +
-  geom_abline() +
-  coord_equal() +
-  scale_y_continuous(breaks = c(0:3)) +
-  expand_limits(y=0,x=0) +
-  ggtitle("IQRs for genes that are outliers in TCGA and not Treehouse") +
-  scale_color_highcontrast() 
-
-```
-
-# IQRs for genes that are outliers in TCGA and not Treehouse
-```{r}
-
-ggplot(anno_cohort_thresholds_of_TCGA_only_outliers  %>%
-         filter(stat == "IQR"),
-       aes(x=PEDAYA, y=TCGA, color = IQR)) +
-  #geom_histogram(aes(x=frac_change_in_ped_relative_to_TCGA))
-  geom_point() +
-  geom_text_repel(aes(label = Gene)) +
-  geom_abline() +
-  coord_equal() +
-  scale_y_continuous(breaks = c(0:3)) +
-  expand_limits(y=0,x=0) +
-  ggtitle("IQRs for genes that are outliers in TCGA and not Treehouse") +
-  scale_color_highcontrast() 
-
-```
-
-# Assign gene groups
-```{r}
-
-gene_groups <- tibble(Gene = unique(expr$Gene),
-       gene_group = case_when(
-         Gene %in% TCGA_only_outliers$gene ~ "outlier_in_TCGA_only",
-         Gene %in% outlier_genes_detected ~ "other outlier",
-         TRUE ~ "not a CKCC2 outlier")) 
-
-cohort_thresholds_by_gene_group <- left_join(cohort_thresholds_for_plot,
-                                        gene_groups, 
-                                        by = "Gene")     
-
-
-cohort_thresholds_by_gene_group_longer <- cohort_thresholds_by_gene_group %>%
-  select(-change_in_treehouse_relative_to_TCGA, -frac_change_in_ped_relative_to_TCGA,
-         -order_by_me) %>%
-  pivot_longer(cols = c("PEDAYA", "TCGA", "TH03_TH34", "Treehouse_pc"),
-               names_to = "cohort")
-
-ggplot(cohort_thresholds_by_gene_group_longer %>%
-         filter(stat == "median")) +
-  geom_histogram(aes(x=value, fill = cohort)) +
-  facet_grid(gene_group ~ cohort) +
-  scale_fill_bright()
-
-
-ggplot(cohort_thresholds_by_gene_group_longer %>%
-         filter(stat == "median")) +
-  geom_histogram(aes(x=value, fill = cohort)) +
-  facet_grid(gene_group ~ cohort) +
-  scale_fill_bright()
-  
-
-```
-
-
-```{r fig.height=20, fig.width=6}
-
-expr_by_gene_group <- left_join(TP_cohort_expr,
-                                gene_groups, 
-                                by = "Gene")
-ggplot(expr_by_gene_group) +
-  geom_boxplot(aes(y=cohort, x=log2TPM1,
-                   fill = cohort),
-               outlier.shape = NA) +
-  facet_wrap(~gene_group + Gene , ncol = 1,
-             strip.position = "left") +
- theme(strip.text.y.left = element_text(angle = 0),
-       axis.text.y = element_blank(),
-        panel.spacing = unit(0.2, "lines"))  +
-  scale_fill_bright() 
-
-```
-
-# Figure out how best threshold for excluding genes with very low expressoin
-```{r}
-
-cohort_thresholds_by_gene_group %>%
-  filter(stat == "q75",
-         gene_group == "not a CKCC2 outlier") %>%
+samples_in_cohorts %>%
+  group_by(cohort) %>%
+  mutate(cohort_total = n()) %>%
   ungroup %>%
-  arrange(PEDAYA) %>%
-  head()
-
-
-cohort_thresholds_by_gene_group %>%
-  filter(stat == "up_outlier_threshold",
-         gene_group == "not a CKCC2 outlier") %>%
+  group_by(disease, cohort) %>%
+  summarize(n = n(),
+            pct_of_cohort = round(100*n/cohort_total, 2),
+            stat_char = paste0(n, " (", pct_of_cohort, "%)")) %>%
   ungroup %>%
-  arrange(PEDAYA)  %>%
-  head()
+  arrange(desc(n)) %>%
+  mutate(disease = factor(disease, levels = unique(disease))) %>%
+  select(disease, cohort, stat_char)  %>%
+  distinct() %>%
+    # dplyr::group_by(disease, cohort) %>%
+    # dplyr::summarise(n = dplyr::n(), .groups = "drop") %>%
+    # dplyr::filter(n > 1L)
+  pivot_wider(names_from = cohort, values_from = stat_char, values_fill = "0")
 
-min_outlier_threshold <- 2
-# up outlier threshold less than two in all cohorts
-included_genes_cohort_thresholds_by_gene_group_longer <- cohort_thresholds_by_gene_group_longer %>%
-  group_by(Gene) %>%
-  mutate(low_expression = all(value < min_outlier_threshold)) %>%
-  filter(! low_expression)
-  
-  
-```
-```{r}
-
-included_genes_expr_by_gene_group <- left_join(TP_cohort_expr,
-                                gene_groups, 
-                                by = "Gene") %>%
-  filter(Gene %in% included_genes_cohort_thresholds_by_gene_group_longer$Gene)
 
 ```
 
-# characterize relative distribution of all genes by gene group
+
 ```{r}
 
-median_diff <- 0.25
-IQR_diff <- 0.5
-
-dist_shifts_by_gene_group <- cohort_thresholds_by_gene_group %>% 
-  filter(Gene %in% included_genes_cohort_thresholds_by_gene_group_longer$Gene) %>%
-  mutate(abs_change_in_ped_relative_to_TCGA = PEDAYA-TCGA) %>%
-#  filter(stat == "median") %>%
-  group_by(gene_group, Gene) %>%
-  summarize(median_shift_in_ped_relative_to_TCGA = case_when(
-    abs_change_in_ped_relative_to_TCGA[stat == "median"] > median_diff ~ "increase",
-    abs_change_in_ped_relative_to_TCGA[stat == "median"] < (-1*median_diff) ~ "decrease",
-    TRUE ~ "no shift"),
-    IQR_shift_in_ped_relative_to_TCGA = case_when(
-    abs_change_in_ped_relative_to_TCGA[stat == "IQR"] > IQR_diff ~ "wider",
-    abs_change_in_ped_relative_to_TCGA[stat == "IQR"] < (-1*IQR_diff) ~ "narrower",
-    TRUE ~ "similar")
-    )
-
-dist_shifts_by_gene_group %>%
-  kbl %>%
-  kable_styling(full_width = FALSE)
-    
-tabyl(dist_shifts_by_gene_group, 
-      gene_group, median_shift_in_ped_relative_to_TCGA) %>%
+samples_in_cohorts %>%
+  tabyl(disease, cohort) %>%
+  arrange(desc(PEDAYA)) %>%
   adorn_title() %>%
-  kbl %>%
-  kable_styling(full_width = FALSE)
-
-tabyl(dist_shifts_by_gene_group, 
-      gene_group, IQR_shift_in_ped_relative_to_TCGA) %>%
-  adorn_title() %>%
-  kbl %>%
-  kable_styling(full_width = FALSE)
-
-```
-
-
-# Review data to  identify a good quantitative IQR cutoff
-```{r}
-
-anno_cohort_thresholds_of_TCGA_only_outliers %>%
-  mutate(abs_change = PEDAYA-TCGA) %>%
-  select(Gene, stat, PEDAYA, TCGA,
-         pct_change = frac_change_in_ped_relative_to_TCGA,
-         abs_change,
-         IQR, shift) %>%
-  arrange(abs_change) %>% # change to pct_change to view alternative consideration
-  adorn_pct_formatting(,,,pct_change) %>%
-  filter(stat == "IQR") %>%
-  kbl(digits = c(NA, NA, 1, 1, NA, 2, NA, NA)) %>%
+  kbl() %>%
   kable_styling(full_width = F)
 
-# IQR change greater than 0.5 log2TPM1
-
-# percent cutoff doesn't really work, because some relatively small pcts are large in log2tpm1 space,
-# e.g. FGFR3, BCL6, wider
-  
 ```
 
-
-
-
-# Review data to see identify a good quantitative shift cutoff
 ```{r}
 
-anno_cohort_thresholds_of_TCGA_only_outliers %>%
-  mutate(abs_change = PEDAYA-TCGA) %>%
-  select(Gene, stat, PEDAYA, TCGA,
-         pct_change = frac_change_in_ped_relative_to_TCGA,
-         abs_change,
-         IQR, shift) %>%
-  arrange(abs_change) %>%
-  adorn_pct_formatting(,,,pct_change) %>%
-  filter(stat == "median") %>%
-  kbl(digits = c(NA, NA, 1, 1, NA, 2, NA, NA)) %>%
-  kable_styling(full_width = F)
+ggplot(samples_in_cohorts) +
+  geom_bar(aes(y=cohort, fill = pedaya)) +
+  scale_fill_bright()
 
-# if PEDAYA median is 0.25 higher or lower than TCGA median, the shift is higher or lower, respectively
-
-# percent cutoff doesn't really work, because some relatively small pcts are large in log2tpm1 space,
-
-  
 ```
-
-
-# Summary of differences
-
 ```{r}
-#manual_annotation_of_pedaya_relative_to_TCGA
 
-tabyl(manual_annotation_of_pedaya_relative_to_TCGA, IQR)
+most_common_ped_diseases <- samples_in_cohorts %>%
+  filter(cohort == "PEDAYA") %>%
+  tabyl(disease) %>%
+  arrange(desc(n)) %>%
+  slice_head(n=15)
 
-tabyl(manual_annotation_of_pedaya_relative_to_TCGA, shift)
+disease_plot <- samples_in_cohorts %>%
+  mutate(common_ped_cancers = ifelse(disease %in% most_common_ped_diseases$disease,
+                                     disease,
+                                     "other") %>%
+           factor() %>%
+           fct_relevel("other", after=Inf))
+         
+
+ggplot(disease_plot) +
+  geom_bar(aes(y=cohort, fill = common_ped_cancers)) +
+  scale_fill_bright()
+
 ```
 
-# Text summary
-
-Each sample in the study was compared to TCGA, PEDAYA, Stanford and the full Treehouse compendium.
-Often genes would be identified as outliers with respect to multiple cohorts. 
-We investigated the exceptions, genes found as outliers with respect to only one cohort. 
-The cohort with the largest number of uniquely detected outliers was TCGA, 
-We analyzed the distribution of expression for the outlier genes that were 
-identified in any samples by comparison with TCGA and no other cohorts. Because the addition of pediatric samples is the primary difference between TCGA and the other cohorts, we focussed on comparing the PEDAYA cohort and TCGA
-
-Of those 16, 15 had wider distributions (>0.5log2(TPM+1) bigger) in PEDAYA than TCGA, while one was similar. 
-For 7, the median was higher (by more than 0.25 log2TPM1) in PEDAYA than TCGA.
-For 6, the median was lower (by more than 0.25 log2TPM1) in PEDAYA than TCGA. 
-For 3, the medians were similar in PEDAYA and TCGA. 
-
-
-The Treehouse compendium is 77% TCGA (which is 96% adult). The remaining 23% of the Treehouse compendium is 97% PEDAYA (<=30). In the genes we looked at, the changes in distribution between TCGA and Treehouse compendium were consistent with the effects of adding the distribution of PEDAYA samples. 
-The differences in the treehouse compendium from TCGA is mostly due to the addition of PEDAYA samples. 

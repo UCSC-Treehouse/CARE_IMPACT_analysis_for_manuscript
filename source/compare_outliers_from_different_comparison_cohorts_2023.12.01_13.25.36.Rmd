@@ -19,6 +19,8 @@ library(khroma)
 library(kableExtra)
 library(gridExtra)
 library(cowplot)
+library(UpSetR)
+
 ```
 
 
@@ -110,7 +112,7 @@ ggplot(outliers_heatmap_data) +
 
 ```{r}
 
-library(ggVennDiagram)
+# library(ggVennDiagram)
 raw_outliers_for_venn <- outliers %>%
   mutate(sample_gene = paste(Sample_ID, gene, sep = "_")) %>%
   arrange(comparison_cohort) %>%
@@ -121,13 +123,13 @@ raw_outliers_for_venn <- outliers %>%
 list_of_outliers_for_venn <-  lapply(raw_outliers_for_venn, function(x) x %>% pull(sample_gene))
 names(list_of_outliers_for_venn) <- unique(outliers$comparison_cohort) %>% sort
 
-ggVennDiagram(list_of_outliers_for_venn,
-              show_intersect = TRUE)
-
- 
-ggVennDiagram(list_of_outliers_for_venn) + 
-  scale_fill_distiller(palette = "Reds", direction = 1)
-
+# ggVennDiagram(list_of_outliers_for_venn,
+#               show_intersect = TRUE)
+# 
+#  
+# ggVennDiagram(list_of_outliers_for_venn) + 
+#   scale_fill_distiller(palette = "Reds", direction = 1)
+# 
 
 ```
 
@@ -502,12 +504,12 @@ names(list_of_pathway_support_outliers_for_venn) <- outliers %>%
   distinct() %>%
   pull(comparison_cohort)
 
-ggVennDiagram(list_of_pathway_support_outliers_for_venn,
-              show_intersect = TRUE)
-
- 
-ggVennDiagram(list_of_pathway_support_outliers_for_venn) + 
-  scale_fill_distiller(palette = "Reds", direction = 1)
+# ggVennDiagram(list_of_pathway_support_outliers_for_venn,
+#               show_intersect = TRUE)
+# 
+#  
+# ggVennDiagram(list_of_pathway_support_outliers_for_venn) + 
+#   scale_fill_distiller(palette = "Reds", direction = 1)
 
 
 ```
@@ -529,6 +531,7 @@ outliers_with_pathway_support_combined_long <- outliers_with_pathway_support_com
                names_to = "Sample_ID",
                values_to = "comparison_cohorts") %>%
   na.omit()
+
 ```
 
 
@@ -607,7 +610,23 @@ outliers_with_pathway_support_abbrev_combined_wide %>%
 
 
 
+```{r}
 
+outlier_upset <- outliers %>%
+  mutate(index = paste(Sample_ID, gene),
+         value = TRUE) %>%
+  select(index, value,comparison_cohort) %>%
+  pivot_wider(names_from = comparison_cohort) %>%
+  select(index, TCGA, Pediatric = PEDAYA, Stanford = TH03_TH34, Treehouse_pc, Treehouse_pd) %>%
+  replace_na(list(TCGA = FALSE, Pediatric = FALSE, Stanford = FALSE, Treehouse_pc = FALSE,
+                  Treehouse_pd = FALSE))
+
+outlier_upset %>%
+  as.data.frame %>%
+  mutate_all(as.numeric) %>%
+  upset(text.scale=1.5)
+
+```
 
 
 
