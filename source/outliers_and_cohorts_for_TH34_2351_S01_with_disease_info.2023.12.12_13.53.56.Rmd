@@ -38,7 +38,7 @@ kbl_me <- function(x) {
 # load public compendium data
 ```{r}
 
-v11_metadata <- read_tsv("https://xena.treehouse.gi.ucsc.edu/download/clinical_TumorCompendium_v11_PolyA_2020-04-09.tsv.gz")
+v11_metadata <- read_tsv("../input_data/clinical_TumorCompendium_v11_PolyA_2020-04-09.tsv.gz")
 
 tabyl(v11_metadata$pedaya) %>% kbl_me
 
@@ -193,8 +193,8 @@ tabyl(samples_in_cohorts,
 # PATIENT SPECIFIC ANALYSIS
 
 ```{r}
-this_sample <- "TH34_1150_S02"
-this_gene <- "CDK9"
+this_sample <- "TH34_2351_S01"
+this_gene <- "HMOX1"
 ```
 
 ```{r}
@@ -240,10 +240,27 @@ this_focus_sample_pd_cohorts <- pd_cohorts %>%
   rename(cohort_sample = Sample_ID) %>%
   left_join(updated_v11,
             by=c("cohort_sample" = "Sample_ID"))
+
+this_focus_sample_pd_cohorts_original_v11 <- pd_cohorts %>%
+  filter(focus_sample_ID == this_sample) %>%
+  rename(cohort_sample = Sample_ID) %>%
+  left_join(redcap_metadata_v11,
+            by=c("cohort_sample" = "THid"))
 ```
 
 
-##  diseases in all pd cohorts
+##  diseases in all pd cohorts with ORIGINAL v11 metadata
+```{r}
+this_focus_sample_pd_cohorts_original_v11 %>%
+  tabyl(disease, cohort_pd_subset) %>%
+  rename_all(underscore_to_space_initial_cap) %>%
+  kbl() %>%
+  kable_styling(full_width = F)
+```
+
+
+
+##  diseases in all pd cohorts with UPDATED v11 metadata
 ```{r}
 this_focus_sample_pd_cohorts %>%
   tabyl(disease, cohort_pd_subset) %>%

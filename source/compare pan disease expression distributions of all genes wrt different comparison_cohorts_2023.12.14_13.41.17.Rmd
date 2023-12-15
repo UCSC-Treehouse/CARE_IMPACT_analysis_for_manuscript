@@ -337,6 +337,128 @@ calculate_outlier_threshold <- function(x) {
 
 ```
 
+# test theme_miniomal
+
+```{r fig.height=6, fig.width=6}
+
+this_sample_id <- "TH34_2351_S01"
+this_gene <- "HMOX1"
+outlier_relative_to <- "sdfsdf"
+
+print(this_gene)
+
+print(this_sample_id)
+
+this_data <- cohort_thresholds %>%
+  pivot_longer(c(-Gene, -stat), 
+               names_to = "cohort") %>%
+  filter(Gene == this_gene,
+         str_detect(cohort, this_sample_id) | 
+           cohort %in% c("PEDAYA", "TCGA", "TH03_TH34", "Treehouse_pc"))
+
+expected_levels <- c("Treehouse_pc", "TCGA", "PEDAYA", "TH03_TH34",
+                     paste(this_sample_id, c("pan_disease_same_diagnosis",
+                                             "pan_disease_same_inferred_diagnosis",
+                                             "pan_disease_1st_degree",
+                                             "pan_disease_1st_and_2nd_degree")))
+
+expr_relevant_to_this_outlier <-  left_join(samples_in_cohorts %>%
+                                              filter(str_detect(cohort, this_sample_id) | 
+                                                       cohort %in% c("PEDAYA", "TCGA", "TH03_TH34", "Treehouse_pc")),
+                                            expr %>%
+                                              filter(Gene == this_gene),
+                                            by=c("Sample_ID")) %>%
+  na.omit() %>%  # while I'm missing expression data for some samples
+  mutate(cohort = as.factor(cohort) %>%
+           fct_relevel(expected_levels[expected_levels %in% cohort])) %>%
+  group_by(cohort) %>%
+  mutate(cohort_with_n = paste0(cohort, " (n=", n(), ")")) %>%
+  ungroup %>%
+  arrange(cohort) %>%
+  mutate(cohort_with_n = factor(cohort_with_n, 
+                                levels = unique(cohort_with_n)))
+
+outlier_thresholds <- expr_relevant_to_this_outlier %>%
+  group_by(cohort_with_n) %>%
+  summarize(
+    outlier_threshold = calculate_outlier_threshold(log2TPM1)) %>%
+  ungroup() %>%
+  mutate(patient_expression = patient_expression %>%
+           filter(gene == this_gene,
+                  Sample_ID == this_sample_id) %>%
+           pull(log2TPM1),
+         patient_is_outlier = patient_expression > outlier_threshold)
+
+
+
+p <-  ggplot(expr_relevant_to_this_outlier) +
+  geom_boxplot(aes(y=cohort_with_n, x=log2TPM1),
+               #fill = cohort_with_n),
+               outlier.shape = NA) +
+  geom_rect(data = outlier_thresholds,
+            aes(xmin = outlier_threshold,
+                xmax = Inf,
+                ymin = -Inf,
+                ymax = Inf),
+            fill = "yellow",
+            alpha = 0.7) +
+  geom_vline(data = outlier_thresholds,
+             aes(xintercept = patient_expression,
+                 lty = patient_is_outlier), 
+             color = "red") +
+  facet_col(~cohort_with_n, scales = "free_y") +
+  ggtitle(paste0(this_gene, " cohorts for ", this_sample_id, "; ", outlier_relative_to),
+          "red line is patient expression (dashed if outlier); yellow area is above the outlier threshold") 
+
+
+p +
+  theme(axis.text.y = element_blank(),
+        axis.title.y = element_blank(),
+        legend.position="none") 
+
+
+p + 
+  theme_minimal() +
+  theme(axis.text.y = element_blank(),
+        axis.title.y = element_blank(),
+        legend.position="none")
+p + 
+  theme_minimal() +
+  theme(axis.text.y = element_blank(),
+        axis.title.y = element_blank(),
+        legend.position="none",
+        panel.border = element_rect(colour = "black", fill=NA, size=1),
+        strip.background = element_rect(color = "black", size = 1, fill = NA),
+        #remove horizontal grid line
+        panel.grid.major.y = element_blank()
+  )
+
+
+p +
+  theme_minimal() +
+  theme(axis.text.y = element_blank(),
+        axis.title.y = element_blank(),
+        legend.position="none",
+        panel.border = element_rect(colour = NA, fill=NA, size=1),
+        strip.background = element_rect(color = "lightgrey", size = 1, fill = "lightgrey"),
+        #remove horizontal grid line
+        panel.grid.major.y = element_blank()
+  ) 
+
+
+p +
+  theme_minimal() +
+  theme(axis.text.y = element_blank(),
+        axis.title.y = element_blank(),
+        legend.position="none",
+        panel.border = element_rect(colour = "grey", fill=NA, size=1),
+        strip.background = element_rect(color = "lightgrey", size = 1, fill = "lightgrey"),
+        #remove horizontal grid line
+        panel.grid.major.y = element_blank()
+  ) 
+
+
+```
 
 # Function to plot distributions and patient expression
 
