@@ -411,7 +411,17 @@ treehouse_high_low_outlier_summary %>%
   add_indent(c(2, 3), level_of_indent = 1)
 
 
+
+table_output_name <- paste0("../results/treehouse_outliers_detected_relative_to_different_cohorts_", format(Sys.time(), "%Y_%m_%d-%H_%M_%S_%Y"), ".tsv")
+
+write_tsv(treehouse_high_low_outlier_summary %>%
+  rename_all(underscore_to_space_initial_cap), table_output_name)
+
 ```
+
+this output was saved as `r table_output_name`
+
+
 
 
 # Summary table for  outliers detected by ANY cohort, includes and low level cohorts - 

@@ -1,0 +1,664 @@
+---
+title: "`r gsub('.Rmd', ' ', gsub('_', ' ', knitr::current_input()))`"
+author: "`r Sys.getenv('USER')`"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: yes
+---
+  
+
+version 2023.11.27_11.25.57 adds per-patient analysis
+
+
+```{r setup, include = FALSE}
+
+library(tidyverse)
+library(janitor)
+library(khroma)
+library(kableExtra)
+library(gridExtra)
+library(cowplot)
+library(UpSetR)
+
+```
+
+
+```{r}
+
+underscore_to_space <- function(x) str_replace_all(x, "_", " ")
+underscore_to_space_initial_cap <- function(x) str_replace_all(x, "_", " ") %>% str_to_sentence()
+
+```
+
+
+```{r}
+
+sample_metadata_file <- "../input_data/ckcc2_metadata_from_redcap_2023-11-09_10.34.27.tsv"
+sample_metadata <- read_tsv(sample_metadata_file,
+                            col_types = cols(.default = "c")) %>%
+  mutate(dx_group_factor = fct_lump_min(dx_group, 2),
+         dx_group = as.character(dx_group_factor))
+
+n_distinct(sample_metadata$THid)
+n_distinct(sample_metadata$donorID)
+
+donor_disease <- sample_metadata %>%
+  select(donorID, disease, dx_group, age_at_dx, gender) %>%
+  distinct() 
+```
+
+```{r}
+
+outliers <- read_tsv("../input_data/druggable_outliers_from_treehouse_and_other_cohorts_2023_11_09-13_46_32_2023.tsv") %>%
+  mutate(high_level_cohort = ifelse(str_detect(comparison_cohort, "Treehouse"),
+                                    "Treehouse",
+                                    comparison_cohort))
+
+         
+n_distinct(outliers$Sample_ID)       
+n_distinct(outliers$donor_ID)
+n_distinct(outliers$gene)
+```
+
+# Define cohort codes
+```{r}
+
+cohort_codes <- tibble(
+  cohort_name = 
+    c("PEDAYA", "TCGA", "TH03_TH34", "Treehouse_pc", "Treehouse_pd"),
+  cohort_code = 
+    c("P", "T", "S", "C", "D"))
+
+```
+
+# Tile plot of all outliers
+```{r fig.height=10, fig.width=10}
+
+ggplot(outliers) +
+  geom_tile(aes(x=comparison_cohort,
+                y=gene, 
+                fill = comparison_cohort)) +
+  facet_wrap(~Sample_ID,
+             nrow = 1) +
+  theme(#axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5),
+    axis.text.x = element_blank(),
+    strip.text.x = element_text(angle = 90),
+        ) +
+  xlab("")  +
+  scale_fill_bright()
+
+  
+```
+
+# Heatmap shows number of cohorts in which outlier were  detected
+I can make this look better if we decide to use it, but it's non-trivial
+```{r fig.height=10, fig.width=6}
+outliers_heatmap_data <- outliers %>%
+  group_by(Sample_ID, gene) %>%
+  summarize(n_outliers = n()) 
+
+ggplot(outliers_heatmap_data) +
+  geom_tile(aes(x=Sample_ID,
+                y=gene,
+                fill = n_outliers), 
+            color = "black")  +
+  #theme_bw() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) 
+
+
+```
+
+
+```{r}
+
+# library(ggVennDiagram)
+raw_outliers_for_venn <- outliers %>%
+  mutate(sample_gene = paste(Sample_ID, gene, sep = "_")) %>%
+  arrange(comparison_cohort) %>%
+  select(sample_gene, comparison_cohort) %>%
+  group_split(comparison_cohort)
+
+
+list_of_outliers_for_venn <-  lapply(raw_outliers_for_venn, function(x) x %>% pull(sample_gene))
+names(list_of_outliers_for_venn) <- unique(outliers$comparison_cohort) %>% sort
+
+# ggVennDiagram(list_of_outliers_for_venn,
+#               show_intersect = TRUE)
+# 
+#  
+# ggVennDiagram(list_of_outliers_for_venn) + 
+#   scale_fill_distiller(palette = "Reds", direction = 1)
+# 
+
+```
+
+# export list of genes found only by TCGA
+```{r}
+
+outliers %>%
+  group_by(Sample_ID, gene) %>%
+  filter(length(comparison_cohort) == 1,
+         "TCGA" %in% comparison_cohort) %>%
+  ungroup %>%
+  select(gene) %>% write_tsv("../gather_input_data/genes found only by TCGA in at least one sample.txt")
+
+```
+
+
+
+# Annotate with combined full low level cohort names
+```{r}
+collapse_fun <- function(x){ paste(x,collapse = ", ") }
+
+all_outliers_combined_wide <- outliers %>%
+  select(-pathway_support, -donor_ID, -high_level_cohort) %>%
+  pivot_wider(names_from = Sample_ID,
+              values_from = comparison_cohort,
+              values_fn = collapse_fun)
+
+n_distinct(outliers$Sample_ID)
+n_distinct(outliers$gene)
+all_outliers_combined_long <- all_outliers_combined_wide %>%
+  pivot_longer(-gene,
+               names_to = "Sample_ID",
+               values_to = "comparison_cohorts") %>%
+  na.omit()
+```
+
+
+# How many outliers are present in each combination of cohorts?
+```{r}
+tabyl(all_outliers_combined_long,
+      comparison_cohorts) %>%
+  arrange(desc(n)) %>%
+  adorn_pct_formatting() %>%
+  adorn_totals() %>%
+  kbl() %>%
+  kable_styling(full_width = F)
+```
+
+
+# Tile plot of combination of outliers
+```{r fig.height=10, fig.width=10}
+
+ggplot(all_outliers_combined_long) +
+  geom_tile(aes(x=Sample_ID,
+                y=gene,
+                fill = comparison_cohorts))  +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5))
+                
+n_distinct(all_outliers_combined_long$Sample_ID)                
+
+```
+
+
+
+
+# Annotate with combined full high level cohort names
+```{r}
+
+high_level_all_outliers_combined_wide <- outliers %>%
+  select(-pathway_support, -donor_ID, -comparison_cohort) %>%
+  distinct() %>%
+  pivot_wider(names_from = Sample_ID,
+              values_from = high_level_cohort,
+              values_fn = collapse_fun)
+
+n_distinct(outliers$Sample_ID)
+n_distinct(outliers$gene)
+high_level_all_outliers_combined_long <- high_level_all_outliers_combined_wide %>%
+  pivot_longer(-gene,
+               names_to = "Sample_ID",
+               values_to = "comparison_cohorts") %>%
+  na.omit()
+```
+
+
+# How many outliers are present in each high level combination of cohorts?
+```{r}
+tabyl(high_level_all_outliers_combined_long,
+      comparison_cohorts) %>%
+  arrange(desc(n)) %>%
+  adorn_pct_formatting() %>%
+  adorn_totals() %>%
+  kbl() %>%
+  kable_styling(full_width = F)
+```
+
+
+# Annotate with minimal combined cohort abbreviations
+```{r}
+collapse_fun_no_coma <- function(x){ paste(x,collapse = "") }
+
+# backslashes prevent asterisks from being interpreted as italics in the kbl table
+
+all_outliers_min_abbrev_combined_wide <- outliers %>%
+  left_join(cohort_codes,
+            by=c("comparison_cohort"="cohort_name")) %>%
+  mutate(cohort_code_pathway = ifelse(pathway_support,
+                                      paste0(cohort_code, "\\*"),
+                                      cohort_code)) %>%
+  select(-pathway_support, -donor_ID,
+         -comparison_cohort,
+         -cohort_code) %>%
+  pivot_wider(names_from = Sample_ID,
+              values_from = cohort_code_pathway,
+              values_fn = collapse_fun_no_coma,
+              values_fill = "")
+
+
+all_outliers_min_abbrev_combined_wide %>%
+  arrange(gene) %>%
+  rename_all(underscore_to_space) %>%
+  kbl() %>%
+  kable_styling(full_width = F,
+                bootstrap_options = "bordered")
+```
+
+
+
+
+# Annotate with combined cohort abbreviations
+```{r}
+
+all_outliers_abbrev_combined_wide <- outliers %>%
+  left_join(cohort_codes,
+            by=c("comparison_cohort"="cohort_name")) %>%
+  select(-pathway_support, -donor_ID,
+         -comparison_cohort) %>%
+  pivot_wider(names_from = Sample_ID,
+              values_from = cohort_code,
+              values_fn = collapse_fun,
+              values_fill = "")
+
+```
+
+
+```{r}
+
+
+all_outliers_abbrev_combined_wide %>%
+  arrange(gene) %>%
+  rename_all(underscore_to_space) %>%
+  kbl() %>%
+  kable_styling(full_width = F,
+                bootstrap_options = "bordered")
+```
+
+# Summary table for all outliers and low level cohorts
+```{r}
+n_outliers_detected_by_any_method <- outliers %>%
+  select(Sample_ID, gene) %>%
+  distinct %>%
+  nrow()
+
+n_outliers_with_pathway_support_detected_by_any_method <- outliers %>%
+  filter(pathway_support) %>%
+  select(Sample_ID, gene) %>%
+  distinct %>%
+  nrow()
+# these have pathway support in at least one cohort
+
+totals_tibble <-  tibble(high_level_cohort= " Total",
+                         comparison_cohort = " Total",
+                 n_outliers_detected = n_outliers_detected_by_any_method,
+                 n_outliers_with_pathway_support = n_outliers_with_pathway_support_detected_by_any_method,
+                 pct_outliers_with_pathway_support = 100*n_outliers_with_pathway_support_detected_by_any_method/n_outliers_detected_by_any_method)
+
+outlier_summary <- outliers %>% 
+  group_by(comparison_cohort) %>%
+  summarize(n_outliers_detected = n(),
+         n_outliers_with_pathway_support = sum(pathway_support)) %>%
+  ungroup() %>%
+  mutate(pct_outliers_detected = 100*n_outliers_detected/n_outliers_detected_by_any_method,
+         pct_outliers_with_pathway_support_detected =
+           100*n_outliers_with_pathway_support/n_outliers_with_pathway_support_detected_by_any_method,
+         pct_outliers_with_pathway_support = 100*n_outliers_with_pathway_support/n_outliers_detected)
+  
+outlier_summary_with_totals <- 
+  bind_rows(outlier_summary,
+            totals_tibble %>% select(-high_level_cohort))
+
+                 
+  
+outlier_summary_with_totals %>% 
+  rename_all(underscore_to_space) %>%
+  kbl(digits = c(NA, 0, 0, 0, 0)) %>%
+  kable_styling(full_width = F)
+
+```
+
+# Summary table for all outliers and high level cohorts
+```{r}
+
+high_level_outlier_summary <- outliers %>% 
+  group_by(high_level_cohort, Sample_ID, gene) %>%
+  summarize(pathway_support = any(pathway_support)) %>%
+  group_by(high_level_cohort) %>%
+  summarize(n_outliers_detected = n(),
+         n_outliers_with_pathway_support = sum(pathway_support),
+         pct_outliers_with_pathway_support = 100*n_outliers_with_pathway_support/n_outliers_detected,
+         pct_outliers_detected = 100*n_outliers_detected/n_outliers_detected_by_any_method)
+
+high_level_outlier_summary_with_totals <- 
+  bind_rows(high_level_outlier_summary %>%
+              arrange(desc(high_level_cohort)),
+            totals_tibble %>% select(-comparison_cohort))
+
+
+
+high_level_outlier_summary_with_totals %>% 
+  rename_all(underscore_to_space) %>%
+  kbl(format.args = list(big.mark = ","), digits = c(NA, 0, 0, 0, 0)) %>%
+  kable_styling(full_width = F)
+
+```
+
+
+## Combined high and low level tables
+```{r}
+
+high_low <- bind_rows(
+  high_level_outlier_summary_with_totals %>% 
+    rename(comparison_cohort=high_level_cohort) %>%
+    mutate(index = c(1, 4:7)),
+  outlier_summary_with_totals %>%
+    filter(str_detect(comparison_cohort, "Treehouse")) %>%
+    mutate(index = 2:3)
+) %>% 
+  arrange(index) %>%
+  select(-index) 
+       
+
+high_low_outlier_summary <- high_low %>%
+  filter(! str_detect(comparison_cohort, "Total")) %>%
+  mutate(
+    comparison_cohort = str_replace(comparison_cohort, "_", " "),
+    pct_outliers_with_pathway_support_detected =
+      100*n_outliers_with_pathway_support/n_outliers_with_pathway_support_detected_by_any_method,
+    `Druggable outliers detected` = 
+      paste0(n_outliers_detected, "/", n_outliers_detected_by_any_method, " (",
+             round(pct_outliers_detected), "%)"),
+    `Druggable outliers with pathway support` = 
+      paste0(n_outliers_with_pathway_support, "/",
+             n_outliers_with_pathway_support_detected_by_any_method, " (",
+             round(pct_outliers_with_pathway_support_detected), "%)"),
+    `Fraction of druggable outliers with pathway support` = 
+      paste0(n_outliers_with_pathway_support, "/", 
+             n_outliers_detected, " (",
+             round(100*n_outliers_with_pathway_support/n_outliers_detected), "%)")
+  ) %>%
+  select(comparison_cohort, 
+         `Druggable outliers detected`,
+         `Druggable outliers with pathway support`,
+         `Fraction of druggable outliers with pathway support`) %>%
+  bind_rows(totals_tibble %>%
+              mutate(`Fraction of druggable outliers with pathway support` =
+                       paste0(n_outliers_with_pathway_support, "/", 
+                              n_outliers_detected, " (",
+                              round(100*n_outliers_with_pathway_support/n_outliers_detected), "%)"),
+                     `Druggable outliers detected` = as.character(n_outliers_detected),
+                     `Druggable outliers with pathway support` = as.character(n_outliers_with_pathway_support)
+              ) %>%
+              select(comparison_cohort, 
+                     `Druggable outliers detected`,
+                     `Druggable outliers with pathway support`,
+                     `Fraction of druggable outliers with pathway support`)
+  )
+
+         
+
+
+  
+
+high_low_outlier_summary %>%
+  rename_all(underscore_to_space_initial_cap) %>%
+  kbl() %>%
+  kable_styling(full_width = F) %>%
+  add_indent(c(2, 3), level_of_indent = 1)
+
+
+
+```
+# Patient level summary table for all outliers
+```{r}
+
+outliers %>%
+  group_by(donor_ID) %>%
+  summarize(any_PEDAYA = "PEDAYA" %in% comparison_cohort,
+            any_TH03_TH34 = "TH03_TH34" %in% comparison_cohort,
+            any_TCGA = "TCGA" %in% comparison_cohort,
+            any_Treehouse_pc = "Treehouse_pc" %in% comparison_cohort,
+            any_Treehouse_pd = "Treehouse_pd" %in% comparison_cohort,
+            any_Treehouse = any_Treehouse_pc | any_Treehouse_pd) %>%
+  pivot_longer(starts_with("any")) %>%
+  mutate(name = str_remove(name, "any_")) %>%
+  group_by(name) %>%
+  summarize(n_patients_with_druggable_outliers = sum(value)) %>% 
+  kbl() %>%
+  kable_styling(full_width = F)
+
+```
+
+
+# REPEAT ANALYSIS USING ONLY OUTLIERS WITH PATHWAY SUPPORT
+
+# Tile plot of outliers with pathway support
+```{r fig.height=10, fig.width=10}
+
+ggplot(outliers %>%
+         filter(pathway_support)) +
+  geom_tile(aes(x=comparison_cohort,
+                y=gene, 
+                fill = comparison_cohort)) +
+  facet_wrap(~Sample_ID,
+             nrow = 1) +
+  theme(#axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5),
+    axis.text.x = element_blank(),
+    strip.text.x = element_text(angle = 90),
+        ) +
+  xlab("")  +
+  scale_fill_bright()
+
+  
+```
+
+
+# Heatmap shows number of cohorts in which outlier were  detected
+I can make this look better if we decide to use it, but it's non-trivial
+```{r fig.height=10, fig.width=6}
+
+pathway_outliers_heatmap_data <- outliers %>%
+  filter(pathway_support) %>%
+  group_by(Sample_ID, gene) %>%
+  summarize(n_outliers = n()) 
+
+ggplot(pathway_outliers_heatmap_data) +
+  geom_tile(aes(x=Sample_ID,
+                y=gene,
+                fill = n_outliers), 
+            color = "black")  +
+  #theme_bw() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) 
+
+
+```
+
+
+```{r}
+
+raw_pathway_support_outliers_for_venn <- outliers %>%
+  filter(pathway_support)  %>%
+  mutate(sample_gene = paste(Sample_ID, gene, sep = "_")) %>%
+  arrange(comparison_cohort) %>%
+  select(sample_gene, comparison_cohort) %>%
+  group_split(comparison_cohort)
+
+
+list_of_pathway_support_outliers_for_venn <-  lapply(raw_pathway_support_outliers_for_venn, function(x) x %>% pull(sample_gene))
+names(list_of_pathway_support_outliers_for_venn) <- outliers %>%
+  filter(pathway_support) %>%
+  arrange(comparison_cohort) %>%
+  select(comparison_cohort) %>%
+  distinct() %>%
+  pull(comparison_cohort)
+
+# ggVennDiagram(list_of_pathway_support_outliers_for_venn,
+#               show_intersect = TRUE)
+# 
+#  
+# ggVennDiagram(list_of_pathway_support_outliers_for_venn) + 
+#   scale_fill_distiller(palette = "Reds", direction = 1)
+
+
+```
+
+
+# Annotate with combined full cohort names
+```{r}
+
+
+outliers_with_pathway_support_combined_wide <- outliers %>%
+  filter(pathway_support) %>%
+  select(-pathway_support, -donor_ID) %>%
+  pivot_wider(names_from = Sample_ID,
+              values_from = comparison_cohort,
+              values_fn = collapse_fun)
+
+outliers_with_pathway_support_combined_long <- outliers_with_pathway_support_combined_wide %>%
+  pivot_longer(c(-gene, -high_level_cohort),
+               names_to = "Sample_ID",
+               values_to = "comparison_cohorts") %>%
+  na.omit()
+
+```
+
+
+# How many outliers with pathway support are present in each combination of cohorts?
+```{r}
+tabyl(outliers_with_pathway_support_combined_long,
+      comparison_cohorts) %>%
+  arrange(desc(n)) %>%
+  adorn_pct_formatting() %>%
+  adorn_totals() %>%
+  kbl() %>%
+  kable_styling(full_width = F)
+```
+
+
+```{r fig.height=10, fig.width=10}
+
+ggplot(outliers_with_pathway_support_combined_long) +
+  geom_tile(aes(x=Sample_ID,
+                y=gene,
+                fill = comparison_cohorts))  +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5))
+                
+n_distinct(outliers_with_pathway_support_combined_long$Sample_ID)                
+
+```
+
+# Patient level summary table for  outliers with pathway support
+```{r}
+
+outliers %>%
+  filter(pathway_support) %>%
+  group_by(donor_ID) %>%
+  summarize(any_PEDAYA = "PEDAYA" %in% comparison_cohort,
+            any_TH03_TH34 = "TH03_TH34" %in% comparison_cohort,
+            any_TCGA = "TCGA" %in% comparison_cohort,
+            any_Treehouse_pc = "Treehouse_pc" %in% comparison_cohort,
+            any_Treehouse_pd = "Treehouse_pd" %in% comparison_cohort,
+            any_Treehouse = any_Treehouse_pc | any_Treehouse_pd) %>%
+  pivot_longer(starts_with("any")) %>%
+  mutate(name = str_remove(name, "any_")) %>%
+  group_by(name) %>%
+  summarize(n_patients_with_druggable_outliers = sum(value)) %>% 
+  kbl() %>%
+  kable_styling(full_width = F)
+
+```
+
+# Annotate with combined cohort abbreviations
+```{r}
+
+outliers_with_pathway_support_abbrev_combined_wide <- outliers %>%
+  filter(pathway_support) %>%
+  left_join(cohort_codes,
+            by=c("comparison_cohort"="cohort_name")) %>%
+  select(-pathway_support, -donor_ID,
+         -comparison_cohort) %>%
+  pivot_wider(names_from = Sample_ID,
+              values_from = cohort_code,
+              values_fn = collapse_fun,
+              values_fill = "")
+
+```
+
+# Big table of outliers with pathway support
+```{r}
+
+
+outliers_with_pathway_support_abbrev_combined_wide %>%
+  arrange(gene) %>%
+  rename_all(underscore_to_space) %>%
+  kbl() %>%
+  kable_styling(full_width = F,
+                bootstrap_options = "bordered")
+```
+
+
+
+```{r}
+
+outlier_upset <- outliers %>%
+  mutate(index = paste(Sample_ID, gene),
+         value = TRUE) %>%
+  select(index, value,comparison_cohort) %>%
+  pivot_wider(names_from = comparison_cohort) %>%
+  select(index, TCGA, Pediatric = PEDAYA, Stanford = TH03_TH34, Treehouse_pc, Treehouse_pd) %>%
+  replace_na(list(TCGA = FALSE, Pediatric = FALSE, Stanford = FALSE, Treehouse_pc = FALSE,
+                  Treehouse_pd = FALSE))
+
+outlier_upset %>%
+  rename_with(~ str_replace(.x, "_", " ")) %>%
+  as.data.frame %>%
+  mutate_all(as.numeric) %>%
+  upset(text.scale=1.5, 
+        mainbar.y.label = "Outliers detected by\ncohort combination",
+        sets.x.label = "Total outliers",
+        order.by = "freq")
+
+```
+```{r}
+
+outlier_upset %>%
+  as.data.frame %>%
+  mutate_all(as.numeric) %>%
+  upset(text.scale=1.5,
+         empty.intersections = "on")
+```
+
+
+# While X outliers were detected by multiple cohorts...
+```{r}
+
+cohorts_per_outlier <- outliers %>%
+  mutate(index = paste(Sample_ID, gene)) %>%
+  group_by(index) %>%
+  summarize(n_cohorts = n()) 
+
+
+tabyl(cohorts_per_outlier$n_cohorts)
+
+cohorts_per_outlier %>%
+  filter(n_cohorts > 1) %>%
+  nrow()
+
+```
+
+```{r}
+sessionInfo()
+```
+
