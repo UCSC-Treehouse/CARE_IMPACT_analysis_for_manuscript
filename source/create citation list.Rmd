@@ -1,0 +1,37 @@
+---
+title: "`r gsub('.Rmd', ' ', gsub('_', ' ', knitr::current_input()))`"
+author: "`r Sys.getenv('USER')`"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: yes
+---
+  
+
+
+```{r setup, include = FALSE}
+
+library(tidyverse)
+
+```
+
+# gather library declarations
+grep -r --include="*.Rmd" "library" | sed 's/^.*(//' | sed 's/)//' | sort | uniq
+
+
+```{r}
+
+to_cite_raw <- c("tidyverse, colorspace, cowplot, ggVennDiagram, ggforce, ggrepel, gridExtra, haven, janitor, jsonlite, kableExtra, khroma, knitr, networkD3, RColorBrewer, redcapAPI, UpSetR, webshot") %>%
+  str_split(", ") %>%
+  unlist()
+
+```
+
+```{r}
+cites_raw <- lapply(to_cite_raw, citation)
+
+lapply(cites_raw, toBibtex) %>%
+  unlist() %>%
+  cat(file = "../results/R_citations.bib")
+```
+
