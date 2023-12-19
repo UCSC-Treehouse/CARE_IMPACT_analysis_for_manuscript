@@ -379,7 +379,7 @@ expr_relevant_to_this_outlier <-  left_join(samples_in_cohorts %>%
   mutate(cohort = as.factor(cohort) %>%
            fct_relevel(expected_levels[expected_levels %in% cohort])) %>%
   group_by(cohort) %>%
-  mutate(cohort_with_n = paste0(cohort, " (n=", n(), ")")) %>%
+  mutate(cohort_with_n = paste0(cohort, " (n=", scales::label_comma()(n()), ")")) %>%
   ungroup %>%
   arrange(cohort) %>%
   mutate(cohort_with_n = factor(cohort_with_n, 
@@ -505,7 +505,7 @@ plot_distributions <- function(this_gene, this_sample_id, outlier_relative_to) {
     mutate(cohort = as.factor(cohort) %>%
              fct_relevel(expected_levels[expected_levels %in% cohort])) %>%
     group_by(cohort) %>%
-    mutate(cohort_with_n = paste0(cohort, " (n=", n(), ")")) %>%
+    mutate(cohort_with_n = paste0(cohort, " (n=", scales::label_comma()(n()), ")")) %>%
     ungroup %>%
     arrange(cohort) %>%
     mutate(cohort_with_n = factor(cohort_with_n, 
