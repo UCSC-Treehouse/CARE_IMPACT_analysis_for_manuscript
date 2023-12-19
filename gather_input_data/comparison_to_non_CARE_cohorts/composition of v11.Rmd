@@ -30,7 +30,7 @@ kbl_me <- function(x) {
 # load public compendium data
 ```{r}
 
-v11 <- read_tsv("https://xena.treehouse.gi.ucsc.edu/download/clinical_TumorCompendium_v11_PolyA_2020-04-09.tsv.gz")
+v11 <- read_tsv("../../input_data/clinical_TumorCompendium_v11_PolyA_2020-04-09.tsv.gz")
 
 tabyl(v11$pedaya) %>% kbl_me
 
@@ -166,10 +166,24 @@ updated_v11_pops %>% tabyl(other) %>% kbl_me()
 
 updated_v11_pops %>% nrow
 ```
-What fraction of TCGA is pedaya
+## What fraction of TCGA is pedaya
+The Treehouse compendium consists of 12747 samples, 9806 of which are from TCGA ( 96.3%  adult).
 ```{r}
 
-updated_v11_pops %>% tabyl(TCGA, is_pedaya) %>% adorn_title
+updated_v11_pops %>% 
+  tabyl(TCGA, is_pedaya) %>% 
+  adorn_title 
+
+updated_v11_pops %>% 
+  tabyl(TCGA, is_pedaya) %>% 
+  adorn_percentages %>% 
+  adorn_pct_formatting() %>%
+  adorn_title 
+
+updated_v11_pops %>%
+  tabyl(TCGA) %>% 
+  adorn_pct_formatting()
+
 
 updated_v11_pops %>%
   filter(TCGA) %>%
@@ -182,6 +196,21 @@ updated_v11_pops %>%
   adorn_pct_formatting()
 
 ```
+
+```{r}
+
+updated_v11_pops %>%
+  filter(!TCGA) %>%
+  nrow()
+  
+  updated_v11_pops %>%
+  filter(!TCGA) %>%
+  tabyl(is_pedaya) %>% 
+  adorn_pct_formatting()
+
+
+```
+
 
 
 
@@ -206,6 +235,16 @@ v11 %>%
   select(-site_donor_id, -site_sampleid) %>%
   kbl() %>%
   kable_styling()
+
+```
+
+
+To a first approximation, the Treehouse compendium consists of TCGA plus pediatric data. 
+```{r}
+
+
+updated_v11_pops
+
 
 ```
 
