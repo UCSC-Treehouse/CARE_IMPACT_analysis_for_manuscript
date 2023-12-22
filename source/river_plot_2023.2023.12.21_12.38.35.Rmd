@@ -1,0 +1,272 @@
+---
+title: "`r gsub('.Rmd', ' ', gsub('_', ' ', knitr::current_input()))`"
+author: "`r Sys.getenv('USER')`"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    toc: yes
+---
+  
+  
+# version notes  
+
+2023.12.20_13.42.16 - i got it to recreate the existing plot
+
+make minimal incremental improvements
+
+2023.12.21_11.12.06 - improvement 1: update three labels, e.g. Standard of care to Received therapy considered standard of care
+
+2023.12.21_11.21.42 - improvement 2: add "accepted", e.g. Standard of care to Received therapy considered standard of care
+
+conclusion for 2023.12.21_11.21.42: color assignments work only on the first word; see how both "Received therapy" sections are the same color. I'm going to consider this a provisional success, since changing color is much easier than changing text
+
+2023.12.21_12.07.04 - improvement 3: add n = 
+conclusion for 2023.12.21_12.07.04: colors are totally off; i can't wrap text, so i had to make it wider. still this includes the numbers, which i think are important. i also can't move columns closer or farther separately, so I have to make the whole thing wider. 
+
+2023.12.21_12.38.35 - remove accepted so I can make things narrow again
+
+conclusions for 2023.12.21_12.38.35 - i ended up having to make it 9: wide anyway, so 10" isn't much different
+
+```{r setup, include = FALSE}
+
+library(tidyverse)
+library(networkD3)
+library(RColorBrewer)
+library(colorspace)
+
+```
+
+
+
+
+# import data
+```{r}
+findings_file <- "../input_data/Treehouse.Drug.Prioritization.No.Identifiers.final.03.07.21 - case_prioritization.tsv"
+
+
+
+tx_treatments_raw <- read_tsv(findings_file, 
+                              col_types = cols(.default = "c")) %>% 
+   select(-TH_sampleID, -`Case #`, -Note)
+
+
+length(unique(tx_treatments_raw$TH_donorID))
+```
+
+# nodes in order
+```{r}
+
+nodes_in_order_for_plotting <- c(  #things we want to explicitly sort
+  "Prioritized",
+  "Deferred",
+  "Declined",
+  "Implemented",
+  "Not implemented",
+  #Implemented category: 
+  "Response",
+  "Progression",
+  # Not implemented
+  "Rapid disease progression", 
+  "Waiting for treatment approval", 
+  "Therapy unavailable",
+  # Deferred
+  "Standard of care", 
+  "No further treatment needed",
+  "Treatment with more disease data", 
+  # Declined
+  "Evidence against Treehouse therapy", 
+  "Not FDA approved")
+
+
+nodes_in_order_for_color <- c(  #positive events
+  "Prioritized",
+  "Implemented",
+  "Response",
+   #second rank events
+  "Progression",
+  "Not implemented",
+  "Rapid disease progression", 
+  # Not implemented
+  "Waiting for treatment approval", 
+  "Therapy unavailable",
+  # deferred
+  "Deferred",
+  "Standard of care", 
+  "No further treatment needed",
+  "Treatment with more disease data", 
+  "Declined",
+  "Evidence against Treehouse therapy", 
+  "Not FDA approved")
+
+```
+
+# assemble data in format required for sankey plot
+```{r}
+
+all_nodes <- tibble(name = c(tx_treatments_raw$TH_donorID, 
+                                tx_treatments_raw$`Case prioritization`, 
+                                tx_treatments_raw$Reason, 
+                                tx_treatments_raw$`Implementation reason for prioritized findings`)) %>% 
+  na.omit()
+
+nodes <- all_nodes %>%
+  distinct() %>%
+  mutate(name_factor = factor(name) %>% 
+           fct_relevel(c(tx_treatments_raw$TH_donorID,
+                         nodes_in_order_for_plotting))) %>%
+  arrange(name_factor) %>%
+  mutate(node = 0:(n()-1)) 
+
+
+```
+
+
+# Update language
+improvements 1, 2 and 3
+```{r}
+
+node_labels <- all_nodes  %>%
+  mutate(is_donor = str_detect(name, "TH[R]?[0-9]{2}_[0-9]{4}")) %>%
+  rename(unnumbered_name = name) %>%
+  group_by(is_donor, unnumbered_name) %>%
+  summarize(n = n()) 
+
+update_names <- function(x) {
+  str_replace_all(x, "Standard of care", 
+                  "Received therapy considered standard of care") %>%
+    str_replace_all("Treatment with more disease data", 
+                    "Received therapy with more published evidence of efficacy") %>%
+    str_replace_all("Evidence against Treehouse therapy", 
+                    "Evidence against therapy identified by CARE analysis")
+}
+
+
+add_count_to_name <- function(x) {
+  # x <- all_nodes$name %>% unique
+  tibble(name = x) %>%
+    left_join(node_labels, by=c("name"="unnumbered_name")) %>%
+  mutate(name_with_number = ifelse(is_donor,
+                                   name,
+                                   paste0(update_names(name), " (n=", n, ")"))) %>%
+    pull(name_with_number)
+}
+
+#add_count_to_name(all_nodes$name)
+```
+
+# Update node data
+```{r}
+sample_id_placeholder <- ""
+
+# nodes_wo_sample_names <- nodes %>%
+#    mutate(name2  = name)
+nodes_wo_sample_names <- nodes %>%
+#  mutate(name2 = name)
+  mutate(name2 = case_when(str_detect(name_factor, "^TH[0-9]") ~ sample_id_placeholder,
+            TRUE ~ name))
+
+updated_node_names_wo_sample_names <- nodes_wo_sample_names %>%
+  mutate(name2 = add_count_to_name(name2))
+
+```
+
+# create does
+```{r}
+# links <- source target value
+donor_to_prioritization <- tx_treatments_raw %>%
+  select(TH_donorID, `Case prioritization`) %>%
+  left_join(nodes, by=c("TH_donorID"="name")) %>%
+              rename(source = node) %>%
+  left_join(nodes, by=c(`Case prioritization`="name")) %>%
+              rename(target = node) %>%
+  mutate(value = 1)
+  
+prioritization_to_reason <- tx_treatments_raw %>%
+  select(`Case prioritization`, Reason) %>%
+  left_join(nodes, by=c("Case prioritization"="name")) %>%
+              rename(source = node) %>%
+  left_join(nodes, by=c("Reason"="name")) %>%
+              rename(target = node) %>%
+  mutate(value = 1)
+
+reason_to_implementation <-  tx_treatments_raw %>%
+  select(Reason, `Implementation reason for prioritized findings`) %>%
+  left_join(nodes, by=c("Reason"="name")) %>%
+              rename(source = node) %>%
+  left_join(nodes, by=c("Implementation reason for prioritized findings"="name")) %>%
+              rename(target = node) %>%
+  mutate(value = 1) %>%
+  na.omit
+
+links_noisy <- bind_rows(donor_to_prioritization,
+                   prioritization_to_reason,
+                   reason_to_implementation) 
+
+links <- links_noisy %>%
+  select(source, target, value) %>%
+  arrange(source, target, value)
+
+  
+
+```
+
+# define colors
+```{r}
+
+#names_to_color_blue <- tibble(name = c("Accepted; prioritized", "Implemented", "Response"), 
+names_to_color_blue <- tibble(name = c("Prioritized", "Implemented", "Response"), 
+                              color_code =  c("#9ECAE1", "#6BAED6", "#3182BD"))
+                              #brewer.pal(name="Blues",n=6)[3:5])
+
+sample_box_colors <- tibble(name = sample_id_placeholder,
+                            color_code = "#D3D3D3")
+
+node_names <- tibble(name = unique(nodes_wo_sample_names$name2)) %>%
+  filter(! name %in% c(names_to_color_blue$name, sample_box_colors$name)) %>%
+  mutate(name_f = factor(name, levels = nodes_in_order_for_color)) %>%
+  arrange(name_f) %>%
+  mutate(color_code = heat_hcl(n(),rev=TRUE, c=c(60,20),l=c(60,100),power=1)) %>%
+  bind_rows(names_to_color_blue) %>%
+  bind_rows(sample_box_colors) %>%
+  mutate(name = add_count_to_name(name))
+
+color_specification <- JS(
+sprintf(
+'d3.scaleOrdinal()  
+  .domain(%s)
+  .range(%s)
+',
+jsonlite::toJSON(node_names$name),
+jsonlite::toJSON(node_names$color_code)
+   )
+  )
+
+
+
+```
+
+
+# check for overlap in colors and names
+```{r}
+setdiff(node_names$name, nodes_wo_sample_names$name2) # expected output: character(0)
+setdiff(nodes_wo_sample_names$name2, node_names$name) # expected output: character(0)
+
+```
+
+# plot
+```{r fig.height=6, fig.width=9}
+
+networkD3::sankeyNetwork(Links = links, Nodes = updated_node_names_wo_sample_names, Source = 'source', 
+                         Target = 'target', Value = 'value', NodeID = 'name2',
+                         units = '',
+  sinksRight = FALSE,
+  nodeWidth = 40,
+  fontSize = 13,
+  nodePadding = 5,
+  iterations = 10,
+  colourScale = color_specification)
+
+```
+
+
+

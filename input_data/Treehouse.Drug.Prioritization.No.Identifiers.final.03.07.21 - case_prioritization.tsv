@@ -1,0 +1,34 @@
+TH_donorID	TH_sampleID	Case #	Case prioritization	Reason	Implementation reason for prioritized findings	Note
+TH34_1239	TH34_1239_S01	4059	Deferred	Treatment with more disease data		
+TH34_1238	TH34_1238_S01	4060	Deferred	Treatment with more disease data		
+TH34_1350	TH34_1350_S01	4071	Deferred	Treatment with more disease data		
+TH34_1381	TH34_1381_S01	18002	Prioritized	Implemented	Progression	
+TH34_2410	TH34_2410_S01	ST108	Deferred	Standard of care		
+TH34_1162	TH34_1162_S01	ST11	Deferred	Treatment with more disease data		
+TH34_2411	TH34_2411_S01	ST111	Deferred	Treatment with more disease data		
+TH34_2666	TH34_2666_S01	ST113	Deferred	No further treatment needed		
+TH34_1163	TH34_1163_S01	ST13	Deferred	Treatment with more disease data		
+TH34_1149	TH34_1149_S02	ST18	Declined	Evidence against Treehouse therapy		
+TH34_1150	TH34_1150_S02	ST2.1	Deferred	Treatment with more disease data		
+TH34_1179	TH34_1179_S01	ST20	Deferred	Standard of care		
+TH34_1240	TH34_1240_S01	ST24	Prioritized	Not implemented	Rapid disease progression	
+TH34_1349	TH34_1349_S01/TH34_1349_S02	ST30	Prioritized	Implemented	Response	
+TH34_1351	TH34_1351_S01	ST32	Deferred	Treatment with more disease data		
+TH34_1352	TH34_1352_S01	ST33	Prioritized	Implemented	Response	
+TH34_1379	TH34_1379_S01	ST34	Prioritized	Not implemented	Rapid disease progression	Clinician planned to add pazopanib during second docetaxel cycle but RT was required for pain and patient passed away before he could receive more therapy. 
+TH34_1380	TH34_1380_S01	ST35	Prioritized 	Not implemented	Waiting for treatment approval	Clinicians's elected to initially defer the TH findings to treat with pazopanib since there was more data available. After progression on pazopanib the clinician initiated compassionate use IND for NOTCH inhibitor, but the patient’s mother did not want to wait any longer for systemic therapy so oral etoposide was started.
+TH34_1399	TH34_1399_S01	ST40	Deferred	Treatment with more disease data		
+TH34_1400	TH34_1400_S01	ST41	Deferred	No further treatment needed		
+TH34_1412	TH34_1412_S01	ST43	Deferred	Treatment with more disease data		
+TH34_1414	TH34_1414_S01	ST45	Deferred	Treatment with more disease data		
+TH34_1415	TH34_1415_S01	ST46	Deferred	Treatment with more disease data		
+TH34_1444	TH34_1444_S01	ST50	Deferred	Standard of care		
+TH34_1445	TH34_1445_S02	ST51	Deferred	Treatment with more disease data		
+TH34_1446	TH34_1446_S01	ST52	Deferred	Treatment with more disease data		Vemurafenib was indicated because of BRAF mutation (molecular finding), but had to be stopped due to increasing fluid behind retinas, and focal RT was then given due to tumor progression. Clinician would have considered an NTRK-targeted therapy if vemurafenib had not worked or if the patient had not been a candidate for RT when vemurafenib had to be stopped.
+TH34_1447	TH34_1447_S01/TH34_1447_S02	ST55	Deferred	Treatment with more disease data		
+TH34_1452	TH34_1452_S01	ST58	Deferred	Treatment with more disease data		
+TH34_1455	TH34_1455_S01	ST61	Prioritized	Not implemented	Therapy unavailable	Clinician wanted to put patient on neratinib phase II study but was not eligible due to elevated LFTs.
+TH34_1456	TH34_1456_S02	ST66	Prioritized	Implemented	Response	
+TH34_2292	TH34_2292_S01	ST74.1	Prioritized 	Not implemented	Rapid disease progression	Clinician was interested in Treehouse leads but patient was not able to get either therapy because he was unable to tolerate oral medications and was already on trabectedin by the time the Treehouse findings were available. 
+TH34_2293	TH34_2293_S01	ST81	Declined	Not FDA approved		
+TH34_2351	TH34_2351_S01	ST91	Prioritized	Implemented	Progression	TH analysis and the COG MATCH study analysis both found MEK. The patient was enrolled on MATCH in Oct 2019 for a MEK inhibitor.

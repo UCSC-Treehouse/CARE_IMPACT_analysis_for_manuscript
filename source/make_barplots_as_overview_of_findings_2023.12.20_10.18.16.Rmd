@@ -1,0 +1,236 @@
+---
+title: "`r gsub('.Rmd', ' ', gsub('_', ' ', knitr::current_input()))`"
+author: "`r Sys.getenv('USER')`"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    toc: yes
+---
+  
+# version notes
+
+version 2023.11.06_11.32.08 is for troubleshooting how many values are in Molecular Category
+
+version 2023.11.07_12.48.01 is for reviewing data to continue troubleshooting which values to use in Molecular Category
+
+version 2023.11.08_10.00.39 is for adding "IGF1R", "RAS/RAF/MEK" to Molecular Category
+
+version 2023.11.08_12.53.45 is for adding "NTRK", "VEGF", "ERBB" to Molecular Category
+
+version 2023.11.08_14.13.38 improves tables
+
+version 2023.11.15_09.54.01 uses updated data from Yvonne and adds disease
+
+version 2023.12.07_16.19.18 removes the facet for "ad hoc"
+
+version 2023.12.15_13.55.55 uses different color schemes
+
+version 2023.12.19_14.22.18 after picking a color scheme
+
+version 2023.12.20_10.18.16 adding facets and new labels
+
+
+
+```{r setup, include = FALSE}
+
+library(tidyverse)
+library(knitr)
+library(janitor)
+library(kableExtra)
+library(ggforce) # for facet_row
+```
+
+
+# latest files
+```{r}
+
+findings_file <- "../input_data/Treehouse finding prioritization by patient-eTable8_2023.11.15_09.44.25.txt"
+
+sample_metadata_file <- "../input_data/ckcc2_metadata_from_redcap_2023-11-09_10.34.27.tsv"
+
+```
+
+
+# Load and combine data
+```{r}
+
+
+findings <- read_tsv(findings_file,
+                     skip = 1) %>%
+  rename(donorID = `Patient ID`)
+
+```
+
+
+```{r}
+
+
+
+sample_metadata <- read_tsv(sample_metadata_file,
+                            col_types = cols(.default = "c")) %>%
+  mutate(dx_group_factor = fct_lump_min(dx_group, 2),
+         dx_group = as.character(dx_group_factor))
+
+donor_disease <- sample_metadata %>%
+  select(donorID, disease, dx_group, age_at_dx, gender) %>%
+  distinct() 
+
+```
+
+
+
+
+```{r}
+
+findings_with_metadata <- left_join(
+  findings,
+  donor_disease,
+  by = "donorID")
+
+```
+
+there are `r nrow(findings_with_metadata) ` findings
+
+
+# annotate findings with more categories
+```{r}
+
+finding_categories <- findings_with_metadata %>%
+  rename(molecular_category_name = `Molecular Category`,
+         molecular_abnormality_name = `Molecular Abnormality`) %>%
+  select(molecular_category_name, donorID, molecular_abnormality_name, Prioritization) %>%
+  group_by(molecular_category_name) %>%
+  mutate(n_donors_with_vulnerability = n()) %>%
+  ungroup
+
+table(finding_categories$molecular_category_name)
+
+```
+
+
+# Prepare dx group data
+```{r}
+
+disease_group_names <- read_tsv("../input_data/disease_group_info.tsv", col_types = cols(.default = "c")) %>%
+  mutate(order = 1:n())
+
+
+dx_group_counts <- sample_metadata %>%
+  select(donorID, dx_group) %>% 
+  distinct() %>%
+  left_join(disease_group_names, by=c("dx_group"="original_disease_group_name")) %>%
+  group_by(dx_group) %>%
+  summarize(dx_group_count = n()) %>%
+  ungroup
+
+disease_group_info <- left_join(disease_group_names,
+                                dx_group_counts,
+                                by=c("original_disease_group_name" = "dx_group")) %>%
+  mutate(long_disease_group_name_for_plot_n = 
+           paste0(long_disease_group_name_for_plot, " (n=", dx_group_count, ")"),
+         long_disease_group_name_for_plot_n = factor(long_disease_group_name_for_plot_n,
+                                                     levels = unique(long_disease_group_name_for_plot_n)))
+         
+  #        ) %>%
+  # mutate(across(.fns = as_factor))
+
+revised_colors <- c("#A8CFE4", "#468FC3", "#F3E0C4", "#CCDDAA", "#999999")
+
+disease_group_vector <- set_names(revised_colors, disease_group_info$long_disease_group_name_for_plot_n)
+
+
+
+
+```
+
+
+# Barplot
+```{r}
+
+finding_categories_for_plot <- finding_categories %>%
+  arrange(n_donors_with_vulnerability, molecular_category_name) %>%
+  mutate(simplified_molecular_category = 
+           factor(molecular_category_name,
+                  levels = rev(unique(molecular_category_name))) %>%
+           fct_lump_min(3),
+         fct_relevel("Other", after = Inf)) %>%
+  left_join(sample_metadata %>%
+              select(donorID, disease, dx_group) %>%
+              distinct(), 
+            by = "donorID") %>%
+  left_join(disease_group_info, by=c("dx_group"="original_disease_group_name"))  %>%
+  mutate(Prioritization = str_replace(Prioritization, "Deferred", "Accepted and deferred") %>%
+           str_replace("Prioritized", "Accepted and prioritized") %>%
+           factor(levels = c("Accepted and prioritized",
+                             "Accepted and deferred",
+                             "Declined")))
+#finding_categories_for_plot$prioritization                                       
+
+wrap_labels <- function(x) str_replace_all(x, "/", "\n") %>%
+  str_replace(" ", "\n")
+
+intial_cap_no_underscore <- function(x) {
+  str_replace_all(x, "_", " ") %>%
+    str_to_sentence()
+}
+
+```
+
+
+```{r fig.height=5.5, fig.width=8}
+
+p <- ggplot(finding_categories_for_plot) +
+  geom_bar(aes(x = simplified_molecular_category,
+               fill = long_disease_group_name_for_plot_n)) +
+  theme_minimal() +
+    scale_x_discrete(labels = wrap_labels) +
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_text(angle = 0,
+                                    vjust = 0.5),
+        panel.border = element_rect(color = "black", fill = NA, size = 0.5)) +
+  ylab("Number\nof\nfindings")
+```
+
+```{r}
+
+p1 <- p +
+  scale_fill_manual("Diagnostic group",
+                    values = disease_group_vector) 
+
+p1 
+```
+
+
+```{r}
+
+p2 <- p1  +
+  facet_wrap(~Prioritization, ncol = 1)
+p2
+```
+
+
+```{r fig.height=5.5, fig.width=8}
+
+p2 
+
+plot_output_name <- paste0("../results/number_of_findings_", format(Sys.time(), "%Y_%m_%d-%H_%M_%S_%Y"), ".png")
+
+
+
+ggsave(plot_output_name,
+       plot = p2,
+       bg = "white")
+
+```
+
+this output was saved as `r plot_output_name`
+
+
+
+
+
+# Session Info
+```{r}
+sessionInfo()
+```
+
