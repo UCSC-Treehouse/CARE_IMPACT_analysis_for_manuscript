@@ -1,0 +1,90 @@
+Patient_ID	Tumor_Sample_ID	CARE_IMPACT_Finding	Tumor_Vulnerability_Category	Therapies	Clinician_Prioritization	CARE_IMPACT_Finding_Category	Pan_Disease_Outlier_Source	Pan_Disease_Cohorts
+TH34_1239	TH34_1239_S01	PIK3CD	PI3K/AKT/mTOR	Everolimus	Accepted, Deferred	pan-cancer outlier		
+TH34_1239	TH34_1239_S01	NRAS	RAS/RAF/MEK	Trametinib or Selumetinib	Accepted, Deferred	NA		
+TH34_1238	TH34_1238_S01	mTOR	PI3K/AKT/mTOR	Everolimus	Accepted, Deferred	pan-cancer outlier		
+TH34_1238	TH34_1238_S01	KRAS	RAS/RAF/MEK	Trametinib or Selumetinib	Accepted, Deferred	NA		
+TH34_1350	TH34_1350_S01	PIK3R5	PI3K/AKT/mTOR	Everolimus	Accepted, Deferred	pan-cancer outlier		
+TH34_1350	TH34_1350_S01	MEK	RAS/RAF/MEK	Trametinib or Selumetinib	Accepted, Deferred	other highly expressed gene		
+TH34_1381	TH34_1381_S01	VEGFA	VEGF	Bevacizumab	Accepted, Deferred	NA	consensus	canonical
+TH34_1381	TH34_1381_S01	ERBB2	ERBB	Lapatinib	Accepted, Prioritized, Implemented	pan-disease outlier	consensus	canonical
+TH34_1381	TH34_1381_S01	PARP1	PARP	Olaparib	Declined	pan-disease outlier	consensus	canonical
+TH34_2410	TH34_2410_S01	MAPK11	p38	Nilotinib	Accepted, Deferred	pan-disease outlier	consensus	curated
+TH34_2410	TH34_2410_S01	ESR1	Estrogen Receptor	Palbociclib	Accepted, Deferred	pan-cancer outlier		
+TH34_2410	TH34_2410_S01	ABCB1	ABCB1	Regorafenib or Ulixertinib	Accepted, Deferred	pan-disease outlier	consensus	curated
+TH34_1162	TH34_1162_S01	CSF1R	RTK	Pazopanib	Accepted, Deferred	pan-disease outlier	consensus	canonical
+TH34_1162	TH34_1162_S01	JAK1	JAK/STAT	Ruxolitinib	Accepted, Deferred	pan-cancer outlier		
+TH34_2411	TH34_2411_S01	MDM2	MDM2/MDMX	ALRN-6924	Declined	NA	consensus	canonical
+TH34_2411	TH34_2411_S01	B4GALNT1	B4GALNT1	Dinutuximab	Accepted, Deferred	NA	consensus	canonical
+TH34_2411	TH34_2411_S01	CDK4	Cell Cycle	Palbociclib	Accepted, Deferred	NA	consensus	canonical
+TH34_2411	TH34_2411_S01	MAP2K2	RAS/RAF/MEK	Trametinib or Selumetinib	Accepted, Deferred	NA	consensus	canonical
+TH34_2666	TH34_2666_S01	MDM2	MDM2/MDMX	APG-115 or ALRN-6924	Declined	NA	single cohort	curated
+TH34_2666	TH34_2666_S01	FLT4	RTK	Pazopanib	Accepted, Deferred	NA	single cohort	curated
+TH34_1163	TH34_1163_S01	IGF2	IGF1R	Metformin or Ganitumab	Declined	pan-cancer outlier		
+TH34_1163	TH34_1163_S01	HIF1 signaling/HMOX1	Other: HMOX1/HIF1A Hypoxia Signaling	Nitroglycerin or EZN-2208	Accepted, Deferred	pan-disease outlier	consensus	canonical
+TH34_1149	TH34_1149_S02	NTRK3	NTRK	Entrectinib	Declined	pan-cancer outlier		
+TH34_1150	TH34_1150_S02	CDK9	CDK	Dinaciclib	Declined	pan-disease outlier	consensus	canonical
+TH34_1150	TH34_1150_S02	PDCD1	T-Cell	Pembrolizumab	Declined	pan-cancer outlier		
+TH34_1150	TH34_1150_S02	JAK1	JAK/STAT	Ruxolitinib	Accepted, Deferred	pan-cancer outlier		
+TH34_1179	TH34_1179_S01	FGFR1	RTK	Pazopanib	Accepted, Deferred	pan-cancer outlier		
+TH34_1179	TH34_1179_S01	KRAS	RAS/RAF/MEK	Trametinib or Selumetinib	Accepted, Deferred	NA		
+TH34_1179	TH34_1179_S01	Hedgehog signaling	Other: Hedgehog signaling	Vismodegib	Accepted, Deferred	pan-cancer outlier		
+TH34_1240	TH34_1240_S01	EWSR1-FLI1	EWSR1-FLI1	MYC-targeted drugs (clinical trials for INCB05987 (NCT0351440) or TK216 (NCT02657005))	Accepted, Prioritized, Not Implemented	NA		
+TH34_1349	TH34_1349_S01	KIT	KIT	Imatinib or Sunitinib or Regorafenib	Accepted, Prioritized, Implemented	NA	single cohort	curated
+TH34_1349	TH34_1349_S01	IGF2, IGF1R	IGF1R	Linsitinib	Declined	pan-cancer outlier		
+TH34_1349	TH34_1349_S01	ETV1	RAS/RAF/MEK	Trametinib or Selumetinib	Accepted, Deferred	NA	single cohort	curated
+TH34_1349	TH34_1349_S02	KIT	KIT	Imatinib or Sunitinib or Regorafenib	Accepted, Prioritized, Implemented	NA	single cohort	curated
+TH34_1349	TH34_1349_S02	ETV1	RAS/RAF/MEK	Trametinib or Selumetinib	Accepted, Deferred	NA	single cohort	curated
+TH34_1349	TH34_1349_S02	PTCH1	Hedgehog Signaling	Vismodegib	Accepted, Deferred	NA	single cohort	curated
+TH34_1351	TH34_1351_S01	MEK	RAS/RAF/MEK	Trametinib or Selumetinib	Accepted, Deferred	other highly expressed gene		
+TH34_1351	TH34_1351_S01	MAP2K4	JNK	Vemurafenib	Accepted, Deferred	NA	consensus	canonical
+TH34_1352	TH34_1352_S01	FGFR1, FGFR2, PDGFRA	RTK	Pazopanib	Accepted, Prioritized, Implemented	NA	single cohort	canonical
+TH34_1352	TH34_1352_S01	CCND2	Cell Cycle	Ribociclib	Accepted, Prioritized, Implemented	pan-disease outlier	single cohort	canonical
+TH34_1379	TH34_1379_S01	IGF2, IGF1R	IGF1R	Ganitumab	Declined	NA	consensus	curated
+TH34_1379	TH34_1379_S01	FGFR1	RTK	Pazopanib	Accepted, Prioritized, Not Implemented	pan-disease outlier	consensus	curated
+TH34_1379	TH34_1379_S01	CCND2, CDK4	Cell Cycle	Ribociclib	Accepted, Deferred	pan-disease outlier	consensus	curated
+TH34_1380	TH34_1380_S01	IGF2, IGF1R	IGF1R	Ganitumab	Declined	pan-cancer outlier		
+TH34_1380	TH34_1380_S01	NOTCH3	NOTCH	Tarextumab	Accepted, Prioritized, Not Implemented	NA	consensus	canonical
+TH34_1399	TH34_1399_S01	VEGFA	VEGF	Bevacizumab	Accepted, Deferred	pan-disease outlier	consensus	curated
+TH34_1399	TH34_1399_S01	IGF1, IGF2	IGF1R	Ganitumab	Declined	pan-cancer outlier		
+TH34_1400	TH34_1400_S01	STAT5A	JAK/STAT	Ruxolitinib	Accepted, Deferred	pan-disease outlier	consensus	curated
+TH34_1412	TH34_1412_S01	NTRK3	NTRK	Entrectinib	Declined	pan-cancer outlier		
+TH34_1412	TH34_1412_S01	IGF2	IGF1R	Ganitumab	Declined	pan-cancer outlier		
+TH34_1412	TH34_1412_S01	KDR	RTK	Pazopanib	Declined	NA	single cohort	curated
+TH34_1412	TH34_1412_S01	ERBB2	ERBB	Trastuzumab	Accepted, Deferred	pan-disease outlier	single cohort	curated
+TH34_1414	TH34_1414_S01	ALK	ALK	Crizotinib	Accepted, Deferred	pan-cancer outlier		
+TH34_1414	TH34_1414_S01	IGF2	IGF1R	Ganitumab	Declined	pan-cancer outlier		
+TH34_1414	TH34_1414_S01	FGFR4	RTK	Ponatinib	Accepted, Deferred	pan-cancer outlier		
+TH34_1414	TH34_1414_S01	CDK4	Cell Cycle	Ribociclib	Accepted, Deferred	pan-cancer outlier		
+TH34_1415	TH34_1415_S01	FLT4	RTK	Pazopanib	Accepted, Deferred	NA	consensus	curated
+TH34_1415	TH34_1415_S01	IL6	IL6	Siltuximab	Accepted, Deferred	pan-cancer outlier		
+TH34_1444	TH34_1444_S01	AKT1, AKT2	PI3K/AKT/mTOR	Everolimus	Accepted, Deferred	NA	consensus	canonical
+TH34_1444	TH34_1444_S01	VEGFC	RTK (VEGFR)	Pazopanib	Accepted, Deferred	NA	consensus	canonical
+TH34_1444	TH34_1444_S01	KIT	KIT	Sunitinib	Accepted, Deferred	NA	consensus	canonical
+TH34_1445	TH34_1445_S02	WEE1	WEE1	Adavosertib	Accepted, Deferred	pan-cancer outlier		
+TH34_1445	TH34_1445_S02	VEGFA	VEGF	Bevacizumab	Accepted, Deferred	pan-disease outlier	consensus	curated
+TH34_1445	TH34_1445_S02	NTRK3	NTRK	Entrectinib	Declined	pan-cancer outlier		
+TH34_1445	TH34_1445_S02	IGF2	IGF1R	Ganitumab	Declined	NA	consensus	curated
+TH34_1446	TH34_1446_S01	NTRK3	NTRK	Entrectinib	Accepted, Deferred	pan-cancer outlier		
+TH34_1447	TH34_1447_S01	PSMB5, PSMC1, PSMD4	Proteasome	Bortezomib	Accepted, Deferred	NA	consensus	curated
+TH34_1447	TH34_1447_S01	CCNE1	Cell Cycle	Dinaciclib	Declined	pan-disease outlier	consensus	curated
+TH34_1447	TH34_1447_S01	PARP1, PARP2	PARP	Olaparib	Declined	NA	consensus	curated
+TH34_1447	TH34_1447_S02	PARP2	PARP	Olaparib	Declined	pan-cancer outlier		
+TH34_1447	TH34_1447_S02	PSMC1, PSMD4	Proteasome	Bortezomib	Accepted, Deferred	NA	single cohort	curated
+TH34_1447	TH34_1447_S02	IGF2	IGF1R	Ganitumab	Declined	pan-cancer outlier		
+TH34_1452	TH34_1452_S01	PIK3R2	PI3K/AKT/mTOR	Everolimus	Accepted, Deferred	pan-cancer outlier		
+TH34_1452	TH34_1452_S01	IGF2	IGF1R	Ganitumab	Declined	pan-cancer outlier		
+TH34_1452	TH34_1452_S01	FGFR3	RTK	Pazopanib	Accepted, Deferred	pan-cancer outlier		
+TH34_1452	TH34_1452_S01	HDAC4	HDAC	Vorinostat	Accepted, Deferred	NA	consensus	canonical
+TH34_1455	TH34_1455_S01	CDK9	CDK	Dinaciclib	Declined	pan-cancer outlier		
+TH34_1455	TH34_1455_S01	IGF2	IGF1R	Ganitumab	Declined	NA	consensus	canonical
+TH34_1455	TH34_1455_S01	ERBB2	ERBB	Neratinib	Accepted, Prioritized, Not Implemented	pan-disease outlier	consensus	canonical
+TH34_1455	TH34_1455_S01	FGFR3	RTK	Pazopanib	Accepted, Deferred	pan-disease outlier	consensus	canonical
+TH34_1456	TH34_1456_S02	GATA2	Proteasome	Bortezomib	Accepted, Deferred	NA	consensus	canonical
+TH34_1456	TH34_1456_S02	KDR	RTK	Pazopanib	Accepted, Prioritized, Implemented	NA	consensus	canonical
+TH34_1456	TH34_1456_S02	HDAC7	HDAC	Vorinostat	Accepted, Deferred	pan-disease outlier	consensus	canonical
+TH34_2292	TH34_2292_S01	VEGFA	VEGF	Bevacizumab	Accepted, Prioritized, Not Implemented	pan-cancer outlier		
+TH34_2292	TH34_2292_S01	FLT4	RTK	Pazopanib	Accepted, Deferred	pan-cancer outlier		
+TH34_2293	TH34_2293_S01	CDK1	CDK1	Dinaciclib	Declined	other highly expressed gene		
+TH34_2293	TH34_2293_S01	NOTCH3	NOTCH	Nirogacestat	Declined	other highly expressed gene		
+TH34_2351	TH34_2351_S01	HIF1 signaling/HMOX1	Other: HMOX1/HIF1A Hypoxia Signaling	Nitroglycerin	Declined	pan-disease outlier	consensus	canonical
+TH34_2351	TH34_2351_S01	MAP2K1	MAPK	Trametinib or Selumetinib	Accepted, Prioritized, Implemented	other highly expressed gene		

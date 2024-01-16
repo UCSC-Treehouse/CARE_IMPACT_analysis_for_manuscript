@@ -1,0 +1,132 @@
+---
+title: "CKCC2_combine_Treehouse_findings_prioritization_and_finding_type_info"
+author: "Yvonne Vasquez"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+### Load libraries
+
+```{r}
+
+library(tidyverse)
+
+```
+
+### Load data
+
+```{r}
+
+# set working directory
+setwd("/Users/yvonnevasquez/Desktop/CKCC2/CKCC2_July_2023/input_data")
+
+treehouse_findings_prioritization_by_sample <- read_tsv("Copy of Treehouse.Drug.Prioritization.No.Identifiers.by_sample_20240110 - Finding_priotitization.tsv")
+
+treehouse_findings_by_type_by_sample <- read_tsv("Cohort_Paper_Tables - eTable9.tsv", skip=1) %>%
+  rename(TH_sampleID = `Sample ID`, `Molecular Abnormality` = TH_finding)
+
+```
+### Reformat data
+
+```{r}
+
+# remove text in parentheses
+treehouse_findings_prioritization_by_sample$`Molecular Abnormality` <- gsub("\\s*\\([^\\)]+\\)", "", treehouse_findings_prioritization_by_sample$`Molecular Abnormality`)
+
+# remove text in parentheses
+treehouse_findings_by_type_by_sample$`Molecular Abnormality` <- gsub("\\s*\\([^\\)]+\\)", "", treehouse_findings_by_type_by_sample$`Molecular Abnormality`)
+
+```
+
+### Compare datasets
+
+```{r}
+
+findings_prioritization_collapsed <- treehouse_findings_prioritization_by_sample %>%
+  select(TH_sampleID, `Molecular Abnormality`) %>%
+  arrange(TH_sampleID, `Molecular Abnormality`)
+
+
+finding_type_collapsed <- treehouse_findings_by_type_by_sample %>%
+  select(TH_sampleID, `Molecular Abnormality`) %>%
+  arrange(TH_sampleID, `Molecular Abnormality`)
+
+
+# find any rows that don't match
+all_equal(findings_prioritization_collapsed, finding_type_collapsed)
+```
+
+### Combine datasets
+
+```{r}
+
+prioritization_info_for_table <- treehouse_findings_prioritization_by_sample %>%
+   select(-`Case #`)
+
+type_info_for_table <- treehouse_findings_by_type_by_sample %>%
+  select(-Rationale, -Drug, -`Patient ID`, -pc_outlier, -pd_outlier)
+
+combined_table <- left_join(prioritization_info_for_table, type_info_for_table, by=c("TH_sampleID", "Molecular Abnormality"))
+
+```
+
+### Consolidate Clinician Prioritization Categories into one column
+
+```{r}
+
+combined_table <- combined_table %>%
+  mutate(Clinician_Prioritization = paste0(Prioritization, ", ", `Prioritization reason for figure`)) %>%
+  mutate(Clinician_Prioritization = case_when(
+    startsWith(Clinician_Prioritization, "Deferred") ~ "Accepted, Deferred",
+    startsWith(Clinician_Prioritization, "Declined") ~ "Declined",
+    Clinician_Prioritization == "Prioritized, Implemented" ~ "Accepted, Prioritized, Implemented",
+    Clinician_Prioritization == "Prioritized, Not implemented" ~ "Accepted, Prioritized, Not Implemented"
+  ))
+
+```
+
+### Format table for export
+
+```{r}
+
+# remove some columns and rename some
+combined_table_clean <- combined_table %>%
+  select(-Notes.x, -Prioritization, -`Prioritization reason for figure`, -`Implementation reason for prioritized findings`, -`Reason from Sheri`) %>%
+  rename(Patient_ID = "TH_donorID", 
+         Tumor_Sample_ID = "TH_sampleID", 
+         Therapies = "Drug", 
+         CARE_IMPACT_Finding = "Molecular Abnormality", 
+         Tumor_Vulnerability_Category = "Molecular Category",
+         CARE_IMPACT_Finding_Category = "Finding_type",
+         Pan_Disease_Outlier_Source = "pd_type",
+         Pan_Disease_Cohorts = "cohort_type",
+         Notes = "Notes.y")
+
+# make NA values blank
+combined_table_clean[is.na(combined_table_clean)] <- ""
+
+# change values of CARE IMPACT Finding CATEGORIES
+combined_table_clean <- combined_table_clean %>%
+  mutate(CARE_IMPACT_Finding_Category = case_when(
+    CARE_IMPACT_Finding_Category == "pc" ~ "pan-cancer outlier",
+    CARE_IMPACT_Finding_Category == "pd" ~ "pan-disease outlier",
+    CARE_IMPACT_Finding_Category == "95th percentile" ~ "other highly expressed gene"
+  ))
+
+```
+
+### reorder columns
+
+```{r}
+
+combined_table_reorder <- combined_table_clean %>%
+  select(Patient_ID, Tumor_Sample_ID, CARE_IMPACT_Finding, Tumor_Vulnerability_Category, Therapies, Clinician_Prioritization, CARE_IMPACT_Finding_Category, Pan_Disease_Outlier_Source, Pan_Disease_Cohorts)
+
+```
+
+### Export table
+
+```{r}
+write_tsv(combined_table_reorder, "CARE_IMPACT_findings_table.tsv")
+```
+

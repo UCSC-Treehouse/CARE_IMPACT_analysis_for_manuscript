@@ -1,0 +1,90 @@
+TH_donorID	TH_sampleID	Case #	Drug	Molecular Abnormality	Molecular Category	Prioritization	Prioritization reason for figure	Implementation reason for prioritized findings	Reason from Sheri	Notes
+TH34_1239	TH34_1239_S01	4059	Everolimus	PIK3CD	PI3K/AKT/mTOR	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1239	TH34_1239_S01	4059	Trametinib or Selumetinib	NRAS	RAS/RAF/MEK	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1238	TH34_1238_S01	4060	Everolimus	mTOR	PI3K/AKT/mTOR	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1238	TH34_1238_S01	4060	Trametinib or Selumetinib	KRAS	RAS/RAF/MEK	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1350	TH34_1350_S01	4071	Everolimus	PIK3R5	PI3K/AKT/mTOR	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1350	TH34_1350_S01	4071	Trametinib or Selumetinib	MEK	RAS/RAF/MEK	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1381	TH34_1381_S01	18002	Bevacizumab	VEGFA	VEGF	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1381	TH34_1381_S01	18002	Lapatinib	ERBB2	ERBB	Prioritized	Implemented	Rapid disease progression	Other salvage therapy with more data	Based on the finding, the patient was enrolled on a trial for oral neratinib, another HER2 inhibitor, however the patient showed disease progression after 3 cycles.
+TH34_1381	TH34_1381_S01	18002	Olaparib	PARP1	PARP	Declined	Not FDA approved		Not FDA approved; no phase I data in children	
+TH34_2410	TH34_2410_S01	ST108	Nilotinib	MAPK11	p38	Deferred	Standard of care		Had not received standard of care therapy	
+TH34_2410	TH34_2410_S01	ST108	Palbociclib	ESR1	Estrogen Receptor	Deferred	Standard of care		Had not received standard of care therapy	
+TH34_2410	TH34_2410_S01	ST108	Regorafenib or Ulixertinib	ABCB1	ABCB1	Deferred	Standard of care		Had not received standard of care therapy	
+TH34_1162	TH34_1162_S01	ST11	Pazopanib	CSF1R	RTK	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1162	TH34_1162_S01	ST11	Ruxolitinib	JAK1	JAK/STAT	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_2411	TH34_2411_S01	ST111	ALRN-6924	MDM2	MDM2/MDMX	Declined	Not FDA approved		Not FDA approved	
+TH34_2411	TH34_2411_S01	ST111	Dinutuximab	B4GALNT1	B4GALNT1	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_2411	TH34_2411_S01	ST111	Palbociclib	CDK4	Cell Cycle	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_2411	TH34_2411_S01	ST111	Trametinib or Selumetinib	MAP2K2	RAS/RAF/MEK	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_2666	TH34_2666_S01	ST113	APG-115 or ALRN-6924	MDM2	MDM2/MDMX	Declined	Not FDA approved		Not FDA approved	
+TH34_2666	TH34_2666_S01	ST113	Pazopanib	FLT4	RTK	Deferred	No further treatment needed		No further treatment needed	Treated with surgery only; no systemic therapy given
+TH34_1163	TH34_1163_S01	ST13	Metformin or Ganitumab	IGF2	IGF1R	Declined	Evidence against Treehouse therapy		Clinical trial evidence of lack of efficacy	Clinical trial conducted in the patient's tumor type; ganitumab not FDA-approved
+TH34_1163	TH34_1163_S01	ST13	Nitroglycerin or EZN-2208	HIF1 signaling/HMOX1	Other: HMOX1/HIF1A Hypoxia Signaling	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1149	TH34_1149_S02	ST18	Entrectinib	NTRK3	NTRK	Declined	Evidence against Treehouse therapy		Clinical trial evidence of lack of efficacy	Also rapidly progressed, so by the time we had the information, it was too late.
+TH34_1150	TH34_1150_S02	ST2.1	Dinaciclib	CDK9	CDK	Declined	Not FDA approved		Not FDA approved; no phase I data in children	
+TH34_1150	TH34_1150_S02	ST2.1	Pembrolizumab	PDCD1	T-Cell	Declined	Evidence against Treehouse therapy		Clinical trial evidence of lack of efficacy	Clinical trial conducted in the patient's tumor type
+TH34_1150	TH34_1150_S02	ST2.1	Ruxolitinib	JAK1	JAK/STAT	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1179	TH34_1179_S01	ST20	Pazopanib	FGFR1	RTK	Deferred	Standard of care		Had not received standard of care therapy	
+TH34_1179	TH34_1179_S01	ST20	Trametinib or Selumetinib	KRAS	RAS/RAF/MEK	Deferred	Standard of care		Had not received standard of care therapy	
+TH34_1179	TH34_1179_S01	ST20	Vismodegib	Hedgehog signaling	Other: Hedgehog signaling	Deferred	Standard of care		Had not received standard of care therapy	
+TH34_1240	TH34_1240_S01	ST24	MYC-targeted drugs (clinical trials for INCB05987 (NCT0351440) or TK216 (NCT02657005))	EWSR1-FLI1	EWSR1-FLI1	Prioritized	Not implemented	Rapid disease progression	Not given due to rapid disease progression	
+TH34_1349	TH34_1349_S01	ST30	Imatinib or Sunitinib or Regorafenib	KIT	KIT	Prioritized	Implemented	Response	Given sunitinib starting 9/2018; now followed at UCSF - still on sunitinib as of 9/22/2020; last scans at LPCH on 4/23/20 showed stable liver mets	Was on imatinib at the time of disease progression that led to the biopsy that was sent for Treehouse evaluation; switched from imatinib to sunitinib after the Treehouse results were available
+TH34_1349	TH34_1349_S01	ST30	Linsitinib	IGF2, IGF1R	IGF1R	Declined	Not FDA approved		Not FDA approved	None of the IGF1R antibodies are FDA approved either - is this any different than ganitumab?
+TH34_1349	TH34_1349_S01	ST30	Trametinib or Selumetinib	ETV1	RAS/RAF/MEK	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1349	TH34_1349_S02	ST30	Imatinib or Sunitinib or Regorafenib	KIT	KIT	Prioritized	Implemented	Response	Given sunitinib starting 9/2018; now followed at UCSF - still on sunitinib as of 9/22/2020; last scans at LPCH on 4/23/20 showed stable liver mets	Was on imatinib at the time of disease progression that led to the biopsy that was sent for Treehouse evaluation; switched from imatinib to sunitinib after the Treehouse results were available
+TH34_1349	TH34_1349_S02	ST30	Trametinib or Selumetinib	ETV1	RAS/RAF/MEK	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1349	TH34_1349_S02	ST30	Vismodegib	PTCH1	Hedgehog Signaling	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1351	TH34_1351_S01	ST32	Trametinib or Selumetinib	MEK	RAS/RAF/MEK	Deferred	Treatment with more disease data		Other salvage therapy with more data, then declined further therapy	
+TH34_1351	TH34_1351_S01	ST32	Vemurafenib	MAP2K4	JNK	Deferred	Treatment with more disease data		Other salvage therapy with more data, then declined further therapy	
+TH34_1352	TH34_1352_S01	ST33	Pazopanib	FGFR1, FGFR2, PDGFRA	RTK	Prioritized	Implemented	Progression	FDA approved for recurrent soft tissue sarcoma in adults; had undergone pediatric phase I testing	Progressive disease after pazopanib
+TH34_1352	TH34_1352_S01	ST33	Ribociclib	CCND2	Cell Cycle	Prioritized	Implemented	Response	FDA approved; pediatric phase I data available	IND required since liquid formulation not FDA-approved; stable disease after 12 cycles of ribociclib, then underwent complete resection of remaining disease, now completing 12 cycles of post-op ribociclib
+TH34_1379	TH34_1379_S01	ST34	Ganitumab	IGF2, IGF1R	IGF1R	Declined	Not FDA approved		Not FDA approved	
+TH34_1379	TH34_1379_S01	ST34	Pazopanib	FGFR1	RTK	Prioritized	Not implemented	Rapid disease progression	Not given due to rapid disease progression	
+TH34_1379	TH34_1379_S01	ST34	Ribociclib	CCND2, CDK4	Cell Cycle	Deferred	Treatment with more disease data		Other salvage therapy with more data	One patient with hepatoblastoma in the phase I pazopanib study had had a PR, so pazopanib was prioritized over ribociclib
+TH34_1380	TH34_1380_S01	ST35	Ganitumab	IGF2, IGF1R	IGF1R	Declined	Not FDA approved		Not FDA approved	
+TH34_1380	TH34_1380_S01	ST35	Tarextumab	NOTCH3	NOTCH	Prioritized 	Not implemented	Waiting for treatment approval	Other salvage therapy with more data; not FDA approved so would have required an IND	
+TH34_1399	TH34_1399_S01	ST40	Bevacizumab	VEGFA	VEGF	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1399	TH34_1399_S01	ST40	Ganitumab	IGF1, IGF2	IGF1R	Declined	Not FDA approved		Not FDA approved	
+TH34_1400	TH34_1400_S01	ST41	Ruxolitinib	STAT5A	JAK/STAT	Deferred	No further treatment needed		No further treatment needed	Treated with surgery only; no systemic therapy given
+TH34_1412	TH34_1412_S01	ST43	Entrectinib	NTRK3	NTRK	Declined	Evidence against Treehouse therapy		Clinical trial evidence of lack of efficacy	Tumor was negative for TRK fusions and clinical trials showed that TRK inhibitors only work if there is a TRK fusion
+TH34_1412	TH34_1412_S01	ST43	Ganitumab	IGF2	IGF1R	Declined	Not FDA approved		Not FDA approved	
+TH34_1412	TH34_1412_S01	ST43	Pazopanib	KDR	RTK	Declined	Evidence against Treehouse therapy		Tumor had already progressed on the drug	
+TH34_1412	TH34_1412_S01	ST43	Trastuzumab	ERBB2	ERBB	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1414	TH34_1414_S01	ST45	Crizotinib	ALK	ALK	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1414	TH34_1414_S01	ST45	Ganitumab	IGF2	IGF1R	Declined	Not FDA approved		Not FDA approved	
+TH34_1414	TH34_1414_S01	ST45	Ponatinib	FGFR4	RTK	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1414	TH34_1414_S01	ST45	Ribociclib	CDK4	Cell Cycle	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1415	TH34_1415_S01	ST46	Pazopanib	FLT4 (VEGFR3)	RTK	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1415	TH34_1415_S01	ST46	Siltuximab	IL6	IL6	Deferred	Treatment with more disease data		Other salvage therapy with more data	This drug is FDA approved but is not labeled for pediatric use.
+TH34_1444	TH34_1444_S01	ST50	Everolimus	AKT1, AKT2	PI3K/AKT/mTOR	Deferred	Standard of care		Had not received standard of care therapy	
+TH34_1444	TH34_1444_S01	ST50	Pazopanib	VEGFC	RTK (VEGFR)	Deferred	Standard of care		Had not received standard of care therapy	
+TH34_1444	TH34_1444_S01	ST50	Sunitinib	KIT	KIT	Deferred	Standard of care		Had not received standard of care therapy	
+TH34_1445	TH34_1445_S02	ST51	Adavosertib	WEE1	WEE1	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1445	TH34_1445_S02	ST51	Bevacizumab	VEGFA	VEGF	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1445	TH34_1445_S02	ST51	Entrectinib	NTRK3	NTRK	Declined	Evidence against Treehouse therapy		Clinical trial evidence of lack of efficacy	I am unsure if her tumor was checked for TRK fusions…?  If she did not have a TRK fusion, will change status to Clinical trial evidence of lack of efficacy
+TH34_1445	TH34_1445_S02	ST51	Ganitumab	IGF2	IGF1R	Declined	Not FDA approved		Not FDA approved	
+TH34_1446	TH34_1446_S01	ST52	Entrectinib	NTRK3	NTRK	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1447	TH34_1447_S01	ST55	Bortezomib	PSMB5, PSMC1, PSMD4	Proteasome	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1447	TH34_1447_S01	ST55	Dinaciclib	CCNE1	Cell Cycle	Declined	Not FDA approved		Not FDA approved; no phase I data in children	
+TH34_1447	TH34_1447_S01	ST55	Olaparib	PARP1, PARP2	PARP	Declined	Not FDA approved		Not FDA approved; no phase I data in children	
+TH34_1447	TH34_1447_S02	ST55	Olaparib	PARP2	PARP	Declined	Not FDA approved		Not FDA approved; no phase I data in children	
+TH34_1447	TH34_1447_S02	ST55	Bortezomib	PSMC1, PSMD4	Proteasome	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1447	TH34_1447_S02	ST55	Ganitumab	IGF2	IGF1R	Declined	Not FDA approved		Not FDA approved	
+TH34_1452	TH34_1452_S01	ST58	Everolimus	PIK3R2	PI3K/AKT/mTOR	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1452	TH34_1452_S01	ST58	Ganitumab	IGF2	IGF1R	Declined	Not FDA approved		Not FDA approved	
+TH34_1452	TH34_1452_S01	ST58	Pazopanib	FGFR3	RTK	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1452	TH34_1452_S01	ST58	Vorinostat	HDAC4	HDAC	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1455	TH34_1455_S01	ST61	Dinaciclib	CDK9	CDK	Declined	Not FDA approved		Not FDA approved	
+TH34_1455	TH34_1455_S01	ST61	Ganitumab	IGF2	IGF1R	Declined	Not FDA approved		Not FDA approved	
+TH34_1455	TH34_1455_S01	ST61	Neratinib	ERBB2	ERBB	Prioritized	Not implemented	Therapy unavailable	Clinical trial available	Could not enroll no the trial due to LFT elevation
+TH34_1455	TH34_1455_S01	ST61	Pazopanib	FGFR3	RTK	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1456	TH34_1456_S02	ST66	Bortezomib	GATA2	Proteasome	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_1456	TH34_1456_S02	ST66	Pazopanib	KDR	RTK	Prioritized	Implemented	Response	Published data on cabozantinib (another RTK inhibitor) in OS	Received cabozantinib
+TH34_1456	TH34_1456_S02	ST66	Vorinostat	HDAC7	HDAC	Deferred	Treatment with more disease data		Other salvage therapy with more data	
+TH34_2292	TH34_2292_S01	ST74.1	Bevacizumab	VEGFA	VEGF	Prioritized 	Not implemented	Rapid disease progression	Other salvage therapy with more data	
+TH34_2292	TH34_2292_S01	ST74.1	Pazopanib	FLT4	RTK	Deferred	Unable to take oral medication		Unable to take oral medication	
+TH34_2293	TH34_2293_S01	ST81	Dinaciclib	CDK1	CDK1	Declined	Not FDA approved		Not FDA approved; no phase I data in children	
+TH34_2293	TH34_2293_S01	ST81	Nirogacestat	NOTCH3	NOTCH	Declined	Not FDA approved		Not FDA approved; no phase I data in children	
+TH34_2351	TH34_2351_S01	ST91	Nitroglycerin	HIF1 signaling/HMOX1	Other: HMOX1/HIF1A Hypoxia Signaling	Declined	No phase I data in children		No phase I data in children	
+TH34_2351	TH34_2351_S01	ST91	Trametinib or Selumetinib	MAP2K1	MAPK	Prioritized	Implemented	Progression	Drug given	Progressed clinically (no scans) and received palliative RT after 20 days
