@@ -1,0 +1,199 @@
+---
+title: "`r gsub('.Rmd', ' ', gsub('_', ' ', knitr::current_input()))`"
+author: "`r Sys.getenv('USER')`"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: yes
+---
+  
+
+verion 2023.12.18_14.41.52 adds venn diagram of outliers with pathway support
+version 2024.01.11_15.20.59 adds venn of only outliers detected by Treehouse
+
+
+```{r setup, include = FALSE}
+
+library(tidyverse)
+library(janitor)
+library(khroma)
+library(kableExtra)
+library(gridExtra)
+library(cowplot)
+```
+
+
+```{r}
+
+underscore_to_space <- function(x) str_replace_all(x, "_", " ")
+underscore_to_space_initial_cap <- function(x) str_replace_all(x, "_", " ") %>% str_to_sentence()
+
+```
+
+```{r}
+
+outliers <- read_tsv("../input_data/druggable_outliers_from_treehouse_and_other_cohorts_2023_11_09-13_46_32_2023.tsv") %>%
+  mutate(high_level_cohort = ifelse(str_detect(comparison_cohort, "Treehouse"),
+                                    "Treehouse",
+                                    comparison_cohort))
+
+         
+n_distinct(outliers$Sample_ID)       
+n_distinct(outliers$donor_ID)
+```
+
+# Define cohort codes
+```{r}
+
+cohort_codes <- tibble(
+  cohort_name = 
+    c("PEDAYA", "TCGA", "TH03_TH34", "Treehouse_pc", "Treehouse_pd"),
+  cohort_code = 
+    c("P", "T", "S", "C", "D"))
+
+```
+
+
+
+```{r}
+library(ggVennDiagram)
+
+update_strings <- function(x) {
+  str_replace(x,
+              "PEDAYA", 
+              "Pediatric") %>%
+    str_replace("TH03_TH34",
+                "Stanford")%>%
+    str_replace("Treehouse_pc",
+                "Treehouse pan-cancer")%>%
+    str_replace("Treehouse_pd",
+                "Treehouse pan-disease")
+}
+
+raw_outliers_for_venn <- outliers %>%
+  mutate(sample_gene = paste(Sample_ID, gene, sep = "_"),
+         comparison_cohort = update_strings(comparison_cohort)) %>%
+  arrange(comparison_cohort) %>%
+  select(sample_gene, comparison_cohort) %>%
+  group_split(comparison_cohort)
+raw_outliers_for_venn[[1]]
+
+list_of_outliers_for_venn <-  lapply(raw_outliers_for_venn, function(x) x %>% pull(sample_gene))
+names(list_of_outliers_for_venn) <- unique(outliers$comparison_cohort) %>% update_strings %>% sort
+```
+
+
+# Best venn of all outliers
+```{r}
+ggVennDiagram(list_of_outliers_for_venn,
+              label = "count",
+              #label_geom = "text"
+              ) + 
+  scale_fill_distiller(palette = "Greens", 
+                       direction = 1) + 
+  scale_x_continuous(expand = expansion(mult = .2)) + 
+  theme(legend.position="none")
+
+```
+
+
+# construct venn of only outliers detected by Treehouse
+```{r}
+min_outliers_detected_by_treehouse <- outliers %>%
+  filter(high_level_cohort == "Treehouse") %>%
+  select(Sample_ID, gene)
+
+
+raw_outliers_for_treehouse_venn <- left_join(min_outliers_detected_by_treehouse, 
+                                             outliers) %>%
+  na.omit() %>%
+  mutate(sample_gene = paste(Sample_ID, gene, sep = "_"),
+         comparison_cohort = update_strings(comparison_cohort)) %>%
+  arrange(comparison_cohort) %>%
+  select(sample_gene, comparison_cohort) %>%
+  group_split(comparison_cohort)
+
+
+list_of_outliers_for_treehouse_venn <-  lapply(raw_outliers_for_treehouse_venn, function(x) x %>% pull(sample_gene))
+names(list_of_outliers_for_treehouse_venn) <- bind_rows(raw_outliers_for_treehouse_venn) %>%
+  pull(comparison_cohort) %>%
+  unique %>%
+  update_strings %>% 
+  sort
+
+ggVennDiagram(list_of_outliers_for_treehouse_venn,
+              label = "count",
+              #label_geom = "text"
+              ) + 
+  scale_fill_distiller(palette = "Greens", 
+                       direction = 1) + 
+  scale_x_continuous(expand = expansion(mult = .2)) + 
+  theme(legend.position="none")
+
+```
+
+
+# construct venn of only outliers detected by Treehouse AND AT LEAST one other cohort
+```{r}
+
+
+raw_outliers_for_treehouse_plus_one_venn_unsplit <- left_join(min_outliers_detected_by_treehouse, 
+                                             outliers %>%
+  filter(high_level_cohort != "Treehouse")) %>%
+  na.omit() %>%
+  mutate(sample_gene = paste(Sample_ID, gene, sep = "_"),
+         comparison_cohort = update_strings(comparison_cohort)) %>%
+  arrange(comparison_cohort) %>%
+  select(sample_gene, comparison_cohort) 
+
+raw_outliers_for_treehouse_plus_one_venn <- raw_outliers_for_treehouse_plus_one_venn_unsplit %>%
+  group_split(comparison_cohort)
+
+
+list_of_outliers_for_treehouse_plus_one_venn <-  lapply(raw_outliers_for_treehouse_plus_one_venn, 
+                                                        function(x) x %>% pull(sample_gene))
+
+names(list_of_outliers_for_treehouse_plus_one_venn) <- raw_outliers_for_treehouse_plus_one_venn_unsplit$comparison_cohort %>%
+  unique %>%
+  update_strings %>% 
+  sort
+
+ggVennDiagram(list_of_outliers_for_treehouse_plus_one_venn,
+              label = "count",
+              #label_geom = "text"
+              ) + 
+  scale_fill_distiller(palette = "Greens", 
+                       direction = 1) + 
+  scale_x_continuous(expand = expansion(mult = .2)) + 
+  theme(legend.position="none")
+
+```
+# Found only by treehouse
+
+
+```{r}
+raw_pathway_support_outliers_for_venn <- outliers %>%
+  filter(pathway_support)  %>%
+  mutate(sample_gene = paste(Sample_ID, gene, sep = "_")) %>%
+  arrange(comparison_cohort) %>%
+  select(sample_gene, comparison_cohort) %>%
+  group_split(comparison_cohort)
+
+
+list_of_pathway_support_outliers_for_venn <-  lapply(raw_pathway_support_outliers_for_venn, function(x) x %>% pull(sample_gene))
+names(list_of_pathway_support_outliers_for_venn) <- outliers %>%
+  filter(pathway_support) %>%
+  arrange(comparison_cohort) %>%
+  select(comparison_cohort) %>%
+  distinct() %>%
+  pull(comparison_cohort)
+
+ggVennDiagram(list_of_pathway_support_outliers_for_venn,
+              label = "count",
+              #label_geom = "text"
+              ) + 
+  scale_fill_distiller(palette = "Greens", 
+                       direction = 1) + 
+  scale_x_continuous(expand = expansion(mult = .2)) + 
+  theme(legend.position="none")
+```

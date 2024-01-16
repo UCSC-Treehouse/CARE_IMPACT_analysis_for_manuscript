@@ -1,0 +1,200 @@
+---
+title: "`r gsub('.Rmd', ' ', gsub('_', ' ', knitr::current_input()))`"
+author: "`r Sys.getenv('USER')`"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+ html_document:
+    toc: yes
+---
+  
+Version 2023.11.21_11.24.15 - focuses on genes found only relative to TCGA, not relative to any other cohort. Previous versions focused on outliers detected relative to TCGA and not treehouse, irrespective of whatever other cohorts they were outliers in
+ 
+Version 2023.11.29_09.19.33 - focuses on all druggable genes, not only genes that were outliers vs one cohort or another
+
+Version 2024.01.12_09.24.05 - removes redcap; only public data was used to generate cohorts (evidence: there are 2814 samples listed as ped aya in the public data and 2814 in the pedaya cohort used for the tertiary cohorts. there are 3211 v11 samples listed as pedaya in redcap). 
+
+
+```{r setup, include = FALSE}
+
+library(tidyverse)
+library(janitor) 
+library(gridExtra)
+library(cowplot)
+library(ggforce)
+library(khroma)
+library(ggrepel)
+library(kableExtra)
+
+```
+
+
+# LOAD v11 METADATA
+
+```{r}
+
+kbl_me <- function(x) {
+    adorn_pct_formatting(x) %>% 
+    kbl(format.args = list(big.mark = ","), digits = c(NA, 0, NA)) %>%
+    kable_styling(full_width = F) 
+}
+
+```
+
+# load public compendium data
+```{r}
+v11_metadata <- read_tsv("../input_data/clinical_TumorCompendium_v11_PolyA_2020-04-09.tsv.gz")
+
+v11_metadata_min <- v11_metadata %>%
+  select(Sample_ID = th_sampleid, age_at_dx, pedaya, disease)
+
+```
+
+## There is one sample with age < 30 that is not indicated as pedaya, but ignore it since we didn't use it in the cohorts
+```{r}
+
+tabyl(v11_metadata$pedaya) %>% kbl_me
+
+v11_metadata %>%
+  filter(is.na(pedaya),
+         ! is.na(age_at_dx)) %>%
+  nrow
+
+
+v11_metadata_min_updated <- v11_metadata %>%
+  select(th_sampleid, age_at_dx, pedaya)%>%
+  mutate(pedaya = ifelse(is.na(pedaya) & age_at_dx <30,
+                          "Yes, age < 30 years",
+                         pedaya))
+
+tabyl(v11_metadata_min_updated$pedaya)  %>% kbl_me
+```
+
+# Load cohorts
+
+```{r}
+stanford_samples  <- read_tsv("../gather_input_data/comparison_to_non_CARE_cohorts/data/TH03_TH34_rollup.sample_list.txt",
+                              col_names = "Sample_ID") %>%
+  mutate(cohort = "TH03_TH34")
+
+TCGA_samples  <- read_tsv("../gather_input_data/comparison_to_non_CARE_cohorts/data/TCGA_rollup.sample_list.txt",
+                              col_names = "Sample_ID") %>%
+  mutate(cohort = "TCGA")
+
+PEDAYA_samples  <- read_tsv("../gather_input_data/comparison_to_non_CARE_cohorts/data/PEDAYA_rollup.sample_list.txt",
+                              col_names = "Sample_ID") %>%
+  mutate(cohort = "PEDAYA")
+```
+
+# Gather cohorts
+```{r}
+
+pan_cancer_samples <- v11_metadata_min %>%
+  select(Sample_ID) %>%
+  mutate(cohort = "Treehouse_pc")
+
+cohorts_in_order <- c("Treehouse_pc", "TCGA", "PEDAYA", "TH03_TH34")
+
+samples_in_cohorts <- bind_rows(
+  stanford_samples,
+  TCGA_samples,
+  PEDAYA_samples,
+  pan_cancer_samples) %>%
+  left_join(v11_metadata_min) %>%
+  mutate(cohort = factor(cohort, levels = cohorts_in_order))
+
+
+tabyl(samples_in_cohorts,
+      cohort)
+```
+# Look at overlaps in cohorts
+```{r}
+
+cohort_membership <- samples_in_cohorts %>%
+  mutate(value = TRUE) %>%
+  pivot_wider(names_from = "cohort",
+              values_fill = FALSE)
+
+nrow(cohort_membership)
+
+#  the Treehouse compendium is 77% TCGA 
+
+tabyl(cohort_membership, TCGA)
+
+# the Treehouse compendium is and 22% pediatric 
+
+tabyl(cohort_membership, PEDAYA)
+
+cohort_membership %>%
+  mutate(PEDAYA_and_TCGA = TCGA & PEDAYA) %>%
+  tabyl(PEDAYA_and_TCGA)
+
+```
+
+
+
+
+# DISEASES
+# diseases in cohorts
+```{r}
+
+samples_in_cohorts %>%
+  group_by(cohort) %>%
+  mutate(cohort_total = n()) %>%
+  ungroup %>%
+  group_by(disease, cohort) %>%
+  summarize(n = n(),
+            pct_of_cohort = round(100*n/cohort_total, 2),
+            stat_char = paste0(n, " (", pct_of_cohort, "%)")) %>%
+  ungroup %>%
+  arrange(desc(n)) %>%
+  mutate(disease = factor(disease, levels = unique(disease))) %>%
+  select(disease, cohort, stat_char)  %>%
+  distinct() %>%
+    # dplyr::group_by(disease, cohort) %>%
+    # dplyr::summarise(n = dplyr::n(), .groups = "drop") %>%
+    # dplyr::filter(n > 1L)
+  pivot_wider(names_from = cohort, values_from = stat_char, values_fill = "0")
+
+
+```
+
+
+```{r}
+
+samples_in_cohorts %>%
+  tabyl(disease, cohort) %>%
+  arrange(desc(PEDAYA)) %>%
+  adorn_title() %>%
+  kbl() %>%
+  kable_styling(full_width = F)
+
+```
+
+```{r}
+
+ggplot(samples_in_cohorts) +
+  geom_bar(aes(y=cohort, fill = pedaya)) +
+  scale_fill_bright()
+
+```
+```{r}
+
+most_common_ped_diseases <- samples_in_cohorts %>%
+  filter(cohort == "PEDAYA") %>%
+  tabyl(disease) %>%
+  arrange(desc(n)) %>%
+  slice_head(n=15)
+
+disease_plot <- samples_in_cohorts %>%
+  mutate(common_ped_cancers = ifelse(disease %in% most_common_ped_diseases$disease,
+                                     disease,
+                                     "other") %>%
+           factor() %>%
+           fct_relevel("other", after=Inf))
+         
+
+ggplot(disease_plot) +
+  geom_bar(aes(y=cohort, fill = common_ped_cancers)) 
+
+```
+

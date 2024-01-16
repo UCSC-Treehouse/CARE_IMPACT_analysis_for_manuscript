@@ -1,0 +1,8 @@
+Comparison cohort	Druggable outliers detected	Druggable outliers with pathway support	Fraction of druggable outliers with pathway support
+Treehouse	89/89 (100%)	64/68 (94%)	64/89 (72%)
+Treehouse pan-cancer	72/89 (81%)	47/68 (69%)	47/72 (65%)
+Treehouse pan-disease	38/89 (43%)	29/68 (43%)	29/38 (76%)
+Stanford	38/89 (43%)	25/68 (37%)	25/38 (66%)
+TCGA	73/89 (82%)	53/68 (78%)	53/73 (73%)
+Pediatric	20/89 (22%)	10/68 (15%)	10/20 (50%)
+ Total	89	68	68/89 (76%)

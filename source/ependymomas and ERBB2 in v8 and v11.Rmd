@@ -27,6 +27,54 @@ library(kableExtra)
 
 ```
 
+```{r}
+v11 <- read_tsv("../input_data/clinical_TumorCompendium_v11_PolyA_2020-04-09.tsv.gz") 
+
+v11_ependymoma <- v11 %>%
+  filter(disease == "ependymoma")
+
+v8 <- read_tsv("../input_data/TreehousePEDv8_clinical_metadata.2018-07-25.tsv")
+
+v8_ependymoma <- v8 %>%
+  filter(disease == "ependymoma")
+
+all_ependymoma_records <- bind_rows(v8_ependymoma %>% mutate(compendium = "v08"), 
+                                    v11_ependymoma %>% mutate(compendium = "v11"))
+                                    
+unique_ependymoma_records <- 
+distinct(all_ependymoma_records)
+```
+
+
+```{r}
+
+
+TH_ids <- tibble(TH_id = all_ependymoma_records$th_sampleid) %>%
+  distinct() %>%
+  mutate(compendium_membership = case_when(
+           TH_id %in% v11_ependymoma$th_sampleid &
+           TH_id %in% v8_ependymoma$th_sampleid ~ "in_both",
+         TH_id %in% v8_ependymoma$th_sampleid & 
+           ! TH_id %in% v11_ependymoma$th_sampleid ~ "v8_only",
+         (! TH_id %in% v8_ependymoma$th_sampleid) & 
+           TH_id %in% v11_ependymoma$th_sampleid ~ "v11_only"),
+         TH_project = str_extract(TH_id, "TH[R]?[0-9]{2}"))
+
+TH_ids %>%
+  tabyl(compendium_membership)
+
+TH_ids %>%
+  tabyl(TH_project, compendium_membership) %>%
+  adorn_totals()
+
+```
+```{r}
+#percent newly added
+
+TH_ids %>%
+  filter(!compendium_membership == "v8_only") %>%
+  tabyl(compendium_membership)
+```
 
 
 ```{r}

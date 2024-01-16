@@ -1,0 +1,389 @@
+---
+title: "`r gsub('.Rmd', ' ', gsub('_', ' ', knitr::current_input()))`"
+author: "`r Sys.getenv('USER')`"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    toc: yes
+---
+  
+  
+# version notes  
+
+2023.12.20_13.42.16 - i got it to recreate the existing plot
+
+make minimal incremental improvements
+
+2023.12.21_11.12.06 - improvement 1: update three labels, e.g. Standard of care to Received therapy considered standard of care
+
+2023.12.21_11.21.42 - improvement 2: add "accepted", e.g. Standard of care to Received therapy considered standard of care
+
+conclusion for 2023.12.21_11.21.42: color assignments work only on the first word; see how both "Received therapy" sections are the same color. I'm going to consider this a provisional success, since changing color is much easier than changing text
+
+2023.12.21_12.07.04 - improvement 3: add n = 
+conclusion for 2023.12.21_12.07.04: colors are totally off; i can't wrap text, so i had to make it wider. still this includes the numbers, which i think are important. i also can't move columns closer or farther separately, so I have to make the whole thing wider. 
+
+river_plot_for max_copy of 023.12.21_12.07.04
+remove all output to simplify html for max to review
+
+
+```{r setup, include = FALSE}
+
+library(tidyverse)
+library(networkD3)
+library(RColorBrewer)
+library(colorspace)
+
+```
+
+
+
+
+# import data
+```{r, include = FALSE}
+findings_file <- "../input_data/Treehouse.Drug.Prioritization.No.Identifiers.final.03.07.21 - case_prioritization.tsv"
+
+
+
+tx_treatments_raw <- read_tsv(findings_file, 
+                              col_types = cols(.default = "c")) %>% 
+   select(-TH_sampleID, -`Case #`, -Note)
+
+
+length(unique(tx_treatments_raw$TH_donorID))
+```
+
+# nodes in order
+```{r, include = FALSE}
+
+nodes_in_order_for_plotting <- c(  #things we want to explicitly sort
+  "Prioritized",
+  "Deferred",
+  "Declined",
+  "Implemented",
+  "Not implemented",
+  #Implemented category: 
+  "Response",
+  "Progression",
+  # Not implemented
+  "Rapid disease progression", 
+  "Waiting for treatment approval", 
+  "Therapy unavailable",
+  # Deferred
+  "Standard of care", 
+  "No further treatment needed",
+  "Treatment with more disease data", 
+  # Declined
+  "Evidence against Treehouse therapy", 
+  "Not FDA approved")
+
+
+nodes_in_order_for_color <- c(  #positive events
+  "Prioritized",
+  "Implemented",
+  "Response",
+   #second rank events
+  "Progression",
+  "Not implemented",
+  "Rapid disease progression", 
+  # Not implemented
+  "Waiting for treatment approval", 
+  "Therapy unavailable",
+  # deferred
+  "Deferred",
+  "Standard of care", 
+  "No further treatment needed",
+  "Treatment with more disease data", 
+  "Declined",
+  "Evidence against Treehouse therapy", 
+  "Not FDA approved")
+
+```
+
+# assemble data in format required for sankey plot
+```{r, include = FALSE}
+
+all_nodes <- tibble(name = c(tx_treatments_raw$TH_donorID, 
+                                tx_treatments_raw$`Case prioritization`, 
+                                tx_treatments_raw$Reason, 
+                                tx_treatments_raw$`Implementation reason for prioritized findings`)) %>% 
+  na.omit()
+
+nodes <- all_nodes %>%
+  distinct() %>%
+  mutate(name_factor = factor(name) %>% 
+           fct_relevel(c(tx_treatments_raw$TH_donorID,
+                         nodes_in_order_for_plotting))) %>%
+  arrange(name_factor) %>%
+  mutate(node = 0:(n()-1)) 
+
+
+```
+
+
+# Update language
+improvements 1, 2 and 3
+```{r, include = FALSE}
+
+node_labels <- all_nodes  %>%
+  mutate(is_donor = str_detect(name, "TH[R]?[0-9]{2}_[0-9]{4}")) %>%
+  rename(unnumbered_name = name) %>%
+  group_by(is_donor, unnumbered_name) %>%
+  summarize(n = n()) 
+
+update_names <- function(x) {
+  str_replace_all(x, "Standard of care", 
+                  "Received therapy considered standard of care") %>%
+    str_replace_all("Treatment with more disease data", 
+                    "Received therapy with more published evidence of efficacy") %>%
+    str_replace_all("Evidence against Treehouse therapy", 
+                    "Evidence against therapy identified by CARE analysis") %>%
+    str_replace_all("Prioritized",
+                    "Accepted; prioritized") %>%
+    str_replace_all("Deferred",
+                    "Accepted; deferred")
+}
+
+
+add_count_to_name <- function(x) {
+  # x <- all_nodes$name %>% unique
+  tibble(name = x) %>%
+    left_join(node_labels, by=c("name"="unnumbered_name")) %>%
+  mutate(name_with_number = ifelse(is_donor,
+                                   name,
+                                   paste0(update_names(name), " (n=", n, ")"))) %>%
+    pull(name_with_number)
+}
+
+#add_count_to_name(all_nodes$name)
+```
+
+# Update node data
+```{r, include = FALSE}
+sample_id_placeholder <- ""
+
+# nodes_wo_sample_names <- nodes %>%
+#    mutate(name2  = name)
+nodes_wo_sample_names <- nodes %>%
+#  mutate(name2 = name)
+  mutate(name2 = case_when(str_detect(name_factor, "^TH[0-9]") ~ sample_id_placeholder,
+            TRUE ~ name))
+
+updated_node_names_wo_sample_names <- nodes_wo_sample_names %>%
+  mutate(name2 = add_count_to_name(name2))
+
+```
+
+# create does
+```{r, include = FALSE}
+# links <- source target value
+donor_to_prioritization <- tx_treatments_raw %>%
+  select(TH_donorID, `Case prioritization`) %>%
+  left_join(nodes, by=c("TH_donorID"="name")) %>%
+              rename(source = node) %>%
+  left_join(nodes, by=c(`Case prioritization`="name")) %>%
+              rename(target = node) %>%
+  mutate(value = 1)
+  
+prioritization_to_reason <- tx_treatments_raw %>%
+  select(`Case prioritization`, Reason) %>%
+  left_join(nodes, by=c("Case prioritization"="name")) %>%
+              rename(source = node) %>%
+  left_join(nodes, by=c("Reason"="name")) %>%
+              rename(target = node) %>%
+  mutate(value = 1)
+
+reason_to_implementation <-  tx_treatments_raw %>%
+  select(Reason, `Implementation reason for prioritized findings`) %>%
+  left_join(nodes, by=c("Reason"="name")) %>%
+              rename(source = node) %>%
+  left_join(nodes, by=c("Implementation reason for prioritized findings"="name")) %>%
+              rename(target = node) %>%
+  mutate(value = 1) %>%
+  na.omit
+
+links_noisy <- bind_rows(donor_to_prioritization,
+                   prioritization_to_reason,
+                   reason_to_implementation) 
+
+links <- links_noisy %>%
+  select(source, target, value) %>%
+  arrange(source, target, value)
+
+  
+
+```
+
+# define colors
+```{r, include = FALSE}
+
+#names_to_color_blue <- tibble(name = c("Accepted; prioritized", "Implemented", "Response"), 
+names_to_color_blue <- tibble(name = c("Prioritized", "Implemented", "Response"), 
+                              color_code =  c("#9ECAE1", "#6BAED6", "#3182BD"))
+                              #brewer.pal(name="Blues",n=6)[3:5])
+
+sample_box_colors <- tibble(name = sample_id_placeholder,
+                            color_code = "#D3D3D3")
+
+node_names <- tibble(name = unique(nodes_wo_sample_names$name2)) %>%
+  filter(! name %in% c(names_to_color_blue$name, sample_box_colors$name)) %>%
+  mutate(name_f = factor(name, levels = nodes_in_order_for_color)) %>%
+  arrange(name_f) %>%
+  mutate(color_code = heat_hcl(n(),rev=TRUE, c=c(60,20),l=c(60,100),power=1)) %>%
+  bind_rows(names_to_color_blue) %>%
+  bind_rows(sample_box_colors) %>%
+  mutate(name = add_count_to_name(name))
+
+color_specification <- JS(
+sprintf(
+'d3.scaleOrdinal()  
+  .domain(%s)
+  .range(%s)
+',
+jsonlite::toJSON(node_names$name),
+jsonlite::toJSON(node_names$color_code)
+   )
+  )
+
+
+
+```
+
+
+# check for overlap in colors and names
+```{r, include = FALSE}
+setdiff(node_names$name, nodes_wo_sample_names$name2) # expected output: character(0)
+setdiff(nodes_wo_sample_names$name2, node_names$name) # expected output: character(0)
+
+```
+
+
+```{r}
+
+plotly_sankey_data_template <- list(type = "sankey", 
+     domain = list(x = c(0, 1), y = c(0, 1)), 
+     orientation = "v", 
+     valueformat = ".0f", 
+     valuesuffix = "TWh",
+     node = 
+       list(pad = 15, 
+            thickness = 15, 
+            line = list(color = "black", width = 0.5), 
+            label = c("Agricultural 'waste'", "Bio-conversion", 
+                      "Liquid", "Losses", "Solid", "Gas", "Biofuel imports", "Biomass imports", 
+                      "Coal imports", "Coal", "Coal reserves", "District heating", 
+                      "Industry", "Heating and cooling - commercial", "Heating and cooling - homes", 
+                      "Electricity grid", "Over generation / exports", "H2 conversion", 
+                      "Road transport", "Agriculture", "Rail transport", "Lighting & appliances - commercial", 
+                      "Lighting & appliances - homes", "Gas imports", "Ngas", "Gas reserves", 
+                      "Thermal generation", "Geothermal", "H2", "Hydro", "International shipping", 
+                      "Domestic aviation", "International aviation", "National navigation", 
+                      "Marine algae", "Nuclear", "Oil imports", "Oil", "Oil reserves", 
+                      "Other waste", "Pumped heat", "Solar PV", "Solar Thermal", 
+                      "Solar", "Tidal", "UK land based bioenergy", "Wave", "Wind"
+            )),
+     link = 
+       list(
+         source = c(0, 1, 1, 1, 1, 6, 7, 8, 10, 9, 
+                    11, 11, 11, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 23, 
+                    25, 5, 5, 5, 5, 5, 27, 17, 17, 28, 29, 2, 2, 2, 2, 2, 2, 
+                    2, 2, 34, 24, 35, 35, 36, 38, 37, 39, 39, 40, 40, 41, 42, 
+                    43, 43, 4, 4, 4, 26, 26, 26, 44, 45, 46, 47), 
+         target = c(1, 
+                    2, 3, 4, 5, 2, 4, 9, 9, 4, 12, 13, 14, 16, 14, 17, 12, 18, 
+                    19, 13, 3, 20, 21, 22, 24, 24, 13, 3, 26, 19, 12, 15, 28, 
+                    3, 18, 15, 12, 30, 18, 31, 32, 19, 33, 20, 1, 5, 26, 26, 
+                    37, 37, 2, 4, 1, 14, 13, 15, 14, 42, 41, 19, 26, 12, 15, 
+                    3, 11, 15, 1, 15, 15), 
+         value = c(124.729, 0.597, 26.862, 
+                   280.322, 81.144, 35, 35, 11.606, 63.965, 75.571, 10.639, 
+                   22.505, 46.184, 104.453, 113.726, 27.14, 342.165, 37.797, 
+                   4.412, 40.858, 56.691, 7.863, 90.008, 93.494, 40.719, 82.233, 
+                   0.129, 1.401, 151.891, 2.096, 48.58, 7.013, 20.897, 6.242, 
+                   20.897, 6.995, 121.066, 128.69, 135.835, 14.458, 206.267, 
+                   3.64, 33.218, 4.413, 14.375, 122.952, 500, 339.978, 504.287, 
+                   107.703, 611.99, 56.587, 77.81, 193.026, 70.672, 59.901, 
+                   19.263, 19.263, 59.901, 0.882, 400.12, 46.477, 525.531, 787.129, 
+                   79.329, 9.452, 182.01, 19.013, 289.366), 
+         label = c("stream 1", 
+                   "", "", "", "stream 1", "", "", "", "", "", "", "", "", "", 
+                   "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 
+                   "", "stream 1", "", "", "", "", "", "", "", "", "", "", "", 
+                   "", "", "", "", "Old generation plant (made-up)", "New generation plant (made-up)", 
+                   "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 
+                   "", "", "", "", "", ""))
+)
+
+```
+
+
+```{r}
+plotly_links <- links %>%
+  mutate(label = "")
+```
+
+```{r}
+library(plotly)
+library(rjson)
+fig <- plot_ly(
+  type = "sankey",
+  domain = list(
+    x =  c(0,1),
+    y =  c(0,1)
+  ),
+  orientation = "h",
+  valueformat = ".0f",
+  valuesuffix = "TWh",
+  
+  node = list(
+    # label = json_data$data[[1]]$node$label,
+    label = updated_node_names_wo_sample_names$name2,
+   #  label = labels_with_breaks,
+    #color = json_data$data[[1]]$node$color,
+    pad = 15,
+    thickness = 15,
+    line = list(
+      color = "black",
+      width = 0.5
+    )
+  ),
+  
+  link = list(
+    source = plotly_links$source,
+    target = plotly_links$target,
+    value =  plotly_links$value,
+    label =  plotly_links$label
+  )
+)
+fig <- fig %>% layout(
+  title = "Energy forecast for 2050<br>Source: Department of Energy & Climate Change, Tom Counsell via <a href='https://bost.ocks.org/mike/sankey/'>Mike Bostock</a>",
+  font = list(
+    size = 10,
+    color = 'white'
+  ),
+  xaxis = list(showgrid = F, zeroline = F, showticklabels = F),
+  yaxis = list(showgrid = F, zeroline = F, showticklabels = F),
+  plot_bgcolor = 'black',
+  paper_bgcolor = 'black'
+)
+
+fig
+```
+
+# plot
+```{r fig.height=6, fig.width=10}
+
+networkD3::sankeyNetwork(Links = links, Nodes = updated_node_names_wo_sample_names, Source = 'source', 
+                         Target = 'target', Value = 'value', NodeID = 'name2',
+                         units = '',
+  sinksRight = FALSE,
+  nodeWidth = 40,
+  fontSize = 13,
+  nodePadding = 5,
+  iterations = 10,
+  colourScale = color_specification)
+
+```
+
+
+

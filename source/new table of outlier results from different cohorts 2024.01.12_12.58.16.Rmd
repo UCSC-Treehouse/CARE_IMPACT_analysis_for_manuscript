@@ -1,0 +1,224 @@
+---
+title: "`r gsub('.Rmd', ' ', gsub('_', ' ', knitr::current_input()))`"
+author: "`r Sys.getenv('USER')`"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: yes
+---
+  
+
+verion 2024.01.12_12.58.16 make table of outliers
+
+
+
+```{r setup, include = FALSE}
+
+library(tidyverse)
+library(janitor)
+library(khroma)
+library(kableExtra)
+library(gridExtra)
+library(cowplot)
+```
+
+
+```{r}
+
+underscore_to_space <- function(x) str_replace_all(x, "_", " ")
+underscore_to_space_initial_cap <- function(x) str_replace_all(x, "_", " ") %>% str_to_sentence()
+
+```
+
+```{r}
+
+outliers <- read_tsv("../input_data/druggable_outliers_from_treehouse_and_other_cohorts_2023_11_09-13_46_32_2023.tsv") %>%
+  mutate(high_level_cohort = ifelse(str_detect(comparison_cohort, "Treehouse"),
+                                    "Treehouse",
+                                    comparison_cohort))
+
+         
+n_distinct(outliers$Sample_ID)       
+n_distinct(outliers$donor_ID)
+```
+
+# Define cohort codes
+```{r}
+
+cohort_codes <- tibble(
+  cohort_name = 
+    c("PEDAYA", "TCGA", "TH03_TH34", "Treehouse_pc", "Treehouse_pd"),
+  cohort_code = 
+    c("P", "T", "S", "C", "D"))
+
+```
+
+
+
+
+# outliers detected by treehouse and other cohorts (excludes pan-disease)
+```{r}
+
+treehouse_pc_outliers <- outliers %>%
+  filter(comparison_cohort == "Treehouse_pc") %>%
+  select(Sample_ID, gene) %>%
+  distinct()
+
+outliers_detected_by_treehouse_pc <- left_join(treehouse_pc_outliers, 
+                                            outliers %>%
+                                              filter(comparison_cohort != "Treehouse_pd"), 
+                                            by = c("Sample_ID", "gene"))
+
+
+treehouse_pc_outlier_summary <- outliers_detected_by_treehouse_pc %>% 
+  group_by(comparison_cohort) %>%
+  summarize(n_outliers_detected = n())  %>%
+  mutate(total = nrow(treehouse_pc_outliers),
+         set = "detected by treehouse pc and other cohorts (excludes pan-disease)")
+
+
+
+```
+
+
+
+
+# outliers detected by treehouse and other cohorts (includes pan-disease)
+
+
+```{r}
+
+treehouse_outliers <- outliers %>%
+  filter(str_detect(high_level_cohort, "Treehouse")) %>%
+  select(Sample_ID, gene) %>%
+  distinct()
+
+outliers_detected_by_treehouse <- left_join(treehouse_outliers, 
+                                            outliers, 
+                                            by = c("Sample_ID", "gene"))
+n_outliers_detected_by_treehouse <- treehouse_outliers %>%
+  nrow()
+
+treehouse_outlier_summary <- outliers_detected_by_treehouse %>% 
+  group_by(comparison_cohort) %>%
+  summarize(n_outliers_detected = n()) %>%
+  bind_rows(tibble(comparison_cohort = "Treehouse total",
+                 n_outliers_detected = n_outliers_detected_by_treehouse)) %>%
+  mutate(total = n_outliers_detected_by_treehouse,
+         set = "detected by treehouse and other cohorts (includes pan-disease)")
+
+```
+
+# outliers detected by any cohort
+```{r}
+
+n_outliers_detected_by_any_method <- outliers %>%
+  select(Sample_ID, gene) %>%
+  distinct %>%
+  nrow()
+
+outlier_summary <- outliers %>% 
+  group_by(comparison_cohort) %>%
+  summarize(n_outliers_detected = n())  %>%
+  bind_rows(tibble(comparison_cohort = "Treehouse total",
+                 n_outliers_detected = n_outliers_detected_by_treehouse)) %>%
+  mutate(total = n_outliers_detected_by_any_method,
+         set = "detected by treehouse OR other cohorts (includes pan-disease)")
+
+```
+
+
+```{r}
+all_outlier_long_table <- bind_rows(outlier_summary,
+          treehouse_outlier_summary,
+          treehouse_pc_outlier_summary)  %>%
+  mutate(stat = paste0(n_outliers_detected, "/", total, " (",
+             round(100*n_outliers_detected/total, 1), "%)"))
+```
+```{r}
+
+names_of_sets <- tibble(
+  long_set_name = c("detected by treehouse OR other cohorts (includes pan-disease)", 
+"detected by treehouse and other cohorts (includes pan-disease)", 
+"detected by treehouse pc and other cohorts (excludes pan-disease)"),
+short_set_name = c("all_methods", "treehouse_with_pd", "treehouse_without_pd"))
+
+all_outlier_long_table %>%
+  left_join(names_of_sets, 
+            by=c("set" = "long_set_name")) %>%
+  select(comparison_cohort, stat, short_set_name) %>%
+  pivot_wider(names_from = short_set_name,
+              values_from = stat)
+
+```
+
+
+
+
+```{r}
+treehouse_pc_outliers <- outliers %>%
+  filter(comparison_cohort == "Treehouse_pc") %>%
+  select(Sample_ID, gene) %>%
+  distinct()
+
+outliers_detected_by_treehouse_pc <- left_join(treehouse_pc_outliers, 
+                                            outliers %>%
+                                              filter(comparison_cohort != "Treehouse_pd"), 
+                                            by = c("Sample_ID", "gene"))
+
+
+treehouse_pc_outlier_summary <- outliers_detected_by_treehouse_pc %>% 
+  group_by(comparison_cohort) %>%
+  summarize(n_outliers_detected = n())
+```
+
+
+
+```{r}
+ 
+
+```{r}
+%>%
+  ungroup() %>%
+  mutate(pct_outliers_detected = 100*n_outliers_detected/n_outliers_detected_by_treehouse_pc,
+         pct_outliers_with_pathway_support_detected =
+           100*n_outliers_with_pathway_support/n_outliers_with_pathway_support_detected_by_treehouse_pc,
+         pct_outliers_with_pathway_support = 100*n_outliers_with_pathway_support/n_outliers_detected)
+  
+
+treehouse_pc_totals_tibble <-  tibble(high_level_cohort= " Total",
+                         comparison_cohort = " Total",
+                 n_outliers_detected = n_outliers_detected_by_treehouse_pc,
+                 n_outliers_with_pathway_support = n_outliers_with_pathway_support_detected_by_treehouse_pc,
+                 pct_outliers_with_pathway_support = 100*n_outliers_with_pathway_support_detected_by_treehouse_pc/n_outliers_detected_by_treehouse_pc)
+
+treehouse_pc_outlier_summary <- outliers_detected_by_treehouse_pc %>% 
+  group_by(comparison_cohort) %>%
+  summarize(n_outliers_detected = n(),
+         n_outliers_with_pathway_support = sum(pathway_support)) %>%
+  ungroup() %>%
+  mutate(pct_outliers_detected = 100*n_outliers_detected/n_outliers_detected_by_treehouse_pc,
+         pct_outliers_with_pathway_support_detected =
+           100*n_outliers_with_pathway_support/n_outliers_with_pathway_support_detected_by_treehouse_pc,
+         pct_outliers_with_pathway_support = 100*n_outliers_with_pathway_support/n_outliers_detected)
+  
+treehouse_pc_outlier_summary_with_totals <- 
+  bind_rows(treehouse_pc_outlier_summary,
+            treehouse_pc_totals_tibble %>% select(-high_level_cohort))
+
+                 
+  
+treehouse_pc_outlier_summary_with_totals %>% 
+  rename_all(underscore_to_space) %>%
+  kbl(digits = c(NA, 0, 0, 0, 0)) %>%
+  kable_styling(full_width = F)
+
+
+
+```
+
+
+```{r}
+
+```
+
