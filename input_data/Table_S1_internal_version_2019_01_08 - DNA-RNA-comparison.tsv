@@ -1,0 +1,376 @@
+TH sample ID	Diagnosis	At least one DNA target aberrantly expressed?	Utility of RNA sequencing	Solid/leukemia	DNA mutation call of clinical relevance	DNA mutation category NCI Pediatric MATCH	Treehouse category	Outlier confirmed by pathway	Outlier not confirmed by pathway	gene	mutation	note/	testVendor	status
+TH01_0123_S01	acute lymphoblastic leukemia	Yes	Prioritizing among multiple DNA findings	leukemia						new sample				
+					FLT3 amplification	Receptor Tyrosine Kinase (RTK)	Receptor Tyrosine Kinase (RTK)	FLT3, FLT4		FLT3	Low-levelAmplification		NantOmics	
+					JAK2 p.R683S	JAK/STAT	JAK/STAT	JAK3		JAK2	p.R683S		NantOmics	
+							B-cell receptor signaling	MS4A1		JAK2	p.R683S		NantOmics	
+							PI3K/AKT/mTOR	PIK3CD, PIK3CG, RPTOR						
+TH01_0132_S01	acute myeloid leukemia	RNA only target	RNA only target	leukemia										
+					No druggable mutations		B-cell reseptor signaling	BTK		MLLT10-KMT2A	MLL rearrangement		NantOmics	
+							Cell cycle	CDK6						
+							PI3K/AKT/mTOR	PIK3CG						
+TH01_0129_S01	acute lymphoblastic leukemia	No	Additional expression support for DNA finding	leukemia										
+					BCR-ABL1 fusion	Other								
+							B-cell reseptor signaling	MS4A1		BCR-ABL1			NantOmics	
+							PI3K/AKT/mTOR	PIK3CG						
+TH01_0120_S01	acute myeloid leukemia	RNA only target	RNA only target	leukemia										
+					No druggable mutations		Cell cycle	CDK6		GATA2	p.L321F			
+							Receptor Tyrosine Kinase (RTK)	KIT						
+TH01_0121_S01	acute lymphoblastic leukemia	RNA only target	RNA only target	leukemia										
+					No druggable mutations		JAK/STAT	IL6R, JAK3, STAT5B						
+							B-cell receptor signaling	MS4A1						
+							PI3K/AKT/mTOR	PIK3CD, PIK3CG, PIK3R5						
+TH01_0122_S01	acute lymphoblastic leukemia	No	Additional expression support for DNA finding	leukemia										
+					PAX5-JAK2 fusion	JAK/STAT				PAX5-JAK2				
+							B-cell receptor signaling	MS4A1						
+							PI3K/AKT/mTOR	PIK3CD, PIK3CG						
+TH01_0124_S01	acute lymphoblastic leukemia	No		leukemia										
+					KRAS p.G13D, NRAS p.G12D	RAS/RAF/MEK				KRAS	p.G13D			
+							Receptor Tyrosine Kinase (RTK)	FLT3		NRAS	p.G12D			
+TH01_0125_S01	acute lymphoblastic leukemia	RNA only target	RNA only target	leukemia										
+					No druggable mutations		Receptor Tyrosine Kinase (RTK)	FLT3		CSF3R	p.D320N			
+										KMT2A-AFF1				
+							PI3K/AKT/mTOR	PIK3CG		TSC2	p. R367Q	TSC2 mutation benign in HGMD		
+							Cell cycle	CDK6						
+							B-cell receptor signaling	BTK						
+TH01_0126_S01	acute lymphoblastic leukemia	DNA only target	DNA only target	leukemia										
+					NRAS p.G12D	RAS/RAF/MEK	No automated leads			NRAS	p.G12D			
+					CDKN2A deletion	Cell Cycle				CDKN2A	deletion			
+TH01_0128_S01	acute lymphoblastic leukemia	RNA only target	RNA only target	leukemia										
+					No druggable mutations		JAK/STAT	IL6R						
+							PI3K/AKT/mTOR	PIK3CD, PIK3CG, PIK3R5						
+TH01_0134_S01	acute lymphoblastic leukemia	No	Additional expression support for DNA finding	leukemia										
+					NRAS p.G13D	RAS/RAF/MEK				NRAS	p. G13D			
+							Cell cycle	CDK6						
+TH01_0133_S01	acute lymphoblastic leukemia	RNA only target	RNA only target	leukemia										
+					No druggable mutations		Receptor Tyrosine Kinase (RTK)		FLT3					
+TH01_0131_S01	acute lymphoblastic leukemia	No	DNA finding likely a technical artifact	leukemia										
+					JAK2 p.R683S	JAK/STAT				JAK2	p.R683S			
+							B-cell receptor signaling	BTK						
+							Cell cycle	CDK6						
+							Receptor Tyrosine Kinase (RTK)	FLT3, FLT4						
+							PI3K/AKT/mTOR	PIK3CG						
+TH01_0127_S01	acute lymphoblastic leukemia	Yes	Prioritizing among multiple DNA findings	leukemia										
+					FLT3 p.V592D	Receptor Tyrosine Kinase (RTK)	Receptor Tyrosine Kinase (RTK)	FLT3		FLT3	p.V592D			
+					KRAS p.G12D	RAS/RAF/MEK				KRAS	p.G12D			
+							B-cell receptor signaling	BTK						
+							PI3K/AKT/mTOR	PIK3CG						
+TH01_0130_S01	acute lymphoblastic leukemia	No	Additional expression support for DNA finding	leukemia										
+					PAX5-JAK2 fusion	JAK/STAT								
+							Receptor Tyrosine Kinase (RTK)	FLT3						
+							B-cell receptor signaling	MS4A1						
+							PI3K/AKT/mTOR	PIK3CG						
+TH02_0082_S01	diffuse intrinsic pontine glioma	No DNA or RNA targets	No DNA or RNA targets	solid						new sample				
+					No druggable mutations		No automated leads			H3F3A	Missense Nonsense or Frameshift		TGen	
+TH02_0083_S01	diffuse intrinsic pontine glioma	Yes	Prioritizing among multiple DNA findings	solid						new sample				
+										CRKL	Gain		TGen	
+										H3F3A	Missense Nonsense or Frameshift		TGen	
+					KDR gain	Receptor Tyrosine Kinase (RTK)				KDR	Gain		TGen	
+					KIT gain	Receptor Tyrosine Kinase (RTK)				KIT	Gain		TGen	
+										MAPK1	Gain		TGen	
+					MET gain	Receptor Tyrosine Kinase (RTK)				MET	Gain		TGen	
+					PDGFRA gain	Receptor Tyrosine Kinase (RTK)	Receptor Tyrosine Kinase (RTK)	PDGFRA		PDGFRA	Gain		TGen	
+										TP53	Missense Nonsense or Frameshift		TGen	
+TH02_0084_S01	diffuse intrinsic pontine glioma	No DNA or RNA targets	No DNA or RNA targets	solid						new sample				
+					No druggable mutations		No automated leads			TP53	Missense Nonsense or Frameshift		TGen	
+TH02_0085_S01	diffuse intrinsic pontine glioma	Yes	Prioritizing among multiple DNA findings	solid						new sample				
+										H3F3A	Missense Nonsense or Frameshift		TGen	
+					KDR gain	Receptor Tyrosine Kinase (RTK)				KDR	Gain		TGen	
+					KIT gain	Receptor Tyrosine Kinase (RTK)				KIT	Gain		TGen	
+					PDGFRA gain	Receptor Tyrosine Kinase (RTK)	Receptor Tyrosine Kinase (RTK)		PDGFRA	PDGFRA	Gain		TGen	
+										TP53	Missense Nonsense or Frameshift		TGen	
+TH02_0086_S01	diffuse intrinsic pontine glioma	RNA only target	RNA only target	solid						new sample				
+					No druggable mutations		Sonic Hedgehog (SHH)		PTCH1	ATRX	Missense Nonsense or Frameshift		TGen	
+										H3F3A	Missense Nonsense or Frameshift		TGen	
+										PPM1D	Missense Nonsense or Frameshift		TGen	
+TH02_0087_S01	diffuse intrinsic pontine glioma	No		solid						new sample				
+										H3F3A	Missense Nonsense or Frameshift		TGen	
+										H3F3A	p.K27M		TGen	
+					PIK3R1 unspecified aberration, called druggable by clinical testing lab	PI3K/AKT/mTOR				PIK3R1	Missense Nonsense or Frameshift		TGen	
+										PPM1D	Missense Nonsense or Frameshift		TGen	
+							JAK/STAT	JAK1		TP53	Missense Nonsense or Frameshift		TGen	
+										TP53	p.R282W		TGen	
+TH02_0087_S02	diffuse intrinsic pontine glioma	DNA only target	DNA only target	solid						new sample				
+										H3F3A	p.K27M		TGen	
+					PIK3R1 unspecified aberration, called druggable by clinical testing lab	PI3K/AKT/mTOR	No automated leads			PIK3R1	Unspecified		TGen	
+										PPM1D	Unspecified		TGen	
+TH02_0088_S01	diffuse intrinsic pontine glioma	No DNA or RNA targets	No DNA or RNA targets	solid						new sample				
+					No druggable mutations		No automated leads			ATRX	Deletion			
+										H3F3A	Missense Nonsense or Frameshift			
+										TP53	Missense Nonsense or Frameshift			
+TH02_0089_S01	diffuse intrinsic pontine glioma	No DNA or RNA targets	No DNA or RNA targets	solid						new sample				
+					No druggable mutations		No automated leads			ATRX	Missense Nonsense or Frameshift		TGen 	
+										H3F3A	Missense Nonsense or Frameshift		TGen 	
+										TP53	Missense Nonsense or Frameshift		TGen 	
+TH02_0090_S01	diffuse intrinsic pontine glioma	Yes	Additional expression support for DNA finding	solid						new sample				
+							Sonic Hedgehog (SHH)		PTCH1					
+										ATRX	Missense Nonsense or Frameshift		TGen 	
+					IGF1R gain	Receptor Tyrosine Kinase (RTK)				IGF1R	Gain		TGen 	
+										TP53	Missense Nonsense or Frameshift		TGen 	
+TH02_0091_S01	diffuse intrinsic pontine glioma	No		solid						new sample				
+							Receptor Tyrosine Kinase (RTK)	CSF1R						
+					BRAF p.V600E	RAS/RAF/MEK				BRAF p.V600E	Missense Nonsense or Frameshift		TGen 	
+										H3F3A	Missense Nonsense or Frameshift		TGen 	
+TH02_0092_S01	diffuse intrinsic pontine glioma	No	Additional expression support for DNA finding	solid						new sample				
+										ATRX	Missense Nonsense or Frameshift		TGen 	
+							RAS/RAF/MEK	MEK1		H3F3A	Missense Nonsense or Frameshift		TGen 	
+					KDR gain	Receptor Tyrosine Kinase (RTK)				KDR	Gain		TGen 	
+					KIT gain	Receptor Tyrosine Kinase (RTK)				KIT	Gain		TGen 	
+					PDGFRA gain	Receptor Tyrosine Kinase (RTK)				PDGFRA	Gain		TGen 	
+										PTEN	Deletion		TGen 	
+										TP53	Missense Nonsense or Frameshift		TGen 	
+TH02_0093_S01	diffuse intrinsic pontine glioma	DNA only target	DNA only target	solid						new sample				
+							No automated leads			H3F3A	Missense Nonsense or Frameshift		TGen 	
+					MET gain	Receptor Tyrosine Kinase (RTK)				MET	Gain		TGen 	
+					PDGFRA gain	Receptor Tyrosine Kinase (RTK)				PDGFRA	Gain		TGen 	
+										TP53	Missense Nonsense or Frameshift		TGen 	
+TH02_0094_S01	diffuse intrinsic pontine glioma	Yes	Additional expression support for DNA finding	solid						new sample				
+										H3F3A	Missense Nonsense or Frameshift		TGen 	
+					MET gain	Receptor Tyrosine Kinase (RTK)	Receptor Tyrosine Kinase (RTK)		MET	MET	Gain		TGen 	
+										TP53	Missense Nonsense or Frameshift		TGen 	
+TH02_0095_S01	diffuse intrinsic pontine glioma	RNA only target	RNA only target	solid						new sample				
+					No druggable mutations		Sonic Hedgehog (SHH)		PTCH1	ACVR1	p.R206H		TGen 	
+										HIST1H3B	p.K27M		TGen 	
+										TP53	p.R248Q		TGen 	
+TH02_0096_S01	diffuse intrinsic pontine glioma	No DNA or RNA targets	No DNA or RNA targets	solid						new sample				
+					No druggable mutations		No automated leads			AHNAK	del		TGen 	
+										AKT1	del		TGen 	
+										AURKB1	del		TGen 	
+										H3F3A	p.K27M		TGen 	
+										H3F3B	del		TGen 	
+										TP53	del		TGen 	
+										TP53BP1	del		TGen 	
+TH03_0003_S01	sarcoma	DNA only target	DNA only target	solid						new sample				
+							No automated leads			ATRX	LossExons13-35		Foundation Medicine	
+					CDKN2A/2B deletion	Cell Cycle				CDKN2A	CDKN2A_loss		Foundation Medicine	
+										CDKN2B	CDKN2B_loss		Foundation Medicine	
+										TP53	TruncationExon9		Foundation Medicine	
+TH03_0003_S03	sarcoma	DNA only target	DNA only target	solid						new sample				
+							No automated leads			ATRX	LossExons13-35		Foundation Medicine	
+					CDKN2A/2B deletion	Cell Cycle				CDKN2A	CDKN2A_loss		Foundation Medicine	
+										CDKN2B	CDKN2B_loss		Foundation Medicine	
+										TP53	TruncationExon9		Foundation Medicine	
+TH03_0003_S04	sarcoma	DNA only target	DNA only target	solid						new sample				
+							No automated leads			ATRX	LossExons13-35		Foundation Medicine	
+					CDKN2A/2B deletion	Cell Cycle				CDKN2A	CDKN2A_loss		Foundation Medicine	
+										CDKN2B	CDKN2B_loss		Foundation Medicine	
+										TP53	TruncationExon9		Foundation Medicine	
+TH03_0004_S02	hepatoblastoma	No DNA or RNA targets	No DNA or RNA targets	solid						new sample				
+					No druggable mutations		No automated leads			CTNNB1	p.G34V		Foundation Medicine	
+										CTNNB1	p.G34V		Foundation Medicine	
+TH03_0004_S03	hepatoblastoma	No DNA or RNA targets	No DNA or RNA targets	solid						new sample				
+					No druggable mutations		No automated leads			CTNNB1	p.G34V		Foundation Medicine	
+										CTNNB1	p.G34V		Foundation Medicine	
+TH03_0004_S04	hepatoblastoma	RNA only target	RNA only target	solid						new sample				
+					No druggable mutations		JAK/STAT	IL6		CTNNB1	p.G34V		Foundation Medicine	
+							Heat Shock Proteins	HSP90B1		CTNNB1	p.G34V		Foundation Medicine	
+TH03_0005_S01	nasopharyngeal carcinoma	No DNA or RNA targets	No DNA or RNA targets	solid						new sample				
+					No druggable mutations		No automated leads			CTNNB1	DuplicationExons9-13		Foundation Medicine	
+										CTNNB1	DuplicationExons9-13		Foundation Medicine	
+										TP53	p.S241F		Foundation Medicine	
+										TP53	p.S241F		Foundation Medicine	
+TH03_0006_S01	rhabdomyosarcoma	RNA only target	RNA only target	solid						new sample				
+					No druggable mutations		Heat Shock Proteins		HSP90B1	BRD4	RearrangementExon6		Foundation Medicine	
+										CREBBP	s894fs*64		Foundation Medicine	
+										IKZF2	DeletionExon 4		Foundation Medicine	
+										MYC	Amplification(Equivocal)		Foundation Medicine	
+										TP53	p.R282W		Foundation Medicine	
+TH03_0006_S03	rhabdomyosarcoma	No DNA or RNA targets	No DNA or RNA targets	solid						new sample				
+					No druggable mutations		No automated leads			BRD4	RearrangementExon6		Foundation Medicine	
+										CREBBP	s894fs*64		Foundation Medicine	
+										IKZF2	DeletionExon 4		Foundation Medicine	
+										MYC	Amplification(Equivocal)		Foundation Medicine	
+										TP53	p.R282W		Foundation Medicine	
+TH03_0008_S01	neuroblastoma	RNA only target	RNA only target	solid						new sample				
+					No druggable mutations		PI3K/AKT/mTOR	RPTOR		ATRX	LossExons2-9		Foundation Medicine	
+							JAK/STAT	STAT5		CIC	p.R215W		Foundation Medicine	
+										MYC	SingleCopy		Foundation Medicine	
+TH03_0010_S01	acute leukemia of ambiguous lineage, CNS1	No	Additional expression support for DNA finding	leukemia						new sample				
+							B-cell receptor signaling	BTK		CREBBP	SpliceSite5173-1G>A		Foundation Medicine	
+							Cell cycle	CDK6						
+							JAK/STAT	STAT5A		JAK3	p.A573T		Foundation Medicine	
+					NRAS p.Q61H	RAS/RAF/MEK				NRAS	p.Q61H		Foundation Medicine	
+										TP53	p.C135F		Foundation Medicine	
+TH03_0010_S02	acute leukemia of ambiguous lineage, CNS1	No	Additional expression support for DNA finding	leukemia						new sample				
+							B-cell receptor signaling	BTK		CREBBP	SpliceSite5173-1G>A		Foundation Medicine	
+							BCL2/MDM2	MDM2		JAK3	p.A573T		Foundation Medicine	
+							JAK/STAT	STAT5A						
+					NRAS p.Q61H	RAS/RAF/MEK				NRAS	p.Q61H		Foundation Medicine	
+										TP53	p.C135F		Foundation Medicine	
+TH03_0011_S01	acute lymphoblastic leukemia	No	Additional expression support for DNA finding	leukemia						new sample				
+							B-cell receptor signaling	BTK		BCOR	p.C1572F		Foundation Medicine	
+							Cell cycle	CCND3		BCOR	p.C1572F		Foundation Medicine	
+							Receptor Tyrosine Kinase (RTK)	FLT3		CPS1	p.K1281		Foundation Medicine	
+							JAK/STAT	IL6R		EXOSC6	p.G10C		Foundation Medicine	
+										EXOSC6	p.G10C		Foundation Medicine	
+										MAP3K1	p.S939C		Foundation Medicine	
+										MAP3K1	p.S939C		Foundation Medicine	
+										MLL2	p.V4305I		Foundation Medicine	
+										MLL2	p.V4305I		Foundation Medicine	
+										MLL3	p.G1582V		Foundation Medicine	
+										MLL3	p.G1582V		Foundation Medicine	
+										MLL3	p.L804V		Foundation Medicine	
+										NCOR2	p.K1405R		Foundation Medicine	
+										NOTCH1	p.T859M		Foundation Medicine	
+					NRAS p.Q61K	RAS/RAF/MEK				NRAS	p.Q61K		Foundation Medicine	
+										NTRK1	p.R744H		Foundation Medicine	
+										PCLO	p.S4289_S4292del		Foundation Medicine	
+TH03_0012_S01	wilms tumor	RNA only target	RNA only target	solid						new sample				
+					No druggable mutations		PI3K/AKT/mTOR		PIK3R1	ABL2	p.T671M		Foundation Medicine	
+										ALK	p.E1435K		Foundation Medicine	
+										AR	p.G457_G468del		Foundation Medicine	
+										ASXL1	p.G645fs*58		Foundation Medicine	
+										SPEN	p.S2306del		Foundation Medicine	
+										TP53	p.C176S		Foundation Medicine	
+TH03_0012_S02	wilms tumor	RNA only target	RNA only target	solid						new sample				
+					No druggable mutations		JAK/STAT	STAT3		ABL2	p.T671M		Foundation Medicine	
+										ALK	p.E1435K		Foundation Medicine	
+										AR	p.G457_G468del		Foundation Medicine	
+										ASXL1	p.G645fs*58		Foundation Medicine	
+										SPEN	p.S2306del		Foundation Medicine	
+										TP53	p.C176S		Foundation Medicine	
+TH03_0016_S01	atypical teratoid/rhabdoid tumor	No	Additional expression support for DNA finding	solid						new sample				
+							Receptor Tyrosine Kinase (RTK)	ERBB2		SMARCB1	p.P383fs*4+		Foundation Medicine	
+							Receptor Tyrosine Kinase (RTK)	FGFR1						
+							JAK/STAT	IL6						
+					SMARCB1 p.P383fs*4+	Chromatin remodeling								
+TH03_0019_S01	fibrolamellar hepatocellular carcinoma	RNA only target	RNA only target	solid						new sample				
+					No druggable mutations					FANCG	p.A607T		Foundation Medicine	
+							Receptor Tyrosine Kinase (RTK)	FLT1						
+							Receptor Tyrosine Kinase (RTK)	KDR						
+TH03_0114_S01	fibrolamellar hepatocellular carcinoma	RNA only target	RNA only target	solid						new sample				
+					No druggable mutations		No automated leads			MLL3	p.C310S		Foundation Medicine	
+										TERT	promoter 124C>T		Foundation Medicine	
+TH03_0143_S01	osteosarcoma	RNA only target	RNA only target	solid						new sample				
+					No druggable mutations		JAK/STAT	IL6		FANCL	p.S351fs*2		Foundation Medicine	
+										MLL3	p.Y306*		Foundation Medicine	
+TH03_0143_S02	osteosarcoma	No DNA or RNA targets	No DNA or RNA targets	solid										
+					No druggable mutations		No automated leads			FANCL	p.S351fs*2		Foundation Medicine	
+										MLL3	p.Y306*		Foundation Medicine	
+TH03_0149_S01	acute myeloid leukemia	Yes	Additional expression support for DNA finding	leukemia						new sample				
+					FLT3-ITD	Receptor Tyrosine Kinase (RTK)	Receptor Tyrosine Kinase (RTK)	FLT3		FLT3	FLT3-ITD Y597-E598ins15		Foundation Medicine	
+							B-cell receptor signaling	BTK		WT1	p.S381fs*67		Foundation Medicine	
+TH03_0286_S01	hepatocellular carcinoma	RNA only target	RNA only target	solid						new sample				
+					No druggable mutations		Receptor Tyrosine Kinase (RTK)	PDGFRB		CTNNB1	SpliceSite14-59_241+79del366		Foundation Medicine	
+TH03_0288_S01	neuroblastoma	RNA only target	RNA only target	solid						new sample				
+					No druggable mutations		Cell cycle	CDK6		ATRX	LossExons2-12		Foundation Medicine	
+TH03_0290_S01	glioma	No	No expression evidence for DNA target	solid						new sample				
+					BRAF p.V600E	RAS/RAF/MEK				BRAF	p.V600E		Foundation Medicine	
+							JAK/STAT	IL6		CDKN2A	CDKN2A/B Loss		Foundation Medicine	
+TH03_0013_S02	acute lymphoblastic leukemia	RNA only target	RNA only target	leukemia						new sample				
+					No druggable mutations		Cell cycle	CDK6		t(14;19)	translocation		chromosomal analysis	
+							PI3K/AKT/mTOR	PIK3CD						
+							PI3K/AKT/mTOR	PIK3R5		IGH	possible rearrangement		FISH	
+TH03_0013_S01	acute lymphoblastic leukemia	RNA only target	RNA only target	leukemia						new sample				
+					No druggable mutations		Cell cycle	CDK6						
+							PI3K/AKT/mTOR	PIK3CD						
+							PI3K/AKT/mTOR	PIK3R5		IGH	possible rearrangement		FISH	
+TH03_0014_S01	sarcoma	RNA only target	RNA only target	solid						new sample				
+					No druggable mutations		JAK/STAT		JAK1	EWSR1	EWSR1-FL1 rearrangement		Foundation Medicine	
+										FLI1 	EWSR1-FL1 rearrangement		Foundation Medicine	
+TH03_0018_S01	sarcoma	RNA only target	RNA only target	solid						new sample				
+					No druggable mutations		Receptor Tyrosine Kinase (RTK)	FLT4		EWSR1	negative for rearrangement		Foundation Medicine	
+										SS18	negative for rearrangement		Foundation Medicine	
+										FM performed, no alterations identified	none		Foundation Medicine	
+TH03_0020_S01	medulloblastoma	RNA only target	RNA only target	solid						new sample				
+					No druggable mutations		Sonic Hedgehog (SHH)	PTCH1		MYC	High amplification		"per EPIC" in clinical notes	
+TH03_0112_S01	sarcoma	RNA only target	RNA only target	solid						new sample				
+					No druggable mutations		Receptor Tyrosine Kinase (RTK)	ERBB2		SS18	SS18-SSX translocation		Foundation Medicine	
+							PI3K/AKT/mTOR	MLST8		SSX	SS18-SSX translocation		Foundation Medicine	
+TH03_0112_S02	sarcoma	RNA only target	RNA only target	solid						new sample				
+					No druggable mutations		Sonic Hedgehog (SHH)	GLI1		SS18	SS18-SSX translocation		Foundation Medicine	
+							Sonic Hedgehog (SHH)	PTCH1		SSX	SS18-SSX translocation		Foundation Medicine	
+TH03_0113_S01	myoepithelial carcinoma of the liver	No	Additional expression support for DNA finding	solid						new sample				
+					INI1 loss of expression	Chromating remodeling	Receptor Tyrosine Kinase (RTK)	FGFR1		INI1	Loss of expression		IHC	
+TH03_0115_S01	teratoma	No DNA or RNA targets	No DNA or RNA targets	solid						new sample				
+					No druggable mutations		No automated leads			MLL3	C310S		Foundation Medicine	
+TH03_0141_S01	osteosarcoma	Yes	Prioritizing among multiple DNA findings	solid						new sample				
+					CCND3 amplification	Cell Cycle	Cell cycle	CCND3		CSK4	Amplification		probably Foundation Medicine	
+							Cell cycle	CDK4		MDM2	Amplification		probably Foundation Medicine	
+					MDM2 amplification	BCL2/MDM2	BCL2/MDM2	MDM2		CCND3	Amplification		probably Foundation Medicine	
+										FRS2	Amplification		probably Foundation Medicine	
+TH03_0144_S01	wilms tumor	RNA only target	RNA only target	solid						new sample				
+					No druggable mutations		PI3K/AKT/mTOR	MLST8						
+							JAK/STAT	STAT1		FM performed, no alterations identified	none		Foundation Medicine	
+TH03_0146_S01	sarcoma	RNA only target	RNA only target	solid						new sample				
+					No druggable mutations		Cell cycle		CCNE1	CIC	CIC-DUX4 translocation		part of diagnostic term	
+							Receptor Tyrosine Kinase (RTK)		FLT4	DUX4	CIC-DUX4 translocation		part of diagnostic term	
+TH03_0296_S01	osteosarcoma	No DNA or RNA targets	No DNA or RNA targets	solid						new sample				
+					No druggable mutations		No automated leads			MSH3	Splice site 580-2a>g		Foundation Medicine	
+TH03_0296_S02	osteosarcoma	RNA only target	RNA only target	solid						new sample				
+					No druggable mutations		Receptor Tyrosine Kinase (RTK)		TEK	MSH3	Splice site 580-2a>g		Foundation Medicine	
+TH06_0645_S01	sarcoma	No	Additional expression support for DNA finding	solid						new sample				
+					NF1 stop gained	RAS/RAF/MEK				NF1	stop gained		BC POG DNA results	
+							Receptor Tyrosine Kinase (RTK)	EGFR		POTEI	missense (benign/tolerated)		BC POG DNA results	
+							Receptor Tyrosine Kinase (RTK)	ERBB3		MUC17	missense		BC POG DNA results	
+							Sonic Hedgehog (SHH)	PTCH1		HERC2	deletion/frame shift		BC POG DNA results	
+										NOTCH2	deletion frame shift		BC POG DNA results	
+										NCOA3	two codon deletion		BC POG DNA results	
+										MARCKS	fusion with HERC2		BC POG DNA results	
+										HERC2	fusion with MARCKS		BC POG DNA results	
+										ASH1L	65 aa insertion		BC POG DNA results	
+TH06_0646_S01	neurofibroma	No	Additional expression support for DNA finding	solid						new sample				
+					NF1 loss	RAS/RAF/MEK				NF1	loss		BC POG DNA results	
+							Receptor Tyrosine Kinase (RTK)		ERBB3	ACSM5	D400N		BC POG DNA results	
+							Sonic Hedgehog (SHH)		PTCH1	PRSS3	R255G		BC POG DNA results	
+										PDE4DIP inversion	inversion		BC POG DNA results	
+										SSH2	loss		BC POG DNA results	
+TH06_0647_S01	diffuse intrinsic pontine glioma	Yes	Prioritizing among multiple DNA findings	solid						new sample				
+										GSX2	amplification		BC POG DNA results	
+					KDR amplification	Receptor Tyrosine Kinase (RTK)				KDR	amplification		BC POG DNA results	
+					PDGFRA amplification	Receptor Tyrosine Kinase (RTK)	Receptor Tyrosine Kinase (RTK)		PDGFRA, PDGFRB	PDGFRA	amplification		BC POG DNA results	
+										BET1L	homozygous loss		BC POG DNA results	
+										ELOA3	homozygous loss		BC POG DNA results	
+										GRID1	homozygous loss		BC POG DNA results	
+										MYO5B	homozygous loss		BC POG DNA results	
+										PTPN13	homozygous loss		BC POG DNA results	
+										PTPN14	gain		BC POG DNA results	
+										HRNR	missense (present in normal)		BC POG DNA results	
+										H3F3A	missense		BC POG DNA results	
+										RYR2	missense		BC POG DNA results	
+										POMP	missense		BC POG DNA results	
+										TP53	copy loss		BC POG DNA results	
+										GOLGA6L2	missense		BC POG DNA results	
+										TP53	missense		BC POG DNA results	
+										KRTAP2-2	missense		BC POG DNA results	
+										SCN4A	missense		BC POG DNA results	
+										MAST3	missense		BC POG DNA results	
+										TDRD12	missense		BC POG DNA results	
+										TDRD12	missense		BC POG DNA results	
+										UBE2F	missense		BC POG DNA results	
+										MUC4	missense		BC POG DNA results	
+										TMEM165	missense		BC POG DNA results	
+										KHDRBS2	missense		BC POG DNA results	
+TH06_0648_S01	acute lymphoblastic leukemia	Yes	Prioritizing among multiple DNA findings	leukemia						new sample				
+										IGHJ6	translocation		BC POG DNA results	
+										IGHM	translocation		BC POG DNA results	
+										KLF9	translocation		BC POG DNA results	
+										NCOR1	translocation		BC POG DNA results	
+										NUP160	translocation		BC POG DNA results	
+										SLC29A1	translocation		BC POG DNA results	
+										SUZ12	translocation		BC POG DNA results	
+										ZBTB44	translocation		BC POG DNA results	
+										ZCCHC7	translocation		BC POG DNA results	
+										ETV6	deletion/duplication		BC POG DNA results	
+					CDKN2A homozygous loss	Cell Cycle	Cell cycle	CCND3, CDK6		CDKN2A	homozygous loss		BC POG DNA results	
+										CNR2	homozygous loss		BC POG DNA results	
+										CNTNAP3B	homozygous loss		BC POG DNA results	
+										DMRTA1	homozygous loss		BC POG DNA results	
+										MTAP	homozygous loss		BC POG DNA results	
+										PGBD4P5	homozygous loss		BC POG DNA results	
+										PNRC2	homozygous loss		BC POG DNA results	
+										RBM17P3	homozygous loss		BC POG DNA results	
+										TJP2	homozygous loss		BC POG DNA results	
+										FLT3	T227M		BC POG DNA results	
+					RAS p.G12A	RAS/RAF/MEK				RAS	G12A		BC POG DNA results	
+					RAS p.G13D	RAS/RAF/MEK				RAS	G13D		BC POG DNA results	
+										PCNT	R3232L		BC POG DNA results	
+										PCNT	R3232R		BC POG DNA results	
+										NTRK3	Q185K		BC POG DNA results	
+										KIT V48L	V48L – not characterized		BC POG DNA results	
+										ZNF521	V574I		BC POG DNA results	
+										IGF1R	Y203F		BC POG DNA results	
+							B-cell receptor signaling	BTK					BC POG DNA results	
+							Receptor Tyrosine Kinase (RTK)	FLT3					BC POG DNA results	
+TH06_0649_S01	neuroblastoma	Yes	Prioritizing among multiple DNA findings	solid						new sample				
+										CST3	duplication		BC POG DNA results	
+					RPTOR amplification	PI3K/AKT/mTOR	PI3K/AKT/mTOR		RPTOR	RPTOR	allele-specific copy number amplifications		BC POG DNA results	

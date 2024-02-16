@@ -1,0 +1,86 @@
+---
+title: "`r gsub('.Rmd', ' ', gsub('_', ' ', knitr::current_input()))`"
+author: "`r Sys.getenv('USER')`"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: yes
+---
+  
+
+
+```{r setup, include = FALSE}
+
+library(tidyverse)
+
+```
+
+
+```{r}
+
+cleanup_column_names <- function(x) str_replace_all(x, " ", "_") %>% 
+  str_remove("[\\?]") %>%
+  str_replace("\\/", "_")
+
+# RNA_DNA_analysis <- read_tsv("../input_data/Table_S1_internal_version_2019_01_08 - DNA-RNA-comparison.tsv")  %>%
+#   rename_with(cleanup_column_names) 
+# 
+# RNA_DNA_analysis
+
+```
+
+```{r}
+
+
+# n_distinct(RNA_DNA_analysis$TH_sample_ID)
+```
+# Load findings
+```{r}
+ckcc1_findings <- read_tsv("../input_data/Table_S1_internal_version_2019_01_08 - All-data-144.tsv")  %>%
+  rename_with(cleanup_column_names) 
+colnames(ckcc1_findings)[1] <- "TH_sample_ID"
+```
+# are all samples present? yes, 144
+```{r}
+n_distinct(ckcc1_findings$TH_sample_ID)
+
+```
+
+
+# how many samples had druggable outliers?
+```{r}
+
+ckcc1_findings_with_donor <- ckcc1_findings %>%
+  mutate(donor = str_remove(TH_sample_ID, "_S[0-9][0-9]$"))
+  
+  
+  # replace_na(list(results = "blank")) %>%
+  # group_by(TH_sample_ID) %>%
+  # mutate(sample_has_a_druggable_outlier = any(results != "No druggableUpOutliers"))
+
+ckcc1_outliers_anno <- ckcc1_findings_with_donor %>%
+  filter(assay == "druggableUpOutlier") %>%
+  group_by(TH_sample_ID, donor) %>%
+  mutate(sample_has_a_druggable_outlier = any(results != "No druggableUpOutliers"))
+
+ckcc1_outliers_anno %>%
+  select(TH_sample_ID, donor, sample_has_a_druggable_outlier) %>%
+  distinct()  %>%
+  tabyl(sample_has_a_druggable_outlier)
+
+
+
+```
+
+# how many donors had druggable outliers?
+```{r}
+
+ckcc1_outliers_anno %>%
+  group_by(donor) %>%
+  mutate(donor_has_a_druggable_outlier = any(results != "No druggableUpOutliers")) %>%
+  select(donor, donor_has_a_druggable_outlier) %>%
+  distinct()  %>%
+  tabyl(donor_has_a_druggable_outlier)
+
+```
+
