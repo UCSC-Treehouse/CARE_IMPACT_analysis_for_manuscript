@@ -12,6 +12,7 @@ output:
 ```{r setup, include = FALSE}
 
 library(tidyverse)
+library(janitor)
 
 ```
 
@@ -42,6 +43,7 @@ colnames(ckcc1_findings)[1] <- "TH_sample_ID"
 ```
 # are all samples present? yes, 144
 ```{r}
+
 n_distinct(ckcc1_findings$TH_sample_ID)
 
 ```
@@ -80,7 +82,8 @@ ckcc1_outliers_anno %>%
   mutate(donor_has_a_druggable_outlier = any(results != "No druggableUpOutliers")) %>%
   select(donor, donor_has_a_druggable_outlier) %>%
   distinct()  %>%
-  tabyl(donor_has_a_druggable_outlier)
+  tabyl(donor_has_a_druggable_outlier) %>%
+  adorn_totals()
 
 ```
 
