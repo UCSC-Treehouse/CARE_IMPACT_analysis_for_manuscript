@@ -1,0 +1,107 @@
+---
+title: "`r gsub('.Rmd', ' ', gsub('_', ' ', knitr::current_input()))`"
+author: "`r Sys.getenv('USER')`"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: yes
+---
+  
+
+version 2023.12.18_14.41.52 adds venn diagram of outliers with pathway support
+
+5/14/24
+previously we were using a file called
+"venn_outliers_by_cohort_from_recreate-Venn-diagrams-to-compare_outliers_from_different_comparison_cohorts_2023.12.13_10.26.18.html.png"
+updating just to be able to put it in a single file for figure 6 with two other plots
+removes the section that makes a plot that shows only outliers with pathway support
+
+
+
+
+```{r setup, include = FALSE}
+
+library(tidyverse)
+library(janitor)
+library(khroma)
+library(kableExtra)
+library(gridExtra)
+library(cowplot)
+```
+
+
+```{r}
+
+underscore_to_space <- function(x) str_replace_all(x, "_", " ")
+underscore_to_space_initial_cap <- function(x) str_replace_all(x, "_", " ") %>% str_to_sentence()
+
+```
+
+```{r}
+
+outliers <- read_tsv("../input_data/druggable_outliers_from_treehouse_and_other_cohorts_2023_11_09-13_46_32_2023.tsv") %>%
+  mutate(high_level_cohort = ifelse(str_detect(comparison_cohort, "Treehouse"),
+                                    "Treehouse",
+                                    comparison_cohort))
+
+         
+n_distinct(outliers$Sample_ID)       
+n_distinct(outliers$donor_ID)
+```
+
+# Define cohort codes
+```{r}
+
+cohort_codes <- tibble(
+  cohort_name = 
+    c("PEDAYA", "TCGA", "TH03_TH34", "Treehouse_pc", "Treehouse_pd"),
+  cohort_code = 
+    c("P", "T", "S", "C", "D"))
+
+```
+
+
+
+```{r}
+library(ggVennDiagram)
+
+update_strings <- function(x) {
+  str_replace(x,
+              "PEDAYA", 
+              "Pediatric") %>%
+    str_replace("TH03_TH34",
+                "Stanford")%>%
+    str_replace("Treehouse_pc",
+                "Treehouse pan-cancer")%>%
+    str_replace("Treehouse_pd",
+                "Treehouse pan-disease")
+}
+
+raw_outliers_for_venn <- outliers %>%
+  mutate(sample_gene = paste(Sample_ID, gene, sep = "_"),
+         comparison_cohort = update_strings(comparison_cohort)) %>%
+  arrange(comparison_cohort) %>%
+  select(sample_gene, comparison_cohort) %>%
+  group_split(comparison_cohort)
+
+list_of_outliers_for_venn <-  lapply(raw_outliers_for_venn, function(x) x %>% pull(sample_gene))
+
+names(list_of_outliers_for_venn) <- unique(outliers$comparison_cohort) %>% update_strings %>% sort
+
+```
+
+
+# Best venn
+```{r}
+ggVennDiagram(list_of_outliers_for_venn,
+              label = "count",
+              #label_geom = "text"
+              ) + 
+  scale_fill_distiller(palette = "Greens", 
+                       direction = 1) + 
+  scale_x_continuous(expand = expansion(mult = .2)) + 
+  theme(legend.position="none")
+
+```
+
+

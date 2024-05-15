@@ -1,0 +1,258 @@
+---
+title: "`r gsub('.Rmd', ' ', gsub('_', ' ', knitr::current_input()))`"
+author: "`r Sys.getenv('USER')`"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: yes
+---
+  
+
+
+```{r setup, include = FALSE}
+
+library(tidyverse)
+
+```
+
+
+
+# Load outlier results
+```{r}
+
+outliers <- read_tsv("../input_data/druggable_outliers_from_treehouse_and_other_cohorts_2023_11_09-13_46_32_2023.tsv") %>%
+  mutate(high_level_cohort = ifelse(str_detect(comparison_cohort, "Treehouse"),
+                                    "Treehouse",
+                                    comparison_cohort))
+
+```
+
+# Identify outliers present in TCGA but not other cohorts
+
+```{r}
+
+
+TCGA_only_outliers <- outliers %>%
+  group_by(gene, Sample_ID) %>%
+  mutate(TCGA_only = "TCGA" %in% comparison_cohort & 
+           n() == 1) %>%
+  filter(TCGA_only) %>%
+  arrange(Sample_ID, gene)
+
+
+```
+
+## Featuers of TCGA_only_outliers
+```{r}
+
+table(TCGA_only_outliers$gene)
+
+
+
+```
+
+
+# Load lists of samples in TCGA and pedaya cohorts
+```{r}
+TCGA_samples  <- read_tsv("../gather_input_data/comparison_to_non_CARE_cohorts/data/TCGA_rollup.sample_list.txt",
+                              col_names = "Sample_ID") %>%
+  mutate(cohort = "TCGA")
+
+PEDAYA_samples  <- read_tsv("../gather_input_data/comparison_to_non_CARE_cohorts/data/PEDAYA_rollup.sample_list.txt",
+                              col_names = "Sample_ID") %>%
+  mutate(cohort = "PEDAYA")
+
+
+samples_in_cohorts <- bind_rows(
+  TCGA_samples,
+  PEDAYA_samples,
+  )
+
+```
+
+#  load expression for samples in TCGA and pedaya cohorts
+```{r}
+expr_file <- "../input_data/druggable_plus_TumorCompendium_v11_PolyA_hugo_log2tpm_58581genes_2020-04-09.tsv.gz"
+expr <- read_tsv(expr_file) %>%
+  rename(Sample_ID = TH_id) %>%
+  filter(Gene %in% TCGA_only_outliers$gene)
+```
+
+## confirm that all samples in cohorts have expression data
+```{r}
+
+samples_in_cohorts %>%
+  filter(!Sample_ID %in% expr$Sample_ID)
+
+```
+
+```{r}
+
+```
+
+
+# Calculate statistics for each cohort
+```{r}
+
+cohort_thresholds_raw <- left_join(samples_in_cohorts,
+                                   expr,
+                                   by=c("Sample_ID")) %>%
+  group_by(Gene, cohort) %>%
+  summarize(q25 = quantile(log2TPM1, 0.25),
+            median = median(log2TPM1),
+            q75 = quantile(log2TPM1, 0.75),
+            IQR = q75-q25,
+            up_outlier_threshold = q75 + (1.5*IQR))
+  
+```
+
+# assess changes for all genes
+```{r}
+cohort_thresholds <- cohort_thresholds_raw %>%
+  pivot_longer(c(-Gene, -cohort)) %>%
+  pivot_wider(names_from = cohort, values_from = value) %>%
+  mutate(change_in_ped_relative_to_TCGA = 
+              (PEDAYA - TCGA) / TCGA)
+```
+
+
+
+# changes plotted
+```{r}
+ggplot(cohort_thresholds) +
+  geom_point(aes(x=TCGA,
+                 y=change_in_ped_relative_to_TCGA,
+                 color = name)) +
+  geom_hline(yintercept = 1) +
+  scale_color_brewer(palette = "Set1")
+```
+
+```{r}
+
+cohort_thresholds %>%
+  filter(name %in% c("median", "IQR")) %>%
+  select(Gene, name, change_in_ped_relative_to_TCGA) %>%
+  pivot_wider(names_from = name,
+              values_from = change_in_ped_relative_to_TCGA) %>%
+  ggplot + 
+  geom_point(aes(x=median, y=IQR)) + 
+  ggtitle("The IQR usually increased irrespective of the direction of change of the median", "fraction change_in_ped_relative_to_TCGA")
+
+
+```
+
+```{r}
+
+cohort_thresholds %>%
+  filter(name %in% c("median", "IQR"))
+
+iqrs <- cohort_thresholds %>%
+  filter(name=="IQR") %>%
+  rename(PEDAYA_IQR = "PEDAYA",
+         TCGA_IQR = "TCGA",
+         change_in_ped_IQR_relative_to_TCGA = "change_in_ped_relative_to_TCGA") %>%
+  select(-name)
+
+
+medians <- cohort_thresholds %>%
+  filter(name=="median") %>%
+  rename(PEDAYA_median = "PEDAYA",
+         TCGA_median = "TCGA",
+         change_in_ped_median_relative_to_TCGA = "change_in_ped_relative_to_TCGA") %>%
+  select(-name)
+
+table_of_compared_stats <- left_join(iqrs, medians) %>%
+  ungroup() %>%
+  mutate(across(where(is.double), round, 2))
+
+```
+
+
+```{r}
+
+file_output_name <- paste0("../results/comparison_of_IQR_and_median_in_TCGA_vs_PedAYA_distributions", format(Sys.time(), "%Y_%m_%d-%H_%M_%S_%Y"), ".tsv")
+
+write_tsv(table_of_compared_stats, file_output_name)
+
+```
+
+this output was saved as `r file_output_name`
+
+# Find example
+```{r}
+cohort_thresholds %>%
+  group_by(Gene) %>%
+  mutate(lower_med_in_pedaya_than_TCGA = PEDAYA[name == "median"] < TCGA[name == "median"]) %>%
+  rename(change = change_in_ped_relative_to_TCGA) %>%
+  filter(lower_med_in_pedaya_than_TCGA,
+         name == "up_outlier_threshold")
+
+cohort_thresholds %>%
+  filter(name == "up_outlier_threshold")
+
+BCL6
+```
+```{r}
+table_of_compared_stats %>%
+  filter(Gene == "BCL6")
+
+cohort_thresholds  %>%
+  filter(Gene == "BCL6")
+```
+
+# Other genes considered
+```{r}
+table_of_compared_stats %>%
+  filter(Gene == "CCND3")
+
+cohort_thresholds  %>%
+  filter(Gene == "CCND3") #this isn't a good example because CCND3 is dramatic and has a higher median in ped than tcga
+
+
+table_of_compared_stats %>%
+  filter(Gene == "PDGFRA")
+
+cohort_thresholds  %>%
+  filter(Gene == "PDGFRA")  #this isn't a good esxample beause CCND3 is dramatic and has a higher median in ped than tcga
+
+
+  
+```
+
+
+### support for text
+21 outliers were uniquely detected in this (TCGA) comparison and not present in comparisons against the Stanford or pediatric cohorts.
+
+```{r}
+
+nrow(TCGA_only_outliers)
+
+```
+
+these 21 outliers were detected in 16 genes
+```{r}
+n_distinct(TCGA_only_outliers$gene)
+```
+
+all 16 have wider distributions of expression in pediatric cohorts compared to TCGA. 
+
+```{r}
+sum(table_of_compared_stats$change_in_ped_IQR_relative_to_TCGA<0)
+```
+
+
+```{r}
+table(table_of_compared_stats$change_in_ped_median_relative_to_TCGA<0)
+```
+```{r}
+
+```
+# more analysis
+
+## sample for plot
+TH34_2292_S01
+```{r}
+TCGA_only_outliers %>%
+  filter(gene == "BCL6")
+```
+
