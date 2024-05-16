@@ -1,0 +1,175 @@
+---
+title: "`r gsub('.Rmd', ' ', gsub('_', ' ', knitr::current_input()))`"
+author: "`r Sys.getenv('USER')`"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: yes
+---
+  
+2024.05.14_14.52.58 - discovered that importing from compendium and from rsem files have discrepancies 
+below 4 decimal places
+
+```{r setup, include = FALSE}
+
+library(tidyverse)
+
+```
+
+
+
+# Load outlier results
+```{r}
+
+outliers <- read_tsv("../input_data/druggable_outliers_from_treehouse_and_other_cohorts_2023_11_09-13_46_32_2023.tsv") %>%
+  mutate(high_level_cohort = ifelse(str_detect(comparison_cohort, "Treehouse"),
+                                    "Treehouse",
+                                    comparison_cohort))
+
+```
+sample-gene combos to get expression for
+```{r}
+
+get_expression_for_these_outliers <- outliers %>%
+  select(Sample_ID, gene) %>%
+  distinct()
+
+
+```
+
+
+
+```{r}
+
+v11_expr <- read_tsv("../input_data/druggable_plus_TumorCompendium_v11_PolyA_hugo_log2tpm_58581genes_2020-04-09.tsv.gz") %>%
+  rename(Sample_ID = TH_id,
+         gene = Gene) 
+
+focus_sample_expression_from_compendia <- left_join(
+  get_expression_for_these_outliers,
+  v11_expr, 
+  by = c("gene", "Sample_ID")) %>%
+  na.omit()
+
+# what expression is missing? 
+
+get_expression_for_these_outliers %>%
+  filter(! Sample_ID %in% v11_expr$Sample_ID) 
+
+```
+
+
+
+
+# Gene_name_conversion file
+```{r}
+
+gene_name_conversion <- read_tsv("../input_data/non_compendium_expression/EnsGeneID_Hugo_Observed_Conversions.txt")
+
+```
+
+
+
+```{r}
+
+
+rsem_path <- "../input_data/non_compendium_expression"
+
+relevant_gene_name_conversion <- gene_name_conversion %>%
+  filter(HugoID %in% outliers$gene)
+
+rsem_kitchen_files <- tibble(file_name = list.files(
+  path = rsem_path,
+  pattern = "_rsem_genes.results")) %>%
+  rowwise() %>%
+  mutate(rsem_raw = list(read_tsv(file.path(rsem_path, file_name),
+                                     show_col_types = FALSE
+                                     ))) 
+
+TH34_2292_S01_expr <- rsem_kitchen_files %>%
+  filter(str_detect(file_name, "TH34_2292_S01")) %>%
+  unnest(rsem_raw) %>%
+  left_join(relevant_gene_name_conversion, 
+            by=c("gene_id"="EnsGeneID")) %>%
+  group_by(HugoID) %>%
+  summarize(sum_TPM = sum(TPM),
+            n=n()) %>%
+  mutate(log2TPM1 = log2(sum_TPM +1))
+
+quantile(TH34_2292_S01_expr$log2TPM1, 0.95)
+
+
+```
+
+# expression in samples not in the compendium
+
+```{r}
+
+rsem_path <- "../input_data/non_compendium_expression"
+
+relevant_gene_name_conversion <- gene_name_conversion %>%
+  filter(HugoID %in% outliers$gene)
+
+rsem_kitchen_sink_data <- tibble(file_name = list.files(
+  path = rsem_path,
+  pattern = "_rsem_genes.results")) %>%
+  rowwise() %>%
+  mutate(rsem_raw = list(read_tsv(file.path(rsem_path, file_name),
+                                     show_col_types = FALSE
+                                     ))) %>%
+  unnest(rsem_raw) %>%
+  filter(gene_id %in% relevant_gene_name_conversion$EnsGeneID) %>%
+  mutate(Sample_ID = str_extract(file_name, "TH[R]?[0-9]{2}_[0-9]{4}_S[0-9]{2}")) %>%
+  left_join(relevant_gene_name_conversion, 
+            by=c("gene_id"="EnsGeneID")) %>%
+    group_by(Sample_ID, HugoID) %>%
+    summarize(sum_TPM = sum(TPM),
+              n=n()) %>%
+    mutate(log2TPM1 = log2(sum_TPM +1))
+
+table(rsem_kitchen_sink_data$n)
+
+focus_sample_expression_from_rsem_files <- left_join(
+  get_expression_for_these_outliers,
+  rsem_kitchen_sink_data %>%
+  select(gene = HugoID,
+         log2TPM1,
+         Sample_ID),
+  by = c("Sample_ID", "gene")) %>%
+  na.omit()
+```
+
+# combine data from rsem and compendium to get focus_sample expression levels 
+```{r}
+
+focus_sample_expression <- 
+  bind_rows(
+              focus_sample_expression_from_rsem_files,
+              focus_sample_expression_from_compendia)  %>%
+              mutate(log2TPM1 = round(log2TPM1,6))
+
+# these numbers should be the same
+nrow(na.omit(focus_sample_expression))
+nrow(focus_sample_expression)
+
+
+```
+
+
+
+```{r}
+
+outlier_results_with_expression <- outliers %>%
+  left_join(focus_sample_expression)
+
+```
+
+
+```{r}
+
+output_name <- paste0("../input_data/druggable_outliers_from_treehouse_and_other_cohorts_with_expression_", format(Sys.time(), "%Y_%m_%d-%H_%M_%S_%Y"), ".tsv")
+
+write_tsv(outlier_results_with_expression,output_name)
+          
+```
+
